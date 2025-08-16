@@ -854,17 +854,13 @@ SetPal_TrainerCard:
 IF GEN_2_GRAPHICS
 	ld d, PAL_HERO
 ELSE
-	ld d, PAL_REDMON
+	ld d, PAL_GREENMON
 ENDC
 	ld e, 4
 	farcall LoadSGBPalette
 
 	; Palette for border tiles
-IF DEF(_BLUE)
-	ld d, PAL_BLUEMON
-ELSE ; _RED
-	ld d, PAL_REDMON
-ENDC
+    ld d, PAL_PINKMON
 	ld e, 5
 	farcall LoadSGBPalette
 
