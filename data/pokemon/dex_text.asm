@@ -1515,5 +1515,5 @@ _IgglybuffDexEntry::
 
 	page "bounce all over"
 	next "and be impossible"
-	next "to stop."
+	next "to stop"
 	dex

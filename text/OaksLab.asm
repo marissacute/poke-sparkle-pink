@@ -27,20 +27,20 @@ _OaksLabThoseArePokeBallsText::
 
 _OaksLabYouWantCharmanderText::
 	text "So! You want the"
-	line "fire #MON,"
-	cont "CHARMANDER?"
+	line "fairy #MON,"
+	cont "IGGLYBUFF?"
 	done
 
 _OaksLabYouWantSquirtleText::
 	text "So! You want the"
-	line "water #MON,"
-	cont "SQUIRTLE?"
+	line "steel #MON,"
+	cont "MAGNEMITE?"
 	done
 
 _OaksLabYouWantBulbasaurText::
 	text "So! You want the"
-	line "plant #MON,"
-	cont "BULBASAUR?"
+	line "dragon #MON,"
+	cont "DRATINI?"
 	done
 
 _OaksLabMonEnergeticText::
