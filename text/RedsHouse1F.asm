@@ -1,6 +1,6 @@
 _RedsHouse1FMomWakeUpText::
 	text "MOM: Right."
-	line "All boys leave"
+	line "All girls leave"
 	cont "home some day."
 	cont "It said so on TV."
 
@@ -25,7 +25,7 @@ _RedsHouse1FMomLookingGreatText::
 
 _RedsHouse1FTVStandByMeMovieText::
 	text "There's a movie"
-	line "on TV. Four boys"
+	line "on TV. Four girls"
 	cont "are walking on"
 	cont "railroad tracks."
 

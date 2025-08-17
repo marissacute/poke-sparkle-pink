@@ -18,22 +18,21 @@ _PalletTownOakItsUnsafeText::
 	done
 
 _PalletTownGirlText::
-	text "I'm raising"
-	line "#MON too!"
+	text "My favourite #MON"
+	line "is JIGGLYPUFF!"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "Which one is"
+	line "yours?"
 	done
 
 _PalletTownFisherText::
-	text "Technology is"
-	line "incredible!"
+	text "Some #MON have"
+	line "different types"
+	cont "and moves than"
+	cont "they used to have."
 
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
+	para "I wonder why"
+	line "that's the case."
 	done
 
 _PalletTownOaksLabSignText::
