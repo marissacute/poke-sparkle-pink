@@ -252,6 +252,8 @@ ENDC
 SECTION "Pics 7", ROMX
 
 IF GEN_2_GRAPHICS
+IgglybuffPicFront::   INCBIN "gfx/pokemon/gsfront/igglybuff.pic"
+IgglybuffPicBack::    INCBIN "gfx/pokemon/gsback/igglybuffb.pic"
 GrowlithePicFront::   INCBIN "gfx/pokemon/gsfront/growlithe.pic"
 GrowlithePicBack::    INCBIN "gfx/pokemon/gsback/growlitheb.pic"
 OnixPicFront::        INCBIN "gfx/pokemon/gsfront/onix.pic"
@@ -300,11 +302,11 @@ SeelPicFront::        INCBIN "gfx/pokemon/gsfront/seel.pic"
 SeelPicBack::         INCBIN "gfx/pokemon/gsback/seelb.pic"
 DiglettPicFront::     INCBIN "gfx/pokemon/gsfront/diglett.pic"
 DiglettPicBack::      INCBIN "gfx/pokemon/gsback/diglettb.pic"
-TaurosPicFront::      INCBIN "gfx/pokemon/gsfront/tauros.pic"
-TaurosPicBack::       INCBIN "gfx/pokemon/gsback/taurosb.pic"
 ENDC
 
 IF !GEN_2_GRAPHICS
+IgglybuffPicFront::   INCBIN "gfx/pokemon/front/igglybuff.pic"
+IgglybuffPicBack::    INCBIN "gfx/pokemon/back/igglybuffb.pic"
 GrowlithePicFront::   INCBIN "gfx/pokemon/front/growlithe.pic"
 GrowlithePicBack::    INCBIN "gfx/pokemon/back/growlitheb.pic"
 OnixPicFront::        INCBIN "gfx/pokemon/front/onix.pic"
@@ -361,6 +363,8 @@ ENDC
 SECTION "Pics 8", ROMX
 
 IF GEN_2_GRAPHICS
+TaurosPicFront::      INCBIN "gfx/pokemon/gsfront/tauros.pic"
+TaurosPicBack::       INCBIN "gfx/pokemon/gsback/taurosb.pic"
 RhydonPicFront::      INCBIN "gfx/pokemon/gsfront/rhydon.pic"
 RhydonPicBack::       INCBIN "gfx/pokemon/gsback/rhydonb.pic"
 KangaskhanPicFront::  INCBIN "gfx/pokemon/gsfront/kangaskhan.pic"

@@ -122,7 +122,7 @@ DisplayTitleScreen:
 	call LoadScreenTilesFromBuffer2
 	call EnableLCD
 
-	ld a, JIGGLYPUFF; ; which Pokemon to show first on the title screen
+	ld a, IGGLYBUFF; ; which Pokemon to show first on the title screen
 	ld [wTitleMonSpecies], a
 	call LoadTitleMonSprite
 
