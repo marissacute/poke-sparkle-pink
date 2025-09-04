@@ -133,7 +133,6 @@ AttackAnimationPointers:
 	dw SpikeCannonAnim
 	dw ConstrictAnim
 	dw AmnesiaAnim
-	dw KinesisAnim
 	dw SoftboiledAnim
 	dw HiJumpKickAnim
 	dw GlareAnim
@@ -364,9 +363,6 @@ DoubleKickAnim:
 	db -1 ; end
 
 MegaKickAnim:
-	battle_anim MEGA_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
-	db -1 ; end
-
 JumpKickAnim:
 	battle_anim JUMP_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
@@ -402,6 +398,7 @@ HornDrillAnim:
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
 	db -1 ; end
 
+UnusedAnim:
 FeintAttackAnim:
 TackleAnim:
 	battle_anim LEECH_SEED, SE_MOVE_MON_HORIZONTALLY
@@ -565,14 +562,9 @@ BubbleBeamAnim:
 	db -1 ; end
 
 AuroraBeamAnim:
-	battle_anim AURORA_BEAM, SUBANIM_0_BEAM, 0, 3
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	db -1 ; end
-
 MoonblastAnim:
 FlashCannonAnim:
-	battle_anim HYPER_BEAM, SUBANIM_0_BEAM, 0, 3
+	battle_anim AURORA_BEAM, SUBANIM_0_BEAM, 0, 3
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
 	db -1 ; end
@@ -931,6 +923,7 @@ MirrorMoveAnim:
 	db -1 ; end
 
 SelfdestructAnim:
+ExplosionAnim:
 	battle_anim SELFDESTRUCT, SUBANIM_1_SELFDESTRUCT, 1, 3
 	db -1 ; end
 
@@ -1001,10 +994,6 @@ ConstrictAnim:
 AmnesiaAnim:
 	battle_anim AMNESIA, SUBANIM_0_STATUS_CONFUSED, 0, 8
 	battle_anim AMNESIA, SUBANIM_0_STATUS_CONFUSED, 0, 8
-	db -1 ; end
-
-KinesisAnim:
-	battle_anim KINESIS, SUBANIM_0_STAR_TWICE, 0, 8
 	db -1 ; end
 
 SoftboiledAnim:
@@ -1111,10 +1100,6 @@ CrabHammerAnim:
 	battle_anim NO_MOVE, SUBANIM_0_SLICE_BOTH_SIDES, 0, 6
 	db -1 ; end
 
-ExplosionAnim:
-	battle_anim EXPLOSION, SUBANIM_1_SELFDESTRUCT, 1, 3
-	db -1 ; end
-
 FuryCutterAnim:
 FurySwipesAnim:
 	battle_anim FURY_SWIPES, SUBANIM_0_SCRATCHES, 0, 4
@@ -1140,12 +1125,6 @@ HyperFangAnim:
 	db -1 ; end
 
 SharpenAnim:
-	battle_anim SHARPEN, SE_LIGHT_SCREEN_PALETTE
-	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_CLOSING, 1, 6
-	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
-	db -1 ; end
-
 ConversionAnim:
 	battle_anim CONVERSION, SE_DARK_SCREEN_FLASH
 	battle_anim NO_MOVE, SUBANIM_0_CIRCLES_1_SQUARES_CENTERING_ENEMY, 1, 6
@@ -1254,12 +1233,6 @@ XStatItemBlackAnim:
 ShrinkingSquareBlackAnim:
 	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
 	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_CLOSING, 1, 6
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
-	db -1 ; end
-
-UnusedAnim:
-	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
-	battle_anim NO_MOVE, SE_SHOOT_MANY_BALLS_UPWARD
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 

@@ -18,8 +18,9 @@ _PalletTownOakItsUnsafeText::
 	done
 
 _PalletTownGirlText::
-	text "My favourite #MON"
-	line "is JIGGLYPUFF!"
+	text "My favourite"
+	line "#MON is"
+	cont "JIGGLYPUFF!"
 
 	para "Which one is"
 	line "yours?"

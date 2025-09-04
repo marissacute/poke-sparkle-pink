@@ -392,5 +392,4 @@ INCLUDE "engine/movie/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/items/tm_prices.asm"
 
-SECTION "bank1F", ROMX
 INCLUDE "color/animations.asm"
