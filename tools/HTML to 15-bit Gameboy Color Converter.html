@@ -1,0 +1,79 @@
+
+<!-- saved from url=(0048)http://www.budmelvin.com/dev/15bitconverter.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>HTML to 15-bit Gameboy Color Converter</title>
+
+<!-- adapted from http://www.javascripter.net/faq/hextorgb.htm -->
+<!-- Bin2Hex functions from http://stackoverflow.com/questions/7695450/how-to-program-hex2bin-in-javascript -->
+
+<script type="text/javascript" language="JavaScript">
+<!--
+
+function cutHex(h) { return (h.charAt(0)=="#") ? h.substring(1,7) : h}
+function checkBin(n){return/^[01]{1,64}$/.test(n)}
+function Bin2Hex(n){if(!checkBin(n))return 0;return parseInt(n,2).toString(16)}
+function PadZero(len, input, str){
+	return Array(len-String(input).length+1).join(str||'0')+input;
+}	
+
+function hexToE(h){
+	// get int values of html hex RGB components
+	var red = parseInt((cutHex(h)).substring(0,2),16);	
+	var green = parseInt((cutHex(h)).substring(2,4),16);
+	var blue = parseInt((cutHex(h)).substring(4,6),16)
+
+	// reduce to 5-bit integer values
+	red = Math.floor(red/8);
+	green = Math.floor(green/8);
+	blue = Math.floor(blue/8);
+
+	return red + ',' + green + ',' + blue;
+}
+
+function setBgColorById(id,sColor) {
+ var elem;
+ if (document.getElementById) {
+  if (elem=document.getElementById(id)) {
+   if (elem.style) elem.style.backgroundColor=sColor;
+  }
+ }
+}
+
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+
+<p>
+HTML to 15-bit color converter
+</p><p>
+This is just a dumb little tool I wrote for myself to translate html color values<br>
+to the gameboy color hexidecimal 15-bit blue/green/red color palette.<br>
+
+<br>
+</p><form name="rgb">
+
+<table border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td valign="middle" title="Color sample for this hex code"><nobr><span id="colorSample" style="border: 1px solid gray; background-color: rgb(255, 255, 255);"><big><big><code style="cursor:default;">&nbsp;&nbsp;&nbsp;</code></big></big></span>&nbsp;</nobr></td>
+<td valign="top"><nobr>
+
+<input type="text" name="hex" size="7" maxlength="7" value="FFFFFF">
+<input type="button" name="btn" value="Convert" onclick="setBgColorById(&#39;colorSample&#39;,this.form.hex.value);
+this.form.ebit.value = hexToE(this.form.hex.value);
+">
+15-Bit Color: <input type="text" name="ebit" size="3" style="width:100px;">
+
+</nobr>
+</td></tr></tbody></table>
+
+</form>
+
+<p><br>
+View source to see the javascript code I wrote/stole for this.<br>
+For more info on 15-bit color, check out: <a href="http://en.wikipedia.org/wiki/High_color">https://en.wikipedia.org/wiki/High_color</a> <br>
+
+
+
+</p></body></html>

@@ -59,9 +59,9 @@ EvosMovesPointerTable:
 	dw PsyduckEvosMoves
 	dw DrowzeeEvosMoves
 	dw GolemEvosMoves
-	dw MissingNo32EvosMoves
+	dw EspeonEvosMoves
 	dw MagmarEvosMoves
-	dw MissingNo34EvosMoves
+	dw UmbreonEvosMoves
 	dw ElectabuzzEvosMoves
 	dw MagnetonEvosMoves
 	dw KoffingEvosMoves
@@ -775,10 +775,16 @@ GolemEvosMoves:
 	db 43, EXPLOSION
 	db 0
 
-MissingNo32EvosMoves:
+EspeonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 16, CONFUSION
+	db 23, QUICK_ATTACK
+	db 30, SWIFT
+	db 36, PSYBEAM
+	db 47, PSYCHIC_M
+	db 52, RECOVER
 	db 0
 
 MagmarEvosMoves:
@@ -793,10 +799,17 @@ MagmarEvosMoves:
 	db 55, FLAMETHROWER
 	db 0
 
-MissingNo34EvosMoves:
+UmbreonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 16, BITE
+	db 23, QUICK_ATTACK
+	db 30, CONFUSE_RAY
+	db 36, FEINT_ATTACK
+	db 42, SCREECH
+	db 47, CRUNCH
+	db 52, RECOVER
 	db 0
 
 ElectabuzzEvosMoves:
@@ -1269,6 +1282,8 @@ EeveeEvosMoves:
 	db EVOLVE_ITEM, FIRE_STONE, 1, FLAREON
 	db EVOLVE_ITEM, THUNDER_STONE, 1, JOLTEON
 	db EVOLVE_ITEM, WATER_STONE, 1, VAPOREON
+	; Add Espeon here once we add Sun Stone
+	db EVOLVE_ITEM, MOON_STONE, 1, UMBREON
 	db 0
 ; Learnset
 	db 27, QUICK_ATTACK

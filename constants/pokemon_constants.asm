@@ -56,9 +56,9 @@
 	const PSYDUCK            ; $2F
 	const DROWZEE            ; $30
 	const GOLEM              ; $31
-	const_skip               ; $32
+	const ESPEON             ; $32
 	const MAGMAR             ; $33
-	const_skip               ; $34
+	const UMBREON            ; $34
 	const ELECTABUZZ         ; $35
 	const MAGNETON           ; $36
 	const KOFFING            ; $37

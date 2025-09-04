@@ -290,8 +290,12 @@ DrowzeePicFront::     INCBIN "gfx/pokemon/gsfront/drowzee.pic"
 DrowzeePicBack::      INCBIN "gfx/pokemon/gsback/drowzeeb.pic"
 GolemPicFront::       INCBIN "gfx/pokemon/gsfront/golem.pic"
 GolemPicBack::        INCBIN "gfx/pokemon/gsback/golemb.pic"
+EspeonPicFront::      INCBIN "gfx/pokemon/gsfront/espeon.pic"
+EspeonPicBack::       INCBIN "gfx/pokemon/gsback/espeonb.pic"
 MagmarPicFront::      INCBIN "gfx/pokemon/gsfront/magmar.pic"
 MagmarPicBack::       INCBIN "gfx/pokemon/gsback/magmarb.pic"
+UmbreonPicFront::     INCBIN "gfx/pokemon/gsfront/umbreon.pic"
+UmbreonPicBack::      INCBIN "gfx/pokemon/gsback/umbreonb.pic"
 ElectabuzzPicFront::  INCBIN "gfx/pokemon/gsfront/electabuzz.pic"
 ElectabuzzPicBack::   INCBIN "gfx/pokemon/gsback/electabuzzb.pic"
 MagnetonPicFront::    INCBIN "gfx/pokemon/gsfront/magneton.pic"
@@ -300,10 +304,6 @@ KoffingPicFront::     INCBIN "gfx/pokemon/gsfront/koffing.pic"
 KoffingPicBack::      INCBIN "gfx/pokemon/gsback/koffingb.pic"
 MankeyPicFront::      INCBIN "gfx/pokemon/gsfront/mankey.pic"
 MankeyPicBack::       INCBIN "gfx/pokemon/gsback/mankeyb.pic"
-SeelPicFront::        INCBIN "gfx/pokemon/gsfront/seel.pic"
-SeelPicBack::         INCBIN "gfx/pokemon/gsback/seelb.pic"
-DiglettPicFront::     INCBIN "gfx/pokemon/gsfront/diglett.pic"
-DiglettPicBack::      INCBIN "gfx/pokemon/gsback/diglettb.pic"
 ENDC
 
 IF !GEN_2_GRAPHICS
@@ -345,8 +345,12 @@ DrowzeePicFront::     INCBIN "gfx/pokemon/front/drowzee.pic"
 DrowzeePicBack::      INCBIN "gfx/pokemon/back/drowzeeb.pic"
 GolemPicFront::       INCBIN "gfx/pokemon/front/golem.pic"
 GolemPicBack::        INCBIN "gfx/pokemon/back/golemb.pic"
+EspeonPicFront::      INCBIN "gfx/pokemon/front/espeon.pic"
+EspeonPicBack::       INCBIN "gfx/pokemon/back/espeonb.pic"
 MagmarPicFront::      INCBIN "gfx/pokemon/front/magmar.pic"
 MagmarPicBack::       INCBIN "gfx/pokemon/back/magmarb.pic"
+UmbreonPicFront::     INCBIN "gfx/pokemon/front/umbreon.pic"
+UmbreonPicBack::      INCBIN "gfx/pokemon/back/umbreonb.pic"
 ElectabuzzPicFront::  INCBIN "gfx/pokemon/front/electabuzz.pic"
 ElectabuzzPicBack::   INCBIN "gfx/pokemon/back/electabuzzb.pic"
 MagnetonPicFront::    INCBIN "gfx/pokemon/front/magneton.pic"
@@ -367,6 +371,10 @@ ENDC
 SECTION "Pics 8", ROMX
 
 IF GEN_2_GRAPHICS
+SeelPicFront::        INCBIN "gfx/pokemon/gsfront/seel.pic"
+SeelPicBack::         INCBIN "gfx/pokemon/gsback/seelb.pic"
+DiglettPicFront::     INCBIN "gfx/pokemon/gsfront/diglett.pic"
+DiglettPicBack::      INCBIN "gfx/pokemon/gsback/diglettb.pic"
 TaurosPicFront::      INCBIN "gfx/pokemon/gsfront/tauros.pic"
 TaurosPicBack::       INCBIN "gfx/pokemon/gsback/taurosb.pic"
 RhydonPicFront::      INCBIN "gfx/pokemon/gsfront/rhydon.pic"
@@ -411,8 +419,6 @@ ArcaninePicFront::    INCBIN "gfx/pokemon/gsfront/arcanine.pic"
 ArcaninePicBack::     INCBIN "gfx/pokemon/gsback/arcanineb.pic"
 GyaradosPicFront::    INCBIN "gfx/pokemon/gsfront/gyarados.pic"
 GyaradosPicBack::     INCBIN "gfx/pokemon/gsback/gyaradosb.pic"
-ShellderPicFront::    INCBIN "gfx/pokemon/gsfront/shellder.pic"
-ShellderPicBack::     INCBIN "gfx/pokemon/gsback/shellderb.pic"
 ENDC
 
 IF !GEN_2_GRAPHICS
@@ -466,6 +472,8 @@ ENDC
 SECTION "Pics 9", ROMX
 
 IF GEN_2_GRAPHICS
+ShellderPicFront::    INCBIN "gfx/pokemon/gsfront/shellder.pic"
+ShellderPicBack::     INCBIN "gfx/pokemon/gsback/shellderb.pic"
 ArticunoPicFront::    INCBIN "gfx/pokemon/gsfront/articuno.pic"
 ArticunoPicBack::     INCBIN "gfx/pokemon/gsback/articunob.pic"
 ZapdosPicFront::      INCBIN "gfx/pokemon/gsfront/zapdos.pic"

@@ -153,4 +153,6 @@ MonPartyData:
 	nybble ICON_MON       ; Mew
 	nybble ICON_FAIRY     ; Igglybuff
 	nybble ICON_BALL      ; Magnezone
+	nybble ICON_QUADRUPED ; Espeon
+	nybble ICON_QUADRUPED ; Umbreon
 	end_nybble_array NUM_POKEMON

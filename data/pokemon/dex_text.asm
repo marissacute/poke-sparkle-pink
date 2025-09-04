@@ -1527,3 +1527,21 @@ _MagnezoneDexEntry::
 	next "when it flies"
 	next "through the sky"
 	dex
+
+_EspeonDexEntry::
+	text "By reading air"
+	next "currents, it can"
+	next "predict things"
+
+	page "such as the weath-"
+	next "er or its foe's"
+	next "next move"
+
+_UmbreonDexEntry::
+	text "When darkness"
+	next "falls, the rings"
+	next "on the body begin"
+
+	page "to glow, striking"
+	next "fear in the hearts"
+	next "of anyone nearby"

@@ -49,9 +49,9 @@ PokedexEntryPointers:
 	dw PsyduckDexEntry
 	dw DrowzeeDexEntry
 	dw GolemDexEntry
-	dw MissingNoDexEntry
+	dw EspeonDexEntry
 	dw MagmarDexEntry
-	dw MissingNoDexEntry
+	dw UmbreonDexEntry
 	dw ElectabuzzDexEntry
 	dw MagnetonDexEntry
 	dw KoffingDexEntry
@@ -1263,9 +1263,23 @@ IgglybuffDexEntry:
 
 MagnezoneDexEntry:
 	db "MAGNET@"
-	db 1,0
-	dw 22
+	db 3,11
+	dw 400
 	text_far _MagnezoneDexEntry
+	text_end
+
+EspeonDexEntry:
+	db "SUN@"
+	db 2,11
+	dw 580
+	text_far _EspeonDexEntry
+	text_end
+
+UmbreonDexEntry:
+	db "MOONLIGHT@"
+	db 3,3
+	dw 60
+	text_far _UmbreonDexEntry
 	text_end
 
 MissingNoDexEntry:
