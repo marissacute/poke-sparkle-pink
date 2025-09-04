@@ -554,24 +554,23 @@ IgglybuffEvosMoves:
 	db 0
 ; Learnset
 	db 9, SING
-	db 14, DISABLE
-	db 19, DEFENSE_CURL
+	db 12, FAIRY_WIND
+	db 16, DISABLE
+	db 20, DRAININGKISS
 	db 24, DOUBLESLAP
 	db 29, REST
 	db 34, BODY_SLAM
 	db 39, DOUBLE_EDGE
+	db 45, MOONBLAST
 	db 0
 
 MagnezoneEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 21, SONICBOOM
-	db 25, THUNDERSHOCK
-	db 29, SUPERSONIC
-	db 38, THUNDER_WAVE
-	db 46, SWIFT
-	db 54, SCREECH
+	db 40, FLASH_CANNON
+	db 46, LIGHT_SCREEN
+	db 51, SCREECH
 	db 0
 
 GrowlitheEvosMoves:
@@ -829,12 +828,13 @@ MagnetonEvosMoves:
 	db EVOLVE_LEVEL, 36, MAGNEZONE
 	db 0
 ; Learnset
-	db 21, SONICBOOM
-	db 25, THUNDERSHOCK
-	db 29, SUPERSONIC
-	db 38, THUNDER_WAVE
-	db 46, SWIFT
-	db 54, SCREECH
+	db 24, SONICBOOM
+	db 27, MAGNET_BOMB
+	db 31, SWIFT
+	db 35, SUPERSONIC
+	db 39, FLASH_CANNON
+	db 44, LIGHT_SCREEN
+	db 50, SCREECH
 	db 0
 
 KoffingEvosMoves:
@@ -948,11 +948,10 @@ DragoniteEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 10, THUNDER_WAVE
-	db 20, AGILITY
-	db 35, DRAGON_RAGE
-	db 45, DRAGON_SLAM
-	db 60, HYPER_BEAM
+	db 38, WING_ATTACK
+	db 42, AGILITY
+	db 48, DRAGON_SLAM
+	db 55, HYPER_BEAM
 	db 0
 
 MissingNo43EvosMoves:
@@ -1136,26 +1135,30 @@ MissingNo57EvosMoves:
 
 DratiniEvosMoves:
 ; Evolutions
-	db EVOLVE_LEVEL, 30, DRAGONAIR
+	db EVOLVE_LEVEL, 16, DRAGONAIR
 	db 0
 ; Learnset
-	db 10, THUNDER_WAVE
-	db 20, AGILITY
-	db 30, DRAGON_RAGE
-	db 40, DRAGON_SLAM
-	db 50, HYPER_BEAM
+	db 10, DRAGON_RAGE
+	db 15, QUICK_ATTACK
+	db 22, THUNDER_WAVE
+	db 26, WRAP
+	db 32, FLAMETHROWER
+	db 36, AGILITY
+	db 42, DRAGON_SLAM
+	db 45, HYPER_BEAM
 	db 0
 
 DragonairEvosMoves:
 ; Evolutions
-	db EVOLVE_LEVEL, 55, DRAGONITE
+	db EVOLVE_LEVEL, 38, DRAGONITE
 	db 0
 ; Learnset
-	db 10, THUNDER_WAVE
-	db 20, AGILITY
-	db 35, DRAGON_RAGE
-	db 45, DRAGON_SLAM
-	db 55, HYPER_BEAM
+	db 24, THUNDER_WAVE
+	db 28, WRAP
+	db 34, FLAMETHROWER
+	db 38, AGILITY
+	db 44, DRAGON_SLAM
+	db 47, HYPER_BEAM
 	db 0
 
 KabutoEvosMoves:
@@ -1261,22 +1264,25 @@ OmastarEvosMoves:
 
 JigglypuffEvosMoves:
 ; Evolutions
-	db EVOLVE_ITEM, MOON_STONE, 1, WIGGLYTUFF
+	db EVOLVE_LEVEL, 36, WIGGLYTUFF
 	db 0
 ; Learnset
-	db 9, POUND
-	db 14, DISABLE
-	db 19, DEFENSE_CURL
-	db 24, DOUBLESLAP
-	db 29, REST
-	db 34, BODY_SLAM
-	db 39, DOUBLE_EDGE
+	db 18, DISABLE
+	db 22, DRAININGKISS
+	db 26, DOUBLESLAP
+	db 32, REST
+	db 37, BODY_SLAM
+	db 42, DOUBLE_EDGE
+	db 48, MOONBLAST
 	db 0
 
 WigglytuffEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 38, BODY_SLAM
+	db 41, DOUBLE_EDGE
+	db 49, MOONBLAST
 	db 0
 
 EeveeEvosMoves:
@@ -1991,14 +1997,17 @@ MissingNoACEvosMoves:
 
 MagnemiteEvosMoves:
 ; Evolutions
-	db EVOLVE_LEVEL, 30, MAGNETON
+	db EVOLVE_LEVEL, 16, MAGNETON
 	db 0
 ; Learnset
-	db 21, SONICBOOM
-	db 25, THUNDERSHOCK
-	db 29, SUPERSONIC
-	db 35, THUNDER_WAVE
-	db 41, SWIFT
+	db 9, THUNDERSHOCK
+	db 15, THUNDER_WAVE
+	db 22, SONICBOOM
+	db 25, MAGNET_BOMB
+	db 29, SWIFT
+	db 32, SUPERSONIC
+	db 36, FLASH_CANNON
+	db 41, LIGHT_SCREEN
 	db 47, SCREECH
 	db 0
 

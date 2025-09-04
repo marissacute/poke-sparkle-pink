@@ -1,6 +1,6 @@
 	db DEX_JIGGLYPUFF ; pokedex id
 
-	db 115,  45,  20,  20,  25
+	db 115,  55,  45,  50,  60
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, FAIRY ; type
@@ -14,8 +14,8 @@ ELSE
 ENDC
 	dw JigglypuffPicFront, JigglypuffPicBack
 
-	db SING, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
-	db GROWTH_FAST ; growth rate
+	db POUND, DEFENSE_CURL, SING, FAIRY_WIND ; level 1 learnset
+	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \

@@ -1,6 +1,6 @@
 	db DEX_DRAGONITE ; pokedex id
 
-	db  91, 134,  95,  80, 100
+	db  91, 109,  75,  80, 70
 	;   hp  atk  def  spd  spc
 
 	db DRAGON, FLYING ; type
@@ -14,8 +14,8 @@ ELSE
 ENDC
 	dw DragonitePicFront, DragonitePicBack
 
-	db WRAP, LEER, THUNDER_WAVE, AGILITY ; level 1 learnset
-	db GROWTH_SLOW ; growth rate
+	db TACKLE, LEER, THUNDER_WAVE, DRAGON_RAGE ; level 1 learnset
+	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm RAZOR_WIND,   TOXIC,        HORN_DRILL,   BODY_SLAM,    TAKE_DOWN,    \

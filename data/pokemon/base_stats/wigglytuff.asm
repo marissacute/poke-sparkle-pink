@@ -1,6 +1,6 @@
 	db DEX_WIGGLYTUFF ; pokedex id
 
-	db 140,  70,  45,  45,  50
+	db 140,  70,  65,  65,  85
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, FAIRY ; type
@@ -14,8 +14,8 @@ ELSE
 ENDC
 	dw WigglytuffPicFront, WigglytuffPicBack
 
-	db SING, DISABLE, DEFENSE_CURL, DOUBLESLAP ; level 1 learnset
-	db GROWTH_FAST ; growth rate
+	db DOUBLESLAP, SING, DRAININGKISS, FAIRY_WIND ; level 1 learnset
+	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \

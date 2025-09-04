@@ -1,6 +1,6 @@
 	db DEX_DRAGONAIR ; pokedex id
 
-	db  61,  84,  65,  70,  70
+	db  56,  79,  60,  65,  65
 	;   hp  atk  def  spd  spc
 
 	db DRAGON, DRAGON ; type
@@ -14,8 +14,8 @@ ELSE
 ENDC
 	dw DragonairPicFront, DragonairPicBack
 
-	db WRAP, LEER, THUNDER_WAVE, NO_MOVE ; level 1 learnset
-	db GROWTH_SLOW ; growth rate
+	db TACKLE, LEER, THUNDER_WAVE, NO_MOVE ; level 1 learnset
+	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm TOXIC,        HORN_DRILL,   BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \

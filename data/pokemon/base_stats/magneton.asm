@@ -1,6 +1,6 @@
 	db DEX_MAGNETON ; pokedex id
 
-	db  50,  60,  95,  70, 120
+	db  50,  45,  80,  60, 90
 	;   hp  atk  def  spd  spc
 
 	db ELECTRIC, STEEL ; type
@@ -14,8 +14,8 @@ ELSE
 ENDC
 	dw MagnetonPicFront, MagnetonPicBack
 
-	db TACKLE, SONICBOOM, THUNDERSHOCK, NO_MOVE ; level 1 learnset
-	db GROWTH_MEDIUM_FAST ; growth rate
+	db TACKLE, THUNDERSHOCK, NO_MOVE, NO_MOVE ; level 1 learnset
+	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   RAGE,         \

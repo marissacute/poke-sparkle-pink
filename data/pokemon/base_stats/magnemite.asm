@@ -1,6 +1,6 @@
 	db DEX_MAGNEMITE ; pokedex id
 
-	db  25,  35,  70,  45,  95
+	db  40,  35,  60,  45,  70
 	;   hp  atk  def  spd  spc
 
 	db ELECTRIC, STEEL ; type
@@ -14,8 +14,8 @@ ELSE
 ENDC
 	dw MagnemitePicFront, MagnemitePicBack
 
-	db TACKLE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
-	db GROWTH_MEDIUM_FAST ; growth rate
+	db TACKLE, LEER, NO_MOVE, NO_MOVE ; level 1 learnset
+	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         THUNDERBOLT,  \

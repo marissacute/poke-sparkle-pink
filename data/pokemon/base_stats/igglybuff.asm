@@ -15,7 +15,7 @@ ENDC
 	dw IgglybuffPicFront, IgglybuffPicBack
 
 	db POUND, DEFENSE_CURL, NO_MOVE, NO_MOVE ; level 1 learnset
-	db GROWTH_FAST ; growth rate
+	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
