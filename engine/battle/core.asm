@@ -4915,9 +4915,6 @@ ApplyAttackToPlayerPokemon:
 	ld b, SONICBOOM_DAMAGE
 	cp SONICBOOM
 	jr z, .storeDamage
-	ld b, DRAGON_RAGE_DAMAGE
-	cp DRAGON_RAGE
-	jr z, .storeDamage
 ; Psywave
 	ld a, [hl]
 	ld b, a

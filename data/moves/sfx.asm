@@ -21,7 +21,7 @@ MoveSoundTable:
 	db SFX_BATTLE_13,          $00, $e0 ; WHIRLWIND
 	db SFX_NOT_VERY_EFFECTIVE, $20, $c0 ; FLY
 	db SFX_BATTLE_14,          $00, $80 ; BIND
-	db SFX_BATTLE_22,          $00, $80 ; SLAM
+	db SFX_BATTLE_22,          $00, $80 ; DRAGON_SLAM
 	db SFX_VINE_WHIP,          $01, $80 ; VINE_WHIP
 	db SFX_BATTLE_20,          $00, $80 ; STOMP
 	db SFX_BATTLE_17,          $f0, $40 ; DOUBLE_KICK

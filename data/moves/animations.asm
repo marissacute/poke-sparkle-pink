@@ -20,7 +20,7 @@ AttackAnimationPointers:
 	dw WhirlwindAnim
 	dw FlyAnim
 	dw BindAnim
-	dw SlamAnim
+	dw DragonSlamAnim
 	dw VineWhipAnim
 	dw StompAnim
 	dw DoubleKickAnim
@@ -345,7 +345,7 @@ BindAnim:
 	battle_anim BIND, SUBANIM_0_BIND, 0, 4
 	db -1 ; end
 
-SlamAnim:
+DragonSlamAnim:
 	battle_anim SLAM, SUBANIM_0_STAR_THRICE, 0, 6
 	db -1 ; end
 

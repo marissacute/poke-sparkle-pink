@@ -325,7 +325,7 @@ LickitungEvosMoves:
 	db 7, STOMP
 	db 15, DISABLE
 	db 23, DEFENSE_CURL
-	db 31, SLAM
+	db 31, BODY_SLAM
 	db 39, SCREECH
 	db 0
 
@@ -445,6 +445,7 @@ GyaradosEvosMoves:
 	db 20, BITE
 	db 25, DRAGON_RAGE
 	db 32, LEER
+	db 36, DRAGON_SLAM
 	db 41, HYDRO_PUMP
 	db 52, HYPER_BEAM
 	db 0
@@ -543,7 +544,7 @@ TangelaEvosMoves:
 	db 32, POISONPOWDER
 	db 36, STUN_SPORE
 	db 39, SLEEP_POWDER
-	db 45, SLAM
+	db 45, MEGA_DRAIN
 	db 49, GROWTH
 	db 0
 
@@ -592,7 +593,7 @@ OnixEvosMoves:
 	db 15, BIND
 	db 19, ROCK_THROW
 	db 25, RAGE
-	db 33, SLAM
+	db 33, DOUBLE_EDGE
 	db 43, HARDEN
 	db 0
 
@@ -949,8 +950,8 @@ DragoniteEvosMoves:
 ; Learnset
 	db 10, THUNDER_WAVE
 	db 20, AGILITY
-	db 35, SLAM
-	db 45, DRAGON_RAGE
+	db 35, DRAGON_RAGE
+	db 45, DRAGON_SLAM
 	db 60, HYPER_BEAM
 	db 0
 
@@ -1140,8 +1141,8 @@ DratiniEvosMoves:
 ; Learnset
 	db 10, THUNDER_WAVE
 	db 20, AGILITY
-	db 30, SLAM
-	db 40, DRAGON_RAGE
+	db 30, DRAGON_RAGE
+	db 40, DRAGON_SLAM
 	db 50, HYPER_BEAM
 	db 0
 
@@ -1152,8 +1153,8 @@ DragonairEvosMoves:
 ; Learnset
 	db 10, THUNDER_WAVE
 	db 20, AGILITY
-	db 35, SLAM
-	db 45, DRAGON_RAGE
+	db 35, DRAGON_RAGE
+	db 45, DRAGON_SLAM
 	db 55, HYPER_BEAM
 	db 0
 
@@ -1197,6 +1198,7 @@ SeadraEvosMoves:
 	db 19, SMOKESCREEN
 	db 24, LEER
 	db 30, WATER_GUN
+	db 35, DRAGON_RAGE
 	db 41, AGILITY
 	db 52, HYDRO_PUMP
 	db 0
@@ -2072,6 +2074,7 @@ CharizardEvosMoves:
 	db 15, LEER
 	db 24, RAGE
 	db 36, SLASH
+	db 40, DRAGON_SLAM
 	db 46, FLAMETHROWER
 	db 55, FIRE_SPIN
 	db 0
@@ -2146,7 +2149,7 @@ BellsproutEvosMoves:
 	db 21, STUN_SPORE
 	db 26, ACID
 	db 33, RAZOR_LEAF
-	db 42, SLAM
+	db 42, MEGA_DRAIN
 	db 0
 
 WeepinbellEvosMoves:
@@ -2160,7 +2163,7 @@ WeepinbellEvosMoves:
 	db 23, STUN_SPORE
 	db 29, ACID
 	db 38, RAZOR_LEAF
-	db 49, SLAM
+	db 49, MEGA_DRAIN
 	db 0
 
 VictreebelEvosMoves:
