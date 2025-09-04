@@ -346,7 +346,7 @@ BindAnim:
 	db -1 ; end
 
 DragonSlamAnim:
-	battle_anim SLAM, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim DRAGON_SLAM, SUBANIM_0_STAR_THRICE, 0, 6
 	db -1 ; end
 
 VineWhipAnim:
