@@ -152,4 +152,5 @@ MonPartyData:
 	nybble ICON_MON       ; Mewtwo
 	nybble ICON_MON       ; Mew
 	nybble ICON_FAIRY     ; Igglybuff
+	nybble ICON_BALL      ; Magnezone
 	end_nybble_array NUM_POKEMON

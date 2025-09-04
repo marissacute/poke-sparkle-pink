@@ -1,10 +1,9 @@
 TitleMons:
 ; mons on the title screen are randomly chosen from here
-IF DEF(_RED)
 	db JIGGLYPUFF
 	db IGGLYBUFF
 	db MAGNEMITE
-	db WEEDLE
+	db MAGNEZONE
 	db NIDORAN_M
 	db SCYTHER
 	db PIKACHU
@@ -17,22 +16,3 @@ IF DEF(_RED)
 	db ONIX
 	db PONYTA
 	db MAGIKARP
-ENDC
-IF DEF(_BLUE)
-	db STARTER2
-	db STARTER1
-	db STARTER3
-	db MANKEY
-	db HITMONLEE
-	db VULPIX
-	db CHANSEY
-	db AERODACTYL
-	db JOLTEON
-	db SNORLAX
-	db GLOOM
-	db POLIWAG
-	db DODUO
-	db PORYGON
-	db GENGAR
-	db RAICHU
-ENDC

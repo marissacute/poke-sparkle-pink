@@ -154,6 +154,7 @@ IF GEN_2_GRAPHICS
 	db PAL_MEWTWO
 	db PAL_MEW
 	db PAL_JIGGLYPUFF ; Igglybuff
+	db PAL_MAGNETON ; Magnezone
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO
 	db PAL_YOUNGSTER
@@ -358,6 +359,7 @@ ELSE
 	db PAL_MEWMON    ; MEWTWO
 	db PAL_MEWMON    ; MEW
 	db PAL_PINKMON   ; IGGLYBUFF
+	db PAL_GRAYMON   ; MAGNEZONE
 	assert_table_length NUM_POKEMON + 1
 ; Trainers use index 0 of MonsterPalettes
 ENDC

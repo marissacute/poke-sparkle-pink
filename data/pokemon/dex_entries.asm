@@ -31,7 +31,7 @@ PokedexEntryPointers:
 	dw PinsirDexEntry
 	dw TangelaDexEntry
 	dw IgglybuffDexEntry
-	dw MissingNoDexEntry
+	dw MagnezoneDexEntry
 	dw GrowlitheDexEntry
 	dw OnixDexEntry
 	dw FearowDexEntry
@@ -1259,6 +1259,13 @@ IgglybuffDexEntry:
 	db 1,0
 	dw 22
 	text_far _IgglybuffDexEntry
+	text_end
+
+MagnezoneDexEntry:
+	db "MAGNET@"
+	db 1,0
+	dw 22
+	text_far _MagnezoneDexEntry
 	text_end
 
 MissingNoDexEntry:

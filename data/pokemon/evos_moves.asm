@@ -41,7 +41,7 @@ EvosMovesPointerTable:
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
 	dw IgglybuffEvosMoves
-	dw MissingNo20EvosMoves
+	dw MagnezoneEvosMoves
 	dw GrowlitheEvosMoves
 	dw OnixEvosMoves
 	dw FearowEvosMoves
@@ -561,10 +561,16 @@ IgglybuffEvosMoves:
 	db 39, DOUBLE_EDGE
 	db 0
 
-MissingNo20EvosMoves:
+MagnezoneEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 21, SONICBOOM
+	db 25, THUNDERSHOCK
+	db 29, SUPERSONIC
+	db 38, THUNDER_WAVE
+	db 46, SWIFT
+	db 54, SCREECH
 	db 0
 
 GrowlitheEvosMoves:
@@ -806,6 +812,7 @@ ElectabuzzEvosMoves:
 
 MagnetonEvosMoves:
 ; Evolutions
+	db EVOLVE_LEVEL, 36, MAGNEZONE
 	db 0
 ; Learnset
 	db 21, SONICBOOM

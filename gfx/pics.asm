@@ -254,6 +254,8 @@ SECTION "Pics 7", ROMX
 IF GEN_2_GRAPHICS
 IgglybuffPicFront::   INCBIN "gfx/pokemon/gsfront/igglybuff.pic"
 IgglybuffPicBack::    INCBIN "gfx/pokemon/gsback/igglybuffb.pic"
+MagnezonePicFront::   INCBIN "gfx/pokemon/gsfront/magnezone.pic"
+MagnezonePicBack::    INCBIN "gfx/pokemon/gsback/magnezoneb.pic"
 GrowlithePicFront::   INCBIN "gfx/pokemon/gsfront/growlithe.pic"
 GrowlithePicBack::    INCBIN "gfx/pokemon/gsback/growlitheb.pic"
 OnixPicFront::        INCBIN "gfx/pokemon/gsfront/onix.pic"
@@ -307,6 +309,8 @@ ENDC
 IF !GEN_2_GRAPHICS
 IgglybuffPicFront::   INCBIN "gfx/pokemon/front/igglybuff.pic"
 IgglybuffPicBack::    INCBIN "gfx/pokemon/back/igglybuffb.pic"
+MagnezonePicFront::   INCBIN "gfx/pokemon/front/magnezone.pic"
+MagnezonePicBack::    INCBIN "gfx/pokemon/back/magnezoneb.pic"
 GrowlithePicFront::   INCBIN "gfx/pokemon/front/growlithe.pic"
 GrowlithePicBack::    INCBIN "gfx/pokemon/back/growlitheb.pic"
 OnixPicFront::        INCBIN "gfx/pokemon/front/onix.pic"

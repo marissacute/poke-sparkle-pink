@@ -1517,3 +1517,13 @@ _IgglybuffDexEntry::
 	next "and be impossible"
 	next "to stop"
 	dex
+
+_MagnezoneDexEntry::
+	text "Three units create"
+	next "magnetism. There"
+	next "have been reports"
+
+	page "of UFO sightings"
+	next "when it flies"
+	next "through the sky"
+	dex
