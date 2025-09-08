@@ -8,8 +8,8 @@ CeruleanCave2FWildMons:
 	db 52, ELECTRODE
 	db 56, CHANSEY
 	db 54, WIGGLYTUFF
-	db 55, DITTO
-	db 60, DITTO
+	db 5, SQUIRTLE
+	db 5, MAGNEMITE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
