@@ -459,9 +459,6 @@ DisplayOptionMenu:
 	hlcoord 1, 6
 	ld de, BattleAnimationOptionText
 	call PlaceString
-	hlcoord 1, 11
-	ld de, BattleStyleOptionText
-	call PlaceString
 	hlcoord 2, 16
 	ld de, OptionMenuCancelText
 	call PlaceString
@@ -514,8 +511,6 @@ DisplayOptionMenu:
 	jr nz, .upPressed
 	cp 8 ; cursor in Battle Animation section?
 	jr z, .cursorInBattleAnimation
-	cp 13 ; cursor in Battle Style section?
-	jr z, .cursorInBattleStyle
 	cp 16 ; cursor on Cancel?
 	jr z, .loop
 .cursorInTextSpeed
@@ -527,30 +522,29 @@ DisplayOptionMenu:
 	ld b, -13
 	ld hl, wOptionsTextSpeedCursorX
 	jr z, .updateMenuVariables
-	ld b, 5
-	cp 3
+	ld b, 5  
+	cp 3    ; text speed -> increase by 5, go to next item
 	inc hl
 	jr z, .updateMenuVariables
-	cp 8
+	ld b, 8  
+	cp 8   ; battle animation -> increase by 8, skip one item (battle style)
+	inc hl
 	inc hl
 	jr z, .updateMenuVariables
-	ld b, 3
-	inc hl
-	jr .updateMenuVariables
+	jr .updateMenuVariables ; this shouldn't happen but fallback anyway
 .upPressed
-	cp 8
+	cp 8  ; battle animation, decrease by five and load text speed
 	ld b, -5
 	ld hl, wOptionsTextSpeedCursorX
 	jr z, .updateMenuVariables
-	cp 13
+	cp 16  ; cancel, decrease by 8 and load battle animation
+	ld b, -8
 	inc hl
 	jr z, .updateMenuVariables
-	cp 16
-	ld b, -3
-	inc hl
-	jr z, .updateMenuVariables
+	; fallback -> we are in text speed. increase by 13 to go to cancel
 	ld b, 13
 	inc hl
+	inc hl ; we skip battle style
 .updateMenuVariables
 	add b
 	ld [wTopMenuItemY], a
@@ -562,11 +556,6 @@ DisplayOptionMenu:
 	ld a, [wOptionsBattleAnimCursorX] ; battle animation cursor X coordinate
 	xor 1 ^ 10 ; toggle between 1 and 10
 	ld [wOptionsBattleAnimCursorX], a
-	jp .eraseOldMenuCursor
-.cursorInBattleStyle
-	ld a, [wOptionsBattleStyleCursorX] ; battle style cursor X coordinate
-	xor 1 ^ 10 ; toggle between 1 and 10
-	ld [wOptionsBattleStyleCursorX], a
 	jp .eraseOldMenuCursor
 .pressedLeftInTextSpeed
 	ld a, [wOptionsTextSpeedCursorX] ; text speed cursor X coordinate
@@ -601,10 +590,6 @@ BattleAnimationOptionText:
 	db   "BATTLE ANIMATION"
 	next " ON       OFF@"
 
-BattleStyleOptionText:
-	db   "BATTLE STYLE"
-	next " SHIFT    SET@"
-
 OptionMenuCancelText:
 	db "CANCEL@"
 
@@ -627,18 +612,9 @@ SetOptionsFromCursorPositions:
 	jr z, .battleAnimationOn
 .battleAnimationOff
 	set BIT_BATTLE_ANIMATION, d
-	jr .checkBattleStyle
+	jr .storeOptions
 .battleAnimationOn
 	res BIT_BATTLE_ANIMATION, d
-.checkBattleStyle
-	ld a, [wOptionsBattleStyleCursorX] ; battle style cursor X coordinate
-	dec a
-	jr z, .battleStyleShift
-.battleStyleSet
-	set BIT_BATTLE_SHIFT, d
-	jr .storeOptions
-.battleStyleShift
-	res BIT_BATTLE_SHIFT, d
 .storeOptions
 	ld a, d
 	ld [wOptions], a
@@ -668,13 +644,7 @@ SetCursorPositionsFromOptions:
 	hlcoord 0, 8
 	call .placeUnfilledRightArrow
 	sla c
-	ld a, 1
-	jr nc, .storeBattleStyleCursorX
 	ld a, 10
-.storeBattleStyleCursorX
-	ld [wOptionsBattleStyleCursorX], a ; battle style cursor X coordinate
-	hlcoord 0, 13
-	call .placeUnfilledRightArrow
 ; cursor in front of Cancel
 	hlcoord 0, 16
 	ld a, 1

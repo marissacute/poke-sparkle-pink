@@ -1369,54 +1369,9 @@ EnemySendOutFirstMon:
 	ld [wLastSwitchInEnemyMonHP + 1], a
 	ld a, 1
 	ld [wCurrentMenuItem], a
-	ld a, [wFirstMonsNotOutYet]
-	dec a
-	jr z, .next4
-	ld a, [wPartyCount]
-	dec a
-	jr z, .next4
-	ld a, [wLinkState]
-	cp LINK_STATE_BATTLING
-	jr z, .next4
-	ld a, [wOptions]
-	bit BIT_BATTLE_SHIFT, a
-	jr nz, .next4
-	ld hl, TrainerAboutToUseText
-	call PrintText
-	hlcoord 0, 7
-	lb bc, 8, 1
-	ld a, TWO_OPTION_MENU
-	ld [wTextBoxID], a
-	call DisplayTextBoxID
-	ld a, [wCurrentMenuItem]
-	and a
-	jr nz, .next4
-	ld a, BATTLE_PARTY_MENU
-	ld [wPartyMenuTypeOrMessageID], a
-	call DisplayPartyMenu
-.next9
-	ld a, 1
-	ld [wCurrentMenuItem], a
-	jr c, .next7
-	ld hl, wPlayerMonNumber
-	ld a, [wWhichPokemon]
-	cp [hl]
-	jr nz, .next6
-	ld hl, AlreadyOutText
-	call PrintText
-.next8
-	call GoBackToPartyMenu
-	jr .next9
-.next6
-	call HasMonFainted
-	jr z, .next8
-	xor a
-	ld [wCurrentMenuItem], a
-.next7
-	call GBPalWhiteOut
-	call LoadHudTilePatterns
-	call LoadScreenTilesFromBuffer1
-.next4
+
+	; we're skipping SHIFT mode completely
+
 	call ClearSprites
 	hlcoord 0, 0
 	lb bc, 4, 11
