@@ -6,7 +6,6 @@ SafariZoneCenterWildMons:
 	db 22, VENONAT
 	db 24, EXEGGCUTE
 	db 31, NIDORINO
-	db 25, EXEGGCUTE
 	db 31, NIDORINA
 	db 23, PINSIR
 	db 23, SCYTHER

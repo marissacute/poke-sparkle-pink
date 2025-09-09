@@ -3,7 +3,7 @@
 	db 105, 130, 120,  40,  45
 	;   hp  atk  def  spd  spc
 
-	db GROUND, ROCK ; type
+	db GROUND, FIGHTING ; type
 	db 60 ; catch rate
 	db 204 ; base exp
 
@@ -19,12 +19,11 @@ ENDC
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        HORN_DRILL,   BODY_SLAM,    \
-	     TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     \
-	     BLIZZARD,     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
-	     SEISMIC_TOSS, RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
+	     TAKE_DOWN,    DOUBLE_EDGE,  STRENGTH,     ROCK_SLIDE,   SUBSTITUTE,   \
+	     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
+	     SEISMIC_TOSS, RAGE,         THUNDER,      EARTHQUAKE,   \
 	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
-	     FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   \
-	     SURF,         STRENGTH
+	     FIRE_BLAST,   SKULL_BASH,   REST,        
 	; end
 
 	db BANK(RhydonPicFront)
