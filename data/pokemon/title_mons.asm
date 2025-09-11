@@ -10,7 +10,7 @@ TitleMons:
 	db CLEFAIRY
 	db DRATINI
 	db ABRA
-	db GASTLY
+	db SYLVEON
 	db DITTO
 	db VULPIX
 	db ONIX

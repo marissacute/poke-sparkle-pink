@@ -155,4 +155,5 @@ MonPartyData:
 	nybble ICON_BALL      ; Magnezone
 	nybble ICON_QUADRUPED ; Espeon
 	nybble ICON_QUADRUPED ; Umbreon
+	nybble ICON_QUADRUPED ; Sylveon
 	end_nybble_array NUM_POKEMON

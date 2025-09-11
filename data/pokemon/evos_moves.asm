@@ -76,7 +76,7 @@ EvosMovesPointerTable:
 	dw FarfetchdEvosMoves
 	dw VenonatEvosMoves
 	dw DragoniteEvosMoves
-	dw MissingNo43EvosMoves
+	dw SylveonEvosMoves
 	dw MissingNo44EvosMoves
 	dw MissingNo45EvosMoves
 	dw DoduoEvosMoves
@@ -787,18 +787,6 @@ GolemEvosMoves:
 	db 43, EXPLOSION
 	db 0
 
-EspeonEvosMoves:
-; Evolutions
-	db 0
-; Learnset
-	db 16, CONFUSION
-	db 23, QUICK_ATTACK
-	db 30, SWIFT
-	db 36, PSYBEAM
-	db 47, PSYCHIC_M
-	db 52, RECOVER
-	db 0
-
 MagmarEvosMoves:
 ; Evolutions
 	db 0
@@ -809,19 +797,6 @@ MagmarEvosMoves:
 	db 48, SMOKESCREEN
 	db 52, SMOG
 	db 55, FLAMETHROWER
-	db 0
-
-UmbreonEvosMoves:
-; Evolutions
-	db 0
-; Learnset
-	db 16, BITE
-	db 23, QUICK_ATTACK
-	db 30, CONFUSE_RAY
-	db 36, FEINT_ATTACK
-	db 42, SCREECH
-	db 47, CRUNCH
-	db 52, RECOVER
 	db 0
 
 ElectabuzzEvosMoves:
@@ -964,12 +939,6 @@ DragoniteEvosMoves:
 	db 42, AGILITY
 	db 48, DRAGON_SLAM
 	db 55, HYPER_BEAM
-	db 0
-
-MissingNo43EvosMoves:
-; Evolutions
-	db 0
-; Learnset
 	db 0
 
 MissingNo44EvosMoves:
@@ -1304,12 +1273,12 @@ EeveeEvosMoves:
 	db EVOLVE_ITEM, WATER_STONE, 1, VAPOREON
 	db EVOLVE_ITEM, SUN_STONE, 1, ESPEON
 	db EVOLVE_ITEM, MOON_STONE, 1, UMBREON
-	; TODO Sylveon on level-up
+	db EVOLVE_LEVEL, 41, SYLVEON
 	db 0
 ; Learnset
 	db 27, QUICK_ATTACK
-	db 31, TAIL_WHIP
-	db 35, BITE
+	db 31, BITE
+	db 35, TAIL_WHIP
 	db 40, FAIRY_WIND
 	db 45, TAKE_DOWN
 	db 0
@@ -1354,6 +1323,41 @@ VaporeonEvosMoves:
 	db 44, HAZE
 	db 48, MIST
 	db 54, HYDRO_PUMP
+	db 0
+
+EspeonEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 27, QUICK_ATTACK
+	db 31, CONFUSION
+	db 36, PSYBEAM
+	db 40, SWIFT
+	db 47, PSYCHIC_M
+	db 52, RECOVER
+	db 0
+
+UmbreonEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 27, QUICK_ATTACK
+	db 31, FEINT_ATTACK
+	db 37, TAIL_WHIP
+	db 40, BITE
+	db 42, SCREECH
+	db 47, CRUNCH
+	db 52, RECOVER
+	db 0
+
+SylveonEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 43, SWIFT
+	db 47, MOONBLAST
+	db 50, LIGHT_SCREEN
+	db 52, DRAININGKISS
 	db 0
 
 MachopEvosMoves:

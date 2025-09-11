@@ -66,7 +66,7 @@ PokedexEntryPointers:
 	dw FarfetchdDexEntry
 	dw VenonatDexEntry
 	dw DragoniteDexEntry
-	dw MissingNoDexEntry
+	dw SylveonDexEntry
 	dw MissingNoDexEntry
 	dw MissingNoDexEntry
 	dw DoduoDexEntry
@@ -1278,8 +1278,15 @@ EspeonDexEntry:
 UmbreonDexEntry:
 	db "MOONLIGHT@"
 	db 3,3
-	dw 60
+	dw 600
 	text_far _UmbreonDexEntry
+	text_end
+
+SylveonDexEntry:
+	db "INTERTWINE@"
+	db 3,3
+	dw 520
+	text_far _SylveonDexEntry
 	text_end
 
 MissingNoDexEntry:

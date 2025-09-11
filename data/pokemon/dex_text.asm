@@ -1545,3 +1545,12 @@ _UmbreonDexEntry::
 	page "to glow, striking"
 	next "fear in the hearts"
 	next "of anyone nearby"
+
+_SylveonDexEntry::
+	text "It wraps its"
+	next "ribbonlike feelers"
+	next "around the arm of"
+
+	page "its beloved"
+	next "trainer and walks"
+	next "with him or her"

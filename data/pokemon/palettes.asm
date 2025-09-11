@@ -157,6 +157,7 @@ IF GEN_2_GRAPHICS
 	db PAL_MAGNETON ; Magnezone
 	db PAL_ESPEON
 	db PAL_UMBREON
+	db PAL_SYLVEON
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO
 	db PAL_YOUNGSTER
@@ -364,6 +365,7 @@ ELSE
 	db PAL_GRAYMON   ; MAGNEZONE
 	db PAL_PINKMON   ; ESPEON
 	db PAL_GRAYMON   ; UMBREON
+	db PAL_PINKMON   ; SYLVEON
 
 	assert_table_length NUM_POKEMON + 1
 ; Trainers use index 0 of MonsterPalettes
