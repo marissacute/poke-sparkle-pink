@@ -1493,8 +1493,10 @@ DugtrioEvosMoves:
 	db 15, GROWL
 	db 19, DIG
 	db 24, SAND_ATTACK
+	db 28, METAL_CLAW
 	db 35, SLASH
-	db 47, EARTHQUAKE
+	db 43, EARTHQUAKE
+	db 47, FLASH_CANNON
 	db 0
 
 VenomothEvosMoves:
@@ -1743,7 +1745,8 @@ MarowakEvosMoves:
 	db 0
 ; Learnset
 	db 25, LEER
-	db 33, FOCUS_ENERGY
+	db 30, SHADOW_BALL
+	db 36, FOCUS_ENERGY
 	db 41, THRASH
 	db 48, BONEMERANG
 	db 55, RAGE
