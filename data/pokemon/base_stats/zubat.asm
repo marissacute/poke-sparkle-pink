@@ -20,7 +20,7 @@ ENDC
 	; tm/hm learnset
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
 	     RAGE,         MEGA_DRAIN,   MIMIC,        DOUBLE_TEAM,  BIDE,         \
-	     SWIFT,        REST,         SUBSTITUTE
+	     SWIFT,        REST,         SUBSTITUTE,   SHADOW_BALL
 	; end
 
 	db BANK(ZubatPicFront)

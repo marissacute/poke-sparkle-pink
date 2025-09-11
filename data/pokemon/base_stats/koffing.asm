@@ -20,7 +20,7 @@ ENDC
 	; tm/hm learnset
 	tmhm TOXIC,        RAGE,         THUNDERBOLT,  THUNDER,      MIMIC,        \
 	     DOUBLE_TEAM,  BIDE,         SELFDESTRUCT, FIRE_BLAST,   REST,         \
-	     EXPLOSION,    SUBSTITUTE
+	     EXPLOSION,    SUBSTITUTE,   SHADOW_BALL
 	; end
 
 	db BANK(KoffingPicFront)

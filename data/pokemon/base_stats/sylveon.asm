@@ -20,8 +20,8 @@ ENDC
 	; tm/hm learnset
 	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         \
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   PSYCHIC_M,    PSYWAVE,      \
-	     TRI_ATTACK
+	     SKULL_BASH,   REST,         SUBSTITUTE,   PSYCHIC_M,    TRI_ATTACK,   \
+	     SHADOW_BALL
 	; end
 
 	db BANK(SylveonPicFront)

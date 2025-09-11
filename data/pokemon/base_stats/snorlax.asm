@@ -24,7 +24,7 @@ ENDC
 	     RAGE,         SOLARBEAM,    THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
 	     FISSURE,      PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  REFLECT,      \
 	     BIDE,         METRONOME,    SELFDESTRUCT, FIRE_BLAST,   SKULL_BASH,   \
-	     REST,         PSYWAVE,      ROCK_SLIDE,   SUBSTITUTE,   SURF,         \
+	     REST,         ROCK_SLIDE,   SUBSTITUTE,   SURF,         SHADOW_BALL,   \
 	     STRENGTH
 	; end
 

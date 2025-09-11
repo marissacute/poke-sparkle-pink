@@ -23,7 +23,7 @@ ENDC
 	     SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         SOLARBEAM,    \
 	     THUNDERBOLT,  THUNDER,      PSYCHIC_M,    TELEPORT,     MIMIC,        \
 	     DOUBLE_TEAM,  REFLECT,      BIDE,         FIRE_BLAST,   SKULL_BASH,   \
-	     REST,         THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   \
+	     REST,         THUNDER_WAVE, SHADOW_BALL,  TRI_ATTACK,   SUBSTITUTE,   \
 	     STRENGTH,     FLASH
 	; end
 

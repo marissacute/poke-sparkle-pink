@@ -21,7 +21,8 @@ ENDC
 	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
 	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         \
 	     THUNDERBOLT,  THUNDER,      DIG,          MIMIC,        DOUBLE_TEAM,  \
-	     BIDE,         SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE
+	     BIDE,         SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE, \
+	     SHADOW_BALL
 	; end
 
 	db BANK(RaticatePicFront)

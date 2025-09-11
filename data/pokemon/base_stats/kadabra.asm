@@ -22,7 +22,7 @@ ENDC
 	     DOUBLE_EDGE,  SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     DIG,          PSYCHIC_M,    TELEPORT,     MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         METRONOME,    SKULL_BASH,   REST,         \
-	     THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   FLASH
+	     THUNDER_WAVE, SHADOW_BALL,  TRI_ATTACK,   SUBSTITUTE,   FLASH
 	; end
 
 	db BANK(KadabraPicFront)
