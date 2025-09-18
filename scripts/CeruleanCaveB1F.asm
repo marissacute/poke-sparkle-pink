@@ -38,3 +38,11 @@ MewtwoBattleText:
 	call PlayCry
 	call WaitForSoundToFinish
 	jp TextScriptEnd
+
+MewtwoEndBattleText:
+    text_far _MewtwoEndBattleText
+    text_asm
+
+MewtwoAfterBattleText:
+	text_far _MewtwoAfterBattleText
+	text_asm
