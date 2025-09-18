@@ -10,7 +10,7 @@ PowerPlantWildMons:
 	db 32, ELECTABUZZ
 	db 35, RAICHU
 	db 5, MAGNEMITE
-	db 25, ELECTRODE
+	db 5, MAGNEMITE
 
 	end_grass_wildmons
 

@@ -9,7 +9,7 @@ CeruleanCave2FWildMons:
 	db 56, CHANSEY
 	db 54, WIGGLYTUFF
 	db 5, SQUIRTLE
-	db 5, MAGNEMITE
+	db 5, SQUIRTLE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

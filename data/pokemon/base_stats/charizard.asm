@@ -1,6 +1,6 @@
 	db DEX_CHARIZARD ; pokedex id
 
-	db  78,  84,  78, 100,  85
+	db  88,  94,  88, 120,  110
 	;   hp  atk  def  spd  spc
 
 	db FIRE, DRAGON ; type

@@ -9,7 +9,7 @@ CeruleanCaveB1FWildMons:
 	db 57, SANDSLASH
 	db 65, DITTO
 	db 5, CHARMANDER
-	db 5, DRATINI
+	db 5, CHARMANDER
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

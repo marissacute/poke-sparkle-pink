@@ -8,7 +8,7 @@ MtMoonB2FWildMons:
 	db 10, PARAS
 	db 9, CLEFAIRY
 	db 10, CLEFAIRY
-	db 12, ZUBAT
+	db 5, JIGGLYPUFF
 	db 5, JIGGLYPUFF
 	end_grass_wildmons
 

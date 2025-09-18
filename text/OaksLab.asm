@@ -33,7 +33,7 @@ _OaksLabYouWantCharmanderText::
 
 _OaksLabYouWantSquirtleText::
 	text "So! You want the"
-	line "steel #MON,"
+	line "magnet #MON,"
 	cont "MAGNEMITE?"
 	done
 
@@ -359,6 +359,13 @@ _OaksLabRivalLeaveItAllToMeText::
 	done
 
 _OaksLabScientistText::
-	text "I study #MON as"
-	line "PROF.OAK's AIDE."
+	text "Recently, some new"
+	line "#MON were"
+	cont "discovered."
+
+	para "They seem to be"
+	line "related to"
+	cont "#MON that we"
+	cont "already knew"
+	cont "about."
 	done

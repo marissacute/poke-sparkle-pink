@@ -57,8 +57,8 @@ _MewtwoAfterBattleText::
 	cont "each other's"
 	cont "weaknesses, and"
 	cont "build on each"
-	cont "other's strengths."
+	cont "others strengths."
 
 	para "Thank you for"
-	line "showing this to me."
+	line "showing this."
 	text_end
