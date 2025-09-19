@@ -183,8 +183,8 @@ EvosMovesPointerTable:
 	dw AerodactylEvosMoves
 	dw MissingNoACEvosMoves
 	dw MagnemiteEvosMoves
-	dw MissingNoAEEvosMoves
-	dw MissingNoAFEvosMoves
+	dw ScizorEvosMoves
+	dw SteelixEvosMoves
 	dw CharmanderEvosMoves
 	dw SquirtleEvosMoves
 	dw CharmeleonEvosMoves
@@ -492,6 +492,7 @@ GastlyEvosMoves:
 
 ScytherEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, METAL_COAT, 1, SCIZOR
 	db 0
 ; Learnset
 	db 17, LEER
@@ -595,6 +596,7 @@ GrowlitheEvosMoves:
 
 OnixEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, METAL_COAT, 1, STEELIX
 	db 0
 ; Learnset
 	db 15, BIND
@@ -2056,16 +2058,33 @@ MagnemiteEvosMoves:
 	db 47, SCREECH
 	db 0
 
-MissingNoAEEvosMoves:
+ScizorEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 17, LEER
+	db 20, FOCUS_ENERGY
+	db 22, FURY_CUTTER
+	db 24, DOUBLE_TEAM
+	db 29, SLASH
+	db 35, X_SCISSOR
+	db 39, METAL_CLAW
+	db 42, AGILITY
+	db 49, SWORDS_DANCE
 	db 0
 
-MissingNoAFEvosMoves:
+SteelixEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 15, BIND
+	db 19, ROCK_THROW
+	db 25, METAL_CLAW
+	db 28, HARDEN
+	db 33, ROCK_SLIDE
+	db 43, DOUBLE_EDGE
+	db 49, FLASH_CANNON
+	db 55, CRUNCH
 	db 0
 
 CharmanderEvosMoves:

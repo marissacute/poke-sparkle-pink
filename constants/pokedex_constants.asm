@@ -162,5 +162,7 @@
 	const DEX_SYLVEON    ; 156
 	const DEX_PICHU      ; 157
 	const DEX_MISDREAVUS ; 158
+	const DEX_SCIZOR     ; 159
+	const DEX_STEELIX    ; 160
 
 DEF NUM_POKEMON EQU const_value - 1

@@ -1536,6 +1536,7 @@ _EspeonDexEntry::
 	page "such as the weath-"
 	next "er or its foe's"
 	next "next move"
+	dex
 
 _UmbreonDexEntry::
 	text "When darkness"
@@ -1545,6 +1546,7 @@ _UmbreonDexEntry::
 	page "to glow, striking"
 	next "fear in the hearts"
 	next "of anyone nearby"
+	dex
 
 _SylveonDexEntry::
 	text "It wraps its"
@@ -1554,6 +1556,7 @@ _SylveonDexEntry::
 	page "its beloved"
 	next "trainer and walks"
 	next "with him or her"
+	dex
 
 _PichuDexEntry::
 	text "It is not yet"
@@ -1563,6 +1566,7 @@ _PichuDexEntry::
 	page "It may send out a"
 	next "jolt if amused"
 	next "or startled"
+	dex
 
 _MisdreavusDexEntry::
 	text "It likes playing"
@@ -1572,3 +1576,23 @@ _MisdreavusDexEntry::
 	page "and wailing to"
 	next "startle people at"
 	next "night"
+	dex
+
+_ScizorDexEntry::
+	text "Its wings are not"
+	next "used for flying."
+	next "They are flapped"
+
+	page "at high speed to"
+	next "adjust its body"
+	next "temperature"
+	dex
+
+_SteelixDexEntry::
+	text "Its body has been"
+	next "compressed deep"
+	next "under the ground."
+
+	page "As a result, it is"
+	next "even harder than a"
+	next "diamond"

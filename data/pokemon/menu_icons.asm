@@ -158,4 +158,6 @@ MonPartyData:
 	nybble ICON_QUADRUPED ; Sylveon
 	nybble ICON_FAIRY     ; Pichu
 	nybble ICON_FAIRY     ; Misdreavus
+	nybble ICON_BUG       ; Scizor
+	nybble ICON_SNAKE     ; Steelix
 	end_nybble_array NUM_POKEMON

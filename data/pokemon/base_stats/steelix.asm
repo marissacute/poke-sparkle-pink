@@ -1,6 +1,6 @@
-	db DEX_ONIX ; pokedex id
+	db DEX_STEELIX ; pokedex id
 
-	db  55,  75, 160,  95,  30
+	db  75,  85, 200,  30,  55
 	;   hp  atk  def  spd  spc
 
 	db ROCK, ROCK ; type
@@ -8,11 +8,11 @@
 	db 108 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/onix.pic", 0, 1 ; sprite dimensions
+	INCBIN "gfx/pokemon/gsfront/steelix.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/onix.pic", 0, 1 ; sprite dimensions
+	INCBIN "gfx/pokemon/front/steelix.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw OnixPicFront, OnixPicBack
+	dw SteelixPicFront, SteelixPicBack
 
 	db TACKLE, SCREECH, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
@@ -24,4 +24,4 @@ ENDC
 	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end
 
-	db BANK(OnixPicFront)
+	db BANK(SteelixPicFront)

@@ -1303,6 +1303,20 @@ MisdreavusDexEntry:
 	text_far _MisdreavusDexEntry
 	text_end  
 
+ScizorDexEntry:
+  	db "PINCER@"
+	db 5,11
+	dw 260
+	text_far _ScizorDexEntry
+	text_end  
+
+SteelixDexEntry:
+  	db "IRON SNAKE@"
+	db 30,2
+	dw 880
+	text_far _SteelixDexEntry
+	text_end  
+
 MissingNoDexEntry:
 	db "???@"
 	db 10 ; 1.0 m
