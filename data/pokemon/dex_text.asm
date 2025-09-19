@@ -1563,3 +1563,12 @@ _PichuDexEntry::
 	page "It may send out a"
 	next "jolt if amused"
 	next "or startled"
+
+_MisdreavusDexEntry::
+	text "It likes playing"
+	next "mischievous tricks"
+	next "such as screaming"
+
+	page "and wailing to"
+	next "startle people at"
+	next "night"

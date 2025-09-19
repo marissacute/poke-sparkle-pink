@@ -161,5 +161,6 @@
 	const DEX_UMBREON    ; 155
 	const DEX_SYLVEON    ; 156
 	const DEX_PICHU      ; 157
+	const DEX_MISDREAVUS ; 158
 
 DEF NUM_POKEMON EQU const_value - 1

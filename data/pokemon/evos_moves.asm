@@ -88,7 +88,7 @@ EvosMovesPointerTable:
 	dw DittoEvosMoves
 	dw MeowthEvosMoves
 	dw KrabbyEvosMoves
-	dw MissingNo4FEvosMoves
+	dw PichuEvosMoves
 	dw MissingNo50EvosMoves
 	dw MissingNo51EvosMoves
 	dw VulpixEvosMoves
@@ -155,7 +155,7 @@ EvosMovesPointerTable:
 	dw WeezingEvosMoves
 	dw PersianEvosMoves
 	dw MarowakEvosMoves
-	dw MissingNo92EvosMoves
+	dw MisdreavusEvosMoves
 	dw HaunterEvosMoves
 	dw AbraEvosMoves
 	dw AlakazamEvosMoves
@@ -1048,10 +1048,16 @@ KrabbyEvosMoves:
 	db 40, HARDEN
 	db 0
 
-MissingNo4FEvosMoves:
+PichuEvosMoves:
 ; Evolutions
+	db EVOLVE_LEVEL, 15, PIKACHU
 	db 0
 ; Learnset
+	db 9, THUNDER_WAVE
+	db 16, QUICK_ATTACK
+	db 26, SWIFT
+	db 33, AGILITY
+	db 43, THUNDER
 	db 0
 
 MissingNo50EvosMoves:
@@ -1752,10 +1758,15 @@ MarowakEvosMoves:
 	db 55, RAGE
 	db 0
 
-MissingNo92EvosMoves:
+MisdreavusEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 12, CONFUSE_RAY
+	db 19, FAIRY_WIND
+	db 27, PSYBEAM
+	db 33, SHADOW_BALL
+	db 43, MOONBLAST
 	db 0
 
 HaunterEvosMoves:

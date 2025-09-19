@@ -276,5 +276,6 @@ IF GEN_2_GRAPHICS
 	const PAL_UMBREON       ; $EC
 	const PAL_ESPEON        ; $ED
 	const PAL_SYLVEON       ; $EF
+	const PAL_MISDREAVUS    ; $F0
 ENDC
 DEF NUM_SGB_PALS EQU const_value

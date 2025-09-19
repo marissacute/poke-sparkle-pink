@@ -1296,6 +1296,13 @@ PichuDexEntry:
 	text_far _PichuDexEntry
 	text_end
 
+MisdreavusDexEntry:
+  	db "SCREECH@"
+	db 2,4
+	dw 20
+	text_far _MisdreavusDexEntry
+	text_end  
+
 MissingNoDexEntry:
 	db "???@"
 	db 10 ; 1.0 m

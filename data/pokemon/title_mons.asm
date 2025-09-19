@@ -9,7 +9,7 @@ TitleMons:
 	db PICHU
 	db CLEFAIRY
 	db DRATINI
-	db ABRA
+	db MISDREAVUS
 	db SYLVEON
 	db DITTO
 	db VULPIX

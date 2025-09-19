@@ -157,4 +157,5 @@ MonPartyData:
 	nybble ICON_QUADRUPED ; Umbreon
 	nybble ICON_QUADRUPED ; Sylveon
 	nybble ICON_FAIRY     ; Pichu
+	nybble ICON_FAIRY     ; Misdreavus
 	end_nybble_array NUM_POKEMON

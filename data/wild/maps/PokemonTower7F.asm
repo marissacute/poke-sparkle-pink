@@ -1,7 +1,7 @@
 PokemonTower7FWildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 21, GASTLY
-	db 22, GASTLY
+	db 16, MISDREAVUS
+	db 18, MISDREAVUS
 	db 23, GASTLY
 	db 24, GASTLY
 	db 20, GASTLY

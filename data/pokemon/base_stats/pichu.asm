@@ -1,4 +1,4 @@
-	db DEX_PIKACHU ; pokedex id
+	db DEX_PICHU ; pokedex id
 
 	db  20,  40,  15,  60,  35
 	;   hp  atk  def  spd  spc
