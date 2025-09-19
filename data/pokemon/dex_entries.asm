@@ -1257,7 +1257,7 @@ VictreebelDexEntry:
 IgglybuffDexEntry:
 	db "BALLOON@"
 	db 1,0
-	dw 22
+	dw 20
 	text_far _IgglybuffDexEntry
 	text_end
 
@@ -1287,6 +1287,13 @@ SylveonDexEntry:
 	db 3,3
 	dw 520
 	text_far _SylveonDexEntry
+	text_end
+
+PichuDexEntry:
+	db "TINY MOUSE@"
+	db 1,0
+	dw 40
+	text_far _PichuDexEntry
 	text_end
 
 MissingNoDexEntry:

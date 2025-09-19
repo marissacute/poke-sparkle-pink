@@ -156,4 +156,5 @@ INCLUDE "data/pokemon/base_stats/magnezone.asm"
 INCLUDE "data/pokemon/base_stats/espeon.asm"
 INCLUDE "data/pokemon/base_stats/umbreon.asm"
 INCLUDE "data/pokemon/base_stats/sylveon.asm"
+INCLUDE "data/pokemon/base_stats/pichu.asm"
 	assert_table_length NUM_POKEMON ; 

@@ -6,7 +6,7 @@ TitleMons:
 	db MAGNEZONE
 	db ESPEON
 	db UMBREON
-	db PIKACHU
+	db PICHU
 	db CLEFAIRY
 	db DRATINI
 	db ABRA

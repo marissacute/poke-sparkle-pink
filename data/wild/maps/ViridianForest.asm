@@ -8,9 +8,9 @@ ViridianForestWildMons:
 	db  4, KAKUNA
 	db  6, METAPOD
 	db  4, METAPOD
-	db  3, PIKACHU
-	db  3, PIKACHU
-	db  5, PIKACHU
+	db  3, PICHU
+	db  3, PICHU
+	db  5, PICHU
 
 	end_grass_wildmons
 

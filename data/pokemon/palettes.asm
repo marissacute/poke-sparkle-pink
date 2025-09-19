@@ -158,6 +158,7 @@ IF GEN_2_GRAPHICS
 	db PAL_ESPEON
 	db PAL_UMBREON
 	db PAL_SYLVEON
+	db PAL_PIKACHU ; Pichu and Pikachu have the same colours
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO
 	db PAL_YOUNGSTER
@@ -366,6 +367,7 @@ ELSE
 	db PAL_PINKMON   ; ESPEON
 	db PAL_GRAYMON   ; UMBREON
 	db PAL_PINKMON   ; SYLVEON
+	db PAL_YELLOWMON ; PICHU
 
 	assert_table_length NUM_POKEMON + 1
 ; Trainers use index 0 of MonsterPalettes

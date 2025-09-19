@@ -1554,3 +1554,12 @@ _SylveonDexEntry::
 	page "its beloved"
 	next "trainer and walks"
 	next "with him or her"
+
+_PichuDexEntry::
+	text "It is not yet"
+	next "skilled at storing"
+	next "electricity."
+
+	page "It may send out a"
+	next "jolt if amused"
+	next "or startled"
