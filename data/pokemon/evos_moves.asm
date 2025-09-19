@@ -2018,7 +2018,8 @@ AerodactylEvosMoves:
 ; Learnset
 	db 33, SUPERSONIC
 	db 38, BITE
-	db 45, TAKE_DOWN
+	db 43, ROCK_SLIDE
+	db 49, TAKE_DOWN
 	db 54, HYPER_BEAM
 	db 0
 
