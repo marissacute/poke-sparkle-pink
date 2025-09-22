@@ -1596,6 +1596,7 @@ _SteelixDexEntry::
 	page "As a result, it is"
 	next "even harder than a"
 	next "diamond"
+	dex
 
 _CrobatDexEntry::
 	text "It flies so si-"
@@ -1605,3 +1606,15 @@ _CrobatDexEntry::
 	page "wings that it may"
 	next "not be noticed"
 	next "even when nearby"
+	dex
+
+_BellossomDexEntry::
+	text "Plentiful in the"
+	next "tropics. When it"
+	next "dances, its petals"
+
+	page "rub together and"
+	next "make a pleasant"
+	next "ringing sound "
+	dex
+

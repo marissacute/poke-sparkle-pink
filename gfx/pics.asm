@@ -811,6 +811,8 @@ SteelixPicFront::     INCBIN "gfx/pokemon/gsfront/steelix.pic"
 SteelixPicBack::      INCBIN "gfx/pokemon/gsback/steelixb.pic"
 CrobatPicFront::      INCBIN "gfx/pokemon/gsfront/crobat.pic"
 CrobatPicBack::       INCBIN "gfx/pokemon/gsback/crobatb.pic"
+BellossomPicFront::   INCBIN "gfx/pokemon/gsfront/bellossom.pic"
+BellossomPicBack::    INCBIN "gfx/pokemon/gsback/bellossomb.pic"
 ENDC
 
 IF !GEN_2_GRAPHICS
@@ -848,4 +850,6 @@ SteelixPicFront::     INCBIN "gfx/pokemon/gsfront/steelix.pic"
 SteelixPicBack::      INCBIN "gfx/pokemon/gsback/steelixb.pic"
 CrobatPicFront::      INCBIN "gfx/pokemon/gsfront/crobat.pic"
 CrobatPicBack::       INCBIN "gfx/pokemon/gsback/crobatb.pic"
+BellossomPicFront::   INCBIN "gfx/pokemon/gsfront/bellossom.pic"
+BellossomPicBack::    INCBIN "gfx/pokemon/gsback/bellossomb.pic"
 ENDC

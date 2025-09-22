@@ -1328,6 +1328,14 @@ CrobatDexEntry:
 	text_far _CrobatDexEntry
 	text_end  
 
+BellossomDexEntry:
+  	db "Flower@"
+	db 4
+	dw 58
+	text_far _BellossomDexEntry
+	text_end  
+
+
 MissingNoDexEntry:
 	db "???@"
 	db 10 ; 1.0 m

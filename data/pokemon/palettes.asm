@@ -163,6 +163,7 @@ IF GEN_2_GRAPHICS
 	db PAL_SCIZOR
 	db PAL_STEELIX
 	db PAL_GOLBAT ; Crobat and Golbat have the same colours
+	db PAL_BELLOSSOM
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO
 	db PAL_YOUNGSTER
@@ -376,6 +377,7 @@ ELSE
 	db PAL_REDMON    ; SCIZOR
 	db PAL_GRAYMON   ; STEELIX
 	db PAL_PURPLEMON ; CROBAT
+	db PAL_GREENMON  ; BELLOSSOM
 
 	assert_table_length NUM_POKEMON + 1
 ; Trainers use index 0 of MonsterPalettes

@@ -70,7 +70,7 @@ EvosMovesPointerTable:
 	dw SeelEvosMoves
 	dw DiglettEvosMoves
 	dw TaurosEvosMoves
-	dw MissingNo3DEvosMoves
+	dw BellossomEvosMoves
 	dw MissingNo3EEvosMoves
 	dw MissingNo3FEvosMoves
 	dw FarfetchdEvosMoves
@@ -889,12 +889,6 @@ TaurosEvosMoves:
 	db 35, LEER
 	db 44, RAGE
 	db 51, TAKE_DOWN
-	db 0
-
-MissingNo3DEvosMoves:
-; Evolutions
-	db 0
-; Learnset
 	db 0
 
 MissingNo3EEvosMoves:
@@ -2194,6 +2188,7 @@ OddishEvosMoves:
 GloomEvosMoves:
 ; Evolutions
 	db EVOLVE_ITEM, LEAF_STONE, 1, VILEPLUME
+	db EVOLVE_ITEM, SUN_STONE, 1, BELLOSSOM
 	db 0
 ; Learnset
 	db 15, POISONPOWDER
@@ -2201,6 +2196,15 @@ GloomEvosMoves:
 	db 19, SLEEP_POWDER
 	db 28, ACID
 	db 38, PETAL_DANCE
+	db 52, SOLARBEAM
+	db 0
+
+BellossomEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 35, MEGA_DRAIN
+	db 40, PETAL_DANCE
 	db 52, SOLARBEAM
 	db 0
 

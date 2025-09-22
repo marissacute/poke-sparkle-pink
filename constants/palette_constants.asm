@@ -279,5 +279,6 @@ IF GEN_2_GRAPHICS
 	const PAL_MISDREAVUS    ; $F0
 	const PAL_SCIZOR        ; $F1
 	const PAL_STEELIX       ; $F2
+	const PAL_BELLOSSOM     ; $F3
 ENDC
 DEF NUM_SGB_PALS EQU const_value

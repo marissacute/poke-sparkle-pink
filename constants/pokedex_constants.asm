@@ -165,5 +165,6 @@
 	const DEX_SCIZOR     ; 159
 	const DEX_STEELIX    ; 160
 	const DEX_CROBAT     ; 161
+	const DEX_BELLOSSOM  ; 162
 
 DEF NUM_POKEMON EQU const_value - 1
