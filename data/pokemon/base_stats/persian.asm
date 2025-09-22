@@ -1,27 +1,27 @@
-	db DEX_PERSIAN ; pokedex id
+    db DEX_PERSIAN ; pokedex id
 
-	db  65,  70,  60, 115,  65
-	;   hp  atk  def  spd  spc
+    db  65,  70,  60, 115,  65
+    ;   hp  atk  def  spd  spc
 
-	db NORMAL, NORMAL ; type
-	db 90 ; catch rate
-	db 148 ; base exp
+    db NORMAL, NORMAL ; type
+    db 90 ; catch rate
+    db 148 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/persian.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/persian.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/persian.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/persian.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw PersianPicFront, PersianPicBack
+    dw PersianPicFront, PersianPicBack
 
-	db SCRATCH, GROWL, BITE, SCREECH ; level 1 learnset
-	db GROWTH_MEDIUM_FAST ; growth rate
+    db SCRATCH, GROWL, BITE, SCREECH ; level 1 learnset
+    db GROWTH_MEDIUM_FAST ; growth rate
 
-	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
-	     WATER_GUN,    HYPER_BEAM,   PAY_DAY,      RAGE,         THUNDERBOLT,  \
-	     THUNDER,      MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   SHADOW_BALL
-	; end
+    ; tm/hm learnset
+    tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
+         WATER_GUN,    HYPER_BEAM,   PAY_DAY,      RAGE,         THUNDERBOLT,  \
+         THUNDER,      MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        \
+         SKULL_BASH,   REST,         SUBSTITUTE,   SHADOW_BALL
+    ; end
 
-	db BANK(PersianPicFront)
+    db BANK(PersianPicFront)

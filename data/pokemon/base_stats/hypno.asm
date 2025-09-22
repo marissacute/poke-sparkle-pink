@@ -1,29 +1,29 @@
-	db DEX_HYPNO ; pokedex id
+    db DEX_HYPNO ; pokedex id
 
-	db  85,  73,  70,  67, 115
-	;   hp  atk  def  spd  spc
+    db  85,  73,  70,  67, 115
+    ;   hp  atk  def  spd  spc
 
-	db PSYCHIC_TYPE, DARK ; type
-	db 75 ; catch rate
-	db 165 ; base exp
+    db PSYCHIC_TYPE, DARK ; type
+    db 75 ; catch rate
+    db 165 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/hypno.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/hypno.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/hypno.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/hypno.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw HypnoPicFront, HypnoPicBack
+    dw HypnoPicFront, HypnoPicBack
 
-	db POUND, HYPNOSIS, DISABLE, CONFUSION ; level 1 learnset
-	db GROWTH_MEDIUM_FAST ; growth rate
+    db POUND, HYPNOSIS, DISABLE, CONFUSION ; level 1 learnset
+    db GROWTH_MEDIUM_FAST ; growth rate
 
-	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     DOUBLE_EDGE,  HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         PSYCHIC_M,    TELEPORT,     MIMIC,        DOUBLE_TEAM,  \
-	     REFLECT,      BIDE,         METRONOME,    SKULL_BASH,   DREAM_EATER,  \
-	     REST,         THUNDER_WAVE, SHADOW_BALL,  TRI_ATTACK,   SUBSTITUTE,   \
-	     FLASH
-	; end
+    ; tm/hm learnset
+    tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
+         DOUBLE_EDGE,  HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
+         RAGE,         PSYCHIC_M,    TELEPORT,     MIMIC,        DOUBLE_TEAM,  \
+         REFLECT,      BIDE,         METRONOME,    SKULL_BASH,   DREAM_EATER,  \
+         REST,         THUNDER_WAVE, SHADOW_BALL,  TRI_ATTACK,   SUBSTITUTE,   \
+         FLASH
+    ; end
 
-	db BANK(HypnoPicFront)
+    db BANK(HypnoPicFront)

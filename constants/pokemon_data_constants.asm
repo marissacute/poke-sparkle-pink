@@ -67,32 +67,32 @@ DEF HOF_TEAM_CAPACITY EQU 50
 
 ; mon data locations
 ; Note that some values are not supported by all functions that use these values.
-	const_def
-	const PLAYER_PARTY_DATA ; 0
-	const ENEMY_PARTY_DATA  ; 1
-	const BOX_DATA          ; 2
-	const DAYCARE_DATA      ; 3
-	const BATTLE_MON_DATA   ; 4
+    const_def
+    const PLAYER_PARTY_DATA ; 0
+    const ENEMY_PARTY_DATA  ; 1
+    const BOX_DATA          ; 2
+    const DAYCARE_DATA      ; 3
+    const BATTLE_MON_DATA   ; 4
 
 
 ; See data/pokemon/evos_moves.asm
 
 ; Evolution types
-	const_def 1
-	const EVOLVE_LEVEL ; 1
-	const EVOLVE_ITEM  ; 2
-	const EVOLVE_TRADE ; 3
+    const_def 1
+    const EVOLVE_LEVEL ; 1
+    const EVOLVE_ITEM  ; 2
+    const EVOLVE_TRADE ; 3
 
 
 ; wMonHGrowthRate values
 ; GrowthRateTable indexes (see data/growth_rates.asm)
-	const_def
-	const GROWTH_MEDIUM_FAST
-	const GROWTH_SLIGHTLY_FAST
-	const GROWTH_SLIGHTLY_SLOW
-	const GROWTH_MEDIUM_SLOW
-	const GROWTH_FAST
-	const GROWTH_SLOW
+    const_def
+    const GROWTH_MEDIUM_FAST
+    const GROWTH_SLIGHTLY_FAST
+    const GROWTH_SLIGHTLY_SLOW
+    const GROWTH_MEDIUM_SLOW
+    const GROWTH_FAST
+    const GROWTH_SLOW
 DEF NUM_GROWTH_RATES EQU const_value
 
 ; wild data (see data/wild/maps/*.asm)

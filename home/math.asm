@@ -6,12 +6,12 @@
 ; OUTPUT
 ; FF95-FF98 = product
 Multiply::
-	push hl
-	push bc
-	callfar _Multiply
-	pop bc
-	pop hl
-	ret
+    push hl
+    push bc
+    callfar _Multiply
+    pop bc
+    pop hl
+    ret
 
 ; function to do division
 ; all values are big endian
@@ -23,11 +23,11 @@ Multiply::
 ; FF95-FF98 = quotient
 ; FF99 = remainder
 Divide::
-	push hl
-	push de
-	push bc
-	homecall _Divide
-	pop bc
-	pop de
-	pop hl
-	ret
+    push hl
+    push de
+    push bc
+    homecall _Divide
+    pop bc
+    pop de
+    pop hl
+    ret

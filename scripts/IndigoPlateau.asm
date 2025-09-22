@@ -1,5 +1,5 @@
 IndigoPlateau_Script:
-	ret
+    ret
 
 IndigoPlateau_TextPointers:
-	def_text_pointers
+    def_text_pointers

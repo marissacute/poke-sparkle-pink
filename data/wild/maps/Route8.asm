@@ -1,18 +1,18 @@
 Route8WildMons:
-	def_grass_wildmons 15 ; encounter rate
+    def_grass_wildmons 15 ; encounter rate
 
-	db 18, PIDGEY
-	db 19, ODDISH
-	db 19, BELLSPROUT
-	db 22, ODDISH
-	db 22, PIDGEY
-	db 18, MANKEY
-	db 18, GROWLITHE
-	db 18, VULPIX
-	db 19, MEOWTH
-	db 20, MEOWTH
+    db 18, PIDGEY
+    db 19, ODDISH
+    db 19, BELLSPROUT
+    db 22, ODDISH
+    db 22, PIDGEY
+    db 18, MANKEY
+    db 18, GROWLITHE
+    db 18, VULPIX
+    db 19, MEOWTH
+    db 20, MEOWTH
 
-	end_grass_wildmons
+    end_grass_wildmons
 
-	def_water_wildmons 0 ; encounter rate
-	end_water_wildmons
+    def_water_wildmons 0 ; encounter rate
+    end_water_wildmons

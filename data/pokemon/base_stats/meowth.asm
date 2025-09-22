@@ -1,27 +1,27 @@
-	db DEX_MEOWTH ; pokedex id
+    db DEX_MEOWTH ; pokedex id
 
-	db  40,  45,  35,  90,  40
-	;   hp  atk  def  spd  spc
+    db  40,  45,  35,  90,  40
+    ;   hp  atk  def  spd  spc
 
-	db NORMAL, NORMAL ; type
-	db 255 ; catch rate
-	db 69 ; base exp
+    db NORMAL, NORMAL ; type
+    db 255 ; catch rate
+    db 69 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/meowth.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/meowth.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/meowth.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/meowth.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw MeowthPicFront, MeowthPicBack
+    dw MeowthPicFront, MeowthPicBack
 
-	db SCRATCH, GROWL, NO_MOVE, NO_MOVE ; level 1 learnset
-	db GROWTH_MEDIUM_FAST ; growth rate
+    db SCRATCH, GROWL, NO_MOVE, NO_MOVE ; level 1 learnset
+    db GROWTH_MEDIUM_FAST ; growth rate
 
-	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
-	     WATER_GUN,    PAY_DAY,      RAGE,         THUNDERBOLT,  THUNDER,      \
-	     MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   SHADOW_BALL
-	; end
+    ; tm/hm learnset
+    tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
+         WATER_GUN,    PAY_DAY,      RAGE,         THUNDERBOLT,  THUNDER,      \
+         MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        SKULL_BASH,   \
+         REST,         SUBSTITUTE,   SHADOW_BALL
+    ; end
 
-	db BANK(MeowthPicFront)
+    db BANK(MeowthPicFront)

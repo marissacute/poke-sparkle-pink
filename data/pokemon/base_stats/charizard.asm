@@ -1,29 +1,29 @@
-	db DEX_CHARIZARD ; pokedex id
+    db DEX_CHARIZARD ; pokedex id
 
-	db  88,  94,  88, 120,  110
-	;   hp  atk  def  spd  spc
+    db  88,  94,  88, 120,  110
+    ;   hp  atk  def  spd  spc
 
-	db FIRE, DRAGON ; type
-	db 45 ; catch rate
-	db 209 ; base exp
+    db FIRE, DRAGON ; type
+    db 45 ; catch rate
+    db 209 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/charizard.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/charizard.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/charizard.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/charizard.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw CharizardPicFront, CharizardPicBack
+    dw CharizardPicFront, CharizardPicBack
 
-	db SCRATCH, GROWL, EMBER, LEER ; level 1 learnset
-	db GROWTH_MEDIUM_SLOW ; growth rate
+    db SCRATCH, GROWL, EMBER, LEER ; level 1 learnset
+    db GROWTH_MEDIUM_SLOW ; growth rate
 
-	; tm/hm learnset
-	tmhm MEGA_PUNCH,   SWORDS_DANCE, MEGA_KICK,    TOXIC,        BODY_SLAM,    \
-	     TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   SUBMISSION,   COUNTER,      \
-	     SEISMIC_TOSS, RAGE,         DRAGON_RAGE,  EARTHQUAKE,   FISSURE,      \
-	     DIG,          MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     FIRE_BLAST,   SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     CUT,          STRENGTH
-	; end
+    ; tm/hm learnset
+    tmhm MEGA_PUNCH,   SWORDS_DANCE, MEGA_KICK,    TOXIC,        BODY_SLAM,    \
+         TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   SUBMISSION,   COUNTER,      \
+         SEISMIC_TOSS, RAGE,         DRAGON_RAGE,  EARTHQUAKE,   FISSURE,      \
+         DIG,          MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
+         FIRE_BLAST,   SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE,   \
+         CUT,          STRENGTH
+    ; end
 
-	db BANK(CharizardPicFront)
+    db BANK(CharizardPicFront)

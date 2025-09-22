@@ -1,282 +1,282 @@
 AnimatePartyMon_ForceSpeed1:
-	xor a
-	ld [wCurrentMenuItem], a
-	ld b, a
-	inc a
-	jr GetAnimationSpeed
+    xor a
+    ld [wCurrentMenuItem], a
+    ld b, a
+    inc a
+    jr GetAnimationSpeed
 
 ; wPartyMenuHPBarColors contains the party mon's health bar colors
 ; 0: green
 ; 1: yellow
 ; 2: red
 AnimatePartyMon::
-	ld hl, wPartyMenuHPBarColors
-	ld a, [wCurrentMenuItem]
-	ld c, a
-	ld b, 0
-	add hl, bc
-	ld a, [hl]
+    ld hl, wPartyMenuHPBarColors
+    ld a, [wCurrentMenuItem]
+    ld c, a
+    ld b, 0
+    add hl, bc
+    ld a, [hl]
 
 GetAnimationSpeed:
-	ld c, a
-	ld hl, PartyMonSpeeds
-	add hl, bc
-	ld a, [wOnSGB]
-	xor $1
-	add [hl]
-	ld c, a
-	add a
-	ld b, a
-	ld a, [wAnimCounter]
-	and a
-	jr z, .resetSprites
-	cp c
-	jr z, .animateSprite
+    ld c, a
+    ld hl, PartyMonSpeeds
+    add hl, bc
+    ld a, [wOnSGB]
+    xor $1
+    add [hl]
+    ld c, a
+    add a
+    ld b, a
+    ld a, [wAnimCounter]
+    and a
+    jr z, .resetSprites
+    cp c
+    jr z, .animateSprite
 .incTimer
-	inc a
-	cp b
-	jr nz, .skipResetTimer
-	xor a ; reset timer
+    inc a
+    cp b
+    jr nz, .skipResetTimer
+    xor a ; reset timer
 .skipResetTimer
-	ld [wAnimCounter], a
-	jp DelayFrame
+    ld [wAnimCounter], a
+    jp DelayFrame
 .resetSprites
-	push bc
-	ld hl, wMonPartySpritesSavedOAM
-	ld de, wShadowOAM
-	ld bc, $60
-	call CopyData
-	pop bc
-	xor a
-	jr .incTimer
+    push bc
+    ld hl, wMonPartySpritesSavedOAM
+    ld de, wShadowOAM
+    ld bc, $60
+    call CopyData
+    pop bc
+    xor a
+    jr .incTimer
 .animateSprite
-	push bc
-	ld hl, wShadowOAMSprite00TileID
-	ld bc, $10
-	ld a, [wCurrentMenuItem]
-	call AddNTimes
-	ld c, ICONOFFSET
-	ld a, [hl]
-	cp ICON_BALL << 2
-	jr z, .editCoords
-	cp ICON_HELIX << 2
-	jr nz, .editTileIDS
+    push bc
+    ld hl, wShadowOAMSprite00TileID
+    ld bc, $10
+    ld a, [wCurrentMenuItem]
+    call AddNTimes
+    ld c, ICONOFFSET
+    ld a, [hl]
+    cp ICON_BALL << 2
+    jr z, .editCoords
+    cp ICON_HELIX << 2
+    jr nz, .editTileIDS
 ; ICON_BALL and ICON_HELIX only shake up and down
 .editCoords
-	dec hl
-	dec hl ; dec hl to the OAM y coord
-	ld c, $1 ; amount to increase the y coord by
+    dec hl
+    dec hl ; dec hl to the OAM y coord
+    ld c, $1 ; amount to increase the y coord by
 ; otherwise, load a second sprite frame
 .editTileIDS
-	ld b, $4
-	ld de, $4
+    ld b, $4
+    ld de, $4
 .loop
-	ld a, [hl]
-	add c
-	ld [hl], a
-	add hl, de
-	dec b
-	jr nz, .loop
-	pop bc
-	ld a, c
-	jr .incTimer
+    ld a, [hl]
+    add c
+    ld [hl], a
+    add hl, de
+    dec b
+    jr nz, .loop
+    pop bc
+    ld a, c
+    jr .incTimer
 
 ; Party mon animations cycle between 2 frames.
 ; The members of the PartyMonSpeeds array specify the number of V-blanks
 ; that each frame lasts for green HP, yellow HP, and red HP in order.
 ; On the naming screen, the yellow HP speed is always used.
 PartyMonSpeeds:
-	db 5, 16, 32
+    db 5, 16, 32
 
 LoadMonPartySpriteGfx:
 ; Load mon party sprite tile patterns into VRAM during V-blank.
-	ld hl, MonPartySpritePointers
-	ld a, $1c
+    ld hl, MonPartySpritePointers
+    ld a, $1c
 
 LoadAnimSpriteGfx:
 ; Load animated sprite tile patterns into VRAM during V-blank. hl is the address
 ; of an array of structures that contain arguments for CopyVideoData and a is
 ; the number of structures in the array.
-	ld bc, $0
+    ld bc, $0
 .loop
-	push af
-	push bc
-	push hl
-	add hl, bc
-	ld a, [hli]
-	ld e, a
-	ld a, [hli]
-	ld d, a
-	ld a, [hli]
-	ld c, a
-	ld a, [hli]
-	ld b, a
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
-	call CopyVideoData
-	pop hl
-	pop bc
-	ld a, $6
-	add c
-	ld c, a
-	pop af
-	dec a
-	jr nz, .loop
-	ret
+    push af
+    push bc
+    push hl
+    add hl, bc
+    ld a, [hli]
+    ld e, a
+    ld a, [hli]
+    ld d, a
+    ld a, [hli]
+    ld c, a
+    ld a, [hli]
+    ld b, a
+    ld a, [hli]
+    ld h, [hl]
+    ld l, a
+    call CopyVideoData
+    pop hl
+    pop bc
+    ld a, $6
+    add c
+    ld c, a
+    pop af
+    dec a
+    jr nz, .loop
+    ret
 
 LoadMonPartySpriteGfxWithLCDDisabled:
 ; Load mon party sprite tile patterns into VRAM immediately by disabling the
 ; LCD.
-	call DisableLCD
-	ld hl, MonPartySpritePointers
-	ld a, $1c
-	ld bc, $0
+    call DisableLCD
+    ld hl, MonPartySpritePointers
+    ld a, $1c
+    ld bc, $0
 .loop
-	push af
-	push bc
-	push hl
-	add hl, bc
-	ld a, [hli]
-	ld e, a
-	ld a, [hli]
-	ld d, a
-	push de
-	ld a, [hli]
-	ld c, a
-	swap c
-	ld b, $0
-	ld a, [hli]
-	ld e, [hl]
-	inc hl
-	ld d, [hl]
-	pop hl
-	call FarCopyData2
-	pop hl
-	pop bc
-	ld a, $6
-	add c
-	ld c, a
-	pop af
-	dec a
-	jr nz, .loop
-	jp EnableLCD
+    push af
+    push bc
+    push hl
+    add hl, bc
+    ld a, [hli]
+    ld e, a
+    ld a, [hli]
+    ld d, a
+    push de
+    ld a, [hli]
+    ld c, a
+    swap c
+    ld b, $0
+    ld a, [hli]
+    ld e, [hl]
+    inc hl
+    ld d, [hl]
+    pop hl
+    call FarCopyData2
+    pop hl
+    pop bc
+    ld a, $6
+    add c
+    ld c, a
+    pop af
+    dec a
+    jr nz, .loop
+    jp EnableLCD
 
 INCLUDE "data/icon_pointers.asm"
 
 WriteMonPartySpriteOAMByPartyIndex:
 ; Write OAM blocks for the party mon in [hPartyMonIndex].
-	push hl
-	push de
-	push bc
-	ldh a, [hPartyMonIndex]
-	ld hl, wPartySpecies
-	ld e, a
-	ld d, 0
-	add hl, de
-	ld a, [hl]
-	call GetPartyMonSpriteID
-	ld [wOAMBaseTile], a
-	call WriteMonPartySpriteOAM
-	pop bc
-	pop de
-	pop hl
-	ret
+    push hl
+    push de
+    push bc
+    ldh a, [hPartyMonIndex]
+    ld hl, wPartySpecies
+    ld e, a
+    ld d, 0
+    add hl, de
+    ld a, [hl]
+    call GetPartyMonSpriteID
+    ld [wOAMBaseTile], a
+    call WriteMonPartySpriteOAM
+    pop bc
+    pop de
+    pop hl
+    ret
 
 WriteMonPartySpriteOAMBySpecies:
 ; Write OAM blocks for the party sprite of the species in
 ; [wMonPartySpriteSpecies].
-	xor a
-	ldh [hPartyMonIndex], a
-	ld a, [wMonPartySpriteSpecies]
-	call GetPartyMonSpriteID
-	ld [wOAMBaseTile], a
-	jr WriteMonPartySpriteOAM
+    xor a
+    ldh [hPartyMonIndex], a
+    ld a, [wMonPartySpriteSpecies]
+    call GetPartyMonSpriteID
+    ld [wOAMBaseTile], a
+    jr WriteMonPartySpriteOAM
 
 UnusedPartyMonSpriteFunction:
 ; This function is unused and doesn't appear to do anything useful. It looks
 ; like it may have been intended to load the tile patterns and OAM data for
 ; the mon party sprite associated with the species in [wCurPartySpecies].
 ; However, its calculations are off and it loads garbage data.
-	ld a, [wCurPartySpecies]
-	call GetPartyMonSpriteID
-	push af
-	ld hl, vSprites tile $00
-	call .LoadTilePatterns
-	pop af
-	add $54
-	ld hl, vSprites tile $04
-	call .LoadTilePatterns
-	xor a
-	ld [wMonPartySpriteSpecies], a
-	jr WriteMonPartySpriteOAMBySpecies
+    ld a, [wCurPartySpecies]
+    call GetPartyMonSpriteID
+    push af
+    ld hl, vSprites tile $00
+    call .LoadTilePatterns
+    pop af
+    add $54
+    ld hl, vSprites tile $04
+    call .LoadTilePatterns
+    xor a
+    ld [wMonPartySpriteSpecies], a
+    jr WriteMonPartySpriteOAMBySpecies
 
 .LoadTilePatterns
-	push hl
-	add a
-	ld c, a
-	ld b, 0
-	ld hl, MonPartySpritePointers
-	add hl, bc
-	add hl, bc
-	add hl, bc
-	ld a, [hli]
-	ld e, a
-	ld a, [hli]
-	ld d, a
-	ld a, [hli]
-	ld c, a
-	ld a, [hli]
-	ld b, a
-	pop hl
-	jp CopyVideoData
+    push hl
+    add a
+    ld c, a
+    ld b, 0
+    ld hl, MonPartySpritePointers
+    add hl, bc
+    add hl, bc
+    add hl, bc
+    ld a, [hli]
+    ld e, a
+    ld a, [hli]
+    ld d, a
+    ld a, [hli]
+    ld c, a
+    ld a, [hli]
+    ld b, a
+    pop hl
+    jp CopyVideoData
 
 WriteMonPartySpriteOAM:
 ; Write the OAM blocks for the first animation frame into the OAM buffer and
 ; make a copy at wMonPartySpritesSavedOAM.
-	push af
-	ld c, $10
-	ld h, HIGH(wShadowOAM)
-	ldh a, [hPartyMonIndex]
-	swap a
-	ld l, a
-	add $10
-	ld b, a
-	pop af
-	cp ICON_HELIX << 2
-	jr z, .helix
-	call WriteSymmetricMonPartySpriteOAM
-	jr .makeCopy
+    push af
+    ld c, $10
+    ld h, HIGH(wShadowOAM)
+    ldh a, [hPartyMonIndex]
+    swap a
+    ld l, a
+    add $10
+    ld b, a
+    pop af
+    cp ICON_HELIX << 2
+    jr z, .helix
+    call WriteSymmetricMonPartySpriteOAM
+    jr .makeCopy
 .helix
-	call WriteAsymmetricMonPartySpriteOAM
+    call WriteAsymmetricMonPartySpriteOAM
 ; Make a copy of the OAM buffer with the first animation frame written so that
 ; we can flip back to it from the second frame by copying it back.
 .makeCopy
-	ld hl, wShadowOAM
-	ld de, wMonPartySpritesSavedOAM
-	ld bc, $60
-	jp CopyData
+    ld hl, wShadowOAM
+    ld de, wMonPartySpritesSavedOAM
+    ld bc, $60
+    jp CopyData
 
 GetPartyMonSpriteID:
-	ld [wPokedexNum], a
-	predef IndexToPokedex
-	ld a, [wPokedexNum]
-	ld c, a
-	dec a
-	srl a
-	ld hl, MonPartyData
-	ld e, a
-	ld d, 0
-	add hl, de
-	ld a, [hl]
-	bit 0, c ; even or odd?
-	jr nz, .skipSwap
-	swap a ; use lower nybble if pokedex num is even
+    ld [wPokedexNum], a
+    predef IndexToPokedex
+    ld a, [wPokedexNum]
+    ld c, a
+    dec a
+    srl a
+    ld hl, MonPartyData
+    ld e, a
+    ld d, 0
+    add hl, de
+    ld a, [hl]
+    bit 0, c ; even or odd?
+    jr nz, .skipSwap
+    swap a ; use lower nybble if pokedex num is even
 .skipSwap
-	and $f0
-	srl a ; value == ICON constant << 2
-	srl a
-	ret
+    and $f0
+    srl a ; value == ICON constant << 2
+    srl a
+    ret
 
 INCLUDE "data/pokemon/menu_icons.asm"
 

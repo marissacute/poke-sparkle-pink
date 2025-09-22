@@ -1,27 +1,27 @@
-	db DEX_OMANYTE ; pokedex id
+    db DEX_OMANYTE ; pokedex id
 
-	db  35,  40, 100,  35,  90
-	;   hp  atk  def  spd  spc
+    db  35,  40, 100,  35,  90
+    ;   hp  atk  def  spd  spc
 
-	db ROCK, WATER ; type
-	db 45 ; catch rate
-	db 120 ; base exp
+    db ROCK, WATER ; type
+    db 45 ; catch rate
+    db 120 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/omanyte.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/omanyte.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/omanyte.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/omanyte.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw OmanytePicFront, OmanytePicBack
+    dw OmanytePicFront, OmanytePicBack
 
-	db WATER_GUN, WITHDRAW, NO_MOVE, NO_MOVE ; level 1 learnset
-	db GROWTH_MEDIUM_FAST ; growth rate
+    db WATER_GUN, WITHDRAW, NO_MOVE, NO_MOVE ; level 1 learnset
+    db GROWTH_MEDIUM_FAST ; growth rate
 
-	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
-	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         MIMIC,        \
-	     DOUBLE_TEAM,  REFLECT,      BIDE,         REST,         SUBSTITUTE,   \
-	     SURF
-	; end
+    ; tm/hm learnset
+    tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
+         WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         MIMIC,        \
+         DOUBLE_TEAM,  REFLECT,      BIDE,         REST,         SUBSTITUTE,   \
+         SURF
+    ; end
 
-	db BANK(OmanytePicFront)
+    db BANK(OmanytePicFront)

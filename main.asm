@@ -352,9 +352,9 @@ SECTION "Engine Save", ROMX
 INCLUDE "engine/menus/save.asm"
  
 BlackTile:
-	REPT 16
-	db $ff
-	ENDR
+    REPT 16
+    db $ff
+    ENDR
 BlackTileEnd:
 
 INCLUDE "color/ghost_marowak_anim.asm"

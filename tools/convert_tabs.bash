@@ -1,0 +1,1 @@
+find -name \*.asm -type f -exec sed -i 's/\t/    /g' {} \;

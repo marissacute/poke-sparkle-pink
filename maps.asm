@@ -13,7 +13,7 @@ INCLUDE "data/maps/objects/ViridianCity.asm"
 ViridianCity_Blocks: INCBIN "maps/ViridianCity.blk"
 
 INCLUDE "data/maps/headers/PewterCity.asm"
-	ds 1
+    ds 1
 INCLUDE "data/maps/objects/PewterCity.asm"
 PewterCity_Blocks: INCBIN "maps/PewterCity.blk"
 
@@ -127,7 +127,7 @@ INCLUDE "scripts/ViridianSchoolHouse.asm"
 INCLUDE "data/maps/objects/ViridianSchoolHouse.asm"
 
 INCLUDE "data/maps/headers/ViridianNicknameHouse.asm"
-	ds 1
+    ds 1
 INCLUDE "scripts/ViridianNicknameHouse.asm"
 INCLUDE "data/maps/objects/ViridianNicknameHouse.asm"
 
@@ -775,7 +775,7 @@ INCLUDE "data/maps/headers/Route18.asm"
 INCLUDE "data/maps/objects/Route18.asm"
 Route18_Blocks: INCBIN "maps/Route18.blk"
 
-	INCBIN "maps/UnusedPokecenterCopy.blk"
+    INCBIN "maps/UnusedPokecenterCopy.blk"
 
 
 SECTION "Maps 14", ROMX
@@ -979,7 +979,7 @@ ViridianForest_Blocks: INCBIN "maps/ViridianForest.blk"
 UndergroundPathNorthSouth_Blocks: INCBIN "maps/UndergroundPathNorthSouth.blk"
 UndergroundPathWestEast_Blocks: INCBIN "maps/UndergroundPathWestEast.blk"
 
-	INCBIN "maps/UnusedDiglettsCaveCopy.blk"
+    INCBIN "maps/UnusedDiglettsCaveCopy.blk"
 
 SSAnneB1FRooms_Blocks:
 SSAnne2FRooms_Blocks: INCBIN "maps/SSAnne2FRooms.blk"
@@ -1014,7 +1014,7 @@ INCLUDE "scripts/PokemonTower6F.asm"
 INCLUDE "data/maps/objects/PokemonTower6F.asm"
 PokemonTower6F_Blocks: INCBIN "maps/PokemonTower6F.blk"
 
-	INCBIN "maps/UnusedEmptyMap.blk"
+    INCBIN "maps/UnusedEmptyMap.blk"
 
 INCLUDE "data/maps/headers/PokemonTower7F.asm"
 INCLUDE "scripts/PokemonTower7F.asm"

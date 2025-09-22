@@ -1,27 +1,27 @@
-	db DEX_VENOMOTH ; pokedex id
+    db DEX_VENOMOTH ; pokedex id
 
-	db  70,  65,  60,  90,  90
-	;   hp  atk  def  spd  spc
+    db  70,  65,  60,  90,  90
+    ;   hp  atk  def  spd  spc
 
-	db BUG, POISON ; type
-	db 75 ; catch rate
-	db 138 ; base exp
+    db BUG, POISON ; type
+    db 75 ; catch rate
+    db 138 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/venomoth.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/venomoth.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/venomoth.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/venomoth.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw VenomothPicFront, VenomothPicBack
+    dw VenomothPicFront, VenomothPicBack
 
-	db TACKLE, DISABLE, POISONPOWDER, LEECH_LIFE ; level 1 learnset
-	db GROWTH_MEDIUM_FAST ; growth rate
+    db TACKLE, DISABLE, POISONPOWDER, LEECH_LIFE ; level 1 learnset
+    db GROWTH_MEDIUM_FAST ; growth rate
 
-	; tm/hm learnset
-	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
-	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   SOLARBEAM,    PSYCHIC_M,    \
-	     TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     SWIFT,        REST,         SUBSTITUTE
-	; end
+    ; tm/hm learnset
+    tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
+         HYPER_BEAM,   RAGE,         MEGA_DRAIN,   SOLARBEAM,    PSYCHIC_M,    \
+         TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
+         SWIFT,        REST,         SUBSTITUTE
+    ; end
 
-	db BANK(VenomothPicFront)
+    db BANK(VenomothPicFront)

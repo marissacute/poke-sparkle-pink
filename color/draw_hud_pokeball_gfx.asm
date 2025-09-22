@@ -6,58 +6,58 @@
 ; Note: this uses overworld palette 0, but palette 2 of the attack palettes would also be
 ; suitable.
 LoadPartyPokeballGfx:
-	CALL_INDIRECT LoadOverworldSpritePalettes
+    CALL_INDIRECT LoadOverworldSpritePalettes
 
-	ld a, 2
-	ldh [rWBK], a
+    ld a, 2
+    ldh [rWBK], a
 
-	; Set the palette the pokeball sprite uses
-	ld hl, W2_SpritePaletteMap + $31
-	xor a ; SPR_PAL_ORANGE
-	ld [hli], a
-	ld [hli], a
-	ld [hli], a
-	ld [hli], a
+    ; Set the palette the pokeball sprite uses
+    ld hl, W2_SpritePaletteMap + $31
+    xor a ; SPR_PAL_ORANGE
+    ld [hli], a
+    ld [hli], a
+    ld [hli], a
+    ld [hli], a
 
-	xor a
-	ldh [rWBK], a
+    xor a
+    ldh [rWBK], a
 
-	jp LoadPartyPokeballGfx_orig
+    jp LoadPartyPokeballGfx_orig
 
 
 IF GEN_2_GRAPHICS
 
 PlayerHUDHAX:
-	ld hl, PlayerHUDTileMap
-	jp PlayerHUDUpdateDone
+    ld hl, PlayerHUDTileMap
+    jp PlayerHUDUpdateDone
 
 PlayerHUDTileMap:
-	db $73, $75, $6F
+    db $73, $75, $6F
 
 EnemyHUDHAX:
-	ld [hl], $72
-	ld a, [wIsInBattle]
-	dec a
-	jr  nz, .notWildBattle
-	push hl
-	ld a, [wEnemyMonSpecies2]
-	ld [wPokedexNum], a
-	callfar IndexToPokedex
-	ld a, [wPokedexNum]
-	dec a
-	ld c, a
-	ld b, $2
-	ld hl, wPokedexOwned
-	predef FlagActionPredef
-	ld a, c
-	and a
-	jr z, .notOwned
-	hlcoord 1, 1
-	ld [hl], $E9
+    ld [hl], $72
+    ld a, [wIsInBattle]
+    dec a
+    jr  nz, .notWildBattle
+    push hl
+    ld a, [wEnemyMonSpecies2]
+    ld [wPokedexNum], a
+    callfar IndexToPokedex
+    ld a, [wPokedexNum]
+    dec a
+    ld c, a
+    ld b, $2
+    ld hl, wPokedexOwned
+    predef FlagActionPredef
+    ld a, c
+    and a
+    jr z, .notOwned
+    hlcoord 1, 1
+    ld [hl], $E9
 .notOwned
-	pop hl
+    pop hl
 .notWildBattle
-	ld de, $0001
-	jp EnemyHUDUpdateDone
+    ld de, $0001
+    jp EnemyHUDUpdateDone
 
 ENDC

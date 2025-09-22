@@ -1,40 +1,40 @@
 ; Helper functions for oak intro
 
 GetNidorinoPalID:
-	call ClearScreen
+    call ClearScreen
 IF GEN_2_GRAPHICS
-	ld a, PAL_NIDORINO
+    ld a, PAL_NIDORINO
 ELSE
-	ld a, PAL_PURPLEMON
+    ld a, PAL_PURPLEMON
 ENDC
-	jr GotPalID
+    jr GotPalID
 
 GetRedPalID:
-	call ClearScreen
+    call ClearScreen
 IF GEN_2_GRAPHICS
-	ld a, PAL_HERO
+    ld a, PAL_HERO
 ELSE
-	ld a, PAL_REDMON
+    ld a, PAL_REDMON
 ENDC
-	jr GotPalID
+    jr GotPalID
 
 GetRivalPalID:
-	call ClearScreen
+    call ClearScreen
 IF GEN_2_GRAPHICS
-	ld a, PAL_GARY1
+    ld a, PAL_GARY1
 ELSE
-	ld a, PAL_MEWMON
+    ld a, PAL_MEWMON
 ENDC
-	jr GotPalID
+    jr GotPalID
 
 GotPalID:
-	ld e, 0
-	ld d, a
+    ld e, 0
+    ld d, a
 
-	ld a, 2
-	ldh [rWBK], a
-	CALL_INDIRECT LoadSGBPalette
-	xor a
-	ldh [rWBK], a
-	ret
+    ld a, 2
+    ldh [rWBK], a
+    CALL_INDIRECT LoadSGBPalette
+    xor a
+    ldh [rWBK], a
+    ret
 

@@ -1,8 +1,8 @@
 HighCriticalMoves:
-	db KARATE_CHOP
-	db RAZOR_LEAF
-	db CRABHAMMER
-	db SLASH
-	db NIGHT_SLASH
-	db GUILLOTINE
-	db -1 ; end
+    db KARATE_CHOP
+    db RAZOR_LEAF
+    db CRABHAMMER
+    db SLASH
+    db NIGHT_SLASH
+    db GUILLOTINE
+    db -1 ; end

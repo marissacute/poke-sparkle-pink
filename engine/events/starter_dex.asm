@@ -10,7 +10,7 @@ StarterDex:
     ld [hli], a
     dec b
     jr nz, .markAsOwned
-	predef ShowPokedexData
+    predef ShowPokedexData
     ld hl, wPokedexOwned
     ld b, DATA_SIZE ; pokedex data length
     xor a ; 0, functions to set pokedex the data back to blank
@@ -18,6 +18,6 @@ StarterDex:
     ld [hli], a
     dec b
     jr nz, .clearOwned
-	ret
+    ret
 
 PURGE DATA_SIZE

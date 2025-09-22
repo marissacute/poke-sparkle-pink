@@ -73,7 +73,7 @@ wAudioSavedROMBank:: db
 wFrequencyModifier:: db
 wTempoModifier:: db
 
-	ds 13
+    ds 13
 
 
 SECTION "Sprite State Data", WRAM0
@@ -248,7 +248,7 @@ wPlayerMonNumber:: db
 ; the address of the menu cursor's current location within wTileMap
 wMenuCursorLocation:: dw
 
-	ds 2
+    ds 2
 
 ; how many times should HandleMenuInput poll the joypad state before it returns?
 wMenuJoypadPollCount:: db
@@ -268,7 +268,7 @@ wMenuWatchMovingOutOfBounds:: db
 
 wTradeCenterPointerTableIndex:: db
 
-	ds 1
+    ds 1
 
 ; destination pointer for text output
 ; this variable is written to, but is never read from
@@ -280,10 +280,10 @@ wDoNotWaitForButtonPressAfterDisplayingText:: db
 UNION
 ; the received menu selection is stored twice
 wLinkMenuSelectionReceiveBuffer:: dw
-	ds 3
+    ds 3
 ; the menu selection byte is stored twice before sending
 wLinkMenuSelectionSendBuffer:: dw
-	ds 3
+    ds 3
 wEnteringCableClub::
 wLinkTimeoutCounter:: db
 
@@ -294,10 +294,10 @@ wSerialExchangeNybbleTempReceiveData::
 wSerialSyncAndExchangeNybbleReceiveData:: db
 ; the final received nybble is stored here by Serial_ExchangeNybble
 wSerialExchangeNybbleReceiveData:: db
-	ds 3
+    ds 3
 ; this nybble is sent when using Serial_SyncAndExchangeNybble or Serial_ExchangeNybble
 wSerialExchangeNybbleSendData:: db
-	ds 4
+    ds 4
 wUnknownSerialCounter:: dw
 ENDU
 
@@ -322,7 +322,7 @@ wMenuWrappingEnabled:: db
 ; whether to check for 180-degree turn (0 = don't, 1 = do)
 wCheckFor180DegreeTurn:: db
 
-	ds 1
+    ds 1
 
 wMissableObjectIndex:: db
 
@@ -333,7 +333,7 @@ wPredefBC:: dw
 
 wTrainerHeaderFlagBit:: db
 
-	ds 1
+    ds 1
 
 ; which NPC movement script pointer is being used
 ; 0 if an NPC movement script is not running
@@ -342,7 +342,7 @@ wNPCMovementScriptPointerTableNum:: db
 ; ROM bank of current NPC movement script
 wNPCMovementScriptBank:: db
 
-	ds 2
+    ds 2
 
 ; This union spans 180 bytes.
 UNION
@@ -386,25 +386,25 @@ NEXTU
 ; If the slot is lucky, it equals 250, giving a 5/256 (~2%) chance.
 ; Otherwise, it equals 253, giving a 2/256 (~0.8%) chance.
 wSlotMachineSevenAndBarModeChance:: db
-	ds 2
+    ds 2
 ; ROM back to return to when the player is done with the slot machine
 wSlotMachineSavedROMBank:: db
-	ds 166
+    ds 166
 wLuckySlotHiddenObjectIndex:: db
 
 NEXTU
 ; values between 0-6. Shake screen horizontally, shake screen vertically, blink Pokemon...
 wAnimationType:: db
-	ds 29
+    ds 29
 wAnimPalette:: db
 
 NEXTU
-	ds 60
+    ds 60
 ; temporary buffer when swapping party mon data
 wSwitchPartyMonTempBuffer:: ds 44 ; party_struct size
 
 NEXTU
-	ds 120
+    ds 120
 ; this is the end of the joypad states
 ; the list starts above this address and extends downwards in memory until here
 ; overloaded with below labels
@@ -414,13 +414,13 @@ NEXTU
 wUnusedFlag::
 wBoostExpByExpAll:: db
 
-	ds 59
+    ds 59
 
 wNPCMovementDirections2:: ds 10
 ; used in Pallet Town scripted movement
 wNumStepsToTake:: db
 
-	ds 48
+    ds 48
 
 wRLEByteCount:: db
 
@@ -440,7 +440,7 @@ wForceEvolution:: db
 ; if [wAILayer2Encouragement] != 1, the second AI layer is not applied
 wAILayer2Encouragement:: db
 
-	ds 1
+    ds 1
 
 ; current HP of player and enemy substitutes
 wPlayerSubstituteHP:: db
@@ -449,7 +449,7 @@ wEnemySubstituteHP:: db
 ; used for TestBattle (unused in non-debug builds)
 wTestBattlePlayerSelectedMove:: db
 
-	ds 1
+    ds 1
 
 ; 0=regular, 1=mimic, 2=above message box (relearn, heal pp..)
 wMoveMenuType:: db
@@ -462,7 +462,7 @@ wLinkBattleRandomNumberListIndex:: db
 ; number of times remaining that AI action can occur
 wAICount:: db
 
-	ds 2
+    ds 2
 
 wEnemyMoveListIndex:: db
 
@@ -477,7 +477,7 @@ wTotalPayDayMoney:: ds 3
 wSafariEscapeFactor:: db
 wSafariBaitFactor:: db
 
-	ds 1
+    ds 1
 
 wTransformedEnemyMonOriginalDVs:: dw
 
@@ -506,7 +506,7 @@ wLowHealthAlarmDisabled:: db
 
 wPlayerMonMinimized:: db
 
-	ds 13
+    ds 13
 
 UNION
 ; the amount of damage accumulated by the enemy while biding
@@ -516,7 +516,7 @@ NEXTU
 wEnemyNumHits:: db
 ENDU
 
-	ds 8
+    ds 8
 wMiscBattleDataEnd::
 ENDU
 
@@ -548,10 +548,10 @@ wPlayerMonSpeedMod:: db
 wPlayerMonSpecialMod:: db
 wPlayerMonAccuracyMod:: db
 wPlayerMonEvasionMod:: db
-	ds 2
+    ds 2
 wPlayerMonStatModsEnd::
 
-	ds 1
+    ds 1
 
 wEnemyMonUnmodifiedLevel:: db
 wEnemyMonUnmodifiedMaxHP:: dw
@@ -570,16 +570,16 @@ wEnemyMonSpeedMod:: db
 wEnemyMonSpecialMod:: db
 wEnemyMonAccuracyMod:: db
 wEnemyMonEvasionMod:: db
-	ds 2
+    ds 2
 wEnemyMonStatModsEnd::
 
 NEXTU
-	ds 30
+    ds 30
 wEngagedTrainerClass:: db
 wEngagedTrainerSet:: db
 ENDU
 
-	ds 1
+    ds 1
 
 wNPCMovementDirections2Index::
 wUnusedLinkMenuByte::
@@ -597,13 +597,13 @@ wUnusedOverrideSimulatedJoypadStatesIndex:: db
 ; XXX is it ever not 0?
 wOverrideSimulatedJoypadStatesMask:: db
 
-	ds 1
+    ds 1
 
 ; This union spans 30 bytes.
 UNION
 wTradedPlayerMonSpecies:: db
 wTradedEnemyMonSpecies:: db
-	ds 2
+    ds 2
 wTradedPlayerMonOT:: ds NAME_LENGTH
 wTradedPlayerMonOTID:: dw
 wTradedEnemyMonOT:: ds NAME_LENGTH
@@ -649,7 +649,7 @@ NEXTU
 ; counts down from 7 so that every time 7 more tiles of the spiral have been
 ; placed, the tile map buffer is copied to VRAM so that progress is visible
 wInwardSpiralUpdateScreenCounter:: db
-	ds 9
+    ds 9
 ; 0 = outward, 1 = inward
 wBattleTransitionSpiralDirection:: db
 
@@ -685,7 +685,7 @@ wFlyAnimCounter:: db
 wFlyAnimBirdSpriteImageIndex:: db
 
 NEXTU
-	ds 1
+    ds 1
 ; difference in X between the next ball and the current one
 wHUDPokeballGfxOffsetX:: db
 wHUDGraphicsTiles:: ds 3
@@ -732,10 +732,10 @@ wSlotMachineBet:: db
 
 NEXTU
 wCanPlaySlots:: db
-	ds 8
+    ds 8
 ; temporary variable used to add payout amount to the player's coins
 wTempCoins1:: dw
-	ds 2
+    ds 2
 ; temporary variable used to subtract the bet amount from the player's coins
 wTempCoins2:: dw
 
@@ -752,11 +752,11 @@ wPlayerSpinInPlaceAnimFrameDelay:: db
 wPlayerSpinInPlaceAnimFrameDelayDelta:: db
 wPlayerSpinInPlaceAnimFrameDelayEndValue:: db
 wPlayerSpinInPlaceAnimSoundID:: db
-	ds 6
-	db ; temporary space used when wFacingDirectionList is rotated
+    ds 6
+    db ; temporary space used when wFacingDirectionList is rotated
 ; used when spinning the player's sprite
 wFacingDirectionList:: ds 4
-	ds 3
+    ds 3
 wSavedPlayerScreenY:: db
 wSavedPlayerFacingDirection:: db
 
@@ -792,7 +792,7 @@ wBadgeNameTile:: db
 ; badge is owned) to be drawn on the trainer screen
 ; the byte after the list gets read when shifting back one byte
 wBadgeOrFaceTiles:: ds NUM_BADGES + 1
-	ds 1
+    ds 1
 ; temporary list created when displaying the badges on the trainer screen
 ; one byte for each badge; 0 = not obtained, 1 = obtained
 wTempObtainedBadgesBooleans:: ds NUM_BADGES
@@ -803,20 +803,20 @@ wUnusedCreditsByte:: db
 wNumCreditsMonsDisplayed:: db
 
 NEXTU
-	ds 1
-	db ; temporary space used when wJigglypuffFacingDirections is rotated
+    ds 1
+    db ; temporary space used when wJigglypuffFacingDirections is rotated
 wJigglypuffFacingDirections:: ds 4
 
 NEXTU
-	ds 16
+    ds 16
 ; $3d = tree tile, $52 = grass tile
 wCutTile:: db
-	ds 2
+    ds 2
 ; 0 = cut animation, 1 = boulder dust animation
 wWhichAnimationOffsets:: db
 
 NEXTU
-	ds 18
+    ds 18
 ; the index of the sprite the emotion bubble is to be displayed above
 wEmotionBubbleSpriteIndex:: db
 wWhichEmotionBubble:: db
@@ -845,7 +845,7 @@ wSwappedMenuItem::
 ; 1 = bite
 ; 2 = no fish on map
 wRodResponse::
-	db
+    db
 ENDU
 
 ; 0 = neither
@@ -867,7 +867,7 @@ wRightGBMonSpecies:: db
 
 wMiscFlags:: db
 
-	ds 9
+    ds 9
 
 ; This has overlapping related uses.
 ; When the player tries to use an item or use certain field moves, 0 is stored
@@ -909,9 +909,9 @@ wEvoDataBuffer:: ds 4 * 3 + 1 ; enough for Eevee's three 4-byte evolutions and 0
 
 NEXTU
 wBattleMenuCurrentPP:: db
-	ds 3
+    ds 3
 wStatusScreenCurrentPP:: db
-	ds 6
+    ds 6
 ; list of normal max PP (without PP up) values
 wNormalMaxPPList:: ds NUM_MOVES
 ENDU
@@ -942,7 +942,7 @@ wNamingScreenSubmitName:: db
 ; 0 = upper case
 ; 1 = lower case
 wAlphabetCase:: db
-	ds 1
+    ds 1
 wNamingScreenLetter:: db
 
 NEXTU
@@ -955,7 +955,7 @@ wHPBarOldHP:: dw
 wHPBarNewHP:: dw
 wHPBarDelta:: db
 wHPBarTempHP:: dw
-	ds 11
+    ds 11
 wHPBarHPDifference:: dw
 
 NEXTU
@@ -964,9 +964,9 @@ wTownMapCoords::
 ; whether WriteMonMoves is being used to make a mon learn moves from day care
 ; non-zero if so
 wLearningMovesFromDayCare::
-	db
+    db
 
-	ds 27
+    ds 27
 
 ; the item that the AI used
 wAIItem:: db
@@ -1020,14 +1020,14 @@ wSpriteIndex:: db
 ; movement byte 2 of current sprite
 wCurSpriteMovement2:: db
 
-	ds 2
+    ds 2
 
 ; sprite offset of sprite being controlled by NPC movement script
 wNPCMovementScriptSpriteOffset:: db
 
 wScriptedNPCWalkCounter:: db
 
-	ds 1
+    ds 1
 
 ; always 0 since full CGB support was not implemented
 wOnCGB:: db
@@ -1054,24 +1054,24 @@ wPartyMenuHPBarColors:: ds PARTY_LENGTH
 
 wStatusScreenHPBarColor:: db
 
-	ds 7
+    ds 7
 
 wCopyingSGBTileData::
 wWhichPartyMenuHPBar::
 wPalPacket::
-	db
+    db
 
 ; This union spans 49 bytes.
 UNION
 wPartyMenuBlkPacket:: ds $30
 
 NEXTU
-	ds 29
+    ds 29
 ; storage buffer for various strings
 wStringBuffer:: ds 20
 
 NEXTU
-	ds 29
+    ds 29
 ; the total amount of exp a mon gained
 wExpAmountGained:: dw
 wGainBoostedExp:: db
@@ -1093,7 +1093,7 @@ wItemPrices:: dw
 wCurPartySpecies::
 wCurItem::
 wCurListMenuItem::
-	db
+    db
 
 ; which pokemon you selected
 wWhichPokemon:: db
@@ -1199,11 +1199,11 @@ wBattleMon:: battle_struct wBattleMon
 
 wTrainerClass:: db
 
-	ds 1
+    ds 1
 
 wTrainerPicPointer:: dw
 
-	ds 1
+    ds 1
 
 UNION
 wTempMoveNameBuffer:: ds 14
@@ -1213,14 +1213,14 @@ NEXTU
 wLearnMoveMonName:: ds NAME_LENGTH
 ENDU
 
-	ds 2
+    ds 2
 
 ; money received after battle = base money × level of last enemy mon
 wTrainerBaseMoney:: dw ; BCD
 
 wMissableObjectCounter:: db
 
-	ds 1
+    ds 1
 
 ; 13 bytes for the letters of the opposing trainer
 ; the name is terminated with $50 with possible
@@ -1297,7 +1297,7 @@ wPlayerToxicCounter:: db
 ; low nibble: disable turns left
 wPlayerDisabledMove:: db
 
-	ds 1
+    ds 1
 
 ; when the enemy is attacking multiple times, the number of attacks left
 wEnemyNumAttacksLeft:: db
@@ -1310,7 +1310,7 @@ wEnemyToxicCounter:: db
 ; low nibble: disable turns left
 wEnemyDisabledMove:: db
 
-	ds 1
+    ds 1
 
 UNION
 ; the amount of damage accumulated by the player while biding
@@ -1324,7 +1324,7 @@ NEXTU
 wPlayerNumHits:: db
 ENDU
 
-	ds 2
+    ds 2
 
 ; non-zero when an item or move that allows escape from battle was used
 wEscapedFromBattle:: db
@@ -1352,7 +1352,7 @@ wTempTilesetNumTiles:: db
 ; so that it can be restored when the player is done with the pokemart NPC
 wSavedListScrollOffset:: db
 
-	ds 2
+    ds 2
 
 ; base coordinates of frame block
 wBaseCoordX:: db
@@ -1399,7 +1399,7 @@ wNewSlotMachineBallTile::
 ; how much to add to the X/Y coord
 wCoordAdjustmentAmount::
 wUnusedWaterDropletsByte::
-	db
+    db
 
 wSlideMonDelay::
 ; generic counter variable for various animations
@@ -1410,15 +1410,15 @@ wAnimCounter::
 ; 03: translate base coordinates of frame blocks, but don't change their internal coordinates or flip their tiles
 ; 04: reverse the subanimation
 wSubAnimTransform::
-	db
+    db
 ENDU
 
 wEndBattleWinTextPointer:: dw
 wEndBattleLoseTextPointer:: dw
-	ds 2
+    ds 2
 wEndBattleTextRomBank:: db
 
-	ds 1
+    ds 1
 
 ; the address _of the address_ of the current subanimation entry
 wSubAnimAddrPtr:: dw
@@ -1435,7 +1435,7 @@ NEXTU
 wSlotMachineAllowMatchesCounter:: db
 ENDU
 
-	ds 2
+    ds 2
 
 wOutwardSpiralTileMapPointer:: db
 
@@ -1469,7 +1469,7 @@ wWhichBattleAnimTileset::
 wSquishMonCurrentDirection::
 ; the tile ID of the leftmost tile in the bottom row in AnimationSlideMonUp_
 wSlideMonUpBottomRowLeftTile::
-	db
+    db
 
 wDisableVBlankWYUpdate:: db ; if non-zero, don't update WY during V-blank
 
@@ -1541,11 +1541,11 @@ wMonHeaderEnd::
 ; saved at the start of a battle and then written back at the end of the battle
 wSavedTileAnimations:: db
 
-	ds 2
+    ds 2
 
 wDamage:: dw
 
-	ds 2
+    ds 2
 
 wRepelRemainingSteps:: db
 
@@ -1590,7 +1590,7 @@ wPokeBallCaptureCalcTemp::
 ; lower nybble: number of shakes
 ; upper nybble: number of animations to play
 wPokeBallAnimData::
-	db
+    db
 
 ; When this value is non-zero, the player isn't allowed to exit the party menu
 ; by pressing B and not choosing a mon.
@@ -1603,7 +1603,7 @@ wEvolutionOccurred:: db
 
 wVBlankSavedROMBank:: db
 
-	ds 1
+    ds 1
 
 wIsKeyItem:: db
 
@@ -1655,7 +1655,7 @@ wSavedSpriteScreenX:: db
 wSavedSpriteMapY:: db
 wSavedSpriteMapX:: db
 
-	ds 5
+    ds 5
 
 wWhichPrize:: db
 
@@ -1673,7 +1673,7 @@ wPrize1:: db
 wPrize2:: db
 wPrize3:: db
 
-	ds 1
+    ds 1
 
 UNION
 wSerialRandomNumberListBlock:: ds $11
@@ -1683,7 +1683,7 @@ wPrize1Price:: dw
 wPrize2Price:: dw
 wPrize3Price:: dw
 
-	ds 1
+    ds 1
 
 ; shared list of 9 random numbers, indexed by wLinkBattleRandomNumberListIndex
 wLinkBattleRandomNumberList:: ds 10
@@ -1699,7 +1699,7 @@ wPseudoItemID:: db
 
 wUnusedAlreadyOwnedFlag:: db
 
-	ds 2
+    ds 2
 
 wEvoStoneItemID:: db
 
@@ -1810,7 +1810,7 @@ wSpriteSetID:: db
 
 wObjectDataPointerTemp:: dw
 
-	ds 2
+    ds 2
 
 ; the tile shown outside the boundaries of the map
 wMapBackgroundTile:: db
@@ -1824,7 +1824,7 @@ wWarpEntries:: ds MAX_WARP_EVENTS * 4 ; Y, X, warp ID, map ID
 ; if $ff, the player's coordinates are not updated when entering the map
 wDestinationWarpID:: db
 
-	ds 128
+    ds 128
 
 ; number of signs in the current map (up to MAX_BG_EVENTS)
 wNumSigns:: db
@@ -1881,7 +1881,7 @@ wTilesetTalkingOverTiles:: ds 3
 
 wGrassTile:: db
 
-	ds 4
+    ds 4
 
 wNumBoxItems:: db
 ; item, quantity
@@ -1891,7 +1891,7 @@ wBoxItems:: ds PC_ITEM_CAPACITY * 2 + 1
 ; bit 7: whether the player has changed boxes before
 wCurrentBoxNum:: db
 
-	ds 1
+    ds 1
 
 ; number of HOF teams
 wNumHoFTeams:: db
@@ -1904,7 +1904,7 @@ wPlayerCoins:: dw ; BCD
 wMissableObjectFlags:: flag_array $100
 wMissableObjectFlagsEnd::
 
-	ds 7
+    ds 7
 
 ; saved copy of SPRITESTATEDATA1_IMAGEINDEX (used for sprite facing/anim)
 wSavedSpriteImageIndex:: db
@@ -1915,19 +1915,19 @@ wSavedSpriteImageIndex:: db
 ; terminated with $FF
 wMissableObjectList:: ds 16 * 2 + 1
 
-	ds 1
+    ds 1
 
 wGameProgressFlags::
 wOaksLabCurScript:: db
 wPalletTownCurScript:: db
-	ds 1
+    ds 1
 wBluesHouseCurScript:: db
 wViridianCityCurScript:: db
-	ds 2
+    ds 2
 wPewterCityCurScript:: db
 wRoute3CurScript:: db
 wRoute4CurScript:: db
-	ds 1
+    ds 1
 wViridianGymCurScript:: db
 wPewterGymCurScript:: db
 wCeruleanGymCurScript:: db
@@ -1944,12 +1944,12 @@ wMtMoonB2FCurScript:: db
 wSSAnne1FRoomsCurScript:: db
 wSSAnne2FRoomsCurScript:: db
 wRoute22CurScript:: db
-	ds 1
+    ds 1
 wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	ds 7
+    ds 7
 wSSAnneBowCurScript:: db
 wViridianForestCurScript:: db
 wMuseum1FCurScript:: db
@@ -1961,7 +1961,7 @@ wRoute21CurScript:: db
 wSafariZoneGateCurScript:: db
 wRockTunnelB1FCurScript:: db
 wRockTunnel1FCurScript:: db
-	ds 1
+    ds 1
 wRoute11CurScript:: db
 wRoute12CurScript:: db
 wRoute15CurScript:: db
@@ -1980,19 +1980,19 @@ wRocketHideoutB1FCurScript:: db
 wRocketHideoutB2FCurScript:: db
 wRocketHideoutB3FCurScript:: db
 wRocketHideoutB4FCurScript:: db
-	ds 1
+    ds 1
 wRoute6GateCurScript:: db
 wRoute8GateCurScript:: db
-	ds 1
+    ds 1
 wCinnabarIslandCurScript:: db
 wPokemonMansion1FCurScript:: db
-	ds 1
+    ds 1
 wPokemonMansion2FCurScript:: db
 wPokemonMansion3FCurScript:: db
 wPokemonMansionB1FCurScript:: db
 wVictoryRoad2FCurScript:: db
 wVictoryRoad3FCurScript:: db
-	ds 1
+    ds 1
 wFightingDojoCurScript:: db
 wSilphCo2FCurScript:: db
 wSilphCo3FCurScript:: db
@@ -2009,15 +2009,15 @@ wBrunosRoomCurScript:: db
 wAgathasRoomCurScript:: db
 wCeruleanCaveB1FCurScript:: db
 wVictoryRoad1FCurScript:: db
-	ds 1
+    ds 1
 wLancesRoomCurScript:: db
-	ds 4
+    ds 4
 wSilphCo10FCurScript:: db
 wSilphCo11FCurScript:: db
-	ds 1
+    ds 1
 wFuchsiaGymCurScript:: db
 wSaffronGymCurScript:: db
-	ds 1
+    ds 1
 wCinnabarGymCurScript:: db
 wGameCornerCurScript:: db
 wRoute16Gate1FCurScript:: db
@@ -2025,16 +2025,16 @@ wBillsHouseCurScript:: db
 wRoute5GateCurScript:: db
 wPowerPlantCurScript:: ; overload
 wRoute7GateCurScript:: db
-	ds 1
+    ds 1
 wSSAnne2FCurScript:: db
 wSeafoamIslandsB3FCurScript:: db
 wRoute23CurScript:: db
 wSeafoamIslandsB4FCurScript:: db
 wRoute18Gate1FCurScript:: db
-	ds 78
+    ds 78
 wGameProgressFlagsEnd::
 
-	ds 56
+    ds 56
 
 wObtainedHiddenItemsFlags:: flag_array MAX_HIDDEN_ITEMS
 
@@ -2045,7 +2045,7 @@ wObtainedHiddenCoinsFlags:: flag_array MAX_HIDDEN_COINS
 ; $02 = surfing
 wWalkBikeSurfState:: db
 
-	ds 10
+    ds 10
 
 wTownVisitedFlag:: flag_array NUM_CITY_MAPS
 
@@ -2057,7 +2057,7 @@ wFossilItem:: db
 ; mon that will result from the item
 wFossilMon:: db
 
-	ds 2
+    ds 2
 
 ; trainer classes start at OPP_ID_OFFSET
 wEnemyMonOrTrainerClass:: db
@@ -2066,7 +2066,7 @@ wPlayerJumpingYScreenCoordsIndex:: db
 
 wRivalStarter:: db
 
-	ds 1
+    ds 1
 
 wPlayerStarter:: db
 
@@ -2093,43 +2093,43 @@ wWhichDungeonWarp:: db
 
 wUnusedCardKeyGateID:: db
 
-	ds 8
+    ds 8
 
 wStatusFlags1:: db
-	ds 1
+    ds 1
 wBeatGymFlags:: db ; redundant because it matches wObtainedBadges
-	ds 1
+    ds 1
 wStatusFlags2:: db
 wCableClubDestinationMap::
 wStatusFlags3:: db
 wStatusFlags4:: db
-	ds 1
+    ds 1
 wStatusFlags5:: db
-	ds 1
+    ds 1
 wStatusFlags6:: db
 wStatusFlags7:: db
 wElite4Flags:: db
-	ds 1
+    ds 1
 wMovementFlags:: db
 
 wCompletedInGameTradeFlags:: dw
 
-	ds 2
+    ds 2
 
 wWarpedFromWhichWarp:: db
 wWarpedFromWhichMap:: db
 
-	ds 2
+    ds 2
 
 wCardKeyDoorY:: db
 wCardKeyDoorX:: db
 
-	ds 2
+    ds 2
 
 wFirstLockTrashCanIndex:: db
 wSecondLockTrashCanIndex:: db
 
-	ds 2
+    ds 2
 
 wEventFlags:: flag_array NUM_EVENTS
 
@@ -2138,7 +2138,7 @@ UNION
 wGrassRate:: db
 wGrassMons:: ds 10 * 2
 
-	ds 8
+    ds 8
 
 wWaterRate:: db
 wWaterMons:: ds 10 * 2
@@ -2147,11 +2147,11 @@ NEXTU
 ; linked game's trainer name
 wLinkEnemyTrainerName:: ds NAME_LENGTH
 
-	ds 1
+    ds 1
 
 wSerialEnemyDataBlock:: ; ds $1a8
 
-	ds 9
+    ds 9
 
 wEnemyPartyCount:: db
 wEnemyPartySpecies:: ds PARTY_LENGTH + 1
@@ -2179,7 +2179,7 @@ ENDU
 
 wTrainerHeaderPtr:: dw
 
-	ds 6
+    ds 6
 
 ; the trainer the player must face after getting a wrong answer in the Cinnabar
 ; gym quiz
@@ -2189,7 +2189,7 @@ wOpponentAfterWrongAnswer:: db
 ; mostly copied from map-specific map script pointer and written back later
 wCurMapScript:: db
 
-	ds 7
+    ds 7
 
 wPlayTimeHours:: db
 wPlayTimeMaxed:: db
@@ -2254,7 +2254,7 @@ ENDC
 SECTION "Stack", WRAM0
 
 ; the stack grows downward
-	ds $100 - 1
+    ds $100 - 1
 wStack:: db
 
 ENDSECTION

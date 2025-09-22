@@ -14,46 +14,46 @@ INCLUDE "home/copy.asm"
 SECTION "ColorizationHome", ROM0
 
 InitializeColor:
-	cp $11
-	jr nz, .IsNotGBC
-	call _InitGbcMode
-	jp _Start
+    cp $11
+    jr nz, .IsNotGBC
+    call _InitGbcMode
+    jp _Start
 
 .IsNotGBC
-	jpfar RunDmgError
+    jpfar RunDmgError
 
 
 ; Indirect function callers for color code
 
 _InitGbcMode:
-	jpfar InitGbcMode
+    jpfar InitGbcMode
 
 
 ; Called once for each sprite. This needs to preserve variables, so it can't use
 ; BankSwitch.
 _ColorOverworldSprite::
-	ldh [hColorHackTmp], a ; Need to preserve value of 'a'
+    ldh [hColorHackTmp], a ; Need to preserve value of 'a'
 
-	ldh a, [hLoadedROMBank]
-	push af
+    ldh a, [hLoadedROMBank]
+    push af
 
-	ld a, BANK(ColorOverworldSprite)
-	call SetRomBank
+    ld a, BANK(ColorOverworldSprite)
+    call SetRomBank
 
-	ldh a, [hColorHackTmp]
-	call ColorOverworldSprite
+    ldh a, [hColorHackTmp]
+    call ColorOverworldSprite
 
-	ldh [hColorHackTmp], a
-	pop af
-	call SetRomBank
-	ldh a, [hColorHackTmp]
-	ret
+    ldh [hColorHackTmp], a
+    pop af
+    call SetRomBank
+    ldh a, [hColorHackTmp]
+    ret
 
 
 ; Soft reset code (clears memory then goes to normal code)
 SoftReset::
-	CALL_INDIRECT ClearGbcMemory
-	jp SoftReset_orig
+    CALL_INDIRECT ClearGbcMemory
+    jp SoftReset_orig
 
 
 SECTION "Home", ROM0
@@ -133,83 +133,83 @@ INCLUDE "home/predef_text.asm"
 ; departure. Instead, just be careful not to set the vram bank to 1 while interrupts are
 ; enabled...? (Or better yet do the ss anne fix properly...)
 InterruptWrapper:
-	push af
-	push bc
-	push de
-	ldh a, [rWBK]
-	ld b, a
+    push af
+    push bc
+    push de
+    ldh a, [rWBK]
+    ld b, a
 
-	ldh a, [hLoadedROMBank]
-	ld c, a
+    ldh a, [hLoadedROMBank]
+    ld c, a
 
-	; Change ROM bank if an interrupt occurred in the middle of DelayFrameHook
-	ldh a, [hDelayFrameHookBank]
-	and a
-	jr z, .notInDelayFrame
-	; Change rom bank
-	dec a
-	call SetRomBank
+    ; Change ROM bank if an interrupt occurred in the middle of DelayFrameHook
+    ldh a, [hDelayFrameHookBank]
+    and a
+    jr z, .notInDelayFrame
+    ; Change rom bank
+    dec a
+    call SetRomBank
 .notInDelayFrame
 
-	xor a
-	ldh [rWBK], a
-	ld de, .ret
-	push de
-	jp hl
+    xor a
+    ldh [rWBK], a
+    ld de, .ret
+    push de
+    jp hl
 .ret
-	ld a, b
-	ldh [rWBK], a
-	ld a, c
-	call SetRomBank
-	pop de
-	pop bc
-	pop af
-	pop hl
-	reti
+    ld a, b
+    ldh [rWBK], a
+    ld a, c
+    call SetRomBank
+    pop de
+    pop bc
+    pop af
+    pop hl
+    reti
 
 ; Whenever DelayFrame is called, update the sprites.
 ; This is done here instead of at vblank to prevent sprite wobbliness when scrolling.
 ; In some situations, DelayFrame is not called every frame, and this could be problematic.
 ; But I think when sprites are being animated or moved around, it is always called.
 DelayFrameHook:
-	push bc
-	push de
-	push hl
+    push bc
+    push de
+    push hl
 
-	ldh a, [rWBK]
-	ld b, a
-	xor a
-	ldh [rWBK], a
-	push bc ; Save wram bank
+    ldh a, [rWBK]
+    ld b, a
+    xor a
+    ldh [rWBK], a
+    push bc ; Save wram bank
 
-	; Save the current rom bank to a variable. This is important because the game does
-	; not expect the "DelayFrame" function to change the rom bank. If an interrupt
-	; occurs in the middle of this hook, the interrupt wrapper will know to restore
-	; the rom bank.
-	; An alternative solution would be to use "di/ei", but that was the cause of
-	; graphical corruption in the pokemart when getting oak's parcel.
-	ldh a, [hLoadedROMBank]
-	inc a
-	ldh [hDelayFrameHookBank], a
+    ; Save the current rom bank to a variable. This is important because the game does
+    ; not expect the "DelayFrame" function to change the rom bank. If an interrupt
+    ; occurs in the middle of this hook, the interrupt wrapper will know to restore
+    ; the rom bank.
+    ; An alternative solution would be to use "di/ei", but that was the cause of
+    ; graphical corruption in the pokemart when getting oak's parcel.
+    ldh a, [hLoadedROMBank]
+    inc a
+    ldh [hDelayFrameHookBank], a
 
-	; Calling "PrepareOAMData" here instead of at vblank to prevent sprite wobbliness
-	CALL_INDIRECT PrepareOAMData
-	jr z, .spritesDrawn
+    ; Calling "PrepareOAMData" here instead of at vblank to prevent sprite wobbliness
+    CALL_INDIRECT PrepareOAMData
+    jr z, .spritesDrawn
 
-	CALL_INDIRECT ColorNonOverworldSprites
+    CALL_INDIRECT ColorNonOverworldSprites
 .spritesDrawn
 
-	; Clear hDelayFrameHookBank. (No need to reload the bank; that's done
-	; automatically by CALL_INDIRECT.)
-	xor a
-	ldh [hDelayFrameHookBank], a
+    ; Clear hDelayFrameHookBank. (No need to reload the bank; that's done
+    ; automatically by CALL_INDIRECT.)
+    xor a
+    ldh [hDelayFrameHookBank], a
 
-	pop af
-	ldh [rWBK], a ; Restore wram bank
+    pop af
+    ldh [rWBK], a ; Restore wram bank
 
-	ld a, 1
-	ldh [hVBlankOccurred], a
-	pop hl
-	pop de
-	pop bc
-	ret
+    ld a, 1
+    ldh [hVBlankOccurred], a
+    pop hl
+    pop de
+    pop bc
+    ret

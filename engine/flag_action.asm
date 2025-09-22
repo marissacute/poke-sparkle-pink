@@ -1,5 +1,5 @@
 FlagActionPredef:
-	call GetPredefRegisters
+    call GetPredefRegisters
 
 FlagAction:
 ; Perform action b on bit c
@@ -9,65 +9,65 @@ FlagAction:
 ;  2: read
 ; Return the result in c.
 
-	push hl
-	push de
-	push bc
+    push hl
+    push de
+    push bc
 
-	; bit
-	ld a, c
-	ld d, a
-	and 7
-	ld e, a
+    ; bit
+    ld a, c
+    ld d, a
+    and 7
+    ld e, a
 
-	; byte
-	ld a, d
-	srl a
-	srl a
-	srl a
-	add l
-	ld l, a
-	jr nc, .ok
-	inc h
+    ; byte
+    ld a, d
+    srl a
+    srl a
+    srl a
+    add l
+    ld l, a
+    jr nc, .ok
+    inc h
 .ok
 
-	; d = 1 << e (bitmask)
-	inc e
-	ld d, 1
+    ; d = 1 << e (bitmask)
+    inc e
+    ld d, 1
 .shift
-	dec e
-	jr z, .shifted
-	sla d
-	jr .shift
+    dec e
+    jr z, .shifted
+    sla d
+    jr .shift
 .shifted
 
-	ld a, b
-	and a
-	jr z, .reset
-	cp 2
-	jr z, .read
+    ld a, b
+    and a
+    jr z, .reset
+    cp 2
+    jr z, .read
 
 .set
-	ld b, [hl]
-	ld a, d
-	or b
-	ld [hl], a
-	jr .done
+    ld b, [hl]
+    ld a, d
+    or b
+    ld [hl], a
+    jr .done
 
 .reset
-	ld b, [hl]
-	ld a, d
-	xor $ff
-	and b
-	ld [hl], a
-	jr .done
+    ld b, [hl]
+    ld a, d
+    xor $ff
+    and b
+    ld [hl], a
+    jr .done
 
 .read
-	ld b, [hl]
-	ld a, d
-	and b
+    ld b, [hl]
+    ld a, d
+    and b
 .done
-	pop bc
-	pop de
-	pop hl
-	ld c, a
-	ret
+    pop bc
+    pop de
+    pop hl
+    ld c, a
+    ret

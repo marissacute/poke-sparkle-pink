@@ -1,5 +1,5 @@
 BaseStats::
-	table_width BASE_DATA_SIZE
+    table_width BASE_DATA_SIZE
 INCLUDE "data/pokemon/base_stats/bulbasaur.asm"
 INCLUDE "data/pokemon/base_stats/ivysaur.asm"
 INCLUDE "data/pokemon/base_stats/venusaur.asm"
@@ -161,4 +161,4 @@ INCLUDE "data/pokemon/base_stats/misdreavus.asm"
 INCLUDE "data/pokemon/base_stats/scizor.asm"
 INCLUDE "data/pokemon/base_stats/steelix.asm"
 INCLUDE "data/pokemon/base_stats/crobat.asm"
-	assert_table_length NUM_POKEMON ; 
+    assert_table_length NUM_POKEMON ; 

@@ -1,13 +1,13 @@
 
-	ret ; unused
+    ret ; unused
 
 UnusedPredefText::
-	db "@"
+    db "@"
 
 PrintBookcaseText:
-	call EnableAutoTextBoxDrawing
-	tx_pre_jump BookcaseText
+    call EnableAutoTextBoxDrawing
+    tx_pre_jump BookcaseText
 
 BookcaseText::
-	text_far _BookcaseText
-	text_end
+    text_far _BookcaseText
+    text_end

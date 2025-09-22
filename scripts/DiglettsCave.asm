@@ -1,7 +1,7 @@
 DiglettsCave_Script:
-	jp EnableAutoTextBoxDrawing
+    jp EnableAutoTextBoxDrawing
 
 DiglettsCave_TextPointers:
-	def_text_pointers
+    def_text_pointers
 
-	text_end ; unused
+    text_end ; unused

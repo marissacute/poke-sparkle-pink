@@ -1,7 +1,7 @@
 IF GEN_2_GRAPHICS
 RedPicFront:: INCBIN "gfx/gstrainers/red.pic"
 rept 11 ; Padding
-	db 0
+    db 0
 endr
 ELSE
 RedPicFront:: INCBIN "gfx/player/red.pic"

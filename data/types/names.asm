@@ -1,32 +1,32 @@
 TypeNames:
-	table_width 2
+    table_width 2
 
-	dw .Normal
-	dw .Fighting
-	dw .Flying
-	dw .Dragon
-	dw .Ground
-	dw .Rock
-	dw .Bird
-	dw .Bug
-	dw .Dark
-	dw .Steel
+    dw .Normal
+    dw .Fighting
+    dw .Flying
+    dw .Dragon
+    dw .Ground
+    dw .Rock
+    dw .Bird
+    dw .Bug
+    dw .Dark
+    dw .Steel
 
 REPT UNUSED_TYPES_END - UNUSED_TYPES
-	dw .Normal
+    dw .Normal
 ENDR
 
-	dw .Fire
-	dw .Water
-	dw .Grass
-	dw .Electric
-	dw .Psychic
-	dw .Ice
-	dw .Ghost
-	dw .Poison
-	dw .Fairy
+    dw .Fire
+    dw .Water
+    dw .Grass
+    dw .Electric
+    dw .Psychic
+    dw .Ice
+    dw .Ghost
+    dw .Poison
+    dw .Fairy
 
-	assert_table_length NUM_TYPES
+    assert_table_length NUM_TYPES
 
 .Normal:   db "NORMAL@"
 .Fighting: db "FIGHTING@"

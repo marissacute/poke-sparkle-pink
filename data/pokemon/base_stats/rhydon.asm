@@ -1,29 +1,29 @@
-	db DEX_RHYDON ; pokedex id
+    db DEX_RHYDON ; pokedex id
 
-	db 105, 130, 120,  40,  45
-	;   hp  atk  def  spd  spc
+    db 105, 130, 120,  40,  45
+    ;   hp  atk  def  spd  spc
 
-	db GROUND, FIGHTING ; type
-	db 60 ; catch rate
-	db 204 ; base exp
+    db GROUND, FIGHTING ; type
+    db 60 ; catch rate
+    db 204 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/rhydon.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/rhydon.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/rhydon.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/rhydon.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw RhydonPicFront, RhydonPicBack
+    dw RhydonPicFront, RhydonPicBack
 
-	db HORN_ATTACK, STOMP, TAIL_WHIP, FURY_ATTACK ; level 1 learnset
-	db GROWTH_SLOW ; growth rate
+    db HORN_ATTACK, STOMP, TAIL_WHIP, FURY_ATTACK ; level 1 learnset
+    db GROWTH_SLOW ; growth rate
 
-	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        HORN_DRILL,   BODY_SLAM,    \
-	     TAKE_DOWN,    DOUBLE_EDGE,  STRENGTH,     ROCK_SLIDE,   SUBSTITUTE,   \
-	     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
-	     SEISMIC_TOSS, RAGE,         THUNDER,      EARTHQUAKE,   \
-	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
-	     FIRE_BLAST,   SKULL_BASH,   REST,        
-	; end
+    ; tm/hm learnset
+    tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        HORN_DRILL,   BODY_SLAM,    \
+         TAKE_DOWN,    DOUBLE_EDGE,  STRENGTH,     ROCK_SLIDE,   SUBSTITUTE,   \
+         HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
+         SEISMIC_TOSS, RAGE,         THUNDER,      EARTHQUAKE,   \
+         FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
+         FIRE_BLAST,   SKULL_BASH,   REST,        
+    ; end
 
-	db BANK(RhydonPicFront)
+    db BANK(RhydonPicFront)

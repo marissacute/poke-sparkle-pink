@@ -1,27 +1,27 @@
-	db DEX_MAGNEMITE ; pokedex id
+    db DEX_MAGNEMITE ; pokedex id
 
-	db  40,  35,  60,  45,  70
-	;   hp  atk  def  spd  spc
+    db  40,  35,  60,  45,  70
+    ;   hp  atk  def  spd  spc
 
-	db ELECTRIC, ELECTRIC ; type
-	db 190 ; catch rate
-	db 89 ; base exp
+    db ELECTRIC, ELECTRIC ; type
+    db 190 ; catch rate
+    db 89 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/magnemite.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/magnemite.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/magnemite.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/magnemite.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw MagnemitePicFront, MagnemitePicBack
+    dw MagnemitePicFront, MagnemitePicBack
 
-	db TACKLE, LEER, NO_MOVE, NO_MOVE ; level 1 learnset
-	db GROWTH_MEDIUM_SLOW ; growth rate
+    db TACKLE, LEER, NO_MOVE, NO_MOVE ; level 1 learnset
+    db GROWTH_MEDIUM_SLOW ; growth rate
 
-	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         THUNDERBOLT,  \
-	     THUNDER,      TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         SWIFT,        REST,         THUNDER_WAVE, SUBSTITUTE,   \
-	     FLASH
-	; end
+    ; tm/hm learnset
+    tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         THUNDERBOLT,  \
+         THUNDER,      TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      \
+         BIDE,         SWIFT,        REST,         THUNDER_WAVE, SUBSTITUTE,   \
+         FLASH
+    ; end
 
-	db BANK(MagnemitePicFront)
+    db BANK(MagnemitePicFront)

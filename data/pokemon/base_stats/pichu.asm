@@ -1,28 +1,28 @@
-	db DEX_PICHU ; pokedex id
+    db DEX_PICHU ; pokedex id
 
-	db  20,  40,  15,  60,  35
-	;   hp  atk  def  spd  spc
+    db  20,  40,  15,  60,  35
+    ;   hp  atk  def  spd  spc
 
-	db ELECTRIC, ELECTRIC ; type
-	db 190 ; catch rate
-	db 42 ; base exp
+    db ELECTRIC, ELECTRIC ; type
+    db 190 ; catch rate
+    db 42 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/pichu.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/pichu.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/pichu.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/pichu.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw PichuPicFront, PichuPicBack
+    dw PichuPicFront, PichuPicBack
 
-	db THUNDERSHOCK, GROWL, NO_MOVE, NO_MOVE ; level 1 learnset
-	db GROWTH_MEDIUM_FAST ; growth rate
+    db THUNDERSHOCK, GROWL, NO_MOVE, NO_MOVE ; level 1 learnset
+    db GROWTH_MEDIUM_FAST ; growth rate
 
-	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     DOUBLE_EDGE,  PAY_DAY,      SUBMISSION,   SEISMIC_TOSS, RAGE,         \
-	     THUNDERBOLT,  THUNDER,      MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, \
-	     SUBSTITUTE,   FLASH
-	; end
+    ; tm/hm learnset
+    tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
+         DOUBLE_EDGE,  PAY_DAY,      SUBMISSION,   SEISMIC_TOSS, RAGE,         \
+         THUNDERBOLT,  THUNDER,      MIMIC,        DOUBLE_TEAM,  REFLECT,      \
+         BIDE,         SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, \
+         SUBSTITUTE,   FLASH
+    ; end
 
-	db BANK(PichuPicFront)
+    db BANK(PichuPicFront)

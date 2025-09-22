@@ -1,27 +1,27 @@
-	db DEX_ONIX ; pokedex id
+    db DEX_ONIX ; pokedex id
 
-	db  55,  75, 160,  95,  30
-	;   hp  atk  def  spd  spc
+    db  55,  75, 160,  95,  30
+    ;   hp  atk  def  spd  spc
 
-	db ROCK, ROCK ; type
-	db 45 ; catch rate
-	db 108 ; base exp
+    db ROCK, ROCK ; type
+    db 45 ; catch rate
+    db 108 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/onix.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/onix.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/onix.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/onix.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw OnixPicFront, OnixPicBack
+    dw OnixPicFront, OnixPicBack
 
-	db TACKLE, SCREECH, NO_MOVE, NO_MOVE ; level 1 learnset
-	db GROWTH_MEDIUM_FAST ; growth rate
+    db TACKLE, SCREECH, NO_MOVE, NO_MOVE ; level 1 learnset
+    db GROWTH_MEDIUM_FAST ; growth rate
 
-	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         \
-	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  \
-	     BIDE,         SELFDESTRUCT, SKULL_BASH,   REST,         EXPLOSION,    \
-	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
-	; end
+    ; tm/hm learnset
+    tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         \
+         EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  \
+         BIDE,         SELFDESTRUCT, SKULL_BASH,   REST,         EXPLOSION,    \
+         ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+    ; end
 
-	db BANK(OnixPicFront)
+    db BANK(OnixPicFront)

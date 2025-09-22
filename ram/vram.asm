@@ -23,9 +23,9 @@ vTileset::     ds $80 tiles
 
 NEXTU
 ; title
-	ds $80 tiles
+    ds $80 tiles
 vTitleLogo::  ds $80 tiles
-	ds 7 * 7 tiles
+    ds 7 * 7 tiles
 vTitleLogo2:: ds 30 tiles
 
 ENDU

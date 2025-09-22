@@ -1,63 +1,63 @@
 _SSAnne2FWaiterText::
-	text "This ship, she is"
-	line "a luxury liner"
-	cont "for trainers!"
+    text "This ship, she is"
+    line "a luxury liner"
+    cont "for trainers!"
 
-	para "At every port, we"
-	line "hold parties with"
-	cont "invited trainers!"
-	done
+    para "At every port, we"
+    line "hold parties with"
+    cont "invited trainers!"
+    done
 
 _SSAnne2FRivalText::
-	text "<RIVAL>: Bonjour!"
-	line "<PLAYER>!"
+    text "<RIVAL>: Bonjour!"
+    line "<PLAYER>!"
 
-	para "Imagine seeing"
-	line "you here!"
+    para "Imagine seeing"
+    line "you here!"
 
-	para "<PLAYER>, were you"
-	line "really invited?"
+    para "<PLAYER>, were you"
+    line "really invited?"
 
-	para "So how's your"
-	line "#DEX coming?"
+    para "So how's your"
+    line "#DEX coming?"
 
-	para "I already caught"
-	line "40 kinds, pal!"
+    para "I already caught"
+    line "40 kinds, pal!"
 
-	para "Different kinds"
-	line "are everywhere!"
+    para "Different kinds"
+    line "are everywhere!"
 
-	para "Crawl around in"
-	line "grassy areas!"
-	done
+    para "Crawl around in"
+    line "grassy areas!"
+    done
 
 _SSAnne2FRivalDefeatedText::
-	text "Humph!"
+    text "Humph!"
 
-	para "At least you're"
-	line "raising your"
-	cont "#MON!"
-	prompt
+    para "At least you're"
+    line "raising your"
+    cont "#MON!"
+    prompt
 
 _SSAnne2FRivalVictoryText::
-	text "<PLAYER>! What are"
-	line "you, seasick?"
+    text "<PLAYER>! What are"
+    line "you, seasick?"
 
-	para "You should shape"
-	line "up, pal!"
-	prompt
+    para "You should shape"
+    line "up, pal!"
+    prompt
 
 _SSAnne2FRivalCutMasterText::
-	text "<RIVAL>: I heard"
-	line "there was a CUT"
-	cont "master on board."
+    text "<RIVAL>: I heard"
+    line "there was a CUT"
+    cont "master on board."
 
-	para "But, he was just a"
-	line "seasick, old man!"
+    para "But, he was just a"
+    line "seasick, old man!"
 
-	para "But, CUT itself is"
-	line "really useful!"
+    para "But, CUT itself is"
+    line "really useful!"
 
-	para "You should go see"
-	line "him! Smell ya!"
-	done
+    para "You should go see"
+    line "him! Smell ya!"
+    done

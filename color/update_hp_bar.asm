@@ -5,78 +5,78 @@
 ; e: # pixels to fill
 ; hl: where to draw
 DrawHPBarWithColor:
-	call DrawHPBar
-	push bc
-	push de
-	push hl
+    call DrawHPBar
+    push bc
+    push de
+    push hl
 
-	; Set hl to point to appropriate color var
-	ld a, [wHPBarType]
-	or a
-	ld hl, wEnemyHPBarColor
-	jr z, .gotHPBarColorVar
-	dec a
-	ld hl, wPlayerHPBarColor
-	jr z, .gotHPBarColorVar
+    ; Set hl to point to appropriate color var
+    ld a, [wHPBarType]
+    or a
+    ld hl, wEnemyHPBarColor
+    jr z, .gotHPBarColorVar
+    dec a
+    ld hl, wPlayerHPBarColor
+    jr z, .gotHPBarColorVar
 
-	; Party menu
-	ld hl, wPartyMenuHPBarColors
-	ld b, 0
-	ld a, [wLastMenuItem]
-	ld c, a
-	add hl, bc
+    ; Party menu
+    ld hl, wPartyMenuHPBarColors
+    ld b, 0
+    ld a, [wLastMenuItem]
+    ld c, a
+    add hl, bc
 
 .gotHPBarColorVar
-	call GetHealthBarColor ; Reads value of 'e' (bar length) to determine color
+    call GetHealthBarColor ; Reads value of 'e' (bar length) to determine color
 
-	ld a, 2
-	ldh [rWBK], a
+    ld a, 2
+    ldh [rWBK], a
 
-	; wHPBarType = 0 for enemy hp bar, 1 for player hp bar, 2 for pokemon menu.
-	ld a, [wHPBarType]
-	ld c, a
+    ; wHPBarType = 0 for enemy hp bar, 1 for player hp bar, 2 for pokemon menu.
+    ld a, [wHPBarType]
+    ld c, a
 
-	cp 2
-	jr nz, .inBattle
+    cp 2
+    jr nz, .inBattle
 
 .inMenu
-	ld a, [hl]
-	push af
-	ld hl, W2_TilesetPaletteMap
-	ld bc, SCREEN_WIDTH * 2 ; 2 rows for each pokemon in the menu
-	ld a, [wLastMenuItem]
-	call AddNTimes
+    ld a, [hl]
+    push af
+    ld hl, W2_TilesetPaletteMap
+    ld bc, SCREEN_WIDTH * 2 ; 2 rows for each pokemon in the menu
+    ld a, [wLastMenuItem]
+    call AddNTimes
 
-	ld bc, SCREEN_WIDTH * 2
-	pop af ; Get palette #
-	inc a
-	call FillMemory
+    ld bc, SCREEN_WIDTH * 2
+    pop af ; Get palette #
+    inc a
+    call FillMemory
 
-	ld a, 3
-	ld [W2_StaticPaletteMapChanged], a
-	jr .done
+    ld a, 3
+    ld [W2_StaticPaletteMapChanged], a
+    jr .done
 
 .inBattle
-	ld a, [hl] ; Palette # was stored to here
-	add PAL_GREENBAR
-	ld d, a
+    ld a, [hl] ; Palette # was stored to here
+    add PAL_GREENBAR
+    ld d, a
 
-	ld a, c
-	and a ; Check: enemy or player
-	ld e, 2
-	jr nz, .loadPalette
-	inc e
+    ld a, c
+    and a ; Check: enemy or player
+    ld e, 2
+    jr nz, .loadPalette
+    inc e
 .loadPalette
-	CALL_INDIRECT LoadSGBPalette
+    CALL_INDIRECT LoadSGBPalette
 
 .done
-	ld a, 1
-	ld [W2_ForceBGPUpdate], a
+    ld a, 1
+    ld [W2_ForceBGPUpdate], a
 
-	xor a
-	ldh [rWBK], a
+    xor a
+    ldh [rWBK], a
 
-	pop hl
-	pop de
-	pop bc
-	ret
+    pop hl
+    pop de
+    pop bc
+    ret

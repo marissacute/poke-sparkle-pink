@@ -1,7 +1,7 @@
 ; Used in wram.asm
 
 MACRO flag_array
-	ds ((\1) + 7) / 8
+    ds ((\1) + 7) / 8
 ENDM
 
 DEF BOX_STRUCT_LENGTH EQU 25 + NUM_MOVES * 2
@@ -28,7 +28,7 @@ MACRO box_struct
 ENDM
 
 MACRO party_struct
-	box_struct \1
+    box_struct \1
 \1Level::      db
 \1Stats::
 \1MaxHP::      dw
@@ -74,13 +74,13 @@ MACRO spritestatedata1
 \1YAdjusted::             db
 \1XAdjusted::             db
 \1CollisionData::         db
-	ds 3
+    ds 3
 \1End::
 ENDM
 
 MACRO spritestatedata2
 \1WalkAnimationCounter:: db
-	ds 1
+    ds 1
 \1YDisplacement::        db
 \1XDisplacement::        db
 \1MapY::                 db
@@ -89,10 +89,10 @@ MACRO spritestatedata2
 \1GrassPriority::        db
 \1MovementDelay::        db
 \1OrigFacingDirection::  db
-	ds 3
+    ds 3
 \1PictureID::            db
 \1ImageBaseOffset::      db
-	ds 1
+    ds 1
 \1End::
 ENDM
 

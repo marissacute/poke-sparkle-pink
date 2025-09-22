@@ -1,29 +1,29 @@
-	db DEX_BLASTOISE ; pokedex id
+    db DEX_BLASTOISE ; pokedex id
 
-	db  89,  93, 135,  88,  95
-	;   hp  atk  def  spd  spc
+    db  89,  93, 135,  88,  95
+    ;   hp  atk  def  spd  spc
 
-	db WATER, STEEL ; type
-	db 45 ; catch rate
-	db 210 ; base exp
+    db WATER, STEEL ; type
+    db 45 ; catch rate
+    db 210 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/blastoise.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/blastoise.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/blastoise.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/blastoise.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw BlastoisePicFront, BlastoisePicBack
+    dw BlastoisePicFront, BlastoisePicBack
 
-	db TACKLE, TAIL_WHIP, BUBBLE, WATER_GUN ; level 1 learnset
-	db GROWTH_MEDIUM_SLOW ; growth rate
+    db TACKLE, TAIL_WHIP, BUBBLE, WATER_GUN ; level 1 learnset
+    db GROWTH_MEDIUM_SLOW ; growth rate
 
-	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
-	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
-	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  \
-	     REFLECT,      BIDE,         SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     SURF,         STRENGTH
-	; end
+    ; tm/hm learnset
+    tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
+         DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
+         HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
+         EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  \
+         REFLECT,      BIDE,         SKULL_BASH,   REST,         SUBSTITUTE,   \
+         SURF,         STRENGTH
+    ; end
 
-	db BANK(BlastoisePicFront)
+    db BANK(BlastoisePicFront)

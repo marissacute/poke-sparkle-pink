@@ -14,18 +14,18 @@ hOAMTile::
 hROMBankTemp::
 hPreviousTileset::
 hRLEByteValue::
-	db
+    db
 
 hTextID:: ; DisplayTextID's argument
 hPartyMonIndex::
-	db
+    db
 
 hVRAMSlot::
-	db
+    db
 
 hFourTileSpriteCount::
 hHalveItemPrices::
-	db
+    db
 
 NEXTU
 hItemPrice:: ds 3 ; BCD number
@@ -55,10 +55,10 @@ NEXTU
 hMapStride::
 hEastWestConnectedMapWidth::
 hNorthSouthConnectionStripWidth::
-	db
+    db
 hMapWidth::
 hNorthSouthConnectedMapWidth::
-	db
+    db
 
 NEXTU
 hSpriteDataOffset:: db
@@ -66,15 +66,15 @@ hSpriteIndex:: db
 hSpriteImageIndex::
 hSpriteFacingDirection::
 hSpriteMovementByte2::
-	db
+    db
 
 NEXTU
-	ds 2
+    ds 2
 hLoadSpriteTemp1:: db
 hLoadSpriteTemp2:: db
 
 NEXTU
-	ds 2
+    ds 2
 hEnemySpeed:: dw
 ENDU
 
@@ -99,10 +99,10 @@ UNION
 ; Multiplication and division variables are meant
 ; to overlap for back-to-back usage. Big endian.
 UNION
-	ds 1
+    ds 1
 hMultiplicand:: ds 3
 hMultiplier:: db
-	ds 1
+    ds 1
 hMultiplyBuffer:: ds 4
 NEXTU
 hProduct:: ds 4
@@ -127,9 +127,9 @@ hNPCMovementDirections2Index::
 hNPCSpriteOffset::
 ; distance in steps between NPC and player
 hNPCPlayerYDistance::
-	db
+    db
 hNPCPlayerXDistance::
-	db
+    db
 hFindPathNumSteps:: db
 ; bit 0: set when the end of the path's Y coordinate matches the target's
 ; bit 1: set when the end of the path's X coordinate matches the target's
@@ -141,7 +141,7 @@ hFindPathXProgress:: db
 ; 0 = from player to NPC
 ; 1 = from NPC to player
 hNPCPlayerRelativePosPerspective:: db
-	ds 1
+    ds 1
 ; bit 0:
 ; 0 = target is to the south or aligned
 ; 1 = target is to the north
@@ -158,7 +158,7 @@ NEXTU
 hSignCoordPointer:: dw
 
 NEXTU
-	ds 1
+    ds 1
 hMutateWY:: db
 hMutateWX:: db
 
@@ -178,11 +178,11 @@ ENDU
 
 hDivideBCDDivisor::
 hDivideBCDQuotient::
-	ds 3 ; BCD number
+    ds 3 ; BCD number
 hDivideBCDBuffer::
-	ds 3 ; BCD number
+    ds 3 ; BCD number
 
-	ds 1
+    ds 1
 
 hSerialReceivedNewData:: db
 ; $01 = using external clock
@@ -285,7 +285,7 @@ hTileAnimations:: db
 
 hMovingBGTilesCounter1:: db
 
-	ds 1
+    ds 1
 
 hCurrentSpriteOffset:: db ; multiple of $10
 
@@ -302,7 +302,7 @@ NEXTU
 ; $FF = player cancelled
 hOaksAideResult::
 hOaksAideRequirement:: ; required number of owned mons
-	db
+    db
 hOaksAideRewardItem:: db
 hOaksAideNumMonsOwned:: db
 
@@ -328,19 +328,19 @@ hSavedCoordIndex::
 hMissableObjectIndex::
 hGymTrashCanRandNumMask::
 hInteractedWithBookshelf::
-	db
+    db
 ENDU
 
-	ds 1
+    ds 1
 
 hBackupGymGateIndex::
 hUnlockedSilphCoDoors::
-	db
+    db
 
 ; the first tile ID in a sequence of tile IDs that increase by 1 each step
 hStartTileID:: db
 
-	ds 2
+    ds 2
 
 hNewPartyLength:: db
 
@@ -359,7 +359,7 @@ hSpriteVRAMSlotAndFacing:: db
 
 hCoordsInFrontOfPlayerMatch::
 hSpriteAnimFrameCounter::
-	db
+    db
 
 UNION
 hSpriteScreenYCoord:: db
@@ -369,22 +369,22 @@ hSpriteMapXCoord::    db
 
 NEXTU
 hItemAlreadyFound:: db
-	ds 2
+    ds 2
 hDidntFindAnyHiddenObject:: db
 
 NEXTU
-	ds 1
+    ds 1
 hSavedMapTextPtr:: dw
-	ds 1
+    ds 1
 ENDU
 
-	ds 4
+    ds 4
 
 hWhoseTurn:: db ; 0 on player's turn, 1 on enemy's turn
 
 hClearLetterPrintingDelayFlags:: db
 
-	ds 1
+    ds 1
 
 ; bit 0: draw HP fraction to the right of bar instead of below (for party menu)
 ; bit 1: menu is double spaced
@@ -405,6 +405,6 @@ hDelayFrameHookBank:: db
 ; Used for convenience in color hack (in the _ColorOverworldSprite function)
 hColorHackTmp:: db
 
-	ds 3
+    ds 3
 
 ENDSECTION

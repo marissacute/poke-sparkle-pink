@@ -1,26 +1,26 @@
-	db DEX_MISDREAVUS ; pokedex id
+    db DEX_MISDREAVUS ; pokedex id
 
-	db  60,  60,  60,  115, 115
-	;   hp  atk  def  spd  spc
+    db  60,  60,  60,  115, 115
+    ;   hp  atk  def  spd  spc
 
-	db GHOST, FAIRY ; type
-	db 45 ; catch rate
-	db 147 ; base exp
+    db GHOST, FAIRY ; type
+    db 45 ; catch rate
+    db 147 ; base exp
 
 IF GEN_2_GRAPHICS
-	INCBIN "gfx/pokemon/gsfront/misdreavus.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/gsfront/misdreavus.pic", 0, 1 ; sprite dimensions
 ELSE
-	INCBIN "gfx/pokemon/front/misdreavus.pic", 0, 1 ; sprite dimensions
+    INCBIN "gfx/pokemon/front/misdreavus.pic", 0, 1 ; sprite dimensions
 ENDC
-	dw MisdreavusPicFront, MisdreavusPicBack
+    dw MisdreavusPicFront, MisdreavusPicBack
 
-	db PSYWAVE, GROWL, NO_MOVE, NO_MOVE ; level 1 learnset
-	db GROWTH_FAST ; growth rate
+    db PSYWAVE, GROWL, NO_MOVE, NO_MOVE ; level 1 learnset
+    db GROWTH_FAST ; growth rate
 
-	; tm/hm learnset
-	tmhm TOXIC,        FLASH,        MEGA_DRAIN,   THUNDERBOLT,  THUNDER,      \
-	     PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  BIDE,         SELFDESTRUCT, \
-	     DREAM_EATER,  REST,         SHADOW_BALL,  EXPLOSION,    SUBSTITUTE
-	; end
+    ; tm/hm learnset
+    tmhm TOXIC,        FLASH,        MEGA_DRAIN,   THUNDERBOLT,  THUNDER,      \
+         PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  BIDE,         SELFDESTRUCT, \
+         DREAM_EATER,  REST,         SHADOW_BALL,  EXPLOSION,    SUBSTITUTE
+    ; end
 
-	db BANK(MisdreavusPicFront)
+    db BANK(MisdreavusPicFront)
