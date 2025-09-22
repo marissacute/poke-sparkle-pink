@@ -114,7 +114,7 @@ MonsterNames::
 	db "WEEDLE@@@@"
 	db "KAKUNA@@@@"
 	db "BEEDRILL@@"
-	db "MISSINGNO."
+	db "CROBAT@@@@"
 	db "DODRIO@@@@"
 	db "PRIMEAPE@@"
 	db "DUGTRIO@@@"

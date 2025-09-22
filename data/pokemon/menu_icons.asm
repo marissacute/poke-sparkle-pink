@@ -160,4 +160,5 @@ MonPartyData:
 	nybble ICON_FAIRY     ; Misdreavus
 	nybble ICON_BUG       ; Scizor
 	nybble ICON_SNAKE     ; Steelix
+	nybble ICON_MON       ; Crobat
 	end_nybble_array NUM_POKEMON

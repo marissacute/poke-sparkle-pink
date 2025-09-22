@@ -1596,3 +1596,12 @@ _SteelixDexEntry::
 	page "As a result, it is"
 	next "even harder than a"
 	next "diamond"
+
+_CrobatDexEntry::
+	text "It flies so si-"
+	next "lently through the"
+	next "dark on its four"
+
+	page "wings that it may"
+	next "not be noticed"
+	next "even when nearby"

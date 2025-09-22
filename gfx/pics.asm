@@ -809,6 +809,8 @@ ScizorPicFront::      INCBIN "gfx/pokemon/gsfront/scizor.pic"
 ScizorPicBack::       INCBIN "gfx/pokemon/gsback/scizorb.pic"
 SteelixPicFront::     INCBIN "gfx/pokemon/gsfront/steelix.pic"
 SteelixPicBack::      INCBIN "gfx/pokemon/gsback/steelixb.pic"
+CrobatPicFront::      INCBIN "gfx/pokemon/gsfront/crobat.pic"
+CrobatPicBack::       INCBIN "gfx/pokemon/gsback/crobatb.pic"
 ENDC
 
 IF !GEN_2_GRAPHICS
@@ -843,5 +845,7 @@ MisdreavusPicBack::   INCBIN "gfx/pokemon/gsback/misdreavusb.pic"
 ScizorPicFront::      INCBIN "gfx/pokemon/gsfront/scizor.pic"
 ScizorPicBack::       INCBIN "gfx/pokemon/gsback/scizorb.pic"
 SteelixPicFront::     INCBIN "gfx/pokemon/gsfront/steelix.pic"
-SteelixPicBack::       INCBIN "gfx/pokemon/gsback/steelixb.pic"
+SteelixPicBack::      INCBIN "gfx/pokemon/gsback/steelixb.pic"
+CrobatPicFront::      INCBIN "gfx/pokemon/gsfront/crobat.pic"
+CrobatPicBack::       INCBIN "gfx/pokemon/gsback/crobatb.pic"
 ENDC

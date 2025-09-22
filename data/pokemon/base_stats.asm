@@ -160,4 +160,5 @@ INCLUDE "data/pokemon/base_stats/pichu.asm"
 INCLUDE "data/pokemon/base_stats/misdreavus.asm"
 INCLUDE "data/pokemon/base_stats/scizor.asm"
 INCLUDE "data/pokemon/base_stats/steelix.asm"
+INCLUDE "data/pokemon/base_stats/crobat.asm"
 	assert_table_length NUM_POKEMON ; 

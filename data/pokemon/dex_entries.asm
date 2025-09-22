@@ -114,7 +114,7 @@ PokedexEntryPointers:
 	dw WeedleDexEntry
 	dw KakunaDexEntry
 	dw BeedrillDexEntry
-	dw MissingNoDexEntry
+	dw CrobatDexEntry
 	dw DodrioDexEntry
 	dw PrimeapeDexEntry
 	dw DugtrioDexEntry
@@ -1306,15 +1306,22 @@ MisdreavusDexEntry:
 ScizorDexEntry:
   	db "PINCER@"
 	db 5,11
-	dw 260
+	dw 2600
 	text_far _ScizorDexEntry
 	text_end  
 
 SteelixDexEntry:
   	db "IRON SNAKE@"
 	db 30,2
-	dw 880
+	dw 8820
 	text_far _SteelixDexEntry
+	text_end  
+
+CrobatDexEntry:
+  	db "BAT@"
+	db 5,11
+	dw 1650
+	text_far _CrobatDexEntry
 	text_end  
 
 MissingNoDexEntry:
