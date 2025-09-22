@@ -7,11 +7,8 @@
 	db 45 ; catch rate
 	db 184 ; base exp
 
-IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/bellossom.pic", 0, 1 ; sprite dimensions
-ELSE
-	INCBIN "gfx/pokemon/front/bellossom.pic", 0, 1 ; sprite dimensions
-ENDC
+	
 	dw BellossomPicFront, BellossomPicBack
 
 	db POISONPOWDER, STUN_SPORE, SLEEP_POWDER, PETAL_DANCE ; level 1 learnset

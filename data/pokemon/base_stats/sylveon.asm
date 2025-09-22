@@ -7,11 +7,8 @@
 	db 45 ; catch rate
 	db 196 ; base exp
 
-IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/sylveon.pic", 0, 1 ; sprite dimensions
-ELSE
-	INCBIN "gfx/pokemon/front/sylveon.pic", 0, 1 ; sprite dimensions
-ENDC
+
 	dw SylveonPicFront, SylveonPicBack
 
 	db TACKLE, SAND_ATTACK, QUICK_ATTACK, FAIRY_WIND ; level 1 learnset

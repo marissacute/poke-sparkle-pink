@@ -7,11 +7,8 @@
 	db 45 ; catch rate
 	db 196 ; base exp
 
-IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/umbreon.pic", 0, 1 ; sprite dimensions
-ELSE
-	INCBIN "gfx/pokemon/front/umbreon.pic", 0, 1 ; sprite dimensions
-ENDC
+
 	dw UmbreonPicFront, UmbreonPicBack
 
 	db TACKLE, SAND_ATTACK, QUICK_ATTACK, FEINT_ATTACK ; level 1 learnset

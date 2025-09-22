@@ -7,11 +7,8 @@
 	db 90 ; catch rate
 	db 204 ; base exp
 
-IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/crobat.pic", 0, 1 ; sprite dimensions
-ELSE
-	INCBIN "gfx/pokemon/front/crobat.pic", 0, 1 ; sprite dimensions
-ENDC
+
 	dw CrobatPicFront, CrobatPicBack
 
 	db WING_ATTACK, SCREECH, CONFUSE_RAY, CRUNCH ; level 1 learnset

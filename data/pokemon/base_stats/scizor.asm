@@ -7,11 +7,8 @@
 	db 25 ; catch rate
 	db 200 ; base exp
 
-IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/scizor.pic", 0, 1 ; sprite dimensions
-ELSE
-	INCBIN "gfx/pokemon/front/scizor.pic", 0, 1 ; sprite dimensions
-ENDC
+
 	dw ScizorPicFront, ScizorPicBack
 
 	db QUICK_ATTACK, LEER, NO_MOVE, NO_MOVE ; level 1 learnset

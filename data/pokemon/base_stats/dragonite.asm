@@ -7,11 +7,8 @@
 	db 45 ; catch rate
 	db 218 ; base exp
 
-IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/dragonite.pic", 0, 1 ; sprite dimensions
-ELSE
-	INCBIN "gfx/pokemon/front/dragonite.pic", 0, 1 ; sprite dimensions
-ENDC
+
 	dw DragonitePicFront, DragonitePicBack
 
 	db TACKLE, LEER, THUNDER_WAVE, DRAGON_RAGE ; level 1 learnset

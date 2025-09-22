@@ -7,11 +7,8 @@
 	db 60 ; catch rate
 	db 161 ; base exp
 
-IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/magnezone.pic", 0, 1 ; sprite dimensions
-ELSE
-	INCBIN "gfx/pokemon/front/magnezone.pic", 0, 1 ; sprite dimensions
-ENDC
+
 	dw MagnezonePicFront, MagnezonePicBack
 
 	db TACKLE, SONICBOOM, THUNDERSHOCK, MAGNET_BOMB ; level 1 learnset

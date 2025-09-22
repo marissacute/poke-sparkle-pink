@@ -7,11 +7,8 @@
 	db 190 ; catch rate
 	db 42 ; base exp
 
-IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/pichu.pic", 0, 1 ; sprite dimensions
-ELSE
-	INCBIN "gfx/pokemon/front/pichu.pic", 0, 1 ; sprite dimensions
-ENDC
+
 	dw PichuPicFront, PichuPicBack
 
 	db THUNDERSHOCK, GROWL, NO_MOVE, NO_MOVE ; level 1 learnset

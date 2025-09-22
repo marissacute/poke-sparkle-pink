@@ -45,7 +45,6 @@ SuperPalettes:
 ; The following are only available with gen 2 graphics patch: individual palettes for
 ; pokemon, trainers, etc.
 
-IF GEN_2_GRAPHICS
 	RGB 31,31,31, 12,31,11, 31,10,06, 00,00,00 ; PAL_BULBASAUR
 	RGB 31,31,31, 12,31,11, 31,12,17, 00,00,00 ; PAL_IVYSAUR
 	RGB 31,31,31, 12,31,19, 31,09,19, 00,00,00 ; PAL_VENUSAUR
@@ -252,5 +251,5 @@ IF GEN_2_GRAPHICS
 	RGB 31,31,31, 26,08,08, 07,08,13, 00,00,00 ; PAL_SCIZOR
 	RGB 31,31,31, 17,15,26, 12,08,12, 00,00,00 ; PAL_STEELIX
 	RGB 31,31,31, 28,11,26, 15,23,06, 00,00,00 ; BELLOSSOM
-ENDC
+
 	assert_table_length NUM_SGB_PALS

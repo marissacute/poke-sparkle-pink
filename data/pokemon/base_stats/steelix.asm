@@ -7,11 +7,8 @@
 	db 45 ; catch rate
 	db 108 ; base exp
 
-IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/steelix.pic", 0, 1 ; sprite dimensions
-ELSE
-	INCBIN "gfx/pokemon/front/steelix.pic", 0, 1 ; sprite dimensions
-ENDC
+
 	dw SteelixPicFront, SteelixPicBack
 
 	db TACKLE, SCREECH, NO_MOVE, NO_MOVE ; level 1 learnset
