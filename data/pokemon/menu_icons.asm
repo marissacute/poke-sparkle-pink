@@ -162,4 +162,5 @@ MonPartyData:
 	nybble ICON_SNAKE     ; Steelix
 	nybble ICON_MON       ; Crobat
 	nybble ICON_GRASS     ; Bellossom
+	nybble ICON_SNAKE     ; Dunsparce
 	end_nybble_array NUM_POKEMON

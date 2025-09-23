@@ -65,7 +65,7 @@ EvosMovesPointerTable:
 	dw ElectabuzzEvosMoves
 	dw MagnetonEvosMoves
 	dw KoffingEvosMoves
-	dw MissingNo38EvosMoves
+	dw DunsparceEvosMoves
 	dw MankeyEvosMoves
 	dw SeelEvosMoves
 	dw DiglettEvosMoves
@@ -838,10 +838,16 @@ KoffingEvosMoves:
 	db 48, EXPLOSION
 	db 0
 
-MissingNo38EvosMoves:
+DunsparceEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 5, DEFENSE_CURL
+	db 13, GLARE
+	db 18, DIG
+	db 26, FEINT_ATTACK
+	db 30, SCREECH
+	db 38, TAKE_DOWN
 	db 0
 
 MankeyEvosMoves:

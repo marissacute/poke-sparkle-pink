@@ -280,4 +280,5 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_SCIZOR        ; $F1
 	const PAL_STEELIX       ; $F2
 	const PAL_BELLOSSOM     ; $F3
+	const PAL_DUNSPARCE     ; $F4
 DEF NUM_SGB_PALS EQU const_value

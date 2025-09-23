@@ -55,7 +55,7 @@ PokedexEntryPointers:
 	dw ElectabuzzDexEntry
 	dw MagnetonDexEntry
 	dw KoffingDexEntry
-	dw MissingNoDexEntry
+	dw DunsparceDexEntry
 	dw MankeyDexEntry
 	dw SeelDexEntry
 	dw DiglettDexEntry
@@ -1329,10 +1329,17 @@ CrobatDexEntry:
 	text_end  
 
 BellossomDexEntry:
-  	db "Flower@"
+  	db "FLOWER@"
 	db 4
 	dw 58
 	text_far _BellossomDexEntry
+	text_end  
+
+DunsparceDexEntry:
+  	db "LAND SNAKE@"
+	db 15
+	dw 150
+	text_far _DunsparceDexEntry
 	text_end  
 
 

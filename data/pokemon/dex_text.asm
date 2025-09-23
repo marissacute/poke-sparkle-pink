@@ -1618,3 +1618,13 @@ _BellossomDexEntry::
 	next "ringing sound "
 	dex
 
+_DunsparceDexEntry::
+	text "If spotted, it es-"
+	next "capes by burrowing"
+	next "with its tail."
+
+	page "It can float just"
+	next "slightly using its"
+	next "wings"
+	dex
+
