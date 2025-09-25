@@ -1628,3 +1628,14 @@ _DunsparceDexEntry::
 	next "wings"
 	dex
 
+_CleffaDexEntry::
+	text "Because of its"
+	next "unusual, star-like"
+	next "silhouette, people"
+
+	page "believe that it"
+	next "came here on"
+	next "a meteor"
+	dex
+
+

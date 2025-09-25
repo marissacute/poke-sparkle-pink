@@ -4,9 +4,9 @@ MtMoonB2FWildMons:
 	db  9, GEODUDE
 	db 10, ZUBAT
 	db 10, GEODUDE
-	db 11, ZUBAT
+	db 11, CLEFFA
 	db 10, PARAS
-	db 9, CLEFAIRY
+	db 9, CLEFFA
 	db 10, CLEFAIRY
 	db 5, JIGGLYPUFF
 	db 5, JIGGLYPUFF

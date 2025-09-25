@@ -67,7 +67,7 @@ MonsterNames::
 	db "VENONAT@@@"
 	db "DRAGONITE@"
 	db "SYLVEON@@@"
-	db "MISSINGNO."
+	db "CLEFFA@@@@"
 	db "MISSINGNO."
 	db "DODUO@@@@@"
 	db "POLIWAG@@@"

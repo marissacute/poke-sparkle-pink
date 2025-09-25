@@ -1,4 +1,4 @@
-	db DEX_ESPEON ; pokedex id
+	db DEX_SYLVEON ; pokedex id
 
 	db  100,  70,  70,  60,  130
 	;   hp  atk  def  spd  spc

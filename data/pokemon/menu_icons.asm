@@ -163,4 +163,5 @@ MonPartyData:
 	nybble ICON_MON       ; Crobat
 	nybble ICON_GRASS     ; Bellossom
 	nybble ICON_SNAKE     ; Dunsparce
+	nybble ICON_FAIRY     ; Cleffa
 	end_nybble_array NUM_POKEMON

@@ -163,4 +163,5 @@ INCLUDE "data/pokemon/base_stats/steelix.asm"
 INCLUDE "data/pokemon/base_stats/crobat.asm"
 INCLUDE "data/pokemon/base_stats/bellossom.asm"
 INCLUDE "data/pokemon/base_stats/dunsparce.asm"
+INCLUDE "data/pokemon/base_stats/cleffa.asm"
 	assert_table_length NUM_POKEMON ; 

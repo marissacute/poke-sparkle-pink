@@ -167,5 +167,6 @@
 	const DEX_CROBAT     ; 161
 	const DEX_BELLOSSOM  ; 162
 	const DEX_DUNSPARCE  ; 163
+	const DEX_CLEFFA     ; 164
 
 DEF NUM_POKEMON EQU const_value - 1

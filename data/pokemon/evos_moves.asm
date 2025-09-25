@@ -77,7 +77,7 @@ EvosMovesPointerTable:
 	dw VenonatEvosMoves
 	dw DragoniteEvosMoves
 	dw SylveonEvosMoves
-	dw MissingNo44EvosMoves
+	dw CleffaEvosMoves
 	dw MissingNo45EvosMoves
 	dw DoduoEvosMoves
 	dw PoliwagEvosMoves
@@ -943,10 +943,19 @@ DragoniteEvosMoves:
 	db 55, HYPER_BEAM
 	db 0
 
-MissingNo44EvosMoves:
+CleffaEvosMoves:
 ; Evolutions
+	db EVOLVE_LEVEL, 15, CLEFAIRY
 	db 0
 ; Learnset
+	db 9, SING
+	db 13, FAIRY_WIND
+	db 18, DOUBLESLAP
+	db 24, MINIMIZE
+	db 31, METRONOME
+	db 35, MOONBLAST
+	db 39, DEFENSE_CURL
+	db 48, LIGHT_SCREEN
 	db 0
 
 MissingNo45EvosMoves:

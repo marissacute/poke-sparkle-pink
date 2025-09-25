@@ -165,6 +165,7 @@ MonsterPalettes:
 	db PAL_GOLBAT ; Crobat and Golbat have the same colours
 	db PAL_BELLOSSOM
 	db PAL_DUNSPARCE
+	db PAL_CLEFAIRY ; Cleffa and Clefairy have the same colours
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO
 	db PAL_YOUNGSTER

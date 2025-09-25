@@ -1342,6 +1342,12 @@ DunsparceDexEntry:
 	text_far _DunsparceDexEntry
 	text_end  
 
+CleffaDexEntry:
+	db "STAR SHAPE@"
+	db 3
+	dw 30
+	text_far _CleffaDexEntry
+	text_end
 
 MissingNoDexEntry:
 	db "???@"

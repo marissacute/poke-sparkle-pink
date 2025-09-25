@@ -13,6 +13,6 @@ TitleMons:
 	db SYLVEON
 	db DITTO
 	db VULPIX
-	db STEELIX
+	db CLEFFA
 	db PONYTA
 	db SCIZOR
