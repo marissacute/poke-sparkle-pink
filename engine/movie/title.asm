@@ -96,11 +96,6 @@ DisplayTitleScreen:
 
 	call DrawPlayerCharacter
 
-; put a pokeball in the player's hand
-	ld hl, wShadowOAMSprite10
-	ld a, $74
-	ld [hl], a
-
 ; place tiles for title screen copyright
 	hlcoord 2, 17
 	ld de, .tileScreenCopyrightTiles
@@ -226,7 +221,6 @@ DisplayTitleScreen:
 	ld c, 1
 	call CheckForUserInterruption
 	jr c, .finishedWaiting
-	farcall TitleScreenAnimateBallIfStarterOut
 	call TitleScreenPickNewMon
 	jr .awaitUserInterruptionLoop
 

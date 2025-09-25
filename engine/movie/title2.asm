@@ -60,7 +60,6 @@ _TitleScroll:
 	add b
 	ld d, a
 
-	call GetTitleBallY
 	dec c
 	jr nz, .loop
 
@@ -80,41 +79,4 @@ _TitleScroll:
 	ldh a, [rLY] ; rLY
 	cp h
 	jr z, .wait2
-	ret
-
-TitleBallYTable:
-; OBJ y-positions for the Poke Ball held by Red in the title screen.
-; This is really two 0-terminated lists. Initiated with an index of 1.
-	db 0, $71, $6f, $6e, $6d, $6c, $6d, $6e, $6f, $71, $74, 0
-
-TitleScreenAnimateBallIfStarterOut:
-; Animate the TitleBall if a starter just got scrolled out.
-	ld a, [wTitleMonSpecies]
-	cp STARTER1
-	jr z, .ok
-	cp STARTER2
-	jr z, .ok
-	cp STARTER3
-	ret nz
-.ok
-	ld e, 1 ; animate titleball
-	ld bc, TitleScroll_WaitBall
-	ld d, 0
-	jp _TitleScroll
-
-GetTitleBallY:
-; Get position e from TitleBallYTable
-	push de
-	push hl
-	xor a
-	ld d, a
-	ld hl, TitleBallYTable
-	add hl, de
-	ld a, [hl]
-	pop hl
-	pop de
-	and a
-	ret z
-	ld [wShadowOAMSprite10YCoord], a
-	inc e
 	ret
