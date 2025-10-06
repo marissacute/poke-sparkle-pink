@@ -112,6 +112,10 @@ IF DEF(_DEBUG)
 	ld hl, wPokedexSeen
 	call DebugSetPokedexEntries
 	SetEvent EVENT_GOT_POKEDEX
+	; Hide cave guy so we can go into Cerulean cave.
+	ld a, HS_CERULEAN_CAVE_GUY
+	ld [wMissableObjectIndex], a
+	predef HideObject
 
 	; Rival chose Squirtle,
 	; Player chose Charmander.
@@ -142,6 +146,7 @@ DebugNewGameItemsList:
 	db ESCAPE_ROPE, 99
 	db RARE_CANDY, 99
 	db MASTER_BALL, 99
+	db MAX_REPEL, 99
 	db TOWN_MAP, 1
 	db SECRET_KEY, 1
 	db CARD_KEY, 1
