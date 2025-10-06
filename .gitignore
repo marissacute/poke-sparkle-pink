@@ -32,3 +32,6 @@
 
 # library
 rgbds/
+
+# Code stuff
+.vs/
