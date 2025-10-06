@@ -1,4 +1,4 @@
-_MewtwoBattleText::
+_MewtwoBeforeBattleText::
 	text "You hear a tele-"
 	line "pathic voice in"
 	cont "your head."
@@ -26,7 +26,7 @@ _MewtwoBattleText::
     para "Do you think you"
     line "are a match for"
     cont "me? Prove it!"
-	text_end
+	done
 
 _MewtwoEndBattleText::
 	text "Trainer! You have"

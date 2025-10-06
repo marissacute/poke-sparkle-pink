@@ -22,7 +22,7 @@ CeruleanCaveB1F_TextPointers:
 CeruleanCaveB1FTrainerHeaders:
 	def_trainers
 MewtwoTrainerHeader:
-	trainer EVENT_BEAT_MEWTWO, 0, MewtwoBattleText, MewtwoBattleText, MewtwoBattleText
+	trainer EVENT_BEAT_MEWTWO, 0, MewtwoBattleText, MewtwoEndBattleText, MewtwoAfterBattleText
 	db -1 ; end
 
 CeruleanCaveB1FMewtwoText:
@@ -32,17 +32,22 @@ CeruleanCaveB1FMewtwoText:
 	jp TextScriptEnd
 
 MewtwoBattleText:
-	text_far _MewtwoBattleText
+	text_far _MewtwoBeforeBattleText
 	text_asm
 	ld a, MEWTWO
 	call PlayCry
 	call WaitForSoundToFinish
 	jp TextScriptEnd
 
+MewtwoBeforeBattleText:
+	text_far _MewtwoBeforeBattleText
+	text_end
+
 MewtwoEndBattleText:
     text_far _MewtwoEndBattleText
-    text_asm
+    text_end
 
 MewtwoAfterBattleText:
 	text_far _MewtwoAfterBattleText
 	text_asm
+	jp TextScriptEnd
