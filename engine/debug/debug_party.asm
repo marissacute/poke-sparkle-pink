@@ -136,7 +136,8 @@ DebugSetPokedexEntries:
 	ld [hli], a
 	dec b
 	jr nz, .loop
-	ld [hl], %01111111
+	 ; don't fill the last byte completely - this should have num pokemon mod 8 ones
+	ld [hl], %00001111
 	ret
 
 DebugNewGameItemsList:

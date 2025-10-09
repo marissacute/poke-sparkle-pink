@@ -1615,7 +1615,7 @@ _BellossomDexEntry::
 
 	page "rub together and"
 	next "make a pleasant"
-	next "ringing sound "
+	next "ringing sound"
 	dex
 
 _DunsparceDexEntry::

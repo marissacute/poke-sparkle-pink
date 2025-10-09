@@ -60,7 +60,7 @@ MonsterNames::
 	db "SEEL@@@@@@"
 	db "DIGLETT@@@"
 	db "TAUROS@@@@"
-	db "MISSINGNO."
+	db "BELLOSSOM@"
 	db "MISSINGNO."
 	db "MISSINGNO."
 	db "FARFETCH'D"
