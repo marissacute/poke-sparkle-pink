@@ -28,11 +28,6 @@ _MewtwoBeforeBattleText::
     cont "me? Prove it!"
 	done
 
-_MewtwoEndBattleText::
-	text "Trainer! You have"
-	line "defeated me."
-	text_end
-
 _MewtwoAfterBattleText::
 	text "I understand now."
 	line "It is the bond"
