@@ -14,6 +14,8 @@ IndigoPlateauLobby_Object:
 	warp_event  8,  0, LORELEIS_ROOM, 1
 
 	def_bg_events
+	bg_event  2,  1, TEXT_INDIGOPLATEAULOBBY_TM_MACHINE_1
+	bg_event  3,  1, TEXT_INDIGOPLATEAULOBBY_TM_MACHINE_2
 
 	def_object_events
 	object_event  7,  5, SPRITE_NURSE, STAY, DOWN, TEXT_INDIGOPLATEAULOBBY_NURSE

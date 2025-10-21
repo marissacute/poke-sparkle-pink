@@ -2,15 +2,15 @@ _IndigoPlateauLobbyGymGuideText::
 	text "Yo! Champ in"
 	line "making!"
 
-	para "At #MON LEAGUE,"
-	line "you have to face"
-	cont "the ELITE FOUR in"
-	cont "succession."
+	para "Make sure your"
+	line "#MON are ready"
+	cont "before going to"
+	cont "the ELITE FOUR!"
 
-	para "If you lose, you"
-	line "have to start all"
-	cont "over again! This"
-	cont "is it! Go for it!"
+	para "Check out the"
+	line "TM Machines in"
+	cont "the back to get"
+	cont "some new moves!"
 	done
 
 _IndigoPlateauLobbyCooltrainerFText::
