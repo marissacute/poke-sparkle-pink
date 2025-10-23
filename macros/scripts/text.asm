@@ -235,3 +235,8 @@ ENDM
 MACRO script_vending_machine
 	db TX_SCRIPT_VENDING_MACHINE
 ENDM
+
+	const TX_SCRIPT_TM_MACHINE ; $f4
+MACRO script_tm_machine
+	db TX_SCRIPT_TM_MACHINE
+ENDM

@@ -229,3 +229,36 @@ ENDC
 	line "your friend and"
 	cont "come again!"
 	done
+
+_TMMachineGreetingText::
+	text "<PLAYER> turned on"
+	line "the TM Machine."
+	done
+
+_TMMachineTellBuyPriceText::
+	text "BUY PRICE: "
+	line "¥@"
+	text_bcd hMoney, 3 | LEADING_ZEROES | LEFT_ALIGN
+	text ". OK?"
+	done
+
+_TMMachineBoughtItemText::
+	text_ram wStringBuffer
+	text_start
+	line "was delivered!"
+	prompt
+
+_TMMachineNotEnoughMoneyText::
+	text "SALE DECLINED:"
+	line "INSUFFICENT FUNDS."
+	prompt
+
+_TMMachineItemBagFullText::
+	text "SALE DECLINED:"
+	line "BAG IS FULL."
+	prompt
+
+_TMMachineThankYouText::
+	text "Turned off the"
+	line "TM Machine!"
+	done

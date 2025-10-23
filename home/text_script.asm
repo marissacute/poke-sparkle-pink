@@ -83,6 +83,7 @@ ENDM
 	dict2 TX_SCRIPT_VENDING_MACHINE,         farcall VendingMachineMenu
 	dict  TX_SCRIPT_PRIZE_VENDOR,            TextScript_GameCornerPrizeMenu
 	dict2 TX_SCRIPT_CABLE_CLUB_RECEPTIONIST, callfar CableClubNPC
+	dict TX_SCRIPT_TM_MACHINE,               DisplayTMMachine
 
 	call PrintText_NoCreatingTextBox ; display the text
 	ld a, [wDoNotWaitForButtonPressAfterDisplayingText]
@@ -169,6 +170,10 @@ LoadItemList::
 	cp $ff
 	jr nz, .loop
 	ret
+
+DisplayTMMachine::
+	homecall DisplayTMMachine_
+	jp AfterDisplayingTextID
 
 DisplayPokemonCenterDialogue::
 ; zeroing these doesn't appear to serve any purpose

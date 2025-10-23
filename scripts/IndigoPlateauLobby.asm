@@ -21,7 +21,7 @@ IndigoPlateauLobby_TextPointers:
 	dw_const IndigoPlateauLobbyCooltrainerFText,     TEXT_INDIGOPLATEAULOBBY_COOLTRAINER_F
 	dw_const IndigoPlateauLobbyClerkText,            TEXT_INDIGOPLATEAULOBBY_CLERK
 	dw_const IndigoPlateauLobbyLinkReceptionistText, TEXT_INDIGOPLATEAULOBBY_LINK_RECEPTIONIST
-	dw_const TMMachine1Text,                         TEXT_INDIGOPLATEAULOBBY_TM_MACHINE_1
+	dw_const TMMachineScript,                         TEXT_INDIGOPLATEAULOBBY_TM_MACHINE_1
 	dw_const TMMachine2Text,                         TEXT_INDIGOPLATEAULOBBY_TM_MACHINE_2
 
 IndigoPlateauLobbyNurseText:
@@ -37,3 +37,6 @@ IndigoPlateauLobbyCooltrainerFText:
 
 IndigoPlateauLobbyLinkReceptionistText:
 	script_cable_club_receptionist
+
+TMMachineScript:
+    script_tm_machine
