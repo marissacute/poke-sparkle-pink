@@ -55,12 +55,28 @@ GetMachineName::
 	push bc
 	ld a, [wNamedObjectIndex]
 	push af
-	cp TM01 ; is this a TM? [not HM]
-	jr nc, .WriteTM
-; if HM, then write "HM" and add NUM_HMS to the item ID, so we can reuse the
+
+	; First load the name of the move to wStringBuffer
+	sub TM01
+	jr nc, .skipAdding
+	add NUM_TMS + NUM_HMS ; adjust HM IDs to come after TM IDs
+.skipAdding
+	inc a
+	ld [wTempTMNameStorage], a ; put the TM number away
+	ld [wTempTMHM], a
+	predef TMToMove ; get move ID from TM/HM ID
+	ld a, [wTempTMHM]
+	ld [wMoveNum], a
+	call GetMoveName
+	call CopyToStringBuffer
+
+	ld a, [wTempTMNameStorage]
+	cp 50 ; is this a TM? [not HM]
+	jr c, .WriteTM
+; if HM, then write "HM" and substract NUM_TMS to the item ID, so we can reuse the
 ; TM printing code
-	add NUM_HMS
-	ld [wNamedObjectIndex], a
+	sub NUM_TMS
+	ld [wTempTMNameStorage], a
 	ld hl, HiddenPrefix ; points to "HM"
 	ld bc, 2
 	jr .WriteMachinePrefix
@@ -72,8 +88,7 @@ GetMachineName::
 	call CopyData
 
 ; now get the machine number and convert it to text
-	ld a, [wNamedObjectIndex]
-	sub TM01 - 1
+	ld a, [wTempTMNameStorage]
 	ld b, "0"
 .FirstDigit
 	sub 10
@@ -91,13 +106,25 @@ GetMachineName::
 	add b
 	ld [de], a
 	inc de
-	ld a, "@"
+	ld a, " "
 	ld [de], a
 	pop af
 	ld [wNamedObjectIndex], a
 	pop bc
 	pop de
 	pop hl
+
+	; now add the move name after the TMxx
+	ld hl, wStringBuffer
+	ld de, wNameBuffer + 5 ; first 5 characters stay
+	ld bc, 8
+	call CopyData
+
+	; Add terminator character
+	; de still points to the end of the array.
+	ld a, "@"
+	ld [de], a
+
 	ret
 
 TechnicalPrefix::

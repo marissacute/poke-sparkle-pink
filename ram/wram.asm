@@ -1759,7 +1759,7 @@ wOptions:: db
 
 wObtainedBadges:: flag_array NUM_BADGES
 
-wUnusedObtainedBadges:: db
+wTempTMNameStorage:: db
 
 wLetterPrintingDelayFlags:: db
 

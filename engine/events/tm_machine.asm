@@ -110,11 +110,11 @@ DisplayTMMachine_::
 
 TMMachineItemList:
     db 25
-    db TM_MEGA_PUNCH
-    db TM_RAZOR_WIND
-    db TM_SWORDS_DANCE
-    db TM_WHIRLWIND
-	db TM_MEGA_KICK
+    db HM_CUT
+    db HM_FLY
+    db HM_SURF
+	db HM_STRENGTH
+	db HM_FLASH
 	db TM_TOXIC
 	db TM_HORN_DRILL
 	db TM_BODY_SLAM
