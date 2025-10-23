@@ -109,12 +109,12 @@ DisplayTMMachine_::
 	ret
 
 TMMachineItemList:
-    db 25
-    db HM_CUT
-    db HM_FLY
-    db HM_SURF
-	db HM_STRENGTH
-	db HM_FLASH
+    db 50
+    db TM_MEGA_PUNCH
+    db TM_RAZOR_WIND
+    db TM_SWORDS_DANCE
+	db TM_WHIRLWIND
+	db TM_MEGA_KICK
 	db TM_TOXIC
 	db TM_HORN_DRILL
 	db TM_BODY_SLAM
@@ -135,6 +135,31 @@ TMMachineItemList:
 	db TM_DRAGON_RAGE
 	db TM_THUNDERBOLT
 	db TM_THUNDER
+	db TM_EARTHQUAKE
+	db TM_FISSURE
+	db TM_DIG
+	db TM_PSYCHIC_M
+	db TM_TELEPORT
+	db TM_MIMIC
+	db TM_DOUBLE_TEAM
+	db TM_REFLECT
+	db TM_BIDE
+	db TM_METRONOME
+	db TM_SELFDESTRUCT
+	db TM_EGG_BOMB
+	db TM_FIRE_BLAST
+	db TM_SWIFT
+	db TM_SKULL_BASH
+	db TM_SOFTBOILED
+	db TM_DREAM_EATER
+	db TM_SKY_ATTACK
+	db TM_REST
+	db TM_THUNDER_WAVE
+	db TM_SHADOW_BALL
+	db TM_EXPLOSION
+	db TM_ROCK_SLIDE
+	db TM_TRI_ATTACK
+	db TM_SUBSTITUTE
 	db $ff
 
 TMMachineGreetingText:

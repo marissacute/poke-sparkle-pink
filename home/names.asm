@@ -71,7 +71,7 @@ GetMachineName::
 	call CopyToStringBuffer
 
 	ld a, [wTempTMNameStorage]
-	cp 50 ; is this a TM? [not HM]
+	cp 51 ; is this a TM? [not HM]
 	jr c, .WriteTM
 ; if HM, then write "HM" and substract NUM_TMS to the item ID, so we can reuse the
 ; TM printing code

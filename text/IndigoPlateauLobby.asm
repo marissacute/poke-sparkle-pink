@@ -8,7 +8,7 @@ _IndigoPlateauLobbyGymGuideText::
 	cont "the ELITE FOUR!"
 
 	para "Check out the"
-	line "TM Machines in"
+	line "TM Machine in"
 	cont "the back to get"
 	cont "some new moves!"
 	done
