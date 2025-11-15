@@ -47,8 +47,27 @@ IF DEF(_DEBUG)
 
 	call SetDebugNewGameParty
 
-	; Exeggutor gets four HM moves.
+	; Exeggutor gets good moves
 	ld hl, wPartyMon1Moves
+	ld a, PSYCHIC_M
+	ld [hli], a
+	ld a, RAZOR_LEAF
+	ld [hli], a
+	ld a, MOONBLAST
+	ld [hli], a
+	ld a, HYPER_BEAM
+	ld [hl], a
+
+	; Cheat in lots of PP
+	ld hl, wPartyMon1PP
+	ld a, 50
+	ld [hli], a
+	ld [hli], a
+	ld [hli], a
+	ld [hl], a
+
+	; Mew gets HM Moves
+	ld hl, wPartyMon2Moves
 	ld a, FLY
 	ld [hli], a
 	ld a, CUT
@@ -57,7 +76,7 @@ IF DEF(_DEBUG)
 	ld [hli], a
 	ld a, STRENGTH
 	ld [hl], a
-	ld hl, wPartyMon1PP
+	ld hl, wPartyMon2PP
 	ld a, 15
 	ld [hli], a
 	ld a, 30
