@@ -35,12 +35,13 @@ DisplayTMMachine_::
     ld a, 1
 	ld [wItemQuantity], a ; buy 1 TM
 
-	; load price -> 200 for now?
-	xor a
-	ldh [hMoney], a
-	ldh [hMoney + 2], a
-	ld a, $2
-	ldh [hMoney + 1], a
+	; load final price from hItemPrice
+	ld a, [hItemPrice]
+	ld [hMoney], a
+	ld a, [hItemPrice+1]
+	ld [hMoney+1], a
+	ld a, [hItemPrice+2]
+	ld [hMoney+2], a
 
 	call GetItemName
 	call CopyToStringBuffer
