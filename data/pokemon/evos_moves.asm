@@ -757,6 +757,7 @@ PsyduckEvosMoves:
 	db EVOLVE_LEVEL, 33, GOLDUCK
 	db 0
 ; Learnset
+    db 20, WATER_PULSE
 	db 28, TAIL_WHIP
 	db 31, DISABLE
 	db 36, CONFUSION
@@ -1601,6 +1602,7 @@ GolduckEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+    db 20, WATER_PULSE
 	db 28, TAIL_WHIP
 	db 31, DISABLE
 	db 39, CONFUSION

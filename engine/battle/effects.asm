@@ -1111,9 +1111,15 @@ FocusEnergyEffect:
 RecoilEffect:
 	jpfar RecoilEffect_
 
-ConfusionSideEffect:
+ConfusionSideEffect10:
 	call BattleRandom
 	cp 10 percent ; chance of confusion
+	ret nc
+	jr ConfusionSideEffectSuccess
+
+ConfusionSideEffect20:
+	call BattleRandom
+	cp 20 percent ; chance of confusion
 	ret nc
 	jr ConfusionSideEffectSuccess
 
@@ -1146,8 +1152,12 @@ ConfusionSideEffectSuccess:
 	inc a
 	ld [bc], a ; confusion status will last 2-5 turns
 	pop af
-	cp CONFUSION_SIDE_EFFECT
-	call nz, PlayCurrentMoveAnimation2
+	cp CONFUSION_SIDE_EFFECT_10
+	jr z, .becameConfusedText
+	cp CONFUSION_SIDE_EFFECT_20
+    ; play the move if it's not a confusion side effect.
+	call nz, PlayCurrentMoveAnimation2 
+.becameConfusedText
 	ld hl, BecameConfusedText
 	jp PrintText
 
@@ -1156,7 +1166,9 @@ BecameConfusedText:
 	text_end
 
 ConfusionEffectFailed:
-	cp CONFUSION_SIDE_EFFECT
+	cp CONFUSION_SIDE_EFFECT_10
+	ret z
+	cp CONFUSION_SIDE_EFFECT_20
 	ret z
 	ld c, 50
 	call DelayFrames

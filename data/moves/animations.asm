@@ -178,6 +178,7 @@ AttackAnimationPointers:
 	dw CrossChopAnim
 	dw ShadowBallAnim
 	dw StruggleAnim
+	dw WaterPulseAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
 	dw EnemyFlashAnim
@@ -296,12 +297,9 @@ ScratchAnim:
 	battle_anim SCRATCH, SUBANIM_0_SCRATCHES, 0, 6
 	db -1 ; end
 
+GuillotineAnim:
 VicegripAnim:
 	battle_anim VICEGRIP, SUBANIM_0_SLICE_BOTH_SIDES, 0, 8
-	db -1 ; end
-
-GuillotineAnim:
-	battle_anim GUILLOTINE, SUBANIM_0_SLICE_BOTH_SIDES, 0, 6
 	db -1 ; end
 
 FairyWindAnim:
@@ -528,6 +526,7 @@ MistAnim:
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
+WaterPulseAnim:
 WaterGunAnim:
 	battle_anim WATER_GUN, SUBANIM_0_WATER_DROPLETS, 0, 6
 	db -1 ; end

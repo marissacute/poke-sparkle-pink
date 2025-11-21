@@ -70,7 +70,7 @@ Moves:
 	move SURF,         NO_ADDITIONAL_EFFECT,        95, WATER,        100, 15
 	move ICE_BEAM,     FREEZE_SIDE_EFFECT1,         95, ICE,          100, 10
 	move BLIZZARD,     FREEZE_SIDE_EFFECT1,        120, ICE,           90,  5
-	move PSYBEAM,      CONFUSION_SIDE_EFFECT,       65, PSYCHIC_TYPE, 100, 20
+	move PSYBEAM,      CONFUSION_SIDE_EFFECT_10,    65, PSYCHIC_TYPE, 100, 20
 	move BUBBLEBEAM,   SPEED_DOWN_SIDE_EFFECT,      65, WATER,        100, 20
 	move AURORA_BEAM,  ATTACK_DOWN_SIDE_EFFECT,     65, ICE,          100, 20
 	move HYPER_BEAM,   HYPER_BEAM_EFFECT,          150, NORMAL,        90,  5
@@ -103,7 +103,7 @@ Moves:
 	move FISSURE,      OHKO_EFFECT,                  1, GROUND,        30,  5
 	move DIG,          CHARGE_EFFECT,              100, GROUND,       100, 10
 	move TOXIC,        POISON_EFFECT,                0, POISON,        85, 10
-	move CONFUSION,    CONFUSION_SIDE_EFFECT,       50, PSYCHIC_TYPE, 100, 25
+	move CONFUSION,    CONFUSION_SIDE_EFFECT_10,    50, PSYCHIC_TYPE, 100, 25
 	move PSYCHIC_M,    SPECIAL_DOWN_SIDE_EFFECT,    90, PSYCHIC_TYPE, 100, 10
 	move HYPNOSIS,     SLEEP_EFFECT,                 0, PSYCHIC_TYPE,  60, 20
 	move MEDITATE,     ATTACK_UP1_EFFECT,            0, PSYCHIC_TYPE, 100, 40
@@ -188,5 +188,6 @@ Moves:
 	move FURY_CUTTER,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, BUG,           90, 20 ; originally this increased power if used consecutively
 	move CROSS_CHOP,   NO_ADDITIONAL_EFFECT,        90, FIGHTING,     100, 10 ; changed a lot from original
 	move SHADOW_BALL,  SPECIAL_DOWN_SIDE_EFFECT,    80, GHOST,        100, 15
+	move WATER_PULSE,  CONFUSION_SIDE_EFFECT_20,    60, WATER,        100, 20	 
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

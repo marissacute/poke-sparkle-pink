@@ -183,6 +183,7 @@
 	const FURY_CUTTER  ; b0
 	const CROSS_CHOP   ; b1
 	const SHADOW_BALL  ; b2
+	const WATER_PULSE  ; b3
 	const STRUGGLE     
 DEF NUM_ATTACKS EQU const_value - 1
 

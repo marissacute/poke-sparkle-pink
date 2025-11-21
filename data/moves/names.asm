@@ -177,5 +177,6 @@ MoveNames::
 	li "FURY CUTTER"
 	li "CROSS CHOP"
 	li "SHADOW BALL"
+	li "WATER PULSE"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

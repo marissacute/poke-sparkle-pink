@@ -178,6 +178,7 @@ MoveSoundTable:
 	db SFX_BATTLE_0E,          $f0, $20 ; FURY_CUTTER
 	db SFX_BATTLE_0C,          $10, $80 ; CROSS_CHOP
 	db SFX_NOT_VERY_EFFECTIVE, $f0, $e0 ; SHADOW_BALL
+	db SFX_BATTLE_2A,          $f0, $60 ; WATER_PULSE
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
