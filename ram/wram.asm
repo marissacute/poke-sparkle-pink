@@ -1556,6 +1556,7 @@ wMoveNum:: db
 
 wMovesString:: ds 56
 
+; Used for tracking speed of walking or biking
 wUnusedCurMapTilesetCopy:: db
 
 ; wWalkBikeSurfState is sometimes copied here, but it doesn't seem to be used for anything

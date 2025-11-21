@@ -887,3 +887,31 @@ AdvanceScriptedNPCAnimFrameCounter:
 	ld [hl], a
 	ldh [hSpriteAnimFrameCounter], a
 	ret
+
+; Thanks to joenote
+TrackRunBikeSpeed::
+	xor a
+	ld [wUnusedCurMapTilesetCopy], a
+	ld a, [wWalkBikeSurfState]
+	dec a ; riding a bike? (0 value = TRUE)
+	call z, IsRidingBike
+	ld a, [hJoyHeld]
+	and PAD_B	;holding B to speed up? (non-zero value = TRUE)
+	call nz, IsRunning
+	ld a, [wUnusedCurMapTilesetCopy]
+	cp 2	;is biking without speedup being done?
+	jr z, .skip	;if not make the states a value from 1 to 4 (excluding biking without speedup, which needs to be 2)
+	inc a	
+.skip
+	ld [wUnusedCurMapTilesetCopy], a
+	ret
+IsRidingBike:
+	ld a, [wUnusedCurMapTilesetCopy]
+	or $2
+	ld [wUnusedCurMapTilesetCopy], a
+	ret
+IsRunning:
+	ld a, [wUnusedCurMapTilesetCopy]
+	or $1
+	ld[wUnusedCurMapTilesetCopy], a
+	ret
