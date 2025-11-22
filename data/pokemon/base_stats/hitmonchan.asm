@@ -11,7 +11,7 @@
 
 	dw HitmonchanPicFront, HitmonchanPicBack
 
-	db COMET_PUNCH, AGILITY, NO_MOVE, NO_MOVE ; level 1 learnset
+	db MACH_PUNCH, AGILITY, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
