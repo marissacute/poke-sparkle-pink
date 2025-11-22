@@ -56,7 +56,7 @@ SpecialTrainerMoves:
 
 	db BRUNO, 1
 	db 4, 1, BODY_SLAM
-	db 5, 3, FISSURE
+	db 5, 2, MEGA_PUNCH
 	db 0
 
 	db AGATHA, 1
@@ -84,6 +84,7 @@ SpecialTrainerMoves:
 	db 5, 4, MEGA_DRAIN
 	; Magnezone
 	db 6, 1, THUNDERBOLT
+	db 6, 4, THUNDER_WAVE
 	db 0
 
 	db RIVAL3, 2

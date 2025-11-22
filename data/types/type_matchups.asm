@@ -129,7 +129,8 @@ TypeEffects:
 	db DARK,         FAIRY,        NOT_VERY_EFFECTIVE
 	db DRAGON,       FAIRY,        NO_EFFECT
 
-	; New defense matchup for ice
+	; New defense matchups for ice
 	db WATER,        ICE,          NOT_VERY_EFFECTIVE
+	db GRASS,        ICE,          NOT_VERY_EFFECTIVE
 
 	db -1 ; end

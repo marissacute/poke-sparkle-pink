@@ -82,7 +82,7 @@
 	const_skip                       ; $4B
 	const CONFUSION_SIDE_EFFECT_10   ; $4C
 	const TWINEEDLE_EFFECT           ; $4D
-	const_skip                       ; $4E
+	const CONFUSION_SIDE_EFFECT_20   ; $4E
 	const SUBSTITUTE_EFFECT          ; $4F
 	const HYPER_BEAM_EFFECT          ; $50
 	const RAGE_EFFECT                ; $51
@@ -91,5 +91,4 @@
 	const LEECH_SEED_EFFECT          ; $54
 	const SPLASH_EFFECT              ; $55
 	const DISABLE_EFFECT             ; $56
-	const CONFUSION_SIDE_EFFECT_20   ; $57
 DEF NUM_MOVE_EFFECTS EQU const_value - 1
