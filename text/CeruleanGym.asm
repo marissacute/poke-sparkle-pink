@@ -131,3 +131,51 @@ _CeruleanGymGymGuideBeatMistyText::
 	line "we make a pretty"
 	cont "darn good team!"
 	done
+
+_CeruleanGymRematchPreBattleText::
+	text "Wow <PLAYER>,"
+	line "I heard you beat"
+	cont "the ELITE FOUR"
+	cont "and became the"
+	cont "Champion!"
+
+	para "But I trained a"
+	line "lot too!"
+
+	para "We should battle"
+	line "again to see who"
+	cont "is the strongest!"
+
+	done
+
+_CeruleanGymRematchAcceptedText::
+	text "Watch out!"
+	line "I'm no pushover!"
+	done
+
+_CeruleanGymRematchRefusedText::
+	text "Sure, we can"
+	line "battle later."
+	done
+
+_CeruleanGymRematchDefeatedText::
+	text "Wow, no wonder"
+	line "are the Champion!"
+	prompt
+
+_CeruleanGymRematchPostBattleText::
+	text "That was a crazy"
+	line "battle <PLAYER>!"
+	
+	para "You're super"
+	line "strong!"
+
+	para "You should check"
+	cont "out the cave to"
+	line "the west of"
+	line "Cerulean City."
+
+	para "I heard super"
+	cont "strong #MON"
+	line "live there!"
+	done

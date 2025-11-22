@@ -55,8 +55,9 @@ _LancesRoomLanceAfterBattleText::
 	cont "Her name is..."
 
 	para "<RIVAL>!"
-	line "She beat the ELITE"
-	cont "FOUR before you!"
+	line "She beat the"
+	cont "ELITE FOUR before"
+	cont "you!"
 
 	para "She is the real"
 	line "#MON LEAGUE"
