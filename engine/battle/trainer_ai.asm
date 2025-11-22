@@ -427,7 +427,7 @@ LoreleiAI:
 BrunoAI:
 	cp 25 percent + 1
 	ret nc
-	jp AIUseXDefend
+	jp AIUseHyperPotion
 
 AgathaAI:
 	cp 8 percent

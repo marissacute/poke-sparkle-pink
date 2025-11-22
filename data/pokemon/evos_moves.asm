@@ -296,7 +296,7 @@ SlowbroEvosMoves:
 	db 33, WATER_GUN
 	db 37, WITHDRAW
 	db 44, AMNESIA
-	db 55, PSYCHIC_M
+	db 54, PSYCHIC_M
 	db 0
 
 IvysaurEvosMoves:
@@ -549,6 +549,7 @@ TangelaEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 23, VINE_WHIP
 	db 29, ABSORB
 	db 32, POISONPOWDER
 	db 36, STUN_SPORE
@@ -1514,7 +1515,7 @@ DugtrioEvosMoves:
 	db 24, SAND_ATTACK
 	db 28, METAL_CLAW
 	db 35, SLASH
-	db 43, EARTHQUAKE
+	db 42, EARTHQUAKE
 	db 47, FLASH_CANNON
 	db 0
 
@@ -2110,7 +2111,7 @@ CharmanderEvosMoves:
 	db 22, RAGE
 	db 30, SLASH
 	db 38, FLAMETHROWER
-	db 46, FIRE_SPIN
+	db 46, FIRE_BLAST
 	db 0
 
 SquirtleEvosMoves:
@@ -2136,7 +2137,7 @@ CharmeleonEvosMoves:
 	db 24, RAGE
 	db 33, SLASH
 	db 42, FLAMETHROWER
-	db 56, FIRE_SPIN
+	db 56, FIRE_BLAST
 	db 0
 
 WartortleEvosMoves:
@@ -2162,7 +2163,7 @@ CharizardEvosMoves:
 	db 36, SLASH
 	db 40, DRAGON_SLAM
 	db 46, FLAMETHROWER
-	db 55, FIRE_SPIN
+	db 55, FIRE_BLAST
 	db 0
 
 MissingNoB5EvosMoves:

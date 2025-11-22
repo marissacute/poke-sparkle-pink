@@ -11,7 +11,7 @@
 
 	dw WigglytuffPicFront, WigglytuffPicBack
 
-	db DOUBLESLAP, SING, DRAININGKISS, FAIRY_WIND ; level 1 learnset
+	db DOUBLESLAP, SING, FAIRY_WIND, DRAININGKISS ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
