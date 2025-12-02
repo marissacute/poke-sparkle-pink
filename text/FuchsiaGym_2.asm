@@ -192,3 +192,46 @@ _FuchsiaGymGymGuideBeatKogaText::
 	line "ninja can terrify"
 	cont "even now!"
 	done
+
+_FuchsiaGymRematchPreBattleText::
+	text "Child, is it true"
+    line "that you beat the"
+	cont "ELITE FOUR?"
+
+	para "Agatha's GHOST"
+	line "#MON are no"
+	cont "joke!"
+
+	para "I must request"
+	line "a rematch!"
+
+	done
+
+_FuchsiaGymRematchAcceptedText::
+	text "You will cower"
+	line "when your #MON"
+	cont "badly poisoned!"
+	done
+
+_FuchsiaGymRematchRefusedText::
+	text "My #MON"
+	line "are ready!"
+	done
+
+_FuchsiaGymRematchDefeatedText::
+	text "Defeated"
+	line "yet again!"
+	prompt
+
+_FuchsiaGymRematchPostBattleText::
+	text "My poison tactics"
+	line "were no match for"
+	cont "your strength!"
+
+	para "You should try to"
+	line "challenge the"
+	cont "strong #MON"
+	cont "hiding below the"
+	cont "Seafoam Islands!"
+
+	done
