@@ -32,7 +32,7 @@ ItemNames::
 	li "REPEL"
 	li "OLD AMBER"
 	li "FIRE STONE"
-	li "THUNDERSTONE"
+	li "THUNDER STONE"
 	li "WATER STONE"
 	li "HP UP"
 	li "PROTEIN"
