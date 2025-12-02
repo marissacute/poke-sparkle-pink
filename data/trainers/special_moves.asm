@@ -13,9 +13,22 @@ SpecialTrainerMoves:
 	db 2, 4, BUBBLEBEAM
 	db 0
 
+	db MISTY, 2
+	db 5, 3, SURF
+	db 5, 4, PSYCHIC_M
+	db 0
+
 	db LT_SURGE, 1
 	db 3, 3, THUNDERBOLT
 	db 3, 4, MEGA_PUNCH
+	db 0
+
+	db LT_SURGE, 2
+	db 1, 1, THUNDERBOLT
+	db 1, 3, THUNDER_WAVE
+	db 4, 1, THUNDERBOLT
+	db 5, 3, THUNDER
+	db 5, 4, SUBMISSION
 	db 0
 
 	db ERIKA, 1
