@@ -117,7 +117,7 @@ GetMachineName::
 	; now add the move name after the TMxx
 	ld hl, wStringBuffer
 	ld de, wNameBuffer + 5 ; first 5 characters stay
-	ld bc, 8
+	ld bc, 12
 	call CopyData
 
 	; Add terminator character
