@@ -84,13 +84,10 @@ _SaffronGymGuideChampInMakingText::
 	line "use psychic power"
 	cont "instead of force!"
 
-	para "Fighting #MON"
-	line "are weak against"
-	cont "psychic #MON!"
-
-	para "They get creamed"
-	line "before they can"
-	cont "even aim a punch!"
+	para "They are strong,"
+	line "but they can't"
+	cont "hit DARK-type"
+	cont "#MON!"
 	done
 
 _SaffronGymGuideBeatSabrinaText::
@@ -238,4 +235,52 @@ _SaffronGymYoungster4AfterBattleText::
 	text "That's right! I"
 	line "used telepathy to"
 	cont "read your mind!"
+	done
+
+_SaffronGymRematchPreBattleText::
+	text "I sense that you"
+	line "have greatly"
+	cont "increased your"
+	cont "power!"
+
+	para "I have trained"
+	line "my #MON too."
+
+	para "I foresee a"
+	line "battle in our"
+	cont "futures!"
+
+	done
+
+_SaffronGymRematchAcceptedText::
+	text "I knew you"
+	line "would accept!"
+	done
+
+_SaffronGymRematchRefusedText::
+	text "I still foresee"
+	line "a battle!"
+
+	para "Perhaps later.."
+	done
+
+_SaffronGymRematchDefeatedText::
+	text "I could"
+	line "not foresee your"
+	cont "victory!"
+	prompt
+
+_SaffronGymRematchPostBattleText::
+	text "Psychic types are"
+	line "strong but lately"
+	cont "new moves and"
+	cont "#MON have"
+	cont "arrived that are"
+	cont "strong against"
+	cont "them!"
+
+	para "Have you caught"
+	line "the new DARK type"
+	cont "#MON yet?"
+
 	done

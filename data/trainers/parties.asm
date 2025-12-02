@@ -665,6 +665,7 @@ BlaineData:
 
 SabrinaData:
 	db $FF, 38, KADABRA, 37, HYPNO, 38, BUTTERFREE, 43, ALAKAZAM, 0
+	db $FF, 72, HYPNO, 73, SLOWBRO, 73, MR_MIME, 73, JYNX, 74, ALAKAZAM
 
 GentlemanData:
 ; SS Anne 1F Rooms
