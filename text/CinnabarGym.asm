@@ -210,3 +210,45 @@ _CinnabarGymGymGuideBeatBlaineText::
 	text "<PLAYER>! You beat"
 	line "that fire brand!"
 	done
+
+_CinnabarGymRematchPreBattleText::
+	text "Hmph, do you"
+	line "think you are"
+	cont "all that now?"
+
+	para "My fire is"
+	line "burning hotter"
+	cont "than ever!"
+
+	para "I challenge"
+	line "you to a"
+	cont "fiery rematch!"
+
+	done
+
+_CinnabarGymRematchAcceptedText::
+	text "You will leave"
+	line "this place burnt"
+	cont "to a crisp!"
+	done
+
+_CinnabarGymRematchRefusedText::
+	text "I bet you're"
+	line "scared! Hahaha!"
+	done
+
+_CinnabarGymRematchDefeatedText::
+	text "Doused!"
+	prompt
+
+_CinnabarGymRematchPostBattleText::
+	text "Extinguished"
+	line "yet again!"
+
+	para "If you are so"
+	line "strong, you"
+	cont "should search for"
+	cont "the flaming"
+	cont "#MON deep"
+	cont "in Victory Road!"
+	done
