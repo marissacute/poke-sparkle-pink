@@ -62,7 +62,9 @@ VermilionGymLTSurgeAfterBattleScript:
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 
-	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	; If we are here and we already beat
+	; Surge, it must be a rematch
+	CheckEvent EVENT_BEAT_LT_SURGE
 	jr z, VermilionGymLTSurgeReceiveTM24Script	
 	ld a, TEXT_VERMILIONGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a

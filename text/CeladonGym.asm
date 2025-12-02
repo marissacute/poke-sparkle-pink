@@ -124,8 +124,8 @@ _CeladonGymAfterBattleText3::
 	done
 
 _CeladonGymBattleText4::
-	text "Aren't you the"
-	line "peeping Tom?"
+	text "There was a"
+	line "peeping Tom!"
 	done
 
 _CeladonGymEndBattleText4::
@@ -134,9 +134,9 @@ _CeladonGymEndBattleText4::
 	prompt
 
 _CeladonGymAfterBattleText4::
-	text "Oh, you weren't"
-	line "peeping? We get a"
-	cont "lot of gawkers!"
+	text "Some men come"
+	line "here to look at"
+	cont "female trainers."
 	done
 
 _CeladonGymBattleText5::
@@ -217,4 +217,54 @@ _CeladonGymAfterBattleText8::
 
 	para "Wait 'til next"
 	line "time!"
+	done
+
+_CeladonGymRematchPreBattleText::
+	text "Oh, it seems that"
+	line "you beat the"
+	cont "ELITE FOUR?"
+
+	para "It's so nice to"
+	line "hear that there"
+	cont "is now a female"
+	cont "CHAMPION..."
+
+	para "But I'm afraid"
+	line "that I didn't go"
+	cont "all out last"
+	cont "time."
+
+	para "We should battle"
+	line "again with my"
+	cont "strongest team."
+
+	done
+
+_CeladonGymRematchAcceptedText::
+	text "I shall not lose"
+	line "this time."
+	done
+
+_CeladonGymRematchRefusedText::
+	text "Very well."
+	line "We shall battle"
+	cont "later."
+	done
+
+_CeladonGymRematchDefeatedText::
+	text "You"
+	line "might be stronger"
+	line "but my #MON"
+	cont "are much cuter."
+	prompt
+
+_CeladonGymRematchPostBattleText::
+	text "Have you heard of"
+	line "VENUSAUR, the"
+	cont "grass #MON?"
+
+	para "BULBASAUR is"
+	line "hard to find, but"
+	cont "VENUSAUR is"
+	cont "worth it.."
 	done

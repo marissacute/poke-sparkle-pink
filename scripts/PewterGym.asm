@@ -42,7 +42,10 @@ PewterGymBrockPostBattle:
 	jp z, PewterGymResetScripts
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	CheckEvent EVENT_PLAYER_IS_CHAMPION
+
+	; If we are here and we already beat
+	; Brock, it must be a rematch
+	CheckEvent EVENT_BEAT_BROCK
 	jr z, PewterGymScriptReceiveTM34	
 	ld a, TEXT_PEWTERGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a

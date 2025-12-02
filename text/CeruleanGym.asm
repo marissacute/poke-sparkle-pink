@@ -159,8 +159,9 @@ _CeruleanGymRematchRefusedText::
 	done
 
 _CeruleanGymRematchDefeatedText::
-	text "Wow, no wonder"
-	line "are the Champion!"
+	text "Wow"
+	line "no wonder you"
+	cont "are the Champion!"
 	prompt
 
 _CeruleanGymRematchPostBattleText::
@@ -171,11 +172,11 @@ _CeruleanGymRematchPostBattleText::
 	line "strong!"
 
 	para "You should check"
-	cont "out the cave to"
-	line "the west of"
-	line "Cerulean City."
+	line "out the cave to"
+	cont "the west of"
+	cont "Cerulean City."
 
 	para "I heard super"
-	cont "strong #MON"
-	line "live there!"
+	line "strong #MON"
+	cont "live there!"
 	done

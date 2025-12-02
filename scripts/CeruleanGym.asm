@@ -43,7 +43,9 @@ CeruleanGymMistyPostBattleScript:
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 
-	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	; If we are here and we already beat
+	; Misty, it must be a rematch
+	CheckEvent EVENT_BEAT_MISTY
 	jr z, CeruleanGymReceiveTM11	
 	ld a, TEXT_CERULEANGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
