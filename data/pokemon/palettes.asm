@@ -180,7 +180,7 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_BIKER
 	db PAL_BURGLAR
 	db PAL_ENGINEER
-	db PAL_JUGGLER
+	db PAL_BLUE_TRAINER
 	db PAL_FISHERMAN
 	db PAL_SWIMMER
 	db PAL_CUEBALL
@@ -192,7 +192,7 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_TAMER
 	db PAL_BIRDKEEPER
 	db PAL_BLACKBELT
-	db PAL_GARY1
+	db PAL_RIVAL
 	db PAL_OAK
 	db PAL_CHIEF
 	db PAL_SCIENTIST
@@ -209,8 +209,8 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_BLAINE
 	db PAL_SABRINA
 	db PAL_GENTLEMAN
-	db PAL_GARY2
-	db PAL_GARY3
+	db PAL_RIVAL
+	db PAL_RIVAL
 	db PAL_LORELEI
 	db PAL_CHANNELER
 	db PAL_AGATHA

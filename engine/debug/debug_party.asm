@@ -144,6 +144,11 @@ IF DEF(_DEBUG)
 	ld [wMissableObjectIndex], a
 	predef ShowObject
 
+	; Show Blue in Viridian Gym
+	ld a, HS_VIRIDIAN_GYM_BLUE
+	ld [wMissableObjectIndex], a
+	predef ShowObject
+
 	; Rival chose Squirtle,
 	; Player chose Charmander.
 	ld hl, wRivalStarter

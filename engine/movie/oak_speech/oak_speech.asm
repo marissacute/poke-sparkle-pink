@@ -115,8 +115,8 @@ ENDC
 	call ChoosePlayerName
 	call GBFadeOutToWhite
 	call GetRivalPalID ; HAX
-	ld de, Rival1Pic
-	lb bc, BANK(Rival1Pic), $00
+	ld de, RivalPic
+	lb bc, BANK(RivalPic), $00
 	call IntroDisplayPicCenteredOrUpperRight
 	call FadeInIntroPic
 	ld hl, IntroduceRivalText

@@ -22,7 +22,7 @@ ENDC
 GetRivalPalID:
 	call ClearScreen
 IF GEN_2_GRAPHICS
-	ld a, PAL_GARY1
+	ld a, PAL_RIVAL
 ELSE
 	ld a, PAL_MEWMON
 ENDC

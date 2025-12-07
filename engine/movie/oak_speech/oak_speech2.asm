@@ -53,8 +53,8 @@ ChooseRivalName:
 	jr z, .customName
 	call ClearScreen
 	call Delay3
-	ld de, Rival1Pic
-	ld b, BANK(Rival1Pic)
+	ld de, RivalPic
+	ld b, BANK(RivalPic)
 	call IntroDisplayPicCenteredOrUpperRight
 .done
 	ld hl, HisNameIsText

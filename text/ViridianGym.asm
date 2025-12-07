@@ -238,3 +238,66 @@ _ViridianGymGuidePostBattleText::
 	line "GIOVANNI was the"
 	cont "GYM LEADER here?"
 	done
+
+_ViridianGymRematchPreBattleText::
+	text "Hi, <PLAYER>!"
+
+	para "I heard from my"
+	line "lil' sis that she"
+	cont "became the"
+	cont "CHAMPION!"
+
+	para "But you came in"
+	line "to defeat her,"
+	cont "and she lost"
+	cont "her title!"
+
+	para "She really was"
+	line "upset.."
+
+	para "But she'll get"
+	line "over it!"
+
+	para "By the way,"
+	line "do you fancy"
+	cont "a battle?"
+
+	done
+
+_ViridianGymRematchAcceptedText::
+	text "Let's go!"
+	done
+
+_ViridianGymRematchRefusedText::
+	text "Makes sense!"
+	line "I'm very strong!"
+	done
+
+_ViridianGymRematchDefeatedText::
+	text "It's"
+	line "so over!"
+	prompt
+
+_ViridianGymRematchPostBattleText::
+	text "I thought my sis"
+	line "was just a bit"
+	cont "weak that she was"
+	cont "defeated hahaha!"
+
+	para "But you are just"
+	line "super strong!"
+	cont "Impressive!"
+
+	para "If you rematched"
+	line "all the other"
+	cont "gym leaders,"
+	cont "you should check"
+	cont "out the World"
+	cont "Championships!"
+
+	para "It's at the"
+	line "INDIGO PLATEAU,"
+	cont "west of the"
+	cont "#MON LEAGUE!"
+
+	done

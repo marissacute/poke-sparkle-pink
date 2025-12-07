@@ -249,7 +249,7 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_TAMER         ; $D1
 	const PAL_BIRDKEEPER    ; $D2
 	const PAL_BLACKBELT     ; $D3
-	const PAL_GARY1         ; $D4
+	const PAL_RIVAL         ; $D4
 	const PAL_OAK           ; $D5
 	const PAL_CHIEF         ; $D6
 	const PAL_SCIENTIST     ; $D7
@@ -266,8 +266,8 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_BLAINE        ; $E2
 	const PAL_SABRINA       ; $E3
 	const PAL_GENTLEMAN     ; $E4
-	const PAL_GARY2         ; $E5
-	const PAL_GARY3         ; $E6
+	const PAL_BLUE_TRAINER  ; $E5
+	const PAL_RIVAL3        ; $E6
 	const PAL_LORELEI       ; $E7
 	const PAL_CHANNELER     ; $E8
 	const PAL_AGATHA        ; $E9

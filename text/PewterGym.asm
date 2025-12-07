@@ -53,7 +53,7 @@ _PewterGymRematchPostBattleText::
 	text "<PLAYER>!"
 
 	para "That was a"
-	line "thrilling fight!
+	line "thrilling fight!"
 
 	para "You're a real"
 	line "CHAMPION!"

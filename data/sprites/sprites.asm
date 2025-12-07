@@ -8,7 +8,7 @@ SpriteSheetPointerTable:
 	table_width 4
 	; graphics, tile count
 	overworld_sprite RedSprite, 12              ; SPRITE_RED
-	overworld_sprite BlueSprite, 12             ; SPRITE_BLUE
+	overworld_sprite RivalSprite, 12            ; SPRITE_RIVAL
 	overworld_sprite OakSprite, 12              ; SPRITE_OAK
 	overworld_sprite YoungsterSprite, 12        ; SPRITE_YOUNGSTER
 	overworld_sprite MonsterSprite, 12          ; SPRITE_MONSTER
@@ -37,7 +37,7 @@ SpriteSheetPointerTable:
 	overworld_sprite MiddleAgedWomanSprite, 12  ; SPRITE_MIDDLE_AGED_WOMAN
 	overworld_sprite BrunetteGirlSprite, 12     ; SPRITE_BRUNETTE_GIRL
 	overworld_sprite LanceSprite, 12            ; SPRITE_LANCE
-	overworld_sprite ScientistSprite, 12        ; SPRITE_UNUSED_SCIENTIST
+	overworld_sprite BlueSprite, 12             ; SPRITE_BLUE
 	overworld_sprite ScientistSprite, 12        ; SPRITE_SCIENTIST
 	overworld_sprite RockerSprite, 12           ; SPRITE_ROCKER
 	overworld_sprite SwimmerSprite, 12          ; SPRITE_SWIMMER

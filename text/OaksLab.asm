@@ -330,7 +330,7 @@ _OaksLabOakThatWasMyDreamText::
 	cont "this #DEX..."
 
 	para "But it's all"
-	line "wrong now"!
+	line "wrong now!"
 
 	para "With all these"
 	line "new #MON"

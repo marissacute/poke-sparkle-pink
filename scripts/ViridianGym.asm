@@ -30,6 +30,7 @@ ViridianGym_ScriptPointers:
 	dw_const EndTrainerBattle,                      SCRIPT_VIRIDIANGYM_END_BATTLE
 	dw_const ViridianGymGiovanniPostBattle,         SCRIPT_VIRIDIANGYM_GIOVANNI_POST_BATTLE
 	dw_const ViridianGymPlayerSpinningScript,       SCRIPT_VIRIDIANGYM_PLAYER_SPINNING
+	dw_const ViridianGymBluePostBattle,             SCRIPT_VIRIDIANGYM_BLUE_POST_BATTLE
 
 ViridianGymDefaultScript:
 	ld a, [wYCoord]
@@ -183,6 +184,8 @@ ViridianGym_TextPointers:
 	dw_const ViridianGymGiovanniEarthBadgeInfoText, TEXT_VIRIDIANGYM_GIOVANNI_EARTH_BADGE_INFO
 	dw_const ViridianGymGiovanniReceivedTM27Text,   TEXT_VIRIDIANGYM_GIOVANNI_RECEIVED_TM27
 	dw_const ViridianGymGiovanniTM27NoRoomText,     TEXT_VIRIDIANGYM_GIOVANNI_TM27_NO_ROOM
+    dw_const ViridianGymBlueText,					TEXT_VIRIDIANGYM_BLUE
+	dw_const ViridianGymRematchPostBattleText,      TEXT_VIRIDIANGYM_BLUE_POST_BATTLE
 
 ViridianGymTrainerHeaders:
 	def_trainers 2
@@ -440,3 +443,62 @@ ViridianGymGuidePreBattleText:
 ViridianGymGuidePostBattleText:
 	text_far _ViridianGymGuidePostBattleText
 	text_end
+
+ViridianGymBlueText:
+	text_asm
+	ld hl, .PreBattleText
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr nz, .refused
+	ld hl, .PreBattleAcceptedText
+	call PrintText
+	call Delay3
+	ld hl, wStatusFlags3
+	set BIT_TALKED_TO_TRAINER, [hl]
+	set BIT_PRINT_END_BATTLE_TEXT, [hl]
+	ld hl, ViridianGymRematchDefeatedText
+	ld de, ViridianGymRematchDefeatedText
+	call SaveEndBattleTextPointers
+	ld a, OPP_BLUE
+	ld [wCurOpponent], a
+	ld a, 1
+	ld [wTrainerNo], a
+	jr .endBattle
+.refused
+	ld hl, .PreBattleRefusedText
+	call PrintText
+	jr .done
+.endBattle
+	ld a, SCRIPT_VIRIDIANGYM_BLUE_POST_BATTLE
+	ld [wViridianGymCurScript], a
+.done
+	jp TextScriptEnd
+
+.PreBattleText:
+	text_far _ViridianGymRematchPreBattleText
+	text_end
+
+.PreBattleAcceptedText:
+	text_far _ViridianGymRematchAcceptedText
+	text_end
+
+.PreBattleRefusedText:
+	text_far _ViridianGymRematchRefusedText
+	text_end
+
+ViridianGymRematchDefeatedText:
+	text_far _ViridianGymRematchDefeatedText
+	text_end
+
+ViridianGymRematchPostBattleText:
+	text_far _ViridianGymRematchPostBattleText
+	text_end
+
+ViridianGymBluePostBattle:
+	text_asm
+	ld a, TEXT_VIRIDIANGYM_BLUE_POST_BATTLE
+	ldh [hTextID], a
+	call DisplayTextID
+	jp ViridianGymResetScripts
