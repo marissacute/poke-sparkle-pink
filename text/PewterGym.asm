@@ -18,51 +18,50 @@ _PewterGymBrockPreBattleText::
 	done
 
 _PewterGymRematchPreBattleText::
-	text "Since our last"
-	line "battle, my"
+	text "<PLAYER>, it's"
+	line "been a while"
+	cont "since we last"
+	text "battled!"
 
-	para "#MON have"
-	line "grown!"
+	para "My #MON"
+	line "have grown a lot"
+	cont "since then!"
 
-	para "ROCK-hard will"
-	line "meets peak skill"
-	cont "today!"
-
-	para "Ready for the"
-	line "rematch of a"
-	cont "lifetime?"
+	para "Are you ready"
+	line "for a rematch?"
+	
 	done
 
 _PewterGymRematchAcceptedText::
-	text "Stones sharpen!"
-	line "Let's battle!"
+	text "Let's battle! My"
+	line "ROCK #MON"
+	cont "are ready!"
 	done
 
 _PewterGymRematchRefusedText::
-	text "Maybe some other"
-	line "time."
+	text "We can battle"
+	line "another time."
 	done
 
 _PewterGymRematchDefeatedText::
-	text "I knew"
-	line "you were strong,"
-	cont "but this..."
+	text "Woah,"
+	line "You're the real"
+	cont "deal!"
 	prompt
 
 _PewterGymRematchPostBattleText::
-	text "Incredible!"
+	text "<PLAYER>!"
 
-	para "Your strength"
-	line "is unmatched!"
+	para "That was a"
+	line "thrilling fight!
 
-	para "True to your"
-	line "title, CHAMPION."
+	para "You're a real"
+	line "CHAMPION!"
 
-	para "Continue to lead"
-	line "#MON with"
-	cont "honor and"
-	cont "courage!"
+	para "You should go"
+	line "to MISTY too."
+	cont "I heard she's"
+	cont "also raring to"
+	cont "battle you!"
 
-	para "New challenges"
-	line "await."
 	done
