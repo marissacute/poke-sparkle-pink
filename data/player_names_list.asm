@@ -1,11 +1,11 @@
 DefaultNamesPlayerList:
 	db "NEW NAME@"
 	db "PINK@"
-	db "KRIS@"
+	db "LEAF@"
 	db "LYRA@"
 
 DefaultNamesRivalList:
 	db "NEW NAME@"
-	db "BLUE@"
+	db "KRIS@"
 	db "TESS@"
 	db "MAUD@"

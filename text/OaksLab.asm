@@ -1,22 +1,24 @@
 _OaksLabRivalGrampsIsntAroundText::
-	text "<RIVAL>: Yo"
+	text "<RIVAL>: Hi"
 	line "<PLAYER>! Gramps"
-	cont "isn't around!"
+	cont "isn't here!"
 	done
 
 _OaksLabRivalGoAheadAndChooseText::
-	text "<RIVAL>: Heh, I"
-	line "don't need to be"
-	cont "greedy like you!"
+	text "<RIVAL>: You"
+	line "can choose first,"
+	cont "<PLAYER>!"
 
-	para "Go ahead and"
-	line "choose, <PLAYER>!"
+	para "Then I can pick"
+	line "a #MON"
+	cont "that is strong"
+	cont "against yours!"
 	done
 
 _OaksLabRivalMyPokemonLooksStrongerText::
 	text "<RIVAL>: My"
 	line "#MON looks a"
-	cont "lot stronger."
+	cont "lot cuter."
 	done
 
 _OaksLabThoseArePokeBallsText::
@@ -27,7 +29,7 @@ _OaksLabThoseArePokeBallsText::
 
 _OaksLabYouWantCharmanderText::
 	text "So! You want the"
-	line "fairy #MON,"
+	line "balloon #MON,"
 	cont "IGGLYBUFF?"
 	done
 
@@ -45,7 +47,7 @@ _OaksLabYouWantBulbasaurText::
 
 _OaksLabMonEnergeticText::
 	text "This #MON is"
-	line "really energetic!"
+	line "really adorable!"
 	prompt
 
 _OaksLabReceivedMonText::
@@ -208,14 +210,17 @@ _OaksLabOakChooseMonText::
 	para "They are inside"
 	line "the # BALLs."
 
-	para "When I was young,"
-	line "I was a serious"
-	cont "#MON trainer!"
+	para "Some years ago,"
+	line "I gave my last"
+	cont "3 #MON to"
+	cont "young trainers"
+	cont "like you!"
 
-	para "In my old age, I"
-	line "have only 3 left,"
-	cont "but you can have"
-	cont "one! Choose!"
+	para "I had to catch"
+	line "3 new #MON"
+	cont "for you and"
+	cont "<RIVAL>!"
+
 	done
 
 _OaksLabRivalWhatAboutMeText::
@@ -250,23 +255,24 @@ _OaksLabRivalReceivedMonText::
 _OaksLabRivalIllTakeYouOnText::
 	text "<RIVAL>: Wait"
 	line "<PLAYER>!"
-	cont "Let's check out"
-	cont "our #MON!"
+	cont "We should have"
+	cont "a battle!"
 
-	para "Come on, I'll take"
-	line "you on!"
+	para "I bet my cute"
+	line "#MON is"
+	cont "stronger!"
 	done
 
 _OaksLabRivalIPickedTheWrongPokemonText::
-	text "WHAT?"
+	text "I lost?"
 	line "Unbelievable!"
-	cont "I picked the"
-	cont "wrong #MON!"
+	cont "But I still"
+	cont "like mine more!"
 	prompt
 
 _OaksLabRivalAmIGreatOrWhatText::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: Yeah!"
+	line "As expected!"
 	prompt
 
 _OaksLabRivalSmellYouLaterText::
@@ -318,26 +324,32 @@ _OaksLabOakGotPokedexText::
 	text_end
 
 _OaksLabOakThatWasMyDreamText::
-	text "To make a complete"
-	line "guide on all the"
-	cont "#MON in the"
-	cont "world..."
+	text "Some time ago,"
+	line "a talented young"
+	cont "trainer filled up"
+	cont "this #DEX..."
 
-	para "That was my dream!"
+	para "But it's all"
+	line "wrong now"!
 
-	para "But, I'm too old!"
-	line "I can't do it!"
+	para "With all these"
+	line "new #MON"
+	cont "that have"
+	cont "appeared!"
 
-	para "So, I want you two"
-	line "to fulfill my"
-	cont "dream for me!"
+	para "And everything"
+	line "else that has"
+	cont "changed!"
+
+	para "I need to do it"
+	line "all over again!"
 
 	para "Get moving, you"
 	line "two!"
 
-	para "This is a great"
-	line "undertaking in"
-	cont "#MON history!"
+	para "Go and refill"
+	line "my #DEX"
+	cont "for me!"
 	done
 
 _OaksLabRivalLeaveItAllToMeText::

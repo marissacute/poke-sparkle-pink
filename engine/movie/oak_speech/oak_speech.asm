@@ -79,18 +79,31 @@ ENDC
 	call FadeInIntroPic
 	ld hl, OakSpeechText1
 	call PrintText
+
 	call GBFadeOutToWhite
-	;call ClearScreen
-	call GetNidorinoPalID ; HAX
-	ld a, NIDORINO
+	call GetCharizardPalID ; HAX
+	ld a, CHARIZARD
 	ld [wCurSpecies], a
 	ld [wCurPartySpecies], a
 	call GetMonHeader
 	hlcoord 6, 4
 	call LoadFlippedFrontSpriteByMonIndex
 	call MovePicLeft
-	ld hl, OakSpeechText2
+	ld hl, OakSpeechText2A
 	call PrintText
+
+	call GBFadeOutToWhite
+	call GetDunsparcePalID ; HAX
+	ld a, DUNSPARCE
+	ld [wCurSpecies], a
+	ld [wCurPartySpecies], a
+	call GetMonHeader
+	hlcoord 6, 4
+	call LoadFlippedFrontSpriteByMonIndex
+	call MovePicLeft
+	ld hl, OakSpeechText2B
+	call PrintText
+
 	call GBFadeOutToWhite
 	call GetRedPalID ; HAX
 	ld de, RedPicFront
@@ -173,10 +186,11 @@ ENDC
 OakSpeechText1:
 	text_far _OakSpeechText1
 	text_end
-OakSpeechText2:
+OakSpeechText2A:
+	sound_cry_charizard
 	text_far _OakSpeechText2A
-	; BUG: The cry played does not match the sprite displayed.
-	sound_cry_nidorina
+	text_end
+OakSpeechText2B:
 	text_far _OakSpeechText2B
 	text_end
 IntroducePlayerText:

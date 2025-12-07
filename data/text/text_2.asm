@@ -1695,33 +1695,41 @@ _LinkCanceledText::
 
 _OakSpeechText1::
 	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	line "Welcome back to"
+	cont "the world of"
+	cont "#MON!"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "Lately, strange"
+	line "things have been"
+	cont "happening!"
+
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@"
-	text_end
+	text "#MON that we"
+	line "have known and"
+	cont "loved for years"
+	cont "have suddenly"
+	cont "changed!"
+
+	para "Some have changed"
+	line "types, and others"
+	cont "have new moves."
+
+	prompt
 
 _OakSpeechText2B::
-	text_start
+	text "Even stranger,"
+	line "new #MON"
+	cont "have appeared"
+	cont "as well!"
 
-	para "For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	para "As a professor"
+	line "of #MON,"
+	cont "I am dedicated"
+	cont "to finding out"
+	cont "why!"
 
-	para "Myself..."
-
-	para "I study #MON"
-	line "as a profession."
 	prompt
 
 _IntroducePlayerText::

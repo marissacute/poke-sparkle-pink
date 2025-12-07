@@ -1,12 +1,13 @@
 ; Helper functions for oak intro
 
-GetNidorinoPalID:
+GetCharizardPalID:
 	call ClearScreen
-IF GEN_2_GRAPHICS
-	ld a, PAL_NIDORINO
-ELSE
-	ld a, PAL_PURPLEMON
-ENDC
+	ld a, PAL_CHARIZARD
+	jr GotPalID
+
+GetDunsparcePalID:
+	call ClearScreen
+	ld a, PAL_DUNSPARCE
 	jr GotPalID
 
 GetRedPalID:

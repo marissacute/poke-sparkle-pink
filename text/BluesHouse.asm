@@ -1,7 +1,15 @@
 _BluesHouseDaisyRivalAtLabText::
 	text "Hi <PLAYER>!"
-	line "<RIVAL> is out at"
-	cont "Grandpa's lab."
+	line "<RIVAL> really"
+	cont "looks up to her"
+	cont "older brother!"
+
+	para "Were you looking"
+	line "for her?"
+
+	para "She's at grand-"
+	line "pa's lab!"
+
 	done
 
 _BluesHouseDaisyOfferMapText::

@@ -27,13 +27,13 @@ _PalletTownGirlText::
 	done
 
 _PalletTownFisherText::
-	text "Some #MON have"
-	line "different types"
-	cont "and moves than"
-	cont "they used to have."
+	text "Technology is"
+	line "incredible!"
 
-	para "I wonder why"
-	line "that's the case."
+	para "You can make"
+	line "your own version"
+	cont "of a game from"
+	cont "your childhood!"
 	done
 
 _PalletTownOaksLabSignText::
