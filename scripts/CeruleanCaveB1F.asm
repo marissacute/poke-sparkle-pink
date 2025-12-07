@@ -24,9 +24,9 @@ CeruleanCaveB1F_ScriptPointers:
 CeruleanCaveB1F_TextPointers:
 	def_text_pointers
 	dw_const MewtwoStartBattle, 		TEXT_CERULEANCAVEB1F_MEWTWO
-	dw_const MewtwoAfterBattleText, 	TEXT_CERULEANCAVEB1F_MEWTWO_AFTER_BATTLE
 	dw_const PickUpItemText,            TEXT_CERULEANCAVEB1F_ULTRA_BALL
 	dw_const PickUpItemText,            TEXT_CERULEANCAVEB1F_MAX_REVIVE
+	dw_const MewtwoAfterBattleText, 	TEXT_CERULEANCAVEB1F_MEWTWO_AFTER_BATTLE
 
 MewtwoStartBattle:
 	text_far _MewtwoBeforeBattleText

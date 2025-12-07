@@ -170,6 +170,7 @@ ViridianGymReceiveTM27:
 
 ViridianGym_TextPointers:
 	def_text_pointers
+	; Text pointers for objects
 	dw_const ViridianGymGiovanniText,               TEXT_VIRIDIANGYM_GIOVANNI
 	dw_const ViridianGymCooltrainerM1Text,          TEXT_VIRIDIANGYM_COOLTRAINER_M1
 	dw_const ViridianGymHiker1Text,                 TEXT_VIRIDIANGYM_HIKER1
@@ -181,11 +182,11 @@ ViridianGym_TextPointers:
 	dw_const ViridianGymCooltrainerM3Text,          TEXT_VIRIDIANGYM_COOLTRAINER_M3
 	dw_const ViridianGymGymGuideText,               TEXT_VIRIDIANGYM_GYM_GUIDE
 	dw_const PickUpItemText,                        TEXT_VIRIDIANGYM_REVIVE
+	dw_const ViridianGymBlueText,					TEXT_VIRIDIANGYM_BLUE
+	; Other text pointers
 	dw_const ViridianGymGiovanniEarthBadgeInfoText, TEXT_VIRIDIANGYM_GIOVANNI_EARTH_BADGE_INFO
 	dw_const ViridianGymGiovanniReceivedTM27Text,   TEXT_VIRIDIANGYM_GIOVANNI_RECEIVED_TM27
 	dw_const ViridianGymGiovanniTM27NoRoomText,     TEXT_VIRIDIANGYM_GIOVANNI_TM27_NO_ROOM
-    dw_const ViridianGymBlueText,					TEXT_VIRIDIANGYM_BLUE
-	dw_const ViridianGymRematchPostBattleText,      TEXT_VIRIDIANGYM_BLUE_POST_BATTLE
 
 ViridianGymTrainerHeaders:
 	def_trainers 2
@@ -492,13 +493,12 @@ ViridianGymRematchDefeatedText:
 	text_far _ViridianGymRematchDefeatedText
 	text_end
 
-ViridianGymRematchPostBattleText:
-	text_far _ViridianGymRematchPostBattleText
-	text_end
-
 ViridianGymBluePostBattle:
 	text_asm
-	ld a, TEXT_VIRIDIANGYM_BLUE_POST_BATTLE
-	ldh [hTextID], a
-	call DisplayTextID
+	ld hl, RematchPostBattleText
+	call PrintText
 	jp ViridianGymResetScripts
+
+.RematchPostBattleText:
+	text_far _ViridianGymRematchPostBattleText
+	text_end
