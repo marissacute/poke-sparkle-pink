@@ -625,23 +625,23 @@ JynxDexEntry:
 	text_end
 
 MoltresDexEntry:
-	db "FLAME@"
+	db "MALEVOLENT@"
 	db 20
-	dw 600
+	dw 660
 	text_far _MoltresDexEntry
 	text_end
 
 ArticunoDexEntry:
-	db "FREEZE@"
+	db "CRUEL@"
 	db 17
-	dw 554
+	dw 509
 	text_far _ArticunoDexEntry
 	text_end
 
 ZapdosDexEntry:
-	db "ELECTRIC@"
+	db "STRONGLEGS@"
 	db 16
-	dw 526
+	dw 582
 	text_far _ZapdosDexEntry
 	text_end
 

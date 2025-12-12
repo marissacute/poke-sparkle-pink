@@ -50,6 +50,9 @@ FuchsiaGymKogaPostBattleScript:
 	ld a, TEXT_FUCHSIAGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
 	call DisplayTextID
+	ld a, SEAFOAMISLANDSB4F_ARTICUNO
+	ld [wMissableObjectIndex], a
+	predef ShowObject
 	jp FuchsiaGymResetScripts
 
 FuchsiaGymReceiveTM06:

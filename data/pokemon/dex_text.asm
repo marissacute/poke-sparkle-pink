@@ -609,33 +609,33 @@ _JynxDexEntry::
 	dex
 
 _MoltresDexEntry::
-	text "Known as the"
-	next "legendary bird of"
-	next "fire. Every flap"
+	text "This #MON's"
+	next "sinister, flame-"
+	next "like aura will"
 
-	page "of its wings"
-	next "creates a dazzling"
-	next "flash of flames"
+	page "consume the vic-"
+	next "tims of any"
+	next "creature it hits"
 	dex
 
 _ArticunoDexEntry::
-	text "A legendary bird"
-	next "#MON that is"
-	next "said to appear to"
+	text "Its feather-like"
+	next "blades are com-"
+	next "posed of psychic"
 
-	page "doomed people who"
-	next "are lost in icy"
-	next "mountains"
+	page "energy and can"
+	next "shear through"
+	next "iron sheets"
 	dex
 
 _ZapdosDexEntry::
-	text "A legendary bird"
-	next "#MON that is"
-	next "said to appear"
+	text "When its feathers"
+	next "rub together,"
+	next "they produce a"
 
-	page "from clouds while"
-	next "dropping enormous"
-	next "lightning bolts"
+	page "crackling sound"
+	next "like the zapping"
+	next "of electricity"
 	dex
 
 _DittoDexEntry::

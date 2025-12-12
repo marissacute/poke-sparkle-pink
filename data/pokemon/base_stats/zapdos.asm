@@ -1,9 +1,9 @@
 	db DEX_ZAPDOS ; pokedex id
 
-	db  90,  90,  85, 100, 125
+	db  90, 125, 90, 100, 85
 	;   hp  atk  def  spd  spc
 
-	db ELECTRIC, FLYING ; type
+	db FIGHTING, FLYING ; type
 	db 3 ; catch rate
 	db 216 ; base exp
 
@@ -11,14 +11,14 @@
 
 	dw ZapdosPicFront, ZapdosPicBack
 
-	db THUNDERSHOCK, DRILL_PECK, NO_MOVE, NO_MOVE ; level 1 learnset
+	db DOUBLE_KICK, DRILL_PECK, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
-	     HYPER_BEAM,   RAGE,         THUNDERBOLT,  THUNDER,      MIMIC,        \
+	     HYPER_BEAM,   RAGE,         SUBMISSION,   EARTHQUAKE,   MIMIC,        \
 	     DOUBLE_TEAM,  REFLECT,      BIDE,         SWIFT,        SKY_ATTACK,   \
-	     REST,         THUNDER_WAVE, SUBSTITUTE,   FLY,          FLASH
+	     REST,         SEISMIC_TOSS, SUBSTITUTE,   FLY,          STRENGTH
 	; end
 
 	db BANK(ZapdosPicFront)

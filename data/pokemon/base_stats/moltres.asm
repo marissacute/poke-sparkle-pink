@@ -1,9 +1,9 @@
 	db DEX_MOLTRES ; pokedex id
 
-	db  90, 100,  90,  90, 125
+	db  90, 95,  90,  90, 125
 	;   hp  atk  def  spd  spc
 
-	db FIRE, FLYING ; type
+	db DARK, FLYING ; type
 	db 3 ; catch rate
 	db 217 ; base exp
 
@@ -11,13 +11,13 @@
 
 	dw MoltresPicFront, MoltresPicBack
 
-	db WING_ATTACK, FIRE_SPIN, NO_MOVE, NO_MOVE ; level 1 learnset
+	db WING_ATTACK, FEINT_ATTACK, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
 	     HYPER_BEAM,   RAGE,         MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         FIRE_BLAST,   SWIFT,        SKY_ATTACK,   REST,         \
+	     BIDE,         SHADOW_BALL,  SWIFT,        SKY_ATTACK,   REST,         \
 	     SUBSTITUTE,   FLY
 	; end
 

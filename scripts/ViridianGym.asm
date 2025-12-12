@@ -495,7 +495,7 @@ ViridianGymRematchDefeatedText:
 
 ViridianGymBluePostBattle:
 	text_asm
-	ld hl, RematchPostBattleText
+	ld hl, .RematchPostBattleText
 	call PrintText
 	jp ViridianGymResetScripts
 

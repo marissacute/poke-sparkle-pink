@@ -101,6 +101,15 @@ _VermilionGymRematchPostBattleText::
 	line "but I could not"
 	cont "defeat you!"
 
+	para "I heard a strong"
+	line "#MON lives"
+	cont "in the old"
+	cont "powerplant!"
+
+	para "You should try"
+	line "to catch it,"
+	cont "kid!"
+
 	done
 
 _VermilionGymGentlemanBattleText::

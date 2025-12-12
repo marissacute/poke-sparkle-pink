@@ -1008,27 +1008,33 @@ MoltresEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 51, FLAMETHROWER
+	db 51, NIGHT_SLASH
 	db 55, AGILITY
-	db 60, SKY_ATTACK
+	db 60, SCREECH
+	db 65, SHADOW_BALL
+	db 70, SKY_ATTACK
 	db 0
 
 ArticunoEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 51, BLIZZARD
+	db 51, PSYCHIC_M
 	db 55, AGILITY
-	db 60, MIST
+	db 60, HYPNOSIS
+	db 65, DREAM_EATER
+	db 70, MIST
 	db 0
 
 ZapdosEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 51, THUNDER
+	db 51, HI_JUMP_KICK
 	db 55, AGILITY
 	db 60, LIGHT_SCREEN
+	db 65, MEGA_KICK
+	db 70, COUNTER
 	db 0
 
 DittoEvosMoves:

@@ -148,6 +148,9 @@ CinnabarGymBlainePostBattleScript:
 	ld a, TEXT_CINNABARGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
 	call DisplayTextID
+	ld a, VICTORYROAD2F_MOLTRES
+	ld [wMissableObjectIndex], a
+	predef ShowObject
 	jp CinnabarGymResetScripts
 
 CinnabarGymReceiveTM38:

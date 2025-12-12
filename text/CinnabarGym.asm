@@ -248,7 +248,7 @@ _CinnabarGymRematchPostBattleText::
 	para "If you are so"
 	line "strong, you"
 	cont "should search for"
-	cont "the flaming"
+	cont "the mysterious"
 	cont "#MON deep"
 	cont "in Victory Road!"
 	done
