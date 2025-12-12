@@ -96,12 +96,7 @@ ChampionsRoomRivalDefeatedScript:
 	jp z, ResetRivalScript
 	call UpdateSprites
 	SetEvent EVENT_BEAT_CHAMPION_RIVAL
-
-	; Show Blue in Viridian Gym
-	ld a, HS_VIRIDIAN_GYM_BLUE
-	ld [wMissableObjectIndex], a
-	predef ShowObject
-
+	
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	ld a, TEXT_CHAMPIONSROOM_RIVAL

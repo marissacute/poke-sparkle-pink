@@ -153,7 +153,7 @@ ViridianCityGambler1Text:
 	cp ~(1 << BIT_EARTHBADGE)
 	ld hl, .GymLeaderReturnedText
 	jr z, .print_text
-	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_BLUE
 	jr nz, .print_text
 	ld hl, .GymAlwaysClosedText
 .print_text

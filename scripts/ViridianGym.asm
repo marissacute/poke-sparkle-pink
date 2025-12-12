@@ -14,7 +14,7 @@ ViridianGym_Script:
 	db "VIRIDIAN CITY@"
 
 .LeaderName:
-	db "GIOVANNI@"
+	db "BLUE@"
 
 ViridianGymResetScripts:
 	xor a
@@ -28,9 +28,8 @@ ViridianGym_ScriptPointers:
 	dw_const ViridianGymDefaultScript,              SCRIPT_VIRIDIANGYM_DEFAULT
 	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_VIRIDIANGYM_START_BATTLE
 	dw_const EndTrainerBattle,                      SCRIPT_VIRIDIANGYM_END_BATTLE
-	dw_const ViridianGymGiovanniPostBattle,         SCRIPT_VIRIDIANGYM_GIOVANNI_POST_BATTLE
-	dw_const ViridianGymPlayerSpinningScript,       SCRIPT_VIRIDIANGYM_PLAYER_SPINNING
 	dw_const ViridianGymBluePostBattle,             SCRIPT_VIRIDIANGYM_BLUE_POST_BATTLE
+	dw_const ViridianGymPlayerSpinningScript,       SCRIPT_VIRIDIANGYM_PLAYER_SPINNING
 
 ViridianGymDefaultScript:
 	ld a, [wYCoord]
@@ -129,28 +128,35 @@ ViridianGymPlayerSpinningScript:
 .ViridianGymLoadSpinnerArrow
 	farjp LoadSpinnerArrowTiles
 
-ViridianGymGiovanniPostBattle:
+ViridianGymBluePostBattle:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, ViridianGymResetScripts
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-; fallthrough
-ViridianGymReceiveTM27:
-	ld a, TEXT_VIRIDIANGYM_GIOVANNI_EARTH_BADGE_INFO
+
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_BLUE
+	jr z, ViridianGymReceiveTM27	
+	ld a, TEXT_VIRIDIANGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
 	call DisplayTextID
-	SetEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+	jp ViridianGymResetScripts
+
+ViridianGymReceiveTM27:
+	ld a, TEXT_VIRIDIANGYM_BLUE_EARTH_BADGE_INFO
+	ldh [hTextID], a
+	call DisplayTextID
+	SetEvent EVENT_BEAT_VIRIDIAN_GYM_BLUE
 	lb bc, TM_FISSURE, 1
 	call GiveItem
 	jr nc, .bag_full
-	ld a, TEXT_VIRIDIANGYM_GIOVANNI_RECEIVED_TM27
+	ld a, TEXT_VIRIDIANGYM_BLUE_RECEIVED_TM27
 	ldh [hTextID], a
 	call DisplayTextID
 	SetEvent EVENT_GOT_TM27
 	jr .gym_victory
 .bag_full
-	ld a, TEXT_VIRIDIANGYM_GIOVANNI_TM27_NO_ROOM
+	ld a, TEXT_VIRIDIANGYM_BLUE_TM27_NO_ROOM
 	ldh [hTextID], a
 	call DisplayTextID
 .gym_victory
@@ -171,7 +177,7 @@ ViridianGymReceiveTM27:
 ViridianGym_TextPointers:
 	def_text_pointers
 	; Text pointers for objects
-	dw_const ViridianGymGiovanniText,               TEXT_VIRIDIANGYM_GIOVANNI
+	dw_const ViridianGymBlueText,                   TEXT_VIRIDIANGYM_BLUE
 	dw_const ViridianGymCooltrainerM1Text,          TEXT_VIRIDIANGYM_COOLTRAINER_M1
 	dw_const ViridianGymHiker1Text,                 TEXT_VIRIDIANGYM_HIKER1
 	dw_const ViridianGymRocker1Text,                TEXT_VIRIDIANGYM_ROCKER1
@@ -182,11 +188,11 @@ ViridianGym_TextPointers:
 	dw_const ViridianGymCooltrainerM3Text,          TEXT_VIRIDIANGYM_COOLTRAINER_M3
 	dw_const ViridianGymGymGuideText,               TEXT_VIRIDIANGYM_GYM_GUIDE
 	dw_const PickUpItemText,                        TEXT_VIRIDIANGYM_REVIVE
-	dw_const ViridianGymBlueText,					TEXT_VIRIDIANGYM_BLUE
 	; Other text pointers
-	dw_const ViridianGymGiovanniEarthBadgeInfoText, TEXT_VIRIDIANGYM_GIOVANNI_EARTH_BADGE_INFO
-	dw_const ViridianGymGiovanniReceivedTM27Text,   TEXT_VIRIDIANGYM_GIOVANNI_RECEIVED_TM27
-	dw_const ViridianGymGiovanniTM27NoRoomText,     TEXT_VIRIDIANGYM_GIOVANNI_TM27_NO_ROOM
+	dw_const ViridianGymBlueEarthBadgeInfoText,    TEXT_VIRIDIANGYM_BLUE_EARTH_BADGE_INFO
+	dw_const ViridianGymBlueReceivedTM27Text,      TEXT_VIRIDIANGYM_BLUE_RECEIVED_TM27
+	dw_const ViridianGymBlueTM27NoRoomText,        TEXT_VIRIDIANGYM_BLUE_TM27_NO_ROOM
+	dw_const ViridianGymRematchPostBattleText,     TEXT_VIRIDIANGYM_REMATCH_POST_BATTLE
 
 ViridianGymTrainerHeaders:
 	def_trainers 2
@@ -208,28 +214,21 @@ ViridianGymTrainerHeader7:
 	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7, 4, ViridianGymCooltrainerM3BattleText, ViridianGymCooltrainerM3EndBattleText, ViridianGymCooltrainerM3AfterBattleText
 	db -1 ; end
 
-ViridianGymGiovanniText:
+ViridianGymBlueText:
 	text_asm
-	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_BLUE
 	jr z, .beforeBeat
 	CheckEventReuseA EVENT_GOT_TM27
 	jr nz, .afterBeat
 	call z, ViridianGymReceiveTM27
 	call DisableWaitingAfterTextDisplay
-	jr .text_script_end
+	jr .done
 .afterBeat
-	ld a, $1
-	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jr nz, .BlueRematch
 	ld hl, .PostBattleAdviceText
 	call PrintText
-	call GBFadeOutToBlack
-	ld a, HS_VIRIDIAN_GYM_GIOVANNI
-	ld [wMissableObjectIndex], a
-	predef HideObject
-	call UpdateSprites
-	call Delay3
-	call GBFadeInFromBlack
-	jr .text_script_end
+	jr .done
 .beforeBeat
 	ld hl, .PreBattleText
 	call PrintText
@@ -245,39 +244,86 @@ ViridianGymGiovanniText:
 	call InitBattleEnemyParameters
 	ld a, $8
 	ld [wGymLeaderNo], a
-	ld a, SCRIPT_VIRIDIANGYM_GIOVANNI_POST_BATTLE
+	jr .endBattle
+.BlueRematch
+	ld hl, .PreBattleRematchText
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr nz, .refused
+	ld hl, .PreBattleRematchAcceptedText
+	call PrintText
+	call Delay3
+	ld hl, wStatusFlags3
+	set BIT_TALKED_TO_TRAINER, [hl]
+	set BIT_PRINT_END_BATTLE_TEXT, [hl]
+	ld hl, ViridianGymRematchDefeatedText
+	ld de, ViridianGymRematchDefeatedText
+	call SaveEndBattleTextPointers
+	ld a, OPP_BLUE
+	ld [wCurOpponent], a
+	ld a, 2
+	ld [wTrainerNo], a
+	jr .endBattle
+.refused
+	ld hl, .PreBattleRematchRefusedText
+	call PrintText
+	jr .done
+.endBattle
+	ld a, SCRIPT_VIRIDIANGYM_BLUE_POST_BATTLE
 	ld [wViridianGymCurScript], a
-.text_script_end
+.done
 	jp TextScriptEnd
 
 .PreBattleText:
-	text_far _ViridianGymGiovanniPreBattleText
+	text_far _ViridianGymBluePreBattleText
 	text_end
 
 .ReceivedEarthBadgeText:
-	text_far _ViridianGymGiovanniReceivedEarthBadgeText
+	text_far _ViridianGymBlueReceivedEarthBadgeText
 	sound_level_up ; probably supposed to play SFX_GET_ITEM_1 but the wrong music bank is loaded
 	text_end
 
 .PostBattleAdviceText:
-	text_far _ViridianGymGiovanniPostBattleAdviceText
+	text_far _ViridianGymBluePostBattleAdviceText
 	text_waitbutton
 	text_end
 
-ViridianGymGiovanniEarthBadgeInfoText:
-	text_far _ViridianGymGiovanniEarthBadgeInfoText
+.PreBattleRematchText:
+	text_far _ViridianGymRematchPreBattleText
 	text_end
 
-ViridianGymGiovanniReceivedTM27Text:
-	text_far _ViridianGymGiovanniReceivedTM27Text
+.PreBattleRematchAcceptedText:
+	text_far _ViridianGymRematchAcceptedText
+	text_end
+
+.PreBattleRematchRefusedText:
+	text_far _ViridianGymRematchRefusedText
+	text_end
+
+ViridianGymRematchDefeatedText:
+	text_far _ViridianGymRematchDefeatedText
+	text_end
+
+ViridianGymRematchPostBattleText:
+	text_far _ViridianGymRematchPostBattleText
+	text_end
+
+ViridianGymBlueEarthBadgeInfoText:
+	text_far _ViridianGymBlueEarthBadgeInfoText
+	text_end
+
+ViridianGymBlueReceivedTM27Text:
+	text_far _ViridianGymBlueReceivedTM27Text
 	sound_get_item_1
 
-ViridianGymGiovanniTM27ExplanationText:
-	text_far _ViridianGymGiovanniTM27ExplanationText
+ViridianGymBlueTM27ExplanationText:
+	text_far _ViridianGymBlueTM27ExplanationText
 	text_end
 
-ViridianGymGiovanniTM27NoRoomText:
-	text_far _ViridianGymGiovanniTM27NoRoomText
+ViridianGymBlueTM27NoRoomText:
+	text_far _ViridianGymBlueTM27NoRoomText
 	text_end
 
 ViridianGymCooltrainerM1Text:
@@ -426,7 +472,7 @@ ViridianGymCooltrainerM3AfterBattleText:
 
 ViridianGymGymGuideText:
 	text_asm
-	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_BLUE
 	jr nz, .afterBeat
 	ld hl, ViridianGymGuidePreBattleText
 	call PrintText
@@ -443,62 +489,4 @@ ViridianGymGuidePreBattleText:
 
 ViridianGymGuidePostBattleText:
 	text_far _ViridianGymGuidePostBattleText
-	text_end
-
-ViridianGymBlueText:
-	text_asm
-	ld hl, .PreBattleText
-	call PrintText
-	call YesNoChoice
-	ld a, [wCurrentMenuItem]
-	and a
-	jr nz, .refused
-	ld hl, .PreBattleAcceptedText
-	call PrintText
-	call Delay3
-	ld hl, wStatusFlags3
-	set BIT_TALKED_TO_TRAINER, [hl]
-	set BIT_PRINT_END_BATTLE_TEXT, [hl]
-	ld hl, ViridianGymRematchDefeatedText
-	ld de, ViridianGymRematchDefeatedText
-	call SaveEndBattleTextPointers
-	ld a, OPP_BLUE
-	ld [wCurOpponent], a
-	ld a, 1
-	ld [wTrainerNo], a
-	jr .endBattle
-.refused
-	ld hl, .PreBattleRefusedText
-	call PrintText
-	jr .done
-.endBattle
-	ld a, SCRIPT_VIRIDIANGYM_BLUE_POST_BATTLE
-	ld [wViridianGymCurScript], a
-.done
-	jp TextScriptEnd
-
-.PreBattleText:
-	text_far _ViridianGymRematchPreBattleText
-	text_end
-
-.PreBattleAcceptedText:
-	text_far _ViridianGymRematchAcceptedText
-	text_end
-
-.PreBattleRefusedText:
-	text_far _ViridianGymRematchRefusedText
-	text_end
-
-ViridianGymRematchDefeatedText:
-	text_far _ViridianGymRematchDefeatedText
-	text_end
-
-ViridianGymBluePostBattle:
-	text_asm
-	ld hl, .RematchPostBattleText
-	call PrintText
-	jp ViridianGymResetScripts
-
-.RematchPostBattleText:
-	text_far _ViridianGymRematchPostBattleText
 	text_end
