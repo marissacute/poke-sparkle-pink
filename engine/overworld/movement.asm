@@ -120,6 +120,10 @@ UpdateNPCSprite:
 	add l
 	ld l, a
 	ld a, [hl]        ; read movement byte 2
+	; Fix: account for carry
+	jr nc, .nc 
+	inc h
+	.nc
 	ld [wCurSpriteMovement2], a
 	ld h, HIGH(wSpriteStateData1)
 	ldh a, [hCurrentSpriteOffset]
