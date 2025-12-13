@@ -226,7 +226,7 @@ ViridianGymBlueText:
 .afterBeat
 	CheckEvent EVENT_PLAYER_IS_CHAMPION
 	jr nz, .BlueRematch
-	ld hl, .PostBattleAdviceText
+	ld hl, .TM27ExplanationText
 	call PrintText
 	jr .done
 .beforeBeat
@@ -235,8 +235,8 @@ ViridianGymBlueText:
 	ld hl, wStatusFlags3
 	set BIT_TALKED_TO_TRAINER, [hl]
 	set BIT_PRINT_END_BATTLE_TEXT, [hl]
-	ld hl, .ReceivedEarthBadgeText
-	ld de, .ReceivedEarthBadgeText
+	ld hl, ViridianGymBlueReceivedEarthBadgeText
+	ld de, ViridianGymBlueReceivedEarthBadgeText
 	call SaveEndBattleTextPointers
 	ldh a, [hSpriteIndex]
 	ld [wSpriteIndex], a
@@ -244,6 +244,8 @@ ViridianGymBlueText:
 	call InitBattleEnemyParameters
 	ld a, $8
 	ld [wGymLeaderNo], a
+	xor a
+	ldh [hJoyHeld], a
 	jr .endBattle
 .BlueRematch
 	ld hl, .PreBattleRematchText
@@ -280,14 +282,8 @@ ViridianGymBlueText:
 	text_far _ViridianGymBluePreBattleText
 	text_end
 
-.ReceivedEarthBadgeText:
-	text_far _ViridianGymBlueReceivedEarthBadgeText
-	sound_level_up ; probably supposed to play SFX_GET_ITEM_1 but the wrong music bank is loaded
-	text_end
-
-.PostBattleAdviceText:
-	text_far _ViridianGymBluePostBattleAdviceText
-	text_waitbutton
+.TM27ExplanationText:
+	text_far _ViridianGymBlueTM27ExplanationText
 	text_end
 
 .PreBattleRematchText:
@@ -314,12 +310,15 @@ ViridianGymBlueEarthBadgeInfoText:
 	text_far _ViridianGymBlueEarthBadgeInfoText
 	text_end
 
+ViridianGymBlueReceivedEarthBadgeText:
+	text_far _ViridianGymBlueReceivedEarthBadgeText
+	sound_level_up ; probably supposed to play SFX_GET_ITEM_1 but the wrong music bank is loaded
+	text_promptbutton
+	text_end
+
 ViridianGymBlueReceivedTM27Text:
 	text_far _ViridianGymBlueReceivedTM27Text
 	sound_get_item_1
-
-ViridianGymBlueTM27ExplanationText:
-	text_far _ViridianGymBlueTM27ExplanationText
 	text_end
 
 ViridianGymBlueTM27NoRoomText:

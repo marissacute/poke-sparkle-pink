@@ -24,19 +24,7 @@ _ViridianGymBlueReceivedEarthBadgeText::
 	para "I'll have to give"
 	line "you your final"
 	cont "badge:"
-	cont "the EARTHBADGE!"
-	text_end
-
-_ViridianGymBluePostBattleAdviceText::
-	text "You did a great"
-	line "job, <PLAYER>!"
-
-	para "Go and challenge"
-	line "the LEAGUE!"
-
-	para "My lil' sis is"
-	line "already going"
-	line "that way!"
+	cont "the EARTHBADGE!@"
 	text_end
 
 _ViridianGymBlueEarthBadgeInfoText::
@@ -49,9 +37,13 @@ _ViridianGymBlueEarthBadgeInfoText::
 	line "now challenge the"
 	cont "#MON LEAGUE!"
 
-	para "You should come"
-	line "back after you"
-	cont "beat them, haha!"
+	para "My lil' sis is"
+	line "already going"
+	cont "that way!"
+
+	para "You can also"
+	line "have this TM"
+	cont "I found here!"
 
 	para "Smell ya later!"
 	done
