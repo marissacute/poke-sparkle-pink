@@ -53,7 +53,7 @@ DisplayListMenuID::
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
 	call UpdateSprites
-	farcall PrintItemDescription
+	call PrintDescription
 
 DisplayListMenuIDLoop::
 	xor a
@@ -92,11 +92,9 @@ DisplayListMenuIDLoop::
 
 	xor a
 	ld [wMenuWatchMovingOutOfBounds], a
-	ld a, [wCurrentMenuItem]
-	ld c, a
-	ld a, [wListScrollOffset]
-	add c
-	ld c, a
+
+	call GetMenuListNumber
+
 	ld a, [wListCount]
 	and a ; is the list empty?
 	jp z, ExitListMenu ; if so, exit the menu
@@ -105,21 +103,9 @@ DisplayListMenuIDLoop::
 	jp c, ExitListMenu ; if so, exit the menu
 	ld a, c
 	ld [wWhichPokemon], a
-	ld a, [wListMenuID]
-	cp ITEMLISTMENU
-	jr nz, .skipMultiplying
-; if it's an item menu
-	sla c ; item entries are 2 bytes long, so multiply by 2
-.skipMultiplying
-	ld a, [wListPointer]
-	ld l, a
-	ld a, [wListPointer + 1]
-	ld h, a
-	inc hl ; hl = beginning of list entries
-	ld b, 0
-	add hl, bc
-	ld a, [hl]
-	ld [wCurListMenuItem], a
+
+	call GetItemIDForMenuItem
+
 	ld a, [wListMenuID]
 	and a ; PCPOKEMONLISTMENU?
 	jr z, .pokemonList
@@ -196,8 +182,41 @@ DisplayListMenuIDLoop::
 	jr .updateAndLoop
 
 .updateAndLoop
-	farcall PrintItemDescription
+	call PrintDescription
 	jp DisplayListMenuIDLoop
+
+PrintDescription:
+	call GetMenuListNumber
+	call GetItemIDForMenuItem
+	farcall PrintItemDescription
+	ret
+
+; c: menu list number
+GetItemIDForMenuItem:
+	ld a, [wListMenuID]
+	cp ITEMLISTMENU
+	jr nz, .skipMultiplying
+; if it's an item menu
+	sla c ; item entries are 2 bytes long, so multiply by 2
+.skipMultiplying
+	ld a, [wListPointer]
+	ld l, a
+	ld a, [wListPointer + 1]
+	ld h, a
+	inc hl ; hl = beginning of list entries
+	ld b, 0
+	add hl, bc
+	ld a, [hl]
+	ld [wCurListMenuItem], a
+	ret
+
+GetMenuListNumber:
+	ld a, [wCurrentMenuItem]
+	ld c, a
+	ld a, [wListScrollOffset]
+	add c
+	ld c, a
+	ret
 
 DisplayChooseQuantityMenu::
 ; text box dimensions/coordinates for just quantity

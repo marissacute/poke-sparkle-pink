@@ -1,34 +1,18 @@
 PrintItemDescription::
 	ld a, [wListMenuID]
 	and a ; PCPOKEMONLISTMENU?
-	ret z ; this only work for item menus
+	ret z ; this only works for item menus
 
 	ld a, [wCurrentMenuItem]
 	ld c, a
 	ld a, [wListScrollOffset]
 	add c
 	ld c, a
-
 	ld a, [wListCount]
 	cp c
 	jr z, .cancel
 
-	ld a, [wListMenuID]
-	cp ITEMLISTMENU
-	jr nz, .skipMultiplying
-; if it's an item menu
-	sla c ; item entries are 2 bytes long, so multiply by 2
-.skipMultiplying
-	ld a, [wListPointer]
-	ld l, a
-	ld a, [wListPointer + 1]
-	ld h, a
-	inc hl ; hl = beginning of list entries
-	ld b, 0
-	add hl, bc
-	ld a, [hl]
-	ld [wCurListMenuItem], a
-
+	ld a, [wCurListMenuItem]
 	cp HM01 ; is this a TM/HM?
 	jr nc, .machine
 
@@ -41,12 +25,20 @@ PrintItemDescription::
 	add hl, de
 	jr .loop
 
+.machine
+	sub TM01
+	jr nc, .skipAdding
+	add NUM_TMS + NUM_HMS ; adjust HM IDs to come after TM IDs
+.skipAdding
+	inc a
+	ld [wTempTMHM], a
+	predef TMToMove ; get move ID from TM/HM ID
+	ld a, [wTempTMHM]
+	ld [wMoveNum], a
+	jp PrintMoveDescription
+
 .cancel
 	ld hl, CancelMenuText
-	jr .copyNameData
-
-.machine
-	ld hl, TMHMName
 	; fallthrough
 
 .copyNameData
