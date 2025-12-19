@@ -391,3 +391,7 @@ SECTION "Cries", ROMX
 
 INCLUDE "data/pokemon/cries.asm"
 
+SECTION "Descriptions", ROMX
+
+INCLUDE "data/items/descriptions.asm"
+

@@ -30,13 +30,6 @@ DisplayListMenuID::
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; draw the menu text box
 	call UpdateSprites ; disable sprites behind the text box
-; the code up to .skipMovingSprites appears to be useless
-	hlcoord 0, 2 ; coordinates of upper left corner of menu text box
-	lb de, 9, 18 ; height and width of menu text box
-	ld a, [wListMenuID]
-	and a ; PCPOKEMONLISTMENU?
-	jr nz, .skipMovingSprites
-	call UpdateSprites
 .skipMovingSprites
 	ld a, 1 ; max menu item ID is 1 if the list has less than 2 entries
 	ld [wMenuWatchMovingOutOfBounds], a
@@ -50,10 +43,17 @@ DisplayListMenuID::
 	ld [wTopMenuItemY], a
 	ld a, 1
 	ld [wTopMenuItemX], a
-	ld a, PAD_A | PAD_B | PAD_SELECT
+	ld a, PAD_A | PAD_B | PAD_SELECT | PAD_DOWN | PAD_UP
 	ld [wMenuWatchedKeys], a
 	ld c, 10
 	call DelayFrames
+
+	; Write initial description
+	ld a, MESSAGE_BOX
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
+	call UpdateSprites
+	farcall PrintItemDescription
 
 DisplayListMenuIDLoop::
 	xor a
@@ -89,11 +89,6 @@ DisplayListMenuIDLoop::
 .buttonAPressed
 	ld a, [wCurrentMenuItem]
 	call PlaceUnfilledArrowMenuCursor
-
-; pointless because both values are overwritten before they are read
-	ld a, $01
-	ld [wMenuExitMethod], a
-	ld [wChosenMenuItem], a
 
 	xor a
 	ld [wMenuWatchMovingOutOfBounds], a
@@ -184,14 +179,24 @@ DisplayListMenuIDLoop::
 	ld b, a
 	ld a, [wListCount]
 	cp b ; will going down scroll past the Cancel button?
-	jp c, DisplayListMenuIDLoop
-	inc [hl] ; if not, go down
-	jp DisplayListMenuIDLoop
+	jp c, .updateAndLoop
+	ld a, [wMenuWrapped]
+	and a
+	jr z, .updateAndLoop
+	inc [hl] ; if the menu wrapped, update the scroll offset
+	jr .updateAndLoop
 .upPressed
 	ld a, [hl]
 	and a
-	jp z, DisplayListMenuIDLoop
-	dec [hl]
+	jr z, .updateAndLoop
+	ld a, [wMenuWrapped]
+	and a
+	jr z, .updateAndLoop
+	dec [hl] ; if the menu wrapped, update the scroll offset
+	jr .updateAndLoop
+
+.updateAndLoop
+	farcall PrintItemDescription
 	jp DisplayListMenuIDLoop
 
 DisplayChooseQuantityMenu::

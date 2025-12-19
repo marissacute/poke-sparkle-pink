@@ -216,6 +216,7 @@ ROMX $38
 	"NPC Sprites 2"
 ROMX $39
 	"Cries"
+	"Descriptions"
 WRAM0
 	"Audio RAM"
 	org $c100

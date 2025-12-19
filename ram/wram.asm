@@ -1787,7 +1787,7 @@ wYBlockCoord:: db
 wXBlockCoord:: db
 
 wLastMap:: db
-wUnusedLastMapWidth:: db
+wMenuWrapped:: db ; wUnusedLastMapWidth
 
 wCurMapHeader::
 wCurMapTileset:: db

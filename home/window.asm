@@ -1,6 +1,7 @@
 HandleMenuInput::
 	xor a
 	ld [wPartyMenuAnimMonEnabled], a
+	ld [wMenuWrapped], a
 
 HandleMenuInput_::
 	ldh a, [hDownArrowBlinkCount1]
@@ -61,6 +62,8 @@ HandleMenuInput_::
 	ld [wCurrentMenuItem], a ; move selected menu item up one space
 	jr .checkOtherKeys
 .alreadyAtTop
+	ld a, 1
+	ld [wMenuWrapped], a
 	ld a, [wMenuWrappingEnabled]
 	and a ; is wrapping around enabled?
 	jr z, .noWrappingAround
@@ -78,6 +81,8 @@ HandleMenuInput_::
 	cp c
 	jr nc, .notAtBottom
 .alreadyAtBottom
+	ld a, 1
+	ld [wMenuWrapped], a
 	ld a, [wMenuWrappingEnabled]
 	and a ; is wrapping around enabled?
 	jr z, .noWrappingAround
