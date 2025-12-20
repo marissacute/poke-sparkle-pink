@@ -200,7 +200,7 @@ _SurfboardDescription::
 
 _SafariBallDescription::
 	text "A special BALL"
-	line "for SAFARI."
+	line "for the SAFARI."
 	done
 
 _PokedexDescription::
@@ -214,33 +214,33 @@ _MoonStoneDescription::
 	done
 
 _AntidoteDescription::
-	text "Heals poisoned"
+	text "Heals a poisoned"
 	line "#MON."
 	done
 
 _BurnHealDescription::
-	text "Heals burned"
+	text "Heals a burned"
 	line "#MON."
 	done
 
 _IceHealDescription::
-	text "Defrosts frozen"
+	text "Defrosts a frozen"
 	line "#MON."
 	done
 
 _AwakeningDescription::
-	text "Awakens sleeping"
+	text "Wakes a sleeping"
 	line "#MON."
 	done
 
 _ParlyzHealDescription::
-	text "Heals paralysis."
-	line ""
+	text "Heals a paralyzed"
+	line "#MON."
 	done
 
 _FullRestoreDescription::
-	text "Fully restores"
-	line "HP and status."
+	text "Fully restores HP"
+	line "and status."
 	done
 
 _MaxPotionDescription::
@@ -270,37 +270,37 @@ _BoulderBadgeDescription::
 
 _CascadeBadgeDescription::
 	text "A badge from"
-	line "CERULEAN."
+	line "CERULEAN CITY."
 	done
 
 _ThunderBadgeDescription::
 	text "A badge from"
-	line "VERMILION."
+	line "VERMILION CITY."
 	done
 
 _RainbowBadgeDescription::
 	text "A badge from"
-	line "CELADON."
+	line "CELADON CITY."
 	done
 
 _SoulBadgeDescription::
 	text "A badge from"
-	line "FUCHSIA."
+	line "FUCHSIA CITY."
 	done
 
 _MarshBadgeDescription::
 	text "A badge from"
-	line "SAFFRON."
+	line "SAFFRON CITY."
 	done
 
 _VolcanoBadgeDescription::
 	text "A badge from"
-	line "CINNABAR."
+	line "CINNABAR ISLAND."
 	done
 
 _EarthBadgeDescription::
 	text "A badge from"
-	line "VIRIDIAN."
+	line "VIRIDIAN CITY."
 	done
 
 _EscapeRopeDescription::
@@ -334,28 +334,28 @@ _WaterStoneDescription::
 	done
 
 _HPUpDescription::
-	text "Raises HP."
-	line ""
+	text "Raises base"
+	line "HP points."
 	done
 
 _ProteinDescription::
-	text "Raises ATTACK."
-	line ""
+	text "Raises base"
+	line "ATTACK points."
 	done
 
 _IronDescription::
-	text "Raises DEFENSE."
-	line ""
+	text "Raises base"
+	line "DEFENSE points."
 	done
 
 _CarbosDescription::
-	text "Raises SPEED."
-	line ""
+	text "Raises base"
+	line "SPEED points."
 	done
 
 _CalciumDescription::
-	text "Raises SPECIAL."
-	line ""
+	text "Raises base"
+	line "SPECIAL points."
 	done
 
 _RareCandyDescription::
@@ -389,8 +389,8 @@ _BikeVoucherDescription::
 	done
 
 _XAccuracyDescription::
-	text "Raises accuracy."
-	line ""
+	text "Raises accuracy"
+	line "in battle."
 	done
 
 _LeafStoneDescription::
@@ -399,13 +399,13 @@ _LeafStoneDescription::
 	done
 
 _CardKeyDescription::
-	text "Opens SILPH"
+	text "Opens SILPH CO."
 	line "doors."
 	done
 
 _NuggetDescription::
-	text "Made of pure"
-	line "gold."
+	text "Can be sold for"
+	line "a high price."
 	done
 
 _MetalCoatDescription::
@@ -434,8 +434,8 @@ _MaxReviveDescription::
 	done
 
 _GuardSpecDescription::
-	text "Prevents stat"
-	line "loss."
+	text "Prevents stat loss"
+	line "in battle."
 	done
 
 _SuperRepelDescription::
@@ -450,7 +450,7 @@ _MaxRepelDescription::
 
 _DireHitDescription::
 	text "Raises critical"
-	line "hit ratio."
+	line "hit chance."
 	done
 
 _CoinDescription::
@@ -475,7 +475,7 @@ _LemonadeDescription::
 
 _SSTicketDescription::
 	text "A ticket for"
-	line "the S.S.ANNE."
+	line "the S.S. ANNE."
 	done
 
 _GoldTeethDescription::
@@ -484,33 +484,33 @@ _GoldTeethDescription::
 	done
 
 _XAttackDescription::
-	text "Raises ATTACK."
-	line ""
+	text "Raises ATTACK"
+	line "in battle."
 	done
 
 _XDefendDescription::
-	text "Raises DEFENSE."
-	line ""
+	text "Raises DEFENSE"
+	line "in battle."
 	done
 
 _XSpeedDescription::
-	text "Raises SPEED."
-	line ""
+	text "Raises SPEED"
+	line "in battle."
 	done
 
 _XSpecialDescription::
-	text "Raises SPECIAL."
-	line ""
+	text "Raises SPECIAL"
+	line "in battle."
 	done
 
 _CoinCaseDescription::
-	text "Holds CASINO"
-	line "COINS."
+	text "Holds GAME"
+	line "CORNER COINS."
 	done
 
 _OaksParcelDescription::
 	text "A parcel for"
-	line "PROF.OAK."
+	line "PROF. OAK."
 	done
 
 _ItemfinderDescription::

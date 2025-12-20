@@ -14,7 +14,7 @@ ItemNames::
 	li "BURN HEAL"
 	li "ICE HEAL"
 	li "AWAKENING"
-	li "PARLYZ HEAL"
+	li "PARALYZE HEAL"
 	li "FULL RESTORE"
 	li "MAX POTION"
 	li "HYPER POTION"
