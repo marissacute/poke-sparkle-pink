@@ -2853,7 +2853,7 @@ PrintMenuItem:
 	hlcoord 1, 10
 	ld de, DisabledText
 	call PlaceString
-	jr .moveDisabled
+	jp .moveDisabled
 .notDisabled
 	ld hl, wCurrentMenuItem
 	dec [hl]
@@ -2881,25 +2881,65 @@ PrintMenuItem:
 	ld a, [hl]
 	and PP_MASK
 	ld [wBattleMenuCurrentPP], a
-; print TYPE/<type> and <curPP>/<maxPP>
-	hlcoord 1, 9
-	ld de, TypeText
+; print <type>, <power> / <accuracy>% and <curPP>/<maxPP>
+	; "PP:"
+	hlcoord 1, 11
+	ld de, PPText
 	call PlaceString
+
+	; Slash from power / accuracy
+	hlcoord 4, 10
+	ld [hl], "/"
+
+	; Slash from PP
 	hlcoord 7, 11
 	ld [hl], "/"
-	hlcoord 5, 9
-	ld [hl], "/"
+
+	; % for accuracy
+	hlcoord 9, 10
+	ld [hl], 223 ; should be percentage
+
+	; Current PP
 	hlcoord 5, 11
 	ld de, wBattleMenuCurrentPP
 	lb bc, 1, 2
 	call PrintNumber
+
+	; Max PP
 	hlcoord 8, 11
 	ld de, wMaxPP
 	lb bc, 1, 2
 	call PrintNumber
+	
+	; Type
 	call GetCurrentMove
-	hlcoord 2, 10
+	hlcoord 1, 9
 	predef PrintMoveType
+
+	; Power
+	hlcoord 1, 10
+	ld de, wPlayerMovePower
+	lb bc, 1, 3
+	call PrintNumber
+
+	; Accuracy
+	xor a
+	ldh [hMultiplicand], a
+	ldh [hMultiplicand + 1], a
+	ld a, [wPlayerMoveAccuracy]
+	ldh [hMultiplicand + 2], a
+	ld a, 100
+	ldh [hMultiplier], a
+	call Multiply
+	; Get the second byte to divide by 256.
+	ldh a, [hProduct + 2]
+	inc a ; Accuracies in gen 1 are slightly off.
+	ld [wTempNumber], a
+	hlcoord 6, 10
+	ld de, wTempNumber
+	lb bc, 1, 3
+	call PrintNumber
+
 .moveDisabled
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
@@ -2908,8 +2948,8 @@ PrintMenuItem:
 DisabledText:
 	db "disabled!@"
 
-TypeText:
-	db "TYPE@"
+PPText:
+	db "PP:@"
 
 SelectEnemyMove:
 	ld a, [wLinkState]
