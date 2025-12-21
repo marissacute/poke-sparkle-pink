@@ -483,6 +483,8 @@ BlackbeltData:
 	db 38, MACHOKE, MACHOP, MACHOKE, 0
 ; Victory Road 2F
 	db 43, MACHOKE, MACHOP, MACHOKE, 0
+; Fighting Dojo Rematch
+	db $FF, 70, POLIWRATH, 75, HITMONLEE, 75, HITMONCHAN, 0
 
 Rival1Data:
 	db 5, MAGNEMITE, 0

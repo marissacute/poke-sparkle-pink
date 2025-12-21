@@ -70,15 +70,23 @@ FightingDojoKarateMasterPostBattleScript:
 .already_facing
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
+
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jr z, .receivePokemon		
+	ld a, TEXT_FIGHTINGDOJO_REMATCH_POST_BATTLE
+	ldh [hTextID], a
+	call DisplayTextID
+	; This will enable getting the other ball.
+	SetEvent EVENT_BEAT_FIGHTING_DOJO_REMATCH
+	jr .end
+
+.receivePokemon	
 	SetEventRange EVENT_BEAT_KARATE_MASTER, EVENT_BEAT_FIGHTING_DOJO_TRAINER_3
 	ld a, TEXT_FIGHTINGDOJO_KARATE_MASTER_I_WILL_GIVE_YOU_A_POKEMON
 	ldh [hTextID], a
 	call DisplayTextID
-	xor a ; SCRIPT_FIGHTINGDOJO_DEFAULT
-	ld [wJoyIgnore], a
-	ld [wFightingDojoCurScript], a
-	ld [wCurMapScript], a
-	ret
+.end
+	jp FightingDojoResetScripts
 
 FightingDojo_TextPointers:
 	def_text_pointers
@@ -90,6 +98,7 @@ FightingDojo_TextPointers:
 	dw_const FightingDojoHitmonleePokeBallText,                     TEXT_FIGHTINGDOJO_HITMONLEE_POKE_BALL
 	dw_const FightingDojoHitmonchanPokeBallText,                    TEXT_FIGHTINGDOJO_HITMONCHAN_POKE_BALL
 	dw_const FightingDojoKarateMasterText.IWillGiveYouAPokemonText, TEXT_FIGHTINGDOJO_KARATE_MASTER_I_WILL_GIVE_YOU_A_POKEMON
+	dw_const FightingDojoRematchPostBattleText,                     TEXT_FIGHTINGDOJO_REMATCH_POST_BATTLE
 
 FightingDojoTrainerHeaders:
 	def_trainers 2
@@ -106,7 +115,7 @@ FightingDojoTrainerHeader3:
 FightingDojoKarateMasterText:
 	text_asm
 	CheckEvent EVENT_DEFEATED_FIGHTING_DOJO
-	jp nz, .defeated_dojo
+	jp nz, .maybeRematch
 	CheckEventReuseA EVENT_BEAT_KARATE_MASTER
 	jp nz, .defeated_master
 	ld hl, .Text
@@ -121,17 +130,56 @@ FightingDojoKarateMasterText:
 	ld [wSpriteIndex], a
 	call EngageMapTrainer
 	call InitBattleEnemyParameters
+	jr .endBattle
+
+.maybeRematch:
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jr z, .defeatedDojo
+	CheckEvent EVENT_BEAT_FIGHTING_DOJO_REMATCH
+	jr nz, .defeatedDojo
+
+	; Rematch	
+	ld hl, .PreBattleRematchText
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr nz, .refused
+	ld hl, .PreBattleRematchAcceptedText
+	call PrintText
+	call Delay3
+	ld hl, wStatusFlags3
+	set BIT_TALKED_TO_TRAINER, [hl]
+	set BIT_PRINT_END_BATTLE_TEXT, [hl]
+	ld hl, FightingDojoRematchDefeatedText
+	ld de, FightingDojoRematchDefeatedText
+	call SaveEndBattleTextPointers
+	ld a, OPP_BLACKBELT
+	ld [wCurOpponent], a
+	ld a, 10
+	ld [wTrainerNo], a
+	jr .endBattle
+
+.refused
+	ld hl, .PreBattleRematchRefusedText
+	call PrintText
+	jr .end
+
+.defeatedDojo:
+	ld hl, .StayAndTrainWithUsText
+	call PrintText
+	jr .end
+
+.endBattle
 	ld a, SCRIPT_FIGHTINGDOJO_KARATE_MASTER_POST_BATTLE
 	ld [wFightingDojoCurScript], a
 	ld [wCurMapScript], a
 	jr .end
-.defeated_dojo
-	ld hl, .StayAndTrainWithUsText
-	call PrintText
-	jr .end
+
 .defeated_master
 	ld hl, .IWillGiveYouAPokemonText
 	call PrintText
+	; fallthrough
 .end
 	jp TextScriptEnd
 
@@ -149,6 +197,26 @@ FightingDojoKarateMasterText:
 
 .StayAndTrainWithUsText:
 	text_far _FightingDojoKarateMasterStayAndTrainWithUsText
+	text_end
+
+.PreBattleRematchText:
+	text_far _FightingDojoRematchPreBattleText
+	text_end
+
+.PreBattleRematchAcceptedText:
+	text_far _FightingDojoRematchAcceptedText
+	text_end
+
+.PreBattleRematchRefusedText:
+	text_far _FightingDojoRematchRefusedText
+	text_end
+
+FightingDojoRematchDefeatedText:
+	text_far _FightingDojoRematchDefeatedText
+	text_end
+
+FightingDojoRematchPostBattleText:
+	text_far _FightingDojoRematchPostBattleText
 	text_end
 
 FightingDojoBlackbelt1Text:
@@ -227,6 +295,9 @@ FightingDojoHitmonleePokeBallText:
 	text_asm
 	CheckEitherEventSet EVENT_GOT_HITMONLEE, EVENT_GOT_HITMONCHAN
 	jr z, .GetMon
+	; If you beat the gym rematch you can get the other one.
+	CheckEvent EVENT_BEAT_FIGHTING_DOJO_REMATCH
+	jr nz, .GetMon
 	ld hl, FightingDojoBetterNotGetGreedyText
 	call PrintText
 	jr .done
@@ -261,6 +332,9 @@ FightingDojoHitmonchanPokeBallText:
 	text_asm
 	CheckEitherEventSet EVENT_GOT_HITMONLEE, EVENT_GOT_HITMONCHAN
 	jr z, .GetMon
+	; If you beat the gym rematch you can get the other one.
+	CheckEvent EVENT_BEAT_FIGHTING_DOJO_REMATCH
+	jr nz, .GetMon
 	ld hl, FightingDojoBetterNotGetGreedyText
 	call PrintText
 	jr .done

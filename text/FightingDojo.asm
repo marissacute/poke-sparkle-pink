@@ -128,3 +128,51 @@ _FightingDojoBetterNotGetGreedyText::
 	text "Better not get"
 	line "greedy..."
 	done
+
+_FightingDojoRematchPreBattleText::
+	text "Welcome back,"
+	line "trainer."
+
+	para "Word has spread"
+	line "about your power."
+
+	para "I would love to"
+	line "challenge you"
+	cont "to a rematch!"
+
+	done
+
+_FightingDojoRematchAcceptedText::
+	text "Fwaa!"
+	line "I'll beat you down"
+	cont "with my supreme"
+	cont "martial arts!"
+
+	para "Osu!"
+
+	done
+
+_FightingDojoRematchRefusedText::
+	text "I respect your"
+	line "decision."
+	done
+
+_FightingDojoRematchDefeatedText::
+	text "Oh!"
+	line "Defeated!"
+
+	para "I need to train"
+	line "even harder!"
+
+	prompt
+
+_FightingDojoRematchPostBattleText::
+	text "I trained hard,"
+	line "but your strength"
+	cont "is for real!"
+
+	para "I will offer you"
+	line "the other #MON"
+	cont "from our gym!"
+
+	done

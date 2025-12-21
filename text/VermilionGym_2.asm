@@ -70,7 +70,7 @@ _VermilionGymRematchPreBattleText::
 
 	para "Are you ready to"
 	line "face my full"
-	line "lightning power?"
+	cont "lightning power?"
 
 	done
 
