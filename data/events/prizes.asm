@@ -9,12 +9,7 @@ NoThanksText:
 PrizeMenuMon1Entries:
 	db ABRA
 	db CLEFAIRY
-IF DEF(_RED)
-	db NIDORINA
-ENDC
-IF DEF(_BLUE)
-	db NIDORINO
-ENDC
+	db DRATINI
 	db "@"
 
 PrizeMenuMon1Cost:
@@ -42,7 +37,7 @@ PrizeMenuTMsEntries:
 	db "@"
 
 PrizeMenuTMsCost:
-	bcd2 3300
-	bcd2 5500
-	bcd2 7700
+	bcd2 1300
+	bcd2 1500
+	bcd2 1700
 	db "@"
