@@ -1219,3 +1219,8 @@ INCLUDE "data/maps/headers/AgathasRoom.asm"
 INCLUDE "scripts/AgathasRoom.asm"
 INCLUDE "data/maps/objects/AgathasRoom.asm"
 AgathasRoom_Blocks: INCBIN "maps/AgathasRoom.blk"
+
+INCLUDE "data/maps/headers/WorldChampionship.asm"
+INCLUDE "scripts/WorldChampionship.asm"
+INCLUDE "data/maps/objects/WorldChampionship.asm"
+WorldChampionship_Blocks: INCBIN "maps/WorldChampionship.blk"

@@ -25,7 +25,7 @@ ENDM
 	map_const CELADON_CITY,                  25, 18 ; $06
 	map_const FUCHSIA_CITY,                  20, 18 ; $07
 	map_const CINNABAR_ISLAND,               10,  9 ; $08
-	map_const INDIGO_PLATEAU,                10,  9 ; $09
+	map_const INDIGO_PLATEAU,                14,  9 ; $09
 	map_const SAFFRON_CITY,                  20, 18 ; $0A
 DEF NUM_CITY_MAPS EQU const_value
 	map_const UNUSED_MAP_0B,                  0,  0 ; $0B
@@ -260,7 +260,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const UNUSED_MAP_EE,                  0,  0 ; $EE
 	map_const TRADE_CENTER,                   5,  4 ; $EF
 	map_const COLOSSEUM,                      5,  4 ; $F0
-	map_const UNUSED_MAP_F1,                  0,  0 ; $F1
+	map_const WORLD_CHAMPIONSHIP,             6,  6 ; $F1
 	map_const UNUSED_MAP_F2,                  0,  0 ; $F2
 	map_const UNUSED_MAP_F3,                  0,  0 ; $F3
 	map_const UNUSED_MAP_F4,                  0,  0 ; $F4

@@ -244,7 +244,7 @@ MapHSPointers:
 	dw NoHS
 	dw NoHS
 	dw NoHS
-	dw NoHS
+	dw NoHS ; World Championship
 	dw NoHS
 	dw NoHS
 	dw UnusedMapF4HS
