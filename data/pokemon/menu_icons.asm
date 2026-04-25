@@ -164,4 +164,8 @@ MonPartyData:
 	nybble ICON_GRASS     ; Bellossom
 	nybble ICON_SNAKE     ; Dunsparce
 	nybble ICON_FAIRY     ; Cleffa
+	nybble ICON_WATER     ; Wooper
+	nybble ICON_MON       ; Paldean Wooper
+	nybble ICON_MON       ; Quagsire
+	nybble ICON_MON       ; Clodsire
 	end_nybble_array NUM_POKEMON

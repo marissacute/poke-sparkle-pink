@@ -61,14 +61,14 @@ PokedexEntryPointers:
 	dw DiglettDexEntry
 	dw TaurosDexEntry
 	dw BellossomDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw WooperDexEntry
+	dw PaldeanWooperDexEntry
 	dw FarfetchdDexEntry
 	dw VenonatDexEntry
 	dw DragoniteDexEntry
 	dw SylveonDexEntry
 	dw CleffaDexEntry
-	dw MissingNoDexEntry
+	dw QuagsireDexEntry
 	dw DoduoDexEntry
 	dw PoliwagDexEntry
 	dw JynxDexEntry
@@ -79,7 +79,7 @@ PokedexEntryPointers:
 	dw MeowthDexEntry
 	dw KrabbyDexEntry
 	dw PichuDexEntry
-	dw MissingNoDexEntry
+	dw ClodsireDexEntry
 	dw MissingNoDexEntry
 	dw VulpixDexEntry
 	dw NinetalesDexEntry
@@ -1348,6 +1348,35 @@ CleffaDexEntry:
 	dw 30
 	text_far _CleffaDexEntry
 	text_end
+
+WooperDexEntry:
+	db "WATER FISH@"
+	db 4
+	dw 85
+	text_far _WooperDexEntry
+	text_end
+
+PaldeanWooperDexEntry:
+	db "POISONFISH@"
+	db 4
+	dw 110
+	text_far _PaldeanWooperDexEntry
+	text_end
+
+QuagsireDexEntry:
+	db "WATER FISH@"
+	db 14
+	dw 750
+	text_far _QuagsireDexEntry
+	text_end
+
+ClodsireDexEntry:
+	db "SPINY FISH@"
+	db 18
+	dw 2230
+	text_far _ClodsireDexEntry
+	text_end
+
 
 MissingNoDexEntry:
 	db "???@"

@@ -35,3 +35,8 @@ rgbds/
 
 # Code stuff
 .vs/
+
+# Drawings
+drawings/
+tools/bgb.html
+tools/bgb.ini

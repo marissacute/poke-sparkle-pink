@@ -71,14 +71,14 @@ EvosMovesPointerTable:
 	dw DiglettEvosMoves
 	dw TaurosEvosMoves
 	dw BellossomEvosMoves
-	dw MissingNo3EEvosMoves
-	dw MissingNo3FEvosMoves
+	dw WooperEvosMoves
+	dw PaldeanWooperEvosMoves
 	dw FarfetchdEvosMoves
 	dw VenonatEvosMoves
 	dw DragoniteEvosMoves
 	dw SylveonEvosMoves
 	dw CleffaEvosMoves
-	dw MissingNo45EvosMoves
+	dw QuagsireEvosMoves
 	dw DoduoEvosMoves
 	dw PoliwagEvosMoves
 	dw JynxEvosMoves
@@ -89,7 +89,7 @@ EvosMovesPointerTable:
 	dw MeowthEvosMoves
 	dw KrabbyEvosMoves
 	dw PichuEvosMoves
-	dw MissingNo50EvosMoves
+	dw ClodsireEvosMoves
 	dw MissingNo51EvosMoves
 	dw VulpixEvosMoves
 	dw NinetalesEvosMoves
@@ -899,16 +899,24 @@ TaurosEvosMoves:
 	db 51, TAKE_DOWN
 	db 0
 
-MissingNo3EEvosMoves:
+WooperEvosMoves:
 ; Evolutions
-	db 0
+	db EVOLVE_LEVEL, 20, QUAGSIRE
 ; Learnset
+	db 11, TAIL_WHIP
+	db 19, BODY_SLAM
+	db 26, WATER_GUN
+	db 34, AMNESIA
 	db 0
 
-MissingNo3FEvosMoves:
+PaldeanWooperEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 11, TAIL_WHIP
+	db 19, POISON_STING
+	db 26, BODY_SLAM
+	db 34, AMNESIA
 	db 0
 
 FarfetchdEvosMoves:
@@ -960,10 +968,15 @@ CleffaEvosMoves:
 	db 48, LIGHT_SCREEN
 	db 0
 
-MissingNo45EvosMoves:
+QuagsireEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 11, TAIL_WHIP
+	db 20, BODY_SLAM
+	db 30, WATER_GUN
+	db 40, AMNESIA
+	db 50, EARTHQUAKE
 	db 0
 
 DoduoEvosMoves:
@@ -1079,10 +1092,15 @@ PichuEvosMoves:
 	db 43, THUNDER
 	db 0
 
-MissingNo50EvosMoves:
+ClodsireEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 11, TAIL_WHIP
+	db 20, BODY_SLAM
+	db 30, SLUDGE
+	db 40, TOXIC
+	db 50, EARTHQUAKE
 	db 0
 
 MissingNo51EvosMoves:

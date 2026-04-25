@@ -168,5 +168,9 @@
 	const DEX_BELLOSSOM  ; 162
 	const DEX_DUNSPARCE  ; 163
 	const DEX_CLEFFA     ; 164
+	const DEX_WOOPER     ; 165
+	const DEX_PALDEAN_WOOPER ; 166
+	const DEX_QUAGSIRE   ; 167
+	const DEX_CLODSIRE   ; 168
 
 DEF NUM_POKEMON EQU const_value - 1

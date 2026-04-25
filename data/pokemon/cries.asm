@@ -67,14 +67,14 @@ CryData::
 	mon_cry SFX_CRY_0B, $AA, $01 ; Diglett
 	mon_cry SFX_CRY_1D, $11, $40 ; Tauros
 	mon_cry SFX_CRY_23, $22, $FF ; Bellossom, same as Vileplume
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_0E, $FF, $FF ; Wooper, same as Poliwag for now
+	mon_cry SFX_CRY_0E, $E0, $60 ; Paldean Wooper, same as Wooper for now
 	mon_cry SFX_CRY_10, $DD, $01 ; Farfetch'd
 	mon_cry SFX_CRY_1A, $44, $40 ; Venonat
 	mon_cry SFX_CRY_0F, $3C, $C0 ; Dragonite
 	mon_cry SFX_CRY_1A, $3D, $80 ; Sylveon, same as Jolteon for now
 	mon_cry SFX_CRY_19, $EE, $00 ; Cleffa
-	mon_cry SFX_CRY_1D, $E0, $80 ; MissingNo.
+	mon_cry SFX_CRY_0E, $00, $FF ; Quagsire
 	mon_cry SFX_CRY_0B, $BB, $01 ; Doduo
 	mon_cry SFX_CRY_0E, $FF, $FF ; Poliwag
 	mon_cry SFX_CRY_0D, $FF, $FF ; Jynx
@@ -85,7 +85,7 @@ CryData::
 	mon_cry SFX_CRY_19, $77, $10 ; Meowth
 	mon_cry SFX_CRY_20, $20, $E0 ; Krabby
 	mon_cry SFX_CRY_0F, $EE, $01 ; Pichu, same as Pikachu for now
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_0E, $00, $FF ; Clodsire, same as Quagsire
 	mon_cry SFX_CRY_0E, $E0, $60 ; MissingNo.
 	mon_cry SFX_CRY_24, $4F, $10 ; Vulpix
 	mon_cry SFX_CRY_24, $88, $60 ; Ninetales

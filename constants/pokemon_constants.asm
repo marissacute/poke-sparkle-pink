@@ -68,14 +68,14 @@
 	const DIGLETT            ; $3B
 	const TAUROS             ; $3C
 	const BELLOSSOM          ; $3D
-	const_skip               ; $3E
-	const_skip               ; $3F
+	const WOOPER             ; $3E
+	const PALDEAN_WOOPER     ; $3F
 	const FARFETCHD          ; $40
 	const VENONAT            ; $41
 	const DRAGONITE          ; $42
 	const SYLVEON            ; $43
 	const CLEFFA             ; $44
-	const_skip               ; $45
+	const QUAGSIRE           ; $45
 	const DODUO              ; $46
 	const POLIWAG            ; $47
 	const JYNX               ; $48
@@ -86,7 +86,7 @@
 	const MEOWTH             ; $4D
 	const KRABBY             ; $4E
 	const PICHU              ; $4F
-	const_skip               ; $50
+	const CLODSIRE           ; $50
 	const_skip               ; $51
 	const VULPIX             ; $52
 	const NINETALES          ; $53

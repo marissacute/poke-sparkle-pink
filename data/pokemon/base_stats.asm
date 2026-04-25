@@ -164,4 +164,8 @@ INCLUDE "data/pokemon/base_stats/crobat.asm"
 INCLUDE "data/pokemon/base_stats/bellossom.asm"
 INCLUDE "data/pokemon/base_stats/dunsparce.asm"
 INCLUDE "data/pokemon/base_stats/cleffa.asm"
+INCLUDE "data/pokemon/base_stats/wooper.asm"
+INCLUDE "data/pokemon/base_stats/paldean_wooper.asm"
+INCLUDE "data/pokemon/base_stats/quagsire.asm"
+INCLUDE "data/pokemon/base_stats/clodsire.asm"
 	assert_table_length NUM_POKEMON ; 

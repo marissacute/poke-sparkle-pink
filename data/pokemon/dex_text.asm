@@ -1638,4 +1638,42 @@ _CleffaDexEntry::
 	next "a meteor"
 	dex
 
+_WooperDexEntry::
+	text "This #MON lives"
+	next "in cold water."
+	next "It will leave the"
 
+	page "water to search"
+	next "for food when it"
+	next "gets cold outside"
+	dex
+
+_PaldeanWooperDexEntry::
+	text "WOOPER began"
+	next "living on land."
+	next "The #MON"
+
+	page "developed a"
+	next "poisonous film to"
+	next "to protect itself"
+	dex
+
+_QuagsireDexEntry::
+	text "This carefree"
+	next "#MON has an"
+	next "easy-going nature."
+
+	page "While swimming,"
+	next "it always bumps"
+	next "into boat hulls"
+	dex
+
+_ClodsireDexEntry::
+	text "It lives at the"
+	next "bottom of ponds"
+	next "and swamps. It"
+
+	page "will ferry WOOPER"
+	next "on its back from"
+	next "shore to shore"
+	dex
