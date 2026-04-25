@@ -8,7 +8,7 @@ MainMenu:
 	call CheckForPlayerNameInSRAM
 	jr nc, .mainMenuLoop
 
-	predef LoadSAV
+	predef TryLoadSaveFile
 
 .mainMenuLoop
 	ld c, 20
@@ -227,9 +227,9 @@ LinkMenu:
 	ld a, SC_START | SC_INTERNAL
 	ldh [rSC], a
 .skipStartingTransfer
-	ld b, " "
-	ld c, " "
-	ld d, "▷"
+	ld b, ' '
+	ld c, ' '
+	ld d, '▷'
 	ld a, [wLinkMenuSelectionSendBuffer]
 	and PAD_B << 2 ; was B button pressed?
 	jr nz, .updateCursorPosition
@@ -492,6 +492,7 @@ DisplayOptionMenu:
 	jr nz, .exitMenu
 	bit B_PAD_A, b
 	jr z, .checkDirectionKeys
+; A was pressed
 	ld a, [wTopMenuItemY]
 	cp 16 ; is the cursor on Cancel?
 	jr nz, .loop
@@ -513,7 +514,7 @@ DisplayOptionMenu:
 	jr z, .cursorInBattleAnimation
 	cp 16 ; cursor on Cancel?
 	jr z, .loop
-.cursorInTextSpeed
+; cursor in Text Speed
 	bit B_PAD_LEFT, b
 	jp nz, .pressedLeftInTextSpeed
 	jp .pressedRightInTextSpeed
@@ -610,7 +611,7 @@ SetOptionsFromCursorPositions:
 	ld a, [wOptionsBattleAnimCursorX] ; battle animation cursor X coordinate
 	dec a
 	jr z, .battleAnimationOn
-.battleAnimationOff
+; battle animation Off
 	set BIT_BATTLE_ANIMATION, d
 	jr .storeOptions
 .battleAnimationOn
@@ -652,7 +653,7 @@ SetCursorPositionsFromOptions:
 	ld e, a
 	ld d, 0
 	add hl, de
-	ld [hl], "▷"
+	ld [hl], '▷'
 	ret
 
 ; table that indicates how the 3 text speed options affect frame delays
@@ -671,14 +672,15 @@ CheckForPlayerNameInSRAM:
 ; in carry.
 	ld a, RAMG_SRAM_ENABLE
 	ld [rRAMG], a
-	ld a, $1
+	ld a, BMODE_ADVANCED
 	ld [rBMODE], a
+	ASSERT BANK(sPlayerName) == BMODE_ADVANCED
 	ld [rRAMB], a
 	ld b, NAME_LENGTH
 	ld hl, sPlayerName
 .loop
 	ld a, [hli]
-	cp "@"
+	cp '@'
 	jr z, .found
 	dec b
 	jr nz, .loop
