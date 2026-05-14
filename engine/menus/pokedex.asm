@@ -523,12 +523,12 @@ ShowPokedexDataInternal:
 	pop af
 	cp $a
 	jr nc, .heightNext
-	ld [hl], "0" ; if the height is less than 10, put a 0 before the decimal point
+	ld [hl], '0' ; if the height is less than 10, put a 0 before the decimal point
 .heightNext
 	inc hl
 	ld a, [hli]
 	ld [hld], a ; make space for the decimal point by moving the last digit forward one tile
-	ld [hl], "<DOT>" ; decimal point tile
+	ld [hl], '<DOT>' ; decimal point tile
 ; now print the weight (note that weight is stored in tenths of kilograms internally)
 	inc de
 	inc de

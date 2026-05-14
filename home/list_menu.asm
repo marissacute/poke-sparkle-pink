@@ -66,7 +66,7 @@ DisplayListMenuIDLoop::
 	and a ; is it the Old Man battle?
 	jr z, .notOldManBattle
 ; Old Man battle
-	ld a, "▶"
+	ld a, '▶'
 	ldcoord_a 1, 4 ; place menu cursor in front of first menu entry
 	ld c, 80
 	call DelayFrames

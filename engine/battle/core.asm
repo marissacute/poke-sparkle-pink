@@ -2891,11 +2891,11 @@ PrintMenuItem:
 
 	; Slash from power / accuracy
 	hlcoord 4, 10
-	ld [hl], "/"
+	ld [hl], '/'
 
 	; Slash from PP
 	hlcoord 7, 11
-	ld [hl], "/"
+	ld [hl], '/'
 
 	; % for accuracy
 	hlcoord 9, 10

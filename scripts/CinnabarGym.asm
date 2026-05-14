@@ -149,7 +149,7 @@ CinnabarGymBlainePostBattleScript:
 	ldh [hTextID], a
 	call DisplayTextID
 	ld a, VICTORYROAD2F_MOLTRES
-	ld [wMissableObjectIndex], a
+	ld [wToggleableObjectIndex], a
 	predef ShowObject
 	jp CinnabarGymResetScripts
 

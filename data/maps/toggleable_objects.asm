@@ -125,7 +125,8 @@ ToggleableObjectStates:
 	toggle_object_state OAKSLAB_OAK2,                 OFF
 
 	toggleable_objects_for VIRIDIAN_GYM
-	toggle_object_state VIRIDIANGYM_GIOVANNI, ON
+	; Blue will never be hidden but something should be put here.
+	toggle_object_state VIRIDIANGYM_BLUE, ON
 	toggle_object_state VIRIDIANGYM_REVIVE,   ON
 
 	toggleable_objects_for MUSEUM_1F

@@ -106,7 +106,7 @@ GetMachineName::
 	add b
 	ld [de], a
 	inc de
-	ld a, '@'
+	ld a, ' '
 	ld [de], a
 	pop af
 	ld [wNamedObjectIndex], a
@@ -122,7 +122,7 @@ GetMachineName::
 
 	; Add terminator character
 	; de still points to the end of the array.
-	ld a, "@"
+	ld a, '@'
 	ld [de], a
 
 	ret
