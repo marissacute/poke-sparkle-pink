@@ -47,8 +47,8 @@ CeruleanCaveB1FDefaultScript:
 	ld [wCurOpponent], a
 	ld a, 70
 	ld [wCurEnemyLevel], a
-	ld a, HS_MEWTWO
-	ld [wMissableObjectIndex], a
+	ld a, TOGGLE_MEWTWO
+	ld [wToggleableObjectIndex], a
 	predef HideObject
 	ld a, SCRIPT_CERULEANCAVEB1F_MEWTWO_POST_BATTLE
 	ld [wCeruleanCaveB1FCurScript], a

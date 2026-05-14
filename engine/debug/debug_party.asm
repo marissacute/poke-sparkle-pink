@@ -132,16 +132,16 @@ IF DEF(_DEBUG)
 	call DebugSetPokedexEntries
 	SetEvent EVENT_GOT_POKEDEX
 	; Hide cave guy so we can go into Cerulean cave.
-	ld a, HS_CERULEAN_CAVE_GUY
-	ld [wMissableObjectIndex], a
+	ld a, TOGGLE_CERULEAN_CAVE_GUY
+	ld [wToggleableObjectIndex], a
 	predef HideObject
 
 	; Wake up the old man
-	ld a, HS_LYING_OLD_MAN
-	ld [wMissableObjectIndex], a
+	ld a, TOGGLE_LYING_OLD_MAN
+	ld [wToggleableObjectIndex], a
 	predef HideObject
-	ld a, HS_OLD_MAN
-	ld [wMissableObjectIndex], a
+	ld a, TOGGLE_OLD_MAN
+	ld [wToggleableObjectIndex], a
 	predef ShowObject
 
 	; Rival chose Squirtle,

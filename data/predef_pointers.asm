@@ -32,14 +32,14 @@ PredefPointers::
 	add_predef ApplyOutOfBattlePoisonDamage
 	add_predef AnyPartyAlive
 	add_predef ShowObject
-	add_predef ShowObject2
+	add_predef ShowObject2 ; identical to ShowObject
 	add_predef ReplaceTileBlock
 	add_predef InitPlayerData2
 	add_predef LoadTilesetHeader
 	add_predef LearnMoveFromLevelUp
 	add_predef LearnMove
 	add_predef GetQuantityOfItemInBag
-	add_predef CheckForHiddenObjectOrBookshelfOrCardKeyDoor, $03 ; home bank
+	add_predef CheckForHiddenEventOrBookshelfOrCardKeyDoor, $03 ; home bank
 	add_predef GiveItem, $03 ; home bank
 	add_predef ChangeBGPalColor0_4Frames
 	add_predef FindPathToPlayer
@@ -52,7 +52,7 @@ PredefPointers::
 	add_predef Diploma_TextBoxBorder
 	add_predef ShowPokedexMenu
 	add_predef EvolutionAfterBattle
-	add_predef SaveSAVtoSRAM0
+	add_predef SaveMainData
 	add_predef InitOpponent
 	add_predef CableClub_Run
 	add_predef DrawBadges
@@ -72,9 +72,9 @@ PredefPointers::
 	add_predef UsedCut
 	add_predef ShowPokedexData
 	add_predef WriteMonMoves
-	add_predef SaveSAV
+	add_predef SaveMenu
 	add_predef LoadSGB
-	add_predef MarkTownVisitedAndLoadMissableObjects
+	add_predef MarkTownVisitedAndLoadToggleableObjects
 	add_predef SetPartyMonTypes
 	add_predef CanLearnTM
 	add_predef TMToMove
@@ -89,10 +89,10 @@ PredefPointers::
 	add_predef EmptyFunc ; return immediately
 	add_predef AskName
 	add_predef PewterGuys
-	add_predef SaveSAVtoSRAM2
-	add_predef LoadSAV2
-	add_predef LoadSAV
-	add_predef SaveSAVtoSRAM1
+	add_predef SavePartyAndDexData
+	add_predef LoadPartyAndDexData
+	add_predef TryLoadSaveFile
+	add_predef SaveCurrentBoxData
 	add_predef DoInGameTradeDialogue
 	add_predef HallOfFamePC
 	add_predef DisplayDexRating

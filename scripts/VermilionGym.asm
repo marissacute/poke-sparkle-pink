@@ -70,7 +70,7 @@ VermilionGymLTSurgeAfterBattleScript:
 	ldh [hTextID], a
 	call DisplayTextID
 	ld a, POWERPLANT_ZAPDOS
-	ld [wMissableObjectIndex], a
+	ld [wToggleableObjectIndex], a
 	predef ShowObject
 	jp VermilionGymResetScripts
 

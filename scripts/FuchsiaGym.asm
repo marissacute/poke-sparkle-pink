@@ -51,7 +51,7 @@ FuchsiaGymKogaPostBattleScript:
 	ldh [hTextID], a
 	call DisplayTextID
 	ld a, SEAFOAMISLANDSB4F_ARTICUNO
-	ld [wMissableObjectIndex], a
+	ld [wToggleableObjectIndex], a
 	predef ShowObject
 	jp FuchsiaGymResetScripts
 

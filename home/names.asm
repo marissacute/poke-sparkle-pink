@@ -16,7 +16,7 @@ GetMonName::
 	ld bc, NAME_LENGTH - 1
 	call CopyData
 	ld hl, wNameBuffer + NAME_LENGTH - 1
-	ld [hl], "@"
+	ld [hl], '@'
 	pop de
 	pop af
 	ldh [hLoadedROMBank], a
@@ -89,7 +89,7 @@ GetMachineName::
 
 ; now get the machine number and convert it to text
 	ld a, [wTempTMNameStorage]
-	ld b, "0"
+	ld b, '0'
 .FirstDigit
 	sub 10
 	jr c, .SecondDigit
@@ -102,11 +102,11 @@ GetMachineName::
 	ld [de], a
 	inc de
 	pop af
-	ld b, "0"
+	ld b, '0'
 	add b
 	ld [de], a
 	inc de
-	ld a, " "
+	ld a, ' '
 	ld [de], a
 	pop af
 	ld [wNamedObjectIndex], a
@@ -122,7 +122,7 @@ GetMachineName::
 
 	; Add terminator character
 	; de still points to the end of the array.
-	ld a, "@"
+	ld a, '@'
 	ld [de], a
 
 	ret
