@@ -62,7 +62,7 @@ MonsterNames::
 	dname "TAUROS"
 	dname "BELLOSSOM"
 	dname "WOOPER"
-	dname "WOOPER",220, 221, 222 ; PALDEA
+    db "WOOPER",220, 221, 222,"@" ; PALDEA
 	dname "FARFETCH'D"
 	dname "VENONAT"
 	dname "DRAGONITE"
