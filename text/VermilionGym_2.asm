@@ -131,22 +131,35 @@ _VermilionGymGentlemanAfterBattleText::
 	line "was cautious!"
 	done
 
-_VermilionGymSuperNerdBattleText::
-	text "I'm a lightweight,"
-	line "but I'm good with"
-	cont "electricity!"
+_VermilionGymIonoBattleText::
+	text "'Ello, 'ello,"
+	line "hola! Ciao and"
+	line "bonjour!"
+
+	para "It's time for"
+	line "the Iono"
+	line "Zoooooone!"
+
+	para "I came all the"
+	line "way from Paldea"
+	line "to own some n00bs"
+	line "over here in"
+	line "Kanto!"
 	done
 
-_VermilionGymSuperNerdEndBattleText::
-	text "Fried!"
+_VermilionGymIonoEndBattleText::
+	text "No way! On"
+	line "stream, too?!"
 	prompt
 
-_VermilionGymSuperNerdAfterBattleText::
-	text "OK, I'll talk!"
+_VermilionGymIonoAfterBattleText::
+	text "Your battles are"
+	line "totally"
+	cont "streamable!"
 
-	para "LT.SURGE said he"
-	line "hid door switches"
-	cont "inside something!"
+	para "BTW, check the"
+	line "trash cans for"
+	cont "the switches!"
 	done
 
 _VermilionGymSailorBattleText::
