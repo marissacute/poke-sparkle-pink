@@ -439,3 +439,6 @@ PalWooperPicFront::   INCBIN "gfx/pokemon/gsfront/palwooper.pic"
 PalWooperPicBack::    INCBIN "gfx/pokemon/gsback/palwooperb.pic"
 ClodsirePicFront::    INCBIN "gfx/pokemon/gsfront/clodsire.pic"
 ClodsirePicBack::     INCBIN "gfx/pokemon/gsback/clodsireb.pic"
+
+HoopaPicFront::       INCBIN "gfx/pokemon/gsfront/hoopa.pic"
+HoopaPicBack::        INCBIN "gfx/pokemon/gsback/hoopab.pic"

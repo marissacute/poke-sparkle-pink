@@ -90,7 +90,7 @@ EvosMovesPointerTable:
 	dw KrabbyEvosMoves
 	dw PichuEvosMoves
 	dw ClodsireEvosMoves
-	dw MissingNo51EvosMoves
+	dw HoopaEvosMoves
 	dw VulpixEvosMoves
 	dw NinetalesEvosMoves
 	dw PikachuEvosMoves
@@ -1103,10 +1103,16 @@ ClodsireEvosMoves:
 	db 50, EARTHQUAKE
 	db 0
 
-MissingNo51EvosMoves:
+HoopaEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 15, LIGHT_SCREEN
+	db 19, PSYBEAM
+	db 25, SHADOW_BALL
+	db 31, CONFUSE_RAY
+	db 37, PSYCHIC_M
+	db 43, AMNESIA
 	db 0
 
 VulpixEvosMoves:

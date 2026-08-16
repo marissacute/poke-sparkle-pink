@@ -80,7 +80,7 @@ MonsterNames::
 	dname "KRABBY"
 	dname "PICHU"
 	dname "CLODSIRE"
-	dname "MISSINGNO."
+	dname "HOOPA"
 	dname "VULPIX"
 	dname "NINETALES"
 	dname "PIKACHU"

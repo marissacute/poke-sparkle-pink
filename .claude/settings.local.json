@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"e:/Documents/My Projects/poke-sparkle-pink\" show --stat 0c8cf425f597485b7cdaee8707d481c2fccbea71)",
+      "Bash(git -C \"e:/Documents/My Projects/poke-sparkle-pink\" show 0c8cf425f597485b7cdaee8707d481c2fccbea71 -- constants/pokemon_constants.asm constants/pokedex_constants.asm data/pokemon/base_stats.asm data/pokemon/base_stats/wooper.asm data/pokemon/cries.asm data/pokemon/dex_order.asm data/pokemon/evos_moves.asm data/pokemon/menu_icons.asm data/pokemon/names.asm gfx/pics.asm)",
+      "Bash(git -C \"e:/Documents/My Projects/poke-sparkle-pink\" show 0c8cf425f597485b7cdaee8707d481c2fccbea71 -- data/pokemon/dex_entries.asm data/pokemon/dex_text.asm data/pokemon/palettes.asm data/sgb/sgb_palettes.asm engine/debug/debug_party.asm data/maps/objects/WorldChampionship.asm)",
+      "WebFetch(domain:bulbapedia.bulbagarden.net)",
+      "Bash(wsl -l -v)"
+    ]
+  }
+}

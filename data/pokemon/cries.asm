@@ -86,7 +86,7 @@ CryData::
 	mon_cry SFX_CRY_20, $20, $E0 ; Krabby
 	mon_cry SFX_CRY_0F, $EE, $01 ; Pichu, same as Pikachu for now
 	mon_cry SFX_CRY_0E, $00, $FF ; Clodsire, same as Quagsire
-	mon_cry SFX_CRY_0E, $E0, $60 ; MissingNo.
+	mon_cry SFX_CRY_07, $00, $FF ; Hoopa, same as Gengar for now
 	mon_cry SFX_CRY_24, $4F, $10 ; Vulpix
 	mon_cry SFX_CRY_24, $88, $60 ; Ninetales
 	mon_cry SFX_CRY_0F, $EE, $01 ; Pikachu

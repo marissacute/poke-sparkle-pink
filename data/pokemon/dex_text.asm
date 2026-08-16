@@ -1677,3 +1677,13 @@ _ClodsireDexEntry::
 	next "on its back from"
 	next "shore to shore"
 	dex
+
+_HoopaDexEntry::
+	text "It gathers things"
+	next "it likes and"
+	next "passes them"
+
+	page "through its loop"
+	next "to teleport them"
+	next "to a secret place"
+	dex

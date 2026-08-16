@@ -168,4 +168,5 @@ MonPartyData:
 	nybble ICON_MON       ; Paldean Wooper
 	nybble ICON_MON       ; Quagsire
 	nybble ICON_MON       ; Clodsire
+	nybble ICON_MON       ; Hoopa
 	end_nybble_array NUM_POKEMON

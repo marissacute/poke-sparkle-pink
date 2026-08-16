@@ -802,7 +802,7 @@ wBadgeOrFaceTiles:: ds NUM_BADGES + 1
 wTempObtainedBadgesBooleans:: ds NUM_BADGES
 
 NEXTU
-wUnusedCreditsByte:: db
+
 ; the number of credits mons that have been displayed so far
 wNumCreditsMonsDisplayed:: db
 
@@ -1091,9 +1091,6 @@ wGymLeaderName:: ds NAME_LENGTH
 wItemList:: ds 27
 
 wListPointer:: dw
-
-; used to store pointers, but never read
-wUnusedNamePointer:: dw
 
 wItemPrices:: dw
 
@@ -2100,8 +2097,6 @@ wDungeonWarpDestinationMap:: db
 
 ; which dungeon warp within the source map was used
 wWhichDungeonWarp:: db
-
-wUnusedCardKeyGateID:: db
 
 	ds 8
 

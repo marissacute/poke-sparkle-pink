@@ -80,7 +80,7 @@ PokedexEntryPointers:
 	dw KrabbyDexEntry
 	dw PichuDexEntry
 	dw ClodsireDexEntry
-	dw MissingNoDexEntry
+	dw HoopaDexEntry
 	dw VulpixDexEntry
 	dw NinetalesDexEntry
 	dw PikachuDexEntry
@@ -1377,6 +1377,12 @@ ClodsireDexEntry:
 	text_far _ClodsireDexEntry
 	text_end
 
+HoopaDexEntry:
+	db "MISCHIEF@"
+	db 5
+	dw 90
+	text_far _HoopaDexEntry
+	text_end
 
 MissingNoDexEntry:
 	db "???@"
