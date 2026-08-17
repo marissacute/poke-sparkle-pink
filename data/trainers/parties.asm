@@ -412,8 +412,6 @@ PsychicData:
 	db 38, SLOWBRO, 0
 
 RockerData:
-; Vermilion Gym
-	db 20, VOLTORB, MAGNEMITE, VOLTORB, 0
 ; Route 12
 	db 29, VOLTORB, ELECTRODE, 0
 
