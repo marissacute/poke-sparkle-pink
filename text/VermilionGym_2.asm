@@ -134,17 +134,17 @@ _VermilionGymGentlemanAfterBattleText::
 _VermilionGymIonoBattleText::
 	text "'Ello, 'ello,"
 	line "hola! Ciao and"
-	line "bonjour!"
+	cont "bonjour!"
 
 	para "It's time for"
 	line "the Iono"
-	line "Zoooooone!"
+	cont "Zoooooone!"
 
 	para "I came all the"
 	line "way from Paldea"
-	line "to own some n00bs"
-	line "over here in"
-	line "Kanto!"
+	cont "to own some n00bs"
+	cont "over here in"
+	cont "Kanto!"
 	done
 
 _VermilionGymIonoEndBattleText::
