@@ -18,7 +18,7 @@ ViridianForest_TextPointers:
 	dw_const ViridianForestYoungster1Text,      TEXT_VIRIDIANFOREST_YOUNGSTER1
 	dw_const ViridianForestYoungster2Text,      TEXT_VIRIDIANFOREST_YOUNGSTER2
 	dw_const ViridianForestYoungster3Text,      TEXT_VIRIDIANFOREST_YOUNGSTER3
-	dw_const ViridianForestYoungster4Text,      TEXT_VIRIDIANFOREST_YOUNGSTER4
+	dw_const ViridianForestGuzmaText,           TEXT_VIRIDIANFOREST_GUZMA
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_ANTIDOTE
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POTION
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POKE_BALL
@@ -37,7 +37,7 @@ ViridianForestTrainerHeader0:
 ViridianForestTrainerHeader1:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1, 4, ViridianForestYoungster3BattleText, ViridianForestYoungster3EndBattleText, ViridianForestYoungster3AfterBattleText
 ViridianForestTrainerHeader2:
-	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2, 1, ViridianForestYoungster4BattleText, ViridianForestYoungster4EndBattleText, ViridianForestYoungster4AfterBattleText
+	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2, 1, ViridianForestGuzmaBattleText, ViridianForestGuzmaEndBattleText, ViridianForestGuzmaAfterBattleText
 	db -1 ; end
 
 ViridianForestYoungster1Text:
@@ -56,7 +56,7 @@ ViridianForestYoungster3Text:
 	call TalkToTrainer
 	jp TextScriptEnd
 
-ViridianForestYoungster4Text:
+ViridianForestGuzmaText:
 	text_asm
 	ld hl, ViridianForestTrainerHeader2
 	call TalkToTrainer
@@ -86,16 +86,16 @@ ViridianForestYoungster3AfterBattleText:
 	text_far _ViridianForestYoungster3AfterBattleText
 	text_end
 
-ViridianForestYoungster4BattleText:
-	text_far _ViridianForestYoungster4BattleText
+ViridianForestGuzmaBattleText:
+	text_far _ViridianForestGuzmaBattleText
 	text_end
 
-ViridianForestYoungster4EndBattleText:
-	text_far _ViridianForestYoungster4EndBattleText
+ViridianForestGuzmaEndBattleText:
+	text_far _ViridianForestGuzmaEndBattleText
 	text_end
 
-ViridianForestYoungster4AfterBattleText:
-	text_far _ViridianForestYoungster4AfterBattleText
+ViridianForestGuzmaAfterBattleText:
+	text_far _ViridianForestGuzmaAfterBattleText
 	text_end
 
 ViridianForestYoungster5Text:

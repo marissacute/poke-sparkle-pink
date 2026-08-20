@@ -254,4 +254,6 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_PALWOOPER     ; $E1
 	const PAL_CLODSIRE      ; $E2
 	const PAL_IONO          ; $E3
+	const PAL_GUZMA         ; $E4
+	const PAL_N             ; $E5
 DEF NUM_SGB_PALS EQU const_value

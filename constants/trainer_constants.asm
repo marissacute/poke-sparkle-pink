@@ -63,4 +63,6 @@ ENDM
 	trainer_const AGATHA         ; $2E
 	trainer_const LANCE          ; $2F
 	trainer_const IONO           ; $30
+	trainer_const GUZMA          ; $31
+	trainer_const N              ; $32
 DEF NUM_TRAINERS EQU const_value - 1

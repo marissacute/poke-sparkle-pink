@@ -52,4 +52,6 @@ TrainerAIPointers:
 	dbw 2, AgathaAI ; agatha
 	dbw 1, LanceAI ; lance
 	dbw 1, GenericAI ; iono
+	dbw 1, GenericAI ; guzma
+	dbw 1, GenericAI ; n
 	assert_table_length NUM_TRAINERS

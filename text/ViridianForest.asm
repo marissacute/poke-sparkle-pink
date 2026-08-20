@@ -41,25 +41,25 @@ _ViridianForestYoungster3AfterBattleText::
 	cont "stronger ones!"
 	done
 
-_ViridianForestYoungster4BattleText::
-	text "Hey, wait up!"
-	line "What's the hurry?"
+_ViridianForestGuzmaBattleText::
+	text "It's ya boy"
+	line "GUZMA!"
+	para "(is he doing his"
+	line "own announcement?)"
 	done
 
-_ViridianForestYoungster4EndBattleText::
-	text "I"
-	line "give! You're good"
-	cont "at this!"
+_ViridianForestGuzmaEndBattleText::
+	text "Darn! They"
+	line "didn't let me use"
+	cont "GOLISOPOD because"
+	cont "it is not in this"
+	cont "game!"
 	prompt
 
-_ViridianForestYoungster4AfterBattleText::
-	text "Sometimes, you"
-	line "can find stuff on"
-	cont "the ground!"
-
-	para "I'm looking for"
-	line "the stuff I"
-	cont "dropped!"
+_ViridianForestGuzmaAfterBattleText::
+	text "TEAM SKULL? No,"
+	line "it's just me."
+	cont "I'm on holiday."
 	done
 
 _ViridianForestYoungster5Text::

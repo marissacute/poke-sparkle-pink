@@ -1,15 +1,25 @@
-_PokemonMansion3FSuperNerdBattleText::
-	text "This place is"
-	line "like, huge!"
+_PokemonMansion3FNBattleText::
+	text "I tried to free"
+	line "all #MON.. but"
+	cont "it was not meant"
+	cont "to be."
+
+	para "Let me hear your"
+	line "#MON's voice!"
 	done
 
-_PokemonMansion3FSuperNerdEndBattleText::
-	text "Ayah!"
+_PokemonMansion3FNEndBattleText::
+	text "You have a"
+	line "remarkable bond"
+	cont "with your #MON."
 	prompt
 
-_PokemonMansion3FSuperNerdAfterBattleText::
-	text "I wonder where"
-	line "my partner went."
+_PokemonMansion3FNAfterBattleText::
+	text "The world is"
+	line "changing. Perhaps"
+	cont "people will see"
+	cont "it my way in the"
+	cont "future after all."
 	done
 
 _PokemonMansion3FScientistBattleText::

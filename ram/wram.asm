@@ -1554,7 +1554,11 @@ wSavedTileAnimations:: db
 
 wDamage:: dw
 
-	ds 2
+; which repel item (REPEL/SUPER_REPEL/MAX_REPEL) set wRepelRemainingSteps;
+; used when the effect wears off to ask if the player wants to use another
+wRepelType:: db
+
+	ds 1
 
 wRepelRemainingSteps:: db
 

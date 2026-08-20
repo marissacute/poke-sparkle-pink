@@ -48,6 +48,8 @@ TrainerDataPointers:
 	dw AgathaData
 	dw LanceData
 	dw IonoData
+	dw GuzmaData
+	dw NData
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -756,3 +758,11 @@ LanceData:
 IonoData:
 ; Vermilion Gym
 	db $FF, 20, VOLTORB, 21, PIKACHU, 0
+
+GuzmaData:
+; Viridian Forest
+	db $FF, 7, WEEDLE, 7, KAKUNA, 8, PINSIR, 0
+
+NData:
+; Pokemon Mansion 3F
+	db $FF, 35, KABUTOPS, 35, HAUNTER, 38, UMBREON, 0

@@ -127,6 +127,8 @@ ChannelerPic::     INCBIN "gfx/gstrainers/channeler.pic"
 AgathaPic::        INCBIN "gfx/gstrainers/agatha.pic"
 LancePic::         INCBIN "gfx/gstrainers/lance.pic"
 IonoPic::          INCBIN "gfx/gstrainers/iono.pic"
+GuzmaPic::         INCBIN "gfx/gstrainers/guzma.pic"
+NPic::             INCBIN "gfx/gstrainers/n.pic"
 
 
 ; Inserted pokemon images go here

@@ -212,10 +212,5 @@ PlayerBlackedOutText::
 	text_end
 
 DisplayRepelWoreOffText::
-	ld hl, RepelWoreOffText
-	call PrintText
+	farcall DisplayRepelWoreOffText_
 	jp AfterDisplayingTextID
-
-RepelWoreOffText::
-	text_far _RepelWoreOffText
-	text_end

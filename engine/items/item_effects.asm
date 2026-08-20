@@ -1533,6 +1533,8 @@ ItemUseRepelCommon:
 	ld a, [wIsInBattle]
 	and a
 	jp nz, ItemUseNotTime
+	ld a, [wCurItem]
+	ld [wRepelType], a ; remember which repel was used
 	ld a, b
 	ld [wRepelRemainingSteps], a
 	jp PrintItemUseTextAndRemoveItem

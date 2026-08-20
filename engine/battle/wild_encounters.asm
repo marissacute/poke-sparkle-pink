@@ -101,4 +101,82 @@ TryDoWildEncounter:
 	xor a
 	ret
 
+; called when the repel effect wears off (see DisplayTextID in home/text_script.asm)
+; asks the player if they want to use another one of the same repel
+DisplayRepelWoreOffText_::
+; [wRepelType] is the ID of the repel that just wore off
+	ld a, [wRepelType]
+	ld [wNamedObjectIndex], a
+	call GetItemName
+	call CopyToStringBuffer ; copy the item name to wStringBuffer for text_ram
+; how many more of the same repel are in the bag?
+	ld a, [wRepelType]
+	ld b, a
+	predef GetQuantityOfItemInBag ; b = quantity
+	ld a, b
+	and a
+	jr z, .noRepelLeft
+; ask whether to use another one
+	ld hl, RepelWoreOffText
+	call PrintText
+	call ManualTextScroll
+	ld hl, UseAnotherRepelText
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr nz, .done ; chose no
+; use another one of the same repel
+	ld a, [wRepelType]
+	ldh [hItemToRemoveID], a
+	farcall RemoveItemByID
+	ld a, [wRepelType]
+	call GetRepelSteps ; c = step count for this repel
+	ld a, c
+	ld [wRepelRemainingSteps], a
+	ld a, SFX_HEAL_AILMENT
+	call PlaySound
+	jr .done
+.noRepelLeft
+	ld hl, RepelWoreOffText
+	call PrintText
+.done
+	ret
+
+GetRepelSteps:
+; in: a = repel item ID
+; out: c = number of steps the repel lasts
+	ld b, a
+	ld hl, RepelStepsTable
+.loop
+	ld a, [hli]
+	cp -1
+	jr z, .notFound
+	cp b
+	jr z, .found
+	inc hl
+	jr .loop
+.found
+	ld c, [hl]
+	ret
+.notFound
+	ld c, 100 ; not in the table (shouldn't happen)
+	ret
+
+RepelStepsTable:
+; item ID, number of steps
+; keep in sync with ItemUseRepel/ItemUseSuperRepel/ItemUseMaxRepel in engine/items/item_effects.asm
+	db REPEL, 100
+	db SUPER_REPEL, 200
+	db MAX_REPEL, 250
+	db -1 ; terminator
+
+RepelWoreOffText:
+	text_far _RepelWoreOffText
+	text_end
+
+UseAnotherRepelText:
+	text_far _UseAnotherRepelText
+	text_end
+
 INCLUDE "data/wild/probabilities.asm"
