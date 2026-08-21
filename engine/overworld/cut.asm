@@ -1,3 +1,89 @@
+; if the player is facing a cuttable tree, offer to cut it down with CUT
+; wTileInFrontOfPlayer is set by the A button handler before this is called
+TryCutTreeInteraction::
+	ld a, [wCurMapTileset]
+	and a ; OVERWORLD
+	jr nz, .notOverworld
+	ld a, [wTileInFrontOfPlayer]
+	cp $3d ; cut tree
+	jr z, .cuttableTree
+	ret
+.notOverworld
+	cp GYM
+	ret nz
+	ld a, [wTileInFrontOfPlayer]
+	cp $50 ; gym cut tree
+	ret nz
+.cuttableTree
+	call EnableAutoTextBoxDrawing
+	tx_pre_jump CutTreeText
+
+; text script that shows the cuttable tree text and offers to cut the tree down
+CutTreeText::
+	text_asm
+	ld hl, TreeLooksCuttableText
+	call PrintText
+; if the player has a mon that knows CUT and the Cascade Badge, offer to cut it
+	ld a, [wObtainedBadges]
+	bit BIT_CASCADEBADGE, a
+	jr z, .done
+	call CheckPartyMonHasCut
+	jr nc, .done
+	ld hl, WouldYouLikeToCutText
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr nz, .done ; the player chose not to cut down the tree
+; cut down the tree (same routine as using CUT from the pokemon menu)
+	predef UsedCut
+.done
+	ld a, 1
+	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
+	jp TextScriptEnd
+
+; stores the index of the first party mon that knows CUT in wWhichPokemon and
+; sets carry, or clears carry if no party mon knows CUT
+CheckPartyMonHasCut:
+	ld a, [wPartyCount]
+	and a
+	jr z, .noMonWithCut
+	ld b, a ; number of party mons
+	ld c, 0 ; party mon index
+.monLoop
+	push bc
+	ld hl, wPartyMon1Moves
+	ld a, c
+	ld bc, PARTYMON_STRUCT_LENGTH
+	call AddNTimes
+	pop bc
+	ld d, NUM_MOVES
+.moveLoop
+	ld a, [hli]
+	cp CUT
+	jr z, .foundMonWithCut
+	dec d
+	jr nz, .moveLoop
+	inc c
+	dec b
+	jr nz, .monLoop
+.noMonWithCut
+	and a
+	ret
+.foundMonWithCut
+	ld a, c
+	ld [wWhichPokemon], a
+	scf
+	ret
+
+TreeLooksCuttableText:
+	text_far _TreeLooksCuttableText
+	text_end
+
+WouldYouLikeToCutText:
+	text_far _WouldYouLikeToCutText
+	text_end
+
 UsedCut:
 	xor a
 	ld [wActionResultOrTookBattleTurn], a ; initialise to failure value

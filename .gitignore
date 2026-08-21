@@ -41,3 +41,6 @@ rgbds-old/
 drawings/
 tools/bgb.html
 tools/bgb.ini
+
+# Python stuff
+pyboy-venv/

@@ -193,6 +193,17 @@ _NothingToCutText::
 	line "anything to CUT!"
 	prompt
 
+_TreeLooksCuttableText::
+	text "This tree looks"
+	line "like it can be"
+	cont "CUT down!"
+	prompt
+
+_WouldYouLikeToCutText::
+	text "Would you like"
+	line "to CUT it?"
+	prompt
+
 _UsedCutText::
 	text_ram wNameBuffer
 	text " hacked"
