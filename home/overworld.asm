@@ -96,6 +96,7 @@ OverworldLoopLessDelay::
 	and a
 	jr nz, .displayDialogue
 	farcall TryCutTreeInteraction
+	farcall TrySurfWaterInteraction
 	jp OverworldLoop
 .displayDialogue
 	predef GetTileAndCoordsInFrontOfPlayer

@@ -27,7 +27,8 @@ CutTreeText::
 	ld a, [wObtainedBadges]
 	bit BIT_CASCADEBADGE, a
 	jr z, .done
-	call CheckPartyMonHasCut
+	ld a, CUT
+	call CheckPartyMonHasMove
 	jr nc, .done
 	ld hl, WouldYouLikeToCutText
 	call PrintText
@@ -42,35 +43,39 @@ CutTreeText::
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	jp TextScriptEnd
 
-; stores the index of the first party mon that knows CUT in wWhichPokemon and
-; sets carry, or clears carry if no party mon knows CUT
-CheckPartyMonHasCut:
+; stores the index of the first party mon that knows the move in wWhichPokemon
+; and sets carry, or clears carry if no party mon knows the move
+; INPUT: a = move ID
+CheckPartyMonHasMove::
+	ld e, a ; move ID
 	ld a, [wPartyCount]
 	and a
-	jr z, .noMonWithCut
+	jr z, .noMonWithMove
 	ld b, a ; number of party mons
 	ld c, 0 ; party mon index
 .monLoop
 	push bc
+	;push de
 	ld hl, wPartyMon1Moves
 	ld a, c
 	ld bc, PARTYMON_STRUCT_LENGTH
 	call AddNTimes
+	;pop de
 	pop bc
 	ld d, NUM_MOVES
 .moveLoop
 	ld a, [hli]
-	cp CUT
-	jr z, .foundMonWithCut
+	cp e
+	jr z, .foundMonWithMove
 	dec d
 	jr nz, .moveLoop
 	inc c
 	dec b
 	jr nz, .monLoop
-.noMonWithCut
+.noMonWithMove
 	and a
 	ret
-.foundMonWithCut
+.foundMonWithMove
 	ld a, c
 	ld [wWhichPokemon], a
 	scf

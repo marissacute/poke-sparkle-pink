@@ -204,6 +204,16 @@ _WouldYouLikeToCutText::
 	line "to CUT it?"
 	prompt
 
+_WaterIsDyedDeepBlueText::
+	text "The water is dyed"
+	line "a deep blue..."
+	prompt
+
+_WouldYouLikeToSurfText::
+	text "Would you like"
+	line "to SURF?"
+	prompt
+
 _UsedCutText::
 	text_ram wNameBuffer
 	text " hacked"
