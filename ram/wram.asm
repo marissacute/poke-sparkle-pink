@@ -2105,7 +2105,9 @@ wDungeonWarpDestinationMap:: db
 ; which dungeon warp within the source map was used
 wWhichDungeonWarp:: db
 
-wUnusedCardKeyGateID:: db
+; set to 1 when the strength boulder text is shown by the A button handler, so
+; it doesn't display the boulder's own text after the dialogue is over
+wStrengthInteractionFlag:: db
 
 	ds 8
 

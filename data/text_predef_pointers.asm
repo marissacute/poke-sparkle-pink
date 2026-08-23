@@ -72,3 +72,4 @@ TextPredefs::
 	add_tx_pre PokemonStuffText                     ; 42
 	add_tx_pre CutTreeText                          ; 43
 	add_tx_pre SurfWaterText                        ; 44
+	add_tx_pre StrengthBoulderText                  ; 45

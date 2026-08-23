@@ -99,6 +99,15 @@ OverworldLoopLessDelay::
 	farcall TrySurfWaterInteraction
 	jp OverworldLoop
 .displayDialogue
+	farcall TryStrengthInteraction ; offers to use STRENGTH if the sprite in front is a boulder
+	ld a, [wStrengthInteractionFlag]
+	and a
+	jr z, .notBoulderInFront
+; the strength boulder text was shown, so don't display the boulder's own text
+	xor a
+	ld [wStrengthInteractionFlag], a
+	jp OverworldLoop
+.notBoulderInFront
 	predef GetTileAndCoordsInFrontOfPlayer
 	call UpdateSprites
 	ld a, [wMiscFlags]

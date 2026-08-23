@@ -214,6 +214,18 @@ _WouldYouLikeToSurfText::
 	line "to SURF?"
 	prompt
 
+_BoulderMayBePushableText::
+	text "It's a big"
+	line "boulder, but a"
+	cont "#MON may be"
+	cont "able to push it!"
+	prompt
+
+_WouldYouLikeToUseStrengthText::
+	text "Would you like to"
+	line "use STRENGTH?"
+	prompt
+
 _UsedCutText::
 	text_ram wNameBuffer
 	text " hacked"
