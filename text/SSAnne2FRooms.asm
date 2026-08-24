@@ -46,21 +46,26 @@ _SSAnne2FRoomsBeautyText::
 	line "get seasick!"
 	done
 
-_SSAnne2FRoomsGentleman1BattleText::
-	text "Competing against"
-	line "the young keeps"
-	cont "me youthful."
+_SSAnne2FRoomsJacintheBattleText::
+	text "Je suis Jacinthe,"
+	line "from beautiful"
+	cont "Lumiose City in"
+	cont "Kalos! My fairy"
+	cont "types will crush"
+	cont "you with style!"
 	done
 
-_SSAnne2FRoomsGentleman1EndBattleText::
-	text "Good"
-	line "fight! Ah, I feel"
-	cont "young again!"
+_SSAnne2FRoomsJacintheEndBattleText::
+	text "Mon dieu!"
+	line "I never lose!"
 	prompt
 
-_SSAnne2FRoomsGentleman1AfterBattleText::
-	text "15 years ago, I"
-	line "would have won!"
+_SSAnne2FRoomsJacintheAfterBattleText::
+	text "Would you join Le"
+	line "Super-Tournoi de"
+	cont "Jacinthe and"
+	cont "battle me again?"
+	cont "Non?"
 	done
 
 _SSAnne2FRoomsFisherBattleText::
@@ -110,4 +115,11 @@ _SSAnne2FRoomsCooltrainerFEndBattleText::
 _SSAnne2FRoomsCooltrainerFAfterBattleText::
 	text "Oh, I adore your"
 	line "strong #MON!"
+	done
+
+_SSAnne2FRoomsWaiterText::
+	text "LEBANNE: She"
+	line "dragged me all"
+	cont "the way out to"
+	cont "KANTO..."
 	done

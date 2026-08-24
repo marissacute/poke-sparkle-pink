@@ -86,6 +86,7 @@ ROMX $B
 	org $7b7b
 	"Battle Engine 5"
 ROMX $C
+	"Trainer Pics"
 	"Pics 4"
 	org $7f2b
 	"Battle Engine 6"
@@ -109,7 +110,6 @@ ROMX $12
 	"Screen Effects"
 	"Maps 8"
 ROMX $13
-	"Trainer Pics"
 	org $7d04
 	"Maps 9"
 	"Predefs"

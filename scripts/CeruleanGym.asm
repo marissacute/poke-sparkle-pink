@@ -83,7 +83,7 @@ CeruleanGymReceiveTM11:
 CeruleanGym_TextPointers:
 	def_text_pointers
 	dw_const CeruleanGymMistyText,                 TEXT_CERULEANGYM_MISTY
-	dw_const CeruleanGymCooltrainerFText,          TEXT_CERULEANGYM_COOLTRAINER_F
+	dw_const CeruleanGymCynthiaText,               TEXT_CERULEANGYM_CYNTHIA
 	dw_const CeruleanGymSwimmerText,               TEXT_CERULEANGYM_SWIMMER
 	dw_const CeruleanGymGymGuideText,              TEXT_CERULEANGYM_GYM_GUIDE
 	dw_const CeruleanGymMistyCascadeBadgeInfoText, TEXT_CERULEANGYM_MISTY_CASCADE_BADGE_INFO
@@ -94,7 +94,7 @@ CeruleanGym_TextPointers:
 CeruleanGymTrainerHeaders:
 	def_trainers 2
 CeruleanGymTrainerHeader0:
-	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_0, 3, CeruleanGymBattleText1, CeruleanGymEndBattleText1, CeruleanGymAfterBattleText1
+	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_0, 3, CeruleanGymCynthiaBattleText, CeruleanGymCynthiaEndBattleText, CeruleanGymCynthiaAfterBattleText
 CeruleanGymTrainerHeader1:
 	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_1, 3, CeruleanGymBattleText2, CeruleanGymEndBattleText2, CeruleanGymAfterBattleText2
 	db -1 ; end
@@ -210,22 +210,22 @@ CeruleanGymMistyReceivedCascadeBadgeText:
 	text_promptbutton
 	text_end
 
-CeruleanGymCooltrainerFText:
+CeruleanGymCynthiaText:
 	text_asm
 	ld hl, CeruleanGymTrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd
 
-CeruleanGymBattleText1:
-	text_far _CeruleanGymBattleText1
+CeruleanGymCynthiaBattleText:
+	text_far _CeruleanGymCynthiaBattleText
 	text_end
 
-CeruleanGymEndBattleText1:
-	text_far _CeruleanGymEndBattleText1
+CeruleanGymCynthiaEndBattleText:
+	text_far _CeruleanGymCynthiaEndBattleText
 	text_end
 
-CeruleanGymAfterBattleText1:
-	text_far _CeruleanGymAfterBattleText1
+CeruleanGymCynthiaAfterBattleText:
+	text_far _CeruleanGymCynthiaAfterBattleText
 	text_end
 
 CeruleanGymSwimmerText:

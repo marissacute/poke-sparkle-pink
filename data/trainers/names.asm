@@ -50,4 +50,6 @@ TrainerNames::
 	li "IONO"
 	li "GUZMA"
 	li "N"
+	li "CYNTHIA"
+	li "JACINTHE"
 	assert_list_length NUM_TRAINERS

@@ -18,7 +18,7 @@ SSAnne2FRooms_ScriptPointers:
 
 SSAnne2FRooms_TextPointers:
 	def_text_pointers
-	dw_const SSAnne2FRoomsGentleman1Text,   TEXT_SSANNE2FROOMS_GENTLEMAN1
+	dw_const SSAnne2FRoomsJacintheText,     TEXT_SSANNE2FROOMS_JACINTHE
 	dw_const SSAnne2FRoomsFisherText,       TEXT_SSANNE2FROOMS_FISHER
 	dw_const SSAnne2FRoomsGentleman2Text,   TEXT_SSANNE2FROOMS_GENTLEMAN2
 	dw_const SSAnne2FRoomsCooltrainerFText, TEXT_SSANNE2FROOMS_COOLTRAINER_F
@@ -31,11 +31,12 @@ SSAnne2FRooms_TextPointers:
 	dw_const SSAnne2FRoomsLittleBoyText,    TEXT_SSANNE2FROOMS_LITTLE_BOY
 	dw_const SSAnne2FRoomsBrunetteGirlText, TEXT_SSANNE2FROOMS_BRUNETTE_GIRL
 	dw_const SSAnne2FRoomsBeautyText,       TEXT_SSANNE2FROOMS_BEAUTY
+	dw_const SSAnne2FRoomsWaiterText,       TEXT_SSANNE2FROOMS_WAITER
 
 SSAnne9TrainerHeaders:
 	def_trainers
 SSAnne9TrainerHeader0:
-	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_0, 2, SSAnne2FRoomsGentleman1BattleText, SSAnne2FRoomsGentleman1EndBattleText, SSAnne2FRoomsGentleman1AfterBattleText
+	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_0, 2, SSAnne2FRoomsJacintheBattleText, SSAnne2FRoomsJacintheEndBattleText, SSAnne2FRoomsJacintheAfterBattleText
 SSAnne9TrainerHeader1:
 	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_1, 3, SSAnne2FRoomsFisherBattleText, SSAnne2FRoomsFisherEndBattleText, SSAnne2FRoomsFisherAfterBattleText
 SSAnne9TrainerHeader2:
@@ -44,7 +45,7 @@ SSAnne9TrainerHeader3:
 	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_3, 2, SSAnne2FRoomsCooltrainerFBattleText, SSAnne2FRoomsCooltrainerFEndBattleText, SSAnne2FRoomsCooltrainerFAfterBattleText
 	db -1 ; end
 
-SSAnne2FRoomsGentleman1Text:
+SSAnne2FRoomsJacintheText:
 	text_asm
 	ld hl, SSAnne9TrainerHeader0
 	call TalkToTrainer
@@ -142,16 +143,16 @@ SSAnne2FRoomsBeautyText:
 	text_far _SSAnne2FRoomsBeautyText
 	text_end
 
-SSAnne2FRoomsGentleman1BattleText:
-	text_far _SSAnne2FRoomsGentleman1BattleText
+SSAnne2FRoomsJacintheBattleText:
+	text_far _SSAnne2FRoomsJacintheBattleText
 	text_end
 
-SSAnne2FRoomsGentleman1EndBattleText:
-	text_far _SSAnne2FRoomsGentleman1EndBattleText
+SSAnne2FRoomsJacintheEndBattleText:
+	text_far _SSAnne2FRoomsJacintheEndBattleText
 	text_end
 
-SSAnne2FRoomsGentleman1AfterBattleText:
-	text_far _SSAnne2FRoomsGentleman1AfterBattleText
+SSAnne2FRoomsJacintheAfterBattleText:
+	text_far _SSAnne2FRoomsJacintheAfterBattleText
 	text_end
 
 SSAnne2FRoomsFisherBattleText:
@@ -188,4 +189,14 @@ SSAnne2FRoomsCooltrainerFEndBattleText:
 
 SSAnne2FRoomsCooltrainerFAfterBattleText:
 	text_far _SSAnne2FRoomsCooltrainerFAfterBattleText
+	text_end
+
+SSAnne2FRoomsWaiterText:
+	text_asm
+	ld hl, .Text
+	call PrintText
+	jp TextScriptEnd
+
+.Text:
+	text_far _SSAnne2FRoomsWaiterText
 	text_end

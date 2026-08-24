@@ -65,4 +65,6 @@ ENDM
 	trainer_const IONO           ; $30
 	trainer_const GUZMA          ; $31
 	trainer_const N              ; $32
+	trainer_const CYNTHIA        ; $33
+	trainer_const JACINTHE       ; $34
 DEF NUM_TRAINERS EQU const_value - 1

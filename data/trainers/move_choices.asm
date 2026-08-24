@@ -60,5 +60,7 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1       ; IONO
 	move_choices 1       ; GUZMA
 	move_choices 1       ; N
+	move_choices 1       ; CYNTHIA
+	move_choices 1       ; JACINTHE
 	assert __move_choices__ == NUM_TRAINERS, \
 		"TrainerClassMoveChoiceModifications: expected {d:NUM_TRAINERS} entries, got {d:__move_choices__}"

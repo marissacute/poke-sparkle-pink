@@ -256,4 +256,6 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_IONO          ; $E3
 	const PAL_GUZMA         ; $E4
 	const PAL_N             ; $E5
+	const PAL_CYNTHIA       ; $E6
+	const PAL_JACINTHE      ; $E7
 DEF NUM_SGB_PALS EQU const_value

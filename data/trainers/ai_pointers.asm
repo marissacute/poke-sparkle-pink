@@ -54,4 +54,6 @@ TrainerAIPointers:
 	dbw 1, GenericAI ; iono
 	dbw 1, GenericAI ; guzma
 	dbw 1, GenericAI ; n
+	dbw 1, GenericAI ; cynthia
+	dbw 1, GenericAI ; jacinthe
 	assert_table_length NUM_TRAINERS

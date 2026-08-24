@@ -222,5 +222,7 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_IONO
 	db PAL_GUZMA
 	db PAL_N
+	db PAL_CYNTHIA ; Cynthia
+	db PAL_JACINTHE ; Jacinthe
 	assert_table_length NUM_POKEMON + 1 + NUM_TRAINERS + 1
 

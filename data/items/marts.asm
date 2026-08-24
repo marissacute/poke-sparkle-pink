@@ -37,8 +37,8 @@ CeladonMart5FClerk2Text::
 FuchsiaMartClerkText::
 	script_mart ULTRA_BALL, GREAT_BALL, SUPER_POTION, REVIVE, FULL_HEAL, SUPER_REPEL
 
-UnusedMartClerkText:: ; unreferenced, removed other items to save space
-	script_mart GREAT_BALL
+;UnusedMartClerkText:: ; unreferenced, removed other items to save space
+;	script_mart GREAT_BALL
 
 CinnabarMartClerkText::
 	script_mart ULTRA_BALL, GREAT_BALL, HYPER_POTION, MAX_REPEL, ESCAPE_ROPE, FULL_HEAL, REVIVE

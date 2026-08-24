@@ -11,7 +11,7 @@
 
 	dw GyaradosPicFront, GyaradosPicBack
 
-	db BITE, DRAGON_RAGE, LEER, HYDRO_PUMP ; level 1 learnset
+	db BITE, DRAGON_RAGE, LEER, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset

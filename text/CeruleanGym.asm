@@ -66,23 +66,31 @@ _CeruleanGymMistyReceivedCascadeBadgeText::
 	cont "show you beat me!@"
 	text_end
 
-_CeruleanGymBattleText1::
-	text "I'm more than good"
-	line "enough for you!"
+_CeruleanGymCynthiaBattleText::
+	text "My name is"
+	line "CYNTHIA, I'm an"
+	cont "archeologist"
+	cont "from the SINNOH"
+	cont "region."
 
-	para "MISTY can wait!"
+	para "I like to use"
+	line "DRAGON-type"
+	cont "#MON!"
 	done
 
-_CeruleanGymEndBattleText1::
-	text "You"
-	line "overwhelmed me!"
+_CeruleanGymCynthiaEndBattleText::
+	text "Hmm."
+	line "Maybe I need to"
+	cont "take you"
+	cont "seriously."
 	prompt
 
-_CeruleanGymAfterBattleText1::
-	text "You have to face"
-	line "other trainers to"
-	cont "find out how good"
-	cont "you really are."
+_CeruleanGymCynthiaAfterBattleText::
+	text "You have"
+	line "potential."
+
+	para "Perhaps we will"
+	line "battle again."
 	done
 
 _CeruleanGymBattleText2::

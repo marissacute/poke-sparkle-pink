@@ -50,6 +50,8 @@ TrainerDataPointers:
 	dw IonoData
 	dw GuzmaData
 	dw NData
+	dw CynthiaData
+	dw JacintheData
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -167,7 +169,7 @@ JrTrainerMData:
 	db 29, NIDORAN_M, NIDORINO, 0
 
 JrTrainerFData:
-; Cerulean Gym
+; Cerulean Gym - unused
 	db 19, GOLDEEN, 0
 ; Route 6
 	db 16, RATTATA, PICHU, 0
@@ -766,3 +768,11 @@ GuzmaData:
 NData:
 ; Pokemon Mansion 3F
 	db $FF, 35, KABUTOPS, 35, HAUNTER, 38, UMBREON, 0
+
+CynthiaData:
+; Cerulean Gym
+	db 16, GYARADOS, 0
+
+JacintheData:
+; SS Anne 2F Rooms
+	db $FF, 17, CLEFAIRY, 19, SYLVEON, 0
