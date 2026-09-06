@@ -2205,7 +2205,7 @@ wOpponentAfterWrongAnswer:: db
 ; mostly copied from map-specific map script pointer and written back later
 wCurMapScript:: db
 
-	ds 7
+	ds 5
 
 wPlayTimeHours:: db
 wPlayTimeMaxed:: db

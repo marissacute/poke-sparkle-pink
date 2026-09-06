@@ -168,9 +168,9 @@ EvosMovesPointerTable:
 	dw MissingNo9CEvosMoves
 	dw GoldeenEvosMoves
 	dw SeakingEvosMoves
-	dw MissingNo9FEvosMoves
-	dw MissingNoA0EvosMoves
-	dw MissingNoA1EvosMoves
+	dw MareepEvosMoves
+	dw FlaaffyEvosMoves
+	dw AmpharosEvosMoves
 	dw MissingNoA2EvosMoves
 	dw PonytaEvosMoves
 	dw RapidashEvosMoves
@@ -1922,11 +1922,11 @@ GoldeenEvosMoves:
 	db EVOLVE_LEVEL, 33, SEAKING
 	db 0
 ; Learnset
-	db 19, SUPERSONIC
+	db 19, FAIRY_WIND
 	db 24, HORN_ATTACK
-	db 30, FURY_ATTACK
+	db 30, HORN_DRILL
 	db 37, WATERFALL
-	db 45, HORN_DRILL
+	db 45, MOONBLAST
 	db 54, AGILITY
 	db 0
 
@@ -1934,30 +1934,47 @@ SeakingEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 19, SUPERSONIC
+	db 19, FAIRY_WIND
 	db 24, HORN_ATTACK
-	db 30, FURY_ATTACK
+	db 30, HORN_DRILL
 	db 39, WATERFALL
-	db 48, HORN_DRILL
+	db 48, MOONBLAST
 	db 54, AGILITY
 	db 0
 
-MissingNo9FEvosMoves:
+MareepEvosMoves:
 ; Evolutions
-	db 0
+	db EVOLVE_LEVEL, 35, FLAAFFY
 ; Learnset
+	db 9, THUNDERSHOCK
+	db 16, THUNDER_WAVE
+	db 22, LIGHT_SCREEN
+	db 31, DRAGON_RAGE
+	db 37, THUNDER
 	db 0
 
-MissingNoA0EvosMoves:
+FlaaffyEvosMoves:
 ; Evolutions
-	db 0
+	db EVOLVE_LEVEL, 40, AMPHAROS
 ; Learnset
+	db 9, THUNDERSHOCK
+	db 18, THUNDER_WAVE
+	db 24, LIGHT_SCREEN
+	db 36, DRAGON_RAGE
+	db 45, THUNDER
 	db 0
 
-MissingNoA1EvosMoves:
+AmpharosEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 9, THUNDERSHOCK
+	db 18, THUNDER_WAVE
+	db 35, LIGHT_SCREEN
+	db 39, DRAGON_RAGE
+	db 41, THUNDERPUNCH
+	db 45, DRAGON_SLAM
+	db 57, THUNDER
 	db 0
 
 MissingNoA2EvosMoves:

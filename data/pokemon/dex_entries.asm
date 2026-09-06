@@ -158,9 +158,9 @@ PokedexEntryPointers:
 	dw MissingNoDexEntry
 	dw GoldeenDexEntry
 	dw SeakingDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw MareepDexEntry
+	dw FlaaffyDexEntry
+	dw AmpharosDexEntry
 	dw MissingNoDexEntry
 	dw PonytaDexEntry
 	dw RapidashDexEntry
@@ -1375,6 +1375,27 @@ ClodsireDexEntry:
 	db 18
 	dw 2230
 	text_far _ClodsireDexEntry
+	text_end
+
+MareepDexEntry:
+	db "WOOL@"
+	db 6
+	dw 78
+	text_far _MareepDexEntry
+	text_end
+
+FlaaffyDexEntry:
+	db "WOOL@"
+	db 8
+	dw 133
+	text_far _FlaaffyDexEntry
+	text_end
+
+AmpharosDexEntry:
+	db "LIGHT@"
+	db 14
+	dw 615
+	text_far _AmpharosDexEntry
 	text_end
 
 

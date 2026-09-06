@@ -170,6 +170,9 @@ MonsterPalettes:
 	db PAL_PALWOOPER ; Paldean Wooper
 	db PAL_QUAGSIRE ; Quagsire
 	db PAL_CLODSIRE ; Clodsire
+	db PAL_MAREEP 
+	db PAL_FLAAFFY
+	db PAL_AMPHAROS
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO
 	db PAL_YOUNGSTER

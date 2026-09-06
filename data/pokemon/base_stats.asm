@@ -168,4 +168,7 @@ INCLUDE "data/pokemon/base_stats/wooper.asm"
 INCLUDE "data/pokemon/base_stats/paldean_wooper.asm"
 INCLUDE "data/pokemon/base_stats/quagsire.asm"
 INCLUDE "data/pokemon/base_stats/clodsire.asm"
-	assert_table_length NUM_POKEMON ; 
+INCLUDE "data/pokemon/base_stats/mareep.asm"
+INCLUDE "data/pokemon/base_stats/flaaffy.asm"
+INCLUDE "data/pokemon/base_stats/ampharos.asm"
+	assert_table_length NUM_POKEMON ;

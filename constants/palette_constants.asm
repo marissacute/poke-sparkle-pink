@@ -258,4 +258,7 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_N             ; $E5
 	const PAL_CYNTHIA       ; $E6
 	const PAL_JACINTHE      ; $E7
+	const PAL_MAREEP        ; $E8
+	const PAL_FLAAFFY       ; $E9
+	const PAL_AMPHAROS      ; $E0
 DEF NUM_SGB_PALS EQU const_value

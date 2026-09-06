@@ -1677,3 +1677,33 @@ _ClodsireDexEntry::
 	next "on its back from"
 	next "shore to shore"
 	dex
+
+_MareepDexEntry::
+	text "Its fleece grows"
+	next "continually. In"
+	next "the summer, it"
+
+	page "is fully shed,"
+	next "but grows back"
+	next "in a week"
+	dex
+
+_FlaaffyDexEntry::
+	text "It stores so much"
+	next "electricity that"
+	next "it has patches"
+
+	page "where even downy"
+	next "wool will not"
+	next "grow"
+	dex
+
+_AmpharosDexEntry::
+	text "When it gets"
+	next "dark, the light"
+	next "from its shiny"
+
+	page "tail can be seen"
+	next "from far away on"
+	next "the ocean surface"
+	dex
