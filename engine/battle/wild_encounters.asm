@@ -99,6 +99,7 @@ TryDoWildEncounter:
 	ret
 .willEncounter
 	xor a
+	ld [wIsTrainerBattle], a
 	ret
 
 ; called when the repel effect wears off (see DisplayTextID in home/text_script.asm)

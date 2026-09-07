@@ -158,6 +158,8 @@ FightingDojoKarateMasterText:
 	ld [wCurOpponent], a
 	ld a, 10
 	ld [wTrainerNo], a
+	ld a, 1
+	ld [wIsTrainerBattle], a
 	jr .endBattle
 
 .refused

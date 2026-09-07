@@ -52,4 +52,9 @@ TrainerNames::
 	li "N"
 	li "CYNTHIA"
 	li "JACINTHE"
+	li "MARNIE"
+	li "WHITNEY"
+	li "STEVEN"
+	li "RED"
+	li "PETREL"
 	assert_list_length NUM_TRAINERS

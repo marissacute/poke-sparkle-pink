@@ -222,10 +222,10 @@ ViridianGymBlueText:
 	jr nz, .afterBeat
 	call z, ViridianGymReceiveTM27
 	call DisableWaitingAfterTextDisplay
-	jr .done
+	jp .done
 .afterBeat
 	CheckEvent EVENT_PLAYER_IS_CHAMPION
-	jr nz, .BlueRematch
+	jp nz, .BlueRematch
 	ld hl, .TM27ExplanationText
 	call PrintText
 	jr .done
@@ -267,6 +267,8 @@ ViridianGymBlueText:
 	ld [wCurOpponent], a
 	ld a, 2
 	ld [wTrainerNo], a
+	ld a, 1
+	ld [wIsTrainerBattle], a
 	jr .endBattle
 .refused
 	ld hl, .PreBattleRematchRefusedText

@@ -122,10 +122,10 @@ FuchsiaGymKogaText:
 	jr nz, .afterBeat
 	call z, FuchsiaGymReceiveTM06
 	call DisableWaitingAfterTextDisplay
-	jr .done
+	jp .done
 .afterBeat
 	CheckEvent EVENT_BEAT_KOGA
-	jr nz, .KogaRematch
+	jp nz, .KogaRematch
 	ld hl, .PostBattleAdviceText
 	call PrintText
 	jr .done
@@ -167,6 +167,8 @@ FuchsiaGymKogaText:
 	ld [wCurOpponent], a
 	ld a, 2
 	ld [wTrainerNo], a
+	ld a, 1
+	ld [wIsTrainerBattle], a
 	jr .endBattle
 .refused
 	ld hl, .PreBattleRematchRefusedText

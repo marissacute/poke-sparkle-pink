@@ -258,6 +258,8 @@ CinnabarGymBlaineText:
 	ld [wCurOpponent], a
 	ld a, 2
 	ld [wTrainerNo], a
+	ld a, 1
+	ld [wIsTrainerBattle], a
 	ld a, SCRIPT_CINNABARGYM_BLAINE_POST_BATTLE
 	ld [wCinnabarGymCurScript], a
 	jr .done

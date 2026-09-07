@@ -121,10 +121,10 @@ CeladonGymErikaText:
 	jr nz, .afterBeat
 	call z, CeladonGymReceiveTM21
 	call DisableWaitingAfterTextDisplay
-	jr .done
+	jp .done
 .afterBeat
 	CheckEvent EVENT_PLAYER_IS_CHAMPION
-	jr nz, .ErikaRematch
+	jp nz, .ErikaRematch
 	ld hl, .PostBattleAdviceText
 	call PrintText
 	jr .done
@@ -164,6 +164,8 @@ CeladonGymErikaText:
 	ld [wCurOpponent], a
 	ld a, 2
 	ld [wTrainerNo], a
+	ld a, 1
+	ld [wIsTrainerBattle], a
 	jr .endBattle
 .refused
 	ld hl, .PreBattleRematchRefusedText

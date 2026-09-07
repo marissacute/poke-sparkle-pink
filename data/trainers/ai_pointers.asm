@@ -56,4 +56,9 @@ TrainerAIPointers:
 	dbw 1, GenericAI ; n
 	dbw 1, GenericAI ; cynthia
 	dbw 1, GenericAI ; jacinthe
+	dbw 1, GenericAI ; marnie
+	dbw 1, GenericAI ; whitney
+	dbw 1, GenericAI ; steven
+	dbw 1, GenericAI ; red
+	dbw 1, GenericAI ; petrel
 	assert_table_length NUM_TRAINERS

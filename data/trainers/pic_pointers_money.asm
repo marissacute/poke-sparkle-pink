@@ -59,4 +59,9 @@ TrainerPicAndMoneyPointers::
 	pic_money NPic,            9900
 	pic_money CynthiaPic,      5000
 	pic_money JacinthePic,     7000
+	pic_money YoungsterPic,    1500 ; Marnie
+	pic_money YoungsterPic,    1500 ; Whitney
+	pic_money YoungsterPic,    1500 ; Stephen
+	pic_money YoungsterPic,    1500 ; Red
+	pic_money YoungsterPic,    1500 ; Petrel
 	assert_table_length NUM_TRAINERS

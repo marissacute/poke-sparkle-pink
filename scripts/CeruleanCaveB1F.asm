@@ -47,6 +47,8 @@ CeruleanCaveB1FDefaultScript:
 	ld [wCurOpponent], a
 	ld a, 70
 	ld [wCurEnemyLevel], a
+	xor a
+	ld [wIsTrainerBattle], a
 	ld a, TOGGLE_MEWTWO
 	ld [wToggleableObjectIndex], a
 	predef HideObject

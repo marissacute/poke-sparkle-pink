@@ -1244,7 +1244,7 @@ wIsInBattle:: db
 wPartyGainExpFlags:: flag_array PARTY_LENGTH
 
 ; in a wild battle, this is the species of pokemon
-; in a trainer battle, this is the trainer class + OPP_ID_OFFSET
+; in a trainer battle, this is the trainer class
 wCurOpponent:: db
 
 ; in normal battle, this is 0
@@ -1714,7 +1714,9 @@ wPseudoItemID:: db
 
 wUnusedAlreadyOwnedFlag:: db
 
-	ds 2
+wIsTrainerBattle:: db
+
+wWasTrainerBattle:: db
 
 wEvoStoneItemID:: db
 
@@ -2074,7 +2076,7 @@ wFossilMon:: db
 
 	ds 2
 
-; trainer classes start at OPP_ID_OFFSET
+; trainer classes are the class IDs from trainer_constants
 wEnemyMonOrTrainerClass:: db
 
 wPlayerJumpingYScreenCoordsIndex:: db

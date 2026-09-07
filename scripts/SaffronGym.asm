@@ -163,6 +163,8 @@ SaffronGymSabrinaText:
 	ld [wCurOpponent], a
 	ld a, 2
 	ld [wTrainerNo], a
+	ld a, 1
+	ld [wIsTrainerBattle], a
 	jr .endBattle
 .refused
 	ld hl, .PreBattleRematchRefusedText

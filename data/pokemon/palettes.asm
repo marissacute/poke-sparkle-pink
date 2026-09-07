@@ -227,5 +227,10 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_N
 	db PAL_CYNTHIA ; Cynthia
 	db PAL_JACINTHE ; Jacinthe
+	db PAL_MEWMON ; Marnie
+	db PAL_MEWMON ; Whitney
+	db PAL_MEWMON ; Steven
+	db PAL_MEWMON ; Red
+	db PAL_MEWMON ; Petrel
 	assert_table_length NUM_POKEMON + 1 + NUM_TRAINERS + 1
 

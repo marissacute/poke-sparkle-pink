@@ -132,10 +132,10 @@ VermilionGymLTSurgeText:
 	jr nz, .afterBeat
 	call z, VermilionGymLTSurgeReceiveTM24Script
 	call DisableWaitingAfterTextDisplay
-	jr .done
+	jp .done
 .afterBeat
 	CheckEvent EVENT_PLAYER_IS_CHAMPION
-	jr nz, .LTSurgeRematch
+	jp nz, .LTSurgeRematch
 	ld hl, .PostBattleAdviceText
 	call PrintText
 	jr .done
@@ -177,6 +177,8 @@ VermilionGymLTSurgeText:
 	ld [wCurOpponent], a
 	ld a, 2
 	ld [wTrainerNo], a
+	ld a, 1
+	ld [wIsTrainerBattle], a
 	jr .endBattle
 .refused
 	ld hl, .PreBattleRematchRefusedText

@@ -62,5 +62,10 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1       ; N
 	move_choices 1       ; CYNTHIA
 	move_choices 1       ; JACINTHE
+	move_choices 1       ; MARNIE
+	move_choices 1       ; WHITNEY
+	move_choices 1       ; STEVEN
+	move_choices 1       ; RED
+	move_choices 1       ; PETREL
 	assert __move_choices__ == NUM_TRAINERS, \
 		"TrainerClassMoveChoiceModifications: expected {d:NUM_TRAINERS} entries, got {d:__move_choices__}"

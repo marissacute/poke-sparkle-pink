@@ -107,10 +107,10 @@ CeruleanGymMistyText:
 	jr nz, .afterBeat
 	call z, CeruleanGymReceiveTM11
 	call DisableWaitingAfterTextDisplay
-	jr .done
+	jp .done
 .afterBeat
 	CheckEvent EVENT_PLAYER_IS_CHAMPION
-	jr nz, .MistyRematch
+	jp nz, .MistyRematch
 	ld hl, .TM11ExplanationText
 	call PrintText
 	jr .done
@@ -152,6 +152,8 @@ CeruleanGymMistyText:
 	ld [wCurOpponent], a
 	ld a, 2
 	ld [wTrainerNo], a
+	ld a, 1
+	ld [wIsTrainerBattle], a
 	jr .endBattle
 .refused
 	ld hl, .PreBattleRematchRefusedText

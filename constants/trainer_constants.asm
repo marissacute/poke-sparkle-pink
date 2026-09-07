@@ -1,8 +1,6 @@
-DEF OPP_ID_OFFSET EQU 200
-
 MACRO trainer_const
 	const \1
-	DEF OPP_\1 EQU OPP_ID_OFFSET + \1
+	DEF OPP_\1 EQU \1
 ENDM
 
 ; trainer class ids
@@ -67,4 +65,10 @@ ENDM
 	trainer_const N              ; $32
 	trainer_const CYNTHIA        ; $33
 	trainer_const JACINTHE       ; $34
+	trainer_const MARNIE         ; $35
+	trainer_const WHITNEY        ; $36
+	trainer_const STEVEN         ; $37
+	trainer_const RED            ; $38
+	trainer_const PETREL         ; $39
+	
 DEF NUM_TRAINERS EQU const_value - 1

@@ -37,6 +37,8 @@ PokemonTower6FDefaultScript:
 	ld [wCurOpponent], a
 	ld a, 30
 	ld [wCurEnemyLevel], a
+	xor a
+	ld [wIsTrainerBattle], a
 	ld a, SCRIPT_POKEMONTOWER6F_MAROWAK_BATTLE
 	ld [wPokemonTower6FCurScript], a
 	ld [wCurMapScript], a

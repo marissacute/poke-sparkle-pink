@@ -78,6 +78,8 @@ ViridianCityOldManStartCatchTrainingScript:
 	ld [wCurEnemyLevel], a
 	ld a, WEEDLE
 	ld [wCurOpponent], a
+	xor a
+	ld [wIsTrainerBattle], a
 	ld a, SCRIPT_VIRIDIANCITY_OLD_MAN_END_CATCH_TRAINING
 	ld [wViridianCityCurScript], a
 	ret
