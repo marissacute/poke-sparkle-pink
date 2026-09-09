@@ -175,5 +175,7 @@
 	const DEX_MAREEP     ; 169
 	const DEX_FLAAFFY    ; 170
 	const DEX_AMPHAROS   ; 171
+	const DEX_LEDYBA     ; 172
+	const DEX_LEDIAN     ; 173
 
 DEF NUM_POKEMON EQU const_value - 1

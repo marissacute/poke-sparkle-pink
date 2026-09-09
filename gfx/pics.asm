@@ -444,9 +444,16 @@ PalWooperPicFront::   INCBIN "gfx/pokemon/gsfront/palwooper.pic"
 PalWooperPicBack::    INCBIN "gfx/pokemon/gsback/palwooperb.pic"
 ClodsirePicFront::    INCBIN "gfx/pokemon/gsfront/clodsire.pic"
 ClodsirePicBack::     INCBIN "gfx/pokemon/gsback/clodsireb.pic"
+
+SECTION "Pics 13", ROMX
+
 MareepPicFront::      INCBIN "gfx/pokemon/gsfront/mareep.pic"
 MareepPicBack::       INCBIN "gfx/pokemon/gsback/mareepb.pic"
 FlaaffyPicFront::     INCBIN "gfx/pokemon/gsfront/flaaffy.pic"
 FlaaffyPicBack::      INCBIN "gfx/pokemon/gsback/flaaffyb.pic"
 AmpharosPicFront::    INCBIN "gfx/pokemon/gsfront/ampharos.pic"
 AmpharosPicBack::     INCBIN "gfx/pokemon/gsback/ampharosb.pic"
+LedybaPicFront::      INCBIN "gfx/pokemon/gsfront/ledyba.pic"
+LedybaPicBack::       INCBIN "gfx/pokemon/gsback/ledybab.pic"
+LedianPicFront::      INCBIN "gfx/pokemon/gsfront/ledian.pic"
+LedianPicBack::       INCBIN "gfx/pokemon/gsback/ledianb.pic"

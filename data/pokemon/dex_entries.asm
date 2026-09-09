@@ -120,8 +120,8 @@ PokedexEntryPointers:
 	dw DugtrioDexEntry
 	dw VenomothDexEntry
 	dw DewgongDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw LedybaDexEntry
+	dw LedianDexEntry
 	dw CaterpieDexEntry
 	dw MetapodDexEntry
 	dw ButterfreeDexEntry
@@ -1396,6 +1396,20 @@ AmpharosDexEntry:
 	db 14
 	dw 615
 	text_far _AmpharosDexEntry
+	text_end
+
+LedybaDexEntry:
+	db "FIVESTAR@"
+	db 10
+	dw 108
+	text_far _LedybaDexEntry
+	text_end
+
+LedianDexEntry:
+	db "FIVESTAR@"
+	db 14
+	dw 356
+	text_far _LedianDexEntry
 	text_end
 
 

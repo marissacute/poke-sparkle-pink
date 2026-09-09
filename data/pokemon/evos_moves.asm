@@ -130,8 +130,8 @@ EvosMovesPointerTable:
 	dw DugtrioEvosMoves
 	dw VenomothEvosMoves
 	dw DewgongEvosMoves
-	dw MissingNo79EvosMoves
-	dw MissingNo7AEvosMoves
+	dw LedybaEvosMoves
+	dw LedianEvosMoves
 	dw CaterpieEvosMoves
 	dw MetapodEvosMoves
 	dw ButterfreeEvosMoves
@@ -1566,16 +1566,37 @@ DewgongEvosMoves:
 	db 56, ICE_BEAM
 	db 0
 
-MissingNo79EvosMoves:
+LedybaEvosMoves:
 ; Evolutions
+	db EVOLVE_LEVEL, 18, LEDIAN
 	db 0
 ; Learnset
+	db 8, SUPERSONIC
+	db 15, FURY_CUTTER
+	db 18, MACH_PUNCH
+	db 22, LIGHT_SCREEN
+	db 22, REFLECT
+	db 29, DOUBLE_TEAM
+	db 36, SWIFT
+	db 39, X_SCISSOR
+	db 43, AGILITY
+	db 50, SUBMISSION
 	db 0
 
-MissingNo7AEvosMoves:
+LedianEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 8, SUPERSONIC
+	db 15, FURY_CUTTER
+	db 19, MACH_PUNCH
+	db 24, LIGHT_SCREEN
+	db 24, REFLECT
+	db 33, DOUBLE_TEAM
+	db 42, SWIFT
+	db 45, X_SCISSOR
+	db 51, AGILITY
+	db 55, SUBMISSION
 	db 0
 
 CaterpieEvosMoves:

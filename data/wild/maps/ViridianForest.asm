@@ -3,11 +3,11 @@ ViridianForestWildMons:
 
 	db  4, WEEDLE
 	db  4, CATERPIE
-	db  3, CATERPIE
+	db  3, LEDIAN
 	db  5, WEEDLE
 	db  4, KAKUNA
 	db  6, METAPOD
-	db  4, METAPOD
+	db  4, LEDIAN
 	db  3, PICHU
 	db  3, PICHU
 	db  5, PICHU
