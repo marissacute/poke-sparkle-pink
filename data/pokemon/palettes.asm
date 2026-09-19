@@ -174,7 +174,7 @@ MonsterPalettes:
 	db PAL_FLAAFFY
 	db PAL_AMPHAROS
 	db PAL_LEDYBA
-	db PAL_LEDIAN
+	db PAL_LEDYBA ; Ledyba and Ledian have the same colours
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO
 	db PAL_YOUNGSTER
@@ -197,19 +197,19 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_BEAUTY
 	db PAL_PSYCHIC
 	db PAL_ROCKER
-	db PAL_JUGGLER2
+	db PAL_JUGGLER
 	db PAL_TAMER
 	db PAL_BIRDKEEPER
 	db PAL_BLACKBELT
 	db PAL_RIVAL
 	db PAL_OAK
 	db PAL_CHIEF
-	db PAL_SCIENTIST
+	db PAL_CHIEF ; Scientist
 	db PAL_GIOVANNI
 	db PAL_ROCKET
 	db PAL_COOLTRAINER_M
-	db PAL_COOLTRAINER_F
-	db PAL_BRUNO
+	db PAL_COOLTRAINER_M ; Cooltrainer F
+	db PAL_GIOVANNI ; Bruno
 	db PAL_BROCK
 	db PAL_MISTY
 	db PAL_LT_SURGE
@@ -225,7 +225,7 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_AGATHA
 	db PAL_LANCE
 	db PAL_IONO
-	db PAL_GUZMA
+	db PAL_BLUE_TRAINER ; Guzma
 	db PAL_N
 	db PAL_CYNTHIA ; Cynthia
 	db PAL_JACINTHE ; Jacinthe
