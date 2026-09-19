@@ -92,16 +92,16 @@
 	const NINETALES          ; $53
 	const PIKACHU            ; $54
 	const RAICHU             ; $55
-	const_skip               ; $56
-	const_skip               ; $57
+	const SKARMORY           ; $56
+	const MILTANK            ; $57
 	const DRATINI            ; $58
 	const DRAGONAIR          ; $59
 	const KABUTO             ; $5A
 	const KABUTOPS           ; $5B
 	const HORSEA             ; $5C
 	const SEADRA             ; $5D
-	const_skip               ; $5E
-	const_skip               ; $5F
+	const PINECO             ; $5E
+	const FORRETRESS         ; $5F
 	const SANDSHREW          ; $60
 	const SANDSLASH          ; $61
 	const OMANYTE            ; $62
@@ -133,20 +133,20 @@
 	const METAPOD            ; $7C
 	const BUTTERFREE         ; $7D
 	const MACHAMP            ; $7E
-	const_skip               ; $7F
+	const POLITOED           ; $7F
 	const GOLDUCK            ; $80
 	const HYPNO              ; $81
 	const GOLBAT             ; $82
 	const MEWTWO             ; $83
 	const SNORLAX            ; $84
 	const MAGIKARP           ; $85
-	const_skip               ; $86
-	const_skip               ; $87
+	const SLOWKING           ; $86
+	const MAGBY              ; $87
 	const MUK                ; $88
-	const_skip               ; $89
+	const TYROGUE            ; $89
 	const KINGLER            ; $8A
 	const CLOYSTER           ; $8B
-	const_skip               ; $8C
+	const ELEKID             ; $8C
 	const ELECTRODE          ; $8D
 	const CLEFABLE           ; $8E
 	const WEEZING            ; $8F
@@ -162,13 +162,13 @@
 	const BULBASAUR          ; $99
 	const VENUSAUR           ; $9A
 	const TENTACRUEL         ; $9B
-	const_skip               ; $9C
+	const SMOOCHUM           ; $9C
 	const GOLDEEN            ; $9D
 	const SEAKING            ; $9E
 	const MAREEP             ; $9F
 	const FLAAFFY            ; $A0
 	const AMPHAROS           ; $A1
-	const_skip               ; $A2
+	const HITMONTOP          ; $A2
 	const PONYTA             ; $A3
 	const RAPIDASH           ; $A4
 	const RATTATA            ; $A5
@@ -178,7 +178,7 @@
 	const GEODUDE            ; $A9
 	const PORYGON            ; $AA
 	const AERODACTYL         ; $AB
-	const_skip               ; $AC
+	const KINGDRA            ; $AC
 	const MAGNEMITE          ; $AD
 	const SCIZOR             ; $AE
 	const STEELIX            ; $AF
@@ -187,7 +187,7 @@
 	const CHARMELEON         ; $B2
 	const WARTORTLE          ; $B3
 	const CHARIZARD          ; $B4
-	const_skip               ; $B5
+	const BLISSEY            ; $B5
 	const FOSSIL_KABUTOPS    ; $B6
 	const FOSSIL_AERODACTYL  ; $B7
 	const MON_GHOST          ; $B8
@@ -197,6 +197,7 @@
 	const BELLSPROUT         ; $BC
 	const WEEPINBELL         ; $BD
 	const VICTREEBEL         ; $BE
+	const PORYGON2           ; $BF
 
 DEF NUM_POKEMON_INDEXES EQU const_value - 1
 

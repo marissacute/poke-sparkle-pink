@@ -93,23 +93,24 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const MAX_ETHER     ; $51
 	const ELIXER        ; $52
 	const MAX_ELIXER    ; $53
+	const KINGS_ROCK    ; $54
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs (see scripts/CeladonMartElevator.asm and scripts/SilphCoElevator.asm)
-	const FLOOR_B2F     ; $54
-	const FLOOR_B1F     ; $55
-	const FLOOR_1F      ; $56
-	const FLOOR_2F      ; $57
-	const FLOOR_3F      ; $58
-	const FLOOR_4F      ; $59
-	const FLOOR_5F      ; $5A
-	const FLOOR_6F      ; $5B
-	const FLOOR_7F      ; $5C
-	const FLOOR_8F      ; $5D
-	const FLOOR_9F      ; $5E
-	const FLOOR_10F     ; $5F
-	const FLOOR_11F     ; $60
-	const FLOOR_B4F     ; $61
+	const FLOOR_B2F     ; $55
+	const FLOOR_B1F     ; $56
+	const FLOOR_1F      ; $57
+	const FLOOR_2F      ; $58
+	const FLOOR_3F      ; $59
+	const FLOOR_4F      ; $5A
+	const FLOOR_5F      ; $5B
+	const FLOOR_6F      ; $5C
+	const FLOOR_7F      ; $5D
+	const FLOOR_8F      ; $5E
+	const FLOOR_9F      ; $5F
+	const FLOOR_10F     ; $60
+	const FLOOR_11F     ; $61
+	const FLOOR_B4F     ; $62
 DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 
 	const_next $C4

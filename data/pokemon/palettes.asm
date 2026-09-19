@@ -2,21 +2,25 @@ MonsterPalettes:
 	table_width 1
 
 	db PAL_MEWMON    ; MISSINGNO
-	db PAL_BULBASAUR
-	db PAL_IVYSAUR
-	db PAL_VENUSAUR
-	db PAL_CHARMANDER
-	db PAL_CHARMELEON
-	db PAL_CHARIZARD
-	db PAL_SQUIRTLE
-	db PAL_SQUIRTLE
-	db PAL_BLASTOISE
+	db PAL_JIGGLYPUFF ; Igglybuff
+	db PAL_JIGGLYPUFF
+	db PAL_JIGGLYPUFF
+	db PAL_MAGNEMITE
+	db PAL_MAGNEMITE
+	db PAL_MAGNEMITE ; Magnezone
+	db PAL_DRATINI
+	db PAL_DRAGONAIR
+	db PAL_DRAGONITE
 	db PAL_CATERPIE
 	db PAL_METAPOD
 	db PAL_BUTTERFREE
 	db PAL_WEEDLE
 	db PAL_KAKUNA
 	db PAL_BEEDRILL
+	db PAL_LEDYBA
+	db PAL_LEDYBA ; Ledyba and Ledian have the same colours
+	db PAL_PINECO ; Pineco
+	db PAL_FORRETRESS ; Forretress
 	db PAL_PIDGEY
 	db PAL_PIDGEOTTO
 	db PAL_PIDGEOTTO
@@ -26,6 +30,7 @@ MonsterPalettes:
 	db PAL_FEAROW
 	db PAL_EKANS
 	db PAL_ARBOK
+	db PAL_PIKACHU ; Pichu and Pikachu have the same colours
 	db PAL_PIKACHU
 	db PAL_RAICHU
 	db PAL_SANDSHREW
@@ -36,17 +41,18 @@ MonsterPalettes:
 	db PAL_NIDORAN_M
 	db PAL_NIDORINO
 	db PAL_NIDOKING
+	db PAL_CLEFAIRY ; Cleffa and Clefairy have the same colours
 	db PAL_CLEFAIRY
 	db PAL_CLEFAIRY
 	db PAL_VULPIX
 	db PAL_NINETALES
-	db PAL_JIGGLYPUFF
-	db PAL_JIGGLYPUFF
 	db PAL_ZUBAT
 	db PAL_ZUBAT
+	db PAL_ZUBAT  ; Golbat
 	db PAL_ODDISH
 	db PAL_GLOOM
 	db PAL_VILEPLUME
+	db PAL_BELLOSSOM
 	db PAL_PARAS
 	db PAL_PARASECT
 	db PAL_VENONAT
@@ -64,6 +70,11 @@ MonsterPalettes:
 	db PAL_POLIWAG
 	db PAL_POLIWHIRL
 	db PAL_POLIWRATH
+	db PAL_POLITOED ; Politoed
+	db PAL_WOOPER ; Wooper
+	db PAL_QUAGSIRE ; Quagsire
+	db PAL_PALWOOPER ; Paldean Wooper
+	db PAL_CLODSIRE ; Clodsire
 	db PAL_ABRA
 	db PAL_ABRA
 	db PAL_ABRA
@@ -82,8 +93,7 @@ MonsterPalettes:
 	db PAL_PONYTA
 	db PAL_SLOWPOKE
 	db PAL_SLOWBRO
-	db PAL_MAGNEMITE
-	db PAL_MAGNEMITE
+	db PAL_SLOWKING ; Slowking
 	db PAL_FARFETCH_D
 	db PAL_DODUO
 	db PAL_DODRIO
@@ -96,7 +106,9 @@ MonsterPalettes:
 	db PAL_GASTLY
 	db PAL_HAUNTER
 	db PAL_GENGAR
+	db PAL_MISDREAVUS
 	db PAL_ONIX
+	db PAL_STEELIX
 	db PAL_DROWZEE
 	db PAL_HYPNO
 	db PAL_KRABBY
@@ -107,29 +119,40 @@ MonsterPalettes:
 	db PAL_EXEGGUTOR
 	db PAL_CUBONE
 	db PAL_CUBONE
+	db PAL_TYROGUE ; Tyrogue
 	db PAL_HITMONLEE
 	db PAL_HITMONCHAN
+	db PAL_HITMONTOP ; Hitmontop
 	db PAL_LICKITUNG
 	db PAL_KOFFING
 	db PAL_KOFFING
 	db PAL_RHYHORN
 	db PAL_RHYHORN
 	db PAL_CHANSEY
+	db PAL_BLISSEY ; Blissey
 	db PAL_TANGELA
 	db PAL_KANGASKHAN
 	db PAL_HORSEA
 	db PAL_SEADRA
+	db PAL_KINGDRA ; Kingdra
 	db PAL_GOLDEEN
 	db PAL_SEAKING
 	db PAL_STARYU
 	db PAL_STARMIE
+	db PAL_DUNSPARCE
 	db PAL_MR_MIME
 	db PAL_SCYTHER
+	db PAL_SCIZOR
+	db PAL_SMOOCHUM ; Smoochum
 	db PAL_JYNX
+	db PAL_ELEKID ; Elekid
 	db PAL_ELECTABUZZ
+	db PAL_MAGBY ; Magby
 	db PAL_MAGMAR
 	db PAL_PINSIR
+	db PAL_SKARMORY ; Skarmory
 	db PAL_TAUROS
+	db PAL_MILTANK ; Miltank
 	db PAL_MAGIKARP
 	db PAL_GYARADOS
 	db PAL_LAPRAS
@@ -138,43 +161,34 @@ MonsterPalettes:
 	db PAL_VAPOREON
 	db PAL_JOLTEON
 	db PAL_FLAREON
+	db PAL_ESPEON
+	db PAL_UMBREON
+	db PAL_SYLVEON
 	db PAL_PORYGON
+	db PAL_PORYGON2 ; Porygon2
 	db PAL_OMANYTE
 	db PAL_OMANYTE
 	db PAL_KABUTO
 	db PAL_KABUTO
 	db PAL_AERODACTYL
 	db PAL_SNORLAX
-	db PAL_ARTICUNO
-	db PAL_ZAPDOS
-	db PAL_MOLTRES
-	db PAL_DRATINI
-	db PAL_DRAGONAIR
-	db PAL_DRAGONITE
-	db PAL_MEWTWO
-	db PAL_MEW
-	db PAL_JIGGLYPUFF ; Igglybuff
-	db PAL_MAGNEMITE ; Magnezone
-	db PAL_ESPEON
-	db PAL_UMBREON
-	db PAL_SYLVEON
-	db PAL_PIKACHU ; Pichu and Pikachu have the same colours
-	db PAL_MISDREAVUS
-	db PAL_SCIZOR
-	db PAL_STEELIX
-	db PAL_ZUBAT  ; Golbat
-	db PAL_BELLOSSOM
-	db PAL_DUNSPARCE
-	db PAL_CLEFAIRY ; Cleffa and Clefairy have the same colours
-	db PAL_WOOPER ; Wooper
-	db PAL_PALWOOPER ; Paldean Wooper
-	db PAL_QUAGSIRE ; Quagsire
-	db PAL_CLODSIRE ; Clodsire
 	db PAL_MAREEP
 	db PAL_FLAAFFY
 	db PAL_AMPHAROS
-	db PAL_LEDYBA
-	db PAL_LEDYBA ; Ledyba and Ledian have the same colours
+	db PAL_ARTICUNO
+	db PAL_ZAPDOS
+	db PAL_MOLTRES
+	db PAL_BULBASAUR
+	db PAL_IVYSAUR
+	db PAL_VENUSAUR
+	db PAL_CHARMANDER
+	db PAL_CHARMELEON
+	db PAL_CHARIZARD
+	db PAL_SQUIRTLE
+	db PAL_SQUIRTLE
+	db PAL_BLASTOISE
+	db PAL_MEWTWO
+	db PAL_MEW
 	db PAL_HOOPA ; Hoopa
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO

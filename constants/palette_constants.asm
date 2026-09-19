@@ -257,4 +257,18 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_AMPHAROS      ; $E4
 	const PAL_LEDYBA        ; $E5
 	const PAL_HOOPA         ; $E6
+	const PAL_SKARMORY      ; $E7
+	const PAL_MILTANK       ; $E8
+	const PAL_PINECO        ; $E9
+	const PAL_FORRETRESS    ; $EA
+	const PAL_POLITOED      ; $EB
+	const PAL_SLOWKING      ; $EC
+	const PAL_MAGBY         ; $ED
+	const PAL_TYROGUE       ; $EE
+	const PAL_ELEKID        ; $EF
+	const PAL_SMOOCHUM      ; $F0
+	const PAL_HITMONTOP     ; $F1
+	const PAL_KINGDRA       ; $F2
+	const PAL_BLISSEY       ; $F3
+	const PAL_PORYGON2      ; $F4
 DEF NUM_SGB_PALS EQU const_value

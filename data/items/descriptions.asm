@@ -162,6 +162,7 @@ ItemDescriptions:
 	text_far _MaxEtherDescription
 	text_far _ElixerDescription
 	text_far _MaxElixerDescription
+	text_far _KingsRockDescription
 
 _MasterBallDescription::
 	text "Will catch #MON"
@@ -576,4 +577,9 @@ _ElixerDescription::
 _MaxElixerDescription::
 	text "Fully restores"
 	line "all PP."
+	done
+
+_KingsRockDescription::
+	text "Evolves certain"
+	line "#MON."
 	done

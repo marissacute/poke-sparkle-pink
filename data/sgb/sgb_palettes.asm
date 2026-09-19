@@ -268,5 +268,19 @@ SuperPalettes:
 	RGB 31,31,31, 31,31,02, 21,10,01, 00,00,00 ; PAL_AMPHAROS
 	RGB 31,31,31, 27,06,05, 31,14,04, 00,00,00 ; PAL_LEDYBA ; same as PAL_LEDIAN
 	RGB 31,31,31, 29,28,09, 28,10,17, 00,00,00 ; PAL_HOOPA
+	RGB 31,31,31, 17,18,24, 04,07,10, 00,00,00 ; PAL_SKARMORY (from Skarmory/normal.gbcpal)
+	RGB 31,31,31, 27,15,18, 06,06,13, 00,00,00 ; PAL_MILTANK (from miltank/normal.gbcpal)
+	RGB 31,31,31, 21,15,10, 07,07,14, 00,00,00 ; PAL_PINECO (from pineco/normal.gbcpal)
+	RGB 31,31,31, 17,13,14, 19,06,09, 00,00,00 ; PAL_FORRETRESS (from forretress/normal.gbcpal)
+	RGB 31,31,31, 25,31,04, 07,20,06, 00,00,00 ; PAL_POLITOED (from politoed/normal.gbcpal)
+	RGB 31,31,31, 31,10,31, 30,05,06, 00,00,00 ; PAL_SLOWKING (from slowking/normal.gbcpal)
+	RGB 31,31,31, 31,18,09, 23,09,10, 00,00,00 ; PAL_MAGBY (from magby/normal.gbcpal)
+	RGB 31,31,31, 23,15,18, 17,07,03, 00,00,00 ; PAL_TYROGUE (from tyrogue/normal.gbcpal)
+	RGB 31,31,31, 31,31,05, 15,10,03, 00,00,00 ; PAL_ELEKID (from elekid/normal.gbcpal)
+	RGB 31,31,31, 31,15,04, 20,01,19, 00,00,00 ; PAL_SMOOCHUM (from smoochum/normal.gbcpal)
+	RGB 31,31,31, 26,15,18, 10,10,21, 00,00,00 ; PAL_HITMONTOP (from hitmontop/normal.gbcpal)
+	RGB 31,31,31, 31,10,11, 05,11,31, 00,00,00 ; PAL_KINGDRA (from kingdra/normal.gbcpal)
+	RGB 31,31,31, 28,12,14, 18,05,08, 00,00,00 ; PAL_BLISSEY (from blissey/normal.gbcpal)
+	RGB 31,31,31, 10,12,24, 25,09,10, 00,00,00 ; PAL_PORYGON2 (from porygon2/normal.gbcpal)
 
 	assert_table_length NUM_SGB_PALS

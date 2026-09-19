@@ -86,21 +86,21 @@ CryData::
 	mon_cry SFX_CRY_20, $20, $E0 ; Krabby
 	mon_cry SFX_CRY_0F, $EE, $01 ; Pichu, same as Pikachu for now
 	mon_cry SFX_CRY_0E, $00, $FF ; Clodsire, same as Quagsire
-	mon_cry SFX_CRY_1B, $20, $60 ; Hoopa, placeholder cry
+	mon_cry SFX_CRY_1E, $EE, $FF ; Hoopa, same as Mew for now
 	mon_cry SFX_CRY_24, $4F, $10 ; Vulpix
 	mon_cry SFX_CRY_24, $88, $60 ; Ninetales
 	mon_cry SFX_CRY_0F, $EE, $01 ; Pikachu
 	mon_cry SFX_CRY_09, $EE, $08 ; Raichu
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_18, $40, $A0 ; Skarmory, same as Fearow for now
+	mon_cry SFX_CRY_1D, $11, $40 ; Miltank, same as Tauros for now
 	mon_cry SFX_CRY_0F, $60, $40 ; Dratini
 	mon_cry SFX_CRY_0F, $40, $80 ; Dragonair
 	mon_cry SFX_CRY_16, $BB, $40 ; Kabuto
 	mon_cry SFX_CRY_18, $EE, $01 ; Kabutops
 	mon_cry SFX_CRY_19, $99, $10 ; Horsea
 	mon_cry SFX_CRY_19, $3C, $01 ; Seadra
-	mon_cry SFX_CRY_0F, $40, $C0 ; MissingNo.
-	mon_cry SFX_CRY_0F, $20, $C0 ; MissingNo.
+	mon_cry SFX_CRY_14, $00, $80 ; Pineco, same as Pinsir for now
+	mon_cry SFX_CRY_14, $00, $80 ; Forretress, same as Pinsir for now
 	mon_cry SFX_CRY_00, $20, $40 ; Sandshrew
 	mon_cry SFX_CRY_00, $FF, $FF ; Sandslash
 	mon_cry SFX_CRY_1F, $F0, $01 ; Omanyte
@@ -132,20 +132,20 @@ CryData::
 	mon_cry SFX_CRY_1C, $CC, $01 ; Metapod
 	mon_cry SFX_CRY_16, $77, $40 ; Butterfree
 	mon_cry SFX_CRY_1F, $08, $C0 ; Machamp
-	mon_cry SFX_CRY_11, $20, $10 ; MissingNo.
+	mon_cry SFX_CRY_0E, $77, $60 ; Politoed, same as Poliwhirl
 	mon_cry SFX_CRY_21, $FF, $40 ; Golduck
 	mon_cry SFX_CRY_0D, $EE, $40 ; Hypno
 	mon_cry SFX_CRY_1D, $FA, $80 ; Golbat
 	mon_cry SFX_CRY_1E, $99, $FF ; Mewtwo
 	mon_cry SFX_CRY_05, $55, $01 ; Snorlax
 	mon_cry SFX_CRY_17, $80, $00 ; Magikarp
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_1F, $00, $80 ; Slowking, same as Slowbro for now
+	mon_cry SFX_CRY_04, $FF, $30 ; Magby, same as Magmar for now
 	mon_cry SFX_CRY_07, $EF, $FF ; Muk
-	mon_cry SFX_CRY_0F, $40, $80 ; MissingNo.
+	mon_cry SFX_CRY_0C, $EE, $C0 ; Tyrogue, same as Hitmonchan for now
 	mon_cry SFX_CRY_20, $EE, $E0 ; Kingler
 	mon_cry SFX_CRY_18, $6F, $E0 ; Cloyster
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_06, $8F, $FF ; Elekid, same as Electabuzz for now
 	mon_cry SFX_CRY_06, $A8, $90 ; Electrode
 	mon_cry SFX_CRY_19, $AA, $20 ; Clefable
 	mon_cry SFX_CRY_12, $FF, $FF ; Weezing
@@ -161,13 +161,13 @@ CryData::
 	mon_cry SFX_CRY_0F, $80, $01 ; Bulbasaur
 	mon_cry SFX_CRY_0F, $00, $C0 ; Venusaur
 	mon_cry SFX_CRY_1A, $EE, $FF ; Tentacruel
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_0D, $FF, $FF ; Smoochum, same as Jynx for now
 	mon_cry SFX_CRY_16, $80, $40 ; Goldeen
 	mon_cry SFX_CRY_16, $10, $FF ; Seaking
 	mon_cry SFX_CRY_0F, $EE, $01 ; Mareep, same as Pikachu for now
 	mon_cry SFX_CRY_0F, $00, $80 ; Flaaffy, same as Pikachu for now
 	mon_cry SFX_CRY_0F, $20, $40 ; Ampharos, same as Pikachu for now
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_12, $80, $C0 ; Hitmontop, same as Hitmonlee for now
 	mon_cry SFX_CRY_25, $00, $80 ; Ponyta
 	mon_cry SFX_CRY_25, $20, $C0 ; Rapidash
 	mon_cry SFX_CRY_22, $00, $80 ; Rattata
@@ -177,7 +177,7 @@ CryData::
 	mon_cry SFX_CRY_24, $F0, $10 ; Geodude
 	mon_cry SFX_CRY_25, $AA, $FF ; Porygon
 	mon_cry SFX_CRY_23, $20, $F0 ; Aerodactyl
-	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
+	mon_cry SFX_CRY_19, $3C, $01 ; Kingdra, same as Seadra for now
 	mon_cry SFX_CRY_1C, $80, $60 ; Magnemite
 	mon_cry SFX_CRY_16, $14, $B2 ; Scizor
 	mon_cry SFX_CRY_17, $80, $20 ; Steelix
@@ -186,7 +186,7 @@ CryData::
 	mon_cry SFX_CRY_04, $20, $40 ; Charmeleon
 	mon_cry SFX_CRY_1D, $20, $40 ; Wartortle
 	mon_cry SFX_CRY_04, $00, $80 ; Charizard
-	mon_cry SFX_CRY_1D, $00, $80 ; MissingNo.
+	mon_cry SFX_CRY_14, $0A, $C0 ; Blissey, same as Chansey for now
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
 	mon_cry SFX_CRY_00, $00, $00 ; MissingNo.
@@ -196,4 +196,5 @@ CryData::
 	mon_cry SFX_CRY_21, $55, $01 ; Bellsprout
 	mon_cry SFX_CRY_25, $44, $20 ; Weepinbell
 	mon_cry SFX_CRY_25, $66, $CC ; Victreebel
+	mon_cry SFX_CRY_25, $AA, $FF ; Porygon2, same as Porygon for now
 	assert_table_length NUM_POKEMON_INDEXES
