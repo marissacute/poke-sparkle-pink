@@ -78,6 +78,19 @@ DEF HOF_TEAM_CAPACITY EQU 50
 	const EVOLVE_LEVEL ; 1
 	const EVOLVE_ITEM  ; 2
 	const EVOLVE_TRADE ; 3
+	const EVOLVE_STAT  ; 4
+
+; Stat requirements for EVOLVE_STAT.
+; These must not be 0: the evolution data has no fixed record size, so
+; LearnMoveFromLevelUp and WriteMonMoves find the end of it by scanning for the
+; first 0 byte, and a 0 here would truncate the data. (EVOLVE_ITEM entries use a
+; min level of 1 rather than 0 for the same reason.)
+	const_def 1
+	const ATK_GT_DEF ; 1 ; Attack is higher than Defense
+	const ATK_EQ_DEF ; 2 ; Attack and Defense are equal
+	const ATK_LT_DEF ; 3 ; Attack is lower than Defense
+
+ASSERT ATK_GT_DEF != 0 && ATK_EQ_DEF != 0 && ATK_LT_DEF != 0, "stat requirements must be nonzero"
 
 ; evolution data (see data/pokemon/evos_moves.asm)
 DEF NUM_EVOS_IN_BUFFER EQU 3

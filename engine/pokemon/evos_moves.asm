@@ -82,6 +82,8 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld a, b
 	cp EVOLVE_LEVEL
 	jr z, .checkLevel
+	cp EVOLVE_STAT
+	jp z, .checkStatEvo
 .checkTradeEvo
 	ld a, [wLinkState]
 	cp LINK_STATE_TRADING
@@ -241,6 +243,34 @@ Evolution_PartyMonLoop: ; loop over party mons
 .nextEvoEntry2
 	inc hl
 	jp .evoEntryLoop
+
+; evolution entry: db EVOLVE_STAT, level requirement, stat requirement, species
+; the stat requirement decides which of a mon's several possible evolutions this
+; entry is for, so only the entry that the mon's Attack and Defense match applies
+.checkStatEvo
+	ld a, [hli] ; level requirement
+	ld c, a
+	ld a, [wLoadedMonLevel]
+	cp c ; is the mon's level greater than the evolution requirement?
+	jp c, .nextEvoEntry1 ; if not, go to the next evolution entry
+	ld a, [hli] ; stat requirement
+	ld b, a
+	push hl
+	ld hl, wLoadedMonDefense
+	ld de, wLoadedMonAttack
+	ld c, 2
+	call StringCmp ; zero if Attack and Defense are equal, carry if Attack is lower
+	pop hl
+	ld a, ATK_EQ_DEF
+	jr z, .haveStatRequirement
+	ld a, ATK_GT_DEF
+	jr nc, .haveStatRequirement
+	ld a, ATK_LT_DEF
+.haveStatRequirement
+	cp b ; does the mon's Attack and Defense match this entry?
+	jp nz, .nextEvoEntry2 ; if not, go to the next evolution entry
+	ld a, [wLoadedMonLevel]
+	jp .doEvolution
 
 .done
 	pop de

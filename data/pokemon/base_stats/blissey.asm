@@ -11,7 +11,7 @@
 
 	dw BlisseyPicFront, BlisseyPicBack
 
-	db POUND, GROWL, SOFTBOILED, NO_MOVE ; level 1 learnset
+	db DOUBLESLAP, SING, SOFTBOILED, EGG_BOMB ; level 1 learnset
 	db GROWTH_FAST ; growth rate
 
 	; tm/hm learnset

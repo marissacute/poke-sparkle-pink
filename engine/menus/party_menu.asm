@@ -143,8 +143,13 @@ RedrawPartyMenu_::
 	inc hl
 	inc hl
 	cp EVOLVE_ITEM
-	jr nz, .checkEvolutionsLoop
+	jr z, .checkStoneEvo
+	cp EVOLVE_STAT
+	jr nz, .checkEvolutionsLoop ; level and trade evolution entries are 3 bytes long
+	inc hl ; stat evolution entries are 4 bytes long
+	jr .checkEvolutionsLoop
 ; if it's a stone evolution entry
+.checkStoneEvo
 	dec hl
 	dec hl
 	ld b, [hl]
