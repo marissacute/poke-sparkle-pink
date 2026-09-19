@@ -17,3 +17,13 @@ _LedianDexEntry::
 	next "scattering a"
 	next "glowing powder"
 	dex
+
+_HoopaDexEntry::
+	text "This troublemaker"
+	next "sends people and"
+	next "Pokémon through"
+
+	page "its rings to"
+	next "faraway places"
+	next "just for fun"
+	dex

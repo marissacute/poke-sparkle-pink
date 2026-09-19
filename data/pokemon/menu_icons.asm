@@ -173,4 +173,5 @@ MonPartyData:
 	nybble ICON_MON       ; Ampharos
 	nybble ICON_BUG       ; Ledyba
 	nybble ICON_BUG       ; Ledian
+	nybble ICON_MON       ; Hoopa
 	end_nybble_array NUM_POKEMON

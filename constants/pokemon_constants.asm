@@ -87,7 +87,7 @@
 	const KRABBY             ; $4E
 	const PICHU              ; $4F
 	const CLODSIRE           ; $50
-	const_skip               ; $51
+	const HOOPA              ; $51
 	const VULPIX             ; $52
 	const NINETALES          ; $53
 	const PIKACHU            ; $54

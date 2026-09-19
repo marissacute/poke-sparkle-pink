@@ -175,6 +175,7 @@ MonsterPalettes:
 	db PAL_AMPHAROS
 	db PAL_LEDYBA
 	db PAL_LEDYBA ; Ledyba and Ledian have the same colours
+	db PAL_HOOPA ; Hoopa
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO
 	db PAL_YOUNGSTER

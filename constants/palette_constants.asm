@@ -256,4 +256,5 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_FLAAFFY       ; $E3
 	const PAL_AMPHAROS      ; $E4
 	const PAL_LEDYBA        ; $E5
+	const PAL_HOOPA         ; $E6
 DEF NUM_SGB_PALS EQU const_value
