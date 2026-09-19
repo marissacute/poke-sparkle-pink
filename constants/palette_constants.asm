@@ -271,4 +271,7 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_KINGDRA       ; $F2
 	const PAL_BLISSEY       ; $F3
 	const PAL_PORYGON2      ; $F4
+	const PAL_WHITNEY       ; $F5
+	const PAL_RED           ; $F6
+	const PAL_MARNIE        ; $F7
 DEF NUM_SGB_PALS EQU const_value

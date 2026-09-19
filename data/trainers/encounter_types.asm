@@ -6,6 +6,8 @@ FemaleTrainerList::
 	db OPP_IONO
 	db OPP_CYNTHIA
 	db OPP_JACINTHE
+	db OPP_WHITNEY
+	db OPP_MARNIE
 	db -1 ; end
 
 EvilTrainerList::

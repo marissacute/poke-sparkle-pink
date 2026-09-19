@@ -61,9 +61,12 @@ SetPalFunctions:
 
 ; HAXed to give trainers palettes independently
 ; Also skips the "transform" check, caller does that instead
+; A zero means "no mon", ie. the trainer intro before a mon is out: that's a
+; trainer, not a species, so it gets the trainer's own palette.
 DeterminePaletteID:
 	ld [wPokedexNum], a
 	and a
+	jr z, .trainerPalette
 
 	push bc
 	predef IndexToPokedex ; turn Pokemon ID number into Pokedex number
@@ -71,9 +74,9 @@ DeterminePaletteID:
 
 	ld a, [wPokedexNum]
 	ld hl, MonsterPalettes
-	and a
-	jr nz, .skipDexNumConversion ; Check if trainer?
+	jr .skipDexNumConversion
 
+.trainerPalette
 IF GEN_2_GRAPHICS ; Trainers are given individualized palettes
 	; In link battle, don't rely in wTrainerClass (for some reason it's set to
 	; OPP_GARY, so ignore it)
@@ -87,13 +90,13 @@ IF GEN_2_GRAPHICS ; Trainers are given individualized palettes
 ELSE
 	; Trainers are given a single palette (PAL_MEWMON)
 	; However, check specifically for the player's sprite in linked battle
-	ld e, a
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	ld a, PAL_REDMON
 	ret z
 
-	ld a, e
+	ld a, PAL_MEWMON
+	ret
 ENDC
 
 .skipDexNumConversion
@@ -104,9 +107,12 @@ ENDC
 	ret
 	
 
+; Same deal as DeterminePaletteID: a zero means no mon is out yet, so this is
+; the player's own sprite, which uses the hero palette.
 DetermineBackSpritePaletteID:
 	ld [wPokedexNum], a
 	and a
+	jr z, .noMon
 
 	push bc
 	predef IndexToPokedex ; turn Pokemon ID number into Pokedex number
@@ -114,9 +120,9 @@ DetermineBackSpritePaletteID:
 
 	ld a, [wPokedexNum]
 	ld hl, MonsterPalettes
-	and a
-	jr nz, .getPaletteID ; Check if trainer?
+	jr .getPaletteID
 
+.noMon
 IF GEN_2_GRAPHICS
 	ld a, PAL_HERO
 ELSE

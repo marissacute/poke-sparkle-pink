@@ -1,11 +1,16 @@
+; Trainer sprites don't all live in one bank, so each entry records the bank
+; its pic is in. Only the top four BCD digits of the reward money are read
+; (wTrainerBaseMoney is a dw), so the entry's last byte is free for the bank.
 MACRO pic_money
 	dw \1
-	bcd3 \2
+	dn ((\2) / 100000) % 10, ((\2) / 10000) % 10
+	dn ((\2) / 1000) % 10, ((\2) / 100) % 10
+	db BANK(\1)
 ENDM
 
 TrainerPicAndMoneyPointers::
 	table_width 5
-	; pic pointer, base reward money
+	; pic pointer, base reward money, pic bank
 	; money received after battle = base money × level of last enemy mon
 	pic_money YoungsterPic,    1500
 	pic_money BugCatcherPic,   1000
@@ -59,9 +64,9 @@ TrainerPicAndMoneyPointers::
 	pic_money NPic,            9900
 	pic_money CynthiaPic,      5000
 	pic_money JacinthePic,     7000
-	pic_money YoungsterPic,    1500 ; Marnie
-	pic_money YoungsterPic,    1500 ; Whitney
+	pic_money MarniePic,       1500 ; Marnie
+	pic_money WhitneyPic,      1500 ; Whitney
 	pic_money YoungsterPic,    1500 ; Stephen
-	pic_money YoungsterPic,    1500 ; Red
+	pic_money RedTrainerPic,   1500 ; Red
 	pic_money YoungsterPic,    1500 ; Petrel
 	assert_table_length NUM_TRAINERS

@@ -52,10 +52,10 @@ TrainerDataPointers:
 	dw NData
 	dw CynthiaData
 	dw JacintheData
-	dw YoungsterData ; Marnie
-	dw YoungsterData ; Whitney
+	dw MarnieData ; Marnie
+	dw WhitneyData ; Whitney
 	dw YoungsterData ; Steven
-	dw YoungsterData ; Red
+	dw RedData ; Red
 	dw YoungsterData ; Petrel
 	assert_table_length NUM_TRAINERS
 
@@ -186,7 +186,7 @@ JrTrainerFData:
 	db 23, MEOWTH, 0
 ; Route 10
 	db 20, PICHU, CLEFFA, 0
-	db 21, PIDGEY, PIDGEOTTO, 0
+	db 21, PIDGEY, PIDGEOTTO, 0 ; unused, Route 10's JrTrainerF is Whitney now
 ; Rock Tunnel B1F
 	db 21, JIGGLYPUFF, PIDGEY, MEOWTH, 0
 	db 22, ODDISH, BULBASAUR, 0
@@ -279,14 +279,6 @@ BikerData:
 	db 33, WEEZING, 0
 	db 26, GRIMER, GRIMER, PAL_WOOPER, GRIMER, 0
 ; Route 17
-	; From https://www.smogon.com/smog/issue27/glitch:
-	; 0E:5FC2 is offset of the ending 0 for this first Biker on Route 17.
-	; BaseStats + (BASE_DATA_SIZE) * (000 - 1) = $5FC2;
-	; that's the formula from GetMonHeader for the base stats of mon #000.
-	; (BaseStats = $43DE and BANK(BaseStats) = $0E.)
-	; Finally, PokedexOrder lists 0 as the dex ID for every MissingNo.
-	; The result is that this data gets interpreted as the base stats
-	; for MissingNo: 0, 33, MUK, 0, 29, VOLTORB, VOLTORB, 0, ..., 28, GRIMER, GRIMER.
 	db 28, WEEZING, KOFFING, WEEZING, 0
 	db 33, MUK, 0
 	db 29, VOLTORB, VOLTORB, 0
@@ -781,3 +773,15 @@ CynthiaData:
 JacintheData:
 ; SS Anne 2F Rooms
 	db $FF, 17, CLEFAIRY, 19, SYLVEON, 0
+
+WhitneyData:
+; Route 10
+	db $FF, 18, MEOWTH, 20, SANDSHREW, 21, MILTANK, 0
+
+RedData:
+; not placed on a map yet
+	db $FF, 75, SNORLAX, 73, ESPEON, 77, VENUSAUR, 77, CHARIZARD, 77, BLASTOISE, 81, PIKACHU, 0
+
+MarnieData:
+; Fuchsia Gym
+	db $FF, 33, FEAROW, 33, ARBOK, 35, MUK, 0

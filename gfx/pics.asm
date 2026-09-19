@@ -78,6 +78,13 @@ SECTION "Pics 5", ROMX
 ; Removed 'mon sprites from here
 
 
+SECTION "Trainer Pics 2", ROMX
+
+WhitneyPic::       INCBIN "gfx/gstrainers/whitney.pic"
+RedTrainerPic::    INCBIN "gfx/gstrainers/redtrainer.pic"
+MarniePic::        INCBIN "gfx/gstrainers/marnie.pic"
+
+
 SECTION "Trainer Pics", ROMX
 
 TrainerPics::

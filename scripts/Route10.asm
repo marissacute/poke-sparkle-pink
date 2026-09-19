@@ -20,7 +20,7 @@ Route10_TextPointers:
 	dw_const Route10SuperNerd2Text,     TEXT_ROUTE10_SUPER_NERD2
 	dw_const Route10CooltrainerF1Text,  TEXT_ROUTE10_COOLTRAINER_F1
 	dw_const Route10Hiker2Text,         TEXT_ROUTE10_HIKER2
-	dw_const Route10CooltrainerF2Text,  TEXT_ROUTE10_COOLTRAINER_F2
+	dw_const Route10WhitneyText,        TEXT_ROUTE10_WHITNEY
 	dw_const Route10RockTunnelSignText, TEXT_ROUTE10_ROCKTUNNEL_NORTH_SIGN
 	dw_const PokeCenterSignText,        TEXT_ROUTE10_POKECENTER_SIGN
 	dw_const Route10RockTunnelSignText, TEXT_ROUTE10_ROCKTUNNEL_SOUTH_SIGN
@@ -39,7 +39,7 @@ Route10TrainerHeader3:
 Route10TrainerHeader4:
 	trainer EVENT_BEAT_ROUTE_10_TRAINER_4, 2, Route10Hiker2BattleText, Route10Hiker2EndBattleText, Route10Hiker2AfterBattleText
 Route10TrainerHeader5:
-	trainer EVENT_BEAT_ROUTE_10_TRAINER_5, 2, Route10CooltrainerF2BattleText, Route10CooltrainerF2EndBattleText, Route10CooltrainerF2AfterBattleText
+	trainer EVENT_BEAT_ROUTE_10_TRAINER_5, 2, Route10WhitneyBattleText, Route10WhitneyEndBattleText, Route10WhitneyAfterBattleText
 	db -1 ; end
 
 Route10SuperNerd1Text:
@@ -132,22 +132,22 @@ Route10Hiker2AfterBattleText:
 	text_far _Route10Hiker2AfterBattleText
 	text_end
 
-Route10CooltrainerF2Text:
+Route10WhitneyText:
 	text_asm
 	ld hl, Route10TrainerHeader5
 	call TalkToTrainer
 	jp TextScriptEnd
 
-Route10CooltrainerF2BattleText:
-	text_far _Route10CooltrainerF2BattleText
+Route10WhitneyBattleText:
+	text_far _Route10WhitneyBattleText
 	text_end
 
-Route10CooltrainerF2EndBattleText:
-	text_far _Route10CooltrainerF2EndBattleText
+Route10WhitneyEndBattleText:
+	text_far _Route10WhitneyEndBattleText
 	text_end
 
-Route10CooltrainerF2AfterBattleText:
-	text_far _Route10CooltrainerF2AfterBattleText
+Route10WhitneyAfterBattleText:
+	text_far _Route10WhitneyAfterBattleText
 	text_end
 
 Route10RockTunnelSignText:

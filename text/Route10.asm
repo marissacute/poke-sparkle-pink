@@ -80,23 +80,25 @@ _Route10Hiker2AfterBattleText::
 	line "mountain air!"
 	done
 
-_Route10CooltrainerF2BattleText::
-	text "I'm feeling a bit"
-	line "faint from this"
-	cont "tough hike."
+_Route10WhitneyBattleText::
+	text "My NORMAL-type"
+	line "#MON are just"
+	cont "the cutest! But"
+	cont "they will bowl"
+	cont "you over!"
 	done
 
-_Route10CooltrainerF2EndBattleText::
-	text "I'm"
-	line "not up to it!"
+_Route10WhitneyEndBattleText::
+	text "Waaaaah!"
+	line "You are so mean!"
+	cont "My cute #MON!"
 	prompt
 
-_Route10CooltrainerF2AfterBattleText::
-	text "The #MON here"
-	line "are so chunky!"
-	cont "There should be a"
-	cont "pink one with a"
-	cont "floral pattern!"
+_Route10WhitneyAfterBattleText::
+	text "It's OK, I can"
+	line "handle losing."
+	cont "I just feel sad"
+	cont "for my MILTANK!"
 	done
 
 _Route10RockTunnelSignText::

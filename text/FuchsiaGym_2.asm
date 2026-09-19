@@ -146,28 +146,21 @@ _FuchsiaGymRocker5AfterBattleText::
 	line "to learn!"
 	done
 
-_FuchsiaGymRocker6BattleText::
-	text "Master KOGA comes"
-	line "from a long line"
-	cont "of ninjas!"
-
-	para "What did you"
-	line "descend from?"
+_FuchsiaGymMarnieBattleText::
+	text "You want to have"
+	line "a cheeky #MON"
+	cont "fight?"
 	done
 
-_FuchsiaGymRocker6EndBattleText::
-	text "Dropped"
-	line "my balls!"
+_FuchsiaGymMarnieEndBattleText::
+	text "Ahh! I'm"
+	line "gobsmacked!"
 	prompt
 
-_FuchsiaGymRocker6AfterBattleText::
-	text "Where there is"
-	line "light, there is"
-	cont "shadow!"
-
-	para "Light and shadow!"
-	line "Which do you"
-	cont "choose?"
+_FuchsiaGymMarnieAfterBattleText::
+	text "That was wicked"
+	line "tho! Guess you're"
+	cont "not bad, innit?"
 	done
 
 _FuchsiaGymGymGuideChampInMakingText::

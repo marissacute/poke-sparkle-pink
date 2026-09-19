@@ -22,6 +22,8 @@ GetTrainerInformation::
 	inc de
 	ld a, [hli]
 	ld [de], a
+	ld a, [hli]
+	ld [wTrainerPicBank], a
 	jp BankswitchBack
 .linkBattle
 	ld hl, wTrainerPicPointer
@@ -29,6 +31,9 @@ GetTrainerInformation::
 	ld [hl], e
 	inc hl
 	ld [hl], d
+	inc hl
+	ld a, BANK(RedPicFront)
+	ld [hl], a
 	ret
 
 GetTrainerName::

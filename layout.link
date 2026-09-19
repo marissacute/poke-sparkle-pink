@@ -83,6 +83,7 @@ ROMX $A
 	"Battle Engine 4"
 ROMX $B
 	"Pics 3"
+	"Trainer Pics 2"
 	org $7b7b
 	"Battle Engine 5"
 ROMX $C
