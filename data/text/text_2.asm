@@ -1210,11 +1210,6 @@ _GainedText::
 	line "@"
 	text_end
 
-_WithExpAllText::
-	text "with EXP.ALL,"
-	cont "@"
-	text_end
-
 _BoostedText::
 	text "a boosted"
 	cont "@"

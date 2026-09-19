@@ -28,7 +28,7 @@ IF DEF(_DEBUG)
 	ld de, DebugMenuOptions
 	call PlaceString
 
-	ld a, TEXT_DELAY_MEDIUM
+	ld a, TEXT_DELAY_FAST
 	ld [wOptions], a
 
 	ld a, PAD_A | PAD_B | PAD_START

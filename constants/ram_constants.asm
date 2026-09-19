@@ -31,13 +31,15 @@ DEF BIT_FONT_LOADED EQU 0
 
 ; wOptions
 DEF TEXT_DELAY_MASK EQU %111
+	const_def 4
+	const BIT_EXP_SHARE        ; 4
 	const_def 6
 	const BIT_BATTLE_SHIFT     ; 6
 	const BIT_BATTLE_ANIMATION ; 7
 
-DEF TEXT_DELAY_FAST   EQU %001 ; 1
-DEF TEXT_DELAY_MEDIUM EQU %011 ; 3
-DEF TEXT_DELAY_SLOW   EQU %101 ; 5
+DEF TEXT_DELAY_INSTANT EQU %111 ; letters are printed with no delay at all
+DEF TEXT_DELAY_FAST    EQU %001 ; 1
+DEF TEXT_DELAY_SLOW    EQU %101 ; 5
 
 ; wLetterPrintingDelayFlags
 	const_def

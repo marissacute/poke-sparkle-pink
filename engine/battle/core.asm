@@ -854,6 +854,17 @@ FaintEnemyPokemon:
 	ld [wBattleResult], a
 	ld b, EXP_ALL
 	call IsItemInBag
+	jr nz, .hasExpAll ; the player has EXP.ALL in the bag
+	ld a, [wOptions]
+	bit BIT_EXP_SHARE, a
+	jr z, .noExpAll ; EXP. SHARE is turned off in the options
+.hasExpAll
+	ld a, TRUE
+	or a ; exp all is on
+	jr .checkExpAll
+.noExpAll
+	xor a ; exp all is off
+.checkExpAll
 	push af
 	jr z, .giveExpToMonsThatFought ; if no exp all, then jump
 

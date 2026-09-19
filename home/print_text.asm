@@ -16,6 +16,8 @@ PrintLetterDelay::
 	jr z, .waitOneFrame
 	ld a, [wOptions]
 	and $f
+	cp TEXT_DELAY_INSTANT
+	jr z, .done ; print the letter immediately
 	ldh [hFrameCounter], a
 	jr .checkButtons
 .waitOneFrame

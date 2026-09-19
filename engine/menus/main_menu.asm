@@ -127,7 +127,7 @@ MainMenu:
 InitOptions:
 	ld a, 1 << BIT_FAST_TEXT_DELAY
 	ld [wLetterPrintingDelayFlags], a
-	ld a, TEXT_DELAY_MEDIUM
+	ld a, TEXT_DELAY_FAST
 	ld [wOptions], a
 	ret
 
@@ -459,6 +459,9 @@ DisplayOptionMenu:
 	hlcoord 1, 6
 	ld de, BattleAnimationOptionText
 	call PlaceString
+	hlcoord 1, 11
+	ld de, ExpShareOptionText
+	call PlaceString
 	hlcoord 2, 16
 	ld de, OptionMenuCancelText
 	call PlaceString
@@ -512,6 +515,8 @@ DisplayOptionMenu:
 	jr nz, .upPressed
 	cp 8 ; cursor in Battle Animation section?
 	jr z, .cursorInBattleAnimation
+	cp 13 ; cursor in EXP. SHARE section?
+	jr z, .cursorInExpShare
 	cp 16 ; cursor on Cancel?
 	jr z, .loop
 ; cursor in Text Speed
@@ -520,32 +525,34 @@ DisplayOptionMenu:
 	jp .pressedRightInTextSpeed
 .downPressed
 	cp 16
-	ld b, -13
+	ld b, -13 ; cancel -> text speed
 	ld hl, wOptionsTextSpeedCursorX
 	jr z, .updateMenuVariables
-	ld b, 5  
-	cp 3    ; text speed -> increase by 5, go to next item
+	ld b, 5
+	cp 3    ; text speed -> battle animation
 	inc hl
 	jr z, .updateMenuVariables
-	ld b, 8  
-	cp 8   ; battle animation -> increase by 8, skip one item (battle style)
-	inc hl
+	cp 8    ; battle animation -> EXP. SHARE
 	inc hl
 	jr z, .updateMenuVariables
-	jr .updateMenuVariables ; this shouldn't happen but fallback anyway
+	ld b, 3 ; fallback -> EXP. SHARE -> cancel
+	inc hl
+	jr .updateMenuVariables
 .upPressed
-	cp 8  ; battle animation, decrease by five and load text speed
+	cp 8  ; battle animation -> text speed
 	ld b, -5
 	ld hl, wOptionsTextSpeedCursorX
 	jr z, .updateMenuVariables
-	cp 16  ; cancel, decrease by 8 and load battle animation
-	ld b, -8
+	cp 13 ; EXP. SHARE -> battle animation
+	inc hl
+	jr z, .updateMenuVariables
+	cp 16 ; cancel -> EXP. SHARE
+	ld b, -3
 	inc hl
 	jr z, .updateMenuVariables
 	; fallback -> we are in text speed. increase by 13 to go to cancel
 	ld b, 13
 	inc hl
-	inc hl ; we skip battle style
 .updateMenuVariables
 	add b
 	ld [wTopMenuItemY], a
@@ -558,37 +565,46 @@ DisplayOptionMenu:
 	xor 1 ^ 10 ; toggle between 1 and 10
 	ld [wOptionsBattleAnimCursorX], a
 	jp .eraseOldMenuCursor
+.cursorInExpShare
+	ld a, [wOptionsExpShareCursorX] ; EXP. SHARE cursor X coordinate
+	xor 1 ^ 10 ; toggle between 1 and 10
+	ld [wOptionsExpShareCursorX], a
+	jp .eraseOldMenuCursor
 .pressedLeftInTextSpeed
 	ld a, [wOptionsTextSpeedCursorX] ; text speed cursor X coordinate
 	cp 1
-	jr z, .updateTextSpeedXCoord
-	cp 7
-	jr nz, .fromSlowToMedium
-	sub 6
+	jr z, .updateTextSpeedXCoord ; already on INSTANT
+	cp 9
+	jr nz, .fromSlowToFast
+	sub 8 ; FAST -> INSTANT
 	jr .updateTextSpeedXCoord
-.fromSlowToMedium
-	sub 7
+.fromSlowToFast
+	sub 5 ; SLOW -> FAST
 	jr .updateTextSpeedXCoord
 .pressedRightInTextSpeed
 	ld a, [wOptionsTextSpeedCursorX] ; text speed cursor X coordinate
 	cp 14
-	jr z, .updateTextSpeedXCoord
-	cp 7
-	jr nz, .fromFastToMedium
-	add 7
+	jr z, .updateTextSpeedXCoord ; already on SLOW
+	cp 9
+	jr nz, .fromInstantToFast
+	add 5 ; FAST -> SLOW
 	jr .updateTextSpeedXCoord
-.fromFastToMedium
-	add 6
+.fromInstantToFast
+	add 8 ; INSTANT -> FAST
 .updateTextSpeedXCoord
 	ld [wOptionsTextSpeedCursorX], a ; text speed cursor X coordinate
 	jp .eraseOldMenuCursor
 
 TextSpeedOptionText:
-	db   "TEXT SPEED"
-	next " FAST  MEDIUM SLOW@"
+	db   "TEXT SPEED" 
+	next " INSTANT FAST SLOW@"
 
 BattleAnimationOptionText:
 	db   "BATTLE ANIMATION"
+	next " ON       OFF@"
+
+ExpShareOptionText:
+	db   "EXPERIENCE SHARE"
 	next " ON       OFF@"
 
 OptionMenuCancelText:
@@ -613,9 +629,18 @@ SetOptionsFromCursorPositions:
 	jr z, .battleAnimationOn
 ; battle animation Off
 	set BIT_BATTLE_ANIMATION, d
-	jr .storeOptions
+	jr .checkExpShare
 .battleAnimationOn
 	res BIT_BATTLE_ANIMATION, d
+.checkExpShare
+	ld a, [wOptionsExpShareCursorX] ; EXP. SHARE cursor X coordinate
+	dec a
+	jr z, .expShareOn
+; EXP. SHARE Off
+	res BIT_EXP_SHARE, d
+	jr .storeOptions
+.expShareOn
+	set BIT_EXP_SHARE, d
 .storeOptions
 	ld a, d
 	ld [wOptions], a
@@ -626,7 +651,7 @@ SetCursorPositionsFromOptions:
 	ld hl, TextSpeedOptionData + 1
 	ld a, [wOptions]
 	ld c, a
-	and $3f
+	and TEXT_DELAY_MASK
 	push bc
 	ld de, 2
 	call IsInArray
@@ -644,8 +669,15 @@ SetCursorPositionsFromOptions:
 	ld [wOptionsBattleAnimCursorX], a ; battle animation cursor X coordinate
 	hlcoord 0, 8
 	call .placeUnfilledRightArrow
-	sla c
-	ld a, 10
+	ld a, [wOptions]
+	bit BIT_EXP_SHARE, a
+	ld a, 1 ; On
+	jr nz, .storeExpShareCursorX
+	ld a, 10 ; Off
+.storeExpShareCursorX
+	ld [wOptionsExpShareCursorX], a ; EXP. SHARE cursor X coordinate
+	hlcoord 0, 13
+	call .placeUnfilledRightArrow
 ; cursor in front of Cancel
 	hlcoord 0, 16
 	ld a, 1
@@ -662,9 +694,9 @@ SetCursorPositionsFromOptions:
 ; 01: delay after printing a letter (in frames)
 TextSpeedOptionData:
 	db 14, TEXT_DELAY_SLOW
-	db  7, TEXT_DELAY_MEDIUM
-	db  1, TEXT_DELAY_FAST
-	db  7, -1 ; end (default X coordinate)
+	db  9, TEXT_DELAY_FAST
+	db  1, TEXT_DELAY_INSTANT
+	db  9, -1 ; end (default X coordinate)
 
 CheckForPlayerNameInSRAM:
 ; Check if the player name data in SRAM has a string terminator character

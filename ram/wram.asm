@@ -784,7 +784,7 @@ wTrainerInfoTextBoxNextRowOffset:: db
 NEXTU
 wOptionsTextSpeedCursorX:: db
 wOptionsBattleAnimCursorX:: db
-wOptionsBattleStyleCursorX:: db
+wOptionsExpShareCursorX:: db
 wOptionsCancelCursorX:: db
 
 NEXTU
