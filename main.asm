@@ -125,6 +125,11 @@ INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
 ; reached only via `jpfar` from core.asm, so it can live outside "Battle Engine 7"
 INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
+; also reached only via `callfar`/`jpfar`; these two travel as a pair because
+; draw_hud_pokeball_gfx.asm `call`s LoadPartyPokeballGfx and PlayerHUDHAX/EnemyHUDHAX,
+; which are plain `call`s and so need both files in the same bank
+INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
+INCLUDE "color/draw_hud_pokeball_gfx.asm"
 INCLUDE "engine/menus/pc.asm"
 
 
@@ -207,10 +212,7 @@ SECTION "Battle Engine 7", ROMX
 INCLUDE "data/moves/moves.asm"
 INCLUDE "data/pokemon/base_stats.asm"
 INCLUDE "engine/battle/trainer_ai.asm"
-INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
 INCLUDE "engine/pokemon/evos_moves.asm"
-
-INCLUDE "color/draw_hud_pokeball_gfx.asm"
 
 
 SECTION "Battle Core", ROMX

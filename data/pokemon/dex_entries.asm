@@ -194,6 +194,17 @@ PokedexEntryPointers:
 	dw HoundourDexEntry
 	dw HoundoomDexEntry
 	dw HappinyDexEntry
+	dw AnnihilapeDexEntry
+	dw MismagiusDexEntry
+	dw MimeJrDexEntry
+	dw SneaselDexEntry
+	dw WeavileDexEntry
+	dw LeafeonDexEntry
+	dw GlaceonDexEntry
+	dw MunchlaxDexEntry
+	dw TrapinchDexEntry
+	dw VibravaDexEntry
+	dw FlygonDexEntry
 	assert_table_length NUM_POKEMON_INDEXES
 
 ; string: species name
@@ -1548,3 +1559,80 @@ MissingNoDexEntry:
 	db 10 ; 1.0 m
 	dw 100 ; 10.0 kg
 	db "コメント　さくせいちゅう@" ; コメント作成中 (Comment to be written)
+
+AnnihilapeDexEntry:
+	db "RAGE MONKEY@"
+	db 12
+	dw 560
+	text_far _AnnihilapeDexEntry
+	text_end
+
+MismagiusDexEntry:
+	db "MAGICAL@"
+	db 9
+	dw 44
+	text_far _MismagiusDexEntry
+	text_end
+
+MimeJrDexEntry:
+	db "MIME@"
+	db 6
+	dw 130
+	text_far _MimeJrDexEntry
+	text_end
+
+SneaselDexEntry:
+	db "SHARP CLAW@"
+	db 9
+	dw 280
+	text_far _SneaselDexEntry
+	text_end
+
+WeavileDexEntry:
+	db "SHARP CLAW@"
+	db 11
+	dw 340
+	text_far _WeavileDexEntry
+	text_end
+
+LeafeonDexEntry:
+	db "VERDANT@"
+	db 10
+	dw 255
+	text_far _LeafeonDexEntry
+	text_end
+
+GlaceonDexEntry:
+	db "FRESH SNOW@"
+	db 8
+	dw 259
+	text_far _GlaceonDexEntry
+	text_end
+
+MunchlaxDexEntry:
+	db "BIG EATER@"
+	db 6
+	dw 1050
+	text_far _MunchlaxDexEntry
+	text_end
+
+TrapinchDexEntry:
+	db "ANT PIT@"
+	db 7
+	dw 150
+	text_far _TrapinchDexEntry
+	text_end
+
+VibravaDexEntry:
+	db "VIBRATION@"
+	db 11
+	dw 153
+	text_far _VibravaDexEntry
+	text_end
+
+FlygonDexEntry:
+	db "MYSTIC@"
+	db 20
+	dw 820
+	text_far _FlygonDexEntry
+	text_end

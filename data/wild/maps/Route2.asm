@@ -9,8 +9,8 @@ Route2WildMons:
     db  2, RATTATA
 	db  3, CATERPIE
 	db  3, WEEDLE
-    db  4, LEDIAN
-	db  5, LEDIAN
+    db  4, LEDYBA
+	db  5, LEDYBA
 
 	end_grass_wildmons
 

@@ -18,16 +18,23 @@ GetName::
 	ld a, [wNameListIndex]
 	ld [wNamedObjectIndex], a
 
-	; TM names are separate from item names.
-	; BUG: This applies to all names instead of just items.
-	ASSERT NUM_POKEMON_INDEXES < HM01, \
-		"A bug in GetName will get TM/HM names for Pokémon above ${x:HM01}."
+	; TM names are separate from item names, so an item index at or above HM01
+	; goes to GetMachineName instead. In the original game this test ran for
+	; every name list, which capped species, move and trainer ids below HM01.
+	; Monster names are now exempt from it so that species ids can run past
+	; HM01 for the expanded Pokedex; item lookups divert exactly as before, and
+	; GetItemName already handles machines itself.
 	ASSERT NUM_ATTACKS < HM01, \
 		"A bug in GetName will get TM/HM names for moves above ${x:HM01}."
 	ASSERT NUM_TRAINERS < HM01, \
 		"A bug in GetName will get TM/HM names for trainers above ${x:HM01}."
+	ld a, [wNameListType]
+	cp MONSTER_NAME
+	jr z, .notMachineName
+	ld a, [wNameListIndex]
 	cp HM01
 	jp nc, GetMachineName
+.notMachineName
 
 	ldh a, [hLoadedROMBank]
 	push af

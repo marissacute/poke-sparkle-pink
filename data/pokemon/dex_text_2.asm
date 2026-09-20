@@ -45,7 +45,7 @@ _MiltankDexEntry::
 
 	page "said to be the"
 	next "best drink for"
-	next "sick Pokémon"
+	next "sick #MON"
 	dex
 
 _PinecoDexEntry::
@@ -195,5 +195,115 @@ _HappinyDexEntry::
 
 	page "shaped rock in"
 	next "imitation of"
-	next "CHANSEY."
+	next "CHANSEY"
+	dex
+
+_AnnihilapeDexEntry::
+	text "It imbues its"
+	next "fists with the"
+	next "power of the"
+
+	page "rage that it kept"
+	next "hidden in its"
+	next "heart"
+	dex
+
+_MismagiusDexEntry::
+	text "Its muttered"
+	next "curses can cause"
+	next "awful headaches"
+
+	page "or terrifying"
+	next "visions that"
+	next "torment others"
+	dex
+
+_MimeJrDexEntry::
+	text "It habitually"
+	next "mimics foes. Once"
+	next "mimicked, the foe"
+
+	page "cannot take its"
+	next "eyes off this"
+	next "#MON"
+	dex
+
+_SneaselDexEntry::
+	text "Its paws conceal"
+	next "sharp claws. If"
+	next "attacked, it"
+
+	page "suddenly extends"
+	next "the claws and"
+	next "startles foes"
+	dex
+
+_WeavileDexEntry::
+	text "They live in cold"
+	next "regions, forming"
+	next "groups of four"
+
+	page "or five that hunt"
+	next "prey with"
+	next "coordination"
+	dex
+
+_LeafeonDexEntry::
+	text "It gets its"
+	next "nutrition from"
+	next "photosynthesis."
+
+	page "It lives a quiet"
+	next "life deep in"
+	next "forests"
+	dex
+
+_GlaceonDexEntry::
+	text "It freezes its"
+	next "fur into icicles"
+	next "all spiky and"
+
+	page "sharp, then it"
+	next "tackles its"
+	next "prey"
+	dex
+
+_MunchlaxDexEntry::
+	text "It stores food"
+	next "beneath its fur."
+	next "It might share"
+
+	page "just one bite,"
+	next "but only if it"
+	next "trusts you"
+	dex
+
+_TrapinchDexEntry::
+	text "This #MON"
+	next "lives in arid"
+	next "deserts. It"
+
+	page "patiently awaits"
+	next "prey inside its"
+	next "funnel nest"
+	dex
+
+_VibravaDexEntry::
+	text "It vibrates its"
+	next "wings to send"
+	next "out odd sound"
+
+	page "waves. Trainers"
+	next "who are with it"
+	next "need earplugs"
+	dex
+
+_FlygonDexEntry::
+	text "This #MON"
+	next "hides in the"
+	next "heart of"
+
+	page "sandstorms it"
+	next "creates and"
+	next "seldom shows"
 	dex

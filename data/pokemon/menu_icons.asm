@@ -63,6 +63,7 @@ MonPartyData:
 	nybble ICON_MON       ; Golduck
 	nybble ICON_MON       ; Mankey
 	nybble ICON_MON       ; Primeape
+	nybble ICON_MON       ; Annihilape
 	nybble ICON_QUADRUPED ; Growlithe
 	nybble ICON_QUADRUPED ; Arcanine
 	nybble ICON_MON       ; Poliwag
@@ -107,6 +108,7 @@ MonPartyData:
 	nybble ICON_MON       ; Haunter
 	nybble ICON_MON       ; Gengar
 	nybble ICON_FAIRY     ; Misdreavus
+	nybble ICON_FAIRY     ; Mismagius
 	nybble ICON_SNAKE     ; Onix
 	nybble ICON_SNAKE     ; Steelix
 	nybble ICON_MON       ; Drowzee
@@ -141,9 +143,12 @@ MonPartyData:
 	nybble ICON_HELIX     ; Staryu
 	nybble ICON_HELIX     ; Starmie
 	nybble ICON_SNAKE     ; Dunsparce
+	nybble ICON_MON       ; Mime Jr.
 	nybble ICON_MON       ; Mr.Mime
 	nybble ICON_BUG       ; Scyther
 	nybble ICON_BUG       ; Scizor
+	nybble ICON_QUADRUPED ; Sneasel
+	nybble ICON_QUADRUPED ; Weavile
 	nybble ICON_MON       ; Smoochum
 	nybble ICON_MON       ; Jynx
 	nybble ICON_MON       ; Elekid
@@ -164,6 +169,8 @@ MonPartyData:
 	nybble ICON_QUADRUPED ; Flareon
 	nybble ICON_QUADRUPED ; Espeon
 	nybble ICON_QUADRUPED ; Umbreon
+	nybble ICON_QUADRUPED ; Leafeon
+	nybble ICON_QUADRUPED ; Glaceon
 	nybble ICON_QUADRUPED ; Sylveon
 	nybble ICON_MON       ; Porygon
 	nybble ICON_MON       ; Porygon2
@@ -172,7 +179,11 @@ MonPartyData:
 	nybble ICON_HELIX     ; Kabuto
 	nybble ICON_HELIX     ; Kabutops
 	nybble ICON_BIRD      ; Aerodactyl
+	nybble ICON_MON       ; Munchlax
 	nybble ICON_MON       ; Snorlax
+	nybble ICON_BUG       ; Trapinch
+	nybble ICON_BUG       ; Vibrava
+	nybble ICON_BUG       ; Flygon
 	nybble ICON_QUADRUPED ; Mareep
 	nybble ICON_MON       ; Flaaffy
 	nybble ICON_MON       ; Ampharos

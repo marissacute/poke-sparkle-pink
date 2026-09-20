@@ -201,6 +201,17 @@
 	const HOUNDOUR           ; $C0
 	const HOUNDOOM           ; $C1
 	const HAPPINY            ; $C2
+	const ANNIHILAPE         ; $C3
+	const MISMAGIUS          ; $C4
+	const MIME_JR            ; $C5
+	const SNEASEL            ; $C6
+	const WEAVILE            ; $C7
+	const LEAFEON            ; $C8
+	const GLACEON            ; $C9
+	const MUNCHLAX           ; $CA
+	const TRAPINCH           ; $CB
+	const VIBRAVA            ; $CC
+	const FLYGON             ; $CD
 
 DEF NUM_POKEMON_INDEXES EQU const_value - 1
 

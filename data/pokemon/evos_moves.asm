@@ -205,6 +205,17 @@ EvosMovesPointerTable:
 	dw HoundourEvosMoves
 	dw HoundoomEvosMoves
 	dw HappinyEvosMoves
+	dw AnnihilapeEvosMoves
+	dw MismagiusEvosMoves
+	dw MimeJrEvosMoves
+	dw SneaselEvosMoves
+	dw WeavileEvosMoves
+	dw LeafeonEvosMoves
+	dw GlaceonEvosMoves
+	dw MunchlaxEvosMoves
+	dw TrapinchEvosMoves
+	dw VibravaEvosMoves
+	dw FlygonEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
 RhydonEvosMoves:
@@ -710,7 +721,6 @@ HappinyEvosMoves:
 	db EVOLVE_LEVEL, 20, CHANSEY
 	db 0
 ; Learnset
-	db 6, DEFENSE_CURL
 	db 12, SOFTBOILED
 	db 18, SING
 	db 25, EGG_BOMB
@@ -906,11 +916,10 @@ ElekidEvosMoves:
 	db EVOLVE_LEVEL, 30, ELECTABUZZ
 	db 0
 ; Learnset
-	db 9, THUNDERSHOCK
-	db 17, LIGHT_SCREEN
-	db 25, SCREECH
+	db 20, THUNDERSHOCK
+	db 32, SCREECH
 	db 37, THUNDERPUNCH
-	db 42, LIGHT_SCREEN
+	db 43, LIGHT_SCREEN
 	db 49, THUNDER
 	db 0
 
@@ -1478,6 +1487,8 @@ EeveeEvosMoves:
 	db EVOLVE_ITEM, WATER_STONE, 1, VAPOREON
 	db EVOLVE_ITEM, SUN_STONE, 1, ESPEON
 	db EVOLVE_ITEM, MOON_STONE, 1, UMBREON
+	db EVOLVE_ITEM, LEAF_STONE, 1, LEAFEON
+	db EVOLVE_LEVEL, 30, GLACEON ; TODO - add a method for GLACEON
 	db EVOLVE_LEVEL, 41, SYLVEON
 	db 0
 ; Learnset
@@ -1684,6 +1695,7 @@ DodrioEvosMoves:
 
 PrimeapeEvosMoves:
 ; Evolutions
+	db EVOLVE_LEVEL, 45, ANNIHILAPE
 	db 0
 ; Learnset
 	db 15, KARATE_CHOP
@@ -1967,6 +1979,7 @@ MarowakEvosMoves:
 
 MisdreavusEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, MOON_STONE, 1, MISMAGIUS
 	db 0
 ; Learnset
 	db 12, CONFUSE_RAY
@@ -2494,4 +2507,148 @@ HoundoomEvosMoves:
 	db 30, FEINT_ATTACK
 	db 41, FLAMETHROWER
 	db 51, CRUNCH
+	db 0
+
+AnnihilapeEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 5, FURY_SWIPES
+	db 8, LOW_KICK
+	db 12, SEISMIC_TOSS
+	db 17, KARATE_CHOP
+	db 22, CROSS_CHOP
+	db 30, THRASH
+	db 39, SHADOW_BALL
+	db 44, SCREECH
+	db 0
+
+MismagiusEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 19, FAIRY_WIND
+	db 27, PSYBEAM
+	db 33, SHADOW_BALL
+	db 43, MOONBLAST
+	db 50, PSYCHIC_M
+	db 0
+
+MimeJrEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 20, MR_MIME
+	db 0
+; Learnset
+	db 10, MIST
+	db 12, CONFUSION
+	db 15, DOUBLESLAP
+	db 20, FAIRY_WIND
+	db 28, PSYBEAM
+	db 32, MIMIC
+	db 36, LIGHT_SCREEN
+	db 44, PSYCHIC_M
+	db 0
+
+SneaselEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 40, WEAVILE
+	db 0
+; Learnset
+	db 6, QUICK_ATTACK
+	db 12, FURY_SWIPES
+	db 18, METAL_CLAW
+	db 24, ICE_PUNCH
+	db 30, FEINT_ATTACK
+	db 36, SLASH
+	db 42, AGILITY
+	db 48, SCREECH
+	db 0
+
+WeavileEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 18, METAL_CLAW
+	db 24, ICE_PUNCH
+	db 30, FURY_SWIPES
+	db 42, CRUNCH
+	db 48, AGILITY
+	db 54, SCREECH
+	db 60, NIGHT_SLASH
+	db 0
+
+LeafeonEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 5, SAND_ATTACK
+	db 10, QUICK_ATTACK
+	db 15, RAZOR_LEAF
+	db 20, LEECH_SEED
+	db 25, MEGA_DRAIN
+	db 45, SWORDS_DANCE
+	db 50, SOLARBEAM
+	db 0
+
+GlaceonEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 5, SAND_ATTACK
+	db 10, QUICK_ATTACK
+	db 20, AURORA_BEAM
+	db 25, BITE
+	db 30, ICE_PUNCH
+	db 45, ICE_BEAM
+	db 50, BLIZZARD
+	db 0
+
+MunchlaxEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, SNORLAX
+	db 0
+; Learnset
+	db 12, BITE
+	db 20, SCREECH
+	db 28, BODY_SLAM
+	db 36, AMNESIA
+	db 40, METRONOME
+	db 48, REST
+	db 0
+
+TrapinchEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 35, VIBRAVA
+	db 0
+; Learnset
+	db 12, DIG
+	db 20, ROCK_SLIDE
+	db 28, CRUNCH
+	db 36, EARTHQUAKE
+	db 48, FISSURE
+	db 0
+
+VibravaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 45, FLYGON
+	db 0
+; Learnset
+	db 12, DIG
+	db 20, WING_ATTACK
+	db 24, SCREECH
+	db 32, SUPERSONIC
+	db 44, EARTHQUAKE
+	db 50, DRAGON_SLAM
+	db 0
+
+FlygonEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 12, CRUNCH
+	db 20, WING_ATTACK
+	db 24, SCREECH
+	db 32, DRAGON_RAGE
+	db 44, EARTHQUAKE
+	db 52, HYPER_BEAM
 	db 0

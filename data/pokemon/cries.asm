@@ -200,4 +200,15 @@ CryData::
 	mon_cry SFX_CRY_1F, $20, $40 ; Houndour, same as Growlithe for now
 	mon_cry SFX_CRY_15, $00, $80 ; Houndoom, same as Arcanine for now
 	mon_cry SFX_CRY_14, $0A, $C0 ; Happiny, same as Chansey for now
+	mon_cry SFX_CRY_0A, $AF, $40 ; Annihilape, same as Primeape for now
+	mon_cry SFX_CRY_19, $4F, $3D ; Mismagius, same as Misdreavus for now
+	mon_cry SFX_CRY_20, $08, $40 ; MimeJr, same as Mr.Mime for now
+	mon_cry SFX_CRY_19, $99, $FF ; Sneasel, same as Persian for now
+	mon_cry SFX_CRY_19, $99, $FF ; Weavile, same as Persian for now
+	mon_cry SFX_CRY_1A, $88, $60 ; Leafeon, same as Eevee for now
+	mon_cry SFX_CRY_1A, $88, $60 ; Glaceon, same as Eevee for now
+	mon_cry SFX_CRY_05, $55, $01 ; Munchlax, same as Snorlax for now
+	mon_cry SFX_CRY_00, $20, $40 ; Trapinch, same as Sandshrew for now
+	mon_cry SFX_CRY_00, $20, $40 ; Vibrava, same as Sandshrew for now
+	mon_cry SFX_CRY_00, $20, $40 ; Flygon, same as Sandshrew for now
 	assert_table_length NUM_POKEMON_INDEXES

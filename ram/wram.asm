@@ -2050,7 +2050,12 @@ wRoute18Gate1FCurScript:: db
 	ds 78
 wGameProgressFlagsEnd::
 
-	ds 56
+; The 56 bytes of padding that used to sit here were dropped on 2026-09-20 to
+; make room for the expanded Pokedex: wPokedexOwned/wPokedexSeen are
+; `flag_array NUM_POKEMON`, so going past 192 species grows each of them by 2
+; bytes, and WRAM0 was full to the byte (the stack is pinned at $df00). The
+; filler only preserved the original game's RAM addresses, and this array ends
+; 56 bytes earlier, so nothing that indexes wGameProgressFlags is affected.
 
 wObtainedHiddenItemsFlags:: flag_array MAX_HIDDEN_ITEMS
 
