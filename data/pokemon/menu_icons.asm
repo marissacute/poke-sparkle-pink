@@ -128,6 +128,7 @@ MonPartyData:
 	nybble ICON_MON       ; Weezing
 	nybble ICON_QUADRUPED ; Rhyhorn
 	nybble ICON_MON       ; Rhydon
+	nybble ICON_FAIRY     ; Happiny
 	nybble ICON_FAIRY     ; Chansey
 	nybble ICON_FAIRY     ; Blissey
 	nybble ICON_GRASS     ; Tangela

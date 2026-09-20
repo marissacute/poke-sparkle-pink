@@ -199,4 +199,5 @@ CryData::
 	mon_cry SFX_CRY_25, $AA, $FF ; Porygon2, same as Porygon for now
 	mon_cry SFX_CRY_1F, $20, $40 ; Houndour, same as Growlithe for now
 	mon_cry SFX_CRY_15, $00, $80 ; Houndoom, same as Arcanine for now
+	mon_cry SFX_CRY_14, $0A, $C0 ; Happiny, same as Chansey for now
 	assert_table_length NUM_POKEMON_INDEXES

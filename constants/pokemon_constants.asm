@@ -200,6 +200,7 @@
 	const PORYGON2           ; $BF
 	const HOUNDOUR           ; $C0
 	const HOUNDOOM           ; $C1
+	const HAPPINY            ; $C2
 
 DEF NUM_POKEMON_INDEXES EQU const_value - 1
 

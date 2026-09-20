@@ -130,6 +130,7 @@ MonsterPalettes:
 	db PAL_KOFFING
 	db PAL_RHYHORN
 	db PAL_RHYHORN
+	db PAL_HAPPINY
 	db PAL_CHANSEY
 	db PAL_BLISSEY ; Blissey
 	db PAL_TANGELA

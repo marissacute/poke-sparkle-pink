@@ -187,3 +187,13 @@ _HoundoomDexEntry::
 	next "will never go"
 	next "away"
 	dex
+
+_HappinyDexEntry::
+	text "It loves round"
+	next "white things. It"
+	next "carries an egg-"
+
+	page "shaped rock in"
+	next "imitation of"
+	next "CHANSEY."
+	dex

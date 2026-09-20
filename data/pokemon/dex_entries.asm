@@ -193,6 +193,7 @@ PokedexEntryPointers:
 	dw Porygon2DexEntry
 	dw HoundourDexEntry
 	dw HoundoomDexEntry
+	dw HappinyDexEntry
 	assert_table_length NUM_POKEMON_INDEXES
 
 ; string: species name
@@ -1533,6 +1534,13 @@ HoundoomDexEntry:
 	db 14
 	dw 350
 	text_far _HoundoomDexEntry
+	text_end
+
+HappinyDexEntry:
+	db "PLAYHOUSE@"
+	db 6
+	dw 244
+	text_far _HappinyDexEntry
 	text_end
 
 MissingNoDexEntry:

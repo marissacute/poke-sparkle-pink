@@ -193,4 +193,5 @@ PokedexOrder:
 	db DEX_PORYGON2
 	db DEX_HOUNDOUR
 	db DEX_HOUNDOOM
+	db DEX_HAPPINY
 	assert_table_length NUM_POKEMON_INDEXES

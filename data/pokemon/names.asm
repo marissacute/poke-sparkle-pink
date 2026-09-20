@@ -193,4 +193,5 @@ MonsterNames::
 	dname "PORYGON2"
 	dname "HOUNDOUR"
 	dname "HOUNDOOM"
+	dname "HAPPINY"
 	assert_table_length NUM_POKEMON_INDEXES

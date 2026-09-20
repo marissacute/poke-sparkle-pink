@@ -204,6 +204,7 @@ EvosMovesPointerTable:
 	dw Porygon2EvosMoves
 	dw HoundourEvosMoves
 	dw HoundoomEvosMoves
+	dw HappinyEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
 RhydonEvosMoves:
@@ -703,6 +704,22 @@ GravelerEvosMoves:
 	db 36, EARTHQUAKE
 	db 43, EXPLOSION
 	db 0
+
+HappinyEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 20, CHANSEY
+	db 0
+; Learnset
+	db 6, DEFENSE_CURL
+	db 12, SOFTBOILED
+	db 18, SING
+	db 25, EGG_BOMB
+	db 33, MINIMIZE
+	db 41, DEFENSE_CURL
+	db 45, LIGHT_SCREEN
+	db 51, DOUBLE_EDGE
+	db 0
+
 
 ChanseyEvosMoves:
 ; Evolutions
