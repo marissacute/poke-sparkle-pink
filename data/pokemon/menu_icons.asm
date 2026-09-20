@@ -99,6 +99,8 @@ MonPartyData:
 	nybble ICON_WATER     ; Dewgong
 	nybble ICON_MON       ; Grimer
 	nybble ICON_MON       ; Muk
+	nybble ICON_QUADRUPED ; Houndour
+	nybble ICON_QUADRUPED ; Houndoom
 	nybble ICON_HELIX     ; Shellder
 	nybble ICON_HELIX     ; Cloyster
 	nybble ICON_MON       ; Gastly

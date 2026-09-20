@@ -167,3 +167,23 @@ _Porygon2DexEntry::
 	next "travel. It can"
 	next "work in a void"
 	dex
+
+_HoundourDexEntry::
+	text "It uses different"
+	next "kinds of cries for"
+	next "communicating with"
+
+	page "others of its kind"
+	next "and for pursuing"
+	next "its prey"
+	dex
+
+_HoundoomDexEntry::
+	text "If you are burned"
+	next "by the flames it"
+	next "shoots from its"
+
+	page "mouth, the pain"
+	next "will never go"
+	next "away"
+	dex

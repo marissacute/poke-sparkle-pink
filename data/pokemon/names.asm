@@ -191,4 +191,6 @@ MonsterNames::
 	dname "WEEPINBELL"
 	dname "VICTREEBEL"
 	dname "PORYGON2"
+	dname "HOUNDOUR"
+	dname "HOUNDOOM"
 	assert_table_length NUM_POKEMON_INDEXES

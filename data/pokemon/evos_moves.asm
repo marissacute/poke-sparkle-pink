@@ -202,6 +202,8 @@ EvosMovesPointerTable:
 	dw WeepinbellEvosMoves
 	dw VictreebelEvosMoves
 	dw Porygon2EvosMoves
+	dw HoundourEvosMoves
+	dw HoundoomEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
 RhydonEvosMoves:
@@ -2450,4 +2452,29 @@ VictreebelEvosMoves:
 	db 13, WRAP
 	db 15, POISONPOWDER
 	db 18, SLEEP_POWDER
+	db 0
+
+HoundourEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 24, HOUNDOOM
+	db 0
+; Learnset
+	db 7, ROAR
+	db 13, SMOG
+	db 20, BITE
+	db 27, FEINT_ATTACK
+	db 35, FLAMETHROWER
+	db 43, CRUNCH
+	db 0
+
+HoundoomEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 7, ROAR
+	db 13, SMOG
+	db 20, BITE
+	db 30, FEINT_ATTACK
+	db 41, FLAMETHROWER
+	db 51, CRUNCH
 	db 0

@@ -123,6 +123,8 @@ INCLUDE "engine/battle/move_effects/substitute.asm"
 INCLUDE "engine/battle/move_effects/heal.asm"
 INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
+; reached only via `jpfar` from core.asm, so it can live outside "Battle Engine 7"
+INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
 INCLUDE "engine/menus/pc.asm"
 
 
@@ -204,7 +206,6 @@ SECTION "Battle Engine 7", ROMX
 
 INCLUDE "data/moves/moves.asm"
 INCLUDE "data/pokemon/base_stats.asm"
-INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
 INCLUDE "engine/battle/trainer_ai.asm"
 INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
 INCLUDE "engine/pokemon/evos_moves.asm"

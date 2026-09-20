@@ -191,6 +191,8 @@ PokedexEntryPointers:
 	dw WeepinbellDexEntry
 	dw VictreebelDexEntry
 	dw Porygon2DexEntry
+	dw HoundourDexEntry
+	dw HoundoomDexEntry
 	assert_table_length NUM_POKEMON_INDEXES
 
 ; string: species name
@@ -1517,6 +1519,20 @@ Porygon2DexEntry:
 	db 6
 	dw 325
 	text_far _Porygon2DexEntry
+	text_end
+
+HoundourDexEntry:
+	db "DARK@"
+	db 6
+	dw 108
+	text_far _HoundourDexEntry
+	text_end
+
+HoundoomDexEntry:
+	db "DARK@"
+	db 14
+	dw 350
+	text_far _HoundoomDexEntry
 	text_end
 
 MissingNoDexEntry:
