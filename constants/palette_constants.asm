@@ -277,4 +277,5 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_HOUNDOUR      ; $F8
 	const PAL_HOUNDOOM      ; $F9
 	const PAL_HAPPINY       ; $FA
+	const PAL_MUNCHLAX      ; $FB
 DEF NUM_SGB_PALS EQU const_value

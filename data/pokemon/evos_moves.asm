@@ -1874,6 +1874,21 @@ MewtwoEvosMoves:
 	db 81, AMNESIA
 	db 0
 
+MunchlaxEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, SNORLAX
+	db 0
+; Learnset
+	db 8, HEADBUTT
+	db 14, AMNESIA
+	db 19, METRONOME
+	db 25, REST
+	db 32, BODY_SLAM
+	db 38, HARDEN
+	db 43, DOUBLE_EDGE
+	db 51, HYPER_BEAM
+	db 0
+
 SnorlaxEvosMoves:
 ; Evolutions
 	db 0
@@ -2601,19 +2616,6 @@ GlaceonEvosMoves:
 	db 30, ICE_PUNCH
 	db 45, ICE_BEAM
 	db 50, BLIZZARD
-	db 0
-
-MunchlaxEvosMoves:
-; Evolutions
-	db EVOLVE_LEVEL, 30, SNORLAX
-	db 0
-; Learnset
-	db 12, BITE
-	db 20, SCREECH
-	db 28, BODY_SLAM
-	db 36, AMNESIA
-	db 40, METRONOME
-	db 48, REST
 	db 0
 
 TrapinchEvosMoves:

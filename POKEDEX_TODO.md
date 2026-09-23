@@ -24,7 +24,7 @@ tracked by git yet.
 - [ ] Leafeon — `gfx/pokemon/gsfront/leafeon.png`, `gsback/leafeonb.png`
 - [ ] Mime Jr. — `gfx/pokemon/gsfront/mimejr.png`, `gsback/mimejrb.png`
 - [ ] Mismagius — `gfx/pokemon/gsfront/mismagius.png`, `gsback/mismagiusb.png`
-- [ ] Munchlax — `gfx/pokemon/gsfront/munchlax.png`, `gsback/munchlaxb.png`
+- [x] Munchlax — `gfx/pokemon/gsfront/munchlax.png`, `gsback/munchlaxb.png`
 - [ ] Sneasel — `gfx/pokemon/gsfront/sneasel.png`, `gsback/sneaselb.png`
 - [ ] Trapinch — `gfx/pokemon/gsfront/trapinch.png`, `gsback/trapinchb.png`
 - [ ] Vibrava — `gfx/pokemon/gsfront/vibrava.png`, `gsback/vibravab.png`
