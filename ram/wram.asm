@@ -412,10 +412,9 @@ wSimulatedJoypadStatesEnd::
 
 NEXTU
 wUnusedFlag::
-; exp gained from a fainted enemy mon is divided by this before it is given to
-; every party mon that is gaining exp. the battle code sets it to the number of
-; mons sharing the exp, doubled when the exp share splits the exp in half
-wExpShareDivisor:: db
+; this byte is wAnimationType while a battle is running, so nothing here may
+; hold state across a battle animation
+wBoostExpByExpAll:: db
 
 	ds 59
 
@@ -1242,7 +1241,9 @@ wTrainerName:: ds 13
 ; trainer battle, this is 2
 wIsInBattle:: db
 
-; flags that indicate which party members should be be given exp when GainExperience is called
+; flags that indicate which party members should be be given exp when GainExperience is called.
+; bits 0-5 are one flag per party member; bit 7 means the exp is being halved
+; (the exp share splits it, so each half is divided on its own)
 wPartyGainExpFlags:: flag_array PARTY_LENGTH
 
 ; in a wild battle, this is the species of pokemon
@@ -2059,6 +2060,13 @@ wGameProgressFlagsEnd::
 ; bytes, and WRAM0 was full to the byte (the stack is pinned at $df00). The
 ; filler only preserved the original game's RAM addresses, and this array ends
 ; 56 bytes earlier, so nothing that indexes wGameProgressFlags is affected.
+;
+; This is inside the saved main data (wMainDataStart..wMainDataEnd), so the
+; spare bytes below are NOT free for new variables: the save blocks are laid
+; out one after another in SRAM (sMainData, then sPartyData), so growing this
+; region by a byte shifts the *party* by a byte and every saved Pokemon comes
+; back misaligned. Anything that needs a new byte has to go outside the saved
+; ranges, or reuse bits in one of these battle variables.
 
 wObtainedHiddenItemsFlags:: flag_array MAX_HIDDEN_ITEMS
 

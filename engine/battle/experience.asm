@@ -1,7 +1,8 @@
 GainExperience:
 ; give the exp gained from a fainted enemy mon to every party mon that has a
-; flag set in wPartyGainExpFlags. the caller sets wExpShareDivisor to the
-; number of mons sharing the exp, and every one of them gets an equal share
+; flag set in wPartyGainExpFlags, splitting it evenly between them. bit 7 of
+; the flags says the exp is halved, which the exp share sets so that the mons
+; that fought and the ones that sat the battle out each share one half
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	ret z ; return if link battle
@@ -306,23 +307,58 @@ ENDC
 	pop bc
 	predef_jump FlagActionPredef ; set the fought current enemy flag for the mon that is currently out
 
+; returns in a how many shares the gained exp is being divided into: the number
+; of party members with a gain exp flag, doubled when the exp is being halved by
+; the exp share. preserves hl, de and bc, which the callers are using
+GetExpShareDivisor:
+	push hl
+	push de
+	push bc
+	ld a, [wPartyGainExpFlags]
+	and (1 << PARTY_LENGTH) - 1 ; only the party members' flags are shares
+	ld e, a
+	xor a
+	ld c, PARTY_LENGTH
+.countSetBitsLoop ; loop to count set bits in wPartyGainExpFlags
+	srl e
+	adc a, 0
+	dec c
+	jr nz, .countSetBitsLoop
+	and a
+	jr nz, .gotCount
+	inc a ; never 0, so that it is safe to divide by
+.gotCount
+	ld d, a
+	ld a, [wPartyGainExpFlags]
+	bit 7, a ; is the exp being halved?
+	ld a, d
+	jr z, .done
+	add a ; the share is halved: it is split into twice as many
+.done
+	pop bc
+	pop de
+	pop hl
+	ret
+
 ; divide the enemy mon's base stat in a by the number of mons sharing the exp,
 ; rounding to the nearest point so that no stat exp is lost
 DivideStatExpShare:
 	ldh [hDividend + 1], a
 	xor a
 	ldh [hDividend], a
-	ld a, [wExpShareDivisor]
-	cp 1
-	jr z, .noShare ; the mon gets the whole base stat
+	call GetExpShareDivisor
+	cp 2
+	jr c, .noShare ; a single share: the mon gets the whole base stat
 	ldh [hDivisor], a
 	ld b, 2
 	call Divide
 	ldh a, [hRemainder]
 	add a ; is the remainder at least half of the divisor?
+	jr nc, .remainderFits
+	ld a, $ff ; twice the remainder overflowed, so it is certainly over half
+.remainderFits
 	ld b, a
-	ld a, [wExpShareDivisor]
-	jr c, .roundUp
+	call GetExpShareDivisor
 	cp b
 	jr c, .roundUp ; the remainder is more than half
 	jr z, .roundUp ; the remainder is exactly half
@@ -339,17 +375,19 @@ DivideStatExpShare:
 ; divide the exp the enemy mon is worth, in hQuotient, by the number of mons
 ; sharing it, rounding to the nearest point so that no exp is lost
 DivideExpShare:
-	ld a, [wExpShareDivisor]
-	cp 1
-	ret z ; the mon gets the whole exp
+	call GetExpShareDivisor
+	cp 2
+	ret c ; a single share: the mon gets the whole exp
 	ldh [hDivisor], a
 	ld b, 4
 	call Divide
 	ldh a, [hRemainder]
 	add a ; is the remainder at least half of the divisor?
+	jr nc, .remainderFits
+	ld a, $ff ; twice the remainder overflowed, so it is certainly over half
+.remainderFits
 	ld b, a
-	ld a, [wExpShareDivisor]
-	jr c, .roundUp
+	call GetExpShareDivisor
 	cp b
 	jr c, .roundUp ; the remainder is more than half
 	jr z, .roundUp ; the remainder is exactly half

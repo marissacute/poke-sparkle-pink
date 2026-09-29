@@ -865,17 +865,19 @@ FaintEnemyPokemon:
 	call GetPartyMonsThatSatOut
 	and a
 	jr z, .giveExpToMonsThatFought ; everybody fought, so they get the whole amount
+	set 7, a ; the exp is halved, so each half is shared out on its own
 	push af ; save the flags of the mons that sat the battle out
-	call SetHalvedExpShareDivisor
+	ld hl, wPartyGainExpFlags
+	set 7, [hl] ; the mons that fought only share half of the exp
 	callfar GainExperience
 	pop af
 	ld [wPartyGainExpFlags], a
-	call SetHalvedExpShareDivisor
 	jpfar GainExperience
 
 ; give exp (divided evenly) to the mons that actually fought in battle against the enemy mon that has fainted
 .giveExpToMonsThatFought
-	call SetExpShareDivisor
+	ld hl, wPartyGainExpFlags
+	res 7, [hl] ; the whole amount is shared out, so it is not halved
 	jpfar GainExperience
 
 ; build the flags of the party members that sat the battle out: the ones that
@@ -899,7 +901,7 @@ GetPartyMonsAlive:
 	ld a, [wPartyCount]
 	dec a
 	call AddNTimes ; go to the last party mon
-	ld de, -PARTYMON_STRUCT_LENGTH
+	ld de, -(PARTYMON_STRUCT_LENGTH + 1) ; from this mon's HP low byte back to the previous mon's HP
 	ld b, 0 ; flags
 	ld a, [wPartyCount]
 	ld c, a
@@ -914,38 +916,6 @@ GetPartyMonsAlive:
 	dec c
 	jr nz, .nextMon
 	ld a, b
-	ret
-
-; set wExpShareDivisor to the number of party members that are sharing the exp
-; gained from a fainted enemy mon
-SetExpShareDivisor:
-	call CountPartyMonsGainingExp
-	ld [wExpShareDivisor], a
-	ret
-
-; as above, but for the exp share, which splits the exp in half, so there are
-; twice as many shares to divide each half into
-SetHalvedExpShareDivisor:
-	call CountPartyMonsGainingExp
-	add a
-	ld [wExpShareDivisor], a
-	ret
-
-; count the party members that are gaining exp, i.e. the flags set in
-; wPartyGainExpFlags. the result is at least 1, so that it is safe to divide by
-CountPartyMonsGainingExp:
-	ld a, [wPartyGainExpFlags]
-	ld b, a
-	xor a
-	ld c, 8
-.countSetBitsLoop ; loop to count set bits in wPartyGainExpFlags
-	srl b
-	adc a, 0
-	dec c
-	jr nz, .countSetBitsLoop
-	and a
-	ret nz
-	inc a
 	ret
 
 EnemyMonFaintedText:
@@ -1792,6 +1762,7 @@ SendOutMon:
 	ld hl, wBattleAndStartSavedMenuItem
 	ld [hli], a
 	ld [hl], a
+	ld [wAnimationType], a ; don't let the last move's screen shake play when this mon is sent out
 	ld [wDamageMultipliers], a
 	ld [wPlayerMoveNum], a
 	ld hl, wPlayerUsedMove

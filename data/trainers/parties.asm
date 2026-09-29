@@ -157,7 +157,7 @@ SailorData:
 
 JrTrainerMData:
 ; Pewter Gym
-	db 11, DIGLETT, SANDSHREW, 0
+	db 11, GEODUDE, SANDSHREW, 0
 ; Route 24/Route 25
 	db 14, RATTATA, EKANS, 0
 ; Route 24
@@ -641,7 +641,7 @@ BrunoData:
 	db $FF, 53, ONIX, 55, HITMONCHAN, 55, HITMONLEE, 56, RHYDON, 58, MACHAMP, 0
 
 BrockData:
-	db $FF, 12, GEODUDE, 14, ONIX, 0
+	db $FF, 12, OMANYTE, 14, ONIX, 0
     db $FF, 62, OMASTAR, 63, ONIX, 63, KABUTOPS, 62, GOLEM, 64, DUGTRIO, 64, AERODACTYL, 0
 
 MistyData:
