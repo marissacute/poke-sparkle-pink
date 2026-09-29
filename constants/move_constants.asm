@@ -184,7 +184,8 @@
 	const CROSS_CHOP   ; b0
 	const SHADOW_BALL  ; b1
 	const WATER_PULSE  ; b2
-	const STRUGGLE     
+	const BUG_BITE     ; b3
+	const STRUGGLE
 DEF NUM_ATTACKS EQU const_value - 1
 
 DEF CANNOT_MOVE EQU $ff

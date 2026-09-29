@@ -177,8 +177,9 @@ AttackAnimationPointers:
 	dw FuryCutterAnim
 	dw CrossChopAnim
 	dw ShadowBallAnim
-	dw StruggleAnim
 	dw WaterPulseAnim
+	dw BugBiteAnim
+	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
 	dw EnemyFlashAnim
@@ -466,6 +467,7 @@ LeerAnim:
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
+BugBiteAnim:
 CrunchAnim:
 BiteAnim:
 	battle_anim BITE, SUBANIM_0_STAR_THRICE, 0, 8

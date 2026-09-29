@@ -11,7 +11,7 @@
 
 	dw ForretressPicFront, ForretressPicBack
 
-	db TACKLE, HARDEN, SELFDESTRUCT, NO_MOVE ; level 1 learnset
+	db TACKLE, HARDEN, BUG_BITE, SELFDESTRUCT ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

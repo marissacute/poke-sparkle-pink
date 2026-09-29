@@ -857,53 +857,96 @@ FaintEnemyPokemon:
 	jr nz, .hasExpAll ; the player has EXP.ALL in the bag
 	ld a, [wOptions]
 	bit BIT_EXP_SHARE, a
-	jr z, .noExpAll ; EXP. SHARE is turned off in the options
+	jr z, .giveExpToMonsThatFought ; EXP. SHARE is turned off in the options
 .hasExpAll
-	ld a, TRUE
-	or a ; exp all is on
-	jr .checkExpAll
-.noExpAll
-	xor a ; exp all is off
-.checkExpAll
-	push af
-	jr z, .giveExpToMonsThatFought ; if no exp all, then jump
-
 ; the player has exp all
-; first, we halve the values that determine exp gain
-; the enemy mon base stats are added to stat exp, so they are halved
-; the base exp (which determines normal exp) is also halved
-	ld hl, wEnemyMonBaseStats
-	ld b, NUM_STATS + 2
-.halveExpDataLoop
-	srl [hl]
-	inc hl
-	dec b
-	jr nz, .halveExpDataLoop
-
-; give exp (divided evenly) to the mons that actually fought in battle against the enemy mon that has fainted
-; if exp all is in the bag, this will be only be half of the stat exp and normal exp, due to the above loop
-.giveExpToMonsThatFought
-	xor a
-	ld [wBoostExpByExpAll], a
+; half of the exp goes to the mons that fought in battle against the enemy mon
+; that has fainted, and the other half to the party members that sat it out
+	call GetPartyMonsThatSatOut
+	and a
+	jr z, .giveExpToMonsThatFought ; everybody fought, so they get the whole amount
+	push af ; save the flags of the mons that sat the battle out
+	call SetHalvedExpShareDivisor
 	callfar GainExperience
 	pop af
-	ret z ; return if no exp all
-
-; the player has exp all
-; now, set the gain exp flag for every party member
-; half of the total stat exp and normal exp will divided evenly amongst every party member
-	ld a, TRUE
-	ld [wBoostExpByExpAll], a
-	ld a, [wPartyCount]
-	ld b, 0
-.gainExpFlagsLoop
-	scf
-	rl b
-	dec a
-	jr nz, .gainExpFlagsLoop
-	ld a, b
 	ld [wPartyGainExpFlags], a
+	call SetHalvedExpShareDivisor
 	jpfar GainExperience
+
+; give exp (divided evenly) to the mons that actually fought in battle against the enemy mon that has fainted
+.giveExpToMonsThatFought
+	call SetExpShareDivisor
+	jpfar GainExperience
+
+; build the flags of the party members that sat the battle out: the ones that
+; are still standing and don't have a gain exp flag set
+GetPartyMonsThatSatOut:
+	call GetPartyMonsAlive
+	push af
+	ld a, [wPartyGainExpFlags]
+	cpl
+	ld b, a
+	pop af
+	and b
+	ret
+
+; build the flags of the party members that still have HP left.
+; the mons are checked from the last one to the first, so that the flag of
+; party mon i is bit i
+GetPartyMonsAlive:
+	ld hl, wPartyMon1HP
+	ld bc, PARTYMON_STRUCT_LENGTH
+	ld a, [wPartyCount]
+	dec a
+	call AddNTimes ; go to the last party mon
+	ld de, -PARTYMON_STRUCT_LENGTH
+	ld b, 0 ; flags
+	ld a, [wPartyCount]
+	ld c, a
+.nextMon
+	sla b
+	ld a, [hli]
+	or [hl]
+	jr z, .fainted
+	inc b ; the mon is alive, so set its flag
+.fainted
+	add hl, de ; the previous party mon
+	dec c
+	jr nz, .nextMon
+	ld a, b
+	ret
+
+; set wExpShareDivisor to the number of party members that are sharing the exp
+; gained from a fainted enemy mon
+SetExpShareDivisor:
+	call CountPartyMonsGainingExp
+	ld [wExpShareDivisor], a
+	ret
+
+; as above, but for the exp share, which splits the exp in half, so there are
+; twice as many shares to divide each half into
+SetHalvedExpShareDivisor:
+	call CountPartyMonsGainingExp
+	add a
+	ld [wExpShareDivisor], a
+	ret
+
+; count the party members that are gaining exp, i.e. the flags set in
+; wPartyGainExpFlags. the result is at least 1, so that it is safe to divide by
+CountPartyMonsGainingExp:
+	ld a, [wPartyGainExpFlags]
+	ld b, a
+	xor a
+	ld c, 8
+.countSetBitsLoop ; loop to count set bits in wPartyGainExpFlags
+	srl b
+	adc a, 0
+	dec c
+	jr nz, .countSetBitsLoop
+	and a
+	ret nz
+	inc a
+	ret
 
 EnemyMonFaintedText:
 	text_far _EnemyMonFaintedText
@@ -1749,7 +1792,6 @@ SendOutMon:
 	ld hl, wBattleAndStartSavedMenuItem
 	ld [hli], a
 	ld [hl], a
-	ld [wBoostExpByExpAll], a
 	ld [wDamageMultipliers], a
 	ld [wPlayerMoveNum], a
 	ld hl, wPlayerUsedMove

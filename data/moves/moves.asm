@@ -14,7 +14,7 @@ Moves:
 	move POUND,        NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
 	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        50, NORMAL,       100, 25
 	move DOUBLESLAP,   TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,        85, 10
-	move MACH_PUNCH,   NO_EFFECT,                   40, FIGHTING,     100, 30 ; increased priority
+	move MACH_PUNCH,   NO_ADDITIONAL_EFFECT,        40, FIGHTING,     100, 30 ; increased priority
 	move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        80, NORMAL,        85, 20
 	move PAY_DAY,      PAY_DAY_EFFECT,              40, NORMAL,       100, 20
 	move FIRE_PUNCH,   BURN_SIDE_EFFECT1,           75, FIRE,         100, 15
@@ -188,6 +188,7 @@ Moves:
 	move FURY_CUTTER,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, BUG,           90, 20 ; originally this increased power if used consecutively
 	move CROSS_CHOP,   NO_ADDITIONAL_EFFECT,        90, FIGHTING,     100, 10 ; changed a lot from original
 	move SHADOW_BALL,  SPECIAL_DOWN_SIDE_EFFECT,    80, GHOST,        100, 15
-	move WATER_PULSE,  CONFUSION_SIDE_EFFECT_20,    60, WATER,        100, 20	 
+	move WATER_PULSE,  CONFUSION_SIDE_EFFECT_20,    60, WATER,        100, 20
+	move BUG_BITE,     NO_ADDITIONAL_EFFECT,        60, BUG,          100, 20 ; originally this stole and ate the target's berry
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

@@ -247,11 +247,11 @@ NidoranMEvosMoves:
 	db 0
 ; Learnset
 	db 8, HORN_ATTACK
-	db 14, POISON_STING
-	db 21, FOCUS_ENERGY
+	db 12, DOUBLE_KICK
+	db 17, POISON_STING
+	db 23, FOCUS_ENERGY
 	db 29, FURY_ATTACK
 	db 36, HORN_DRILL
-	db 43, DOUBLE_KICK
 	db 0
 
 CleffaEvosMoves:
@@ -313,7 +313,7 @@ NidokingEvosMoves:
 	db 0
 ; Learnset
 	db 8, HORN_ATTACK
-	db 14, POISON_STING
+	db 12, DOUBLE_KICK
 	db 23, THRASH
 	db 0
 
@@ -416,11 +416,11 @@ NidoranFEvosMoves:
 	db 0
 ; Learnset
 	db 8, SCRATCH
-	db 14, POISON_STING
+	db 12, DOUBLE_KICK
+	db 17, POISON_STING
 	db 21, TAIL_WHIP
 	db 29, BITE
 	db 36, FURY_SWIPES
-	db 43, DOUBLE_KICK
 	db 0
 
 NidoqueenEvosMoves:
@@ -428,7 +428,7 @@ NidoqueenEvosMoves:
 	db 0
 ; Learnset
 	db 8, SCRATCH
-	db 14, POISON_STING
+	db 12, DOUBLE_KICK
 	db 23, BODY_SLAM
 	db 0
 
@@ -580,6 +580,8 @@ PinsirEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 10, VICEGRIP
+	db 16, BUG_BITE
 	db 25, SEISMIC_TOSS
 	db 30, GUILLOTINE
 	db 36, FOCUS_ENERGY
@@ -977,6 +979,7 @@ MankeyEvosMoves:
 	db EVOLVE_LEVEL, 28, PRIMEAPE
 	db 0
 ; Learnset
+	db 9, LOW_KICK
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
@@ -1393,6 +1396,7 @@ PinecoEvosMoves:
 	db 1, TACKLE
 	db 1, HARDEN
 	db 8, SELFDESTRUCT
+	db 9, BUG_BITE
 	db 15, TAKE_DOWN
 	db 22, BIDE
 	db 29, EXPLOSION
@@ -1405,6 +1409,7 @@ ForretressEvosMoves:
 ; Learnset
 	db 1, TACKLE
 	db 1, HARDEN
+	db 1, BUG_BITE
 	db 8, SELFDESTRUCT
 	db 15, TAKE_DOWN
 	db 22, BIDE
@@ -1653,6 +1658,7 @@ WeedleEvosMoves:
 	db EVOLVE_LEVEL, 7, KAKUNA
 	db 0
 ; Learnset
+	db 15, BUG_BITE
 	db 0
 
 KakunaEvosMoves:
@@ -1695,14 +1701,27 @@ DodrioEvosMoves:
 
 PrimeapeEvosMoves:
 ; Evolutions
-	db EVOLVE_LEVEL, 45, ANNIHILAPE
+	db EVOLVE_LEVEL, 36, ANNIHILAPE
 	db 0
 ; Learnset
+	db 9, LOW_KICK
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
-	db 37, SEISMIC_TOSS
-	db 46, THRASH
+	db 35, RAGE
+	db 38, SCREECH
+	db 42, SUBMISSION
+	db 48, THRASH
+	db 0
+
+AnnihilapeEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 39, SHADOW_BALL ; make this an evolution move
+	db 40, SCREECH
+	db 44, SUBMISSION
+	db 50, THRASH
 	db 0
 
 DugtrioEvosMoves:
@@ -1779,6 +1798,7 @@ CaterpieEvosMoves:
 	db EVOLVE_LEVEL, 7, METAPOD
 	db 0
 ; Learnset
+	db 15, BUG_BITE
 	db 0
 
 MetapodEvosMoves:
@@ -2222,11 +2242,11 @@ NidorinoEvosMoves:
 	db 0
 ; Learnset
 	db 8, HORN_ATTACK
-	db 14, POISON_STING
+	db 12, DOUBLE_KICK
+	db 19, POISON_STING
 	db 23, FOCUS_ENERGY
 	db 32, FURY_ATTACK
 	db 41, HORN_DRILL
-	db 50, DOUBLE_KICK
 	db 0
 
 NidorinaEvosMoves:
@@ -2235,11 +2255,11 @@ NidorinaEvosMoves:
 	db 0
 ; Learnset
 	db 8, SCRATCH
-	db 14, POISON_STING
+	db 12, DOUBLE_KICK
+	db 19, POISON_STING
 	db 23, TAIL_WHIP
 	db 32, BITE
 	db 41, FURY_SWIPES
-	db 50, DOUBLE_KICK
 	db 0
 
 GeodudeEvosMoves:
@@ -2522,20 +2542,6 @@ HoundoomEvosMoves:
 	db 30, FEINT_ATTACK
 	db 41, FLAMETHROWER
 	db 51, CRUNCH
-	db 0
-
-AnnihilapeEvosMoves:
-; Evolutions
-	db 0
-; Learnset
-	db 5, FURY_SWIPES
-	db 8, LOW_KICK
-	db 12, SEISMIC_TOSS
-	db 17, KARATE_CHOP
-	db 22, CROSS_CHOP
-	db 30, THRASH
-	db 39, SHADOW_BALL
-	db 44, SCREECH
 	db 0
 
 MismagiusEvosMoves:

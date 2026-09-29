@@ -4,7 +4,7 @@ MoveNames::
 	li "POUND"
 	li "KARATE CHOP"
 	li "DOUBLESLAP"
-	li "COMET PUNCH"
+	li "MACH PUNCH"
 	li "MEGA PUNCH"
 	li "PAY DAY"
 	li "FIRE PUNCH"
@@ -179,5 +179,6 @@ MoveNames::
 	li "CROSS CHOP"
 	li "SHADOW BALL"
 	li "WATER PULSE"
+	li "BUG BITE"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

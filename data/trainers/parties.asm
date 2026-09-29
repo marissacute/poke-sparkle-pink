@@ -760,7 +760,7 @@ IonoData:
 
 GuzmaData:
 ; Viridian Forest
-	db $FF, 7, WEEDLE, 7, KAKUNA, 8, PINSIR, 0
+	db 6, PINECO, PINSIR, 0
 
 NData:
 ; Pokemon Mansion 3F

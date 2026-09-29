@@ -3,7 +3,7 @@
 	db  65, 105,  60,  95,  60
 	;   hp  atk  def  spd  spc
 
-	db FIGHTING, NORMAL ; type
+	db FIGHTING, FIGHTING ; type
 	db 75 ; catch rate
 	db 149 ; base exp
 
@@ -11,7 +11,7 @@
 
 	dw PrimeapePicFront, PrimeapePicBack
 
-	db SCRATCH, LEER, KARATE_CHOP, FURY_SWIPES ; level 1 learnset
+	db SCRATCH, LEER, LOW_KICK, KARATE_CHOP  ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

@@ -208,6 +208,7 @@ MoveDescriptions:
     text_far _CrossChopDescription
     text_far _ShadowBallDescription
     text_far _WaterPulseDescription
+    text_far _BugBiteDescription
     text_far _StruggleDescription
 
 _PoundDescription::
@@ -1098,6 +1099,12 @@ _ShadowBallDescription::
 _WaterPulseDescription::
     text "A pulsing blast,"
     line "may confuse."
+    done
+
+_BugBiteDescription::
+    text "Bites the foe"
+    line "with sharp"
+    cont "mandibles."
     done
 
 _StruggleDescription::

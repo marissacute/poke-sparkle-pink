@@ -412,7 +412,10 @@ wSimulatedJoypadStatesEnd::
 
 NEXTU
 wUnusedFlag::
-wBoostExpByExpAll:: db
+; exp gained from a fainted enemy mon is divided by this before it is given to
+; every party mon that is gaining exp. the battle code sets it to the number of
+; mons sharing the exp, doubled when the exp share splits the exp in half
+wExpShareDivisor:: db
 
 	ds 59
 

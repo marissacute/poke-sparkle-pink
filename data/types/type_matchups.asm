@@ -45,7 +45,6 @@ TypeEffects:
 	db POISON,       GRASS,        SUPER_EFFECTIVE
 	db POISON,       POISON,       NOT_VERY_EFFECTIVE
 	db POISON,       GROUND,       NOT_VERY_EFFECTIVE
-	db POISON,       BUG,          SUPER_EFFECTIVE
 	db POISON,       ROCK,         NOT_VERY_EFFECTIVE
 	db POISON,       GHOST,        NOT_VERY_EFFECTIVE
 	db GROUND,       FIRE,         SUPER_EFFECTIVE
@@ -129,8 +128,9 @@ TypeEffects:
 	db DARK,         FAIRY,        NOT_VERY_EFFECTIVE
 	db DRAGON,       FAIRY,        NO_EFFECT
 
-	; New defense matchups for ice
+	; New matchups for ice
 	db WATER,        ICE,          NOT_VERY_EFFECTIVE
 	db GRASS,        ICE,          NOT_VERY_EFFECTIVE
+	db ICE,          FIRE,         NOT_VERY_EFFECTIVE
 
 	db -1 ; end

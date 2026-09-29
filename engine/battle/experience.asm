@@ -1,8 +1,10 @@
 GainExperience:
+; give the exp gained from a fainted enemy mon to every party mon that has a
+; flag set in wPartyGainExpFlags. the caller sets wExpShareDivisor to the
+; number of mons sharing the exp, and every one of them gets an equal share
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	ret z ; return if link battle
-	call DivideExpDataByNumMonsGainingExp
 	ld hl, wPartyMon1
 	xor a
 	ld [wWhichPokemon], a
@@ -29,6 +31,7 @@ GainExperience:
 	ld c, NUM_STATS
 .gainStatExpLoop
 	ld a, [hli]
+	call DivideStatExpShare
 	ld b, a ; enemy mon base stat
 	ld a, [de] ; stat exp
 	add b ; add enemy mon base state to stat exp
@@ -66,6 +69,7 @@ GainExperience:
 	ldh [hDivisor], a
 	ld b, 4
 	call Divide
+	call DivideExpShare
 	ld hl, MON_OTID - (MON_DVS - 1)
 	add hl, de
 	ld b, [hl] ; wPartyMon*OTID
@@ -302,38 +306,62 @@ ENDC
 	pop bc
 	predef_jump FlagActionPredef ; set the fought current enemy flag for the mon that is currently out
 
-; divide enemy base stats, catch rate, and base exp by the number of mons gaining exp
-DivideExpDataByNumMonsGainingExp:
-	ld a, [wPartyGainExpFlags]
-	ld b, a
-	xor a
-	ld c, $8
-	ld d, $0
-.countSetBitsLoop ; loop to count set bits in wPartyGainExpFlags
-	xor a
-	srl b
-	adc d
-	ld d, a
-	dec c
-	jr nz, .countSetBitsLoop
-	cp $2
-	ret c ; return if only one mon is gaining exp
-	ld [wTempByteValue], a ; store number of mons gaining exp
-	ld hl, wEnemyMonBaseStats
-	ld c, wEnemyMonBaseExp + 1 - wEnemyMonBaseStats
-.divideLoop
+; divide the enemy mon's base stat in a by the number of mons sharing the exp,
+; rounding to the nearest point so that no stat exp is lost
+DivideStatExpShare:
+	ldh [hDividend + 1], a
 	xor a
 	ldh [hDividend], a
-	ld a, [hl]
-	ldh [hDividend + 1], a
-	ld a, [wTempByteValue]
+	ld a, [wExpShareDivisor]
+	cp 1
+	jr z, .noShare ; the mon gets the whole base stat
 	ldh [hDivisor], a
-	ld b, $2
-	call Divide ; divide value by number of mons gaining exp
+	ld b, 2
+	call Divide
+	ldh a, [hRemainder]
+	add a ; is the remainder at least half of the divisor?
+	ld b, a
+	ld a, [wExpShareDivisor]
+	jr c, .roundUp
+	cp b
+	jr c, .roundUp ; the remainder is more than half
+	jr z, .roundUp ; the remainder is exactly half
 	ldh a, [hQuotient + 3]
-	ld [hli], a
-	dec c
-	jr nz, .divideLoop
+	ret
+.roundUp
+	ldh a, [hQuotient + 3]
+	inc a
+	ret
+.noShare
+	ldh a, [hDividend + 1]
+	ret
+
+; divide the exp the enemy mon is worth, in hQuotient, by the number of mons
+; sharing it, rounding to the nearest point so that no exp is lost
+DivideExpShare:
+	ld a, [wExpShareDivisor]
+	cp 1
+	ret z ; the mon gets the whole exp
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+	ldh a, [hRemainder]
+	add a ; is the remainder at least half of the divisor?
+	ld b, a
+	ld a, [wExpShareDivisor]
+	jr c, .roundUp
+	cp b
+	jr c, .roundUp ; the remainder is more than half
+	jr z, .roundUp ; the remainder is exactly half
+	ret
+.roundUp
+	ldh a, [hQuotient + 3]
+	add a, 1
+	ldh [hQuotient + 3], a
+	ret nc ; the low byte didn't overflow
+	ldh a, [hQuotient + 2]
+	inc a
+	ldh [hQuotient + 2], a
 	ret
 
 ; multiplies exp by 1.5
