@@ -1,15 +1,15 @@
 AnimatePartyMon_ForceSpeed1:
+; Animate the icon in the first party slot. Used by the naming screen, where
+; there is no party menu cursor and no health bar to pick a speed from.
 	xor a
 	ld [wCurrentMenuItem], a
 	ld b, a
 	inc a
 	jr GetAnimationSpeed
 
-; wPartyMenuHPBarColors contains the party mon's health bar colors
-; 0: green
-; 1: yellow
-; 2: red
 AnimatePartyMon::
+; Animate the icon of the mon the party menu cursor is on. The speed depends on
+; that mon's health: wPartyMenuHPBarColors is 0 for green, 1 yellow, 2 red.
 	ld hl, wPartyMenuHPBarColors
 	ld a, [wCurrentMenuItem]
 	ld c, a
@@ -40,6 +40,7 @@ GetAnimationSpeed:
 .skipResetTimer
 	ld [wAnimCounter], a
 	jp DelayFrame
+
 .resetSprites
 	push bc
 	ld hl, wMonPartySpritesSavedOAM
@@ -49,26 +50,17 @@ GetAnimationSpeed:
 	pop bc
 	xor a
 	jr .incTimer
+
 .animateSprite
+; Switch the selected mon's icon to its second animation frame, which is loaded
+; MON_ICON_TILES tiles after the first.
 	push bc
 	ld hl, wShadowOAMSprite00TileID
 	ld bc, OBJ_SIZE * 4
 	ld a, [wCurrentMenuItem]
 	call AddNTimes
-	ld c, ICONOFFSET
-	ld a, [hl]
-	cp ICON_BALL << 2
-	jr z, .editCoords
-	cp ICON_HELIX << 2
-	jr nz, .editTileIDS
-; ICON_BALL and ICON_HELIX only shake up and down
-.editCoords
-	dec hl
-	dec hl ; dec hl to the OAM y coord
-	ld c, $1 ; amount to increase the y coord by
-; otherwise, load a second sprite frame
-.editTileIDS
-	ld b, 4
+	ld c, MON_ICON_TILES ; frame offset
+	ld b, 4 ; OAM sprites per icon
 	ld de, OBJ_SIZE
 .loop
 	ld a, [hl]
@@ -88,10 +80,116 @@ GetAnimationSpeed:
 PartyMonSpeeds:
 	db 5, 16, 32
 
-LoadMonPartySpriteGfx:
-; Load mon party sprite tile patterns into VRAM during V-blank.
-	ld hl, MonPartySpritePointers
-	ld a, $1c
+LoadPartyMonIcons:
+; Load both animation frames of every party mon's icon into its own VRAM slot:
+; MON_ICON_SLOT_TILES tiles at vSprites tile [party slot * MON_ICON_SLOT_TILES].
+; Must be called whenever the party order may have changed, since the tile
+; slots follow the party position rather than the species.
+	ld hl, wPartySpecies
+	ld c, 0 ; VRAM tile for the current slot's icon
+.loop
+	ld a, [hli]
+	cp $ff ; reached the terminator?
+	ret z
+	push hl
+	push bc
+	call LoadMonIconGfx
+	pop bc
+	pop hl
+	ld a, c
+	add MON_ICON_SLOT_TILES
+	ld c, a
+	jr .loop
+
+LoadMonIconGfx:
+; Load both animation frames of the icon for species a into tile c.
+	ld l, c
+	ld h, 0
+	add hl, hl
+	add hl, hl
+	add hl, hl
+	add hl, hl ; hl = c * TILE_SIZE
+	push hl ; save the VRAM offset
+	call GetMonIconID
+	ld e, a
+	ld d, 0
+	ld hl, MonIconTable
+	add hl, de
+	add hl, de
+	add hl, de
+	ld a, [hli]
+	ld e, a
+	ld a, [hli]
+	ld d, a ; de = icon graphics
+	ld b, [hl] ; b = icon graphics bank
+	pop hl
+	ld a, h
+	add HIGH(vSprites)
+	ld h, a
+	ld c, MON_ICON_SLOT_TILES
+	jp CopyVideoData
+
+GetMonIconID:
+; a = species -> a = party menu icon (index into MonIconTable)
+	ld [wPokedexNum], a
+	predef IndexToPokedex
+	ld a, [wPokedexNum]
+	dec a
+	ld hl, MonPartyData
+	ld e, a
+	ld d, 0
+	add hl, de
+	ld a, [hl]
+	ret
+
+LoadTradeBubbleGfx:
+; Load the graphic that circles the mon shown during a trade animation.
+; Both animation frames are loaded: the trade animation alternates between
+; them by adding MON_ICON_TILES to the sprites' tile IDs (see Trade_AnimCircledMon).
+	ld de, TradeBubbleIconGFX
+	ld b, BANK(TradeBubbleIconGFX)
+	ld hl, vSprites tile TRADE_BUBBLE_TILE
+	ld c, MON_ICON_SLOT_TILES
+	jp CopyVideoData
+
+WriteMonPartySpriteOAMByPartyIndex:
+; Write the OAM blocks for the party mon in [hPartyMonIndex].
+	jp WriteMonPartySpriteOAM
+
+WriteMonPartySpriteOAMBySpecies:
+; Load the icon of [wMonPartySpriteSpecies] into the first VRAM slot and write
+; its OAM blocks.
+	xor a
+	ldh [hPartyMonIndex], a
+	ld a, [wMonPartySpriteSpecies]
+	ld c, 0
+	call LoadMonIconGfx
+	; fall through
+
+WriteMonPartySpriteOAM:
+; Write the 4 OAM blocks for the party mon in [hPartyMonIndex]. Its icon must
+; already be loaded at vSprites tile [hPartyMonIndex * MON_ICON_SLOT_TILES].
+	ldh a, [hPartyMonIndex]
+	add a
+	add a
+	add a ; * MON_ICON_SLOT_TILES
+	ASSERT MON_ICON_SLOT_TILES == 8
+	ld [wOAMBaseTile], a
+	ld c, $10 ; x coord
+	ld h, HIGH(wShadowOAM)
+	ldh a, [hPartyMonIndex]
+	swap a
+	ld l, a ; OAM offset
+	add $10
+	ld b, a ; y coord
+; Gen 2 icons are asymmetric, so all 4 of their tile patterns are needed.
+	call WriteAsymmetricMonPartySpriteOAM
+; Make a copy of the OAM buffer with the first animation frame written; the
+; animation restores from it instead of tracking the second frame.
+	ld hl, wShadowOAM
+	ld de, wMonPartySpritesSavedOAM
+	ld bc, OBJ_SIZE * 4 * PARTY_LENGTH
+	jp CopyData
 
 LoadAnimSpriteGfx:
 ; Load animated sprite tile patterns into VRAM during V-blank. hl is the address
@@ -125,171 +223,8 @@ LoadAnimSpriteGfx:
 	jr nz, .loop
 	ret
 
-LoadMonPartySpriteGfxWithLCDDisabled:
-; Load mon party sprite tile patterns into VRAM immediately by disabling the
-; LCD.
-	call DisableLCD
-	ld hl, MonPartySpritePointers
-	ld a, $1c
-	ld bc, $0
-.loop
-	push af
-	push bc
-	push hl
-	add hl, bc
-	ld a, [hli]
-	ld e, a
-	ld a, [hli]
-	ld d, a
-	push de
-	ld a, [hli]
-	ld c, a
-	swap c
-	ld b, $0
-	ld a, [hli]
-	ld e, [hl]
-	inc hl
-	ld d, [hl]
-	pop hl
-	call FarCopyData2
-	pop hl
-	pop bc
-	ld a, $6
-	add c
-	ld c, a
-	pop af
-	dec a
-	jr nz, .loop
-	jp EnableLCD
-
 INCLUDE "data/icon_pointers.asm"
-
-WriteMonPartySpriteOAMByPartyIndex:
-; Write OAM blocks for the party mon in [hPartyMonIndex].
-	push hl
-	push de
-	push bc
-	ldh a, [hPartyMonIndex]
-	ld hl, wPartySpecies
-	ld e, a
-	ld d, 0
-	add hl, de
-	ld a, [hl]
-	call GetPartyMonSpriteID
-	ld [wOAMBaseTile], a
-	call WriteMonPartySpriteOAM
-	pop bc
-	pop de
-	pop hl
-	ret
-
-WriteMonPartySpriteOAMBySpecies:
-; Write OAM blocks for the party sprite of the species in
-; [wMonPartySpriteSpecies].
-	xor a
-	ldh [hPartyMonIndex], a
-	ld a, [wMonPartySpriteSpecies]
-	call GetPartyMonSpriteID
-	ld [wOAMBaseTile], a
-	jr WriteMonPartySpriteOAM
-
-UnusedPartyMonSpriteFunction:
-; This function is unused and doesn't appear to do anything useful. It looks
-; like it may have been intended to load the tile patterns and OAM data for
-; the mon party sprite associated with the species in [wCurPartySpecies].
-; However, its calculations are off and it loads garbage data.
-	ld a, [wCurPartySpecies]
-	call GetPartyMonSpriteID
-	push af
-	ld hl, vSprites tile $00
-	call .LoadTilePatterns
-	pop af
-	add $54
-	ld hl, vSprites tile $04
-	call .LoadTilePatterns
-	xor a
-	ld [wMonPartySpriteSpecies], a
-	jr WriteMonPartySpriteOAMBySpecies
-
-.LoadTilePatterns
-	push hl
-	add a
-	ld c, a
-	ld b, 0
-	ld hl, MonPartySpritePointers
-	add hl, bc
-	add hl, bc
-	add hl, bc
-	ld a, [hli]
-	ld e, a
-	ld a, [hli]
-	ld d, a
-	ld a, [hli]
-	ld c, a
-	ld a, [hli]
-	ld b, a
-	pop hl
-	jp CopyVideoData
-
-WriteMonPartySpriteOAM:
-; Write the OAM blocks for the first animation frame into the OAM buffer and
-; make a copy at wMonPartySpritesSavedOAM.
-	push af
-	ld c, $10
-	ld h, HIGH(wShadowOAM)
-	ldh a, [hPartyMonIndex]
-	swap a
-	ld l, a
-	add $10
-	ld b, a
-	pop af
-	cp ICON_HELIX << 2
-	jr z, .helix
-	call WriteSymmetricMonPartySpriteOAM
-	jr .makeCopy
-.helix
-	call WriteAsymmetricMonPartySpriteOAM
-; Make a copy of the OAM buffer with the first animation frame written so that
-; we can flip back to it from the second frame by copying it back.
-.makeCopy
-	ld hl, wShadowOAM
-	ld de, wMonPartySpritesSavedOAM
-	ld bc, OBJ_SIZE * 4 * PARTY_LENGTH
-	jp CopyData
-
-GetPartyMonSpriteID:
-	ld [wPokedexNum], a
-	predef IndexToPokedex
-	ld a, [wPokedexNum]
-	ld c, a
-	dec a
-	srl a
-	ld hl, MonPartyData
-	ld e, a
-	ld d, 0
-	add hl, de
-	ld a, [hl]
-	bit 0, c ; even or odd?
-	jr nz, .skipSwap
-	swap a ; use lower nybble if pokedex num is even
-.skipSwap
-	and $f0
-	srl a ; value == ICON constant << 2
-	srl a
-	ret
 
 INCLUDE "data/pokemon/menu_icons.asm"
 
-DEF INC_FRAME_1 EQUS "0, $20"
-DEF INC_FRAME_2 EQUS "$20, $20"
-
-BugIconFrame1:       INCBIN "gfx/icons/bug.2bpp",       INC_FRAME_1
-PlantIconFrame1:     INCBIN "gfx/icons/plant.2bpp",     INC_FRAME_1
-BugIconFrame2:       INCBIN "gfx/icons/bug.2bpp",       INC_FRAME_2
-PlantIconFrame2:     INCBIN "gfx/icons/plant.2bpp",     INC_FRAME_2
-SnakeIconFrame1:     INCBIN "gfx/icons/snake.2bpp",     INC_FRAME_1
-QuadrupedIconFrame1: INCBIN "gfx/icons/quadruped.2bpp", INC_FRAME_1
-SnakeIconFrame2:     INCBIN "gfx/icons/snake.2bpp",     INC_FRAME_2
-QuadrupedIconFrame2: INCBIN "gfx/icons/quadruped.2bpp", INC_FRAME_2
-
-TradeBubbleIconGFX:  INCBIN "gfx/trade/bubble.2bpp"
+TradeBubbleIconGFX: INCBIN "gfx/trade/bubble.2bpp"

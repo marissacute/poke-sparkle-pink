@@ -1,37 +1,49 @@
-MACRO mon_icon_header
-	dw \1 tile \2
-	db \3
+; Party menu icon graphics, indexed by the ICON_* constants
+; (see constants/icon_constants.asm). Each icon is 16x16 pixels: the first
+; MON_ICON_TILES tiles of the graphics are the top (static) animation frame.
+MACRO mon_icon
+	dw \1 ; graphics
 	db BANK(\1)
-	dw vSprites tile (\4)
 ENDM
 
-MonPartySpritePointers:
-	; gfx pointer, gfx tile offset, # tiles, vSprites tile offset
-	mon_icon_header MonsterSprite,       12, 4, ICON_MON << 2
-	mon_icon_header PokeBallSprite,       0, 8, ICON_BALL << 2
-	mon_icon_header FairySprite,         12, 4, ICON_FAIRY << 2
-	mon_icon_header BirdSprite,          12, 4, ICON_BIRD << 2
-	mon_icon_header SeelSprite,           0, 4, ICON_WATER << 2
-	mon_icon_header BugIconFrame2,        0, 1, ICON_BUG << 2
-	mon_icon_header BugIconFrame2,        1, 1, ICON_BUG << 2 + 2
-	mon_icon_header PlantIconFrame2,      0, 1, ICON_GRASS << 2
-	mon_icon_header PlantIconFrame2,      1, 1, ICON_GRASS << 2 + 2
-	mon_icon_header SnakeIconFrame1,      0, 1, ICON_SNAKE << 2
-	mon_icon_header SnakeIconFrame1,      1, 1, ICON_SNAKE << 2 + 2
-	mon_icon_header QuadrupedIconFrame1,  0, 1, ICON_QUADRUPED << 2
-	mon_icon_header QuadrupedIconFrame1,  1, 1, ICON_QUADRUPED << 2 + 2
-	mon_icon_header TradeBubbleIconGFX,   0, 4, ICON_TRADEBUBBLE << 2
-	mon_icon_header MonsterSprite,        0, 4, ICONOFFSET + ICON_MON << 2
-	mon_icon_header PokeBallSprite,       0, 8, ICONOFFSET + ICON_BALL << 2
-	mon_icon_header FairySprite,          0, 4, ICONOFFSET + ICON_FAIRY << 2
-	mon_icon_header BirdSprite,           0, 4, ICONOFFSET + ICON_BIRD << 2
-	mon_icon_header SeelSprite,          12, 4, ICONOFFSET + ICON_WATER << 2
-	mon_icon_header BugIconFrame1,        0, 1, ICONOFFSET + ICON_BUG << 2
-	mon_icon_header BugIconFrame1,        1, 1, ICONOFFSET + ICON_BUG << 2 + 2
-	mon_icon_header PlantIconFrame1,      0, 1, ICONOFFSET + ICON_GRASS << 2
-	mon_icon_header PlantIconFrame1,      1, 1, ICONOFFSET + ICON_GRASS << 2 + 2
-	mon_icon_header SnakeIconFrame2,      0, 1, ICONOFFSET + ICON_SNAKE << 2
-	mon_icon_header SnakeIconFrame2,      1, 1, ICONOFFSET + ICON_SNAKE << 2 + 2
-	mon_icon_header QuadrupedIconFrame2,  0, 1, ICONOFFSET + ICON_QUADRUPED << 2
-	mon_icon_header QuadrupedIconFrame2,  1, 1, ICONOFFSET + ICON_QUADRUPED << 2 + 2
-	mon_icon_header TradeBubbleIconGFX,   4, 4, ICONOFFSET + ICON_TRADEBUBBLE << 2
+MonIconTable:
+	table_width 3, MonIconTable
+	mon_icon PoliwagIcon
+	mon_icon JigglypuffIcon
+	mon_icon DiglettIcon
+	mon_icon PikachuIcon
+	mon_icon StaryuIcon
+	mon_icon FishIcon
+	mon_icon BirdIcon
+	mon_icon MonsterIcon
+	mon_icon ClefairyIcon
+	mon_icon OddishIcon
+	mon_icon BugIcon
+	mon_icon GhostIcon
+	mon_icon LaprasIcon
+	mon_icon HumanshapeIcon
+	mon_icon FoxIcon
+	mon_icon EquineIcon
+	mon_icon ShellIcon
+	mon_icon BlobIcon
+	mon_icon SerpentIcon
+	mon_icon VoltorbIcon
+	mon_icon SquirtleIcon
+	mon_icon BulbasaurIcon
+	mon_icon CharmanderIcon
+	mon_icon CaterpillarIcon
+	mon_icon UnownIcon
+	mon_icon GeodudeIcon
+	mon_icon FighterIcon
+	mon_icon EggIcon
+	mon_icon JellyfishIcon
+	mon_icon MothIcon
+	mon_icon BatIcon
+	mon_icon SnorlaxIcon
+	mon_icon HoOhIcon
+	mon_icon LugiaIcon
+	mon_icon GyaradosIcon
+	mon_icon SlowpokeIcon
+	mon_icon SudowoodoIcon
+	mon_icon BigmonIcon
+	assert_table_length NUM_MON_ICONS

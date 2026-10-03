@@ -332,6 +332,10 @@ INCLUDE "engine/battle/decrement_pp.asm"
 INCLUDE "gfx/version.asm"
 
 
+SECTION "Mon Icons", ROMX
+
+INCLUDE "gfx/icons.asm"
+
 SECTION "bank1C", ROMX
 
 INCLUDE "engine/movie/splash.asm"

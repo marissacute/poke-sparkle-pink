@@ -34,9 +34,9 @@ tracked by git yet.
 
 - [ ] **Hoopa's back sprite** is a blank too — `gsback/hoopab.png` (72 B, uniform). Its front
   is real art. This one *is* tracked, so it will not show up in `git status`.
-- [ ] The 11 above fall back to generic menu icons — no per-species icons exist, only four
-  shared archetypes. `trapinch`/`vibrava`/`flygon` are all `ICON_BUG`
-  ([menu_icons.asm:184-186](data/pokemon/menu_icons.asm#L184-L186)).
+- [x] All 202 species now use their animated Gen 2 party-menu icon. The 11 above deliberately
+  borrow a relative's icon, e.g. `trapinch`/`vibrava`/`flygon` are all `ICON_BUG`
+  ([menu_icons.asm](data/pokemon/menu_icons.asm)).
 - [ ] Three unreferenced art files sit in `gfx/pokemon/gsfront/`: `magnezone_colour.png`,
   `fossilkabutops.png`, `fossilaerodactyl.png`. Keep or delete.
 

@@ -95,7 +95,8 @@ DisplayNamingScreen:
 
 	call LoadHpBarAndStatusTilePatterns
 	call LoadEDTile
-	farcall LoadMonPartySpriteGfx
+	; the mon icon's graphics are loaded by WriteMonPartySpriteOAMBySpecies
+	; once the species to draw is known
 	hlcoord 0, 4
 	ld b, 9
 	ld c, 18

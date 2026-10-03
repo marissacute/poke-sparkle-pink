@@ -3,12 +3,12 @@ DrawPartyMenu_::
 	ldh [hAutoBGTransferEnabled], a
 	call ClearScreen
 	call UpdateSprites
-	farcall LoadMonPartySpriteGfxWithLCDDisabled ; load pokemon icon graphics
 
 RedrawPartyMenu_::
 	ld a, [wPartyMenuTypeOrMessageID]
 	cp SWAP_MONS_PARTY_MENU
 	jp z, .printMessage
+	farcall LoadPartyMonIcons ; load pokemon icon graphics into their slots
 	call ErasePartyMenuCursors
 	farcall InitPartyMenuBlkPacket
 	hlcoord 3, 0
