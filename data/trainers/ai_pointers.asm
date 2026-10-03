@@ -61,4 +61,5 @@ TrainerAIPointers:
 	dbw 1, GenericAI ; steven
 	dbw 1, GenericAI ; red
 	dbw 1, GenericAI ; petrel
+	dbw 1, GenericAI ; jessie & james
 	assert_table_length NUM_TRAINERS

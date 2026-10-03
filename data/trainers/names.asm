@@ -57,4 +57,5 @@ TrainerNames::
 	li "STEVEN"
 	li "RED"
 	li "PETREL"
+	li "TEAM ROCKET"
 	assert_list_length NUM_TRAINERS

@@ -7,8 +7,8 @@ Route24WildMons:
 	db 12, ODDISH
 	db 13, BELLSPROUT
 	db 10, ABRA
-	db 13, KAKUNA
-	db 13, METAPOD
+	db 10, TYROGUE
+	db 11, TYROGUE
 	db  8, ABRA
 	db 12, ABRA
 	

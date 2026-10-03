@@ -149,7 +149,7 @@ MonsterPalettes:
 	db PAL_MR_MIME
 	db PAL_SCYTHER
 	db PAL_SCIZOR
-	db PAL_UMBREON
+	db PAL_SNEASEL
 	db PAL_UMBREON
 	db PAL_SMOOCHUM
 	db PAL_JYNX
@@ -263,5 +263,6 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_MEWMON ; Steven
 	db PAL_RED ; Red
 	db PAL_MEWMON ; Petrel
+	db PAL_JESSIE_JAMES ; Jessie & James
 	assert_table_length NUM_POKEMON + 1 + NUM_TRAINERS + 1
 

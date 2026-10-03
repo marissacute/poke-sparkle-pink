@@ -279,4 +279,6 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_HAPPINY       ; $FA
 	const PAL_MUNCHLAX      ; $FB
 	const PAL_FLYGON        ; $FC
+	const PAL_JESSIE_JAMES  ; $FD
+	const PAL_SNEASEL       ; $FE
 DEF NUM_SGB_PALS EQU const_value

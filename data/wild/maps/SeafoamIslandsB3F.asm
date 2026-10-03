@@ -7,7 +7,7 @@ SeafoamIslandsB3FWildMons:
 	db 33, SEEL
 	db 29, KRABBY
 	db 31, STARYU
-	db 31, KRABBY
+	db 30, SNEASEL
 	db 29, STARYU
 	db 39, KINGLER
 	db 37, DEWGONG

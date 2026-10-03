@@ -6,7 +6,7 @@ RockTunnelB1FWildMons:
 	db 15, MACHOP
 	db 16, DUNSPARCE
 	db 18, DUNSPARCE
-	db 17, MACHOP
+	db 13, TRAPINCH
 	db 17, ONIX
 	db 13, ONIX
 	db 18, GEODUDE

@@ -4,6 +4,7 @@ UsableItems_PartyMenu:
 	db SUN_STONE
 	db METAL_COAT
 	db KINGS_ROCK
+	db ICE_STONE
 	db ANTIDOTE
 	db BURN_HEAL
 	db ICE_HEAL

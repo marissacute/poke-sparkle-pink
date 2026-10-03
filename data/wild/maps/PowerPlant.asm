@@ -3,10 +3,10 @@ PowerPlantWildMons:
 
 	db 21, VOLTORB
 	db 22, VOLTORB
-	db 20, PIKACHU
+	db 13, PICHU
 	db 24, PIKACHU
 	db 23, VOLTORB
-	db 24, VOLTORB
+	db 24, ELEKID
 	db 32, ELECTABUZZ
 	db 35, RAICHU
 	db 5, MAGNEMITE

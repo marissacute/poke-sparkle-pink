@@ -5,7 +5,7 @@ Route6WildMons:
 	db 13, BELLSPROUT
 	db 13, PIDGEY
 	db 10, MEOWTH
-	db 10, MANKEY
+	db 10, MAGBY
 	db 15, PIDGEY
 	db 14, MANKEY
 	db 14, MEOWTH

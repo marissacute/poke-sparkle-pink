@@ -1,7 +1,8 @@
 _ViridianSchoolHouseBrunetteGirlText::
-	text "Whew! I'm trying"
-	line "to memorize all"
-	cont "my notes."
+	text "I have to learn"
+	line "a lot of new"
+	cont "stuff because of"
+	cont "the new #MON!"
 	done
 
 _ViridianSchoolHouseCooltrainerFText::

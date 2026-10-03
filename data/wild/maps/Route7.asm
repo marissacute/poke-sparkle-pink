@@ -5,7 +5,7 @@ Route7WildMons:
 	db 19, ODDISH
 	db 19, BELLSPROUT
 	db 22, ODDISH
-	db 22, PIDGEY
+	db 18, HOUNDOUR
 	db 18, MANKEY
 	db 18, GROWLITHE
 	db 18, VULPIX

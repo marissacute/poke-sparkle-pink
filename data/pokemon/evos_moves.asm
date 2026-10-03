@@ -898,18 +898,16 @@ MagbyEvosMoves:
 	db 25, SMOKESCREEN
 	db 31, FLAMETHROWER
 	db 37, CONFUSE_RAY
+	db 49, FIRE_BLAST
 	db 0
 
 MagmarEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 36, LEER
-	db 39, CONFUSE_RAY
-	db 43, FIRE_PUNCH
-	db 48, SMOKESCREEN
-	db 52, SMOG
-	db 55, FLAMETHROWER
+	db 36, FLAMETHROWER
+	db 43, CONFUSE_RAY
+	db 55, FIRE_BLAST
 	db 0
 
 
@@ -918,10 +916,11 @@ ElekidEvosMoves:
 	db EVOLVE_LEVEL, 30, ELECTABUZZ
 	db 0
 ; Learnset
-	db 20, THUNDERSHOCK
-	db 32, SCREECH
-	db 37, THUNDERPUNCH
-	db 43, LIGHT_SCREEN
+	db 9, THUNDERSHOCK
+	db 17, LIGHT_SCREEN
+	db 25, SWIFT
+	db 33, SCREECH
+	db 41, THUNDERBOLT
 	db 49, THUNDER
 	db 0
 
@@ -929,11 +928,10 @@ ElectabuzzEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 34, THUNDERSHOCK
-	db 37, SCREECH
-	db 42, THUNDERPUNCH
-	db 49, LIGHT_SCREEN
-	db 54, THUNDER
+    db 31, THUNDERPUNCH ; this can be an evo move
+	db 36, SCREECH
+	db 47, THUNDERBOLT
+	db 58, THUNDER
 	db 0
 
 MagnetonEvosMoves:
@@ -1493,7 +1491,7 @@ EeveeEvosMoves:
 	db EVOLVE_ITEM, SUN_STONE, 1, ESPEON
 	db EVOLVE_ITEM, MOON_STONE, 1, UMBREON
 	db EVOLVE_ITEM, LEAF_STONE, 1, LEAFEON
-	db EVOLVE_LEVEL, 30, GLACEON ; TODO - add a method for GLACEON
+	db EVOLVE_ITEM, ICE_STONE, 1, GLACEON
 	db EVOLVE_LEVEL, 41, SYLVEON
 	db 0
 ; Learnset
@@ -2575,27 +2573,20 @@ SneaselEvosMoves:
 	db EVOLVE_LEVEL, 40, WEAVILE
 	db 0
 ; Learnset
-	db 6, QUICK_ATTACK
-	db 12, FURY_SWIPES
-	db 18, METAL_CLAW
-	db 24, ICE_PUNCH
-	db 30, FEINT_ATTACK
-	db 36, SLASH
-	db 42, AGILITY
-	db 48, SCREECH
+	db 9, QUICK_ATTACK
+	db 17, SCREECH
+	db 25, FEINT_ATTACK
+	db 33, ICE_PUNCH
+	db 41, AGILITY
+	db 49, NIGHT_SLASH
 	db 0
 
 WeavileEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 18, METAL_CLAW
-	db 24, ICE_PUNCH
-	db 30, FURY_SWIPES
-	db 42, CRUNCH
-	db 48, AGILITY
-	db 54, SCREECH
-	db 60, NIGHT_SLASH
+	db 45, AGILITY
+	db 53, NIGHT_SLASH
 	db 0
 
 LeafeonEvosMoves:

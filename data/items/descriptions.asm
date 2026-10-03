@@ -163,6 +163,7 @@ ItemDescriptions:
 	text_far _ElixerDescription
 	text_far _MaxElixerDescription
 	text_far _KingsRockDescription
+	text_far _IceStoneDescription
 
 _MasterBallDescription::
 	text "Will catch #MON"
@@ -580,6 +581,11 @@ _MaxElixerDescription::
 	done
 
 _KingsRockDescription::
+	text "Evolves certain"
+	line "#MON."
+	done
+
+_IceStoneDescription::
 	text "Evolves certain"
 	line "#MON."
 	done

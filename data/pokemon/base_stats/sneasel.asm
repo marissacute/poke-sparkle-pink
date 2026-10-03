@@ -11,7 +11,7 @@
 
 	dw SneaselPicFront, SneaselPicBack
 
-	db SCRATCH, LEER, QUICK_ATTACK, FURY_SWIPES ; level 1 learnset
+	db SCRATCH, LEER, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

@@ -6,7 +6,7 @@ Route5WildMons:
 	db 13, PIDGEY
 	db 10, MEOWTH
 	db 10, MANKEY
-	db 15, PIDGEY
+	db 10, HAPPINY
 	db 14, MANKEY
 	db 14, MEOWTH
 	db 15, PIDGEY

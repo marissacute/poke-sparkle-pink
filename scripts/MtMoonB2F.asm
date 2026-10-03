@@ -177,7 +177,7 @@ MtMoon3TrainerHeader1:
 MtMoon3TrainerHeader2:
 	trainer EVENT_BEAT_MT_MOON_3_TRAINER_2, 4, MtMoonB2FRocket3BattleText, MtMoonB2FRocket3EndBattleText, MtMoonB2FRocket3AfterBattleText
 MtMoon3TrainerHeader3:
-	trainer EVENT_BEAT_MT_MOON_3_TRAINER_3, 4, MtMoonB2FRocket4BattleText, MtMoonB2FRocket4EndBattleText, MtMoonB2FRocket4AfterBattleText
+	trainer EVENT_BEAT_MT_MOON_3_TRAINER_3, 4, MtMoonB2FJessieJamesBattleText, MtMoonB2FJessieJamesEndBattleText, MtMoonB2FJessieJamesAfterBattleText
 	db -1 ; end
 
 MtMoonB2FSuperNerdText:
@@ -369,14 +369,14 @@ MtMoonB2FRocket3AfterBattleText:
 	text_far _MtMoonB2FRocket3AfterBattleText
 	text_end
 
-MtMoonB2FRocket4BattleText:
-	text_far _MtMoonB2FRocket4BattleText
+MtMoonB2FJessieJamesBattleText:
+	text_far _MtMoonB2FJessieJamesBattleText
 	text_end
 
-MtMoonB2FRocket4EndBattleText:
-	text_far _MtMoonB2FRocket4EndBattleText
+MtMoonB2FJessieJamesEndBattleText:
+	text_far _MtMoonB2FJessieJamesEndBattleText
 	text_end
 
-MtMoonB2FRocket4AfterBattleText:
-	text_far _MtMoonB2FRocket4AfterBattleText
+MtMoonB2FJessieJamesAfterBattleText:
+	text_far _MtMoonB2FJessieJamesAfterBattleText
 	text_end

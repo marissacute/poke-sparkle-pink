@@ -2,7 +2,7 @@
 
 Outstanding work for the full dex. **202 dex species.** Every list below was derived by
 parsing the source tables, not by hand — re-derive before trusting a count (see
-[Verifying](#verifying)).
+[Verifying](#verifying)). Last re-derived 2026-10-03.
 
 Scope notes:
 
@@ -14,83 +14,63 @@ Scope notes:
 
 ## 1. Placeholder graphics
 
-11 species, front **and** back. Each pair is the same blank image — the fronts are
-byte-identical to one another (77 B) and so are the backs (75 B). None of these PNGs are
-tracked by git yet.
+8 species, front **and** back. The eight fronts are byte-identical to one another (77 B, md5
+`1970a4a1…`) and so are the eight backs (75 B, md5 `39796b54…`). All of these PNGs are tracked
+by git now. Done already: Munchlax (front **and** back), Sneasel (front **and** back) and
+Flygon's front.
 
 - [ ] Annihilape — `gfx/pokemon/gsfront/annihilape.png`, `gsback/annihilapeb.png`
-- [ ] Flygon — `gfx/pokemon/gsfront/flygon.png`, `gsback/flygonb.png`
 - [ ] Glaceon — `gfx/pokemon/gsfront/glaceon.png`, `gsback/glaceonb.png`
 - [ ] Leafeon — `gfx/pokemon/gsfront/leafeon.png`, `gsback/leafeonb.png`
 - [ ] Mime Jr. — `gfx/pokemon/gsfront/mimejr.png`, `gsback/mimejrb.png`
 - [ ] Mismagius — `gfx/pokemon/gsfront/mismagius.png`, `gsback/mismagiusb.png`
-- [x] Munchlax — `gfx/pokemon/gsfront/munchlax.png`, `gsback/munchlaxb.png`
-- [ ] Sneasel — `gfx/pokemon/gsfront/sneasel.png`, `gsback/sneaselb.png`
 - [ ] Trapinch — `gfx/pokemon/gsfront/trapinch.png`, `gsback/trapinchb.png`
 - [ ] Vibrava — `gfx/pokemon/gsfront/vibrava.png`, `gsback/vibravab.png`
 - [ ] Weavile — `gfx/pokemon/gsfront/weavile.png`, `gsback/weavileb.png`
 
 ### Also
 
-- [ ] **Hoopa's back sprite** is a blank too — `gsback/hoopab.png` (72 B, uniform). Its front
-  is real art. This one *is* tracked, so it will not show up in `git status`.
-- [x] All 202 species now use their animated Gen 2 party-menu icon. The 11 above deliberately
-  borrow a relative's icon, e.g. `trapinch`/`vibrava`/`flygon` are all `ICON_BUG`
+- [ ] **Flygon's back sprite** is still a blank — `gsback/flygonb.png` (75 B). Its front is
+  real art, so this is the only mixed pair.
+- [ ] **Hoopa's back sprite** is a blank too — `gsback/hoopab.png` (72 B, uniform, a different
+  file from the eight above). Its front is real art.
+- [x] All 202 species now use their animated Gen 2 party-menu icon. The placeholder species
+  deliberately borrow a relative's icon — e.g. `trapinch`/`vibrava`/`flygon` are all `ICON_BUG`
   ([menu_icons.asm](data/pokemon/menu_icons.asm)).
-- [ ] Three unreferenced art files sit in `gfx/pokemon/gsfront/`: `magnezone_colour.png`,
-  `fossilkabutops.png`, `fossilaerodactyl.png`. Keep or delete.
 
 ---
 
 ## 2. Can't be obtained
 
-**26 species.** Split by whether a player can end up owning them at all.
+**10 species** (excluding Mew and Hoopa). Split by whether a player can end up owning them at
+all.
 
-### Never ownable — 20
+### Never ownable — 8
 
 **Whole lines absent:**
 
 - [ ] Mareep line — Mareep, Flaaffy, Ampharos
-- [ ] Trapinch line — Trapinch, Vibrava, Flygon
-- [ ] Houndour line — Houndour, Houndoom
-- [ ] Sneasel line — Sneasel, Weavile
 
 **Pre-evolutions whose evolution is already obtainable** (add the missing base form to a wild
 table, a gift, or a trade):
 
-- [ ] Elekid → Electabuzz
-- [ ] Happiny → Chansey
 - [ ] Mime Jr. → Mr. Mime
 - [ ] Munchlax → Snorlax
 - [ ] Smoochum → Jynx
-- [ ] Tyrogue → Hitmonlee / Hitmonchan (both Dojo gifts)
-- [ ] Magby → Magmar (Magmar is trainer-only — see below)
 
-**Reachable only through an unobtainable pre-evolution:**
-
-- [ ] Hitmontop — requires Tyrogue, which appears nowhere
-
-**Standalone:**
-
-- [ ] Skarmory
-
-### Trainer-only — 6
+### Trainer-only — 2
 
 Appear on an enemy team but can never be owned. Needs a wild/gift/trade source:
 
 - [ ] Clodsire
-- [ ] Magmar
-- [ ] Miltank
 - [ ] Paldean Wooper
-- [ ] Quagsire
-- [ ] Wooper
 
 ---
 
 ## 3. Never appears on a trainer's team
 
-**43 species**, excluding the legendaries/mythicals (Articuno, Zapdos, Moltres, Mewtwo, Mew,
-Hoopa). The other 153 of 202 species appear on at least one trainer's team.
+**41 species**, excluding the legendaries/mythicals (Articuno, Zapdos, Moltres, Mewtwo, Mew,
+Hoopa). The other 155 of 202 species appear on at least one trainer's team.
 
 - [ ] Abra
 - [ ] Ampharos
@@ -119,8 +99,6 @@ Hoopa). The other 153 of 202 species appear on at least one trainer's team.
 - [ ] Mime Jr.
 - [ ] Mismagius
 - [ ] Munchlax
-- [ ] Omanyte
-- [ ] Pineco
 - [ ] Politoed
 - [ ] Porygon
 - [ ] Porygon2
@@ -222,7 +200,7 @@ reading the learnsets back out of the rebuilt ROM.
 > counts and `-Wtruncation=1` checks byte widths, neither checks struct shape. It is only
 > visible by parsing `db 0` counts per struct (see [Verifying](#verifying)).
 
-### Empty learnsets (11) — confirm these are intentional
+### Empty learnsets (9) — confirm these are intentional
 
 No level-up moves at all. These are functional, because the four level-1 moves in
 `base_stats/*.asm` are copied into the move slots before the learnset is written — so this is
@@ -230,7 +208,6 @@ a "confirm" item, not a defect:
 
 - [ ] Abra
 - [ ] Arcanine
-- [ ] Caterpie
 - [ ] Clefable
 - [ ] Ditto
 - [ ] Kakuna
@@ -238,24 +215,26 @@ a "confirm" item, not a defect:
 - [ ] Ninetales
 - [ ] Raichu
 - [ ] Starmie
-- [ ] Weedle
 
-### Thin learnsets — 3 moves or fewer (16)
+### Thin learnsets — 3 moves or fewer (19)
 
-Several are vanilla-correct. Tyrogue and Magnezone are this fork's own additions and worth a
-look:
+Several are vanilla-correct. Tyrogue, Magnezone and Magmar are this fork's own additions and
+worth a look (Magmar was trimmed to three in the 2026-10 balance pass):
 
-- [ ] Tyrogue (2)
-- [ ] Magnezone (3)
+- [ ] Caterpie (1)
 - [ ] Cloyster (1)
 - [ ] Crobat (1)
 - [ ] Exeggutor (1)
+- [ ] Weedle (1)
 - [ ] Magikarp (2)
 - [ ] Poliwrath (2)
+- [ ] Tyrogue (2)
 - [ ] Bellossom (3)
 - [ ] Gastly (3)
 - [ ] Gengar (3)
 - [ ] Haunter (3)
+- [ ] Magmar (3)
+- [ ] Magnezone (3)
 - [ ] Nidoking (3)
 - [ ] Nidoqueen (3)
 - [ ] Victreebel (3)
@@ -280,10 +259,15 @@ Not species gaps, but found while deriving the lists above.
   > last definition of a symbol wins. The palette constant also shadows the species one. Any
   > future species whose name collides with a `PAL_*` constant will silently resolve to a
   > palette id in exactly the same way. Renaming the palette constant is the durable fix.
-- [ ] **`PrizeMonLevelDictionary` is stale.**
-  [data/events/prize_mon_levels.asm](data/events/prize_mon_levels.asm) still has `NIDORINA` and
-  `PINSIR` level entries, but neither appears in either prize menu any more (the menus hold
-  ABRA/CLEFAIRY/DRATINI and EEVEE/SCYTHER/PORYGON).
+- [ ] **`PrizeMonLevelDictionary` is stale, and `GetPrizeMonLevel` scans unchecked.**
+  [data/events/prize_mon_levels.asm](data/events/prize_mon_levels.asm) still has a
+  `NIDORINA, 17` entry even though neither prize menu uses Nidorina any more, and it has **no
+  `EEVEE` entry at all** — yet Eevee is the first Celadon prize. `GetPrizeMonLevel`
+  ([prize_menu.asm:283](engine/events/prize_menu.asm#L283)) is a linear scan with no
+  terminator: for a missing species it reads past the end of the table until a byte happens to
+  equal the species id, then takes the following byte as the level. Same class of bug as
+  `IndexToPokedex`. Menus hold ABRA/CLEFAIRY/DRATINI and EEVEE/SCYTHER/PORYGON; the dictionary
+  should match them (and the runaway scan is worth fixing regardless).
 
 ---
 
@@ -293,11 +277,13 @@ Re-derive the lists and diff against this file:
 
 | Category | How to check |
 |---|---|
-| Placeholder graphics | `md5sum gfx/pokemon/gsfront/*.png \| sort \| uniq -d -w32`, same for `gsback/`; `git status gfx/pokemon/` |
-| Obtainable | union of `db <lvl>, <SPECIES>` in `data/wild/` (plus the hardcoded Old Rod MAGIKARP at [item_effects.asm:1772](engine/items/item_effects.asm#L1772)), `lb bc, <SPECIES>, <LVL>` gifts, `DisplayPokedex` gifts, `OW_POKEMON` map objects, `npctrade` column 2, `data/events/prizes.asm`, and `data/trainers/parties.asm`; then close forwards under `db EVOLVE_*` |
+| Placeholder graphics | `md5sum gfx/pokemon/gsfront/*.png \| sort \| uniq -d -w32`, same for `gsback/` — blanks also show up as ~75–77 B files |
+| Obtainable | union of `db <lvl>, <SPECIES>` in `data/wild/` (plus the hardcoded Old Rod MAGIKARP at [item_effects.asm:1772](engine/items/item_effects.asm#L1772)), `lb bc, <SPECIES>, <LVL>` gifts, fossil revives (OMANYTE/KABUTO/AERODACTYL), starter picks, `npctrade` column 2, `data/events/prizes.asm`, scripts that set `wCurOpponent` (SNORLAX, MEWTWO), and `OW_POKEMON` map objects; then close forwards under `db EVOLVE_*` |
 | Trainers | `db` team rows in `data/trainers/parties.asm` — both `db <lvl>, SPECS…, 0` and `db $FF, <lvl>, SPEC, …` forms |
 | Cries | `mon_cry` rows carrying a `same as` marker in `data/pokemon/cries.asm` — every placeholder now has one, so a plain grep is exact |
 | Learnsets | Count `db 0` rows per `*EvosMoves:` struct — every well-formed one has exactly two; the moves are the rows *between* them |
 
 Two things to watch when parsing — the learnset rows sit between the two terminators, not after
-the last one, and `PAL_WOOPER` must not be counted as a species.
+the last one, and `PAL_WOOPER` must not be counted as a species. Also remember scripted
+`wCurOpponent` battles (Route 12/16 Snorlax) are a real source, so the plain wild tables alone
+will undercount what is obtainable.

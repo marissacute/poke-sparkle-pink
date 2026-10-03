@@ -57,6 +57,7 @@ TrainerDataPointers:
 	dw YoungsterData ; Steven
 	dw RedData ; Red
 	dw YoungsterData ; Petrel
+	dw JessieJamesData ; Jessie & James
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -546,7 +547,7 @@ RocketData:
 	db 13, RATTATA, ZUBAT, 0
 	db 11, SANDSHREW, RATTATA, ZUBAT, 0
 	db 12, ZUBAT, EKANS, 0
-	db 16, RATICATE, 0
+	db 16, RATICATE, 0 ; unused: MTMOONB2F_ROCKET4 is JESSIE_JAMES now (kept so later ROCKET entries keep their indexes)
 ; Cerulean City
 	db 17, MACHOP, DROWZEE, 0
 ; Route 24
@@ -645,7 +646,7 @@ BrockData:
     db $FF, 62, OMASTAR, 63, ONIX, 63, KABUTOPS, 62, GOLEM, 64, DUGTRIO, 64, AERODACTYL, 0
 
 MistyData:
-	db $FF, 18, STARYU, 21, STARMIE, 0
+	db $FF, 18, STARYU, 21, SEAKING, 0
 	db $FF, 64, GYARADOS, 65, VAPOREON, 65, GOLDUCK, 65, SEAKING, 66, STARMIE, 0
 
 LtSurgeData:
@@ -785,3 +786,7 @@ RedData:
 MarnieData:
 ; Fuchsia Gym
 	db $FF, 33, FEAROW, 33, ARBOK, 35, MUK, 0
+
+JessieJamesData:
+; Mt. Moon B2F (replaces the ROCKET with a level 16 RATICATE)
+	db 14, EKANS, MEOWTH, KOFFING, 0

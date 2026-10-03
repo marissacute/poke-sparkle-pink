@@ -70,5 +70,6 @@ ENDM
 	trainer_const STEVEN         ; $37
 	trainer_const RED            ; $38
 	trainer_const PETREL         ; $39
-	
+	trainer_const JESSIE_JAMES   ; $3A
+
 DEF NUM_TRAINERS EQU const_value - 1

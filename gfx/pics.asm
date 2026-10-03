@@ -83,6 +83,7 @@ SECTION "Trainer Pics 2", ROMX
 WhitneyPic::       INCBIN "gfx/gstrainers/whitney.pic"
 RedTrainerPic::    INCBIN "gfx/gstrainers/redtrainer.pic"
 MarniePic::        INCBIN "gfx/gstrainers/marnie.pic"
+JessieJamesPic::   INCBIN "gfx/gstrainers/jessiejames.pic"
 
 
 SECTION "Trainer Pics", ROMX

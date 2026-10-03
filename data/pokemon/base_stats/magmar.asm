@@ -11,7 +11,7 @@
 
 	dw MagmarPicFront, MagmarPicBack
 
-	db EMBER, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db FIRE_PUNCH, LEER, SMOG, SMOKESCREEN ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

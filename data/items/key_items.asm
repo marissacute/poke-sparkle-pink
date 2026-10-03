@@ -84,4 +84,5 @@ KeyItemFlags:
 	dbit FALSE ; ELIXER
 	dbit FALSE ; MAX_ELIXER
 	dbit FALSE ; KINGS_ROCK
+	dbit FALSE ; ICE_STONE
 	end_bit_array NUM_ITEMS

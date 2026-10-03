@@ -69,4 +69,5 @@ TrainerPicAndMoneyPointers::
 	pic_money YoungsterPic,    1500 ; Stephen
 	pic_money RedTrainerPic,   1500 ; Red
 	pic_money YoungsterPic,    1500 ; Petrel
+	pic_money JessieJamesPic,  3000 ; Jessie & James
 	assert_table_length NUM_TRAINERS

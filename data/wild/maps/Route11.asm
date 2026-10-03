@@ -6,7 +6,7 @@ Route11WildMons:
 	db 12, SANDSHREW
 	db  9, DROWZEE
 	db 13, SPEAROW
-	db 13, DROWZEE
+	db 10, MILTANK
 	db 15, EKANS
 	db 15, SANDSHREW
 	db 11, DROWZEE

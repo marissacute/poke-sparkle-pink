@@ -107,19 +107,26 @@ _MtMoonB2FRocket3AfterBattleText::
 	cont "to me and scram!"
 	done
 
-_MtMoonB2FRocket4BattleText::
-	text "Little kids"
-	line "should leave"
-	cont "grown-ups alone!"
+_MtMoonB2FJessieJamesBattleText::
+	text "JESSIE: To protect"
+	line "the world from"
+	cont "our nation!"
+
+	para "JAMES: To unite"
+	line "all peoples with"
+	cont "devastation!"
+
+	para "MEOWTH: That's"
+	line "not how it goes!"
 	done
 
-_MtMoonB2FRocket4EndBattleText::
-	text "I'm"
-	line "steamed!"
+_MtMoonB2FJessieJamesEndBattleText::
+	text "Team"
+	line "Rocket's blasting"
+	cont "off again!"
 	prompt
 
-_MtMoonB2FRocket4AfterBattleText::
-	text "#MON lived"
-	line "here long before"
-	cont "people came."
+_MtMoonB2FJessieJamesAfterBattleText::
+	text "JESSIE: Go away,"
+	line "little girl."
 	done

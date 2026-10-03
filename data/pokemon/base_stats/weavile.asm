@@ -11,7 +11,7 @@
 
 	dw WeavilePicFront, WeavilePicBack
 
-	db SCRATCH, LEER, QUICK_ATTACK, SLASH ; level 1 learnset
+	db SCRATCH, LEER, QUICK_ATTACK, FEINT_ATTACK ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

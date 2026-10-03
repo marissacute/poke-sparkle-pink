@@ -6,7 +6,7 @@ SeafoamIslandsB4FWildMons:
 	db 33, KRABBY
 	db 33, SHELLDER
 	db 29, SLOWPOKE
-	db 31, SEEL
+	db 30, SNEASEL
 	db 31, PSYDUCK
 	db 29, SEEL
 	db 39, SLOWBRO
