@@ -11,7 +11,7 @@
 
 	dw VibravaPicFront, VibravaPicBack
 
-	db DIG, SAND_ATTACK, BITE, DRAGON_RAGE ; level 1 learnset
+	db BITE, SAND_ATTACK, DIG, WING_ATTACK ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

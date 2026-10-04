@@ -28,7 +28,7 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_TOWNMAP2  ; $00
 	const PAL_SLOTS5    ; $01
 	const PAL_VIRIDIAN  ; $02
-	const PAL_PEWTER    ; $03
+	const PAL_VIBRAVA   ; $03
 	const PAL_CERULEAN  ; $04
 	const PAL_LAVENDER  ; $05
 	const PAL_VERMILION ; $06
@@ -281,4 +281,5 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_FLYGON        ; $FC
 	const PAL_JESSIE_JAMES  ; $FD
 	const PAL_SNEASEL       ; $FE
+	const PAL_TRAPINCH      ; $FF
 DEF NUM_SGB_PALS EQU const_value

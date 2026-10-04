@@ -473,6 +473,7 @@ ArcanineEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 50, EXTREME_SPEED
 	db 0
 
 MewEvosMoves:
@@ -489,12 +490,13 @@ GyaradosEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 20, BITE
-	db 25, DRAGON_RAGE
 	db 32, LEER
-	db 36, DRAGON_SLAM
-	db 41, HYDRO_PUMP
+	db 35, BITE
+	db 38, DRAGON_SLAM
+	db 43, HYDRO_PUMP
+	db 47, CRUNCH
 	db 52, HYPER_BEAM
+	db EVOLUTION_MOVE, DRAGON_RAGE 
 	db 0
 
 ShellderEvosMoves:
@@ -573,7 +575,7 @@ BlastoiseEvosMoves:
 	db 31, WITHDRAW
 	db 42, SKULL_BASH
 	db 52, HYDRO_PUMP
-	db 58, METAL_CLAW
+	db EVOLUTION_MOVE, METAL_CLAW
 	db 0
 
 PinsirEvosMoves:
@@ -697,12 +699,12 @@ KadabraEvosMoves:
 	db EVOLVE_LEVEL, 36, ALAKAZAM
 	db 0
 ; Learnset
-	db 16, CONFUSION
 	db 20, DISABLE
 	db 27, PSYBEAM
 	db 31, RECOVER
 	db 38, PSYCHIC_M
 	db 42, REFLECT
+	db EVOLUTION_MOVE, CONFUSION
 	db 0
 
 GravelerEvosMoves:
@@ -928,10 +930,10 @@ ElectabuzzEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-    db 31, THUNDERPUNCH ; this can be an evo move
 	db 36, SCREECH
 	db 47, THUNDERBOLT
 	db 58, THUNDER
+	db EVOLUTION_MOVE, THUNDERPUNCH
 	db 0
 
 MagnetonEvosMoves:
@@ -1072,6 +1074,7 @@ DragoniteEvosMoves:
 	db 38, WING_ATTACK
 	db 42, AGILITY
 	db 48, DRAGON_SLAM
+	db 50, EXTREME_SPEED
 	db 55, HYPER_BEAM
 	db 0
 
@@ -1311,6 +1314,7 @@ DratiniEvosMoves:
 	db 36, AGILITY
 	db 42, DRAGON_SLAM
 	db 45, HYPER_BEAM
+	db 50, EXTREME_SPEED
 	db 0
 
 DragonairEvosMoves:
@@ -1324,6 +1328,7 @@ DragonairEvosMoves:
 	db 38, AGILITY
 	db 44, DRAGON_SLAM
 	db 47, HYPER_BEAM
+	db 50, EXTREME_SPEED
 	db 0
 
 KabutoEvosMoves:
@@ -1716,10 +1721,10 @@ AnnihilapeEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 39, SHADOW_BALL ; make this an evolution move
 	db 40, SCREECH
 	db 44, SUBMISSION
 	db 50, THRASH
+	db EVOLUTION_MOVE, SHADOW_BALL
 	db 0
 
 DugtrioEvosMoves:
@@ -1804,6 +1809,7 @@ MetapodEvosMoves:
 	db EVOLVE_LEVEL, 10, BUTTERFREE
 	db 0
 ; Learnset
+	db EVOLUTION_MOVE, HARDEN
 	db 0
 
 ButterfreeEvosMoves:
@@ -2106,8 +2112,8 @@ VenusaurEvosMoves:
 	db 30, RAZOR_LEAF
 	db 43, GROWTH
 	db 52, SLEEP_POWDER
-	db 58, MOONBLAST
 	db 65, SOLARBEAM
+	db EVOLUTION_MOVE, MOONBLAST
 	db 0
 
 TentacruelEvosMoves:
@@ -2181,9 +2187,9 @@ AmpharosEvosMoves:
 	db 18, THUNDER_WAVE
 	db 35, LIGHT_SCREEN
 	db 39, DRAGON_RAGE
-	db 41, THUNDERPUNCH
 	db 45, DRAGON_SLAM
 	db 57, THUNDER
+	db EVOLUTION_MOVE, THUNDERPUNCH
 	db 0
 
 PonytaEvosMoves:
@@ -2207,10 +2213,10 @@ RapidashEvosMoves:
 	db 32, STOMP
 	db 35, GROWL
 	db 39, FIRE_SPIN
-	db 41, FAIRY_WIND
 	db 43, TAKE_DOWN
 	db 48, MOONBLAST
 	db 55, AGILITY
+	db EVOLUTION_MOVE, FAIRY_WIND
 	db 0
 
 RattataEvosMoves:
@@ -2412,9 +2418,9 @@ CharizardEvosMoves:
 	db 15, LEER
 	db 24, RAGE
 	db 36, SLASH
-	db 40, DRAGON_SLAM
 	db 46, FLAMETHROWER
 	db 55, FIRE_BLAST
+	db EVOLUTION_MOVE, DRAGON_SLAM
 	db 0
 
 FossilKabutopsEvosMoves:
@@ -2620,11 +2626,11 @@ TrapinchEvosMoves:
 	db EVOLVE_LEVEL, 35, VIBRAVA
 	db 0
 ; Learnset
-	db 12, DIG
-	db 20, ROCK_SLIDE
-	db 28, CRUNCH
-	db 36, EARTHQUAKE
-	db 48, FISSURE
+    db 17, BUG_BITE
+	db 25, DIG
+	db 33, CRUNCH
+	db 41, EARTHQUAKE
+	db 57, HYPER_BEAM
 	db 0
 
 VibravaEvosMoves:
@@ -2632,22 +2638,16 @@ VibravaEvosMoves:
 	db EVOLVE_LEVEL, 45, FLYGON
 	db 0
 ; Learnset
-	db 12, DIG
-	db 20, WING_ATTACK
-	db 24, SCREECH
-	db 32, SUPERSONIC
 	db 44, EARTHQUAKE
 	db 50, DRAGON_SLAM
+	db 59, HYPER_BEAM
+	db EVOLUTION_MOVE, WING_ATTACK
 	db 0
 
 FlygonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 12, CRUNCH
-	db 20, WING_ATTACK
-	db 24, SCREECH
-	db 32, DRAGON_RAGE
-	db 44, EARTHQUAKE
-	db 52, HYPER_BEAM
+	db 52, DRAGON_SLAM
+	db 61, HYPER_BEAM
 	db 0

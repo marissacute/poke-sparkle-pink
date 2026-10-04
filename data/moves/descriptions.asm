@@ -209,6 +209,7 @@ MoveDescriptions:
     text_far _ShadowBallDescription
     text_far _WaterPulseDescription
     text_far _BugBiteDescription
+    text_far _ExtremeSpeedDescription
     text_far _StruggleDescription
 
 _PoundDescription::
@@ -1105,6 +1106,13 @@ _BugBiteDescription::
     text "Bites the foe"
     line "with sharp"
     cont "mandibles."
+    done
+
+_ExtremeSpeedDescription::
+    text "An extremely"
+    line "fast attack that"
+    cont "always strikes"
+    cont "first."
     done
 
 _StruggleDescription::

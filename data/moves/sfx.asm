@@ -180,6 +180,7 @@ MoveSoundTable:
 	db SFX_NOT_VERY_EFFECTIVE, $f0, $e0 ; SHADOW_BALL
 	db SFX_BATTLE_2A,          $f0, $60 ; WATER_PULSE
 	db SFX_BATTLE_1E,          $00, $80 ; BUG_BITE
+	db SFX_BATTLE_25,          $00, $10 ; EXTREME_SPEED (same as QUICK_ATTACK)
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

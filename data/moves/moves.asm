@@ -190,5 +190,6 @@ Moves:
 	move SHADOW_BALL,  SPECIAL_DOWN_SIDE_EFFECT,    80, GHOST,        100, 15
 	move WATER_PULSE,  CONFUSION_SIDE_EFFECT_20,    60, WATER,        100, 20
 	move BUG_BITE,     NO_ADDITIONAL_EFFECT,        60, BUG,          100, 20 ; originally this stole and ate the target's berry
+	move EXTREME_SPEED, NO_ADDITIONAL_EFFECT,       80, NORMAL,       100,  5 ; strikes first (priority +1)
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

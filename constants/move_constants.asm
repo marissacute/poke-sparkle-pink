@@ -185,6 +185,7 @@
 	const SHADOW_BALL  ; b1
 	const WATER_PULSE  ; b2
 	const BUG_BITE     ; b3
+	const EXTREME_SPEED ; b4
 	const STRUGGLE
 DEF NUM_ATTACKS EQU const_value - 1
 

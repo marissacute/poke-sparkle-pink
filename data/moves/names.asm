@@ -180,5 +180,6 @@ MoveNames::
 	li "SHADOW BALL"
 	li "WATER PULSE"
 	li "BUG BITE"
+	li "EXTREMESPEED"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

@@ -80,6 +80,13 @@ DEF HOF_TEAM_CAPACITY EQU 50
 	const EVOLVE_TRADE ; 3
 	const EVOLVE_STAT  ; 4
 
+; Pseudo-level for moves learnt when a Pokémon evolves into that species.
+; LearnEvolutionMoves passes this as the mon's level, so the learnset entry is
+; only read during an evolution. Must be higher than any real level, and such
+; entries must come after all level-up moves (WriteMonMoves stops at the first
+; entry above the mon's level).
+DEF EVOLUTION_MOVE EQU 254
+
 ; Stat requirements for EVOLVE_STAT.
 ; These must not be 0: the evolution data has no fixed record size, so
 ; LearnMoveFromLevelUp and WriteMonMoves find the end of it by scanning for the

@@ -179,6 +179,7 @@ AttackAnimationPointers:
 	dw ShadowBallAnim
 	dw WaterPulseAnim
 	dw BugBiteAnim
+	dw ExtremeSpeedAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -777,6 +778,7 @@ AgilityAnim:
 
 QuickAttackAnim:
 MachPunchAnim:
+ExtremeSpeedAnim:
 	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC

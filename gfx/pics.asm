@@ -499,6 +499,9 @@ HoundourPicFront::    INCBIN "gfx/pokemon/gsfront/houndour.pic"
 HoundourPicBack::     INCBIN "gfx/pokemon/gsback/houndourb.pic"
 HoundoomPicFront::    INCBIN "gfx/pokemon/gsfront/houndoom.pic"
 HoundoomPicBack::     INCBIN "gfx/pokemon/gsback/houndoomb.pic"
+
+SECTION "Pics 14", ROMX
+
 HappinyPicFront::     INCBIN "gfx/pokemon/gsfront/happiny.pic"
 HappinyPicBack::      INCBIN "gfx/pokemon/gsback/happinyb.pic"
 AnnihilapePicFront::    INCBIN "gfx/pokemon/gsfront/annihilape.pic"

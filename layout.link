@@ -216,6 +216,8 @@ ROMX $37
 	"Pics 12"
 ROMX $38
 	"Pics 13"
+ROMX $3B
+	"Pics 14"
 ROMX $39
 	"NPC Sprites 2"
 ROMX $3A

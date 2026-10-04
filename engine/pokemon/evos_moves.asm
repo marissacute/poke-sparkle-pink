@@ -212,6 +212,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	xor a
 	ld [wMonDataLocation], a
 	call LearnMoveFromLevelUp
+	call LearnEvolutionMoves
 	pop hl
 	predef SetPartyMonTypes
 	ld a, [wIsInBattle]
@@ -406,6 +407,18 @@ LearnMoveFromLevelUp:
 .done
 	ld a, [wCurPartySpecies]
 	ld [wPokedexNum], a
+	ret
+
+LearnEvolutionMoves:
+; Teach any move tagged with EVOLUTION_MOVE in the learnset of the species the
+; mon just evolved into. Reuses LearnMoveFromLevelUp by faking the mon's level.
+	ld a, [wCurEnemyLevel]
+	push af
+	ld a, EVOLUTION_MOVE
+	ld [wCurEnemyLevel], a
+	call LearnMoveFromLevelUp
+	pop af
+	ld [wCurEnemyLevel], a
 	ret
 
 ; writes the moves a mon has at level [wCurEnemyLevel] to [de]
