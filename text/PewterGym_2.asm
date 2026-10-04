@@ -122,22 +122,21 @@ _PewterGymGuideBeginAdviceText::
 	prompt
 
 _PewterGymGuideAdviceText::
-	text "The 1st #MON"
-	line "out in a match is"
-	cont "at the top of the"
-	cont "#MON LIST!"
+	text "BROCK's #MON"
+	line "have high DEFENSE"
+	cont "but low SPECIAL."
 
-	para "By changing the"
-	line "order of #MON,"
-	cont "matches could be"
-	cont "made easier!"
+	para "Attacks from"
+	line "SPECIAL types"
+	cont "will do massive"
+	cont "damage!"
 	done
 
 _PewterGymGuideFreeServiceText::
 	text "It's a free"
 	line "service! Let's"
 	cont "get happening!"
-	prompt
+	done
 
 _PewterGymGuidePostBattleText::
 	text "Just as I thought!"

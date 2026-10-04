@@ -247,15 +247,14 @@ PewterGymGuideText:
 	call YesNoChoice
 	ld a, [wCurrentMenuItem]
 	and a
-	jr nz, .PewterGymGuideBeginAdviceText
+	jr nz, .declinedAdvice
 	ld hl, PewterGymGuideBeginAdviceText
 	call PrintText
-	jr .PewterGymGuideAdviceText
-.PewterGymGuideBeginAdviceText
-	ld hl, PewterGymGuideFreeServiceText
-	call PrintText
-.PewterGymGuideAdviceText
 	ld hl, PewterGymGuideAdviceText
+	call PrintText
+	jr .done
+.declinedAdvice
+	ld hl, PewterGymGuideFreeServiceText
 	call PrintText
 	jr .done
 .afterBeat

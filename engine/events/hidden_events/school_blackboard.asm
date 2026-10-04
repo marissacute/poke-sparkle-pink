@@ -96,10 +96,9 @@ ViridianSchoolBlackboard::
 	ld hl, ViridianSchoolBlackboardText1
 	call PrintText
 	xor a
-	ld [wMenuItemOffset], a
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	ld a, PAD_LEFT | PAD_RIGHT | PAD_A | PAD_B
+	ld a, PAD_A | PAD_B
 	ld [wMenuWatchedKeys], a
 	ld a, 2
 	ld [wMaxMenuItem], a
@@ -114,53 +113,19 @@ ViridianSchoolBlackboard::
 	lb bc, 6, 10
 	call TextBoxBorder
 	hlcoord 1, 2
-	ld de, StatusAilmentText1
-	call PlaceString
-	hlcoord 6, 2
-	ld de, StatusAilmentText2
+	ld de, BlackboardHeadingText
 	call PlaceString
 	ld hl, ViridianSchoolBlackboardText2
 	call PrintText
 	call HandleMenuInput ; pressing up and down is handled in here
 	bit B_PAD_B, a ; pressed b
 	jr nz, .exitBlackboard
-	bit B_PAD_RIGHT, a
-	jr z, .didNotPressRight
-	; move cursor to right column
-	ld a, 2
-	ld [wMaxMenuItem], a
-	ld a, 2
-	ld [wTopMenuItemY], a
-	ld a, 6
-	ld [wTopMenuItemX], a
-	ld a, 3 ; in the the right column, use an offset to prevent overlap
-	ld [wMenuItemOffset], a
-	jr .blackboardLoop
-.didNotPressRight
-	bit B_PAD_LEFT, a
-	jr z, .didNotPressLeftOrRight
-	; move cursor to left column
-	ld a, 2
-	ld [wMaxMenuItem], a
-	ld a, 2
-	ld [wTopMenuItemY], a
-	ld a, 1
-	ld [wTopMenuItemX], a
-	xor a
-	ld [wMenuItemOffset], a
-	jr .blackboardLoop
-.didNotPressLeftOrRight
-	ld a, [wCurrentMenuItem]
-	ld b, a
-	ld a, [wMenuItemOffset]
-	add b
-	cp 5 ; cursor is pointing to "QUIT"
-	jr z, .exitBlackboard
-	; we must have pressed a on a status condition
+	; we must have pressed a on a heading
 	; so print the text
 	ld hl, wStatusFlags5
 	res BIT_NO_TEXT_DELAY, [hl]
-	ld hl, ViridianBlackboardStatusPointers
+	ld a, [wCurrentMenuItem]
+	ld hl, ViridianBlackboardTopicPointers
 	add a
 	ld d, 0
 	ld e, a
@@ -184,41 +149,24 @@ ViridianSchoolBlackboardText2:
 	text_far _ViridianSchoolBlackboardText2
 	text_end
 
-StatusAilmentText1:
-	db   " SLP"
-	next " PSN"
-	next " PAR@"
+BlackboardHeadingText:
+	db   " PHYSICAL"
+	next " SPECIAL"
+	next " ICE TYPE@"
 
-StatusAilmentText2:
-	db   " BRN"
-	next " FRZ"
-	next " QUIT@"
+ViridianBlackboardTopicPointers:
+	dw ViridianBlackboardPhysicalText
+	dw ViridianBlackboardSpecialText
+	dw ViridianBlackboardIceTypeText
 
-	db "@" ; unused
-
-ViridianBlackboardStatusPointers:
-	dw ViridianBlackboardSleepText
-	dw ViridianBlackboardPoisonText
-	dw ViridianBlackboardPrlzText
-	dw ViridianBlackboardBurnText
-	dw ViridianBlackboardFrozenText
-
-ViridianBlackboardSleepText:
-	text_far _ViridianBlackboardSleepText
+ViridianBlackboardPhysicalText:
+	text_far _ViridianBlackboardPhysicalText
 	text_end
 
-ViridianBlackboardPoisonText:
-	text_far _ViridianBlackboardPoisonText
+ViridianBlackboardSpecialText:
+	text_far _ViridianBlackboardSpecialText
 	text_end
 
-ViridianBlackboardPrlzText:
-	text_far _ViridianBlackboardPrlzText
-	text_end
-
-ViridianBlackboardBurnText:
-	text_far _ViridianBlackboardBurnText
-	text_end
-
-ViridianBlackboardFrozenText:
-	text_far _ViridianBlackboardFrozenText
+ViridianBlackboardIceTypeText:
+	text_far _ViridianBlackboardIceTypeText
 	text_end

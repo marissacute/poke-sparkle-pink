@@ -17,7 +17,7 @@ Scope notes:
 8 species, front **and** back. The eight fronts are byte-identical to one another (77 B, md5
 `1970a4a1…`) and so are the eight backs (75 B, md5 `39796b54…`). All of these PNGs are tracked
 by git now. Done already: Munchlax (front **and** back), Sneasel (front **and** back) and
-Flygon's front.
+Flygon (front **and** back).
 
 - [ ] Annihilape — `gfx/pokemon/gsfront/annihilape.png`, `gsback/annihilapeb.png`
 - [ ] Glaceon — `gfx/pokemon/gsfront/glaceon.png`, `gsback/glaceonb.png`
@@ -30,8 +30,6 @@ Flygon's front.
 
 ### Also
 
-- [ ] **Flygon's back sprite** is still a blank — `gsback/flygonb.png` (75 B). Its front is
-  real art, so this is the only mixed pair.
 - [ ] **Hoopa's back sprite** is a blank too — `gsback/hoopab.png` (72 B, uniform, a different
   file from the eight above). Its front is real art.
 - [x] All 202 species now use their animated Gen 2 party-menu icon. The placeholder species

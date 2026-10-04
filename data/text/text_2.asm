@@ -500,59 +500,50 @@ _ViridianSchoolNotebookText1::
 
 	para "First page..."
 
-	para "# BALLs are"
-	line "used to catch"
-	cont "#MON."
-
-	para "Up to 6 #MON"
-	line "can be carried."
-
-	para "People who raise"
-	line "and make #MON"
-	cont "fight are called"
-	cont "#MON trainers."
+	para "Several #MON"
+	line "have unevolved"
+	cont "forms that we"
+	cont "were previously"
+	cont "unaware of."
 	prompt
 
 _ViridianSchoolNotebookText2::
 	text "Second page..."
 
-	para "A healthy #MON"
-	line "may be hard to"
-	cont "catch, so weaken"
-	cont "it first!"
+	para "EEVEE is a"
+	line "genetically"
+	cont "unstable #MON."
 
-	para "Poison, burns and"
-	line "other damage are"
-	cont "effective!"
+	para "It can evolve"
+	line "into 8 different"
+	cont "#MON!"
 	prompt
 
 _ViridianSchoolNotebookText3::
 	text "Third page..."
 
-	para "#MON trainers"
-	line "seek others to"
-	cont "engage in #MON"
-	cont "fights."
-
-	para "Battles are"
-	line "constantly fought"
-	cont "at #MON GYMs."
+	para "STEEL-type"
+	line "#MON take a"
+	cont "lot of damage"
+	cont "from FIRE,"
+	cont "FIGHTING, and"
+	cont "GROUND attacks,"
+	cont "but they take"
+	cont "no POISON damage"
+	cont "at all, and"
+	cont "resist 10 types!"
 	prompt
 
 _ViridianSchoolNotebookText4::
 	text "Fourth page..."
 
-	para "The goal for"
-	line "#MON trainers"
-	cont "is to beat the "
-	cont "top 8 #MON"
-	cont "GYM LEADERs."
-
-	para "Do so to earn the"
-	line "right to face..."
-
-	para "The ELITE FOUR of"
-	line "#MON LEAGUE!"
+	para "GHOST and DRAGON"
+	line "#MON used to"
+	cont "be rare, but"
+	cont "recently more"
+	cont "#MON have"
+	cont "been discovered"
+	cont "with these types!"
 	prompt
 
 _EnemiesOnEverySideText::
@@ -638,9 +629,10 @@ _LinkCableInfoText3::
 
 _ViridianSchoolBlackboardText1::
 	text "The blackboard"
-	line "describes #MON"
-	cont "STATUS changes"
-	cont "during battles."
+	line "describes how"
+	cont "attacking with"
+	cont "different types"
+	cont "works."
 	prompt
 
 _ViridianSchoolBlackboardText2::
@@ -648,67 +640,52 @@ _ViridianSchoolBlackboardText2::
 	line "you want to read?"
 	done
 
-_ViridianBlackboardSleepText::
-	text "A #MON can't"
-	line "attack if it's"
-	cont "asleep!"
+_ViridianBlackboardPhysicalText::
+	text "Physical attacks"
+	line "use the ATTACK"
+	cont "stat of the"
+	cont "#MON to do"
+	cont "damage."
 
-	para "#MON will stay"
-	line "asleep even after"
-	cont "battles."
+	para "Opposing #MON"
+	line "use their DEFENSE"
+	cont "stat to defend"
+	cont "against them."
 
-	para "Use AWAKENING to"
-	line "wake them up!"
+	para "The physical"
+	line "types are:"
+	cont "NORMAL, FIGHTING,"
+	cont "FLYING, DRAGON,"
+	cont "GROUND, ROCK,"
+	cont "BUG, DARK, and"
+	cont "STEEL!"
 	prompt
 
-_ViridianBlackboardPoisonText::
-	text "When poisoned, a"
-	line "#MON's health"
-	cont "steadily drops."
+_ViridianBlackboardSpecialText::
+	text "Special attacks"
+	line "use the SPECIAL"
+	cont "stat for both"
+	cont "attacking and"
+	cont "defending."
 
-	para "Poison lingers"
-	line "after battles."
-
-	para "Use an ANTIDOTE"
-	line "to cure poison!"
+	para "The special types"
+	line "are: FIRE, WATER,"
+	cont "GRASS, ELECTRIC,"
+	cont "PSYCHIC, ICE,"
+	cont "GHOST, POISON,"
+	cont "and FAIRY!"
 	prompt
 
-_ViridianBlackboardPrlzText::
-	text "Paralysis could"
-	line "make #MON"
-	cont "moves misfire!"
-
-	para "Paralysis remains"
-	line "after battles."
-
-	para "Use PARLYZ HEAL"
-	line "for treatment!"
-	prompt
-
-_ViridianBlackboardBurnText::
-	text "A burn reduces"
-	line "power and speed."
-	cont "It also causes"
-	cont "ongoing damage."
-
-	para "Burns remain"
-	line "after battles."
-
-	para "Use BURN HEAL to"
-	line "cure a burn!"
-	prompt
-
-_ViridianBlackboardFrozenText::
-	text "If frozen, a"
-	line "#MON becomes"
-	cont "totally immobile!"
-
-	para "It stays frozen"
-	line "even after the"
-	cont "battle ends."
-
-	para "Use ICE HEAL to"
-	line "thaw out #MON!"
+_ViridianBlackboardIceTypeText::
+	text "ICE-type #MON"
+	line "are weak to"
+	cont "FIRE, FIGHTING,"
+	cont "ROCK, and STEEL"
+	cont "attacks. They are"
+	cont "strong when"
+	cont "defending against"
+	cont "ICE, WATER, and"
+	cont "GRASS attacks."
 	prompt
 
 _VermilionGymTrashText::
