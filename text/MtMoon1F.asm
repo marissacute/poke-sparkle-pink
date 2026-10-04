@@ -1,18 +1,37 @@
-_MtMoon1FHikerBattleText::
-	text "WHOA! You shocked"
-	line "me! Oh, you're"
-	cont "just a kid!"
+_MtMoon1FStevenBattleText::
+	text "STEVEN: I'm just"
+	line "a rock maniac"
+	cont "from the HOENN"
+	cont "Region.."
+	para "I'm here to look"
+	line "for the elusive"
+	cont "MOON STONE."
+	para "But I dabble in"
+	line "#MON battles"
+	cont "too!"
 	done
 
-_MtMoon1FHikerEndBattleText::
-	text "Wow!"
-	line "Shocked again!"
+; the game prints "<name>: " in front of this one, so the first
+; line has to stay within 20 - 6 ("STEVEN") - 2 columns
+_MtMoon1FStevenEndBattleText::
+	text "You seem"
+	line "quite capable.."
+	para "Are you doing"
+	line "the Gym"
+	cont "Challenge?"
 	prompt
 
-_MtMoon1FHikerAfterBattleText::
-	text "Kids like you"
-	line "shouldn't be"
-	cont "here!"
+_MtMoon1FStevenAfterBattleText::
+	text "STEVEN: People"
+	line "in this region"
+	cont "do not seem"
+	cont "used to STEEL-"
+	cont "type #MON.."
+	para "Someone tried"
+	line "to use BUG and"
+	cont "NORMAL type"
+	cont "attacks against"
+	cont "me."
 	done
 
 _MtMoon1FYoungster1BattleText::

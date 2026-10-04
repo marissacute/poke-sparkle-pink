@@ -24,8 +24,6 @@ Flygon (front **and** back).
 - [ ] Leafeon — `gfx/pokemon/gsfront/leafeon.png`, `gsback/leafeonb.png`
 - [ ] Mime Jr. — `gfx/pokemon/gsfront/mimejr.png`, `gsback/mimejrb.png`
 - [ ] Mismagius — `gfx/pokemon/gsfront/mismagius.png`, `gsback/mismagiusb.png`
-- [ ] Trapinch — `gfx/pokemon/gsfront/trapinch.png`, `gsback/trapinchb.png`
-- [ ] Vibrava — `gfx/pokemon/gsfront/vibrava.png`, `gsback/vibravab.png`
 - [ ] Weavile — `gfx/pokemon/gsfront/weavile.png`, `gsback/weavileb.png`
 
 ### Also
@@ -40,7 +38,7 @@ Flygon (front **and** back).
 
 ## 2. Can't be obtained
 
-**10 species** (excluding Mew and Hoopa). Split by whether a player can end up owning them at
+**9 species** (excluding Mew and Hoopa). Split by whether a player can end up owning them at
 all.
 
 ### Never ownable — 8
@@ -56,12 +54,16 @@ table, a gift, or a trade):
 - [ ] Munchlax → Snorlax
 - [ ] Smoochum → Jynx
 
-### Trainer-only — 2
+### Trainer-only — 1
 
 Appear on an enemy team but can never be owned. Needs a wild/gift/trade source:
 
 - [ ] Clodsire
-- [ ] Paldean Wooper
+
+- [x] ~~Paldean Wooper~~ — FIXED 2026-10-04. The Cerulean Trade House now trades a WOOPER for
+  a PALDEAN_WOOPER nicknamed CLODDY ([trades.asm](data/events/trades.asm), index
+  `TRADE_FOR_CLODDY`). It does not close forwards to Clodsire: `PaldeanWooperEvosMoves` is
+  still `db 0`, so the evolution would have to be added first.
 
 ---
 
@@ -103,7 +105,6 @@ Hoopa). The other 155 of 202 species appear on at least one trainer's team.
 - [ ] Psyduck
 - [ ] Scizor
 - [ ] Scyther
-- [ ] Skarmory
 - [ ] Slowking
 - [ ] Smoochum
 - [ ] Sneasel

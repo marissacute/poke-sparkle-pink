@@ -84,6 +84,7 @@ WhitneyPic::       INCBIN "gfx/gstrainers/whitney.pic"
 RedTrainerPic::    INCBIN "gfx/gstrainers/redtrainer.pic"
 MarniePic::        INCBIN "gfx/gstrainers/marnie.pic"
 JessieJamesPic::   INCBIN "gfx/gstrainers/jessiejames.pic"
+StevenPic::        INCBIN "gfx/gstrainers/steven.pic"
 
 
 SECTION "Trainer Pics", ROMX
@@ -510,7 +511,7 @@ MismagiusPicFront::    INCBIN "gfx/pokemon/gsfront/mismagius.pic"
 MismagiusPicBack::     INCBIN "gfx/pokemon/gsback/mismagiusb.pic"
 MimeJrPicFront::    INCBIN "gfx/pokemon/gsfront/mimejr.pic"
 MimeJrPicBack::     INCBIN "gfx/pokemon/gsback/mimejrb.pic"
-SneaselPicFront::    INCBIN "gfx/pokemon/gsfront/sneasel.pic"
+SneaselPicFront::    INCBIN "gfx/pokemon/gsfront/sneasel2.pic"
 SneaselPicBack::     INCBIN "gfx/pokemon/gsback/sneaselb.pic"
 WeavilePicFront::    INCBIN "gfx/pokemon/gsfront/weavile.pic"
 WeavilePicBack::     INCBIN "gfx/pokemon/gsback/weavileb.pic"

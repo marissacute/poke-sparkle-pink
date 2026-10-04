@@ -150,7 +150,7 @@ MonsterPalettes:
 	db PAL_SCYTHER
 	db PAL_SCIZOR
 	db PAL_SNEASEL
-	db PAL_UMBREON
+	db PAL_SNEASEL
 	db PAL_SMOOCHUM
 	db PAL_JYNX
 	db PAL_ELEKID
@@ -260,7 +260,7 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_JACINTHE ; Jacinthe
 	db PAL_MARNIE ; Marnie
 	db PAL_WHITNEY ; Whitney
-	db PAL_MEWMON ; Steven
+	db PAL_STEVEN ; Steven
 	db PAL_RED ; Red
 	db PAL_MEWMON ; Petrel
 	db PAL_JESSIE_JAMES ; Jessie & James

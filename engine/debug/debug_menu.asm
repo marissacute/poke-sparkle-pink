@@ -96,10 +96,10 @@ TestBattle: ; unreferenced except in _DEBUG
 	dec a
 	ld [hl], a
 
-	; Give the player a level 5 Dragonite.
-	ld a, DRAGONITE
+	; Give the player a level 25 Sneasel.
+	ld a, SNEASEL
 	ld [wCurPartySpecies], a
-	ld a, 5
+	ld a, 25
 	ld [wCurEnemyLevel], a
 	xor a
 	ld [wMonDataLocation], a
@@ -107,6 +107,11 @@ TestBattle: ; unreferenced except in _DEBUG
 	call AddPartyMon
 
 	; Fight against a level 5 Pikachu.
+	; AddPartyMon took the player's level from wCurEnemyLevel, and
+	; LoadEnemyMonData reads that same variable for the enemy's, so put it
+	; back before InitOpponent or the Pikachu inherits the Sneasel's level.
+	ld a, 5
+	ld [wCurEnemyLevel], a
 	ld a, PIKACHU
 	ld [wCurOpponent], a
 

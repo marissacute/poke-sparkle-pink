@@ -15,7 +15,7 @@ MtMoon1F_ScriptPointers:
 
 MtMoon1F_TextPointers:
 	def_text_pointers
-	dw_const MtMoon1FHikerText,         TEXT_MTMOON1F_HIKER
+	dw_const MtMoon1FStevenText,        TEXT_MTMOON1F_STEVEN
 	dw_const MtMoon1FYoungster1Text,    TEXT_MTMOON1F_YOUNGSTER1
 	dw_const MtMoon1FCooltrainerF1Text, TEXT_MTMOON1F_COOLTRAINER_F1
 	dw_const MtMoon1FSuperNerdText,     TEXT_MTMOON1F_SUPER_NERD
@@ -33,7 +33,7 @@ MtMoon1F_TextPointers:
 MtMoon1TrainerHeaders:
 	def_trainers
 MtMoon1TrainerHeader0:
-	trainer EVENT_BEAT_MT_MOON_1_TRAINER_0, 2, MtMoon1FHikerBattleText, MtMoon1FHikerEndBattleText, MtMoon1FHikerAfterBattleText
+	trainer EVENT_BEAT_MT_MOON_1_TRAINER_0, 2, MtMoon1FStevenBattleText, MtMoon1FStevenEndBattleText, MtMoon1FStevenAfterBattleText
 MtMoon1TrainerHeader1:
 	trainer EVENT_BEAT_MT_MOON_1_TRAINER_1, 3, MtMoon1FYoungster1BattleText, MtMoon1FYoungster1EndBattleText, MtMoon1FYoungster1AfterBattleText
 MtMoon1TrainerHeader2:
@@ -48,7 +48,7 @@ MtMoon1TrainerHeader6:
 	trainer EVENT_BEAT_MT_MOON_1_TRAINER_6, 3, MtMoon1FYoungster3BattleText, MtMoon1FYoungster3EndBattleText, MtMoon1FYoungster3AfterBattleText
 	db -1 ; end
 
-MtMoon1FHikerText:
+MtMoon1FStevenText:
 	text_asm
 	ld hl, MtMoon1TrainerHeader0
 	call TalkToTrainer
@@ -90,16 +90,16 @@ MtMoon1FYoungster3Text:
 	call TalkToTrainer
 	jp TextScriptEnd
 
-MtMoon1FHikerBattleText:
-	text_far _MtMoon1FHikerBattleText
+MtMoon1FStevenBattleText:
+	text_far _MtMoon1FStevenBattleText
 	text_end
 
-MtMoon1FHikerEndBattleText:
-	text_far _MtMoon1FHikerEndBattleText
+MtMoon1FStevenEndBattleText:
+	text_far _MtMoon1FStevenEndBattleText
 	text_end
 
-MtMoon1FHikerAfterBattleText:
-	text_far _MtMoon1FHikerAfterBattleText
+MtMoon1FStevenAfterBattleText:
+	text_far _MtMoon1FStevenAfterBattleText
 	text_end
 
 MtMoon1FYoungster1BattleText:

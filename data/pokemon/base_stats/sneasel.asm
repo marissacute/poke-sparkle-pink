@@ -1,13 +1,13 @@
 	db DEX_SNEASEL ; pokedex id
 
-	db  55,  95,  55, 115,  35
+	db  55,  95,  55, 115,  75
 	;   hp  atk  def  spd  spc
 
 	db DARK, ICE ; type
 	db 60 ; catch rate
 	db 86 ; base exp
 
-	INCBIN "gfx/pokemon/gsfront/sneasel.pic", 0, 1 ; sprite dimensions
+	INCBIN "gfx/pokemon/gsfront/sneasel2.pic", 0, 1 ; sprite dimensions
 
 	dw SneaselPicFront, SneaselPicBack
 

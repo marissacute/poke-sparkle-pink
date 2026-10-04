@@ -54,7 +54,7 @@ TrainerDataPointers:
 	dw JacintheData
 	dw MarnieData ; Marnie
 	dw WhitneyData ; Whitney
-	dw YoungsterData ; Steven
+	dw StevenData ; Steven
 	dw RedData ; Red
 	dw YoungsterData ; Petrel
 	dw JessieJamesData ; Jessie & James
@@ -790,3 +790,7 @@ MarnieData:
 JessieJamesData:
 ; Mt. Moon B2F (replaces the ROCKET with a level 16 RATICATE)
 	db 14, EKANS, MEOWTH, KOFFING, 0
+
+StevenData:
+; Mt. Moon 1F (replaces the HIKER)
+	db 10, DIGLETT, SKARMORY, 0
