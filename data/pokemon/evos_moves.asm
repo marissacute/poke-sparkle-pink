@@ -1035,6 +1035,7 @@ WooperEvosMoves:
 
 PaldeanWooperEvosMoves:
 ; Evolutions
+	db EVOLVE_LEVEL, 20, CLODSIRE
 	db 0
 ; Learnset
 	db 11, TAIL_WHIP

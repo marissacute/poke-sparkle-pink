@@ -137,6 +137,9 @@ GetPrizeMenuId:
 	ld c, 2 | LEADING_ZEROES
 	jp PrintBCDNumber
 
+; The dictionary comes first: it defines PRIZE_LEVEL_<species> for each entry,
+; which the prize_mon entries in prizes.asm assert against.
+INCLUDE "data/events/prize_mon_levels.asm"
 INCLUDE "data/events/prizes.asm"
 
 PrintPrizePrice:
@@ -286,13 +289,21 @@ GetPrizeMonLevel:
 	ld hl, PrizeMonLevelDictionary
 .loop
 	ld a, [hli]
+	and a ; a species of NO_MON terminates the table
+	jr z, .noMatch
 	cp b
 	jr z, .matchFound
-	inc hl
+	inc hl ; skip this entry's level
 	jr .loop
 .matchFound
 	ld a, [hl]
 	ld [wCurEnemyLevel], a
 	ret
-
-INCLUDE "data/events/prize_mon_levels.asm"
+.noMatch
+	; Unreachable while every species in the prize menus has a dictionary
+	; entry -- the prize_mon macro asserts that at build time. Returning a
+	; default beats the old behaviour of reading past the table until a
+	; byte happened to match.
+	ld a, PRIZE_MON_FALLBACK_LEVEL
+	ld [wCurEnemyLevel], a
+	ret

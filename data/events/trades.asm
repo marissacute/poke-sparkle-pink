@@ -16,7 +16,7 @@ TradeMons:
 	; post-trade text. English Yellow changed _AfterTrade2Text to
 	; not mention evolution.
 	npctrade NIDORINO,   NIDORINA,  TRADE_DIALOGSET_CASUAL,    "TERRY"
-	npctrade ABRA,       MR_MIME,   TRADE_DIALOGSET_CASUAL,    "MARCEL"
+	npctrade ABRA,       MIME_JR,   TRADE_DIALOGSET_CASUAL,    "MARCEL"
 	npctrade BUTTERFREE, BEEDRILL,  TRADE_DIALOGSET_HAPPY,     "CHIKUCHIKU" ; unused
 	npctrade PONYTA,     SEEL,      TRADE_DIALOGSET_CASUAL,    "SAILOR"
 	npctrade SPEAROW,    FARFETCHD, TRADE_DIALOGSET_HAPPY,     "DUX"
