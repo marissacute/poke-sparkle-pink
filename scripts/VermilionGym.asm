@@ -69,9 +69,6 @@ VermilionGymLTSurgeAfterBattleScript:
 	ld a, TEXT_VERMILIONGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
 	call DisplayTextID
-	ld a, POWERPLANT_ZAPDOS
-	ld [wToggleableObjectIndex], a
-	predef ShowObject
 	jp VermilionGymResetScripts
 
 VermilionGymLTSurgeReceiveTM24Script:

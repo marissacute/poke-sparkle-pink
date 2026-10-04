@@ -1561,7 +1561,7 @@ MissingNoDexEntry:
 	db "コメント　さくせいちゅう@" ; コメント作成中 (Comment to be written)
 
 AnnihilapeDexEntry:
-	db "RAGE MONKEY@"
+	db "RAGEMONKEY@"
 	db 12
 	dw 560
 	text_far _AnnihilapeDexEntry

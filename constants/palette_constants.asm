@@ -29,7 +29,7 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_SLOTS5    ; $01
 	const PAL_VIRIDIAN  ; $02
 	const PAL_VIBRAVA   ; $03
-	const PAL_CERULEAN  ; $04
+	const PAL_ANNIHILAPE ; $04
 	const PAL_LAVENDER  ; $05
 	const PAL_VERMILION ; $06
 	const PAL_CELADON   ; $07
