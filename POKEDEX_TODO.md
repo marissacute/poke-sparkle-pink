@@ -15,15 +15,14 @@ Scope notes:
 ## 1. Placeholder graphics
 
 Every blank is a *uniform* image — one sample value across the whole file — which is a surer
-tell than the file size. Done already: Munchlax, Sneasel and Flygon (front **and** back), plus
-the **fronts** of Annihilape and Weavile. All of these PNGs are tracked by git.
+tell than the file size. Done already: Munchlax, Sneasel, Flygon and Mime Jr. (front **and**
+back), plus the **fronts** of Annihilape and Weavile. All of these PNGs are tracked by git.
 
-**4 species blank front and back.** The four fronts are byte-identical to one another (77 B,
-md5 `1970a4a1…`) and the four backs match too (75 B, md5 `39796b54…`).
+**3 species blank front and back.** The three fronts are byte-identical to one another (77 B,
+md5 `1970a4a1…`) and the three backs match too (75 B, md5 `39796b54…`).
 
 - [ ] Glaceon — `gfx/pokemon/gsfront/glaceon.png`, `gsback/glaceonb.png`
 - [ ] Leafeon — `gfx/pokemon/gsfront/leafeon.png`, `gsback/leafeonb.png`
-- [ ] Mime Jr. — `gfx/pokemon/gsfront/mimejr.png`, `gsback/mimejrb.png`
 - [ ] Mismagius — `gfx/pokemon/gsfront/mismagius.png`, `gsback/mismagiusb.png`
 
 **3 more with a real front but a blank back:**
@@ -37,9 +36,6 @@ md5 `1970a4a1…`) and the four backs match too (75 B, md5 `39796b54…`).
 - [x] All 202 species now use their animated Gen 2 party-menu icon. The placeholder species
   deliberately borrow a relative's icon — e.g. `trapinch`/`vibrava`/`flygon` are all `ICON_BUG`
   ([menu_icons.asm](data/pokemon/menu_icons.asm)).
-
-> Mime Jr. is reachable in play now (the Route 2 trade), so its blank renders as an empty
-> square in a real battle rather than sitting on an unused species.
 
 ---
 

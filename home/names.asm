@@ -53,6 +53,14 @@ GetMachineName::
 	push hl
 	push de
 	push bc
+	; Getting the move name sets wNameListType and wPredefBank to the move list,
+	; so put them back afterwards: callers ask for one name and hand back, and
+	; don't expect the next lookup to be redirected to MoveNames through the
+	; wrong bank.
+	ld a, [wNameListType]
+	push af
+	ld a, [wPredefBank]
+	push af
 	ld a, [wNamedObjectIndex]
 	push af
 
@@ -110,6 +118,10 @@ GetMachineName::
 	ld [de], a
 	pop af
 	ld [wNamedObjectIndex], a
+	pop af
+	ld [wPredefBank], a
+	pop af
+	ld [wNameListType], a
 	pop bc
 	pop de
 	pop hl

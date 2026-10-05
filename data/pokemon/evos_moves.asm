@@ -1676,12 +1676,13 @@ BeedrillEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 12, FURY_ATTACK
-	db 16, FOCUS_ENERGY
-	db 20, TWINEEDLE
+	db 12, TWINEEDLE
+	db 16, FURY_ATTACK
+	db 20, FOCUS_ENERGY
 	db 25, WING_ATTACK
 	db 30, PIN_MISSILE
 	db 35, AGILITY
+	db EVOLUTION_MOVE, TWINEEDLE
 	db 0
 
 CrobatEvosMoves:
