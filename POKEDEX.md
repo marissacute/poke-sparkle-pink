@@ -2,7 +2,7 @@
 
 <sub>202 Pokémon · base stats, typing and moves · the move list is in [MOVES.md](MOVES.md)</sub>
 
-**STAB** moves are in **bold**. Stat meters run 0–255, the Gen 1 base-stat scale. Rows marked `1` are the starting moveset, `Evo` is learned on evolution.
+**STAB** moves are in **bold** — damaging moves whose type matches the Pokémon's, including TM/HM moves. Status moves never get STAB, so they are never bold. Stat meters run 0–255, the Gen 1 base-stat scale. Rows marked `1` are the starting moveset, `Evo` is learned on evolution.
 
 ## Contents
 
@@ -69,7 +69,7 @@
 | 175 | [Omanyte](#175-omanyte) | 176 | [Omastar](#176-omastar) | 177 | [Kabuto](#177-kabuto) |
 | 178 | [Kabutops](#178-kabutops) | 179 | [Aerodactyl](#179-aerodactyl) | 180 | [Munchlax](#180-munchlax) |
 | 181 | [Snorlax](#181-snorlax) | 182 | [Trapinch](#182-trapinch) | 183 | [Vibrava](#183-vibrava) |
-| 184 | [Flygon](#184-flygon) | 185 | [Mareep](#185-mareep) | 186 | [Flaffy](#186-flaffy) |
+| 184 | [Flygon](#184-flygon) | 185 | [Mareep](#185-mareep) | 186 | [Flaaffy](#186-flaaffy) |
 | 187 | [Ampharos](#187-ampharos) | 188 | [Articuno](#188-articuno) | 189 | [Zapdos](#189-zapdos) |
 | 190 | [Moltres](#190-moltres) | 191 | [Bulbasaur](#191-bulbasaur) | 192 | [Ivysaur](#192-ivysaur) |
 | 193 | [Venusaur](#193-venusaur) | 194 | [Charmander](#194-charmander) | 195 | [Charmeleon](#195-charmeleon) |
@@ -103,10 +103,10 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Pound](MOVES.md#pound)** | Normal | 40 | 100% | 35 |
-| 1 | **[Defense Curl](MOVES.md#defense-curl)** | Normal | — | 100% | 40 |
-| 9 | **[Sing](MOVES.md#sing)** | Normal | — | 55% | 15 |
+| 1 | [Defense Curl](MOVES.md#defense-curl) | Normal | — | 100% | 40 |
+| 9 | [Sing](MOVES.md#sing) | Normal | — | 55% | 15 |
 | 12 | **[Fairy Wind](MOVES.md#fairy-wind)** | Fairy | 40 | 100% | 30 |
-| 16 | **[Disable](MOVES.md#disable)** | Normal | — | 55% | 20 |
+| 16 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
 | 20 | **[Drainingkiss](MOVES.md#drainingkiss)** | Fairy | 50 | 100% | 10 |
 | 24 | **[Doubleslap](MOVES.md#doubleslap)** | Normal | 15 | 85% | 10 |
 | 29 | [Rest](MOVES.md#rest) | Psychic | — | 100% | 10 |
@@ -118,16 +118,16 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
+| TM01 | **[Mega Punch](MOVES.md#mega-punch)** | TM05 | **[Mega Kick](MOVES.md#mega-kick)** | TM06 | [Toxic](MOVES.md#toxic) |
+| TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | **[Rage](MOVES.md#rage)** | TM22 | [Solarbeam](MOVES.md#solarbeam) |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
-| TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
-| TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
+| TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | **[Tri Attack](MOVES.md#tri-attack)** | TM50 | [Substitute](MOVES.md#substitute) |
 | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |  |  |
 ---
 
@@ -154,10 +154,10 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Pound](MOVES.md#pound)** | Normal | 40 | 100% | 35 |
-| 1 | **[Defense Curl](MOVES.md#defense-curl)** | Normal | — | 100% | 40 |
-| 1 | **[Sing](MOVES.md#sing)** | Normal | — | 55% | 15 |
+| 1 | [Defense Curl](MOVES.md#defense-curl) | Normal | — | 100% | 40 |
+| 1 | [Sing](MOVES.md#sing) | Normal | — | 55% | 15 |
 | 1 | **[Fairy Wind](MOVES.md#fairy-wind)** | Fairy | 40 | 100% | 30 |
-| 18 | **[Disable](MOVES.md#disable)** | Normal | — | 55% | 20 |
+| 18 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
 | 22 | **[Drainingkiss](MOVES.md#drainingkiss)** | Fairy | 50 | 100% | 10 |
 | 26 | **[Doubleslap](MOVES.md#doubleslap)** | Normal | 15 | 85% | 10 |
 | 32 | [Rest](MOVES.md#rest) | Psychic | — | 100% | 10 |
@@ -169,16 +169,16 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
+| TM01 | **[Mega Punch](MOVES.md#mega-punch)** | TM05 | **[Mega Kick](MOVES.md#mega-kick)** | TM06 | [Toxic](MOVES.md#toxic) |
+| TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | **[Rage](MOVES.md#rage)** | TM22 | [Solarbeam](MOVES.md#solarbeam) |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
-| TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
-| TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
+| TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | **[Tri Attack](MOVES.md#tri-attack)** | TM50 | [Substitute](MOVES.md#substitute) |
 | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |  |  |
 ---
 
@@ -204,7 +204,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Doubleslap](MOVES.md#doubleslap)** | Normal | 15 | 85% | 10 |
-| 1 | **[Sing](MOVES.md#sing)** | Normal | — | 55% | 15 |
+| 1 | [Sing](MOVES.md#sing) | Normal | — | 55% | 15 |
 | 1 | **[Fairy Wind](MOVES.md#fairy-wind)** | Fairy | 40 | 100% | 30 |
 | 1 | **[Drainingkiss](MOVES.md#drainingkiss)** | Fairy | 50 | 100% | 10 |
 | 38 | **[Body Slam](MOVES.md#body-slam)** | Normal | 85 | 100% | 15 |
@@ -215,16 +215,16 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
+| TM01 | **[Mega Punch](MOVES.md#mega-punch)** | TM05 | **[Mega Kick](MOVES.md#mega-kick)** | TM06 | [Toxic](MOVES.md#toxic) |
+| TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
-| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
+| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** | TM17 | [Submission](MOVES.md#submission) |
+| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | **[Rage](MOVES.md#rage)** |
 | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
 | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
-| TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) |
+| TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) |
+| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | **[Tri Attack](MOVES.md#tri-attack)** |
 | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |
 ---
 
@@ -252,7 +252,7 @@
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
 | 1 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 9 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
-| 15 | **[Thunder Wave](MOVES.md#thunder-wave)** | Electric | — | 100% | 20 |
+| 15 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 22 | [Sonicboom](MOVES.md#sonicboom) | Normal | — | 90% | 20 |
 | 25 | [Magnet Bomb](MOVES.md#magnet-bomb) | Steel | 60 | 100% | 20 |
 | 29 | [Swift](MOVES.md#swift) | Normal | 60 | 100% | 20 |
@@ -266,7 +266,7 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** | TM25 | **[Thunder](MOVES.md#thunder)** |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
 | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM50 | [Substitute](MOVES.md#substitute) |
@@ -310,8 +310,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** |
+| TM25 | **[Thunder](MOVES.md#thunder)** | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |  |  |
@@ -351,8 +351,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** |
+| TM25 | **[Thunder](MOVES.md#thunder)** | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |  |  |
@@ -398,7 +398,7 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) |
-| TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM23 | **[Dragon Rage](MOVES.md#dragon-rage)** | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
@@ -445,7 +445,7 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
 | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
-| TM20 | [Rage](MOVES.md#rage) | TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
+| TM20 | [Rage](MOVES.md#rage) | TM23 | **[Dragon Rage](MOVES.md#dragon-rage)** | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
 | TM25 | [Thunder](MOVES.md#thunder) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
@@ -487,11 +487,11 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
-| TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM23 | **[Dragon Rage](MOVES.md#dragon-rage)** | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
@@ -520,7 +520,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
-| 1 | **[String Shot](MOVES.md#string-shot)** | Bug | — | 95% | 40 |
+| 1 | [String Shot](MOVES.md#string-shot) | Bug | — | 95% | 40 |
 | 15 | **[Bug Bite](MOVES.md#bug-bite)** | Bug | 60 | 100% | 20 |
 
 
@@ -591,7 +591,7 @@
 | TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
-| TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM44 | [Rest](MOVES.md#rest) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
 | TM50 | [Substitute](MOVES.md#substitute) |  |  |  |  |
@@ -619,7 +619,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Poison Sting](MOVES.md#poison-sting)** | Poison | 15 | 100% | 35 |
-| 1 | **[String Shot](MOVES.md#string-shot)** | Bug | — | 95% | 40 |
+| 1 | [String Shot](MOVES.md#string-shot) | Bug | — | 95% | 40 |
 | 15 | **[Bug Bite](MOVES.md#bug-bite)** | Bug | 60 | 100% | 20 |
 
 
@@ -784,7 +784,7 @@
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
 | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |
-| TM17 | [Submission](MOVES.md#submission) | HM04 | [Strength](MOVES.md#strength) |  |  |
+| TM17 | **[Submission](MOVES.md#submission)** | HM04 | **[Strength](MOVES.md#strength)** |  |  |
 ---
 
 ### #18 Pineco
@@ -896,22 +896,22 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Gust](MOVES.md#gust)** | Flying | 40 | 100% | 35 |
-| 5 | **[Sand-Attack](MOVES.md#sand-attack)** | Normal | — | 100% | 15 |
+| 5 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
 | 12 | **[Quick Attack](MOVES.md#quick-attack)** | Normal | 40 | 100% | 30 |
-| 19 | **[Whirlwind](MOVES.md#whirlwind)** | Normal | — | 85% | 20 |
+| 19 | [Whirlwind](MOVES.md#whirlwind) | Normal | — | 85% | 20 |
 | 28 | **[Wing Attack](MOVES.md#wing-attack)** | Flying | 60 | 100% | 35 |
 | 36 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
-| 44 | **[Mirror Move](MOVES.md#mirror-move)** | Flying | — | 100% | 20 |
+| 44 | [Mirror Move](MOVES.md#mirror-move) | Flying | — | 100% | 20 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM20 | **[Rage](MOVES.md#rage)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM43 | [Sky Attack](MOVES.md#sky-attack) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM02 | [Fly](MOVES.md#fly) |
+| TM34 | [Bide](MOVES.md#bide) | TM39 | **[Swift](MOVES.md#swift)** | TM43 | **[Sky Attack](MOVES.md#sky-attack)** |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM02 | **[Fly](MOVES.md#fly)** |
 ---
 
 ### #21 Pidgeotto
@@ -937,23 +937,23 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Gust](MOVES.md#gust)** | Flying | 40 | 100% | 35 |
-| 1 | **[Sand-Attack](MOVES.md#sand-attack)** | Normal | — | 100% | 15 |
-| 5 | **[Sand-Attack](MOVES.md#sand-attack)** | Normal | — | 100% | 15 |
+| 1 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
+| 5 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
 | 12 | **[Quick Attack](MOVES.md#quick-attack)** | Normal | 40 | 100% | 30 |
-| 21 | **[Whirlwind](MOVES.md#whirlwind)** | Normal | — | 85% | 20 |
+| 21 | [Whirlwind](MOVES.md#whirlwind) | Normal | — | 85% | 20 |
 | 31 | **[Wing Attack](MOVES.md#wing-attack)** | Flying | 60 | 100% | 35 |
 | 40 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
-| 49 | **[Mirror Move](MOVES.md#mirror-move)** | Flying | — | 100% | 20 |
+| 49 | [Mirror Move](MOVES.md#mirror-move) | Flying | — | 100% | 20 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM20 | **[Rage](MOVES.md#rage)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM43 | [Sky Attack](MOVES.md#sky-attack) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM02 | [Fly](MOVES.md#fly) |
+| TM34 | [Bide](MOVES.md#bide) | TM39 | **[Swift](MOVES.md#swift)** | TM43 | **[Sky Attack](MOVES.md#sky-attack)** |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM02 | **[Fly](MOVES.md#fly)** |
 ---
 
 ### #22 Pidgeot
@@ -978,25 +978,25 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Gust](MOVES.md#gust)** | Flying | 40 | 100% | 35 |
-| 1 | **[Sand-Attack](MOVES.md#sand-attack)** | Normal | — | 100% | 15 |
+| 1 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
 | 1 | **[Quick Attack](MOVES.md#quick-attack)** | Normal | 40 | 100% | 30 |
-| 5 | **[Sand-Attack](MOVES.md#sand-attack)** | Normal | — | 100% | 15 |
+| 5 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
 | 12 | **[Quick Attack](MOVES.md#quick-attack)** | Normal | 40 | 100% | 30 |
-| 21 | **[Whirlwind](MOVES.md#whirlwind)** | Normal | — | 85% | 20 |
+| 21 | [Whirlwind](MOVES.md#whirlwind) | Normal | — | 85% | 20 |
 | 31 | **[Wing Attack](MOVES.md#wing-attack)** | Flying | 60 | 100% | 35 |
 | 44 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
-| 54 | **[Mirror Move](MOVES.md#mirror-move)** | Flying | — | 100% | 20 |
+| 54 | [Mirror Move](MOVES.md#mirror-move) | Flying | — | 100% | 20 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
-| TM43 | [Sky Attack](MOVES.md#sky-attack) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM02 | [Fly](MOVES.md#fly) |  |  |  |  |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** |
+| TM20 | **[Rage](MOVES.md#rage)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM39 | **[Swift](MOVES.md#swift)** |
+| TM43 | **[Sky Attack](MOVES.md#sky-attack)** | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
+| HM02 | **[Fly](MOVES.md#fly)** |  |  |  |  |
 ---
 
 ### #23 Rattata
@@ -1021,22 +1021,22 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Tackle](MOVES.md#tackle)** | Normal | 35 | 95% | 35 |
-| 1 | **[Tail Whip](MOVES.md#tail-whip)** | Normal | — | 100% | 30 |
+| 1 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
 | 7 | **[Quick Attack](MOVES.md#quick-attack)** | Normal | 40 | 100% | 30 |
 | 14 | **[Hyper Fang](MOVES.md#hyper-fang)** | Normal | 80 | 90% | 15 |
-| 23 | **[Focus Energy](MOVES.md#focus-energy)** | Normal | — | 100% | 30 |
-| 34 | **[Super Fang](MOVES.md#super-fang)** | Normal | — | 90% | 10 |
+| 23 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
+| 34 | [Super Fang](MOVES.md#super-fang) | Normal | — | 90% | 10 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** |
+| TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | **[Rage](MOVES.md#rage)** | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
 | TM25 | [Thunder](MOVES.md#thunder) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
-| TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
-| TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM39 | **[Swift](MOVES.md#swift)** |
+| TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |  |  |  |  |
 ---
 
@@ -1062,23 +1062,23 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Tackle](MOVES.md#tackle)** | Normal | 35 | 95% | 35 |
-| 1 | **[Tail Whip](MOVES.md#tail-whip)** | Normal | — | 100% | 30 |
+| 1 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
 | 1 | **[Quick Attack](MOVES.md#quick-attack)** | Normal | 40 | 100% | 30 |
 | 7 | **[Quick Attack](MOVES.md#quick-attack)** | Normal | 40 | 100% | 30 |
 | 14 | **[Hyper Fang](MOVES.md#hyper-fang)** | Normal | 80 | 90% | 15 |
-| 27 | **[Focus Energy](MOVES.md#focus-energy)** | Normal | — | 100% | 30 |
-| 41 | **[Super Fang](MOVES.md#super-fang)** | Normal | — | 90% | 10 |
+| 27 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
+| 41 | [Super Fang](MOVES.md#super-fang) | Normal | — | 90% | 10 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
-| TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** |
+| TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** |
+| TM20 | **[Rage](MOVES.md#rage)** | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
+| TM34 | [Bide](MOVES.md#bide) | TM39 | **[Swift](MOVES.md#swift)** | TM40 | **[Skull Bash](MOVES.md#skull-bash)** |
 | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
 ---
 
@@ -1104,10 +1104,10 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Peck](MOVES.md#peck)** | Flying | 35 | 100% | 35 |
-| 1 | **[Growl](MOVES.md#growl)** | Normal | — | 100% | 40 |
-| 9 | **[Leer](MOVES.md#leer)** | Normal | — | 100% | 30 |
+| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
+| 9 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 15 | **[Fury Attack](MOVES.md#fury-attack)** | Normal | 15 | 85% | 20 |
-| 22 | **[Mirror Move](MOVES.md#mirror-move)** | Flying | — | 100% | 20 |
+| 22 | [Mirror Move](MOVES.md#mirror-move) | Flying | — | 100% | 20 |
 | 29 | **[Drill Peck](MOVES.md#drill-peck)** | Flying | 80 | 100% | 20 |
 | 36 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
 
@@ -1115,11 +1115,11 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM20 | **[Rage](MOVES.md#rage)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
-| TM39 | [Swift](MOVES.md#swift) | TM43 | [Sky Attack](MOVES.md#sky-attack) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM02 | [Fly](MOVES.md#fly) |  |  |
+| TM39 | **[Swift](MOVES.md#swift)** | TM43 | **[Sky Attack](MOVES.md#sky-attack)** | TM44 | [Rest](MOVES.md#rest) |
+| TM50 | [Substitute](MOVES.md#substitute) | HM02 | **[Fly](MOVES.md#fly)** |  |  |
 ---
 
 ### #26 Fearow
@@ -1156,11 +1156,11 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM43 | [Sky Attack](MOVES.md#sky-attack) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM02 | [Fly](MOVES.md#fly) |
+| TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM43 | **[Sky Attack](MOVES.md#sky-attack)** |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM02 | **[Fly](MOVES.md#fly)** |
 ---
 
 ### #27 Ekans
@@ -1269,7 +1269,7 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 9 | **[Thunder Wave](MOVES.md#thunder-wave)** | Electric | — | 100% | 20 |
+| 9 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 16 | [Quick Attack](MOVES.md#quick-attack) | Normal | 40 | 100% | 30 |
 | 26 | [Swift](MOVES.md#swift) | Normal | 60 | 100% | 20 |
 | 33 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
@@ -1282,7 +1282,7 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM16 | [Pay Day](MOVES.md#pay-day) | TM17 | [Submission](MOVES.md#submission) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** | TM25 | **[Thunder](MOVES.md#thunder)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM50 | [Substitute](MOVES.md#substitute) |
@@ -1313,7 +1313,7 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 9 | **[Thunder Wave](MOVES.md#thunder-wave)** | Electric | — | 100% | 20 |
+| 9 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 16 | [Quick Attack](MOVES.md#quick-attack) | Normal | 40 | 100% | 30 |
 | 26 | [Swift](MOVES.md#swift) | Normal | 60 | 100% | 20 |
 | 33 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
@@ -1326,7 +1326,7 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM16 | [Pay Day](MOVES.md#pay-day) | TM17 | [Submission](MOVES.md#submission) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** | TM25 | **[Thunder](MOVES.md#thunder)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM50 | [Substitute](MOVES.md#substitute) |
@@ -1356,7 +1356,7 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 1 | **[Thunder Wave](MOVES.md#thunder-wave)** | Electric | — | 100% | 20 |
+| 1 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 
 **TM/HM moves**
 
@@ -1365,8 +1365,8 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) | TM17 | [Submission](MOVES.md#submission) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** |
+| TM25 | **[Thunder](MOVES.md#thunder)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |  |  |
@@ -1394,7 +1394,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Scratch](MOVES.md#scratch)** | Normal | 40 | 100% | 35 |
-| 10 | **[Sand-Attack](MOVES.md#sand-attack)** | Normal | — | 100% | 15 |
+| 10 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
 | 17 | **[Slash](MOVES.md#slash)** | Normal | 70 | 100% | 20 |
 | 24 | [Poison Sting](MOVES.md#poison-sting) | Poison | 15 | 100% | 35 |
 | 31 | **[Swift](MOVES.md#swift)** | Normal | 60 | 100% | 20 |
@@ -1404,12 +1404,12 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM17 | [Submission](MOVES.md#submission) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) |
-| TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
-| TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
-| TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) |
+| TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** |
+| TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM17 | [Submission](MOVES.md#submission) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | **[Rage](MOVES.md#rage)** | TM26 | **[Earthquake](MOVES.md#earthquake)** |
+| TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) |
+| TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM39 | **[Swift](MOVES.md#swift)** |
+| TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) | HM04 | [Strength](MOVES.md#strength) |
 ---
 
@@ -1435,8 +1435,8 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Scratch](MOVES.md#scratch)** | Normal | 40 | 100% | 35 |
-| 1 | **[Sand-Attack](MOVES.md#sand-attack)** | Normal | — | 100% | 15 |
-| 10 | **[Sand-Attack](MOVES.md#sand-attack)** | Normal | — | 100% | 15 |
+| 1 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
+| 10 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
 | 17 | **[Slash](MOVES.md#slash)** | Normal | 70 | 100% | 20 |
 | 27 | [Poison Sting](MOVES.md#poison-sting) | Poison | 15 | 100% | 35 |
 | 36 | **[Swift](MOVES.md#swift)** | Normal | 60 | 100% | 20 |
@@ -1446,12 +1446,12 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM17 | [Submission](MOVES.md#submission) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
-| TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) |
+| TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** |
+| TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** |
+| TM17 | [Submission](MOVES.md#submission) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | **[Rage](MOVES.md#rage)** |
+| TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
-| TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
+| TM39 | **[Swift](MOVES.md#swift)** | TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) |
 | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
@@ -1576,12 +1576,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
+| TM07 | **[Horn Drill](MOVES.md#horn-drill)** | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM16 | [Pay Day](MOVES.md#pay-day) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
+| TM25 | [Thunder](MOVES.md#thunder) | TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |
@@ -1709,12 +1709,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
+| TM07 | **[Horn Drill](MOVES.md#horn-drill)** | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM16 | [Pay Day](MOVES.md#pay-day) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
+| TM25 | [Thunder](MOVES.md#thunder) | TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |
@@ -1900,7 +1900,7 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM28 | [Dig](MOVES.md#dig) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
+| TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 ---
 
@@ -1937,7 +1937,7 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
+| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |  |  |
 ---
@@ -1975,7 +1975,7 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) |
 | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM44 | [Rest](MOVES.md#rest) |
@@ -2018,7 +2018,7 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
@@ -2056,7 +2056,7 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
@@ -2085,9 +2085,9 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Absorb](MOVES.md#absorb)** | Grass | 20 | 100% | 20 |
-| 15 | **[Poisonpowder](MOVES.md#poisonpowder)** | Poison | — | 75% | 35 |
-| 17 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
-| 19 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 15 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
+| 17 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
+| 19 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 | 24 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
 | 33 | **[Petal Dance](MOVES.md#petal-dance)** | Grass | 70 | 100% | 20 |
 | 46 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
@@ -2097,8 +2097,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
-| TM22 | [Solarbeam](MOVES.md#solarbeam) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** |
+| TM22 | **[Solarbeam](MOVES.md#solarbeam)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |  |  |
 ---
@@ -2126,11 +2126,11 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Absorb](MOVES.md#absorb)** | Grass | 20 | 100% | 20 |
-| 1 | **[Poisonpowder](MOVES.md#poisonpowder)** | Poison | — | 75% | 35 |
-| 1 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
-| 15 | **[Poisonpowder](MOVES.md#poisonpowder)** | Poison | — | 75% | 35 |
-| 17 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
-| 19 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 1 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
+| 1 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
+| 15 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
+| 17 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
+| 19 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 | 28 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
 | 38 | **[Petal Dance](MOVES.md#petal-dance)** | Grass | 70 | 100% | 20 |
 | 52 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
@@ -2140,8 +2140,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
-| TM22 | [Solarbeam](MOVES.md#solarbeam) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** |
+| TM22 | **[Solarbeam](MOVES.md#solarbeam)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |  |  |
 ---
@@ -2167,13 +2167,13 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
-| 1 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 1 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
+| 1 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 | 1 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
 | 1 | **[Petal Dance](MOVES.md#petal-dance)** | Grass | 70 | 100% | 20 |
-| 15 | **[Poisonpowder](MOVES.md#poisonpowder)** | Poison | — | 75% | 35 |
-| 17 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
-| 19 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 15 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
+| 17 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
+| 19 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 
 **TM/HM moves**
 
@@ -2181,7 +2181,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
+| TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** | TM22 | **[Solarbeam](MOVES.md#solarbeam)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM01 | [Cut](MOVES.md#cut) |  |  |  |  |
@@ -2209,8 +2209,8 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
-| 1 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
-| 1 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 1 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
+| 1 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 | 1 | **[Petal Dance](MOVES.md#petal-dance)** | Grass | 70 | 100% | 20 |
 | 35 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
 | 40 | **[Petal Dance](MOVES.md#petal-dance)** | Grass | 70 | 100% | 20 |
@@ -2221,8 +2221,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
-| TM22 | [Solarbeam](MOVES.md#solarbeam) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** |
+| TM22 | **[Solarbeam](MOVES.md#solarbeam)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) | TM29 | [Psychic](MOVES.md#psychic) |
 ---
@@ -2249,9 +2249,9 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Scratch](MOVES.md#scratch) | Normal | 40 | 100% | 35 |
-| 13 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
+| 13 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 20 | **[Leech Life](MOVES.md#leech-life)** | Bug | 60 | 100% | 15 |
-| 27 | **[Spore](MOVES.md#spore)** | Grass | — | 100% | 15 |
+| 27 | [Spore](MOVES.md#spore) | Grass | — | 100% | 15 |
 | 34 | [Slash](MOVES.md#slash) | Normal | 70 | 100% | 20 |
 | 41 | [Growth](MOVES.md#growth) | Normal | — | 100% | 40 |
 
@@ -2261,7 +2261,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) |
-| TM21 | [Mega Drain](MOVES.md#mega-drain) | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM28 | [Dig](MOVES.md#dig) |
+| TM21 | **[Mega Drain](MOVES.md#mega-drain)** | TM22 | **[Solarbeam](MOVES.md#solarbeam)** | TM28 | [Dig](MOVES.md#dig) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |  |  |
@@ -2289,11 +2289,11 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Scratch](MOVES.md#scratch) | Normal | 40 | 100% | 35 |
-| 1 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
+| 1 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 1 | **[Leech Life](MOVES.md#leech-life)** | Bug | 60 | 100% | 15 |
-| 13 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
+| 13 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 20 | **[Leech Life](MOVES.md#leech-life)** | Bug | 60 | 100% | 15 |
-| 30 | **[Spore](MOVES.md#spore)** | Grass | — | 100% | 15 |
+| 30 | [Spore](MOVES.md#spore) | Grass | — | 100% | 15 |
 | 39 | [Slash](MOVES.md#slash) | Normal | 70 | 100% | 20 |
 | 48 | [Growth](MOVES.md#growth) | Normal | — | 100% | 40 |
 
@@ -2303,7 +2303,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
+| TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** | TM22 | **[Solarbeam](MOVES.md#solarbeam)** |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |
@@ -2332,7 +2332,7 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
 | 1 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
-| 24 | **[Poisonpowder](MOVES.md#poisonpowder)** | Poison | — | 75% | 35 |
+| 24 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 27 | **[Leech Life](MOVES.md#leech-life)** | Bug | 60 | 100% | 15 |
 | 30 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 35 | [Psybeam](MOVES.md#psybeam) | Psychic | 65 | 100% | 20 |
@@ -2373,9 +2373,9 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
 | 1 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
-| 1 | **[Poisonpowder](MOVES.md#poisonpowder)** | Poison | — | 75% | 35 |
+| 1 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 1 | **[Leech Life](MOVES.md#leech-life)** | Bug | 60 | 100% | 15 |
-| 24 | **[Poisonpowder](MOVES.md#poisonpowder)** | Poison | — | 75% | 35 |
+| 24 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 27 | **[Leech Life](MOVES.md#leech-life)** | Bug | 60 | 100% | 15 |
 | 30 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 38 | [Psybeam](MOVES.md#psybeam) | Psychic | 65 | 100% | 20 |
@@ -2427,8 +2427,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) |
-| TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM26 | **[Earthquake](MOVES.md#earthquake)** |
+| TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) |
 | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |  |  |
 ---
@@ -2471,7 +2471,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
-| TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) |
+| TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |
 ---
@@ -2498,10 +2498,10 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Scratch](MOVES.md#scratch)** | Normal | 40 | 100% | 35 |
-| 1 | **[Growl](MOVES.md#growl)** | Normal | — | 100% | 40 |
+| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 12 | [Bite](MOVES.md#bite) | Dark | 60 | 100% | 25 |
 | 17 | **[Pay Day](MOVES.md#pay-day)** | Normal | 40 | 100% | 20 |
-| 24 | **[Screech](MOVES.md#screech)** | Normal | — | 85% | 40 |
+| 24 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
 | 33 | **[Fury Swipes](MOVES.md#fury-swipes)** | Normal | 18 | 80% | 15 |
 | 44 | **[Slash](MOVES.md#slash)** | Normal | 70 | 100% | 20 |
 
@@ -2509,11 +2509,11 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
-| TM16 | [Pay Day](MOVES.md#pay-day) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** |
+| TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM16 | **[Pay Day](MOVES.md#pay-day)** | TM20 | **[Rage](MOVES.md#rage)** | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
 | TM25 | [Thunder](MOVES.md#thunder) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
+| TM34 | [Bide](MOVES.md#bide) | TM39 | **[Swift](MOVES.md#swift)** | TM40 | **[Skull Bash](MOVES.md#skull-bash)** |
 | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
 ---
 
@@ -2539,12 +2539,12 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Scratch](MOVES.md#scratch)** | Normal | 40 | 100% | 35 |
-| 1 | **[Growl](MOVES.md#growl)** | Normal | — | 100% | 40 |
+| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 1 | [Bite](MOVES.md#bite) | Dark | 60 | 100% | 25 |
-| 1 | **[Screech](MOVES.md#screech)** | Normal | — | 85% | 40 |
+| 1 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
 | 12 | [Bite](MOVES.md#bite) | Dark | 60 | 100% | 25 |
 | 17 | **[Pay Day](MOVES.md#pay-day)** | Normal | 40 | 100% | 20 |
-| 24 | **[Screech](MOVES.md#screech)** | Normal | — | 85% | 40 |
+| 24 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
 | 37 | **[Fury Swipes](MOVES.md#fury-swipes)** | Normal | 18 | 80% | 15 |
 | 51 | **[Slash](MOVES.md#slash)** | Normal | 70 | 100% | 20 |
 
@@ -2552,12 +2552,12 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
-| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) | TM20 | [Rage](MOVES.md#rage) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** |
+| TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** | TM16 | **[Pay Day](MOVES.md#pay-day)** | TM20 | **[Rage](MOVES.md#rage)** |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM31 | [Mimic](MOVES.md#mimic) |
-| TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
-| TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM39 | **[Swift](MOVES.md#swift)** |
+| TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |  |  |  |  |
 ---
 
@@ -2596,12 +2596,12 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM16 | [Pay Day](MOVES.md#pay-day) | TM17 | [Submission](MOVES.md#submission) |
 | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
 
@@ -2643,13 +2643,13 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) |
 | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |  |  |
+| HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) |  |  |
 ---
 
 ### #62 Mankey
@@ -2679,7 +2679,7 @@
 | 15 | [Karate Chop](MOVES.md#karate-chop) | Normal | 50 | 100% | 25 |
 | 21 | [Fury Swipes](MOVES.md#fury-swipes) | Normal | 18 | 80% | 15 |
 | 27 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
-| 33 | **[Seismic Toss](MOVES.md#seismic-toss)** | Fighting | — | 100% | 20 |
+| 33 | [Seismic Toss](MOVES.md#seismic-toss) | Fighting | — | 100% | 20 |
 | 39 | [Thrash](MOVES.md#thrash) | Normal | 90 | 100% | 20 |
 
 **TM/HM moves**
@@ -2688,12 +2688,12 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM16 | [Pay Day](MOVES.md#pay-day) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
+| TM16 | [Pay Day](MOVES.md#pay-day) | TM17 | **[Submission](MOVES.md#submission)** | TM18 | **[Counter](MOVES.md#counter)** |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
 | TM25 | [Thunder](MOVES.md#thunder) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |
+| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | **[Strength](MOVES.md#strength)** |
 ---
 
 ### #63 Primeape
@@ -2737,13 +2737,13 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) | TM17 | [Submission](MOVES.md#submission) |
-| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
+| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) | TM17 | **[Submission](MOVES.md#submission)** |
+| TM18 | **[Counter](MOVES.md#counter)** | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM28 | [Dig](MOVES.md#dig) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM35 | [Metronome](MOVES.md#metronome) | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
+| HM04 | **[Strength](MOVES.md#strength)** |  |  |  |  |
 ---
 
 ### #64 Annihilape
@@ -2781,12 +2781,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
-| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | **[Submission](MOVES.md#submission)** |
+| TM18 | **[Counter](MOVES.md#counter)** | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
 | TM26 | [Earthquake](MOVES.md#earthquake) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
 | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |
+| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | **[Strength](MOVES.md#strength)** |
 ---
 
 ### #65 Growlithe
@@ -2825,7 +2825,7 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM23 | [Dragon Rage](MOVES.md#dragon-rage) |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
+| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) |  |  |  |  |
 ---
@@ -2865,7 +2865,7 @@
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
 | TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM28 | [Dig](MOVES.md#dig) | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
+| TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 ---
 
@@ -2903,11 +2903,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) |
 | TM29 | [Psychic](MOVES.md#psychic) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |  |  |
 ---
 
 ### #68 Poliwhirl
@@ -2948,13 +2948,13 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) |
 | TM27 | [Fissure](MOVES.md#fissure) | TM29 | [Psychic](MOVES.md#psychic) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |  |  |
+| HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) |  |  |
 ---
 
 ### #69 Poliwrath
@@ -2991,13 +2991,13 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
-| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | **[Submission](MOVES.md#submission)** |
+| TM18 | **[Counter](MOVES.md#counter)** | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
 | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM35 | [Metronome](MOVES.md#metronome) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** | HM04 | **[Strength](MOVES.md#strength)** |
 ---
 
 ### #70 Politoed
@@ -3035,12 +3035,12 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
 | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
 | TM29 | [Psychic](MOVES.md#psychic) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
 
@@ -3077,12 +3077,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) |
-| HM05 | [Flash](MOVES.md#flash) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
-| TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| HM05 | [Flash](MOVES.md#flash) | TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) |
+| TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
+| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
 
@@ -3120,12 +3120,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) |
-| HM05 | [Flash](MOVES.md#flash) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
-| TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| HM05 | [Flash](MOVES.md#flash) | TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) |
+| TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
+| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
 
@@ -3162,10 +3162,10 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
+| TM07 | **[Horn Drill](MOVES.md#horn-drill)** | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | **[Earthquake](MOVES.md#earthquake)** |
 | TM27 | [Fissure](MOVES.md#fissure) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) |
@@ -3198,7 +3198,7 @@
 | 11 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
 | 20 | [Body Slam](MOVES.md#body-slam) | Normal | 85 | 100% | 15 |
 | 30 | **[Sludge](MOVES.md#sludge)** | Poison | 65 | 100% | 20 |
-| 40 | **[Toxic](MOVES.md#toxic)** | Poison | — | 85% | 10 |
+| 40 | [Toxic](MOVES.md#toxic) | Poison | — | 85% | 10 |
 | 50 | **[Earthquake](MOVES.md#earthquake)** | Ground | 100 | 100% | 10 |
 
 **TM/HM moves**
@@ -3206,10 +3206,10 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
+| TM07 | **[Horn Drill](MOVES.md#horn-drill)** | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | **[Earthquake](MOVES.md#earthquake)** |
 | TM27 | [Fissure](MOVES.md#fissure) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) |
@@ -3237,7 +3237,7 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | **[Teleport](MOVES.md#teleport)** | Psychic | — | 100% | 20 |
+| 1 | [Teleport](MOVES.md#teleport) | Psychic | — | 100% | 20 |
 
 **TM/HM moves**
 
@@ -3246,7 +3246,7 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM20 | [Rage](MOVES.md#rage) | TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
@@ -3275,14 +3275,14 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | **[Teleport](MOVES.md#teleport)** | Psychic | — | 100% | 20 |
+| 1 | [Teleport](MOVES.md#teleport) | Psychic | — | 100% | 20 |
 | 1 | **[Confusion](MOVES.md#confusion)** | Psychic | 50 | 100% | 25 |
 | 1 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
 | 20 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
 | 27 | **[Psybeam](MOVES.md#psybeam)** | Psychic | 65 | 100% | 20 |
 | 31 | [Recover](MOVES.md#recover) | Normal | — | 100% | 20 |
 | 38 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
-| 42 | **[Reflect](MOVES.md#reflect)** | Psychic | — | 100% | 20 |
+| 42 | [Reflect](MOVES.md#reflect) | Psychic | — | 100% | 20 |
 | Evo | **[Confusion](MOVES.md#confusion)** | Psychic | 50 | 100% | 25 |
 
 **TM/HM moves**
@@ -3292,7 +3292,7 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM28 | [Dig](MOVES.md#dig) | TM29 | [Psychic](MOVES.md#psychic) |
+| TM20 | [Rage](MOVES.md#rage) | TM28 | [Dig](MOVES.md#dig) | TM29 | **[Psychic](MOVES.md#psychic)** |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
@@ -3321,7 +3321,7 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | **[Teleport](MOVES.md#teleport)** | Psychic | — | 100% | 20 |
+| 1 | [Teleport](MOVES.md#teleport) | Psychic | — | 100% | 20 |
 | 1 | **[Confusion](MOVES.md#confusion)** | Psychic | 50 | 100% | 25 |
 | 1 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
 | 16 | **[Confusion](MOVES.md#confusion)** | Psychic | 50 | 100% | 25 |
@@ -3329,7 +3329,7 @@
 | 27 | **[Psybeam](MOVES.md#psybeam)** | Psychic | 65 | 100% | 20 |
 | 31 | [Recover](MOVES.md#recover) | Normal | — | 100% | 20 |
 | 38 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
-| 42 | **[Reflect](MOVES.md#reflect)** | Psychic | — | 100% | 20 |
+| 42 | [Reflect](MOVES.md#reflect) | Psychic | — | 100% | 20 |
 
 **TM/HM moves**
 
@@ -3339,7 +3339,7 @@
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM28 | [Dig](MOVES.md#dig) |
-| TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM35 | [Metronome](MOVES.md#metronome) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) |
@@ -3372,7 +3372,7 @@
 | 25 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 30 | **[Cross Chop](MOVES.md#cross-chop)** | Fighting | 90 | 100% | 10 |
 | 35 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
-| 39 | **[Seismic Toss](MOVES.md#seismic-toss)** | Fighting | — | 100% | 20 |
+| 39 | [Seismic Toss](MOVES.md#seismic-toss) | Fighting | — | 100% | 20 |
 | 46 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
 
 **TM/HM moves**
@@ -3381,12 +3381,12 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
+| TM17 | **[Submission](MOVES.md#submission)** | TM18 | **[Counter](MOVES.md#counter)** | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM04 | **[Strength](MOVES.md#strength)** |  |  |
 ---
 
 ### #79 Machoke
@@ -3418,7 +3418,7 @@
 | 25 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 31 | **[Cross Chop](MOVES.md#cross-chop)** | Fighting | 90 | 100% | 10 |
 | 36 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
-| 44 | **[Seismic Toss](MOVES.md#seismic-toss)** | Fighting | — | 100% | 20 |
+| 44 | [Seismic Toss](MOVES.md#seismic-toss) | Fighting | — | 100% | 20 |
 | 52 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
 
 **TM/HM moves**
@@ -3427,12 +3427,12 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
+| TM17 | **[Submission](MOVES.md#submission)** | TM18 | **[Counter](MOVES.md#counter)** | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM04 | **[Strength](MOVES.md#strength)** |  |  |
 ---
 
 ### #80 Machamp
@@ -3463,7 +3463,7 @@
 | 25 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 31 | **[Cross Chop](MOVES.md#cross-chop)** | Fighting | 90 | 100% | 10 |
 | 36 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
-| 44 | **[Seismic Toss](MOVES.md#seismic-toss)** | Fighting | — | 100% | 20 |
+| 44 | [Seismic Toss](MOVES.md#seismic-toss) | Fighting | — | 100% | 20 |
 | 52 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
 
 **TM/HM moves**
@@ -3472,12 +3472,12 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
+| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | **[Submission](MOVES.md#submission)** | TM18 | **[Counter](MOVES.md#counter)** |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) |
 | TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
 | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |
+| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | **[Strength](MOVES.md#strength)** |
 ---
 
 ### #81 Bellsprout
@@ -3504,9 +3504,9 @@
 | 1 | **[Vine Whip](MOVES.md#vine-whip)** | Grass | 35 | 100% | 10 |
 | 1 | [Growth](MOVES.md#growth) | Normal | — | 100% | 40 |
 | 13 | [Wrap](MOVES.md#wrap) | Normal | 15 | 85% | 20 |
-| 15 | **[Poisonpowder](MOVES.md#poisonpowder)** | Poison | — | 75% | 35 |
-| 18 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
-| 21 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
+| 15 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
+| 18 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
+| 21 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 26 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
 | 33 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
 | 42 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
@@ -3516,8 +3516,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
-| TM22 | [Solarbeam](MOVES.md#solarbeam) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** |
+| TM22 | **[Solarbeam](MOVES.md#solarbeam)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |  |  |
 ---
@@ -3548,9 +3548,9 @@
 | 1 | [Growth](MOVES.md#growth) | Normal | — | 100% | 40 |
 | 1 | [Wrap](MOVES.md#wrap) | Normal | 15 | 85% | 20 |
 | 13 | [Wrap](MOVES.md#wrap) | Normal | 15 | 85% | 20 |
-| 15 | **[Poisonpowder](MOVES.md#poisonpowder)** | Poison | — | 75% | 35 |
-| 18 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
-| 23 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
+| 15 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
+| 18 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
+| 23 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 29 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
 | 38 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
 | 49 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
@@ -3560,8 +3560,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
-| TM22 | [Solarbeam](MOVES.md#solarbeam) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** |
+| TM22 | **[Solarbeam](MOVES.md#solarbeam)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |  |  |
 ---
@@ -3587,13 +3587,13 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
-| 1 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
+| 1 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
+| 1 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 1 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
 | 1 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
 | 13 | [Wrap](MOVES.md#wrap) | Normal | 15 | 85% | 20 |
-| 15 | **[Poisonpowder](MOVES.md#poisonpowder)** | Poison | — | 75% | 35 |
-| 18 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 15 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
+| 18 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 
 **TM/HM moves**
 
@@ -3601,7 +3601,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
+| TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** | TM22 | **[Solarbeam](MOVES.md#solarbeam)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM01 | [Cut](MOVES.md#cut) |  |  |  |  |
@@ -3643,12 +3643,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) |
 | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |
-| HM03 | [Surf](MOVES.md#surf) |  |  |  |  |
+| HM03 | **[Surf](MOVES.md#surf)** |  |  |  |  |
 ---
 
 ### #85 Tentacruel
@@ -3689,12 +3689,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM01 | [Cut](MOVES.md#cut) | HM03 | [Surf](MOVES.md#surf) |  |  |
+| HM01 | [Cut](MOVES.md#cut) | HM03 | **[Surf](MOVES.md#surf)** |  |  |
 ---
 
 ### #86 Geodude
@@ -3733,10 +3733,10 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM17 | [Submission](MOVES.md#submission) |
 | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
-| TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) |
+| TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM35 | [Metronome](MOVES.md#metronome) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
-| TM44 | [Rest](MOVES.md#rest) | TM47 | [Explosion](MOVES.md#explosion) | TM48 | [Rock Slide](MOVES.md#rock-slide) |
+| TM44 | [Rest](MOVES.md#rest) | TM47 | [Explosion](MOVES.md#explosion) | TM48 | **[Rock Slide](MOVES.md#rock-slide)** |
 | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |  |  |
 ---
 
@@ -3778,10 +3778,10 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM17 | [Submission](MOVES.md#submission) |
 | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
-| TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) |
+| TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM35 | [Metronome](MOVES.md#metronome) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
-| TM44 | [Rest](MOVES.md#rest) | TM47 | [Explosion](MOVES.md#explosion) | TM48 | [Rock Slide](MOVES.md#rock-slide) |
+| TM44 | [Rest](MOVES.md#rest) | TM47 | [Explosion](MOVES.md#explosion) | TM48 | **[Rock Slide](MOVES.md#rock-slide)** |
 | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |  |  |
 ---
 
@@ -3822,11 +3822,11 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) |
-| TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | **[Earthquake](MOVES.md#earthquake)** |
+| TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
 | TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM44 | [Rest](MOVES.md#rest) |
-| TM47 | [Explosion](MOVES.md#explosion) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM47 | [Explosion](MOVES.md#explosion) | TM48 | **[Rock Slide](MOVES.md#rock-slide)** | TM50 | [Substitute](MOVES.md#substitute) |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
 
@@ -3866,7 +3866,7 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
+| TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 ---
 
@@ -3911,7 +3911,7 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
+| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) |  |  |  |  |
 ---
@@ -3942,7 +3942,7 @@
 | 22 | [Headbutt](MOVES.md#headbutt) | Normal | 70 | 100% | 15 |
 | 27 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 33 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
-| 40 | **[Amnesia](MOVES.md#amnesia)** | Psychic | — | 100% | 20 |
+| 40 | [Amnesia](MOVES.md#amnesia) | Psychic | — | 100% | 20 |
 | 48 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
 
 **TM/HM moves**
@@ -3950,15 +3950,15 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM16 | [Pay Day](MOVES.md#pay-day) |
 | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
-| TM28 | [Dig](MOVES.md#dig) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM28 | [Dig](MOVES.md#dig) | TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
 | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |
+| HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |
 ---
 
 ### #92 Slowbro
@@ -3989,8 +3989,8 @@
 | 22 | [Headbutt](MOVES.md#headbutt) | Normal | 70 | 100% | 15 |
 | 27 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 33 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
-| 37 | **[Withdraw](MOVES.md#withdraw)** | Water | — | 100% | 40 |
-| 44 | **[Amnesia](MOVES.md#amnesia)** | Psychic | — | 100% | 20 |
+| 37 | [Withdraw](MOVES.md#withdraw) | Water | — | 100% | 40 |
+| 44 | [Amnesia](MOVES.md#amnesia) | Psychic | — | 100% | 20 |
 | 54 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
 
 **TM/HM moves**
@@ -3999,16 +3999,16 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) |
 | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
-| TM28 | [Dig](MOVES.md#dig) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM28 | [Dig](MOVES.md#dig) | TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
 | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |
+| HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |
 ---
 
 ### #93 Slowking
@@ -4039,8 +4039,8 @@
 | 22 | [Headbutt](MOVES.md#headbutt) | Normal | 70 | 100% | 15 |
 | 27 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 33 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
-| 37 | **[Withdraw](MOVES.md#withdraw)** | Water | — | 100% | 40 |
-| 44 | **[Amnesia](MOVES.md#amnesia)** | Psychic | — | 100% | 20 |
+| 37 | [Withdraw](MOVES.md#withdraw) | Water | — | 100% | 40 |
+| 44 | [Amnesia](MOVES.md#amnesia) | Psychic | — | 100% | 20 |
 | 48 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
 
 **TM/HM moves**
@@ -4049,16 +4049,16 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) |
 | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
-| TM28 | [Dig](MOVES.md#dig) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM28 | [Dig](MOVES.md#dig) | TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
 | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |
+| HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |
 ---
 
 ### #94 Farfetch'd
@@ -4093,13 +4093,13 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM04 | [Whirlwind](MOVES.md#whirlwind) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM04 | [Whirlwind](MOVES.md#whirlwind) |
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) | HM02 | [Fly](MOVES.md#fly) |
-| TM17 | [Submission](MOVES.md#submission) |  |  |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) | HM02 | **[Fly](MOVES.md#fly)** |
+| TM17 | **[Submission](MOVES.md#submission)** |  |  |  |  |
 ---
 
 ### #95 Doduo
@@ -4124,7 +4124,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Peck](MOVES.md#peck)** | Flying | 35 | 100% | 35 |
-| 20 | **[Growl](MOVES.md#growl)** | Normal | — | 100% | 40 |
+| 20 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 24 | **[Fury Attack](MOVES.md#fury-attack)** | Normal | 15 | 85% | 20 |
 | 30 | **[Drill Peck](MOVES.md#drill-peck)** | Flying | 80 | 100% | 20 |
 | 36 | **[Rage](MOVES.md#rage)** | Normal | 20 | 100% | 20 |
@@ -4135,12 +4135,12 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) |
+| TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** |
+| TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM20 | **[Rage](MOVES.md#rage)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM43 | [Sky Attack](MOVES.md#sky-attack) |
-| TM44 | [Rest](MOVES.md#rest) | TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM02 | [Fly](MOVES.md#fly) |  |  |  |  |
+| TM34 | [Bide](MOVES.md#bide) | TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM43 | **[Sky Attack](MOVES.md#sky-attack)** |
+| TM44 | [Rest](MOVES.md#rest) | TM49 | **[Tri Attack](MOVES.md#tri-attack)** | TM50 | [Substitute](MOVES.md#substitute) |
+| HM02 | **[Fly](MOVES.md#fly)** |  |  |  |  |
 ---
 
 ### #96 Dodrio
@@ -4165,9 +4165,9 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Peck](MOVES.md#peck)** | Flying | 35 | 100% | 35 |
-| 1 | **[Growl](MOVES.md#growl)** | Normal | — | 100% | 40 |
+| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 1 | **[Fury Attack](MOVES.md#fury-attack)** | Normal | 15 | 85% | 20 |
-| 20 | **[Growl](MOVES.md#growl)** | Normal | — | 100% | 40 |
+| 20 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 24 | **[Fury Attack](MOVES.md#fury-attack)** | Normal | 15 | 85% | 20 |
 | 30 | **[Drill Peck](MOVES.md#drill-peck)** | Flying | 80 | 100% | 20 |
 | 39 | **[Rage](MOVES.md#rage)** | Normal | 20 | 100% | 20 |
@@ -4178,12 +4178,12 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
-| TM43 | [Sky Attack](MOVES.md#sky-attack) | TM44 | [Rest](MOVES.md#rest) | TM49 | [Tri Attack](MOVES.md#tri-attack) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM02 | [Fly](MOVES.md#fly) |  |  |
+| TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** |
+| TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** |
+| TM20 | **[Rage](MOVES.md#rage)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM40 | **[Skull Bash](MOVES.md#skull-bash)** |
+| TM43 | **[Sky Attack](MOVES.md#sky-attack)** | TM44 | [Rest](MOVES.md#rest) | TM49 | **[Tri Attack](MOVES.md#tri-attack)** |
+| TM50 | [Substitute](MOVES.md#substitute) | HM02 | **[Fly](MOVES.md#fly)** |  |  |
 ---
 
 ### #97 Seel
@@ -4219,11 +4219,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
-| TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
+| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** |
+| TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
 | TM16 | [Pay Day](MOVES.md#pay-day) | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
 
@@ -4262,12 +4262,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
-| TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
+| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** |
+| TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | **[Ice Beam](MOVES.md#ice-beam)** | TM14 | **[Blizzard](MOVES.md#blizzard)** |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |  |  |
+| HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) |  |  |
 ---
 
 ### #99 Grimer
@@ -4293,12 +4293,12 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Pound](MOVES.md#pound) | Normal | 40 | 100% | 35 |
 | 1 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
-| 30 | **[Poison Gas](MOVES.md#poison-gas)** | Poison | — | 55% | 40 |
+| 30 | [Poison Gas](MOVES.md#poison-gas) | Poison | — | 55% | 40 |
 | 33 | [Minimize](MOVES.md#minimize) | Normal | — | 100% | 20 |
 | 37 | **[Sludge](MOVES.md#sludge)** | Poison | 65 | 100% | 20 |
 | 42 | [Harden](MOVES.md#harden) | Normal | — | 100% | 30 |
 | 50 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
-| 55 | **[Acid Armor](MOVES.md#acid-armor)** | Poison | — | 100% | 40 |
+| 55 | [Acid Armor](MOVES.md#acid-armor) | Poison | — | 100% | 40 |
 
 **TM/HM moves**
 
@@ -4334,14 +4334,14 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Pound](MOVES.md#pound) | Normal | 40 | 100% | 35 |
 | 1 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
-| 1 | **[Poison Gas](MOVES.md#poison-gas)** | Poison | — | 55% | 40 |
-| 30 | **[Poison Gas](MOVES.md#poison-gas)** | Poison | — | 55% | 40 |
+| 1 | [Poison Gas](MOVES.md#poison-gas) | Poison | — | 55% | 40 |
+| 30 | [Poison Gas](MOVES.md#poison-gas) | Poison | — | 55% | 40 |
 | 33 | [Minimize](MOVES.md#minimize) | Normal | — | 100% | 20 |
 | 37 | **[Sludge](MOVES.md#sludge)** | Poison | 65 | 100% | 20 |
 | 40 | **[Feint Attack](MOVES.md#feint-attack)** | Dark | 60 | 100% | 20 |
 | 45 | [Harden](MOVES.md#harden) | Normal | — | 100% | 30 |
 | 52 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
-| 60 | **[Acid Armor](MOVES.md#acid-armor)** | Poison | — | 100% | 40 |
+| 60 | [Acid Armor](MOVES.md#acid-armor) | Poison | — | 100% | 40 |
 
 **TM/HM moves**
 
@@ -4393,7 +4393,7 @@
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM18 | [Counter](MOVES.md#counter) | TM20 | [Rage](MOVES.md#rage) |
 | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
-| TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
+| TM38 | **[Fire Blast](MOVES.md#fire-blast)** | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |
 ---
 
@@ -4435,7 +4435,7 @@
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM18 | [Counter](MOVES.md#counter) |
 | TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM28 | [Dig](MOVES.md#dig) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
+| TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM05 | [Flash](MOVES.md#flash) |  |  |  |  |
 ---
@@ -4462,7 +4462,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
-| 1 | **[Withdraw](MOVES.md#withdraw)** | Water | — | 100% | 40 |
+| 1 | [Withdraw](MOVES.md#withdraw) | Water | — | 100% | 40 |
 | 18 | [Supersonic](MOVES.md#supersonic) | Normal | — | 55% | 20 |
 | 23 | **[Clamp](MOVES.md#clamp)** | Water | 35 | 75% | 10 |
 | 30 | [Aurora Beam](MOVES.md#aurora-beam) | Ice | 65 | 100% | 20 |
@@ -4474,12 +4474,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM39 | [Swift](MOVES.md#swift) |
 | TM44 | [Rest](MOVES.md#rest) | TM47 | [Explosion](MOVES.md#explosion) | TM49 | [Tri Attack](MOVES.md#tri-attack) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |  |  |
 ---
 
 ### #104 Cloyster
@@ -4503,7 +4503,7 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | **[Withdraw](MOVES.md#withdraw)** | Water | — | 100% | 40 |
+| 1 | [Withdraw](MOVES.md#withdraw) | Water | — | 100% | 40 |
 | 1 | [Supersonic](MOVES.md#supersonic) | Normal | — | 55% | 20 |
 | 1 | **[Clamp](MOVES.md#clamp)** | Water | 35 | 75% | 10 |
 | 1 | **[Aurora Beam](MOVES.md#aurora-beam)** | Ice | 65 | 100% | 20 |
@@ -4514,12 +4514,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | **[Ice Beam](MOVES.md#ice-beam)** |
+| TM14 | **[Blizzard](MOVES.md#blizzard)** | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) |
 | TM39 | [Swift](MOVES.md#swift) | TM44 | [Rest](MOVES.md#rest) | TM47 | [Explosion](MOVES.md#explosion) |
-| TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
+| TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
 ---
 
 ### #105 Gastly
@@ -4544,8 +4544,8 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Lick](MOVES.md#lick)** | Ghost | 40 | 100% | 30 |
-| 1 | **[Confuse Ray](MOVES.md#confuse-ray)** | Ghost | — | 100% | 10 |
-| 1 | **[Night Shade](MOVES.md#night-shade)** | Ghost | — | 100% | 15 |
+| 1 | [Confuse Ray](MOVES.md#confuse-ray) | Ghost | — | 100% | 10 |
+| 1 | [Night Shade](MOVES.md#night-shade) | Ghost | — | 100% | 15 |
 | 27 | [Hypnosis](MOVES.md#hypnosis) | Psychic | — | 60% | 20 |
 | 31 | **[Dream Eater](MOVES.md#dream-eater)** | Ghost | 100 | 100% | 15 |
 | 36 | **[Shadow Ball](MOVES.md#shadow-ball)** | Ghost | 80 | 100% | 15 |
@@ -4557,8 +4557,8 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
-| TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM42 | [Dream Eater](MOVES.md#dream-eater) | TM44 | [Rest](MOVES.md#rest) |
-| TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM42 | **[Dream Eater](MOVES.md#dream-eater)** | TM44 | [Rest](MOVES.md#rest) |
+| TM46 | **[Shadow Ball](MOVES.md#shadow-ball)** | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) |
 ---
 
 ### #106 Haunter
@@ -4584,8 +4584,8 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Lick](MOVES.md#lick)** | Ghost | 40 | 100% | 30 |
-| 1 | **[Confuse Ray](MOVES.md#confuse-ray)** | Ghost | — | 100% | 10 |
-| 1 | **[Night Shade](MOVES.md#night-shade)** | Ghost | — | 100% | 15 |
+| 1 | [Confuse Ray](MOVES.md#confuse-ray) | Ghost | — | 100% | 10 |
+| 1 | [Night Shade](MOVES.md#night-shade) | Ghost | — | 100% | 15 |
 | 29 | [Hypnosis](MOVES.md#hypnosis) | Psychic | — | 60% | 20 |
 | 33 | **[Dream Eater](MOVES.md#dream-eater)** | Ghost | 100 | 100% | 15 |
 | 38 | **[Shadow Ball](MOVES.md#shadow-ball)** | Ghost | 80 | 100% | 15 |
@@ -4597,8 +4597,8 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
-| TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM42 | [Dream Eater](MOVES.md#dream-eater) | TM44 | [Rest](MOVES.md#rest) |
-| TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM42 | **[Dream Eater](MOVES.md#dream-eater)** | TM44 | [Rest](MOVES.md#rest) |
+| TM46 | **[Shadow Ball](MOVES.md#shadow-ball)** | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) |
 ---
 
 ### #107 Gengar
@@ -4623,8 +4623,8 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Lick](MOVES.md#lick)** | Ghost | 40 | 100% | 30 |
-| 1 | **[Confuse Ray](MOVES.md#confuse-ray)** | Ghost | — | 100% | 10 |
-| 1 | **[Night Shade](MOVES.md#night-shade)** | Ghost | — | 100% | 15 |
+| 1 | [Confuse Ray](MOVES.md#confuse-ray) | Ghost | — | 100% | 10 |
+| 1 | [Night Shade](MOVES.md#night-shade) | Ghost | — | 100% | 15 |
 | 29 | [Hypnosis](MOVES.md#hypnosis) | Psychic | — | 60% | 20 |
 | 33 | **[Dream Eater](MOVES.md#dream-eater)** | Ghost | 100 | 100% | 15 |
 | 38 | **[Shadow Ball](MOVES.md#shadow-ball)** | Ghost | 80 | 100% | 15 |
@@ -4640,7 +4640,7 @@
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM35 | [Metronome](MOVES.md#metronome) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
-| TM42 | [Dream Eater](MOVES.md#dream-eater) | TM44 | [Rest](MOVES.md#rest) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
+| TM42 | **[Dream Eater](MOVES.md#dream-eater)** | TM44 | [Rest](MOVES.md#rest) | TM46 | **[Shadow Ball](MOVES.md#shadow-ball)** |
 | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |
 ---
 
@@ -4667,7 +4667,7 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Psywave](MOVES.md#psywave) | Psychic | — | 80% | 15 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 12 | **[Confuse Ray](MOVES.md#confuse-ray)** | Ghost | — | 100% | 10 |
+| 12 | [Confuse Ray](MOVES.md#confuse-ray) | Ghost | — | 100% | 10 |
 | 19 | **[Fairy Wind](MOVES.md#fairy-wind)** | Fairy | 40 | 100% | 30 |
 | 27 | [Psybeam](MOVES.md#psybeam) | Psychic | 65 | 100% | 20 |
 | 33 | **[Shadow Ball](MOVES.md#shadow-ball)** | Ghost | 80 | 100% | 15 |
@@ -4680,8 +4680,8 @@
 | TM06 | [Toxic](MOVES.md#toxic) | HM05 | [Flash](MOVES.md#flash) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
-| TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM42 | [Dream Eater](MOVES.md#dream-eater) | TM44 | [Rest](MOVES.md#rest) |
-| TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM42 | **[Dream Eater](MOVES.md#dream-eater)** | TM44 | [Rest](MOVES.md#rest) |
+| TM46 | **[Shadow Ball](MOVES.md#shadow-ball)** | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) |
 ---
 
 ### #109 Mismagius
@@ -4707,8 +4707,8 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 1 | [Confusion](MOVES.md#confusion) | Psychic | 50 | 100% | 25 |
-| 1 | **[Confuse Ray](MOVES.md#confuse-ray)** | Ghost | — | 100% | 10 |
-| 1 | **[Night Shade](MOVES.md#night-shade)** | Ghost | — | 100% | 15 |
+| 1 | [Confuse Ray](MOVES.md#confuse-ray) | Ghost | — | 100% | 10 |
+| 1 | [Night Shade](MOVES.md#night-shade) | Ghost | — | 100% | 15 |
 | 19 | [Fairy Wind](MOVES.md#fairy-wind) | Fairy | 40 | 100% | 30 |
 | 27 | [Psybeam](MOVES.md#psybeam) | Psychic | 65 | 100% | 20 |
 | 33 | **[Shadow Ball](MOVES.md#shadow-ball)** | Ghost | 80 | 100% | 15 |
@@ -4722,8 +4722,8 @@
 | TM06 | [Toxic](MOVES.md#toxic) | HM05 | [Flash](MOVES.md#flash) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
-| TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM42 | [Dream Eater](MOVES.md#dream-eater) | TM44 | [Rest](MOVES.md#rest) |
-| TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM42 | **[Dream Eater](MOVES.md#dream-eater)** | TM44 | [Rest](MOVES.md#rest) |
+| TM46 | **[Shadow Ball](MOVES.md#shadow-ball)** | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) |
 ---
 
 ### #110 Onix
@@ -4765,7 +4765,7 @@
 | TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM47 | [Explosion](MOVES.md#explosion) |
-| TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |
+| TM48 | **[Rock Slide](MOVES.md#rock-slide)** | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |
 ---
 
 ### #111 Steelix
@@ -4805,8 +4805,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) |
-| TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM26 | **[Earthquake](MOVES.md#earthquake)** |
+| TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM47 | [Explosion](MOVES.md#explosion) |
 | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |
@@ -4834,13 +4834,13 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Pound](MOVES.md#pound) | Normal | 40 | 100% | 35 |
-| 1 | **[Hypnosis](MOVES.md#hypnosis)** | Psychic | — | 60% | 20 |
+| 1 | [Hypnosis](MOVES.md#hypnosis) | Psychic | — | 60% | 20 |
 | 12 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
 | 17 | **[Confusion](MOVES.md#confusion)** | Psychic | 50 | 100% | 25 |
 | 24 | [Headbutt](MOVES.md#headbutt) | Normal | 70 | 100% | 15 |
 | 29 | [Poison Gas](MOVES.md#poison-gas) | Poison | — | 55% | 40 |
 | 32 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
-| 37 | **[Meditate](MOVES.md#meditate)** | Psychic | — | 100% | 40 |
+| 37 | [Meditate](MOVES.md#meditate) | Psychic | — | 100% | 40 |
 
 **TM/HM moves**
 
@@ -4849,7 +4849,7 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM20 | [Rage](MOVES.md#rage) | TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM42 | [Dream Eater](MOVES.md#dream-eater) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
@@ -4879,7 +4879,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Pound](MOVES.md#pound) | Normal | 40 | 100% | 35 |
-| 1 | **[Hypnosis](MOVES.md#hypnosis)** | Psychic | — | 60% | 20 |
+| 1 | [Hypnosis](MOVES.md#hypnosis) | Psychic | — | 60% | 20 |
 | 1 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
 | 1 | **[Confusion](MOVES.md#confusion)** | Psychic | 50 | 100% | 25 |
 | 12 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
@@ -4887,7 +4887,7 @@
 | 24 | [Headbutt](MOVES.md#headbutt) | Normal | 70 | 100% | 15 |
 | 33 | **[Feint Attack](MOVES.md#feint-attack)** | Dark | 60 | 100% | 20 |
 | 37 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
-| 43 | **[Meditate](MOVES.md#meditate)** | Psychic | — | 100% | 40 |
+| 43 | [Meditate](MOVES.md#meditate) | Psychic | — | 100% | 40 |
 
 **TM/HM moves**
 
@@ -4896,7 +4896,7 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM29 | [Psychic](MOVES.md#psychic) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM29 | **[Psychic](MOVES.md#psychic)** |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM42 | [Dream Eater](MOVES.md#dream-eater) | TM44 | [Rest](MOVES.md#rest) |
@@ -4938,11 +4938,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
-| TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
+| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** |
+| TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM01 | [Cut](MOVES.md#cut) | HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |
+| HM01 | [Cut](MOVES.md#cut) | HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) |
 ---
 
 ### #115 Kingler
@@ -4981,11 +4981,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
-| TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
+| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** |
+| TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) | HM03 | [Surf](MOVES.md#surf) |
+| TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) | HM03 | **[Surf](MOVES.md#surf)** |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
 
@@ -5023,7 +5023,7 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM20 | [Rage](MOVES.md#rage) |
-| TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** | TM25 | **[Thunder](MOVES.md#thunder)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM39 | [Swift](MOVES.md#swift) |
 | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM47 | [Explosion](MOVES.md#explosion) |
@@ -5065,7 +5065,7 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** | TM25 | **[Thunder](MOVES.md#thunder)** |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
@@ -5095,20 +5095,20 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Barrage](MOVES.md#barrage) | Normal | 15 | 85% | 20 |
-| 1 | **[Hypnosis](MOVES.md#hypnosis)** | Psychic | — | 60% | 20 |
-| 25 | **[Reflect](MOVES.md#reflect)** | Psychic | — | 100% | 20 |
-| 28 | **[Leech Seed](MOVES.md#leech-seed)** | Grass | — | 90% | 10 |
-| 32 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
+| 1 | [Hypnosis](MOVES.md#hypnosis) | Psychic | — | 60% | 20 |
+| 25 | [Reflect](MOVES.md#reflect) | Psychic | — | 100% | 20 |
+| 28 | [Leech Seed](MOVES.md#leech-seed) | Grass | — | 90% | 10 |
+| 32 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 37 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 42 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
-| 48 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 48 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM20 | [Rage](MOVES.md#rage) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM20 | [Rage](MOVES.md#rage) | TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM37 | [Egg Bomb](MOVES.md#egg-bomb) |
 | TM44 | [Rest](MOVES.md#rest) | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) |
@@ -5136,7 +5136,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Barrage](MOVES.md#barrage) | Normal | 15 | 85% | 20 |
-| 1 | **[Hypnosis](MOVES.md#hypnosis)** | Psychic | — | 60% | 20 |
+| 1 | [Hypnosis](MOVES.md#hypnosis) | Psychic | — | 60% | 20 |
 | 28 | [Stomp](MOVES.md#stomp) | Normal | 65 | 100% | 20 |
 
 **TM/HM moves**
@@ -5144,8 +5144,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
-| TM22 | [Solarbeam](MOVES.md#solarbeam) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** |
+| TM22 | **[Solarbeam](MOVES.md#solarbeam)** | TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM37 | [Egg Bomb](MOVES.md#egg-bomb) |
 | TM44 | [Rest](MOVES.md#rest) | TM47 | [Explosion](MOVES.md#explosion) | TM50 | [Substitute](MOVES.md#substitute) |
@@ -5189,8 +5189,8 @@
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | [Earthquake](MOVES.md#earthquake) |
-| TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM26 | **[Earthquake](MOVES.md#earthquake)** |
+| TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
@@ -5237,10 +5237,10 @@
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
 | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
-| TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) |
+| TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
+| TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) | TM46 | **[Shadow Ball](MOVES.md#shadow-ball)** |
 ---
 
 ### #122 Tyrogue
@@ -5274,11 +5274,11 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
+| TM17 | **[Submission](MOVES.md#submission)** | TM18 | **[Counter](MOVES.md#counter)** | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
+| HM04 | **[Strength](MOVES.md#strength)** |  |  |  |  |
 ---
 
 ### #123 Hitmonlee
@@ -5316,11 +5316,11 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
+| TM17 | **[Submission](MOVES.md#submission)** | TM18 | **[Counter](MOVES.md#counter)** | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
+| HM04 | **[Strength](MOVES.md#strength)** |  |  |  |  |
 ---
 
 ### #124 Hitmonchan
@@ -5358,11 +5358,11 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
+| TM17 | **[Submission](MOVES.md#submission)** | TM18 | **[Counter](MOVES.md#counter)** | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
+| HM04 | **[Strength](MOVES.md#strength)** |  |  |  |  |
 ---
 
 ### #125 Hitmontop
@@ -5400,11 +5400,11 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
+| TM17 | **[Submission](MOVES.md#submission)** | TM18 | **[Counter](MOVES.md#counter)** | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
+| HM04 | **[Strength](MOVES.md#strength)** |  |  |  |  |
 ---
 
 ### #126 Lickitung
@@ -5428,27 +5428,27 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Wrap](MOVES.md#wrap)** | Normal | 15 | 85% | 20 |
-| 1 | **[Supersonic](MOVES.md#supersonic)** | Normal | — | 55% | 20 |
+| 1 | [Supersonic](MOVES.md#supersonic) | Normal | — | 55% | 20 |
 | 1 | [Lick](MOVES.md#lick) | Ghost | 40 | 100% | 30 |
 | 7 | **[Stomp](MOVES.md#stomp)** | Normal | 65 | 100% | 20 |
-| 15 | **[Disable](MOVES.md#disable)** | Normal | — | 55% | 20 |
-| 23 | **[Defense Curl](MOVES.md#defense-curl)** | Normal | — | 100% | 40 |
+| 15 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
+| 23 | [Defense Curl](MOVES.md#defense-curl) | Normal | — | 100% | 40 |
 | 31 | **[Body Slam](MOVES.md#body-slam)** | Normal | 85 | 100% | 15 |
-| 39 | **[Screech](MOVES.md#screech)** | Normal | — | 85% | 40 |
+| 39 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM01 | [Mega Punch](MOVES.md#mega-punch) | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM05 | [Mega Kick](MOVES.md#mega-kick) |
-| TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
-| TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
+| TM01 | **[Mega Punch](MOVES.md#mega-punch)** | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM05 | **[Mega Kick](MOVES.md#mega-kick)** |
+| TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** |
+| TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** |
 | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM20 | **[Rage](MOVES.md#rage)** | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
 | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
-| TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM01 | [Cut](MOVES.md#cut) | HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |
 ---
 
@@ -5567,12 +5567,12 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM07 | **[Horn Drill](MOVES.md#horn-drill)** | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
-| TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM25 | [Thunder](MOVES.md#thunder) | TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) |
+| TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
-| TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |
+| TM44 | [Rest](MOVES.md#rest) | TM48 | **[Rock Slide](MOVES.md#rock-slide)** | TM50 | [Substitute](MOVES.md#substitute) |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
 
@@ -5613,12 +5613,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | HM04 | [Strength](MOVES.md#strength) | TM48 | [Rock Slide](MOVES.md#rock-slide) |
+| TM07 | **[Horn Drill](MOVES.md#horn-drill)** | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | HM04 | **[Strength](MOVES.md#strength)** | TM48 | [Rock Slide](MOVES.md#rock-slide) |
 | TM50 | [Substitute](MOVES.md#substitute) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) |
-| TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM25 | [Thunder](MOVES.md#thunder) | TM26 | [Earthquake](MOVES.md#earthquake) |
-| TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM17 | **[Submission](MOVES.md#submission)** | TM18 | **[Counter](MOVES.md#counter)** | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
+| TM20 | [Rage](MOVES.md#rage) | TM25 | [Thunder](MOVES.md#thunder) | TM26 | **[Earthquake](MOVES.md#earthquake)** |
+| TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |  |  |
 ---
@@ -5645,12 +5645,12 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Pound](MOVES.md#pound)** | Normal | 40 | 100% | 35 |
-| 1 | **[Growl](MOVES.md#growl)** | Normal | — | 100% | 40 |
-| 12 | **[Softboiled](MOVES.md#softboiled)** | Normal | — | 100% | 10 |
-| 18 | **[Sing](MOVES.md#sing)** | Normal | — | 55% | 15 |
+| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
+| 12 | [Softboiled](MOVES.md#softboiled) | Normal | — | 100% | 10 |
+| 18 | [Sing](MOVES.md#sing) | Normal | — | 55% | 15 |
 | 25 | **[Egg Bomb](MOVES.md#egg-bomb)** | Normal | 100 | 75% | 10 |
-| 33 | **[Minimize](MOVES.md#minimize)** | Normal | — | 100% | 20 |
-| 41 | **[Defense Curl](MOVES.md#defense-curl)** | Normal | — | 100% | 40 |
+| 33 | [Minimize](MOVES.md#minimize) | Normal | — | 100% | 20 |
+| 41 | [Defense Curl](MOVES.md#defense-curl) | Normal | — | 100% | 40 |
 | 45 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
 | 51 | **[Double-Edge](MOVES.md#double-edge)** | Normal | 100 | 100% | 15 |
 
@@ -5658,11 +5658,11 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM29 | [Psychic](MOVES.md#psychic) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** |
+| TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
+| TM20 | **[Rage](MOVES.md#rage)** | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM37 | [Egg Bomb](MOVES.md#egg-bomb) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
+| TM37 | **[Egg Bomb](MOVES.md#egg-bomb)** | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM35 | [Metronome](MOVES.md#metronome) | TM41 | [Softboiled](MOVES.md#softboiled) | TM44 | [Rest](MOVES.md#rest) |
 | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM05 | [Flash](MOVES.md#flash) |  |  |  |  |
@@ -5692,12 +5692,12 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Pound](MOVES.md#pound)** | Normal | 40 | 100% | 35 |
 | 1 | **[Doubleslap](MOVES.md#doubleslap)** | Normal | 15 | 85% | 10 |
-| 1 | **[Growl](MOVES.md#growl)** | Normal | — | 100% | 40 |
-| 15 | **[Softboiled](MOVES.md#softboiled)** | Normal | — | 100% | 10 |
-| 24 | **[Sing](MOVES.md#sing)** | Normal | — | 55% | 15 |
+| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
+| 15 | [Softboiled](MOVES.md#softboiled) | Normal | — | 100% | 10 |
+| 24 | [Sing](MOVES.md#sing) | Normal | — | 55% | 15 |
 | 30 | **[Egg Bomb](MOVES.md#egg-bomb)** | Normal | 100 | 75% | 10 |
-| 38 | **[Minimize](MOVES.md#minimize)** | Normal | — | 100% | 20 |
-| 44 | **[Defense Curl](MOVES.md#defense-curl)** | Normal | — | 100% | 40 |
+| 38 | [Minimize](MOVES.md#minimize) | Normal | — | 100% | 20 |
+| 44 | [Defense Curl](MOVES.md#defense-curl) | Normal | — | 100% | 40 |
 | 48 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
 | 54 | **[Double-Edge](MOVES.md#double-edge)** | Normal | 100 | 100% | 15 |
 
@@ -5705,17 +5705,17 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
+| TM01 | **[Mega Punch](MOVES.md#mega-punch)** | TM05 | **[Mega Kick](MOVES.md#mega-kick)** | TM06 | [Toxic](MOVES.md#toxic) |
+| TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
-| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
+| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** | TM17 | [Submission](MOVES.md#submission) |
+| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | **[Rage](MOVES.md#rage)** |
 | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
 | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
-| TM35 | [Metronome](MOVES.md#metronome) | TM37 | [Egg Bomb](MOVES.md#egg-bomb) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
-| TM40 | [Skull Bash](MOVES.md#skull-bash) | TM41 | [Softboiled](MOVES.md#softboiled) | TM44 | [Rest](MOVES.md#rest) |
-| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) |
+| TM35 | [Metronome](MOVES.md#metronome) | TM37 | **[Egg Bomb](MOVES.md#egg-bomb)** | TM38 | [Fire Blast](MOVES.md#fire-blast) |
+| TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM41 | [Softboiled](MOVES.md#softboiled) | TM44 | [Rest](MOVES.md#rest) |
+| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | **[Tri Attack](MOVES.md#tri-attack)** |
 | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |
 ---
 
@@ -5741,11 +5741,11 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Doubleslap](MOVES.md#doubleslap)** | Normal | 15 | 85% | 10 |
-| 1 | **[Sing](MOVES.md#sing)** | Normal | — | 55% | 15 |
-| 1 | **[Softboiled](MOVES.md#softboiled)** | Normal | — | 100% | 10 |
+| 1 | [Sing](MOVES.md#sing) | Normal | — | 55% | 15 |
+| 1 | [Softboiled](MOVES.md#softboiled) | Normal | — | 100% | 10 |
 | 1 | **[Egg Bomb](MOVES.md#egg-bomb)** | Normal | 100 | 75% | 10 |
-| 42 | **[Minimize](MOVES.md#minimize)** | Normal | — | 100% | 20 |
-| 48 | **[Defense Curl](MOVES.md#defense-curl)** | Normal | — | 100% | 40 |
+| 42 | [Minimize](MOVES.md#minimize) | Normal | — | 100% | 20 |
+| 48 | [Defense Curl](MOVES.md#defense-curl) | Normal | — | 100% | 40 |
 | 52 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
 | 58 | **[Double-Edge](MOVES.md#double-edge)** | Normal | 100 | 100% | 15 |
 
@@ -5753,17 +5753,17 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
+| TM01 | **[Mega Punch](MOVES.md#mega-punch)** | TM05 | **[Mega Kick](MOVES.md#mega-kick)** | TM06 | [Toxic](MOVES.md#toxic) |
+| TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
-| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
+| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** | TM17 | [Submission](MOVES.md#submission) |
+| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | **[Rage](MOVES.md#rage)** |
 | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
 | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
-| TM35 | [Metronome](MOVES.md#metronome) | TM37 | [Egg Bomb](MOVES.md#egg-bomb) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
-| TM40 | [Skull Bash](MOVES.md#skull-bash) | TM41 | [Softboiled](MOVES.md#softboiled) | TM44 | [Rest](MOVES.md#rest) |
-| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) |
+| TM35 | [Metronome](MOVES.md#metronome) | TM37 | **[Egg Bomb](MOVES.md#egg-bomb)** | TM38 | [Fire Blast](MOVES.md#fire-blast) |
+| TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM41 | [Softboiled](MOVES.md#softboiled) | TM44 | [Rest](MOVES.md#rest) |
+| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | **[Tri Attack](MOVES.md#tri-attack)** |
 | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |
 ---
 
@@ -5792,8 +5792,8 @@
 | 23 | **[Vine Whip](MOVES.md#vine-whip)** | Grass | 35 | 100% | 10 |
 | 29 | **[Absorb](MOVES.md#absorb)** | Grass | 20 | 100% | 20 |
 | 32 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
-| 36 | **[Stun Spore](MOVES.md#stun-spore)** | Grass | — | 75% | 30 |
-| 39 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 36 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
+| 39 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 | 45 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
 | 49 | [Growth](MOVES.md#growth) | Normal | — | 100% | 40 |
 
@@ -5803,7 +5803,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
+| TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** | TM22 | **[Solarbeam](MOVES.md#solarbeam)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM01 | [Cut](MOVES.md#cut) |  |  |  |  |
@@ -5832,23 +5832,23 @@
 | 1 | **[Tackle](MOVES.md#tackle)** | Normal | 35 | 95% | 35 |
 | 1 | **[Rage](MOVES.md#rage)** | Normal | 20 | 100% | 20 |
 | 26 | [Bite](MOVES.md#bite) | Dark | 60 | 100% | 25 |
-| 31 | **[Tail Whip](MOVES.md#tail-whip)** | Normal | — | 100% | 30 |
+| 31 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
 | 36 | **[Mega Punch](MOVES.md#mega-punch)** | Normal | 80 | 85% | 20 |
-| 41 | **[Leer](MOVES.md#leer)** | Normal | — | 100% | 30 |
+| 41 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 46 | **[Dizzy Punch](MOVES.md#dizzy-punch)** | Normal | 70 | 100% | 10 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
+| TM01 | **[Mega Punch](MOVES.md#mega-punch)** | TM05 | **[Mega Kick](MOVES.md#mega-kick)** | TM06 | [Toxic](MOVES.md#toxic) |
+| TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
-| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
+| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** | TM17 | [Submission](MOVES.md#submission) |
+| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | **[Rage](MOVES.md#rage)** |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM26 | [Earthquake](MOVES.md#earthquake) |
 | TM27 | [Fissure](MOVES.md#fissure) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
+| TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | **[Skull Bash](MOVES.md#skull-bash)** |
 | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
 ---
@@ -5886,11 +5886,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) |  |  |  |  |
+| HM03 | **[Surf](MOVES.md#surf)** |  |  |  |  |
 ---
 
 ### #137 Seadra
@@ -5930,11 +5930,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |  |  |
 ---
 
 ### #138 Kingdra
@@ -5975,11 +5975,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |  |  |
 ---
 
 ### #139 Goldeen
@@ -6018,11 +6018,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |  |  |
 ---
 
 ### #140 Seaking
@@ -6062,11 +6062,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
 ---
 
 ### #141 Staryu
@@ -6104,13 +6104,13 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
 | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM49 | [Tri Attack](MOVES.md#tri-attack) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) | HM05 | [Flash](MOVES.md#flash) |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** | HM05 | [Flash](MOVES.md#flash) |
 ---
 
 ### #142 Starmie
@@ -6143,13 +6143,13 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
-| TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) |
+| TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | **[Psychic](MOVES.md#psychic)** |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
-| TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
+| TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
 | HM05 | [Flash](MOVES.md#flash) |  |  |  |  |
 ---
 
@@ -6174,27 +6174,27 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Rage](MOVES.md#rage)** | Normal | 20 | 100% | 20 |
-| 5 | **[Defense Curl](MOVES.md#defense-curl)** | Normal | — | 100% | 40 |
-| 13 | **[Glare](MOVES.md#glare)** | Normal | — | 75% | 30 |
+| 5 | [Defense Curl](MOVES.md#defense-curl) | Normal | — | 100% | 40 |
+| 13 | [Glare](MOVES.md#glare) | Normal | — | 75% | 30 |
 | 18 | [Dig](MOVES.md#dig) | Ground | 100 | 100% | 10 |
 | 26 | [Feint Attack](MOVES.md#feint-attack) | Dark | 60 | 100% | 20 |
-| 30 | **[Screech](MOVES.md#screech)** | Normal | — | 85% | 40 |
+| 30 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
 | 38 | **[Take Down](MOVES.md#take-down)** | Normal | 90 | 85% | 20 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | **[Body Slam](MOVES.md#body-slam)** |
+| TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
 | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
-| TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
+| TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | **[Rage](MOVES.md#rage)** | TM22 | [Solarbeam](MOVES.md#solarbeam) |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM26 | [Earthquake](MOVES.md#earthquake) |
 | TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
-| TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM49 | [Tri Attack](MOVES.md#tri-attack) |
+| TM39 | **[Swift](MOVES.md#swift)** | TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) |
+| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM49 | **[Tri Attack](MOVES.md#tri-attack)** |
 | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |  |  |
 ---
 
@@ -6220,16 +6220,16 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
-| 1 | **[Hypnosis](MOVES.md#hypnosis)** | Psychic | — | 60% | 20 |
+| 1 | [Hypnosis](MOVES.md#hypnosis) | Psychic | — | 60% | 20 |
 | 1 | [Confuse Ray](MOVES.md#confuse-ray) | Ghost | — | 100% | 10 |
-| 1 | **[Barrier](MOVES.md#barrier)** | Psychic | — | 100% | 30 |
+| 1 | [Barrier](MOVES.md#barrier) | Psychic | — | 100% | 30 |
 | 10 | [Mist](MOVES.md#mist) | Ice | — | 100% | 30 |
 | 12 | **[Confusion](MOVES.md#confusion)** | Psychic | 50 | 100% | 25 |
 | 15 | [Doubleslap](MOVES.md#doubleslap) | Normal | 15 | 85% | 10 |
 | 20 | **[Fairy Wind](MOVES.md#fairy-wind)** | Fairy | 40 | 100% | 30 |
 | 28 | **[Psybeam](MOVES.md#psybeam)** | Psychic | 65 | 100% | 20 |
 | 32 | [Mimic](MOVES.md#mimic) | Normal | — | 100% | 10 |
-| 36 | **[Light Screen](MOVES.md#light-screen)** | Psychic | — | 100% | 30 |
+| 36 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
 | 44 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
 
 **TM/HM moves**
@@ -6239,7 +6239,7 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
-| TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) |
+| TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | **[Psychic](MOVES.md#psychic)** |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
 | TM42 | [Dream Eater](MOVES.md#dream-eater) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
@@ -6268,12 +6268,12 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Confusion](MOVES.md#confusion)** | Psychic | 50 | 100% | 25 |
-| 1 | **[Barrier](MOVES.md#barrier)** | Psychic | — | 100% | 30 |
+| 1 | [Barrier](MOVES.md#barrier) | Psychic | — | 100% | 30 |
 | 15 | **[Confusion](MOVES.md#confusion)** | Psychic | 50 | 100% | 25 |
-| 23 | **[Light Screen](MOVES.md#light-screen)** | Psychic | — | 100% | 30 |
+| 23 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
 | 25 | **[Fairy Wind](MOVES.md#fairy-wind)** | Fairy | 40 | 100% | 30 |
 | 35 | [Doubleslap](MOVES.md#doubleslap) | Normal | 15 | 85% | 10 |
-| 39 | **[Meditate](MOVES.md#meditate)** | Psychic | — | 100% | 40 |
+| 39 | [Meditate](MOVES.md#meditate) | Psychic | — | 100% | 40 |
 | 43 | **[Moonblast](MOVES.md#moonblast)** | Fairy | 95 | 100% | 15 |
 | 47 | [Substitute](MOVES.md#substitute) | Normal | — | 100% | 10 |
 
@@ -6285,7 +6285,7 @@
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
-| TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) |
+| TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM29 | **[Psychic](MOVES.md#psychic)** |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
@@ -6314,23 +6314,23 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Quick Attack](MOVES.md#quick-attack)** | Normal | 40 | 100% | 30 |
-| 17 | **[Leer](MOVES.md#leer)** | Normal | — | 100% | 30 |
-| 20 | **[Focus Energy](MOVES.md#focus-energy)** | Normal | — | 100% | 30 |
+| 17 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
+| 20 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
 | 22 | **[Fury Cutter](MOVES.md#fury-cutter)** | Bug | 20 | 90% | 20 |
-| 24 | **[Double Team](MOVES.md#double-team)** | Normal | — | 100% | 15 |
+| 24 | [Double Team](MOVES.md#double-team) | Normal | — | 100% | 15 |
 | 29 | **[Slash](MOVES.md#slash)** | Normal | 70 | 100% | 20 |
 | 35 | **[X-Scissor](MOVES.md#x-scissor)** | Bug | 80 | 100% | 15 |
-| 39 | **[Swords Dance](MOVES.md#swords-dance)** | Normal | — | 100% | 30 |
+| 39 | [Swords Dance](MOVES.md#swords-dance) | Normal | — | 100% | 30 |
 | 42 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
+| TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM09 | **[Take Down](MOVES.md#take-down)** |
+| TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** | TM20 | **[Rage](MOVES.md#rage)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
-| TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
+| TM39 | **[Swift](MOVES.md#swift)** | TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |  |  |
 ---
 
@@ -6375,7 +6375,7 @@
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM01 | **[Cut](MOVES.md#cut)** |  |  |
 ---
 
 ### #148 Sneasel
@@ -6413,7 +6413,7 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM13 | **[Ice Beam](MOVES.md#ice-beam)** | TM14 | **[Blizzard](MOVES.md#blizzard)** |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
@@ -6455,7 +6455,7 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM13 | **[Ice Beam](MOVES.md#ice-beam)** | TM14 | **[Blizzard](MOVES.md#blizzard)** |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
@@ -6501,10 +6501,10 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
+| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | **[Ice Beam](MOVES.md#ice-beam)** |
+| TM14 | **[Blizzard](MOVES.md#blizzard)** | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
 | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
-| TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM35 | [Metronome](MOVES.md#metronome) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM50 | [Substitute](MOVES.md#substitute) |  |  |
@@ -6546,10 +6546,10 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
+| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | **[Ice Beam](MOVES.md#ice-beam)** |
+| TM14 | **[Blizzard](MOVES.md#blizzard)** | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
 | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
-| TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM35 | [Metronome](MOVES.md#metronome) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM50 | [Substitute](MOVES.md#substitute) |  |  |
@@ -6592,8 +6592,8 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** |
+| TM25 | **[Thunder](MOVES.md#thunder)** | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
@@ -6635,8 +6635,8 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
-| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** |
+| TM25 | **[Thunder](MOVES.md#thunder)** | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
@@ -6682,7 +6682,7 @@
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
+| TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
@@ -6725,7 +6725,7 @@
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM29 | [Psychic](MOVES.md#psychic) |
 | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
+| TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
@@ -6808,13 +6808,13 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM18 | [Counter](MOVES.md#counter) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM43 | [Sky Attack](MOVES.md#sky-attack) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |
-| HM02 | [Fly](MOVES.md#fly) |  |  |  |  |
+| TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM43 | **[Sky Attack](MOVES.md#sky-attack)** |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM01 | **[Cut](MOVES.md#cut)** |
+| HM02 | **[Fly](MOVES.md#fly)** |  |  |  |  |
 ---
 
 ### #158 Tauros
@@ -6839,8 +6839,8 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Tackle](MOVES.md#tackle)** | Normal | 35 | 95% | 35 |
 | 21 | **[Stomp](MOVES.md#stomp)** | Normal | 65 | 100% | 20 |
-| 28 | **[Tail Whip](MOVES.md#tail-whip)** | Normal | — | 100% | 30 |
-| 35 | **[Leer](MOVES.md#leer)** | Normal | — | 100% | 30 |
+| 28 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
+| 35 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 44 | **[Rage](MOVES.md#rage)** | Normal | 20 | 100% | 20 |
 | 51 | **[Take Down](MOVES.md#take-down)** | Normal | 90 | 85% | 20 |
 
@@ -6848,12 +6848,12 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | **[Body Slam](MOVES.md#body-slam)** |
+| TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** | TM20 | **[Rage](MOVES.md#rage)** |
 | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM26 | [Earthquake](MOVES.md#earthquake) |
 | TM27 | [Fissure](MOVES.md#fissure) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
+| TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | **[Skull Bash](MOVES.md#skull-bash)** |
 | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |
 | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |  |  |  |  |
 ---
@@ -6879,11 +6879,11 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Tackle](MOVES.md#tackle)** | Normal | 35 | 95% | 35 |
-| 1 | **[Growl](MOVES.md#growl)** | Normal | — | 100% | 40 |
-| 8 | **[Defense Curl](MOVES.md#defense-curl)** | Normal | — | 100% | 40 |
+| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
+| 8 | [Defense Curl](MOVES.md#defense-curl) | Normal | — | 100% | 40 |
 | 13 | **[Stomp](MOVES.md#stomp)** | Normal | 65 | 100% | 20 |
-| 19 | **[Recover](MOVES.md#recover)** | Normal | — | 100% | 20 |
-| 26 | **[Bide](MOVES.md#bide)** | Normal | — | 100% | 10 |
+| 19 | [Recover](MOVES.md#recover) | Normal | — | 100% | 20 |
+| 26 | [Bide](MOVES.md#bide) | Normal | — | 100% | 10 |
 | 34 | **[Headbutt](MOVES.md#headbutt)** | Normal | 70 | 100% | 15 |
 | 43 | **[Body Slam](MOVES.md#body-slam)** | Normal | 85 | 100% | 15 |
 | 53 | **[Double-Edge](MOVES.md#double-edge)** | Normal | 100 | 100% | 15 |
@@ -6892,12 +6892,12 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
+| TM01 | **[Mega Punch](MOVES.md#mega-punch)** | TM05 | **[Mega Kick](MOVES.md#mega-kick)** | TM06 | [Toxic](MOVES.md#toxic) |
+| TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
+| TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** |
+| TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | **[Rage](MOVES.md#rage)** |
 | TM26 | [Earthquake](MOVES.md#earthquake) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM37 | [Egg Bomb](MOVES.md#egg-bomb) |
+| TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM37 | **[Egg Bomb](MOVES.md#egg-bomb)** |
 | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
 | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
 | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |  |  |
@@ -6968,13 +6968,13 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
+| TM20 | [Rage](MOVES.md#rage) | TM23 | **[Dragon Rage](MOVES.md#dragon-rage)** | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
 | TM25 | [Thunder](MOVES.md#thunder) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |  |  |
+| HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) |  |  |
 ---
 
 ### #162 Lapras
@@ -7000,7 +7000,7 @@
 | 1 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 16 | [Sing](MOVES.md#sing) | Normal | — | 55% | 15 |
-| 20 | **[Mist](MOVES.md#mist)** | Ice | — | 100% | 30 |
+| 20 | [Mist](MOVES.md#mist) | Ice | — | 100% | 30 |
 | 25 | [Body Slam](MOVES.md#body-slam) | Normal | 85 | 100% | 15 |
 | 31 | [Confuse Ray](MOVES.md#confuse-ray) | Ghost | — | 100% | 10 |
 | 38 | **[Ice Beam](MOVES.md#ice-beam)** | Ice | 95 | 100% | 10 |
@@ -7011,13 +7011,13 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
-| TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
+| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** |
+| TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | **[Ice Beam](MOVES.md#ice-beam)** | TM14 | **[Blizzard](MOVES.md#blizzard)** |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
 | TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
 | TM29 | [Psychic](MOVES.md#psychic) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
 
@@ -7041,7 +7041,7 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | **[Transform](MOVES.md#transform)** | Normal | — | 100% | 10 |
+| 1 | [Transform](MOVES.md#transform) | Normal | — | 100% | 10 |
 
 
 ---
@@ -7068,10 +7068,10 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Tackle](MOVES.md#tackle)** | Normal | 35 | 95% | 35 |
-| 1 | **[Sand-Attack](MOVES.md#sand-attack)** | Normal | — | 100% | 15 |
+| 1 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
 | 27 | **[Quick Attack](MOVES.md#quick-attack)** | Normal | 40 | 100% | 30 |
 | 31 | [Bite](MOVES.md#bite) | Dark | 60 | 100% | 25 |
-| 35 | **[Tail Whip](MOVES.md#tail-whip)** | Normal | — | 100% | 30 |
+| 35 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
 | 40 | [Fairy Wind](MOVES.md#fairy-wind) | Fairy | 40 | 100% | 30 |
 | 45 | **[Take Down](MOVES.md#take-down)** | Normal | 90 | 85% | 20 |
 
@@ -7079,10 +7079,10 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** |
+| TM10 | **[Double-Edge](MOVES.md#double-edge)** | TM20 | **[Rage](MOVES.md#rage)** | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
-| TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
+| TM39 | **[Swift](MOVES.md#swift)** | TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |  |  |
 ---
 
@@ -7125,12 +7125,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |  |  |
+| HM03 | **[Surf](MOVES.md#surf)** | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |  |  |
 ---
 
 ### #166 Jolteon
@@ -7161,7 +7161,7 @@
 | 27 | [Quick Attack](MOVES.md#quick-attack) | Normal | 40 | 100% | 30 |
 | 31 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
 | 37 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
-| 40 | **[Thunder Wave](MOVES.md#thunder-wave)** | Electric | — | 100% | 20 |
+| 40 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 42 | [Double Kick](MOVES.md#double-kick) | Fighting | 30 | 100% | 30 |
 | 44 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
 | 48 | [Pin Missile](MOVES.md#pin-missile) | Bug | 14 | 85% | 20 |
@@ -7173,7 +7173,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
-| TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** | TM25 | **[Thunder](MOVES.md#thunder)** | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |
@@ -7221,7 +7221,7 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
+| TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |  |  |  |  |
 ---
@@ -7266,7 +7266,7 @@
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | TM29 | [Psychic](MOVES.md#psychic) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
+| TM50 | [Substitute](MOVES.md#substitute) | TM29 | **[Psychic](MOVES.md#psychic)** | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
 | TM49 | [Tri Attack](MOVES.md#tri-attack) |  |  |  |  |
 ---
 
@@ -7342,7 +7342,7 @@
 | 5 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
 | 10 | [Quick Attack](MOVES.md#quick-attack) | Normal | 40 | 100% | 30 |
 | 15 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
-| 20 | **[Leech Seed](MOVES.md#leech-seed)** | Grass | — | 90% | 10 |
+| 20 | [Leech Seed](MOVES.md#leech-seed) | Grass | — | 90% | 10 |
 | 25 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
 | 45 | [Swords Dance](MOVES.md#swords-dance) | Normal | — | 100% | 30 |
 | 50 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
@@ -7353,7 +7353,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
-| TM21 | [Mega Drain](MOVES.md#mega-drain) | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM21 | **[Mega Drain](MOVES.md#mega-drain)** | TM22 | **[Solarbeam](MOVES.md#solarbeam)** | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |  |  |
@@ -7397,7 +7397,7 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM13 | **[Ice Beam](MOVES.md#ice-beam)** | TM14 | **[Blizzard](MOVES.md#blizzard)** |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
@@ -7468,10 +7468,10 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Tackle](MOVES.md#tackle)** | Normal | 35 | 95% | 35 |
-| 1 | **[Sharpen](MOVES.md#sharpen)** | Normal | — | 100% | 30 |
-| 1 | **[Conversion](MOVES.md#conversion)** | Normal | — | 100% | 30 |
+| 1 | [Sharpen](MOVES.md#sharpen) | Normal | — | 100% | 30 |
+| 1 | [Conversion](MOVES.md#conversion) | Normal | — | 100% | 30 |
 | 23 | [Psybeam](MOVES.md#psybeam) | Psychic | 65 | 100% | 20 |
-| 28 | **[Recover](MOVES.md#recover)** | Normal | — | 100% | 20 |
+| 28 | [Recover](MOVES.md#recover) | Normal | — | 100% | 20 |
 | 35 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
 | 42 | **[Tri Attack](MOVES.md#tri-attack)** | Normal | 80 | 100% | 10 |
 
@@ -7479,13 +7479,13 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
+| TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** |
+| TM20 | **[Rage](MOVES.md#rage)** | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
 | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
-| TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) |
+| TM39 | **[Swift](MOVES.md#swift)** | TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) |
+| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | **[Tri Attack](MOVES.md#tri-attack)** |
 | TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |  |  |
 ---
 
@@ -7511,10 +7511,10 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Tackle](MOVES.md#tackle)** | Normal | 35 | 95% | 35 |
-| 1 | **[Sharpen](MOVES.md#sharpen)** | Normal | — | 100% | 30 |
-| 1 | **[Conversion](MOVES.md#conversion)** | Normal | — | 100% | 30 |
+| 1 | [Sharpen](MOVES.md#sharpen) | Normal | — | 100% | 30 |
+| 1 | [Conversion](MOVES.md#conversion) | Normal | — | 100% | 30 |
 | 23 | [Psybeam](MOVES.md#psybeam) | Psychic | 65 | 100% | 20 |
-| 28 | **[Recover](MOVES.md#recover)** | Normal | — | 100% | 20 |
+| 28 | [Recover](MOVES.md#recover) | Normal | — | 100% | 20 |
 | 35 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
 | 42 | **[Tri Attack](MOVES.md#tri-attack)** | Normal | 80 | 100% | 10 |
 | 50 | **[Hyper Beam](MOVES.md#hyper-beam)** | Normal | 150 | 90% | 5 |
@@ -7523,13 +7523,13 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM06 | [Toxic](MOVES.md#toxic) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM06 | [Toxic](MOVES.md#toxic) | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
+| TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** |
+| TM20 | **[Rage](MOVES.md#rage)** | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
 | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
-| TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | [Tri Attack](MOVES.md#tri-attack) |
+| TM39 | **[Swift](MOVES.md#swift)** | TM40 | **[Skull Bash](MOVES.md#skull-bash)** | TM44 | [Rest](MOVES.md#rest) |
+| TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | TM49 | **[Tri Attack](MOVES.md#tri-attack)** |
 | TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |  |  |
 ---
 
@@ -7555,7 +7555,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
-| 1 | **[Withdraw](MOVES.md#withdraw)** | Water | — | 100% | 40 |
+| 1 | [Withdraw](MOVES.md#withdraw) | Water | — | 100% | 40 |
 | 34 | [Horn Attack](MOVES.md#horn-attack) | Normal | 65 | 100% | 25 |
 | 39 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 46 | [Spike Cannon](MOVES.md#spike-cannon) | Normal | 20 | 100% | 15 |
@@ -7566,11 +7566,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) |  |  |  |  |
+| HM03 | **[Surf](MOVES.md#surf)** |  |  |  |  |
 ---
 
 ### #176 Omastar
@@ -7595,7 +7595,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
-| 1 | **[Withdraw](MOVES.md#withdraw)** | Water | — | 100% | 40 |
+| 1 | [Withdraw](MOVES.md#withdraw) | Water | — | 100% | 40 |
 | 1 | [Horn Attack](MOVES.md#horn-attack) | Normal | 65 | 100% | 25 |
 | 34 | [Horn Attack](MOVES.md#horn-attack) | Normal | 65 | 100% | 25 |
 | 39 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
@@ -7607,12 +7607,12 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
-| TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
+| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** |
+| TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
 ---
 
 ### #177 Kabuto
@@ -7648,11 +7648,11 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | [Surf](MOVES.md#surf) |  |  |  |  |
+| HM03 | **[Surf](MOVES.md#surf)** |  |  |  |  |
 ---
 
 ### #178 Kabutops
@@ -7690,12 +7690,12 @@
 |---:|:--|---:|:--|---:|:--|
 | TM02 | [Razor Wind](MOVES.md#razor-wind) | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM05 | [Mega Kick](MOVES.md#mega-kick) |
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** |
 | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM17 | [Submission](MOVES.md#submission) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |  |  |
 ---
 
 ### #179 Aerodactyl
@@ -7730,12 +7730,12 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM20 | [Rage](MOVES.md#rage) | TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
-| TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) | TM43 | [Sky Attack](MOVES.md#sky-attack) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM02 | [Fly](MOVES.md#fly) |
+| TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) | TM43 | **[Sky Attack](MOVES.md#sky-attack)** |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM02 | **[Fly](MOVES.md#fly)** |
 ---
 
 ### #180 Munchlax
@@ -7763,10 +7763,10 @@
 | 1 | [Lick](MOVES.md#lick) | Ghost | 40 | 100% | 30 |
 | 8 | **[Headbutt](MOVES.md#headbutt)** | Normal | 70 | 100% | 15 |
 | 14 | [Amnesia](MOVES.md#amnesia) | Psychic | — | 100% | 20 |
-| 19 | **[Metronome](MOVES.md#metronome)** | Normal | — | 100% | 10 |
+| 19 | [Metronome](MOVES.md#metronome) | Normal | — | 100% | 10 |
 | 25 | [Rest](MOVES.md#rest) | Psychic | — | 100% | 10 |
 | 32 | **[Body Slam](MOVES.md#body-slam)** | Normal | 85 | 100% | 15 |
-| 38 | **[Harden](MOVES.md#harden)** | Normal | — | 100% | 30 |
+| 38 | [Harden](MOVES.md#harden) | Normal | — | 100% | 30 |
 | 43 | **[Double-Edge](MOVES.md#double-edge)** | Normal | 100 | 100% | 15 |
 | 51 | **[Hyper Beam](MOVES.md#hyper-beam)** | Normal | 150 | 90% | 5 |
 
@@ -7774,16 +7774,16 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
+| TM01 | **[Mega Punch](MOVES.md#mega-punch)** | TM05 | **[Mega Kick](MOVES.md#mega-kick)** | TM06 | [Toxic](MOVES.md#toxic) |
+| TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) |
+| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** | TM16 | **[Pay Day](MOVES.md#pay-day)** |
 | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
+| TM20 | **[Rage](MOVES.md#rage)** | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
 | TM25 | [Thunder](MOVES.md#thunder) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
 | TM29 | [Psychic](MOVES.md#psychic) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
-| TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
+| TM36 | **[Selfdestruct](MOVES.md#selfdestruct)** | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | **[Skull Bash](MOVES.md#skull-bash)** |
 | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM03 | [Surf](MOVES.md#surf) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | HM04 | [Strength](MOVES.md#strength) |
 ---
@@ -7813,7 +7813,7 @@
 | 1 | [Amnesia](MOVES.md#amnesia) | Psychic | — | 100% | 20 |
 | 1 | [Rest](MOVES.md#rest) | Psychic | — | 100% | 10 |
 | 35 | **[Body Slam](MOVES.md#body-slam)** | Normal | 85 | 100% | 15 |
-| 41 | **[Harden](MOVES.md#harden)** | Normal | — | 100% | 30 |
+| 41 | [Harden](MOVES.md#harden) | Normal | — | 100% | 30 |
 | 48 | **[Double-Edge](MOVES.md#double-edge)** | Normal | 100 | 100% | 15 |
 | 56 | **[Hyper Beam](MOVES.md#hyper-beam)** | Normal | 150 | 90% | 5 |
 
@@ -7821,16 +7821,16 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
-| TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
+| TM01 | **[Mega Punch](MOVES.md#mega-punch)** | TM05 | **[Mega Kick](MOVES.md#mega-kick)** | TM06 | [Toxic](MOVES.md#toxic) |
+| TM08 | **[Body Slam](MOVES.md#body-slam)** | TM09 | **[Take Down](MOVES.md#take-down)** | TM10 | **[Double-Edge](MOVES.md#double-edge)** |
 | TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
-| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) |
+| TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | **[Hyper Beam](MOVES.md#hyper-beam)** | TM16 | **[Pay Day](MOVES.md#pay-day)** |
 | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
+| TM20 | **[Rage](MOVES.md#rage)** | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
 | TM25 | [Thunder](MOVES.md#thunder) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
 | TM29 | [Psychic](MOVES.md#psychic) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) |
-| TM36 | [Selfdestruct](MOVES.md#selfdestruct) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
+| TM36 | **[Selfdestruct](MOVES.md#selfdestruct)** | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | **[Skull Bash](MOVES.md#skull-bash)** |
 | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM03 | [Surf](MOVES.md#surf) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) | HM04 | [Strength](MOVES.md#strength) |
 ---
@@ -7870,7 +7870,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
-| TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) |
+| TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) | TM28 | **[Dig](MOVES.md#dig)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM44 | [Rest](MOVES.md#rest) | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
@@ -7913,8 +7913,8 @@
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
-| TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
-| TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM23 | **[Dragon Rage](MOVES.md#dragon-rage)** | TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) |
+| TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM44 | [Rest](MOVES.md#rest) |
 | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |
 | HM02 | [Fly](MOVES.md#fly) |  |  |  |  |
@@ -7954,8 +7954,8 @@
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) |
-| TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
-| TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM23 | **[Dragon Rage](MOVES.md#dragon-rage)** | TM26 | **[Earthquake](MOVES.md#earthquake)** | TM27 | [Fissure](MOVES.md#fissure) |
+| TM28 | **[Dig](MOVES.md#dig)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM44 | [Rest](MOVES.md#rest) |
 | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) |
 | HM02 | [Fly](MOVES.md#fly) | TM38 | [Fire Blast](MOVES.md#fire-blast) |  |  |
@@ -7965,7 +7965,7 @@
 
 **Type:** Electric  
 **Catch rate:** 235 · **Base EXP:** 59 · **Growth:** Medium Slow  
-**Evolves into:** [Flaffy](#186-flaffy) — level 35  
+**Evolves into:** [Flaaffy](#186-flaaffy) — level 35  
 
 #### Base stats
 
@@ -7985,7 +7985,7 @@
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 9 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
-| 16 | **[Thunder Wave](MOVES.md#thunder-wave)** | Electric | — | 100% | 20 |
+| 16 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 22 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
 | 31 | [Dragon Rage](MOVES.md#dragon-rage) | Dragon | 40 | 100% | 10 |
 | 37 | **[Thunder](MOVES.md#thunder)** | Electric | 120 | 70% | 10 |
@@ -7995,14 +7995,14 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** |
+| TM25 | **[Thunder](MOVES.md#thunder)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |  |  |
 ---
 
-### #186 Flaffy
+### #186 Flaaffy
 
 **Type:** Electric  
 **Catch rate:** 120 · **Base EXP:** 117 · **Growth:** Medium Slow  
@@ -8028,7 +8028,7 @@
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 1 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
 | 9 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
-| 18 | **[Thunder Wave](MOVES.md#thunder-wave)** | Electric | — | 100% | 20 |
+| 18 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 24 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
 | 36 | [Dragon Rage](MOVES.md#dragon-rage) | Dragon | 40 | 100% | 10 |
 | 45 | **[Thunder](MOVES.md#thunder)** | Electric | 120 | 70% | 10 |
@@ -8038,8 +8038,8 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
-| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
+| TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** |
+| TM25 | **[Thunder](MOVES.md#thunder)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM04 | [Strength](MOVES.md#strength) | HM05 | [Flash](MOVES.md#flash) |
@@ -8049,7 +8049,7 @@
 
 **Type:** Electric / Dragon  
 **Catch rate:** 45 · **Base EXP:** 194 · **Growth:** Medium Slow  
-**Evolves from:** [Flaffy](#186-flaffy) — level 40  
+**Evolves from:** [Flaaffy](#186-flaaffy) — level 40  
 
 #### Base stats
 
@@ -8069,9 +8069,9 @@
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 1 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
-| 1 | **[Thunder Wave](MOVES.md#thunder-wave)** | Electric | — | 100% | 20 |
+| 1 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 9 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
-| 18 | **[Thunder Wave](MOVES.md#thunder-wave)** | Electric | — | 100% | 20 |
+| 18 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 35 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
 | 39 | **[Dragon Rage](MOVES.md#dragon-rage)** | Dragon | 40 | 100% | 10 |
 | 45 | **[Dragon Slam](MOVES.md#dragon-slam)** | Dragon | 80 | 100% | 15 |
@@ -8085,7 +8085,7 @@
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
-| TM20 | [Rage](MOVES.md#rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
+| TM20 | [Rage](MOVES.md#rage) | TM24 | **[Thunderbolt](MOVES.md#thunderbolt)** | TM25 | **[Thunder](MOVES.md#thunder)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
 | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM50 | [Substitute](MOVES.md#substitute) |
@@ -8115,8 +8115,8 @@
 | 1 | **[Peck](MOVES.md#peck)** | Flying | 35 | 100% | 35 |
 | 1 | **[Psybeam](MOVES.md#psybeam)** | Psychic | 65 | 100% | 20 |
 | 51 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
-| 55 | **[Agility](MOVES.md#agility)** | Psychic | — | 100% | 30 |
-| 60 | **[Hypnosis](MOVES.md#hypnosis)** | Psychic | — | 60% | 20 |
+| 55 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
+| 60 | [Hypnosis](MOVES.md#hypnosis) | Psychic | — | 60% | 20 |
 | 65 | [Dream Eater](MOVES.md#dream-eater) | Ghost | 100 | 100% | 15 |
 | 70 | [Mist](MOVES.md#mist) | Ice | — | 100% | 30 |
 
@@ -8124,13 +8124,13 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM35 | [Metronome](MOVES.md#metronome) |
-| TM30 | [Teleport](MOVES.md#teleport) | TM29 | [Psychic](MOVES.md#psychic) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
+| TM30 | [Teleport](MOVES.md#teleport) | TM29 | **[Psychic](MOVES.md#psychic)** | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
-| TM39 | [Swift](MOVES.md#swift) | TM43 | [Sky Attack](MOVES.md#sky-attack) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM02 | [Fly](MOVES.md#fly) |  |  |
+| TM39 | [Swift](MOVES.md#swift) | TM43 | **[Sky Attack](MOVES.md#sky-attack)** | TM44 | [Rest](MOVES.md#rest) |
+| TM50 | [Substitute](MOVES.md#substitute) | HM02 | **[Fly](MOVES.md#fly)** |  |  |
 ---
 
 ### #189 Zapdos
@@ -8165,13 +8165,13 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM17 | [Submission](MOVES.md#submission) | TM26 | [Earthquake](MOVES.md#earthquake) |
+| TM20 | [Rage](MOVES.md#rage) | TM17 | **[Submission](MOVES.md#submission)** | TM26 | [Earthquake](MOVES.md#earthquake) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM43 | [Sky Attack](MOVES.md#sky-attack) |
+| TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) | TM43 | **[Sky Attack](MOVES.md#sky-attack)** |
 | TM44 | [Rest](MOVES.md#rest) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM02 | [Fly](MOVES.md#fly) | HM04 | [Strength](MOVES.md#strength) |  |  |
+| HM02 | **[Fly](MOVES.md#fly)** | HM04 | **[Strength](MOVES.md#strength)** |  |  |
 ---
 
 ### #190 Moltres
@@ -8206,12 +8206,12 @@
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
-| TM02 | [Razor Wind](MOVES.md#razor-wind) | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
+| TM02 | **[Razor Wind](MOVES.md#razor-wind)** | TM04 | [Whirlwind](MOVES.md#whirlwind) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
 | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
-| TM39 | [Swift](MOVES.md#swift) | TM43 | [Sky Attack](MOVES.md#sky-attack) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM02 | [Fly](MOVES.md#fly) |  |  |
+| TM39 | [Swift](MOVES.md#swift) | TM43 | **[Sky Attack](MOVES.md#sky-attack)** | TM44 | [Rest](MOVES.md#rest) |
+| TM50 | [Substitute](MOVES.md#substitute) | HM02 | **[Fly](MOVES.md#fly)** |  |  |
 ---
 
 ### #191 Bulbasaur
@@ -8237,12 +8237,12 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 7 | **[Leech Seed](MOVES.md#leech-seed)** | Grass | — | 90% | 10 |
+| 7 | [Leech Seed](MOVES.md#leech-seed) | Grass | — | 90% | 10 |
 | 13 | **[Vine Whip](MOVES.md#vine-whip)** | Grass | 35 | 100% | 10 |
 | 20 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 27 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
 | 34 | [Growth](MOVES.md#growth) | Normal | — | 100% | 40 |
-| 41 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 41 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 | 48 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
 
 **TM/HM moves**
@@ -8251,7 +8251,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) |
-| TM21 | [Mega Drain](MOVES.md#mega-drain) | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM21 | **[Mega Drain](MOVES.md#mega-drain)** | TM22 | **[Solarbeam](MOVES.md#solarbeam)** | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |
 ---
@@ -8280,13 +8280,13 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 1 | **[Leech Seed](MOVES.md#leech-seed)** | Grass | — | 90% | 10 |
-| 7 | **[Leech Seed](MOVES.md#leech-seed)** | Grass | — | 90% | 10 |
+| 1 | [Leech Seed](MOVES.md#leech-seed) | Grass | — | 90% | 10 |
+| 7 | [Leech Seed](MOVES.md#leech-seed) | Grass | — | 90% | 10 |
 | 13 | **[Vine Whip](MOVES.md#vine-whip)** | Grass | 35 | 100% | 10 |
 | 22 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 30 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
 | 38 | [Growth](MOVES.md#growth) | Normal | — | 100% | 40 |
-| 46 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 46 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 | 54 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
 
 **TM/HM moves**
@@ -8295,7 +8295,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM20 | [Rage](MOVES.md#rage) |
-| TM21 | [Mega Drain](MOVES.md#mega-drain) | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM31 | [Mimic](MOVES.md#mimic) |
+| TM21 | **[Mega Drain](MOVES.md#mega-drain)** | TM22 | **[Solarbeam](MOVES.md#solarbeam)** | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) |
 | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) |
 ---
@@ -8323,14 +8323,14 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 1 | **[Leech Seed](MOVES.md#leech-seed)** | Grass | — | 90% | 10 |
+| 1 | [Leech Seed](MOVES.md#leech-seed) | Grass | — | 90% | 10 |
 | 1 | **[Vine Whip](MOVES.md#vine-whip)** | Grass | 35 | 100% | 10 |
-| 7 | **[Leech Seed](MOVES.md#leech-seed)** | Grass | — | 90% | 10 |
+| 7 | [Leech Seed](MOVES.md#leech-seed) | Grass | — | 90% | 10 |
 | 13 | **[Vine Whip](MOVES.md#vine-whip)** | Grass | 35 | 100% | 10 |
 | 22 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 30 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
 | 43 | [Growth](MOVES.md#growth) | Normal | — | 100% | 40 |
-| 52 | **[Sleep Powder](MOVES.md#sleep-powder)** | Grass | — | 75% | 15 |
+| 52 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 | 65 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
 | Evo | **[Moonblast](MOVES.md#moonblast)** | Fairy | 95 | 100% | 15 |
 
@@ -8340,7 +8340,7 @@
 |---:|:--|---:|:--|---:|:--|
 | TM03 | [Swords Dance](MOVES.md#swords-dance) | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) |
 | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) |
-| TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) | TM22 | [Solarbeam](MOVES.md#solarbeam) |
+| TM20 | [Rage](MOVES.md#rage) | TM21 | **[Mega Drain](MOVES.md#mega-drain)** | TM22 | **[Solarbeam](MOVES.md#solarbeam)** |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM01 | [Cut](MOVES.md#cut) |  |  |  |  |
@@ -8385,7 +8385,7 @@
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM23 | [Dragon Rage](MOVES.md#dragon-rage) |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
+| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) | HM04 | [Strength](MOVES.md#strength) |
 ---
@@ -8431,7 +8431,7 @@
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM23 | [Dragon Rage](MOVES.md#dragon-rage) |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
+| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) | HM04 | [Strength](MOVES.md#strength) |
 ---
@@ -8477,9 +8477,9 @@
 | TM06 | [Toxic](MOVES.md#toxic) | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) |
 | TM10 | [Double-Edge](MOVES.md#double-edge) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
 | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
-| TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
+| TM23 | **[Dragon Rage](MOVES.md#dragon-rage)** | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
 | TM28 | [Dig](MOVES.md#dig) | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
-| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | [Fire Blast](MOVES.md#fire-blast) |
+| TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM38 | **[Fire Blast](MOVES.md#fire-blast)** |
 | TM39 | [Swift](MOVES.md#swift) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
 | TM50 | [Substitute](MOVES.md#substitute) | HM01 | [Cut](MOVES.md#cut) | HM04 | [Strength](MOVES.md#strength) |
 ---
@@ -8510,7 +8510,7 @@
 | 8 | **[Bubble](MOVES.md#bubble)** | Water | 20 | 100% | 30 |
 | 15 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
 | 22 | [Bite](MOVES.md#bite) | Dark | 60 | 100% | 25 |
-| 28 | **[Withdraw](MOVES.md#withdraw)** | Water | — | 100% | 40 |
+| 28 | [Withdraw](MOVES.md#withdraw) | Water | — | 100% | 40 |
 | 35 | [Skull Bash](MOVES.md#skull-bash) | Normal | 100 | 100% | 15 |
 | 42 | **[Hydro Pump](MOVES.md#hydro-pump)** | Water | 120 | 80% | 5 |
 
@@ -8520,12 +8520,12 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM28 | [Dig](MOVES.md#dig) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) |
 ---
 
 ### #198 Wartortle
@@ -8556,7 +8556,7 @@
 | 8 | **[Bubble](MOVES.md#bubble)** | Water | 20 | 100% | 30 |
 | 15 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
 | 24 | [Bite](MOVES.md#bite) | Dark | 60 | 100% | 25 |
-| 31 | **[Withdraw](MOVES.md#withdraw)** | Water | — | 100% | 40 |
+| 31 | [Withdraw](MOVES.md#withdraw) | Water | — | 100% | 40 |
 | 39 | [Skull Bash](MOVES.md#skull-bash) | Normal | 100 | 100% | 15 |
 | 47 | **[Hydro Pump](MOVES.md#hydro-pump)** | Water | 120 | 80% | 5 |
 
@@ -8566,12 +8566,12 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM28 | [Dig](MOVES.md#dig) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) |
 ---
 
 ### #199 Blastoise
@@ -8602,7 +8602,7 @@
 | 8 | **[Bubble](MOVES.md#bubble)** | Water | 20 | 100% | 30 |
 | 15 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
 | 24 | [Bite](MOVES.md#bite) | Dark | 60 | 100% | 25 |
-| 31 | **[Withdraw](MOVES.md#withdraw)** | Water | — | 100% | 40 |
+| 31 | [Withdraw](MOVES.md#withdraw) | Water | — | 100% | 40 |
 | 42 | [Skull Bash](MOVES.md#skull-bash) | Normal | 100 | 100% | 15 |
 | 52 | **[Hydro Pump](MOVES.md#hydro-pump)** | Water | 120 | 80% | 5 |
 | Evo | **[Metal Claw](MOVES.md#metal-claw)** | Steel | 50 | 95% | 35 |
@@ -8613,13 +8613,13 @@
 |---:|:--|---:|:--|---:|:--|
 | TM01 | [Mega Punch](MOVES.md#mega-punch) | TM05 | [Mega Kick](MOVES.md#mega-kick) | TM06 | [Toxic](MOVES.md#toxic) |
 | TM08 | [Body Slam](MOVES.md#body-slam) | TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) |
-| TM11 | [Bubblebeam](MOVES.md#bubblebeam) | TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | [Ice Beam](MOVES.md#ice-beam) |
+| TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** | TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) |
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) |
 | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) |
 | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) | TM28 | [Dig](MOVES.md#dig) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |
+| TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) |
 ---
 
 ### #200 Mewtwo
@@ -8646,11 +8646,11 @@
 | 1 | [Disable](MOVES.md#disable) | Normal | — | 55% | 20 |
 | 1 | [Swift](MOVES.md#swift) | Normal | 60 | 100% | 20 |
 | 1 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
-| 63 | **[Barrier](MOVES.md#barrier)** | Psychic | — | 100% | 30 |
+| 63 | [Barrier](MOVES.md#barrier) | Psychic | — | 100% | 30 |
 | 66 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
 | 70 | [Recover](MOVES.md#recover) | Normal | — | 100% | 20 |
 | 75 | [Mist](MOVES.md#mist) | Ice | — | 100% | 30 |
-| 81 | **[Amnesia](MOVES.md#amnesia)** | Psychic | — | 100% | 20 |
+| 81 | [Amnesia](MOVES.md#amnesia) | Psychic | — | 100% | 20 |
 
 **TM/HM moves**
 
@@ -8662,7 +8662,7 @@
 | TM14 | [Blizzard](MOVES.md#blizzard) | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) |
 | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) | TM19 | [Seismic Toss](MOVES.md#seismic-toss) |
 | TM20 | [Rage](MOVES.md#rage) | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
-| TM25 | [Thunder](MOVES.md#thunder) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM25 | [Thunder](MOVES.md#thunder) | TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) |
 | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) |
@@ -8709,7 +8709,7 @@
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
 | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM23 | [Dragon Rage](MOVES.md#dragon-rage) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) |
 | TM25 | [Thunder](MOVES.md#thunder) | TM26 | [Earthquake](MOVES.md#earthquake) | TM27 | [Fissure](MOVES.md#fissure) |
-| TM28 | [Dig](MOVES.md#dig) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM28 | [Dig](MOVES.md#dig) | TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
 | TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM36 | [Selfdestruct](MOVES.md#selfdestruct) |
 | TM37 | [Egg Bomb](MOVES.md#egg-bomb) | TM38 | [Fire Blast](MOVES.md#fire-blast) | TM39 | [Swift](MOVES.md#swift) |
@@ -8742,13 +8742,13 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Confusion](MOVES.md#confusion)** | Psychic | 50 | 100% | 25 |
-| 1 | **[Psywave](MOVES.md#psywave)** | Psychic | — | 80% | 15 |
-| 15 | **[Light Screen](MOVES.md#light-screen)** | Psychic | — | 100% | 30 |
+| 1 | [Psywave](MOVES.md#psywave) | Psychic | — | 80% | 15 |
+| 15 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
 | 19 | **[Psybeam](MOVES.md#psybeam)** | Psychic | 65 | 100% | 20 |
 | 25 | **[Shadow Ball](MOVES.md#shadow-ball)** | Ghost | 80 | 100% | 15 |
-| 31 | **[Confuse Ray](MOVES.md#confuse-ray)** | Ghost | — | 100% | 10 |
+| 31 | [Confuse Ray](MOVES.md#confuse-ray) | Ghost | — | 100% | 10 |
 | 37 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
-| 43 | **[Amnesia](MOVES.md#amnesia)** | Psychic | — | 100% | 20 |
+| 43 | [Amnesia](MOVES.md#amnesia) | Psychic | — | 100% | 20 |
 
 **TM/HM moves**
 
@@ -8759,9 +8759,9 @@
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM17 | [Submission](MOVES.md#submission) | TM18 | [Counter](MOVES.md#counter) |
 | TM19 | [Seismic Toss](MOVES.md#seismic-toss) | TM20 | [Rage](MOVES.md#rage) | TM21 | [Mega Drain](MOVES.md#mega-drain) |
 | TM22 | [Solarbeam](MOVES.md#solarbeam) | TM24 | [Thunderbolt](MOVES.md#thunderbolt) | TM25 | [Thunder](MOVES.md#thunder) |
-| TM28 | [Dig](MOVES.md#dig) | TM29 | [Psychic](MOVES.md#psychic) | TM30 | [Teleport](MOVES.md#teleport) |
+| TM28 | [Dig](MOVES.md#dig) | TM29 | **[Psychic](MOVES.md#psychic)** | TM30 | [Teleport](MOVES.md#teleport) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM33 | [Reflect](MOVES.md#reflect) |
-| TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM42 | [Dream Eater](MOVES.md#dream-eater) |
-| TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | [Shadow Ball](MOVES.md#shadow-ball) |
+| TM34 | [Bide](MOVES.md#bide) | TM35 | [Metronome](MOVES.md#metronome) | TM42 | **[Dream Eater](MOVES.md#dream-eater)** |
+| TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) | TM46 | **[Shadow Ball](MOVES.md#shadow-ball)** |
 | TM48 | [Rock Slide](MOVES.md#rock-slide) | TM49 | [Tri Attack](MOVES.md#tri-attack) | TM50 | [Substitute](MOVES.md#substitute) |
 | HM05 | [Flash](MOVES.md#flash) |  |  |  |  |

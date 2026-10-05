@@ -346,6 +346,13 @@ def fmt_acc(acc):
     return f"{acc}%" if acc else "—"
 
 
+def is_damaging(move):
+    """False for status moves (power 0) and for the fixed-damage effects -- OHKO,
+    Super Fang, Seismic Toss & co. bypass the damage formula, so STAB never
+    applies to them either."""
+    return fmt_power(move) != "—"
+
+
 class Wiki:
     """Renders the parsed repo into the two Markdown documents."""
 
@@ -366,9 +373,11 @@ class Wiki:
         o = ["# Pokémon Sparkling Pink — Pokédex\n"]
         o.append(f'<sub>{len(self.r.mons)} Pokémon · base stats, typing and moves · '
                  f'the move list is in [{MOVES_FILE}]({MOVES_FILE})</sub>\n')
-        o.append("**STAB** moves are in **bold**. Stat meters run 0–255, the Gen 1 "
-                 "base-stat scale. Rows marked `1` are the starting moveset, `Evo` is "
-                 "learned on evolution.\n")
+        o.append("**STAB** moves are in **bold** — damaging moves whose type matches "
+                 "the Pokémon's, including TM/HM moves. Status moves never get STAB, so "
+                 "they are never bold. Stat meters run 0–255, the Gen 1 base-stat scale. "
+                 "Rows marked `1` are the starting moveset, `Evo` is learned on "
+                 "evolution.\n")
         o.append("## Contents\n")
         o.append(self._contents())
         o.append("\n## Pokémon\n")
@@ -412,7 +421,7 @@ class Wiki:
             if label[:2] not in ("TM", "HM"):
                 o.append(self._move_row(label, move, stab))
         o.append("")
-        o.append(self._tmhm_grid(mon))
+        o.append(self._tmhm_grid(mon, stab))
         return "\n".join(o)
 
     def _evolution_lines(self, mon):
@@ -442,17 +451,19 @@ class Wiki:
                     f'{STAT_REQUIREMENTS.get(evo["stat"], evo["stat"])}')
         return f'level {evo["level"]}'
 
+    def _stab_name(self, move, stab):
+        """The move link, bolded when it gets STAB."""
+        name = self.move_link(move)
+        return f"**{name}**" if is_damaging(move) and move["type"] in stab else name
+
     def _move_row(self, label, const, stab):
         move = self.r.move_of.get(const)
         if move is None:
             return f"| {label} | {const} | ? | ? | ? | ? |"
-        name = self.move_link(move)
-        if move["type"] in stab:
-            name = f"**{name}**"
-        return (f'| {label} | {name} | {TYPE_NAMES[move["type"]]} | '
+        return (f'| {label} | {self._stab_name(move, stab)} | {TYPE_NAMES[move["type"]]} | '
                 f'{fmt_power(move)} | {fmt_acc(move["acc"])} | {move["pp"]} |')
 
-    def _tmhm_grid(self, mon, cols=3):
+    def _tmhm_grid(self, mon, stab, cols=3):
         """TM/HM moves as a compact grid -- their type/power/accuracy/PP are
         already in the move list, and repeating them costs ~90 KiB."""
         if not mon["tmhm"]:
@@ -460,7 +471,7 @@ class Wiki:
         cells = []
         for const in mon["tmhm"]:
             move = self.r.move_of.get(const)
-            name = self.move_link(move) if move else const
+            name = self._stab_name(move, stab) if move else const
             cells.append((self.r.tmhm_slots.get(const, "TM"), name))
         o = ["**TM/HM moves**\n",
              "| " + " | ".join(["TM/HM", "Move"] * cols) + " |",

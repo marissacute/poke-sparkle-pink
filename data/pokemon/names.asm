@@ -159,7 +159,7 @@ MonsterNames::
 	dname "GOLDEEN"
 	dname "SEAKING"
 	dname "MAREEP"
-	dname "FLAFFY"
+	dname "FLAAFFY"
 	dname "AMPHAROS"
 	dname "HITMONTOP"
 	dname "PONYTA"
