@@ -2028,6 +2028,18 @@ MisdreavusEvosMoves:
 	db 27, PSYBEAM
 	db 33, SHADOW_BALL
 	db 43, MOONBLAST
+	db 50, PSYCHIC_M
+	db 0
+
+MismagiusEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 19, FAIRY_WIND
+	db 27, PSYBEAM
+	db 33, SHADOW_BALL
+	db 43, MOONBLAST
+	db 50, PSYCHIC_M
 	db 0
 
 HaunterEvosMoves:
@@ -2548,17 +2560,6 @@ HoundoomEvosMoves:
 	db 30, FEINT_ATTACK
 	db 41, FLAMETHROWER
 	db 51, CRUNCH
-	db 0
-
-MismagiusEvosMoves:
-; Evolutions
-	db 0
-; Learnset
-	db 19, FAIRY_WIND
-	db 27, PSYBEAM
-	db 33, SHADOW_BALL
-	db 43, MOONBLAST
-	db 50, PSYCHIC_M
 	db 0
 
 MimeJrEvosMoves:

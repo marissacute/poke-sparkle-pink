@@ -1,6 +1,6 @@
 	db DEX_MISDREAVUS ; pokedex id
 
-	db  60,  60,  60,  115, 115
+	db  60,  60,  60,  85, 85
 	;   hp  atk  def  spd  spc
 
 	db GHOST, FAIRY ; type
