@@ -32,8 +32,8 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_ANNIHILAPE ; $04
 	const PAL_STEVEN    ; $05 (was PAL_LAVENDER; location palettes are unused)
 	const PAL_MIMEJR    ; $06 (was PAL_VERMILION; location palettes are unused)
-	const PAL_CELADON   ; $07
-	const PAL_FUCHSIA   ; $08
+	const PAL_LEAFEON   ; $07 (was PAL_CELADON; location palettes are unused)
+	const PAL_GLACEON   ; $08 (was PAL_FUCHSIA; location palettes are unused)
 	const PAL_CINNABAR  ; $09
 	const PAL_INDIGO    ; $0A
 	const PAL_SAFFRON   ; $0B

@@ -15,21 +15,23 @@ Scope notes:
 ## 1. Placeholder graphics
 
 Every blank is a *uniform* image — one sample value across the whole file — which is a surer
-tell than the file size. Done already: Munchlax, Sneasel, Flygon and Mime Jr. (front **and**
-back), plus the **fronts** of Annihilape and Weavile. All of these PNGs are tracked by git.
+tell than the file size. Done already: Munchlax, Sneasel, Flygon, Mime Jr. and Mismagius
+(front **and** back), plus the **fronts** of Annihilape and Weavile. All of these PNGs are
+tracked by git.
 
-**3 species blank front and back.** The three fronts are byte-identical to one another (77 B,
-md5 `1970a4a1…`) and the three backs match too (75 B, md5 `39796b54…`).
+**No blank front remains.** Glaceon, Leafeon (both 2026-10-06, from `drawings/`) and
+Mismagius (2026-10-06) were the last, and each now has real art in `gsfront/`.
 
-- [ ] Glaceon — `gfx/pokemon/gsfront/glaceon.png`, `gsback/glaceonb.png`
-- [ ] Leafeon — `gfx/pokemon/gsfront/leafeon.png`, `gsback/leafeonb.png`
-- [ ] Mismagius — `gfx/pokemon/gsfront/mismagius.png`, `gsback/mismagiusb.png`
-
-**3 more with a real front but a blank back:**
+**5 species with a real front but a blank back:**
 
 - [ ] Annihilape — `gsback/annihilapeb.png`
-- [ ] Weavile — `gsback/weavileb.png`
+- [ ] Glaceon — `gsback/glaceonb.png`
 - [ ] Hoopa — `gsback/hoopab.png` (72 B, a different file from the others above)
+- [ ] Leafeon — `gsback/leafeonb.png`
+- [ ] Weavile — `gsback/weavileb.png`
+
+Four of the five blank backs are byte-identical (75 B, md5 `39796b54…`); Hoopa's is the 72 B
+outlier, as before.
 
 ### Also
 
