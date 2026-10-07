@@ -1308,7 +1308,10 @@ wPlayerToxicCounter:: db
 ; low nibble: disable turns left
 wPlayerDisabledMove:: db
 
-	ds 1
+; turns left of a partial trapping move (e.g. Wrap) the player is caught in.
+; 0 = not trapped; set to 3-6 by TrappingEffect and released when it hits 0,
+; which deals 1/16 max HP damage on each of the 2-5 turns before the release.
+wPlayerWrapCount:: db
 
 ; when the enemy is attacking multiple times, the number of attacks left
 wEnemyNumAttacksLeft:: db
@@ -1321,7 +1324,8 @@ wEnemyToxicCounter:: db
 ; low nibble: disable turns left
 wEnemyDisabledMove:: db
 
-	ds 1
+; turns left of a partial trapping move (e.g. Wrap) the enemy is caught in
+wEnemyWrapCount:: db
 
 UNION
 ; the amount of damage accumulated by the player while biding
@@ -1335,7 +1339,10 @@ NEXTU
 wPlayerNumHits:: db
 ENDU
 
-	ds 2
+; the move whose partial trapping effect (e.g. Wrap) is holding the mon;
+; used for the "hurt by <move>" and "released from <move>" battle text
+wPlayerTrappingMove:: db
+wEnemyTrappingMove:: db
 wBattleStatusDataEnd::
 
 ; non-zero when an item or move that allows escape from battle was used

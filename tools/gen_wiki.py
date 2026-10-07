@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Generate a GitHub wiki reference for Pokemon Sparkling Pink.
 
-Reads the disassembly (base stats, learnsets, move data, TM/HM lists) and emits
-two GitHub-flavoured Markdown files:
+Reads the disassembly (base stats, learnsets, move data, TM/HM lists, wild
+encounter tables) and emits two GitHub-flavoured Markdown files:
 
-    POKEDEX.md   every Pokemon: typing, base-stat meters, full move table
+    POKEDEX.md   every Pokemon: typing, base-stat meters, where it lives,
+                 full move table
     MOVES.md     every move: stats, in-game effect text, who learns it
 
 They are split because github.com stops rendering Markdown past 512 KiB; a
@@ -55,6 +56,16 @@ STAT_REQUIREMENTS = {
     "ATK_EQ_DEF": "Attack = Defense",
     "ATK_LT_DEF": "Attack < Defense",
 }
+
+# Wild-encounter methods, in the order a Pokemon's locations are listed.  The
+# two global rods work on any fishable water, so they have no map of their own.
+WILD_METHOD = {"grass": "Grass", "water": "Surf"}
+METHOD_ORDER = {"Grass": 0, "Surf": 1, "Old Rod": 2, "Good Rod": 3, "Super Rod": 4}
+ANY_WATER = "Any water"
+
+# Map header labels are the only per-floor name the game has (the town map
+# names whole dungeons), so they are split into words and patched up here.
+WORD_FIXUPS = {"Pokemon": "Pokémon", "Mt": "Mt.", "Digletts": "Diglett's"}
 
 POKEDEX_FILE = "POKEDEX.md"
 MOVES_FILE = "MOVES.md"
@@ -114,6 +125,9 @@ class Repo:
         self.moves = self._moves()
         self.tmhm_slots = self._tmhm_slots()
         self.item_names = self._item_names()
+        self.map_names = self._map_names()
+        self.wild = self._wild_encounters()
+        self.rod = self._fishing()
         self._crosslink()
 
     # -- file access
@@ -286,6 +300,115 @@ class Repo:
                 out[m.group(2)] = f"HM{hm:02d}"
         return out
 
+    # -- constants/map_constants.asm : map ids, in id order
+    def _map_consts(self):
+        return re.findall(r"^\s*map_const\s+(\w+),",
+                          self.read("constants/map_constants.asm"), re.M)
+
+    # -- map id -> display name
+    def _map_names(self):
+        """A map is named from its header label.  Towns and routes have a name
+        in data/maps/names.asm (the text the town map prints, so Route 19 comes
+        out 'Sea Route 19'); indoor maps have none, so the label is split into
+        words -- it is the only place a floor number lives."""
+        names = dict(re.findall(r'^(\w+Name):\s*db "([^"]*)@"',
+                                self.read("data/maps/names.asm"), re.M))
+        labels = {}
+        for fn in os.listdir(os.path.join(self.root, "data/maps/headers")):
+            m = re.match(r"\s*map_header\s+(\w+),\s*(\w+),",
+                         self.read(f"data/maps/headers/{fn}"))
+            if m:
+                labels[m.group(2)] = m.group(1)
+        out = []
+        for const in self._map_consts():
+            label = labels.get(const, camel(const))
+            name = names.get(label + "Name")
+            out.append(self._map_text(name) if name else self._split_label(label))
+        return out
+
+    @staticmethod
+    def _map_text(raw):
+        """'#MON TOWER' -> 'Pokémon Tower' ('#' is the POKé glyph)."""
+        text = raw.replace("#MON", "Pokémon").replace("<PKMN>", "Pokémon")
+        return titlecase(text).replace("Mt.Moon", "Mt. Moon")
+
+    @staticmethod
+    def _split_label(label):
+        """'SeafoamIslandsB1F' -> 'Seafoam Islands B1F'.  The floor is peeled
+        off first so `B1F` is not split into three words."""
+        m = re.match(r"(.*?)(B?\d+F)$", label)
+        base, floor = (m.group(1), m.group(2)) if m else (label, "")
+        words = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", " ", base).split()
+        words = [re.sub(r"(?<=[a-z])(?=\d)", " ", w) for w in words]
+        return " ".join(WORD_FIXUPS.get(w, w) for w in words + ([floor] if floor else []))
+
+    # -- data/wild/grass_water.asm : one grass and one water table per map
+    def _wild_encounters(self):
+        src = self.read("data/wild/grass_water.asm")
+        pointers = src.split("WildDataPointers:")[1].split("assert_table_length")[0]
+        labels = re.findall(r"^\s*dw\s+(\w+)", pointers, re.M)
+        consts = self._map_consts()
+        if len(labels) != len(consts):
+            raise SystemExit(f"WildDataPointers has {len(labels)} entries, "
+                             f"expected {len(consts)} maps")
+        tables = {}
+        for fn in re.findall(r'INCLUDE "data/wild/maps/(\w+)\.asm"', src):
+            body = self.read(f"data/wild/maps/{fn}.asm")
+            tables[re.search(r"^(\w+):", body, re.M).group(1)] = self._wild_tables(body)
+        out = []
+        for i, const in enumerate(consts):
+            if labels[i] == "NothingWildMons":
+                continue
+            tables_for = tables.get(labels[i])
+            if tables_for is None:
+                raise SystemExit(f"{const}: {labels[i]} is not included by "
+                                 f"data/wild/grass_water.asm")
+            for kind in ("grass", "water"):
+                rate, mons = tables_for[kind]
+                if rate and len(mons) != 10:
+                    raise SystemExit(f"{const} {kind}: {len(mons)} slots, expected 10")
+                if mons:
+                    out.append({"where": self.map_names[i], "how": WILD_METHOD[kind],
+                                "mons": mons})
+        return out
+
+    @staticmethod
+    def _wild_tables(src):
+        """`def_grass_wildmons <rate>` .. `end_grass_wildmons`, and the water
+        pair, as (rate, [(level, species), ...]).  A rate of 0 means the map
+        has no such table and holds no rows."""
+        out = {}
+        for kind in ("grass", "water"):
+            m = re.search(rf"def_{kind}_wildmons\s+(\d+)(.*?)end_{kind}_wildmons",
+                          src, re.S)
+            rows = re.findall(r"^\s*db\s+(\d+),\s*(\w+)", m.group(2), re.M) if m else []
+            out[kind] = (int(m.group(1)) if m else 0,
+                         [(int(lv), sp) for lv, sp in rows])
+        return out
+
+    # -- rods: the Old and Good Rods always catch the same Pokemon wherever
+    #    there is water to cast into, the Super Rod reads a per-map group
+    def _fishing(self):
+        effects = self.read("engine/items/item_effects.asm")
+        old = [(int(lv), sp) for lv, sp in
+               re.findall(r"lb bc, (\d+), (\w+)",
+                          effects.split("ItemUseOldRod:")[1].split("ItemUseGoodRod:")[0])]
+        good = [(int(lv), sp) for lv, sp in
+                re.findall(r"^\s*db (\d+), (\w+)$",
+                           self.read("data/wild/good_rod.asm"), re.M)]
+        src = self.read("data/wild/super_rod.asm")
+        groups = {m.group(1): [(int(lv), sp) for lv, sp in
+                               re.findall(r"db (\d+), (\w+)", m.group(2))]
+                  for m in re.finditer(r"^\.(\w+):\n\tdb \d+\n((?:\tdb \d+, \w+\n)+)",
+                                       src, re.M)}
+        consts = self._map_consts()
+        super_ = []
+        for const, group in re.findall(r"dbw\s+(\w+),\s+\.(\w+)", src):
+            # every dbw row is `<map>, .Group`; the trailing `db -1` has no map
+            super_.append({"where": self.map_names[consts.index(const)],
+                           "how": "Super Rod", "mons": groups[group]})
+        return {"old": old, "good": good, "super": super_}
+
     # -- link the per-dex tables to the per-species tables
     def _crosslink(self):
         species_idx = {name: i for i, name in enumerate(self.species)}
@@ -315,6 +438,31 @@ class Repo:
             for target, evo in mon["evolutions"]:
                 if target is not None:
                     self.evolves_from[target["anchor"]].append((mon, evo))
+
+        # where each Pokemon lives.  Every wild row is one slot of one table,
+        # so a species can hold several rows per map -- those collapse to a
+        # single entry spanning the levels the slots cover.
+        self.wild_by_mon = defaultdict(list)
+        sightings = defaultdict(list)
+        for entry in self.wild + self.rod["super"]:
+            for lv, sp in entry["mons"]:
+                sightings[(entry["where"], entry["how"], sp)].append(lv)
+        for rod in ("old", "good"):
+            for lv, sp in self.rod[rod]:
+                sightings[(ANY_WATER, f"{rod.capitalize()} Rod", sp)].append(lv)
+        for (where, how, sp), levels in sightings.items():
+            mon = by_species.get(camel(sp))
+            if mon is None:
+                print(f"warning: {sp} is in the wild tables but not in the dex",
+                      file=sys.stderr)
+                continue
+            self.wild_by_mon[mon["anchor"]].append({
+                "where": where, "how": how,
+                "low": min(levels), "high": max(levels),
+            })
+        # the sort is stable, so locations stay in map order within a method
+        for entries in self.wild_by_mon.values():
+            entries.sort(key=lambda e: METHOD_ORDER[e["how"]])
 
         # every (label, move) a Pokemon has, start moveset first.  Pineco,
         # Forretress and Politoed list a start move again at learnset level 1,
@@ -377,7 +525,9 @@ class Wiki:
                  "the Pokémon's, including TM/HM moves. Status moves never get STAB, so "
                  "they are never bold. Stat meters run 0–255, the Gen 1 base-stat scale. "
                  "Rows marked `1` are the starting moveset, `Evo` is learned on "
-                 "evolution.\n")
+                 "evolution. **Wild** lists where a Pokémon can be met, with the method "
+                 "(grass, surf or which rod) and the levels it spans; `Any water` means "
+                 "that rod works on every fishable stretch of water.\n")
         o.append("## Contents\n")
         o.append(self._contents())
         o.append("\n## Pokémon\n")
@@ -404,6 +554,8 @@ class Wiki:
                  f'**Growth:** {GROWTH_LABELS.get(mon["growth"], mon["growth"])}  ')
         for line in self._evolution_lines(mon):
             o.append(line)
+        if self.r.wild_by_mon.get(mon["anchor"]):
+            o.extend(self._wild_lines(mon))
         o.append("")
 
         o.append("#### Base stats\n")
@@ -439,6 +591,22 @@ class Wiki:
                                f"{self._evolution_method(evo)}"
                                for tgt, evo in targets)
             out.append(f"**Evolves into:** {links}  ")
+        return out
+
+    def _wild_lines(self, mon):
+        """'**Wild:** Route 1 — Grass, Lv 2–5', and a second line for the rods,
+        which are their own kind of hunt and can run long."""
+        walking, rods = [], []
+        for e in self.r.wild_by_mon[mon["anchor"]]:
+            levels = (f'Lv {e["low"]}' if e["low"] == e["high"]
+                      else f'Lv {e["low"]}–{e["high"]}')
+            entry = f'{e["where"]} — {e["how"]}, {levels}'
+            (rods if e["how"].endswith("Rod") else walking).append(entry)
+        out = []
+        if walking:
+            out.append(f'**Wild:** {" · ".join(walking)}  ')
+        if rods:
+            out.append(f'**Fishing:** {" · ".join(rods)}  ')
         return out
 
     def _evolution_method(self, evo):
@@ -584,7 +752,8 @@ def main(argv=None):
         print(f"warning: {problem}", file=sys.stderr)
 
     print(f'{len(repo.mons)} Pokémon, {len(repo.moves)} moves, '
-          f'{len(repo.learned_by)} moves with a learner')
+          f'{len(repo.learned_by)} moves with a learner, '
+          f'{len(repo.wild_by_mon)} Pokémon in the wild')
     if args.check_only:
         return 1 if problems else 0
 

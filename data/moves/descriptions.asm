@@ -210,6 +210,7 @@ MoveDescriptions:
     text_far _WaterPulseDescription
     text_far _BugBiteDescription
     text_far _ExtremeSpeedDescription
+    text_far _BulldozeDescription
     text_far _StruggleDescription
 
 _PoundDescription::
@@ -1113,6 +1114,12 @@ _ExtremeSpeedDescription::
     line "fast attack that"
     cont "always strikes"
     cont "first."
+    done
+
+_BulldozeDescription::
+    text "Stomps the ground"
+    line "and lowers the"
+    cont "foe's SPEED."
     done
 
 _StruggleDescription::

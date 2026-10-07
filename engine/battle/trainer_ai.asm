@@ -553,6 +553,9 @@ AIPrintItemUseAndUpdateHPBar:
 
 AISwitchIfEnoughMons:
 ; enemy trainer switches if there are 2 or more unfainted mons in party
+	ld a, [wEnemyWrapCount]
+	and a
+	ret nz ; a wrapped mon can't be withdrawn
 	ld a, [wEnemyPartyCount]
 	ld c, a
 	ld hl, wEnemyMon1HP

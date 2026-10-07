@@ -181,5 +181,6 @@ MoveNames::
 	li "WATER PULSE"
 	li "BUG BITE"
 	li "EXTREMESPEED"
+	li "BULLDOZE"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

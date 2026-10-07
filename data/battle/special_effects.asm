@@ -18,7 +18,9 @@ SpecialEffects:
 	db RECOIL_EFFECT
 	; fallthrough
 SpecialEffectsCont:
-; damaging moves whose effect is executed prior to damage calculation
+; damaging moves whose effect is executed prior to damage calculation.
+; TRAPPING_EFFECT is deliberately not listed: it runs after the hit test and
+; damage (like the other side effects), so a move that missed, had no effect on
+; the target, or fainted it can't leave the target trapped.
 	db THRASH_PETAL_DANCE_EFFECT
-	db TRAPPING_EFFECT
 	db -1 ; end

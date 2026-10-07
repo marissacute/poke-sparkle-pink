@@ -11,7 +11,7 @@
 
 	dw GloomPicFront, GloomPicBack
 
-	db ABSORB, POISONPOWDER, STUN_SPORE, NO_MOVE ; level 1 learnset
+	db MEGA_DRAIN, POISONPOWDER, STUN_SPORE, SLEEP_POWDER ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

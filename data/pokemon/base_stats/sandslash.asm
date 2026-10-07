@@ -11,7 +11,7 @@
 
 	dw SandslashPicFront, SandslashPicBack
 
-	db SCRATCH, SAND_ATTACK, NO_MOVE, NO_MOVE ; level 1 learnset
+	db SCRATCH, SAND_ATTACK, BULLDOZE, SLASH ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

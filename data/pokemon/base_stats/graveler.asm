@@ -11,7 +11,7 @@
 
 	dw GravelerPicFront, GravelerPicBack
 
-	db TACKLE, DEFENSE_CURL, NO_MOVE, NO_MOVE ; level 1 learnset
+	db SELFDESTRUCT, DEFENSE_CURL, ROCK_THROW, BULLDOZE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

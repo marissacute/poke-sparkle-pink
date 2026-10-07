@@ -558,11 +558,16 @@ StatModifierDownEffect:
 	ld a, [de]
 	cp ATTACK_DOWN_SIDE_EFFECT
 	jr c, .nonSideEffect
+	cp SPEED_DOWN_SIDE_EFFECT_ALWAYS
+	jr z, .alwaysSideEffect
 	call BattleRandom
 	cp 33 percent + 1 ; chance for side effects
 	jp nc, CantLowerAnymore
 	ld a, [de]
 	sub ATTACK_DOWN_SIDE_EFFECT ; map each stat to 0-3
+	jr .decrementStatMod
+.alwaysSideEffect ; this side effect skips the random chance roll
+	ld a, SPEED_DOWN_SIDE_EFFECT - ATTACK_DOWN_SIDE_EFFECT
 	jr .decrementStatMod
 .nonSideEffect ; non-side effects only
 	push hl
@@ -1078,29 +1083,81 @@ DugAHoleText:
 	text_end
 
 TrappingEffect:
-	ld hl, wPlayerBattleStatus1
-	ld de, wPlayerNumAttacksLeft
+; Traps the target in a partial trapping move (e.g. Wrap) the way Generation 2
+; does: the target keeps acting, but it can't switch out or flee and it loses
+; 1/16 of its max HP on each of the next 2-5 turns (see HandleWrapDamage).
+; This effect runs after the hit test and damage, so a missed move traps nothing
+; and a fainted target isn't trapped.
+	ld a, [wDamageMultipliers]
+	and EFFECTIVENESS_MASK
+	ret z ; the move had no effect on the target, so it can't trap it
+	ld hl, wEnemyWrapCount
+	ld de, wEnemyTrappingMove
 	ldh a, [hWhoseTurn]
 	and a
-	jr z, .trappingEffect
-	ld hl, wEnemyBattleStatus1
-	ld de, wEnemyNumAttacksLeft
-.trappingEffect
-	bit USING_TRAPPING_MOVE, [hl]
-	ret nz
-	call ClearHyperBeam ; since this effect is called before testing whether the move will hit,
-                        ; the target won't need to recharge even if the trapping move missed
-	set USING_TRAPPING_MOVE, [hl] ; mon is now using a trapping move
-	call BattleRandom ; 3/8 chance for 2 and 3 attacks, and 1/8 chance for 4 and 5 attacks
-	and $3
-	cp $2
-	jr c, .setTrappingCounter
+	jr z, .targetsStateFound ; player's move, so the enemy is trapped
+	ld hl, wPlayerWrapCount
+	ld de, wPlayerTrappingMove
+.targetsStateFound
+	ld a, [hl]
+	and a
+	ret nz ; already trapped; the count isn't restarted
+	call CheckTargetSubstitute
+	ret nz ; can't trap through a substitute
 	call BattleRandom
-	and $3
-.setTrappingCounter
-	inc a
-	ld [de], a
-	ret
+	and %11
+	add 3 ; 3-6, i.e. 25% each and damage on 2-5 of those turns
+	ld [hl], a
+	ldh a, [hWhoseTurn]
+	and a
+	ld a, [wPlayerMoveNum]
+	jr z, .gotTrappingMove
+	ld a, [wEnemyMoveNum]
+.gotTrappingMove
+	ld [de], a ; remember the move for the per-turn and release text
+	ld b, a
+	ld hl, TrappingTrapTexts
+.findTrapText
+	ld a, [hli]
+	cp -1
+	jr z, .useDefaultTrapText
+	cp b
+	jr z, .foundTrapText
+	inc hl
+	inc hl
+	jr .findTrapText
+.foundTrapText
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	jp PrintText
+.useDefaultTrapText
+	ld hl, FireSpinTrapText ; "<target> was trapped!"
+	jp PrintText
+
+TrappingTrapTexts:
+; the message shown when each partial trapping move catches the target
+	dbw BIND,      UsedBindText      ; "used BIND on"
+	dbw WRAP,      WrappedByText     ; "was WRAPPED by"
+	dbw FIRE_SPIN, FireSpinTrapText  ; "was trapped!"
+	dbw CLAMP,     ClampedByText     ; "was CLAMPED by"
+	db -1 ; end
+
+WrappedByText:
+	text_far _WrappedByText
+	text_end
+
+UsedBindText:
+	text_far _UsedBindText
+	text_end
+
+FireSpinTrapText:
+	text_far _FireSpinTrapText
+	text_end
+
+ClampedByText:
+	text_far _ClampedByText
+	text_end
 
 MistEffect:
 	jpfar MistEffect_

@@ -507,7 +507,7 @@ ShellderEvosMoves:
 	db 18, SUPERSONIC
 	db 23, CLAMP
 	db 30, AURORA_BEAM
-	db 39, LEER
+	db 39, IRON_DEFENSE
 	db 50, ICE_BEAM
 	db 0
 
@@ -573,7 +573,8 @@ BlastoiseEvosMoves:
 	db 15, WATER_GUN
 	db 24, BITE
 	db 31, WITHDRAW
-	db 42, SKULL_BASH
+	db 38, IRON_DEFENSE
+	db 44, SKULL_BASH
 	db 52, HYDRO_PUMP
 	db EVOLUTION_MOVE, METAL_CLAW
 	db 0
@@ -648,12 +649,12 @@ OnixEvosMoves:
 	db EVOLVE_ITEM, METAL_COAT, 1, STEELIX
 	db 0
 ; Learnset
-	db 15, BIND
-	db 19, ROCK_THROW
-	db 25, RAGE
-	db 28, ROCK_SLIDE
-	db 33, DOUBLE_EDGE
-	db 43, HARDEN
+	db 15, ROCK_THROW
+	db 19, BULLDOZE
+	db 25, ROCK_SLIDE
+	db 32, IRON_DEFENSE
+	db 38, EARTHQUAKE
+	db 43, DOUBLE_EDGE
 	db 0
 
 FearowEvosMoves:
@@ -712,10 +713,7 @@ GravelerEvosMoves:
 	db EVOLVE_LEVEL, 36, GOLEM
 	db 0
 ; Learnset
-	db 11, DEFENSE_CURL
-	db 16, ROCK_THROW
-	db 21, SELFDESTRUCT
-	db 29, HARDEN
+	db 29, IRON_DEFENSE
 	db 36, EARTHQUAKE
 	db 43, EXPLOSION
 	db 0
@@ -884,7 +882,7 @@ GolemEvosMoves:
 	db 11, DEFENSE_CURL
 	db 16, ROCK_THROW
 	db 21, SELFDESTRUCT
-	db 29, HARDEN
+	db 29, IRON_DEFENSE
 	db 36, EARTHQUAKE
 	db 43, EXPLOSION
 	db 0
@@ -1284,7 +1282,8 @@ SkarmoryEvosMoves:
 	db 19, SWIFT
 	db 25, AGILITY
 	db 37, FURY_ATTACK
-	db 49, METAL_CLAW
+	db 42, METAL_CLAW
+	db 46, IRON_DEFENSE
 	db 55, WHIRLWIND
 	db 61, SKY_ATTACK
 	db 0
@@ -1337,9 +1336,8 @@ KabutoEvosMoves:
 	db EVOLVE_LEVEL, 40, KABUTOPS
 	db 0
 ; Learnset
-	db 34, ABSORB
-	db 39, SLASH
-	db 44, LEER
+	db 34, LEECH_LIFE
+	db 42, ROCK_SLIDE
 	db 49, HYDRO_PUMP
 	db 0
 
@@ -1347,10 +1345,11 @@ KabutopsEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 34, ABSORB
-	db 39, SLASH
-	db 46, LEER
+	db 34, LEECH_LIFE
+	db 42, ROCK_SLIDE
+	db 46, NIGHT_SLASH
 	db 53, HYDRO_PUMP
+	db EVOLUTION_MOVE, SLASH
 	db 0
 
 HorseaEvosMoves:
@@ -1404,7 +1403,8 @@ PinecoEvosMoves:
 	db 15, TAKE_DOWN
 	db 22, BIDE
 	db 29, EXPLOSION
-	db 36, DOUBLE_EDGE
+	db 33, DOUBLE_EDGE
+	db 36, IRON_DEFENSE
 	db 0
 
 ForretressEvosMoves:
@@ -1418,7 +1418,8 @@ ForretressEvosMoves:
 	db 15, TAKE_DOWN
 	db 22, BIDE
 	db 29, EXPLOSION
-	db 39, DOUBLE_EDGE
+	db 36, DOUBLE_EDGE
+	db 40, IRON_DEFENSE
 	db 49, FLASH_CANNON
 	db 0
 
@@ -1428,21 +1429,22 @@ SandshrewEvosMoves:
 	db 0
 ; Learnset
 	db 10, SAND_ATTACK
-	db 17, SLASH
-	db 24, POISON_STING
+	db 16, BULLDOZE
+	db 20, SLASH
+	db 24, AGILITY
 	db 31, SWIFT
 	db 38, FURY_SWIPES
+	db 43, SWORDS_DANCE
 	db 0
 
 SandslashEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 10, SAND_ATTACK
-	db 17, SLASH
-	db 27, POISON_STING
+	db 27, AGILITY
 	db 36, SWIFT
-	db 47, FURY_SWIPES
+	db 42, FURY_SWIPES
+	db 48, SWORDS_DANCE
 	db 0
 
 OmanyteEvosMoves:
@@ -1451,7 +1453,7 @@ OmanyteEvosMoves:
 	db 0
 ; Learnset
 	db 34, HORN_ATTACK
-	db 39, LEER
+	db 39, ROCK_SLIDE
 	db 46, SPIKE_CANNON
 	db 53, HYDRO_PUMP
 	db 0
@@ -1461,7 +1463,7 @@ OmastarEvosMoves:
 	db 0
 ; Learnset
 	db 34, HORN_ATTACK
-	db 39, LEER
+	db 39, ROCK_SLIDE
 	db 44, SPIKE_CANNON
 	db 49, HYDRO_PUMP
 	db 0
@@ -2285,10 +2287,11 @@ GeodudeEvosMoves:
 	db EVOLVE_LEVEL, 25, GRAVELER
 	db 0
 ; Learnset
-	db 11, DEFENSE_CURL
-	db 16, ROCK_THROW
+	db 10, DEFENSE_CURL
+	db 12, ROCK_THROW
+	db 18, BULLDOZE 
 	db 21, SELFDESTRUCT
-	db 26, HARDEN
+	db 26, IRON_DEFENSE
 	db 31, EARTHQUAKE
 	db 36, EXPLOSION
 	db 0
@@ -2355,6 +2358,7 @@ ScizorEvosMoves:
 	db 35, X_SCISSOR
 	db 39, METAL_CLAW
 	db 42, AGILITY
+	db 46, IRON_DEFENSE
 	db 49, SWORDS_DANCE
 	db 0
 
@@ -2362,11 +2366,11 @@ SteelixEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 15, BIND
-	db 19, ROCK_THROW
-	db 25, METAL_CLAW
-	db 28, HARDEN
-	db 33, ROCK_SLIDE
+	db 15, ROCK_THROW
+	db 19, BULLDOZE
+	db 25, ROCK_SLIDE
+	db 32, IRON_DEFENSE
+	db 38, EARTHQUAKE
 	db 43, DOUBLE_EDGE
 	db 49, FLASH_CANNON
 	db 55, CRUNCH
@@ -2394,7 +2398,8 @@ SquirtleEvosMoves:
 	db 15, WATER_GUN
 	db 22, BITE
 	db 28, WITHDRAW
-	db 35, SKULL_BASH
+	db 32, IRON_DEFENSE
+	db 38, SKULL_BASH
 	db 42, HYDRO_PUMP
 	db 0
 
@@ -2419,8 +2424,9 @@ WartortleEvosMoves:
 	db 8, BUBBLE
 	db 15, WATER_GUN
 	db 24, BITE
-	db 31, WITHDRAW
-	db 39, SKULL_BASH
+	db 30, WITHDRAW
+	db 36, IRON_DEFENSE
+	db 41, SKULL_BASH
 	db 47, HYDRO_PUMP
 	db 0
 
@@ -2460,11 +2466,13 @@ OddishEvosMoves:
 	db EVOLVE_LEVEL, 21, GLOOM
 	db 0
 ; Learnset
+	db 12, MEGA_DRAIN
 	db 15, POISONPOWDER
 	db 17, STUN_SPORE
 	db 19, SLEEP_POWDER
 	db 24, ACID
 	db 33, PETAL_DANCE
+	db 38, TOXIC
 	db 46, SOLARBEAM
 	db 0
 
@@ -2474,20 +2482,18 @@ GloomEvosMoves:
 	db EVOLVE_ITEM, SUN_STONE, 1, BELLOSSOM
 	db 0
 ; Learnset
-	db 15, POISONPOWDER
-	db 17, STUN_SPORE
-	db 19, SLEEP_POWDER
-	db 28, ACID
-	db 38, PETAL_DANCE
-	db 52, SOLARBEAM
+	db 26, ACID
+	db 36, PETAL_DANCE
+	db 42, TOXIC
+	db 50, SOLARBEAM
 	db 0
 
 BellossomEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 35, MEGA_DRAIN
 	db 40, PETAL_DANCE
+	db 44, MOONBLAST
 	db 52, SOLARBEAM
 	db 0
 
@@ -2495,9 +2501,9 @@ VileplumeEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 15, POISONPOWDER
-	db 17, STUN_SPORE
-	db 19, SLEEP_POWDER
+	db 40, PETAL_DANCE
+	db 44, TOXIC
+	db 52, SOLARBEAM
 	db 0
 
 BellsproutEvosMoves:

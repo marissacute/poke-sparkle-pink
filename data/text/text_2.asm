@@ -1034,14 +1034,48 @@ _ThrashingAboutText::
 	line "thrashing about!"
 	done
 
-_AttackContinuesText::
-	text "<USER>'s"
-	line "attack continues!"
-	done
+_WrappedByText::
+	text "<TARGET>"
+	line "was WRAPPED by"
+	cont "<USER>!"
+	prompt
 
-_CantMoveText::
+_UsedBindText::
+	text "<USER> used"
+	line "BIND on"
+	cont "<TARGET>!"
+	prompt
+
+_FireSpinTrapText::
+	text "<TARGET>"
+	line "was trapped!"
+	prompt
+
+_ClampedByText::
+	text "<TARGET>"
+	line "was CLAMPED by"
+	cont "<USER>!"
+	prompt
+
+_HurtByWrapText::
+	text "<USER>'s"
+	line "hurt by @"
+	text_ram wNameBuffer
+	text "!"
+	prompt
+
+_ReleasedFromWrapText::
 	text "<USER>"
-	line "can't move!"
+	line "was released"
+	cont "from @"
+	text_ram wNameBuffer
+	text "!"
+	prompt
+
+_TrappedCantSwitchText::
+	text_ram wBattleMonNick
+	text " is"
+	line "trapped!"
 	prompt
 
 _MoveIsDisabledText::

@@ -186,6 +186,7 @@
 	const WATER_PULSE  ; b2
 	const BUG_BITE     ; b3
 	const EXTREME_SPEED ; b4
+	const BULLDOZE     ; b5
 	const STRUGGLE
 DEF NUM_ATTACKS EQU const_value - 1
 

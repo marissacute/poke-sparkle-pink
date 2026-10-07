@@ -83,7 +83,7 @@ DEF EFFECTIVENESS_MASK EQU %01111111
 	const ATTACKING_MULTIPLE_TIMES ; 2 ; e.g. Double Kick, Fury Attack
 	const FLINCHED                 ; 3
 	const CHARGING_UP              ; 4 ; e.g. Solar Beam, Fly
-	const USING_TRAPPING_MOVE      ; 5 ; e.g. Wrap
+	const_skip                     ; 5 ; was USING_TRAPPING_MOVE; see wPlayerWrapCount
 	const INVULNERABLE             ; 6 ; charging up Fly/Dig
 	const CONFUSED                 ; 7
 
