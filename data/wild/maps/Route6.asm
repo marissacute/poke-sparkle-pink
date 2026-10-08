@@ -9,7 +9,7 @@ Route6WildMons:
 	db 15, PIDGEY
 	db 14, MANKEY
 	db 14, MEOWTH
-	db 15, PIDGEY
+	db 11, MAGBY
 	db 16, PIDGEOTTO
 
 	end_grass_wildmons

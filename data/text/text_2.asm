@@ -1494,8 +1494,8 @@ _DepositHowManyText::
 
 _ItemWasStoredText::
 	text_ram wNameBuffer
-	text " was"
-	line "stored via PC."
+	text ""
+	line "was stored."
 	prompt
 
 _NothingToDepositText::

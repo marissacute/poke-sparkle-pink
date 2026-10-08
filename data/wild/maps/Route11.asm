@@ -5,11 +5,11 @@ Route11WildMons:
 	db 15, SPEAROW
 	db 12, SANDSHREW
 	db  9, DROWZEE
-	db 13, SPEAROW
+	db 11, DROWZEE
 	db 10, MILTANK
 	db 15, EKANS
 	db 15, SANDSHREW
-	db 11, DROWZEE
+	db 11, MILTANK
 	db 15, DROWZEE
 	
 	end_grass_wildmons
