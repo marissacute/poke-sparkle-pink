@@ -2,7 +2,7 @@
 
 Outstanding work for the full dex. **202 dex species.** Every list below was derived by
 parsing the source tables, not by hand — re-derive before trusting a count (see
-[Verifying](#verifying)). Last re-derived 2026-10-04.
+[Verifying](#verifying)). Last re-derived 2026-10-09.
 
 Scope notes:
 
@@ -22,16 +22,21 @@ tracked by git.
 **No blank front remains.** Glaceon, Leafeon (both 2026-10-06, from `drawings/`) and
 Mismagius (2026-10-06) were the last, and each now has real art in `gsfront/`.
 
-**5 species with a real front but a blank back:**
+**1 species with a real front but a blank back:**
 
-- [ ] Annihilape — `gsback/annihilapeb.png`
-- [ ] Glaceon — `gsback/glaceonb.png`
-- [ ] Hoopa — `gsback/hoopab.png` (72 B, a different file from the others above)
-- [ ] Leafeon — `gsback/leafeonb.png`
-- [ ] Weavile — `gsback/weavileb.png`
+- [ ] Hoopa — `gsback/hoopab.png` (72 B, one sample value across the whole file; its front
+  `gsfront/hoopa.png` is real art)
 
-Four of the five blank backs are byte-identical (75 B, md5 `39796b54…`); Hoopa's is the 72 B
-outlier, as before.
+Annihilape, Glaceon, Leafeon and Weavile were drawn 2026-10-09 — all four had been the same
+75 B blank (md5 `39796b54…`). **Those four PNGs, plus a touched-up `gsfront/annihilape.png`,
+are still uncommitted in the working tree.** The `.2bpp`/`.pic` files are gitignored build
+artifacts and were regenerated after the PNGs, so the built ROM already carries the new backs.
+
+Re-derived 2026-10-09 by decoding every PNG in both `gsfront/` and `gsback/` and counting
+distinct sample values per file — Hoopa's back is the only file in either directory that is
+uniform. Note this is a stricter test than the md5 check below: it catches a blank that is
+merely a *different* blank, which is how the 72 B Hoopa outlier survived the old duplicate-md5
+sweep.
 
 ### Also
 
@@ -43,8 +48,8 @@ outlier, as before.
 
 ## 2. Can't be obtained
 
-**5 species** (excluding Mew and Hoopa). Split by whether a player can end up owning them at
-all.
+**4 species** (excluding Mew and Hoopa), in 2 items — one whole line, one pre-evolution. Split
+by whether a player can end up owning them at all.
 
 ### Never ownable — 4
 
@@ -62,22 +67,47 @@ table, a gift, or a trade):
 - [x] ~~Mime Jr. → Mr. Mime~~ — FIXED 2026-10-04. The Route 2 trade now asks for an ABRA and
   gives a MIME_JR nicknamed MARCEL ([trades.asm](data/events/trades.asm), `TRADE_FOR_MARCEL`),
   where it used to give a Mr. Mime. Mime Jr. evolves into Mr. Mime at level 20, so the trade
-  still reaches the same end state. **Its front and back art are still the blank placeholders**
-  (see [section 1](#1-placeholder-graphics)), so it renders as an empty square until that is
-  drawn.
+  still reaches the same end state. (Its front and back art were drawn 2026-10-05; this note
+  used to warn it rendered as an empty square.)
 - [x] ~~Smoochum → Jynx~~ — FIXED 2026-10-04. SMOOCHUM is one of the three mons on Celadon
   prize menu 1 ([prizes.asm](data/events/prizes.asm)), at 1000 coins.
 - [x] ~~Paldean Wooper~~ — FIXED 2026-10-04. The Cerulean Trade House now trades a WOOPER for
   a PALDEAN_WOOPER nicknamed CLODDY ([trades.asm](data/events/trades.asm), index
-  `TRADE_FOR_CLODDY`). It does not close forwards to Clodsire: `PaldeanWooperEvosMoves` is
-  still `db 0`, so the evolution would have to be added first.
+  `TRADE_FOR_CLODDY`). **Now closes forwards to Clodsire too** — recheck 2026-10-09:
+  `PaldeanWooperEvosMoves` gained `db EVOLVE_LEVEL, 20, CLODSIRE`
+  ([evos_moves.asm:1036](data/pokemon/evos_moves.asm#L1036)). The two notes above about it
+  not closing were stale.
+
+> **Re-derived 2026-10-09: the "can't be obtained" list is exactly these 4, unchanged.** Union
+> of wild tables (63 files under `data/wild/`), the hardcoded Old Rod MAGIKARP, all 8
+> `GivePokemon` sites, the three fossil revives, the 10 `npctrade` rows, the six prize mons,
+> the scripted wild battles (Route 12/16 Snorlax, Mewtwo) and the 12 `OW_POKEMON` objects —
+> then closed forwards under `db EVOLVE_*`. 196 of 200 obtainable.
+>
+> One source swap worth recording: `npctrade POLIWHIRL, JYNX` was replaced by the Paldean
+> Wooper trade (commit `501b87ee`), so **Jynx is now single-source** — the 1000-coin Smoochum
+> on Celadon prize menu 1, then level 30. Removing that prize would strand Jynx.
+>
+> Also confirmed: this fork has **no `EVOLVE_TRADE` edges at all** (the classic trade evos are
+> level 36 here), so the closure needs no link-cable caveat. All 26 `EVOLVE_ITEM` edges use
+> stones sold at [CeladonMart4F.asm:24](scripts/CeladonMart4F.asm#L24), so none is gated
+> behind an unobtainable item.
 
 ---
 
 ## 3. Never appears on a trainer's team
 
 **40 species**, excluding the legendaries/mythicals (Articuno, Zapdos, Moltres, Mewtwo, Mew,
-Hoopa). The other 162 of 202 species appear on at least one trainer's team.
+Hoopa). The other **156** of 202 species appear on at least one trainer's team; 46 never do
+(the 40 below, plus those six exclusions). The companion figure read 162 until 2026-10-09 —
+that was `202 − 40`, which silently counted the six exclusions as if they appeared. Re-derived
+2026-10-09 from all 409 party rows in [parties.asm](data/trainers/parties.asm), both the
+`db <lvl>, SPECS…, 0` and `db $FF, <lvl>, SPEC, …` forms.
+
+Skarmory left this list when Steven was added (commit `501b87ee`) — his team carries it at
+[parties.asm:796](data/trainers/parties.asm#L796), reached from the Mt. Moon object at
+[MtMoon1F.asm:30](data/maps/objects/MtMoon1F.asm#L30). The bullet was dropped at the time but
+the header stayed stale until now, which is why the count moved 41 → 40 with no other change.
 
 - [ ] Abra
 - [ ] Ampharos
@@ -184,6 +214,8 @@ Hoopa). The other 162 of 202 species appear on at least one trainer's team.
 
 ## 5. Pokémon that miss moves
 
+Learnset *length* is not audited here — it is judged by hand.
+
 ### ~~Broken~~ — missing evolutions terminator (7) — FIXED 2026-09-20
 
 Each of these structs in [data/pokemon/evos_moves.asm](data/pokemon/evos_moves.asm) had **one**
@@ -205,6 +237,12 @@ reading the learnsets back out of the rebuilt ROM.
 > Nothing in the toolchain catches this class of bug — `assert_table_length` checks entry
 > counts and `-Wtruncation=1` checks byte widths, neither checks struct shape. It is only
 > visible by parsing `db 0` counts per struct (see [Verifying](#verifying)).
+>
+> **Re-verified clean 2026-10-09**, across all 205 structs. From the built ROM: every struct
+> consumes exactly its extent (evo block → `db 0` → level/move pairs → `db 0`), no evo target
+> outside 1..205, no level outside 1..100, no non-monotonic learnset, no `EVOLUTION_MOVE` out
+> of last position. From the source, per-struct `db 0` count is exactly 2 for all 205. The ROM
+> is byte-identical to the working-tree `evos_moves.asm`, so there is no source/ROM drift.
 
 ### Empty learnsets (7) — confirm these are intentional
 
@@ -221,36 +259,7 @@ a "confirm" item, not a defect:
 - [ ] Starmie
 
 > Arcanine and Metapod used to be on this list and now each have exactly one move — Arcanine
-> `EXTREME_SPEED` at 50, Metapod `EVOLUTION_MOVE, HARDEN`. They moved to the thin list below.
-
-### Thin learnsets — 3 moves or fewer (23)
-
-Several are vanilla-correct. Tyrogue, Magnezone and Magmar are this fork's own additions and
-worth a look (Magmar was trimmed to three in the 2026-10 balance pass):
-
-- [ ] Arcanine (1)
-- [ ] Caterpie (1)
-- [ ] Cloyster (1)
-- [ ] Crobat (1)
-- [ ] Exeggutor (1)
-- [ ] Metapod (1)
-- [ ] Weedle (1)
-- [ ] Flygon (2)
-- [ ] Magikarp (2)
-- [ ] Poliwrath (2)
-- [ ] Tyrogue (2)
-- [ ] Weavile (2)
-- [ ] Bellossom (3)
-- [ ] Gastly (3)
-- [ ] Gengar (3)
-- [ ] Haunter (3)
-- [ ] Magmar (3)
-- [ ] Magnezone (3)
-- [ ] Nidoking (3)
-- [ ] Nidoqueen (3)
-- [ ] Victreebel (3)
-- [ ] Vileplume (3)
-- [ ] Wigglytuff (3)
+> `EXTREME_SPEED` at 50, Metapod `EVOLUTION_MOVE, HARDEN`.
 
 ---
 
@@ -270,6 +279,11 @@ Not species gaps, but found while deriving the lists above.
   > last definition of a symbol wins. The palette constant also shadows the species one. Any
   > future species whose name collides with a `PAL_*` constant will silently resolve to a
   > palette id in exactly the same way. Renaming the palette constant is the durable fix.
+  >
+  > **Still unfixed as of the 2026-10-09 recheck** — `PAL_WOOPER` is still defined at
+  > [palette_constants.asm:247](constants/palette_constants.asm#L247) and the include order in
+  > [includes.asm](includes.asm#L35) is unchanged. **This is the one live item in this
+  > section** — the other two are genuinely closed.
 - [x] ~~**`PrizeMonLevelDictionary` is stale, and `GetPrizeMonLevel` scans unchecked.**~~
   — FIXED 2026-10-04. The dictionary now lists exactly the six species the two mon menus
   offer (GOLDEEN/HAPPINY/SMOOCHUM and EEVEE/SCYTHER/PORYGON); the dead `NIDORINA, 17` is gone
@@ -298,7 +312,7 @@ Re-derive the lists and diff against this file:
 
 | Category | How to check |
 |---|---|
-| Placeholder graphics | `md5sum gfx/pokemon/gsfront/*.png \| sort \| uniq -d -w32`, same for `gsback/` — blanks also show up as ~75–77 B files. Uniformity is the real tell; a duplicate md5 only groups them |
+| Placeholder graphics | Decode each PNG and count distinct sample values — a blank is exactly 1. **Use this, not md5.** `md5sum gfx/pokemon/gsfront/*.png \| sort \| uniq -d -w32` (same for `gsback/`) only *groups* identical blanks; it missed Hoopa's back for months because that blank was 72 B instead of 75 B and so never duplicated. Sizes are a weak hint at best (~72–77 B), uniformity is the real tell |
 | Obtainable | union of `db <lvl>, <SPECIES>` in `data/wild/` (plus the hardcoded Old Rod MAGIKARP at [item_effects.asm:1772](engine/items/item_effects.asm#L1772)), `lb bc, <SPECIES>, <LVL>` gifts, fossil revives (OMANYTE/KABUTO/AERODACTYL), starter picks, `npctrade` column 2, `data/events/prizes.asm`, scripts that set `wCurOpponent` (SNORLAX, MEWTWO), and `OW_POKEMON` map objects; then close forwards under `db EVOLVE_*` |
 | Trainers | `db` team rows in `data/trainers/parties.asm` — both `db <lvl>, SPECS…, 0` and `db $FF, <lvl>, SPEC, …` forms |
 | Cries | `mon_cry` rows carrying a `same as` marker in `data/pokemon/cries.asm` — every placeholder now has one, so a plain grep is exact |
