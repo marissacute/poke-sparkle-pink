@@ -110,43 +110,43 @@ Skarmory left this list when Steven was added (commit `501b87ee`) — his team c
 the header stayed stale until now, which is why the count moved 41 → 40 with no other change.
 
 - [ ] Abra
-- [ ] Ampharos
-- [ ] Annihilape
+- [x] Ampharos
+- [x] Annihilape
 - [ ] Blissey
-- [ ] Clefable
+- [x] Clefable
 - [ ] Ditto
 - [ ] Eevee
-- [ ] Elekid
-- [ ] Flaaffy
+- [x] Elekid
+- [x] Flaaffy
 - [ ] Flygon
 - [ ] Forretress
 - [ ] Glaceon
 - [ ] Happiny
-- [ ] Hitmontop
-- [ ] Houndoom
-- [ ] Houndour
+- [x] Hitmontop
+- [x] Houndoom
+- [x] Houndour
 - [ ] Kabuto
-- [ ] Kingdra
-- [ ] Krabby
-- [ ] Leafeon
-- [ ] Ledian
-- [ ] Ledyba
-- [ ] Magby
-- [ ] Mareep
-- [ ] Mime Jr.
-- [ ] Mismagius
-- [ ] Munchlax
-- [ ] Politoed
-- [ ] Porygon
-- [ ] Porygon2
-- [ ] Psyduck
+- [x] Kingdra
+- [x] Krabby
+- [x] Leafeon
+- [x] Ledian
+- [x] Ledyba
+- [x] Magby
+- [x] Mareep
+- [x] Mime Jr.
+- [x] Mismagius
+- [x] Munchlax
+- [x] Politoed
+- [x] Porygon
+- [x] Porygon2
+- [x] Psyduck
 - [ ] Scizor
-- [ ] Scyther
-- [ ] Slowking
-- [ ] Smoochum
-- [ ] Sneasel
-- [ ] Trapinch
-- [ ] Tyrogue
+- [x] Scyther
+- [x] Slowking
+- [x] Smoochum
+- [x] Sneasel
+- [x] Trapinch
+- [x] Tyrogue
 - [ ] Vibrava
 - [ ] Weavile
 
