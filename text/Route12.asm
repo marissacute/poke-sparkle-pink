@@ -1,20 +1,21 @@
-_Route12SnorlaxText::
-	text "A sleeping #MON"
+_Route12MareepText::
+	text "A sheep #MON"
 	line "blocks the way!"
+
+	para "It seems to got"
+	line "its wool stuck on"
+	cont "something."
 	done
 
-_Route12SnorlaxWokeUpText::
-	text "SNORLAX woke up!"
+_Route12MareepShearedText::
+	text "The #MON calmed"
+	line "down, and you"
+	cont "were able to"
+	cont "shear its"
+	cont "overgrown coat."
 
-	para "It attacked in a"
-	line "grumpy rage!"
-	done
-
-_Route12SnorlaxCalmedDownText::
-	text "SNORLAX calmed"
-	line "down! With a big"
-	cont "yawn, it returned"
-	cont "to the mountains!"
+	para "It seems"
+	line "relieved!"
 	done
 
 _Route12Fisher1BattleText::

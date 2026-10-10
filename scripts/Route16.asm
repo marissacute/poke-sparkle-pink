@@ -19,33 +19,30 @@ Route16_ScriptPointers:
 	dw_const Route16DefaultScript,                  SCRIPT_ROUTE16_DEFAULT
 	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_ROUTE16_START_BATTLE
 	dw_const EndTrainerBattle,                      SCRIPT_ROUTE16_END_BATTLE
-	dw_const Route16SnorlaxPostBattleScript,        SCRIPT_ROUTE16_SNORLAX_POST_BATTLE
+	dw_const Route16MareepPostBattleScript,        SCRIPT_ROUTE16_MAREEP_POST_BATTLE
 
 Route16DefaultScript:
-	CheckEventHL EVENT_BEAT_ROUTE16_SNORLAX
+	CheckEventHL EVENT_BEAT_ROUTE16_MAREEP
 	jp nz, CheckFightingMapTrainers
-	CheckEventReuseHL EVENT_FIGHT_ROUTE16_SNORLAX
-	ResetEventReuseHL EVENT_FIGHT_ROUTE16_SNORLAX
+	CheckEventReuseHL EVENT_FIGHT_ROUTE16_MAREEP
+	ResetEventReuseHL EVENT_FIGHT_ROUTE16_MAREEP
 	jp z, CheckFightingMapTrainers
-	ld a, TEXT_ROUTE16_SNORLAX_WOKE_UP
-	ldh [hTextID], a
-	call DisplayTextID
-	ld a, SNORLAX
+	ld a, MAREEP
 	ld [wCurOpponent], a
 	ld a, 30
 	ld [wCurEnemyLevel], a
 	xor a
 	ld [wIsTrainerBattle], a
-	ld a, TOGGLE_ROUTE_16_SNORLAX
+	ld a, TOGGLE_ROUTE_16_MAREEP
 	ld [wToggleableObjectIndex], a
 	predef HideObject
 	call UpdateSprites
-	ld a, SCRIPT_ROUTE16_SNORLAX_POST_BATTLE
+	ld a, SCRIPT_ROUTE16_MAREEP_POST_BATTLE
 	ld [wRoute16CurScript], a
 	ld [wCurMapScript], a
 	ret
 
-Route16SnorlaxPostBattleScript:
+Route16MareepPostBattleScript:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, Route16ResetScripts
@@ -53,11 +50,11 @@ Route16SnorlaxPostBattleScript:
 	ld a, [wBattleResult]
 	cp $2
 	jr z, .caught
-	ld a, TEXT_ROUTE16_SNORLAX_RETURNED_TO_MOUNTAINS
+	ld a, TEXT_ROUTE16_MAREEP_SHEARED
 	ldh [hTextID], a
 	call DisplayTextID
 .caught
-	SetEvent EVENT_BEAT_ROUTE16_SNORLAX
+	SetEvent EVENT_BEAT_ROUTE16_MAREEP
 	call Delay3
 	ld a, SCRIPT_ROUTE16_DEFAULT
 	ld [wRoute16CurScript], a
@@ -72,11 +69,10 @@ Route16_TextPointers:
 	dw_const Route16Biker4Text,                     TEXT_ROUTE16_BIKER4
 	dw_const Route16Biker5Text,                     TEXT_ROUTE16_BIKER5
 	dw_const Route16Biker6Text,                     TEXT_ROUTE16_BIKER6
-	dw_const Route16SnorlaxText,                    TEXT_ROUTE16_SNORLAX
+	dw_const Route16MareepText,                     TEXT_ROUTE16_MAREEP
 	dw_const Route16CyclingRoadSignText,            TEXT_ROUTE16_CYCLING_ROAD_SIGN
 	dw_const Route16SignText,                       TEXT_ROUTE16_SIGN
-	dw_const Route16SnorlaxWokeUpText,              TEXT_ROUTE16_SNORLAX_WOKE_UP
-	dw_const Route16SnorlaxReturnedToMountainsText, TEXT_ROUTE16_SNORLAX_RETURNED_TO_MOUNTAINS
+	dw_const Route16MareepShearedText,              TEXT_ROUTE16_MAREEP_SHEARED
 
 Route16TrainerHeaders:
 	def_trainers
@@ -202,16 +198,12 @@ Route16Biker6AfterBattleText:
 	text_far _Route16Biker6AfterBattleText
 	text_end
 
-Route16SnorlaxText:
-	text_far _Route16Text7
+Route16MareepText:
+	text_far _Route16MareepText
 	text_end
 
-Route16SnorlaxWokeUpText:
-	text_far _Route16SnorlaxWokeUpText
-	text_end
-
-Route16SnorlaxReturnedToMountainsText:
-	text_far _Route16SnorlaxReturnedToMountainsText
+Route16MareepShearedText:
+	text_far _Route16MareepShearedText
 	text_end
 
 Route16CyclingRoadSignText:

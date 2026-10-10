@@ -151,7 +151,7 @@ ItemDescriptions:
 	text_far _OaksParcelDescription
 	text_far _ItemfinderDescription
 	text_far _SilphScopeDescription
-	text_far _PokeFluteDescription
+	text_far _PokeShearsDescription
 	text_far _LiftKeyDescription
 	text_far _ExpAllDescription
 	text_far _OldRodDescription
@@ -525,9 +525,9 @@ _SilphScopeDescription::
 	line "#MON."
 	done
 
-_PokeFluteDescription::
-	text "Awakens sleeping"
-	line "#MON."
+_PokeShearsDescription::
+	text "Used to cut a"
+	line "#MON's wool."
 	done
 
 _LiftKeyDescription::

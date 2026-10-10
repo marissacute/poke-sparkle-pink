@@ -2,7 +2,7 @@
 
 Outstanding work for the full dex. **202 dex species.** Every list below was derived by
 parsing the source tables, not by hand — re-derive before trusting a count (see
-[Verifying](#verifying)). Last re-derived 2026-10-09.
+[Verifying](#verifying)). Last re-derived 2026-10-10.
 
 Scope notes:
 
@@ -48,22 +48,21 @@ sweep.
 
 ## 2. Can't be obtained
 
-**4 species** (excluding Mew and Hoopa), in 2 items — one whole line, one pre-evolution. Split
-by whether a player can end up owning them at all.
+**None — the list is empty.** All 200 species that are meant to be obtainable can be, out of
+202 dex species: Mew and Hoopa stay deliberately out of reach, and the three internal
+`MISSINGNO.` slots have no dex entry.
 
-### Never ownable — 4
+### Recently closed here (kept for the record)
 
-**Whole lines absent:**
-
-- [ ] Mareep line — Mareep, Flaaffy, Ampharos
-
-**Pre-evolutions whose evolution is already obtainable** (add the missing base form to a wild
-table, a gift, or a trade):
-
-- [ ] Munchlax → Snorlax
-
-**Recently closed here** (kept for the record):
-
+- [x] ~~Mareep line — Mareep, Flaaffy, Ampharos~~ — FIXED 2026-10-10. The two blockers on
+  Route 12 and Route 16 are no longer sleeping Snorlax: the POKé FLUTE became POKé SHEARS, and
+  the scripted wild battle it starts is a level 30 MAREEP
+  ([Route12.asm:30](scripts/Route12.asm#L30), [Route16.asm:30](scripts/Route16.asm#L30)).
+  Mareep → Flaaffy → Ampharos closes the line, so all three left this list at once.
+- [x] ~~Munchlax → Snorlax~~ — FIXED 2026-10-10, **still uncommitted in the working tree**.
+  Route 3 and Route 10 each swapped one duplicate SPEAROW slot for MUNCHLAX
+  ([Route3.asm:8](data/wild/maps/Route3.asm#L8), [Route10.asm:8](data/wild/maps/Route10.asm#L8));
+  Munchlax evolves into Snorlax.
 - [x] ~~Mime Jr. → Mr. Mime~~ — FIXED 2026-10-04. The Route 2 trade now asks for an ABRA and
   gives a MIME_JR nicknamed MARCEL ([trades.asm](data/events/trades.asm), `TRADE_FOR_MARCEL`),
   where it used to give a Mr. Mime. Mime Jr. evolves into Mr. Mime at level 20, so the trade
@@ -78,77 +77,73 @@ table, a gift, or a trade):
   ([evos_moves.asm:1036](data/pokemon/evos_moves.asm#L1036)). The two notes above about it
   not closing were stale.
 
-> **Re-derived 2026-10-09: the "can't be obtained" list is exactly these 4, unchanged.** Union
-> of wild tables (63 files under `data/wild/`), the hardcoded Old Rod MAGIKARP, all 8
-> `GivePokemon` sites, the three fossil revives, the 10 `npctrade` rows, the six prize mons,
-> the scripted wild battles (Route 12/16 Snorlax, Mewtwo) and the 12 `OW_POKEMON` objects —
-> then closed forwards under `db EVOLVE_*`. 196 of 200 obtainable.
+> **Re-derived 2026-10-10: the list is empty — 200 of 200 obtainable.** Same method as the
+> 2026-10-09 pass: union of the wild tables (still 63 files under `data/wild/`), the hardcoded
+> Old Rod MAGIKARP, all 8 `GivePokemon` sites, the three fossil revives, the starter picks
+> (IGGLYBUFF/MAGNEMITE/DRATINI in [OaksLab.asm](scripts/OaksLab.asm), the classic three at
+> [Route15Gate2F.asm:130](scripts/Route15Gate2F.asm#L130)), the 10 `npctrade` rows, the six
+> prize mons, the scripted `wCurOpponent` battles and the 12 `OW_POKEMON` objects — then closed
+> forwards under `db EVOLVE_*`. The party-row count (409) and the wild file count both still
+> match the previous pass, so the two closures above are the whole delta.
 >
-> One source swap worth recording: `npctrade POLIWHIRL, JYNX` was replaced by the Paldean
-> Wooper trade (commit `501b87ee`), so **Jynx is now single-source** — the 1000-coin Smoochum
+> Both closures landed the species on a **single source**, which is what to watch next:
+>
+> - **Snorlax** ← a wild Munchlax only (Route 3, Route 10), then evolve. The Route 12/16
+>   scripted battle used to be its other source and is a Mareep now, and Munchlax has no other
+>   source either — pulling those two wild slots would strand the pair.
+> - **Mareep** ← the Route 12/16 scripted battle only, then Flaaffy at 35 and Ampharos. The
+>   line has no wild table, so those two one-per-save encounters are load-bearing.
+>
+> Still true from the previous pass: `npctrade POLIWHIRL, JYNX` was replaced by the Paldean
+> Wooper trade (commit `501b87ee`), so **Jynx is single-source** — the 1000-coin Smoochum
 > on Celadon prize menu 1, then level 30. Removing that prize would strand Jynx.
 >
-> Also confirmed: this fork has **no `EVOLVE_TRADE` edges at all** (the classic trade evos are
-> level 36 here), so the closure needs no link-cable caveat. All 26 `EVOLVE_ITEM` edges use
-> stones sold at [CeladonMart4F.asm:24](scripts/CeladonMart4F.asm#L24), so none is gated
-> behind an unobtainable item.
+> Also re-confirmed: this fork has **no `EVOLVE_TRADE` edges at all** (the classic trade evos
+> are level 36 here; the only `EVOLVE_TRADE` in [evos_moves.asm](data/pokemon/evos_moves.asm)
+> is the comment in the struct documentation), so the closure needs no link-cable caveat. All
+> 26 `EVOLVE_ITEM` edges use stones sold at
+> [CeladonMart4F.asm:24](scripts/CeladonMart4F.asm#L24), so none is gated behind an
+> unobtainable item.
 
 ---
 
 ## 3. Never appears on a trainer's team
 
-**40 species**, excluding the legendaries/mythicals (Articuno, Zapdos, Moltres, Mewtwo, Mew,
-Hoopa). The other **156** of 202 species appear on at least one trainer's team; 46 never do
-(the 40 below, plus those six exclusions). The companion figure read 162 until 2026-10-09 —
-that was `202 − 40`, which silently counted the six exclusions as if they appeared. Re-derived
-2026-10-09 from all 409 party rows in [parties.asm](data/trainers/parties.asm), both the
-`db <lvl>, SPECS…, 0` and `db $FF, <lvl>, SPEC, …` forms.
-
-Skarmory left this list when Steven was added (commit `501b87ee`) — his team carries it at
-[parties.asm:796](data/trainers/parties.asm#L796), reached from the Mt. Moon object at
-[MtMoon1F.asm:30](data/maps/objects/MtMoon1F.asm#L30). The bullet was dropped at the time but
-the header stayed stale until now, which is why the count moved 41 → 40 with no other change.
+**12 species**, excluding the legendaries/mythicals (Articuno, Zapdos, Moltres, Mewtwo, Mew,
+Hoopa). The other **184** of 202 species appear on at least one trainer's team; 18 never do
+(the 12 below, plus those six exclusions). Re-derived 2026-10-10 from all 409 party rows in
+[parties.asm](data/trainers/parties.asm), both the `db <lvl>, SPECS…, 0` and
+`db $FF, <lvl>, SPEC, …` forms.
 
 - [ ] Abra
-- [x] Ampharos
-- [x] Annihilape
 - [ ] Blissey
-- [x] Clefable
 - [ ] Ditto
 - [ ] Eevee
-- [x] Elekid
-- [x] Flaaffy
 - [ ] Flygon
 - [ ] Forretress
 - [ ] Glaceon
 - [ ] Happiny
-- [x] Hitmontop
-- [x] Houndoom
-- [x] Houndour
 - [ ] Kabuto
-- [x] Kingdra
-- [x] Krabby
-- [x] Leafeon
-- [x] Ledian
-- [x] Ledyba
-- [x] Magby
-- [x] Mareep
-- [x] Mime Jr.
-- [x] Mismagius
-- [x] Munchlax
-- [x] Politoed
-- [x] Porygon
-- [x] Porygon2
-- [x] Psyduck
+- [ ] Porygon2
 - [ ] Scizor
-- [x] Scyther
-- [x] Slowking
-- [x] Smoochum
-- [x] Sneasel
-- [x] Trapinch
-- [x] Tyrogue
 - [ ] Vibrava
-- [ ] Weavile
+
+**Recently closed here** (kept for the record): 28 species left this list in commit `489782c4`
+("give trainers the new pokemon") — Ampharos, Annihilape, Clefable, Elekid, Flaaffy, Hitmontop,
+Houndoom, Houndour, Kingdra, Krabby, Leafeon, Ledian, Ledyba, Magby, Mareep, Mime Jr.,
+Mismagius, Munchlax, Politoed, Porygon, Psyduck, Scyther, Slowking, Smoochum, Sneasel,
+Trapinch, Tyrogue and Weavile. Each name was re-checked against `parties.asm` one at a time.
+
+Skarmory left this list even earlier, when Steven was added (commit `501b87ee`) — his team
+carries it at [parties.asm:796](data/trainers/parties.asm#L796), reached from the Mt. Moon
+object at [MtMoon1F.asm:30](data/maps/objects/MtMoon1F.asm#L30). The bullet was dropped at the
+time but the header stayed stale, which is why the count moved 41 → 40 with no other change.
+
+> **Two of that commit's marks were wrong, and only a re-derivation catches it.** Porygon2 was
+> ticked off but appears on **no** team — `parties.asm` has zero `PORYGON2` rows; Porygon was
+> added, its evolution was not, so it is back on the list above. Weavile was left unticked but
+> does appear (one row), so it is not. The per-species checkboxes in this file are a record of
+> intent, not evidence: the counts and the list are re-derived, the ticks are not.
 
 ---
 
@@ -308,12 +303,17 @@ Not species gaps, but found while deriving the lists above.
 
 ## Verifying
 
-Re-derive the lists and diff against this file:
+**Sections 2 and 3 are scripted.** `tools/audit_dex.py` re-derives both from the source tables
+and prints the counts to diff against this file: a species leaving a list is a new source, and
+the trailing numbers (wild files, party rows, give-pokemon sites) say whether the parser is
+still seeing the whole table. `--why SPECIES` explains where one species comes from and what
+it evolves into, `--sources` dumps the map for every species, `--json` is for diffing. The
+other categories below are still by hand:
 
 | Category | How to check |
 |---|---|
 | Placeholder graphics | Decode each PNG and count distinct sample values — a blank is exactly 1. **Use this, not md5.** `md5sum gfx/pokemon/gsfront/*.png \| sort \| uniq -d -w32` (same for `gsback/`) only *groups* identical blanks; it missed Hoopa's back for months because that blank was 72 B instead of 75 B and so never duplicated. Sizes are a weak hint at best (~72–77 B), uniformity is the real tell |
-| Obtainable | union of `db <lvl>, <SPECIES>` in `data/wild/` (plus the hardcoded Old Rod MAGIKARP at [item_effects.asm:1772](engine/items/item_effects.asm#L1772)), `lb bc, <SPECIES>, <LVL>` gifts, fossil revives (OMANYTE/KABUTO/AERODACTYL), starter picks, `npctrade` column 2, `data/events/prizes.asm`, scripts that set `wCurOpponent` (SNORLAX, MEWTWO), and `OW_POKEMON` map objects; then close forwards under `db EVOLVE_*` |
+| Obtainable | union of `db <lvl>, <SPECIES>` in `data/wild/` (plus the hardcoded Old Rod MAGIKARP at [item_effects.asm:1688](engine/items/item_effects.asm#L1688)), `lb bc, <SPECIES>, <LVL>` gifts, fossil revives (OMANYTE/KABUTO/AERODACTYL), starter picks, `npctrade` column 2, `data/events/prizes.asm`, scripts that set `wCurOpponent` (MAREEP on Route 12/16, MEWTWO, and the tower ghost — `RESTLESS_SOUL` is `EQU MAROWAK`), and `OW_POKEMON` map objects; then close forwards under `db EVOLVE_*` |
 | Trainers | `db` team rows in `data/trainers/parties.asm` — both `db <lvl>, SPECS…, 0` and `db $FF, <lvl>, SPEC, …` forms |
 | Cries | `mon_cry` rows carrying a `same as` marker in `data/pokemon/cries.asm` — every placeholder now has one, so a plain grep is exact |
 | Learnsets | Read the structs out of the **built ROM** via `EvosMovesPointerTable` (`pokered.sym`) rather than regexing the source |
@@ -333,9 +333,10 @@ Traps that cost time when parsing the obtainable set — each produced a false p
   `c` (`lb bc, EEVEE, 25`), but the fishing code is the opposite (`lb bc, 5, MAGIKARP`).
 - `PAL_WOOPER` must not be counted as a species (see the palette name collision above).
 
-Also remember scripted `wCurOpponent` battles (Route 12/16 Snorlax) are a real source, so the
-plain wild tables alone will undercount what is obtainable. For learnsets, the source-side
-tally is tempting but the ROM is ground truth — `EvosMovesPointerTable` is ordered by species
+Also remember scripted `wCurOpponent` battles (the Route 12/16 Mareep, the Pokémon Tower
+ghost, Mewtwo) are a real source, so the plain wild tables alone will undercount what is
+obtainable. For learnsets, the source-side tally is tempting but the ROM is ground truth —
+`EvosMovesPointerTable` is ordered by species
 index (entry *n* is species *n+1*, since `NO_MON` occupies slot 0), every pointer is bank
 `$0e`, and the evolution methods have fixed payload sizes (`EVOLVE_LEVEL` 3 bytes,
 `EVOLVE_ITEM` 4, `EVOLVE_TRADE` 3, `EVOLVE_STAT` 4).

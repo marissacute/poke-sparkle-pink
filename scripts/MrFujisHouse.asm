@@ -69,23 +69,23 @@ MrFujisHouseNidorinoText:
 
 MrFujisHouseMrFujiText:
 	text_asm
-	CheckEvent EVENT_GOT_POKE_FLUTE
+	CheckEvent EVENT_GOT_POKE_SHEARS
 	jr nz, .got_item
 	ld hl, .IThinkThisMayHelpYourQuestText
 	call PrintText
-	lb bc, POKE_FLUTE, 1
+	lb bc, POKE_SHEARS, 1
 	call GiveItem
 	jr nc, .bag_full
-	ld hl, .ReceivedPokeFluteText
+	ld hl, .ReceivedPokeShearsText
 	call PrintText
-	SetEvent EVENT_GOT_POKE_FLUTE
+	SetEvent EVENT_GOT_POKE_SHEARS
 	jr .done
 .bag_full
-	ld hl, .PokeFluteNoRoomText
+	ld hl, .PokeShearsNoRoomText
 	call PrintText
 	jr .done
 .got_item
-	ld hl, .HasMyFluteHelpedYouText
+	ld hl, .HasMyShearsHelpedYouText
 	call PrintText
 .done
 	jp TextScriptEnd
@@ -94,18 +94,18 @@ MrFujisHouseMrFujiText:
 	text_far _MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText
 	text_end
 
-.ReceivedPokeFluteText:
-	text_far _MrFujisHouseMrFujiReceivedPokeFluteText
+.ReceivedPokeShearsText:
+	text_far _MrFujisHouseMrFujiReceivedPokeShearsText
 	sound_get_key_item
-	text_far _MrFujisHouseMrFujiPokeFluteExplanationText
+	text_far _MrFujisHouseMrFujiPokeShearsExplanationText
 	text_end
 
-.PokeFluteNoRoomText:
-	text_far _MrFujisHouseMrFujiPokeFluteNoRoomText
+.PokeShearsNoRoomText:
+	text_far _MrFujisHouseMrFujiPokeShearsNoRoomText
 	text_end
 
-.HasMyFluteHelpedYouText:
-	text_far _MrFujisHouseMrFujiHasMyFluteHelpedYouText
+.HasMyShearsHelpedYouText:
+	text_far _MrFujisHouseMrFujiHasMyShearsHelpedYouText
 	text_end
 
 MrFujisHouseMrFujiPokedexText:

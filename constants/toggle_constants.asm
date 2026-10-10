@@ -61,7 +61,7 @@ ENDM
 	const TOGGLE_ROUTE_9_ITEM                  ; 1C X
 
 	toggle_consts_for ROUTE_12
-	const TOGGLE_ROUTE_12_SNORLAX              ; 1D
+	const TOGGLE_ROUTE_12_MAREEP               ; 1D
 	const TOGGLE_ROUTE_12_ITEM_1               ; 1E X
 	const TOGGLE_ROUTE_12_ITEM_2               ; 1F X
 
@@ -69,7 +69,7 @@ ENDM
 	const TOGGLE_ROUTE_15_ITEM                 ; 20 X
 
 	toggle_consts_for ROUTE_16
-	const TOGGLE_ROUTE_16_SNORLAX              ; 21
+	const TOGGLE_ROUTE_16_MAREEP               ; 21
 
 	toggle_consts_for ROUTE_22
 	const TOGGLE_ROUTE_22_RIVAL_1              ; 22

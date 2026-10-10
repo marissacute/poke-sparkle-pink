@@ -12,15 +12,15 @@ _Route11Gate2FOaksAideItemfinderDescriptionText::
 	cont "to look yourself!"
 	done
 
-_Route11Gate2FLeftBinocularsSnorlaxText::
+_Route11Gate2FLeftBinocularsMareepText::
 	text "Looked into the"
 	line "binoculars."
 
-	para "A big #MON is"
-	line "asleep on a road!"
+	para "A wool #MON is"
+	line "stuck on a road!"
 	done
 
-_Route11Gate2FLeftBinocularsNoSnorlaxText::
+_Route11Gate2FLeftBinocularsNoMareepText::
 	text "Looked into the"
 	line "binoculars."
 

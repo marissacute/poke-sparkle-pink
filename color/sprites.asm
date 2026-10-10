@@ -509,7 +509,7 @@ SpritePaletteAssignments: ; Characters on the overworld
 	; 0x42: SPRITE_CLIPBOARD
 	db SPR_PAL_BROWN
 
-	; 0x43: SPRITE_SNORLAX
+	; 0x43: SPRITE_MAREEP
 	db SPR_PAL_ORANGE
 
 	; 0x44: SPRITE_OLD_AMBER_COPY

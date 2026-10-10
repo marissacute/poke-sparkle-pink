@@ -19,44 +19,41 @@ Route12_ScriptPointers:
 	dw_const Route12DefaultScript,                  SCRIPT_ROUTE12_DEFAULT
 	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_ROUTE12_START_BATTLE
 	dw_const EndTrainerBattle,                      SCRIPT_ROUTE12_END_BATTLE
-	dw_const Route12SnorlaxPostBattleScript,        SCRIPT_ROUTE12_SNORLAX_POST_BATTLE
+	dw_const Route12MareepPostBattleScript,        SCRIPT_ROUTE12_MAREEP_POST_BATTLE
 
 Route12DefaultScript:
-	CheckEventHL EVENT_BEAT_ROUTE12_SNORLAX
+	CheckEventHL EVENT_BEAT_ROUTE12_MAREEP
 	jp nz, CheckFightingMapTrainers
-	CheckEventReuseHL EVENT_FIGHT_ROUTE12_SNORLAX
-	ResetEventReuseHL EVENT_FIGHT_ROUTE12_SNORLAX
+	CheckEventReuseHL EVENT_FIGHT_ROUTE12_MAREEP
+	ResetEventReuseHL EVENT_FIGHT_ROUTE12_MAREEP
 	jp z, CheckFightingMapTrainers
-	ld a, TEXT_ROUTE12_SNORLAX_WOKE_UP
-	ldh [hTextID], a
-	call DisplayTextID
-	ld a, SNORLAX
+	ld a, MAREEP
 	ld [wCurOpponent], a
 	ld a, 30
 	ld [wCurEnemyLevel], a
 	xor a
 	ld [wIsTrainerBattle], a
-	ld a, TOGGLE_ROUTE_12_SNORLAX
+	ld a, TOGGLE_ROUTE_12_MAREEP
 	ld [wToggleableObjectIndex], a
 	predef HideObject
-	ld a, SCRIPT_ROUTE12_SNORLAX_POST_BATTLE
+	ld a, SCRIPT_ROUTE12_MAREEP_POST_BATTLE
 	ld [wRoute12CurScript], a
 	ld [wCurMapScript], a
 	ret
 
-Route12SnorlaxPostBattleScript:
+Route12MareepPostBattleScript:
 	ld a, [wIsInBattle]
 	cp $ff
 	jr z, Route12ResetScripts
 	call UpdateSprites
 	ld a, [wBattleResult]
 	cp $2
-	jr z, .caught_snorlax
-	ld a, TEXT_ROUTE12_SNORLAX_CALMED_DOWN
+	jr z, .caught_mareep
+	ld a, TEXT_ROUTE12_MAREEP_SHEARED
 	ldh [hTextID], a
 	call DisplayTextID
-.caught_snorlax
-	SetEvent EVENT_BEAT_ROUTE12_SNORLAX
+.caught_mareep
+	SetEvent EVENT_BEAT_ROUTE12_MAREEP
 	call Delay3
 	ld a, SCRIPT_ROUTE12_DEFAULT
 	ld [wRoute12CurScript], a
@@ -65,7 +62,7 @@ Route12SnorlaxPostBattleScript:
 
 Route12_TextPointers:
 	def_text_pointers
-	dw_const Route12SnorlaxText,           TEXT_ROUTE12_SNORLAX
+	dw_const Route12MareepText,            TEXT_ROUTE12_MAREEP
 	dw_const Route12Fisher1Text,           TEXT_ROUTE12_FISHER1
 	dw_const Route12Fisher2Text,           TEXT_ROUTE12_FISHER2
 	dw_const Route12CooltrainerMText,      TEXT_ROUTE12_COOLTRAINER_M
@@ -77,8 +74,7 @@ Route12_TextPointers:
 	dw_const PickUpItemText,               TEXT_ROUTE12_IRON
 	dw_const Route12SignText,              TEXT_ROUTE12_SIGN
 	dw_const Route12SportFishingSignText,  TEXT_ROUTE12_SPORT_FISHING_SIGN
-	dw_const Route12SnorlaxWokeUpText,     TEXT_ROUTE12_SNORLAX_WOKE_UP
-	dw_const Route12SnorlaxCalmedDownText, TEXT_ROUTE12_SNORLAX_CALMED_DOWN
+	dw_const Route12MareepShearedText,     TEXT_ROUTE12_MAREEP_SHEARED
 
 Route12TrainerHeaders:
 	def_trainers 2
@@ -98,16 +94,12 @@ Route12TrainerHeader6:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_6, 1, Route12Fisher5BattleText, Route12Fisher5EndBattleText, Route12Fisher5AfterBattleText
 	db -1 ; end
 
-Route12SnorlaxText:
-	text_far _Route12SnorlaxText
+Route12MareepText:
+	text_far _Route12MareepText
 	text_end
 
-Route12SnorlaxWokeUpText:
-	text_far _Route12SnorlaxWokeUpText
-	text_end
-
-Route12SnorlaxCalmedDownText:
-	text_far _Route12SnorlaxCalmedDownText
+Route12MareepShearedText:
+	text_far _Route12MareepShearedText
 	text_end
 
 Route12Fisher1Text:

@@ -5,7 +5,7 @@ Route10WildMons:
 	db 16, SPEAROW
 	db 14, VOLTORB
 	db 11, SANDSHREW
-	db 13, SPEAROW
+	db 13, MUNCHLAX
 	db 15, EKANS
 	db 17, VOLTORB
 	db 17, SPEAROW

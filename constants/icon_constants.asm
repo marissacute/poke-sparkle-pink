@@ -41,6 +41,7 @@
 	const ICON_SLOWPOKE    ; $23
 	const ICON_SUDOWOODO   ; $24
 	const ICON_BIGMON      ; $25
+	const ICON_SHEEP       ; $26
 DEF NUM_MON_ICONS EQU const_value
 
 ; Tiles per animation frame of a mon icon (16x16 pixels), and the number of

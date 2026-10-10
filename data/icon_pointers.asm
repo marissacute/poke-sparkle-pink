@@ -46,4 +46,5 @@ MonIconTable:
 	mon_icon SlowpokeIcon
 	mon_icon SudowoodoIcon
 	mon_icon BigmonIcon
+	mon_icon SheepIcon
 	assert_table_length NUM_MON_ICONS

@@ -47,31 +47,33 @@ _MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText::
 	line "help your quest."
 	prompt
 
-_MrFujisHouseMrFujiReceivedPokeFluteText::
+_MrFujisHouseMrFujiReceivedPokeShearsText::
 	text "<PLAYER> received"
 	line "a @"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_MrFujisHouseMrFujiPokeFluteExplanationText::
+_MrFujisHouseMrFujiPokeShearsExplanationText::
 	text_start
 
-	para "Upon hearing #"
-	line "FLUTE, sleeping"
-	cont "#MON will"
-	cont "spring awake."
+	para "My shears can be"
+	line "used to cut the"
+	cont "fur and wool of"
+	cont "#MON."
 
-	para "It works on all"
-	line "sleeping #MON."
+	para "Some #MON are"
+	line "relieved when"
+	cont "their warm coats"
+	cont "are sheared!"
 	done
 
-_MrFujisHouseMrFujiPokeFluteNoRoomText::
+_MrFujisHouseMrFujiPokeShearsNoRoomText::
 	text "You must make"
 	line "room for this!"
 	done
 
-_MrFujisHouseMrFujiHasMyFluteHelpedYouText::
+_MrFujisHouseMrFujiHasMyShearsHelpedYouText::
 	text "MR.FUJI: Has my"
 	line "FLUTE helped you?"
 	done

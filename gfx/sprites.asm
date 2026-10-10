@@ -24,7 +24,7 @@ BoulderSprite::          INCBIN "gfx/sprites/boulder.2bpp"
 PaperSprite::            INCBIN "gfx/sprites/paper.2bpp"
 PokedexSprite::          INCBIN "gfx/sprites/pokedex.2bpp"
 ClipboardSprite::        INCBIN "gfx/sprites/clipboard.2bpp"
-SnorlaxSprite::          INCBIN "gfx/sprites/snorlax.2bpp"
+MareepSprite::           INCBIN "gfx/sprites/sheep.2bpp"
 OldAmberSprite::         INCBIN "gfx/sprites/old_amber.2bpp"
 GamblerAsleepSprite::    INCBIN "gfx/sprites/gambler_asleep.2bpp"
 

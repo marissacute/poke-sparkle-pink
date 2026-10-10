@@ -188,9 +188,9 @@ MonPartyData:
 	db ICON_BUG         ; Trapinch
 	db ICON_BUG         ; Vibrava
 	db ICON_BUG         ; Flygon
-	db ICON_FOX         ; Mareep
-	db ICON_MONSTER     ; Flaaffy
-	db ICON_MONSTER     ; Ampharos
+	db ICON_SHEEP       ; Mareep
+	db ICON_SHEEP       ; Flaaffy
+	db ICON_SHEEP       ; Ampharos
 	db ICON_BIRD        ; Articuno
 	db ICON_BIRD        ; Zapdos
 	db ICON_BIRD        ; Moltres

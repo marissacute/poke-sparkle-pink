@@ -91,7 +91,7 @@ _ThrewRockText::
 	line "ROCK."
 	done
 
-_PlayedFluteNoEffectText::
+_UsedShearsNoEffectText::
 	text "Played the #"
 	line "FLUTE."
 
@@ -99,15 +99,12 @@ _PlayedFluteNoEffectText::
 	line "catchy tune!"
 	prompt
 
-_FluteWokeUpText::
-	text "All sleeping"
-	line "#MON woke up."
+_UsedShearsHadEffectText::
+	text "The #MON was"
+	line "startled by your"
+	cont "attempt to shear"
+	cont "it!"
 	prompt
-
-_PlayedFluteHadEffectText::
-	text "<PLAYER> played the"
-	line "# FLUTE.@"
-	text_end
 
 _CoinCaseNumCoinsText::
 	text "Coins"

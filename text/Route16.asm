@@ -90,22 +90,25 @@ _Route16Biker6AfterBattleText::
 	cont "vicious #MON!"
 	done
 
-_Route16Text7::
-	text "A sleeping #MON"
+_Route16MareepText::
+	text "A sheep #MON"
 	line "blocks the way!"
+
+	para "It seems to got"
+	line "its wool stuck on"
+	cont "something."
 	done
 
-_Route16SnorlaxWokeUpText::
-	text "SNORLAX woke up!"
+_Route16MareepShearedText::
+	text "The #MON calmed"
+	line "down, and you"
+	cont "were able to"
+	cont "shear its"
+	cont "overgrown coat."
 
-	para "It attacked in a"
-	line "grumpy rage!"
-	done
-
-_Route16SnorlaxReturnedToMountainsText::
-	text "With a big yawn,"
-	line "SNORLAX returned"
-	cont "to the mountains!"
+	para "Relieved, it"
+	line "returned to a"
+	cont "nearby field."
 	done
 
 _Route16CyclingRoadSignText::

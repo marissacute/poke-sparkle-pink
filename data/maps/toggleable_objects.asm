@@ -88,7 +88,7 @@ ToggleableObjectStates:
 	toggle_object_state ROUTE9_TM_TELEPORT, ON
 
 	toggleable_objects_for ROUTE_12
-	toggle_object_state ROUTE12_SNORLAX,    ON
+	toggle_object_state ROUTE12_MAREEP,     ON
 	toggle_object_state ROUTE12_TM_PAY_DAY, ON
 	toggle_object_state ROUTE12_IRON,       ON
 
@@ -96,7 +96,7 @@ ToggleableObjectStates:
 	toggle_object_state ROUTE15_TM_RAGE, ON
 
 	toggleable_objects_for ROUTE_16
-	toggle_object_state ROUTE16_SNORLAX, ON
+	toggle_object_state ROUTE16_MAREEP, ON
 
 	toggleable_objects_for ROUTE_22
 	toggle_object_state ROUTE22_RIVAL1, OFF

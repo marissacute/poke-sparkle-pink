@@ -72,7 +72,7 @@ KeyItemFlags:
 	dbit TRUE  ; OAKS_PARCEL
 	dbit TRUE  ; ITEMFINDER
 	dbit TRUE  ; SILPH_SCOPE
-	dbit TRUE  ; POKE_FLUTE
+	dbit TRUE  ; POKE_SHEARS
 	dbit TRUE  ; LIFT_KEY
 	dbit FALSE ; EXP_ALL
 	dbit TRUE  ; OLD_ROD

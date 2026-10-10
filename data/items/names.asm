@@ -72,7 +72,7 @@ ItemNames::
 	li "OAK's PARCEL"
 	li "ITEMFINDER"
 	li "SILPH SCOPE"
-	li "POKé FLUTE"
+	li "POKé SHEARS"
 	li "LIFT KEY"
 	li "EXP.ALL"
 	li "OLD ROD"

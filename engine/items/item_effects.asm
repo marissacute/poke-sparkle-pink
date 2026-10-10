@@ -89,7 +89,7 @@ ItemUsePtrTable:
 	dw ItemUseOaksParcel ; OAKS_PARCEL
 	dw ItemUseItemfinder ; ITEMFINDER
 	dw UnusableItem      ; SILPH_SCOPE
-	dw ItemUsePokeFlute  ; POKE_FLUTE
+	dw ItemUsePokeShears ; POKE_SHEARS
 	dw UnusableItem      ; LIFT_KEY
 	dw UnusableItem      ; EXP_ALL
 	dw ItemUseOldRod     ; OLD_ROD
@@ -1615,149 +1615,61 @@ ItemUseXStat:
 	ld [hl], a ; restore [wPlayerMoveNum]
 	ret
 
-ItemUsePokeFlute:
+ItemUsePokeShears:
 	ld a, [wIsInBattle]
 	and a
-	jr nz, .inBattle
+	jp nz, ItemUseNotTime
 ; if not in battle
 	call ItemUseReloadOverworldData
 	ld a, [wCurMap]
 	cp ROUTE_12
 	jr nz, .notRoute12
-	CheckEvent EVENT_BEAT_ROUTE12_SNORLAX
-	jr nz, .noSnorlaxToWakeUp
-; if the player hasn't beaten Route 12 Snorlax
-	ld hl, Route12SnorlaxFluteCoords
+	CheckEvent EVENT_BEAT_ROUTE12_MAREEP
+	jr nz, .noMareepToShear
+; if the player hasn't sheared the Route 12 Mareep
+	ld hl, Route12MareepShearsCoords
 	call ArePlayerCoordsInArray
-	jr nc, .noSnorlaxToWakeUp
-	ld hl, PlayedFluteHadEffectText
+	jr nc, .noMareepToShear
+	ld hl, UsedShearsHadEffectText
 	call PrintText
-	SetEvent EVENT_FIGHT_ROUTE12_SNORLAX
+	SetEvent EVENT_FIGHT_ROUTE12_MAREEP
 	ret
 .notRoute12
 	cp ROUTE_16
-	jr nz, .noSnorlaxToWakeUp
-	CheckEvent EVENT_BEAT_ROUTE16_SNORLAX
-	jr nz, .noSnorlaxToWakeUp
-; if the player hasn't beaten Route 16 Snorlax
-	ld hl, Route16SnorlaxFluteCoords
+	jr nz, .noMareepToShear
+	CheckEvent EVENT_BEAT_ROUTE16_MAREEP
+	jr nz, .noMareepToShear
+; if the player hasn't sheared the Route 16 Mareep
+	ld hl, Route16MareepShearsCoords
 	call ArePlayerCoordsInArray
-	jr nc, .noSnorlaxToWakeUp
-	ld hl, PlayedFluteHadEffectText
+	jr nc, .noMareepToShear
+	ld hl, UsedShearsHadEffectText
 	call PrintText
-	SetEvent EVENT_FIGHT_ROUTE16_SNORLAX
+	SetEvent EVENT_FIGHT_ROUTE16_MAREEP
 	ret
-.noSnorlaxToWakeUp
-	ld hl, PlayedFluteNoEffectText
-	jp PrintText
-.inBattle
-	xor a
-	ld [wWereAnyMonsAsleep], a
-	ld b, ~SLP_MASK
-	ld hl, wPartyMon1Status
-	call WakeUpEntireParty
-	ld a, [wIsInBattle]
-	dec a ; is it a trainer battle?
-	jr z, .skipWakingUpEnemyParty
-; if it's a trainer battle
-	ld hl, wEnemyMon1Status
-	call WakeUpEntireParty
-.skipWakingUpEnemyParty
-	ld hl, wBattleMonStatus
-	ld a, [hl]
-	and b ; remove Sleep status
-	ld [hl], a
-	ld hl, wEnemyMonStatus
-	ld a, [hl]
-	and b ; remove Sleep status
-	ld [hl], a
-	call LoadScreenTilesFromBuffer2 ; restore saved screen
-	ld a, [wWereAnyMonsAsleep]
-	and a ; were any pokemon asleep before playing the flute?
-	ld hl, PlayedFluteNoEffectText
-	jp z, PrintText ; if no pokemon were asleep
-; if some pokemon were asleep
-	ld hl, PlayedFluteHadEffectText
-	call PrintText
-	ld a, [wLowHealthAlarm]
-	and $80
-	jr nz, .skipMusic
-	call WaitForSoundToFinish ; wait for sound to end
-	farcall Music_PokeFluteInBattle ; play in-battle pokeflute music
-.musicWaitLoop ; wait for music to finish playing
-	ld a, [wChannelSoundIDs + CHAN7]
-	and a ; music off?
-	jr nz, .musicWaitLoop
-.skipMusic
-	ld hl, FluteWokeUpText
+.noMareepToShear
+	ld hl, UsedShearsNoEffectText
 	jp PrintText
 
-; wakes up all party pokemon
-; INPUT:
-; hl must point to status of first pokemon in party (player's or enemy's)
-; b must equal ~SLP
-; [wWereAnyMonsAsleep] should be initialized to 0
-; OUTPUT:
-; [wWereAnyMonsAsleep]: set to 1 if any pokemon were asleep
-WakeUpEntireParty:
-	ld de, PARTYMON_STRUCT_LENGTH
-	ld c, PARTY_LENGTH
-.loop
-	ld a, [hl]
-	push af
-	and SLP_MASK
-	jr z, .notAsleep
-	ld a, 1
-	ld [wWereAnyMonsAsleep], a ; indicate that a pokemon had to be woken up
-.notAsleep
-	pop af
-	and b ; remove Sleep status
-	ld [hl], a
-	add hl, de
-	dec c
-	jr nz, .loop
-	ret
-
-Route12SnorlaxFluteCoords:
-	dbmapcoord  9, 62 ; one space West of Snorlax
-	dbmapcoord 10, 61 ; one space North of Snorlax
-	dbmapcoord 10, 63 ; one space South of Snorlax
-	dbmapcoord 11, 62 ; one space East of Snorlax
+Route12MareepShearsCoords:
+	dbmapcoord  9, 62 ; one space West of Mareep
+	dbmapcoord 10, 61 ; one space North of Mareep
+	dbmapcoord 10, 63 ; one space South of Mareep
+	dbmapcoord 11, 62 ; one space East of Mareep
 	db -1 ; end
 
-Route16SnorlaxFluteCoords:
-	dbmapcoord 27, 10 ; one space East of Snorlax
-	dbmapcoord 25, 10 ; one space West of Snorlax
+Route16MareepShearsCoords:
+	dbmapcoord 27, 10 ; one space East of Mareep
+	dbmapcoord 25, 10 ; one space West of Mareep
 	db -1 ; end
 
-PlayedFluteNoEffectText:
-	text_far _PlayedFluteNoEffectText
+UsedShearsNoEffectText:
+	text_far _UsedShearsNoEffectText
 	text_end
 
-FluteWokeUpText:
-	text_far _FluteWokeUpText
+UsedShearsHadEffectText:
+	text_far _UsedShearsHadEffectText
 	text_end
-
-PlayedFluteHadEffectText:
-	text_far _PlayedFluteHadEffectText
-	text_promptbutton
-	text_asm
-	ld a, [wIsInBattle]
-	and a
-	jr nz, .done
-; play out-of-battle pokeflute music
-	ld a, SFX_STOP_ALL_MUSIC
-	call PlaySound
-	ld a, SFX_POKEFLUTE
-	ld c, BANK(SFX_Pokeflute)
-	call PlayMusic
-.musicWaitLoop ; wait for music to finish playing
-	ld a, [wChannelSoundIDs + CHAN3]
-	cp SFX_POKEFLUTE
-	jr z, .musicWaitLoop
-	call PlayDefaultMusic ; start playing normal music again
-.done
-	jp TextScriptEnd ; end text
 
 ItemUseCoinCase:
 	ld a, [wIsInBattle]

@@ -51,20 +51,20 @@ Route11Gate2FLeftBinocularsText:
 	ld a, [wSpritePlayerStateData1FacingDirection]
 	cp SPRITE_FACING_UP
 	jp nz, GateUpstairsScript_PrintIfFacingUp
-	CheckEvent EVENT_BEAT_ROUTE12_SNORLAX
-	ld hl, .SnorlaxText
+	CheckEvent EVENT_BEAT_ROUTE12_MAREEP
+	ld hl, .MareepText
 	jr z, .print
-	ld hl, .NoSnorlaxText
+	ld hl, .NoMareepText
 .print
 	call PrintText
 	jp TextScriptEnd
 
-.SnorlaxText:
-	text_far _Route11Gate2FLeftBinocularsSnorlaxText
+.MareepText:
+	text_far _Route11Gate2FLeftBinocularsMareepText
 	text_end
 
-.NoSnorlaxText:
-	text_far _Route11Gate2FLeftBinocularsNoSnorlaxText
+.NoMareepText:
+	text_far _Route11Gate2FLeftBinocularsNoMareepText
 	text_end
 
 Route11Gate2FRightBinocularsText:
