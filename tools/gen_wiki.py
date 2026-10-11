@@ -2,17 +2,20 @@
 """Generate a GitHub wiki reference for Pokemon Sparkling Pink.
 
 Reads the disassembly (base stats, learnsets, move data, TM/HM lists, wild
-encounter tables) and emits two GitHub-flavoured Markdown files:
+encounter tables, trainer parties) and emits three GitHub-flavoured Markdown
+files:
 
     POKEDEX.md   every Pokemon: typing, base-stat meters, where it lives,
                  full move table
     MOVES.md     every move: stats, in-game effect text, who learns it
+    TRAINERS.md  every trainer class: each party the game builds, with the
+                 moves that Pokemon actually goes into battle with
 
 They are split because github.com stops rendering Markdown past 512 KiB; a
-single combined document is ~660 KiB and would show as raw text.
+single combined document would show as raw text.
 
 Usage:
-    tools/gen_wiki.py                     # write POKEDEX.md + MOVES.md
+    tools/gen_wiki.py                     # write POKEDEX.md + MOVES.md + TRAINERS.md
     tools/gen_wiki.py --outdir wiki       # write them elsewhere
     tools/gen_wiki.py --check-only        # parse + validate, write nothing
 """
@@ -45,6 +48,7 @@ PLACEHOLDER_POWER = {"OHKO_EFFECT", "SUPER_FANG_EFFECT", "SPECIAL_DAMAGE_EFFECT"
 
 BAR_CELLS = 20          # width of a base-stat meter
 BAR_SCALE = 255         # Gen 1 base stats top out at 255
+NUM_MOVE_SLOTS = 4      # move slots per Pokemon, same as the game's NUM_MOVES
 EIGHTHS = "▏▎▍▌▋▊▉█"    # partial-block ramp for the fractional cell
 GROWTH_LABELS = {
     "GROWTH_MEDIUM_FAST": "Medium Fast", "GROWTH_MEDIUM_SLOW": "Medium Slow",
@@ -65,10 +69,20 @@ ANY_WATER = "Any water"
 
 # Map header labels are the only per-floor name the game has (the town map
 # names whole dungeons), so they are split into words and patched up here.
-WORD_FIXUPS = {"Pokemon": "Pokémon", "Mt": "Mt.", "Digletts": "Diglett's"}
+WORD_FIXUPS = {"Pokemon": "Pokémon", "Mt": "Mt.", "Digletts": "Diglett's",
+               # the ship is "S.S.ANNE" in data/maps/names.asm, and its floors
+               # are only ever label-split ("SSAnneB1FRooms")
+               "SSAnne": "S.S. Anne", "FRooms": "F Rooms"}
+
+# TrainerNames spells these without the space that reads naturally.
+TRAINER_NAME_FIXUPS = {
+    "Jr.Trainer♂": "Jr. Trainer♂", "Jr.Trainer♀": "Jr. Trainer♀",
+    "Prof.Oak": "Prof. Oak", "Lt.Surge": "Lt. Surge",
+}
 
 POKEDEX_FILE = "POKEDEX.md"
 MOVES_FILE = "MOVES.md"
+TRAINERS_FILE = "TRAINERS.md"
 
 
 # ---------------------------------------------------------------- helpers
@@ -128,6 +142,10 @@ class Repo:
         self.map_names = self._map_names()
         self.wild = self._wild_encounters()
         self.rod = self._fishing()
+        self.classes = self._trainer_classes()
+        self.parties = self._trainer_parties()
+        self.special_moves = self._special_moves()
+        self.places = self._trainer_places()
         self._crosslink()
 
     # -- file access
@@ -183,11 +201,12 @@ class Repo:
                 "base_exp": int(re.search(r"db (\d+) ; base exp", src).group(1)),
                 "growth": re.search(r"db (GROWTH_\w+)", src).group(1),
                 "pic": re.search(r"dw (\w+)PicFront", src).group(1),
-                "start_moves": [m.strip() for m in re.search(
+                # the four slots as stored -- NO_MOVE is a real, empty slot
+                "start_slots": [m.strip() for m in re.search(
                     r"^\s*db ([\w, ]+); level 1 learnset", src, re.M).group(1).split(",")],
                 "tmhm": self._tmhm_block(src),
             })
-            mons[-1]["start_moves"] = [m for m in mons[-1]["start_moves"]
+            mons[-1]["start_moves"] = [m for m in mons[-1]["start_slots"]
                                        if m and m != "NO_MOVE"]
         return mons
 
@@ -320,10 +339,14 @@ class Repo:
             if m:
                 labels[m.group(2)] = m.group(1)
         out = []
+        self.map_labels = labels          # map const -> header label
+        self.label_names = {}             # header label -> display name
         for const in self._map_consts():
             label = labels.get(const, camel(const))
             name = names.get(label + "Name")
-            out.append(self._map_text(name) if name else self._split_label(label))
+            display = self._map_text(name) if name else self._split_label(label)
+            self.label_names[label] = display
+            out.append(display)
         return out
 
     @staticmethod
@@ -335,12 +358,21 @@ class Repo:
     @staticmethod
     def _split_label(label):
         """'SeafoamIslandsB1F' -> 'Seafoam Islands B1F'.  The floor is peeled
-        off first so `B1F` is not split into three words."""
-        m = re.match(r"(.*?)(B?\d+F)$", label)
-        base, floor = (m.group(1), m.group(2)) if m else (label, "")
+        off first so `B1F` is not split into three words; it can also sit
+        mid-label, as in 'SSAnne1FRooms'."""
+        # a floor mid-label only counts when a word follows it ("SSAnne1FRooms",
+        # not "Route16FlyHouse")
+        m = re.match(r"(.*?)(B?\d+F)([A-Z]\w*)?$", label)
+        base, floor, tail = (m.group(1), m.group(2), m.group(3)) if m else (label, "", "")
         words = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", " ", base).split()
-        words = [re.sub(r"(?<=[a-z])(?=\d)", " ", w) for w in words]
-        return " ".join(WORD_FIXUPS.get(w, w) for w in words + ([floor] if floor else []))
+        # re-split after separating digits, so a word like "SSAnne1" is looked
+        # up in WORD_FIXUPS as "SSAnne"
+        words = " ".join(re.sub(r"(?<=[a-z])(?=\d)", " ", w) for w in words).split()
+        if floor:
+            words.append(floor)          # 'S.S. Anne 1F Rooms'
+        if tail:
+            words += re.sub(r"(?<=[a-z0-9])(?=[A-Z])", " ", tail).split()
+        return " ".join(WORD_FIXUPS.get(w, w) for w in words)
 
     # -- data/wild/grass_water.asm : one grass and one water table per map
     def _wild_encounters(self):
@@ -409,6 +441,219 @@ class Repo:
                            "how": "Super Rod", "mons": groups[group]})
         return {"old": old, "good": good, "super": super_}
 
+    # -- constants/trainer_constants.asm : trainer class ids, in id order
+    def _trainer_classes(self):
+        """`trainer_const FOO` defines both FOO and OPP_FOO.  NOBODY is class 0
+        and has no entry in TrainerDataPointers, so pointer i is class i + 1.
+        The display name comes from TrainerNames, which is index-aligned."""
+        consts = re.findall(r"^\s*trainer_const\s+(\w+)",
+                            self.read("constants/trainer_constants.asm"), re.M)
+        names = re.findall(r'^\tli "(.*)"', self.read("data/trainers/names.asm"), re.M)
+        src = self.read("data/trainers/parties.asm")
+        pointers = re.findall(
+            r"^\s*dw\s+(\w+)",
+            src.split("TrainerDataPointers:")[1].split("assert_table_length")[0], re.M)
+        if not len(consts) - 1 == len(names) == len(pointers):
+            raise SystemExit(f"trainer tables are misaligned: {len(consts) - 1} classes, "
+                             f"{len(names)} names, {len(pointers)} pointers")
+        out = []
+        for i, (const, raw, label) in enumerate(zip(consts[1:], names, pointers)):
+            display = titlecase(raw)
+            out.append({
+                "id": i + 1, "const": const, "label": label,
+                "display": TRAINER_NAME_FIXUPS.get(display, display),
+            })
+        for cls in out:
+            # the heading carries the class id so Jr. Trainer♂ and Jr. Trainer♀
+            # do not slug to the same anchor
+            cls["anchor"] = f'{cls["id"]}-{slug(cls["display"])}'
+        return out
+
+    # -- data/trainers/parties.asm : one party per trainer number, per class
+    #   db level, species, species, ..., 0           whole team at one level
+    #   db $FF, level, species, level, species, ..., 0   per-mon levels
+    def _trainer_parties(self):
+        body = self.read("data/trainers/parties.asm").split(
+            "assert_table_length NUM_TRAINERS", 1)[1]
+        out = {}
+        for m in re.finditer(r"^(\w+):\n(.*?)(?=\n\w+:|\Z)", body, re.M | re.S):
+            parties, note = [], []
+            for raw in m.group(2).splitlines():
+                line = raw.strip()
+                if line.startswith(";"):
+                    note.append(line[1:].strip())
+                    continue
+                if not line.startswith("db "):
+                    continue
+                fields = [f.strip() for f in line.split(";")[0][3:].split(",") if f.strip()]
+                if fields and fields[0] == "$FF":
+                    rest = fields[1:]
+                    mons = [(int(rest[i]), rest[i + 1]) for i in range(0, len(rest) - 1, 2)]
+                else:
+                    mons = [(int(fields[0]), sp) for sp in fields[1:] if sp != "0"]
+                parties.append({
+                    "no": len(parties) + 1, "where": " ".join(note), "mons": mons,
+                    # a missing 0 runs the loader into the next party's data
+                    "terminated": fields[-1:] == ["0"],
+                })
+                note = []
+            out[m.group(1)] = parties
+        return out
+
+    # -- data/trainers/special_moves.asm : per-trainer move overrides
+    #   db class, trainer number
+    #   db party mon (1-based), move slot (1-based), move
+    #   db 0
+    def _special_moves(self):
+        body = self.read("data/trainers/special_moves.asm").split(
+            "SpecialTrainerMoves:", 1)[1]
+        out, note, cur = {}, [], None
+        for raw in body.splitlines():
+            line = raw.strip()
+            if line.startswith(";"):
+                note.append(line[1:].strip())
+                continue
+            if not line.startswith("db "):
+                continue
+            fields = [f.strip() for f in line.split(";")[0][3:].split(",") if f.strip()]
+            if fields == ["-1"]:
+                break
+            if len(fields) == 2:                      # class, trainer number
+                cur = {"class": fields[0], "no": int(fields[1]), "moves": [],
+                       "note": " ".join(note), "terminated": False}
+                out[(fields[0], int(fields[1]))] = cur
+            elif fields == ["0"]:
+                if cur is not None:
+                    cur["terminated"] = True
+            elif len(fields) == 3 and cur is not None:
+                cur["moves"].append((int(fields[0]), int(fields[1]), fields[2]))
+            note = []
+        return out
+
+    # -- where each (class, trainer number) is actually fought
+    def _trainer_places(self):
+        """Every map is walked in id order and asked two questions: does one of
+        its `object_event`s carry this trainer (`OPP_CLASS, n`), and does one of
+        its scripts start this battle by hand?  A class and number can be reused
+        across maps, and a gym leader's rematch exists only in a script -- no
+        object points at it."""
+        places = defaultdict(list)
+        label_of = {cls["const"]: cls["label"] for cls in self.classes}
+
+        def add(const, no, where):
+            # keyed by party table, not by class: two classes can share one
+            # (Petrel fights with YoungsterData), and it is the table that is
+            # placed on the map
+            label = label_of.get(const)
+            if label and where not in places[(label, no)]:
+                places[(label, no)].append(where)
+
+        for const in self._map_consts():
+            label = self.map_labels.get(const)
+            where = self.label_names.get(label)
+            if where is None:
+                continue
+            # `object_event x, y, SPRITE, WALK, DIR, TEXT_ID, OPP_CLASS, n`
+            for m in re.finditer(r"^\s*object_event\s+(.*)$",
+                                 self._read_map_file("data/maps/objects", label), re.M):
+                fields = [f.strip() for f in m.group(1).split(",")]
+                if len(fields) >= 8 and fields[6].startswith("OPP_"):
+                    add(fields[6][4:], int(fields[7]), where)
+            for const_, no in self._scripted_battles(label):
+                add(const_, no, where)
+        return places
+
+    def _read_map_file(self, folder, label):
+        """Reads <folder>/<label>.asm, or "" when the map has no such file."""
+        path = os.path.join(self.root, folder, label + ".asm")
+        return self.read(os.path.join(folder, label + ".asm")) if os.path.exists(path) else ""
+
+    def _scripted_battles(self, label):
+        """Battles a script starts by hand: `ld a, OPP_CLASS` then
+        `ld [wCurOpponent], a`, and then the party number.  The number is a
+        constant, a starter ladder (`ld a, $n` branches -- which one runs
+        depends on the player's starter, so all of them count), or a
+        `db STARTERn, n` table read by a helper routine."""
+        out = []
+        for fn in sorted(os.listdir(os.path.join(self.root, "scripts"))):
+            if not re.fullmatch(rf"{re.escape(label)}(_\d+)?\.asm", fn):
+                continue
+            lines = self.read(f"scripts/{fn}").splitlines()
+            for i, line in enumerate(lines):
+                if not re.match(r"\s*ld \[wCurOpponent\], a", line):
+                    continue
+                const = None
+                for back in reversed(lines[max(0, i - 8):i]):
+                    m = re.match(r"\s*ld a, (OPP_\w+)\s*$", back)
+                    if m:                       # the battle names its class first
+                        const = m.group(1)[4:]
+                        break
+                if const is None:
+                    continue
+                numbers = []
+                for ahead in lines[i + 1:i + 26]:
+                    if (re.match(r"\s*(ret\b|ld \[wCurOpponent\], a)", ahead)
+                            or re.match(r"^\w+:", ahead)
+                            or re.match(r"\s*ld a, OPP_\w+\s*$", ahead)):
+                        break                   # the next battle starts
+                    m = re.match(r"\s*ld hl, \.(\w+)\s*$", ahead)
+                    if m:
+                        numbers += self._starter_table(lines, i, m.group(1))
+                        continue
+                    m = re.match(r"\s*ld a, (\$\w+|\d+)\s*$", ahead)
+                    if m:
+                        numbers.append(int(m.group(1)[1:], 16) if m.group(1)[0] == "$"
+                                       else int(m.group(1)))
+                        continue
+                    if re.match(r"\s*ld \[wTrainerNo\], a", ahead):
+                        break                   # the number is stored right here
+                if numbers:
+                    out += [(const, no) for no in dict.fromkeys(numbers)]
+        return out
+
+    @staticmethod
+    def _starter_table(lines, site, label):
+        """The `db STARTERn, trainer number` rows of the `.Label:` table that
+        belongs to this battle, which sits a few lines below it."""
+        pat = re.compile(rf"\s*\.{re.escape(label)}:")
+        start = next((j for j in range(site, len(lines)) if pat.match(lines[j])), None)
+        if start is None:
+            return []
+        out = []
+        for line in lines[start + 1:]:
+            if not line.strip() or line.strip().startswith(";"):
+                continue
+            m = re.match(r"\s*db\s+\w+,\s*(\d+)", line)
+            if not m:
+                break
+            out.append(int(m.group(1)))
+        return out
+
+    # -- the moves a trainer's Pokemon enters battle with
+    def trainer_moveset(self, species, level, overrides=None):
+        """The starting four moves, then every level-up move at or below
+        `level` -- oldest slot dropped once all four are full -- then the
+        special-move overrides.  Mirrors WriteMonMoves in evos_moves.asm,
+        including the stop at the first move above the level."""
+        mon = self.mon_by_const.get(camel(species))
+        if mon is None:
+            return None
+        slots = list(mon["start_slots"])
+        while len(slots) < NUM_MOVE_SLOTS:
+            slots.append("NO_MOVE")
+        for lv, move in mon["learnset"]:
+            if lv == "EVOLUTION_MOVE" or int(lv) > level:
+                break
+            if move in slots:
+                continue
+            if "NO_MOVE" in slots:
+                slots[slots.index("NO_MOVE")] = move
+            else:
+                slots = slots[1:] + [move]
+        for slot, move in (overrides or {}).items():
+            slots[slot - 1] = move
+        return slots
+
     # -- link the per-dex tables to the per-species tables
     def _crosslink(self):
         species_idx = {name: i for i, name in enumerate(self.species)}
@@ -416,6 +661,7 @@ class Repo:
         self.move_of = by_const
 
         by_species = {camel(mon["dex_const"]): mon for mon in self.mons}
+        self.mon_by_const = by_species
         for mon in self.mons:
             mon["dex_no"] = self.dex[mon["dex_const"]]
             raw = DISPLAY_OVERRIDES.get(mon["dex_const"],
@@ -518,10 +764,10 @@ class Wiki:
 
     # -- POKEDEX.md
     def pokedex(self):
-        o = ["# Pokémon Sparkling Pink — Pokédex\n"]
+        o = ["# Pokémon Sparkling Pink Pokédex\n"]
         o.append(f'<sub>{len(self.r.mons)} Pokémon · base stats, typing and moves · '
                  f'the move list is in [{MOVES_FILE}]({MOVES_FILE})</sub>\n')
-        o.append("**STAB** moves are in **bold** — damaging moves whose type matches "
+        o.append("**STAB** moves are in **bold**: damaging moves whose type matches "
                  "the Pokémon's, including TM/HM moves. Status moves never get STAB, so "
                  "they are never bold. Stat meters run 0–255, the Gen 1 base-stat scale. "
                  "Rows marked `1` are the starting moveset, `Evo` is learned on "
@@ -577,30 +823,30 @@ class Wiki:
         return "\n".join(o)
 
     def _evolution_lines(self, mon):
-        """'Evolves into X — level 16', plus the inverse for pre-evolutions."""
+        """'Evolves into X by level 16', plus the inverse for pre-evolutions."""
         out = []
         origins = self.r.evolves_from.get(mon["anchor"], [])
         if origins:
-            links = " · ".join(f"{self.mon_link(src, local=True)} — "
+            links = " · ".join(f"{self.mon_link(src, local=True)} by "
                                f"{self._evolution_method(evo)}"
                                for src, evo in origins)
             out.append(f"**Evolves from:** {links}  ")
         targets = [(tgt, evo) for tgt, evo in mon["evolutions"] if tgt is not None]
         if targets:
-            links = " · ".join(f"{self.mon_link(tgt, local=True)} — "
+            links = " · ".join(f"{self.mon_link(tgt, local=True)} by "
                                f"{self._evolution_method(evo)}"
                                for tgt, evo in targets)
             out.append(f"**Evolves into:** {links}  ")
         return out
 
     def _wild_lines(self, mon):
-        """'**Wild:** Route 1 — Grass, Lv 2–5', and a second line for the rods,
+        """'**Wild:** Route 1, Grass, Lv 2–5', and a second line for the rods,
         which are their own kind of hunt and can run long."""
         walking, rods = [], []
         for e in self.r.wild_by_mon[mon["anchor"]]:
             levels = (f'Lv {e["low"]}' if e["low"] == e["high"]
                       else f'Lv {e["low"]}–{e["high"]}')
-            entry = f'{e["where"]} — {e["how"]}, {levels}'
+            entry = f'{e["where"]}, {e["how"]}, {levels}'
             (rods if e["how"].endswith("Rod") else walking).append(entry)
         out = []
         if walking:
@@ -654,7 +900,7 @@ class Wiki:
 
     # -- MOVES.md
     def moves(self):
-        o = ["# Pokémon Sparkling Pink — Move list\n"]
+        o = ["# Pokémon Sparkling Pink Move list\n"]
         o.append(f'<sub>{len(self.r.moves)} moves · who learns what · '
                  f'Pokémon stat pages are in [{POKEDEX_FILE}]({POKEDEX_FILE})</sub>\n')
         o.append("| Move | Type | Power | Acc | PP | Effect |")
@@ -692,14 +938,90 @@ class Wiki:
             o.append("_Not learned by any Pokémon._\n")
         return "\n".join(o)
 
+    # -- TRAINERS.md
+    def class_link(self, cls, local=True):
+        target = f'#{cls["anchor"]}' if local else f'{TRAINERS_FILE}#{cls["anchor"]}'
+        return f'[{cls["display"]}]({target})'
+
+    def trainers(self):
+        parties = sum(len(p) for p in self.r.parties.values())
+        o = ["# Pokémon Sparkling Pink Trainer list\n"]
+        o.append(f'<sub>{len(self.r.classes)} trainer classes · {parties} parties · '
+                 f'Pokémon stat pages are in [{POKEDEX_FILE}]({POKEDEX_FILE}), '
+                 f'move pages in [{MOVES_FILE}]({MOVES_FILE})</sub>\n')
+        o.append("## Contents\n")
+        o.append(self._trainer_contents())
+        o.append("\n## Trainers\n")
+        for cls in self.r.classes:
+            o.append("---\n")
+            o.append(self._class_section(cls))
+        return "\n".join(o)
+
+    def _trainer_contents(self, cols=3):
+        o = ["| " + " | ".join(["#", "Trainer class"] * cols) + " |",
+             "|" + "---:|:--|" * cols]
+        for chunk in (self.r.classes[i:i + cols]
+                      for i in range(0, len(self.r.classes), cols)):
+            row = []
+            for cls in chunk:
+                row += [str(cls["id"]), self.class_link(cls)]
+            row += ["", ""] * (cols - len(chunk))
+            o.append("| " + " | ".join(row) + " |")
+        return "\n".join(o)
+
+    def _class_section(self, cls):
+        o = [f'### #{cls["id"]} {cls["display"]}\n']
+        # two classes can point at one party table (the last few reused a
+        # normal class's data rather than adding a new set of parties)
+        twins = [c for c in self.r.classes if c["label"] == cls["label"] and c is not cls]
+        if twins:
+            o.append("<sub>Same party table as "
+                     + ", ".join(self.class_link(t) for t in twins) + ".</sub>\n")
+        for party in self.r.parties.get(cls["label"], []):
+            o.append(self._party_block(cls, party))
+        return "\n".join(o)
+
+    def _party_block(self, cls, party):
+        block = self.r.special_moves.get((cls["const"], party["no"]))
+        overrides = defaultdict(dict)
+        for mon_no, slot, move in (block or {}).get("moves", []):
+            overrides[mon_no][slot] = move
+        tags = list(self.r.places.get((cls["label"], party["no"]), []))
+        if not tags:
+            # no object and no script asks for this party.  The comment the
+            # table carries is often stale, so say what the data says.
+            tags.append("*not used*")
+        if block and "rematch" in block["note"].lower():
+            tags.append("Rematch")
+        head = f'**{party["no"]}**' + (f' · {" · ".join(tags)}' if tags else "")
+        o = [head, "", "| Lv | Pokémon | Moves |", "|---:|:--|:--|"]
+        if not party["mons"]:
+            o.append("| | _(no Pokémon)_ | |")
+        for i, (level, species) in enumerate(party["mons"], start=1):
+            mon = self.r.mon_by_const.get(camel(species))
+            slots = self.r.trainer_moveset(species, level, overrides.get(i)) or []
+            cells = []
+            for move in slots:
+                if move == "NO_MOVE":
+                    continue               # an empty slot is simply left out
+                if move in self.r.move_of:
+                    cells.append(self.move_link(self.r.move_of[move]))
+                else:                      # unknown constant: show it, don't hide it
+                    cells.append(move)
+            o.append(f'| {level} | {self.mon_link(mon) if mon else titlecase(species)} '
+                     f'| {" · ".join(cells)} |')
+        o.append("")
+        return "\n".join(o)
+
 
 # ---------------------------------------------------------------- validation
 
-def validate(pokedex, moves):
+def validate(pokedex, moves, trainers):
     """Catch the failure modes that would silently break the wiki on GitHub:
     anchors that collide, and links that point nowhere."""
+    docs = ((POKEDEX_FILE, pokedex), (MOVES_FILE, moves), (TRAINERS_FILE, trainers))
     problems = []
-    for name, text in ((POKEDEX_FILE, pokedex), (MOVES_FILE, moves)):
+    for name, text in docs:
         headings = re.findall(r"^#{2,3} (.+)$", text, re.M)
         seen = {}
         for heading in headings:
@@ -708,12 +1030,10 @@ def validate(pokedex, moves):
                 problems.append(f"{name}: duplicate anchor #{s} "
                                 f"({seen[s]!r} and {heading!r})")
             seen[s] = heading
-    # every link must resolve, in this file or across the pair
-    local = {
-        POKEDEX_FILE: {slug(h) for h in re.findall(r"^#{2,3} (.+)$", pokedex, re.M)},
-        MOVES_FILE: {slug(h) for h in re.findall(r"^#{2,3} (.+)$", moves, re.M)},
-    }
-    for name, text in ((POKEDEX_FILE, pokedex), (MOVES_FILE, moves)):
+    # every link must resolve, in this file or across the set
+    local = {name: {slug(h) for h in re.findall(r"^#{2,3} (.+)$", text, re.M)}
+             for name, text in docs}
+    for name, text in docs:
         for target in re.findall(r"\]\((?!https?:)([^)]+)\)", text):
             if target.startswith("#"):
                 if target[1:] not in local[name]:
@@ -724,6 +1044,60 @@ def validate(pokedex, moves):
                     problems.append(f"{name}: link to unknown file {fname}")
                 elif anchor and anchor not in local[fname]:
                     problems.append(f"{name}: dead cross-file anchor {target}")
+    return problems
+
+
+def validate_trainers(repo):
+    """The trainer tables are read by hand-written loaders with no bounds
+    checks, so a bad row is silent in-game.  Check the rows the wiki mirrors."""
+    problems = []
+    for (const, no), block in repo.special_moves.items():
+        cls = next((c for c in repo.classes if c["const"] == const), None)
+        if cls is None:
+            problems.append(f"special_moves.asm: unknown trainer class {const}")
+            continue
+        party = next((p for p in repo.parties.get(cls["label"], [])
+                      if p["no"] == no), None)
+        if party is None:
+            problems.append(f"special_moves.asm: {const} {no} has no party")
+            continue
+        if not block["terminated"]:
+            # the loader only stops on a 0 byte, so it runs into the next
+            # trainer's row and writes move data over unrelated WRAM
+            problems.append(f"special_moves.asm: {const} {no} has no terminating "
+                            f"db 0, so its moves run into the next entry")
+        for mon_no, slot, move in block["moves"]:
+            if mon_no > len(party["mons"]):
+                problems.append(f"special_moves.asm: {const} {no} edits party mon "
+                                f"{mon_no}, but the party has {len(party['mons'])}")
+            if not 1 <= slot <= NUM_MOVE_SLOTS:
+                problems.append(f"special_moves.asm: {const} {no} writes move slot "
+                                f"{slot}, past the end of the mon's move list")
+            if move not in repo.move_of:
+                problems.append(f"special_moves.asm: {const} {no}: unknown move {move}")
+    # a map can only ask for a party number the class actually has
+    for (label, no), maps in repo.places.items():
+        if no > len(repo.parties.get(label, [])):
+            problems.append(f"{label} {no} is placed on {'/'.join(maps)} but the "
+                            f"class only has {len(repo.parties.get(label, []))} parties")
+    for cls in repo.classes:
+        for party in repo.parties.get(cls["label"], []):
+            if not party["mons"]:
+                problems.append(f"parties.asm: {cls['label']} {party['no']} is empty")
+            if not party["terminated"]:
+                problems.append(f"parties.asm: {cls['label']} {party['no']} has no "
+                                f"terminating 0, so it runs into the next party")
+            for _, species in party["mons"]:
+                if camel(species) not in repo.mon_by_const:
+                    problems.append(f"parties.asm: {cls['label']} {party['no']}: "
+                                    f"unknown species {species}")
+    # WriteMonMoves stops at the first move above the mon's level, so an
+    # unsorted learnset silently cuts the rest of the list off
+    for mon in repo.mons:
+        levels = [int(lv) for lv, _ in mon["learnset"] if lv != "EVOLUTION_MOVE"]
+        if levels != sorted(levels):
+            problems.append(f"{mon['display']}: learnset is not in ascending level "
+                            f"order, so later moves can never be learned")
     return problems
 
 
@@ -745,20 +1119,22 @@ def main(argv=None):
 
     repo = Repo(args.root)
     wiki = Wiki(repo)
-    pokedex, moves = wiki.pokedex(), wiki.moves()
+    pokedex, moves, trainers = wiki.pokedex(), wiki.moves(), wiki.trainers()
 
-    problems = validate(pokedex, moves)
+    problems = validate(pokedex, moves, trainers) + validate_trainers(repo)
     for problem in problems:
         print(f"warning: {problem}", file=sys.stderr)
 
     print(f'{len(repo.mons)} Pokémon, {len(repo.moves)} moves, '
           f'{len(repo.learned_by)} moves with a learner, '
-          f'{len(repo.wild_by_mon)} Pokémon in the wild')
+          f'{len(repo.wild_by_mon)} Pokémon in the wild, '
+          f'{len(repo.classes)} trainer classes')
     if args.check_only:
         return 1 if problems else 0
 
     os.makedirs(args.outdir, exist_ok=True)
-    for name, text in ((POKEDEX_FILE, pokedex), (MOVES_FILE, moves)):
+    for name, text in ((POKEDEX_FILE, pokedex), (MOVES_FILE, moves),
+                       (TRAINERS_FILE, trainers)):
         path = os.path.join(args.outdir, name)
         with open(path, "w", encoding="utf-8") as fh:
             fh.write(text)

@@ -813,7 +813,7 @@ HitmonchanEvosMoves:
 	db 38, ICE_PUNCH
 	db 43, THUNDERPUNCH
 	db 48, MEGA_PUNCH
-	db 53, COUNTER
+	db 56, COUNTER
 	db 0
 
 HitmontopEvosMoves:
@@ -2225,7 +2225,6 @@ RapidashEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 30, TAIL_WHIP
 	db 32, STOMP
 	db 35, GROWL
 	db 39, FIRE_SPIN

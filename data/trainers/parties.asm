@@ -56,7 +56,7 @@ TrainerDataPointers:
 	dw WhitneyData ; Whitney
 	dw StevenData ; Steven
 	dw RedData ; Red
-	dw YoungsterData ; Petrel
+	dw PetrelData ; Petrel
 	dw JessieJamesData ; Jessie & James
 	assert_table_length NUM_TRAINERS
 
@@ -438,7 +438,7 @@ TamerData:
 	db 34, SANDSLASH, ARBOK, 0
 	db 33, ARBOK, SANDSLASH, ARBOK, 0
 ; Viridian Gym
-	db 43, RHYHORN, 0
+	db 43, RHYDON, 0
 	db 39, ARBOK, TAUROS, 0
 ; Victory Road 2F
 	db 44, PERSIAN, GOLDUCK, 0
@@ -650,23 +650,23 @@ MistyData:
 	db $FF, 64, GYARADOS, 65, VAPOREON, 65, GOLDUCK, 65, SEAKING, 66, STARMIE, 0
 
 LtSurgeData:
-	db $FF, 21, VOLTORB, 18, PIKACHU, 24, RAICHU, 0
+	db $FF, 21, ELEKID, 18, VOLTORB, 24, RAICHU, 0
 	db $FF, 66, ELECTRODE, 67, ELECTABUZZ, 67, JOLTEON, 67, MAGNEZONE, 68, RAICHU, 0
 
 ErikaData:
-	db $FF, 29, VICTREEBEL, 24, TANGELA, 29, VILEPLUME, 0
+	db $FF, 29, VICTREEBEL, 24, TANGELA, 29, BELLOSSOM, 0
 	db $FF, 68, VICTREEBEL, 69, VILEPLUME, 69, TANGELA, 69, LEAFEON, 70, BELLOSSOM, 0
 
 KogaData:
-	db $FF, 37, KOFFING, 40, MUK, 37, KOFFING, 43, WEEZING, 0
+	db $FF, 37, KOFFING, 40, MUK, 37, VENOMOTH, 43, WEEZING, 0
 	db $FF, 70, MUK, 71, WEEZING, 71, ARBOK, 71, VENOMOTH, 72, CROBAT, 0
 
 BlaineData:
-	db $FF, 42, GROWLITHE, 42, RAPIDASH, 45, NINETALES, 47, ARCANINE, 0
+	db $FF, 42, MAGMAR, 42, RAPIDASH, 45, NINETALES, 47, ARCANINE, 0
 	db $FF, 74, NINETALES, 75, MAGMAR, 75, FLAREON, 75, ARCANINE, 76, RAPIDASH, 0
 
 SabrinaData:
-	db $FF, 38, KADABRA, 37, HYPNO, 38, BUTTERFREE, 43, ALAKAZAM, 0
+	db $FF, 38, KADABRA, 37, HYPNO, 40, BUTTERFREE, 43, ALAKAZAM, 0
 	db $FF, 72, HYPNO, 73, SLOWBRO, 73, MR_MIME, 73, JYNX, 74, ALAKAZAM, 0
 
 GentlemanData:
@@ -708,7 +708,7 @@ BlueData:
 	db $FF, 74, PIDGEOT, 75, ALAKAZAM, 75, RHYDON, 75, GYARADOS, 75, EXEGGUTOR, 76, ARCANINE, 0
 
 LoreleiData:
-	db $FF, 54, DEWGONG, 53, CLOYSTER, 54, WEAVILE, 56, JYNX, 56, LAPRAS, 0
+	db $FF, 54, LAPRAS, 53, CLOYSTER, 54, WEAVILE, 56, JYNX, 56, DEWGONG, 0
 
 ChannelerData:
 ; Unused
@@ -788,9 +788,14 @@ MarnieData:
 	db $FF, 33, FEAROW, 33, ARBOK, 35, MUK, 0
 
 JessieJamesData:
-; Mt. Moon B2F (replaces the ROCKET with a level 16 RATICATE)
+; Mt. Moon B2F
 	db 14, EKANS, MEOWTH, KOFFING, 0
 
 StevenData:
-; Mt. Moon 1F (replaces the HIKER)
+; Mt. Moon 1F
 	db 10, DIGLETT, SKARMORY, 0
+
+PetrelData:
+; Not used for now
+	db 35, SCIZOR, PORYGON2, HOUNDOOM, 0
+

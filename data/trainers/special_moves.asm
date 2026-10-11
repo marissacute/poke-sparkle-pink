@@ -39,13 +39,14 @@ SpecialTrainerMoves:
 	db 0
 
 	db ERIKA, 1
-	db 3, 3, MEGA_DRAIN
+	db 3, 2, MEGA_DRAIN
 	db 0
 
 	; Rematch
 	db ERIKA, 2
 	db 4, 4, RAZOR_LEAF
 	db 5, 3, PSYCHIC_M
+	db 0
 
 	db KOGA, 1
     db 4, 3, TOXIC
@@ -58,9 +59,10 @@ SpecialTrainerMoves:
 	db 2, 3, FAIRY_WIND
 	db 4, 2, TOXIC
 	db 5, 1, WING_ATTACK
+	db 0
 
 	db BLAINE, 1
-	db 2, 2, FLAMETHROWER
+	db 2, 3, FLAMETHROWER
 	db 3, 1, FLAMETHROWER
 	db 3, 4, CONFUSE_RAY
 	db 4, 1, AGILITY
@@ -73,6 +75,7 @@ SpecialTrainerMoves:
 	db 1, 1, CONFUSE_RAY
 	db 4, 1, FIRE_BLAST
 	db 5, 1, FIRE_BLAST
+	db 0
 
 	db SABRINA, 1
 	db 3, 3, PSYCHIC_M
@@ -85,6 +88,7 @@ SpecialTrainerMoves:
 	db 3, 4, PSYCHIC_M
 	db 4, 3, PSYCHIC_M
 	db 5, 4, SHADOW_BALL
+	db 0
 
 	db BLUE, 1
 	; Pidgeot
@@ -125,13 +129,14 @@ SpecialTrainerMoves:
 	db 0
 
 	db LORELEI, 1
-	db 1, 1, BUBBLEBEAM
-	db 3, 1, SURF
+	db 3, 1, ICE_PUNCH
 	db 4, 3, LOVELY_KISS
+	db 5, 1, SURF
 	db 5, 3, BLIZZARD
 	db 0
 
 	db BRUNO, 1
+	db 2, 4, MACH_PUNCH
 	db 4, 1, BODY_SLAM
 	db 5, 2, MEGA_PUNCH
 	db 0
@@ -139,12 +144,12 @@ SpecialTrainerMoves:
 	db AGATHA, 1
 	db 1, 1, CONFUSE_RAY
 	db 2, 1, PSYWAVE
-	db 4, 2, SHADOW_BALL
     db 5, 1, TOXIC
 	db 0
 
 	db LANCE, 1
 	db 2, 4, THUNDERBOLT
+	db 3, 1, DRAGON_SLAM
 	db 5, 1, BLIZZARD
 	db 0
 

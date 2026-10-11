@@ -1,8 +1,8 @@
-# Pokémon Sparkling Pink — Pokédex
+# Pokémon Sparkling Pink Pokédex
 
 <sub>202 Pokémon · base stats, typing and moves · the move list is in [MOVES.md](MOVES.md)</sub>
 
-**STAB** moves are in **bold** — damaging moves whose type matches the Pokémon's, including TM/HM moves. Status moves never get STAB, so they are never bold. Stat meters run 0–255, the Gen 1 base-stat scale. Rows marked `1` are the starting moveset, `Evo` is learned on evolution. **Wild** lists where a Pokémon can be met, with the method (grass, surf or which rod) and the levels it spans; `Any water` means that rod works on every fishable stretch of water.
+**STAB** moves are in **bold**: damaging moves whose type matches the Pokémon's, including TM/HM moves. Status moves never get STAB, so they are never bold. Stat meters run 0–255, the Gen 1 base-stat scale. Rows marked `1` are the starting moveset, `Evo` is learned on evolution. **Wild** lists where a Pokémon can be met, with the method (grass, surf or which rod) and the levels it spans; `Any water` means that rod works on every fishable stretch of water.
 
 ## Contents
 
@@ -85,7 +85,7 @@
 
 **Type:** Normal / Fairy  
 **Catch rate:** 170 · **Base EXP:** 76 · **Growth:** Medium Slow  
-**Evolves into:** [Jigglypuff](#2-jigglypuff) — level 16  
+**Evolves into:** [Jigglypuff](#2-jigglypuff) by level 16  
 
 #### Base stats
 
@@ -135,9 +135,9 @@
 
 **Type:** Normal / Fairy  
 **Catch rate:** 170 · **Base EXP:** 76 · **Growth:** Medium Slow  
-**Evolves from:** [Igglybuff](#1-igglybuff) — level 16  
-**Evolves into:** [Wigglytuff](#3-wigglytuff) — level 36  
-**Wild:** Mt. Moon B2F — Grass, Lv 5  
+**Evolves from:** [Igglybuff](#1-igglybuff) by level 16  
+**Evolves into:** [Wigglytuff](#3-wigglytuff) by level 36  
+**Wild:** Mt. Moon B2F, Grass, Lv 5  
 
 #### Base stats
 
@@ -187,8 +187,8 @@
 
 **Type:** Normal / Fairy  
 **Catch rate:** 50 · **Base EXP:** 109 · **Growth:** Medium Slow  
-**Evolves from:** [Jigglypuff](#2-jigglypuff) — level 36  
-**Wild:** Cerulean Cave 2F — Grass, Lv 54  
+**Evolves from:** [Jigglypuff](#2-jigglypuff) by level 36  
+**Wild:** Cerulean Cave 2F, Grass, Lv 54  
 
 #### Base stats
 
@@ -234,8 +234,8 @@
 
 **Type:** Electric  
 **Catch rate:** 190 · **Base EXP:** 89 · **Growth:** Medium Slow  
-**Evolves into:** [Magneton](#5-magneton) — level 16  
-**Wild:** Power Plant — Grass, Lv 5  
+**Evolves into:** [Magneton](#5-magneton) by level 16  
+**Wild:** Power Plant, Grass, Lv 5  
 
 #### Base stats
 
@@ -280,8 +280,8 @@
 
 **Type:** Electric / Steel  
 **Catch rate:** 60 · **Base EXP:** 161 · **Growth:** Medium Slow  
-**Evolves from:** [Magnemite](#4-magnemite) — level 16  
-**Evolves into:** [Magnezone](#6-magnezone) — level 36  
+**Evolves from:** [Magnemite](#4-magnemite) by level 16  
+**Evolves into:** [Magnezone](#6-magnezone) by level 36  
 
 #### Base stats
 
@@ -324,7 +324,7 @@
 
 **Type:** Electric / Steel  
 **Catch rate:** 60 · **Base EXP:** 161 · **Growth:** Medium Slow  
-**Evolves from:** [Magneton](#5-magneton) — level 36  
+**Evolves from:** [Magneton](#5-magneton) by level 36  
 
 #### Base stats
 
@@ -365,8 +365,8 @@
 
 **Type:** Dragon  
 **Catch rate:** 45 · **Base EXP:** 67 · **Growth:** Medium Slow  
-**Evolves into:** [Dragonair](#8-dragonair) — level 16  
-**Fishing:** Safari Zone East — Super Rod, Lv 5 · Safari Zone North — Super Rod, Lv 5 · Safari Zone West — Super Rod, Lv 5 · Safari Zone Center — Super Rod, Lv 5  
+**Evolves into:** [Dragonair](#8-dragonair) by level 16  
+**Fishing:** Safari Zone East, Super Rod, Lv 5 · Safari Zone North, Super Rod, Lv 5 · Safari Zone West, Super Rod, Lv 5 · Safari Zone Center, Super Rod, Lv 5  
 
 #### Base stats
 
@@ -413,8 +413,8 @@
 
 **Type:** Dragon  
 **Catch rate:** 45 · **Base EXP:** 144 · **Growth:** Medium Slow  
-**Evolves from:** [Dratini](#7-dratini) — level 16  
-**Evolves into:** [Dragonite](#9-dragonite) — level 38  
+**Evolves from:** [Dratini](#7-dratini) by level 16  
+**Evolves into:** [Dragonite](#9-dragonite) by level 38  
 
 #### Base stats
 
@@ -460,7 +460,7 @@
 
 **Type:** Dragon / Flying  
 **Catch rate:** 45 · **Base EXP:** 218 · **Growth:** Medium Slow  
-**Evolves from:** [Dragonair](#8-dragonair) — level 38  
+**Evolves from:** [Dragonair](#8-dragonair) by level 38  
 
 #### Base stats
 
@@ -506,8 +506,8 @@
 
 **Type:** Bug  
 **Catch rate:** 255 · **Base EXP:** 53 · **Growth:** Medium Fast  
-**Evolves into:** [Metapod](#11-metapod) — level 7  
-**Wild:** Route 2 — Grass, Lv 3 · Route 24 — Grass, Lv 7 · Route 25 — Grass, Lv 8 · Viridian Forest — Grass, Lv 4  
+**Evolves into:** [Metapod](#11-metapod) by level 7  
+**Wild:** Route 2, Grass, Lv 3 · Route 24, Grass, Lv 7 · Route 25, Grass, Lv 8 · Viridian Forest, Grass, Lv 4  
 
 #### Base stats
 
@@ -535,9 +535,9 @@
 
 **Type:** Bug  
 **Catch rate:** 120 · **Base EXP:** 72 · **Growth:** Medium Fast  
-**Evolves from:** [Caterpie](#10-caterpie) — level 7  
-**Evolves into:** [Butterfree](#12-butterfree) — level 10  
-**Wild:** Route 25 — Grass, Lv 7 · Viridian Forest — Grass, Lv 6  
+**Evolves from:** [Caterpie](#10-caterpie) by level 7  
+**Evolves into:** [Butterfree](#12-butterfree) by level 10  
+**Wild:** Route 25, Grass, Lv 7 · Viridian Forest, Grass, Lv 6  
 
 #### Base stats
 
@@ -564,7 +564,7 @@
 
 **Type:** Bug / Psychic  
 **Catch rate:** 45 · **Base EXP:** 160 · **Growth:** Medium Fast  
-**Evolves from:** [Metapod](#11-metapod) — level 10  
+**Evolves from:** [Metapod](#11-metapod) by level 10  
 
 #### Base stats
 
@@ -607,8 +607,8 @@
 
 **Type:** Bug / Poison  
 **Catch rate:** 255 · **Base EXP:** 52 · **Growth:** Medium Fast  
-**Evolves into:** [Kakuna](#14-kakuna) — level 7  
-**Wild:** Route 2 — Grass, Lv 3 · Route 24 — Grass, Lv 7 · Route 25 — Grass, Lv 8 · Viridian Forest — Grass, Lv 4  
+**Evolves into:** [Kakuna](#14-kakuna) by level 7  
+**Wild:** Route 2, Grass, Lv 3 · Route 24, Grass, Lv 7 · Route 25, Grass, Lv 8 · Viridian Forest, Grass, Lv 4  
 
 #### Base stats
 
@@ -636,9 +636,9 @@
 
 **Type:** Bug / Poison  
 **Catch rate:** 120 · **Base EXP:** 71 · **Growth:** Medium Fast  
-**Evolves from:** [Weedle](#13-weedle) — level 7  
-**Evolves into:** [Beedrill](#15-beedrill) — level 10  
-**Wild:** Route 25 — Grass, Lv 8 · Viridian Forest — Grass, Lv 4  
+**Evolves from:** [Weedle](#13-weedle) by level 7  
+**Evolves into:** [Beedrill](#15-beedrill) by level 10  
+**Wild:** Route 25, Grass, Lv 8 · Viridian Forest, Grass, Lv 4  
 
 #### Base stats
 
@@ -664,7 +664,7 @@
 
 **Type:** Bug / Flying  
 **Catch rate:** 45 · **Base EXP:** 159 · **Growth:** Medium Fast  
-**Evolves from:** [Kakuna](#14-kakuna) — level 10  
+**Evolves from:** [Kakuna](#14-kakuna) by level 10  
 
 #### Base stats
 
@@ -706,8 +706,8 @@
 
 **Type:** Bug  
 **Catch rate:** 255 · **Base EXP:** 54 · **Growth:** Fast  
-**Evolves into:** [Ledian](#17-ledian) — level 18  
-**Wild:** Route 2 — Grass, Lv 4–5 · Viridian Forest — Grass, Lv 3–4  
+**Evolves into:** [Ledian](#17-ledian) by level 18  
+**Wild:** Route 2, Grass, Lv 4–5 · Viridian Forest, Grass, Lv 3–4  
 
 #### Base stats
 
@@ -753,7 +753,7 @@
 
 **Type:** Bug / Fighting  
 **Catch rate:** 90 · **Base EXP:** 134 · **Growth:** Fast  
-**Evolves from:** [Ledyba](#16-ledyba) — level 18  
+**Evolves from:** [Ledyba](#16-ledyba) by level 18  
 
 #### Base stats
 
@@ -800,8 +800,8 @@
 
 **Type:** Bug  
 **Catch rate:** 190 · **Base EXP:** 60 · **Growth:** Medium Fast  
-**Evolves into:** [Forretress](#19-forretress) — level 31  
-**Wild:** Viridian Forest — Grass, Lv 5  
+**Evolves into:** [Forretress](#19-forretress) by level 31  
+**Wild:** Viridian Forest, Grass, Lv 5  
 
 #### Base stats
 
@@ -844,7 +844,7 @@
 
 **Type:** Bug / Steel  
 **Catch rate:** 75 · **Base EXP:** 118 · **Growth:** Medium Fast  
-**Evolves from:** [Pineco](#18-pineco) — level 31  
+**Evolves from:** [Pineco](#18-pineco) by level 31  
 
 #### Base stats
 
@@ -890,8 +890,8 @@
 
 **Type:** Normal / Flying  
 **Catch rate:** 255 · **Base EXP:** 55 · **Growth:** Medium Slow  
-**Evolves into:** [Pidgeotto](#21-pidgeotto) — level 18  
-**Wild:** Route 1 — Grass, Lv 2–5 · Route 2 — Grass, Lv 3–5 · Route 3 — Grass, Lv 6–8 · Route 5 — Grass, Lv 13–15 · Route 6 — Grass, Lv 13–15 · Route 7 — Grass, Lv 19 · Route 8 — Grass, Lv 18–22 · Route 12 — Grass, Lv 23 · Route 13 — Grass, Lv 27 · Sea Route 21 — Grass, Lv 21–23 · Route 24 — Grass, Lv 12 · Route 25 — Grass, Lv 13  
+**Evolves into:** [Pidgeotto](#21-pidgeotto) by level 18  
+**Wild:** Route 1, Grass, Lv 2–5 · Route 2, Grass, Lv 3–5 · Route 3, Grass, Lv 6–8 · Route 5, Grass, Lv 13–15 · Route 6, Grass, Lv 13–15 · Route 7, Grass, Lv 19 · Route 8, Grass, Lv 18–22 · Route 12, Grass, Lv 23 · Route 13, Grass, Lv 27 · Sea Route 21, Grass, Lv 21–23 · Route 24, Grass, Lv 12 · Route 25, Grass, Lv 13  
 
 #### Base stats
 
@@ -931,9 +931,9 @@
 
 **Type:** Normal / Flying  
 **Catch rate:** 120 · **Base EXP:** 113 · **Growth:** Medium Slow  
-**Evolves from:** [Pidgey](#20-pidgey) — level 18  
-**Evolves into:** [Pidgeot](#22-pidgeot) — level 36  
-**Wild:** Route 5 — Grass, Lv 16 · Route 6 — Grass, Lv 16 · Route 14 — Grass, Lv 28–30 · Route 15 — Grass, Lv 28–30 · Sea Route 21 — Grass, Lv 30–32  
+**Evolves from:** [Pidgey](#20-pidgey) by level 18  
+**Evolves into:** [Pidgeot](#22-pidgeot) by level 36  
+**Wild:** Route 5, Grass, Lv 16 · Route 6, Grass, Lv 16 · Route 14, Grass, Lv 28–30 · Route 15, Grass, Lv 28–30 · Sea Route 21, Grass, Lv 30–32  
 
 #### Base stats
 
@@ -974,7 +974,7 @@
 
 **Type:** Normal / Flying  
 **Catch rate:** 45 · **Base EXP:** 172 · **Growth:** Medium Slow  
-**Evolves from:** [Pidgeotto](#21-pidgeotto) — level 36  
+**Evolves from:** [Pidgeotto](#21-pidgeotto) by level 36  
 
 #### Base stats
 
@@ -1017,8 +1017,8 @@
 
 **Type:** Normal  
 **Catch rate:** 255 · **Base EXP:** 57 · **Growth:** Medium Fast  
-**Evolves into:** [Raticate](#24-raticate) — level 20  
-**Wild:** Route 1 — Grass, Lv 2–4 · Route 2 — Grass, Lv 2–4 · Route 4 — Grass, Lv 8–10 · Route 9 — Grass, Lv 14–17 · Route 16 — Grass, Lv 18–22 · Sea Route 21 — Grass, Lv 21–23 · Route 22 — Grass, Lv 3  
+**Evolves into:** [Raticate](#24-raticate) by level 20  
+**Wild:** Route 1, Grass, Lv 2–4 · Route 2, Grass, Lv 2–4 · Route 4, Grass, Lv 8–10 · Route 9, Grass, Lv 14–17 · Route 16, Grass, Lv 18–22 · Sea Route 21, Grass, Lv 21–23 · Route 22, Grass, Lv 3  
 
 #### Base stats
 
@@ -1059,8 +1059,8 @@
 
 **Type:** Normal  
 **Catch rate:** 90 · **Base EXP:** 116 · **Growth:** Medium Fast  
-**Evolves from:** [Rattata](#23-rattata) — level 20  
-**Wild:** Route 16 — Grass, Lv 23–25 · Route 17 — Grass, Lv 25–29 · Route 18 — Grass, Lv 25–29 · Sea Route 21 — Grass, Lv 30  
+**Evolves from:** [Rattata](#23-rattata) by level 20  
+**Wild:** Route 16, Grass, Lv 23–25 · Route 17, Grass, Lv 25–29 · Route 18, Grass, Lv 25–29 · Sea Route 21, Grass, Lv 30  
 
 #### Base stats
 
@@ -1102,8 +1102,8 @@
 
 **Type:** Normal / Flying  
 **Catch rate:** 255 · **Base EXP:** 58 · **Growth:** Medium Fast  
-**Evolves into:** [Fearow](#26-fearow) — level 20  
-**Wild:** Route 3 — Grass, Lv 5–8 · Route 4 — Grass, Lv 8–10 · Route 9 — Grass, Lv 13–17 · Route 10 — Grass, Lv 13–17 · Route 11 — Grass, Lv 13–15 · Route 16 — Grass, Lv 20–22 · Route 17 — Grass, Lv 20–22 · Route 18 — Grass, Lv 20–22 · Route 22 — Grass, Lv 2–6  
+**Evolves into:** [Fearow](#26-fearow) by level 20  
+**Wild:** Route 3, Grass, Lv 5–8 · Route 4, Grass, Lv 8 · Route 9, Grass, Lv 13–17 · Route 10, Grass, Lv 16–17 · Route 11, Grass, Lv 15 · Route 16, Grass, Lv 20–22 · Route 17, Grass, Lv 20–22 · Route 18, Grass, Lv 20–22 · Route 22, Grass, Lv 2–6  
 
 #### Base stats
 
@@ -1143,8 +1143,8 @@
 
 **Type:** Dark / Flying  
 **Catch rate:** 90 · **Base EXP:** 162 · **Growth:** Medium Fast  
-**Evolves from:** [Spearow](#25-spearow) — level 20  
-**Wild:** Route 17 — Grass, Lv 25–27 · Route 18 — Grass, Lv 25–29 · Route 23 — Grass, Lv 38–43  
+**Evolves from:** [Spearow](#25-spearow) by level 20  
+**Wild:** Route 17, Grass, Lv 25–27 · Route 18, Grass, Lv 25–29 · Route 23, Grass, Lv 38–43  
 
 #### Base stats
 
@@ -1185,8 +1185,8 @@
 
 **Type:** Poison  
 **Catch rate:** 255 · **Base EXP:** 62 · **Growth:** Medium Fast  
-**Evolves into:** [Arbok](#28-arbok) — level 22  
-**Wild:** Route 4 — Grass, Lv 6–12 · Route 9 — Grass, Lv 11–13 · Route 10 — Grass, Lv 13–15 · Route 11 — Grass, Lv 14–15 · Route 23 — Grass, Lv 26  
+**Evolves into:** [Arbok](#28-arbok) by level 22  
+**Wild:** Route 4, Grass, Lv 8–9 · Route 9, Grass, Lv 11–13 · Route 10, Grass, Lv 13–15 · Route 11, Grass, Lv 14–15 · Route 23, Grass, Lv 26  
 
 #### Base stats
 
@@ -1227,8 +1227,8 @@
 
 **Type:** Poison  
 **Catch rate:** 90 · **Base EXP:** 147 · **Growth:** Medium Fast  
-**Evolves from:** [Ekans](#27-ekans) — level 22  
-**Wild:** Route 23 — Grass, Lv 41 · Cerulean Cave 1F — Grass, Lv 52  
+**Evolves from:** [Ekans](#27-ekans) by level 22  
+**Wild:** Route 23, Grass, Lv 41 · Cerulean Cave 1F, Grass, Lv 52  
 
 #### Base stats
 
@@ -1270,8 +1270,8 @@
 
 **Type:** Electric  
 **Catch rate:** 190 · **Base EXP:** 42 · **Growth:** Medium Fast  
-**Evolves into:** [Pikachu](#30-pikachu) — level 15  
-**Wild:** Viridian Forest — Grass, Lv 3–5 · Power Plant — Grass, Lv 13  
+**Evolves into:** [Pikachu](#30-pikachu) by level 15  
+**Wild:** Viridian Forest, Grass, Lv 3–5 · Power Plant, Grass, Lv 13  
 
 #### Base stats
 
@@ -1314,9 +1314,9 @@
 
 **Type:** Electric  
 **Catch rate:** 190 · **Base EXP:** 82 · **Growth:** Medium Fast  
-**Evolves from:** [Pichu](#29-pichu) — level 15  
-**Evolves into:** [Raichu](#31-raichu) — Thunder Stone  
-**Wild:** Power Plant — Grass, Lv 24  
+**Evolves from:** [Pichu](#29-pichu) by level 15  
+**Evolves into:** [Raichu](#31-raichu) by Thunder Stone  
+**Wild:** Power Plant, Grass, Lv 24  
 
 #### Base stats
 
@@ -1359,8 +1359,8 @@
 
 **Type:** Electric / Psychic  
 **Catch rate:** 75 · **Base EXP:** 122 · **Growth:** Medium Fast  
-**Evolves from:** [Pikachu](#30-pikachu) — Thunder Stone  
-**Wild:** Power Plant — Grass, Lv 35 · Cerulean Cave B1F — Grass, Lv 64 · Cerulean Cave 1F — Grass, Lv 46  
+**Evolves from:** [Pikachu](#30-pikachu) by Thunder Stone  
+**Wild:** Power Plant, Grass, Lv 35 · Cerulean Cave B1F, Grass, Lv 64 · Cerulean Cave 1F, Grass, Lv 46  
 
 #### Base stats
 
@@ -1392,15 +1392,15 @@
 | TM25 | **[Thunder](MOVES.md#thunder)** | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) |
 | TM33 | [Reflect](MOVES.md#reflect) | TM34 | [Bide](MOVES.md#bide) | TM39 | [Swift](MOVES.md#swift) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM45 | [Thunder Wave](MOVES.md#thunder-wave) |
-| TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) |  |  |
+| TM50 | [Substitute](MOVES.md#substitute) | HM05 | [Flash](MOVES.md#flash) | TM29 | **[Psychic](MOVES.md#psychic)** |
 ---
 
 ### #32 Sandshrew
 
 **Type:** Ground / Normal  
 **Catch rate:** 255 · **Base EXP:** 93 · **Growth:** Medium Fast  
-**Evolves into:** [Sandslash](#33-sandslash) — level 22  
-**Wild:** Route 3 — Grass, Lv 5 · Route 4 — Grass, Lv 6–12 · Route 9 — Grass, Lv 11–17 · Route 10 — Grass, Lv 11–17 · Route 11 — Grass, Lv 12–15 · Route 23 — Grass, Lv 26  
+**Evolves into:** [Sandslash](#33-sandslash) by level 22  
+**Wild:** Route 3, Grass, Lv 5 · Route 4, Grass, Lv 6–12 · Route 9, Grass, Lv 11–17 · Route 10, Grass, Lv 11–17 · Route 11, Grass, Lv 12–15 · Route 23, Grass, Lv 26  
 
 #### Base stats
 
@@ -1443,8 +1443,8 @@
 
 **Type:** Ground / Normal  
 **Catch rate:** 90 · **Base EXP:** 163 · **Growth:** Medium Fast  
-**Evolves from:** [Sandshrew](#32-sandshrew) — level 22  
-**Wild:** Route 23 — Grass, Lv 41 · Cerulean Cave B1F — Grass, Lv 57  
+**Evolves from:** [Sandshrew](#32-sandshrew) by level 22  
+**Wild:** Route 23, Grass, Lv 41 · Cerulean Cave B1F, Grass, Lv 57  
 
 #### Base stats
 
@@ -1488,8 +1488,8 @@
 
 **Type:** Poison  
 **Catch rate:** 235 · **Base EXP:** 59 · **Growth:** Medium Slow  
-**Evolves into:** [Nidorina](#35-nidorina) — level 16  
-**Wild:** Route 22 — Grass, Lv 2–4 · Safari Zone East — Grass, Lv 24 · Safari Zone West — Grass, Lv 25  
+**Evolves into:** [Nidorina](#35-nidorina) by level 16  
+**Wild:** Route 22, Grass, Lv 2–4 · Safari Zone East, Grass, Lv 24 · Safari Zone West, Grass, Lv 25  
 
 #### Base stats
 
@@ -1530,9 +1530,9 @@
 
 **Type:** Poison  
 **Catch rate:** 120 · **Base EXP:** 117 · **Growth:** Medium Slow  
-**Evolves from:** [Nidoran♀](#34-nidoran) — level 16  
-**Evolves into:** [Nidoqueen](#36-nidoqueen) — Moon Stone  
-**Wild:** Safari Zone North — Grass, Lv 30 · Safari Zone West — Grass, Lv 33 · Safari Zone Center — Grass, Lv 31  
+**Evolves from:** [Nidoran♀](#34-nidoran) by level 16  
+**Evolves into:** [Nidoqueen](#36-nidoqueen) by Moon Stone  
+**Wild:** Safari Zone North, Grass, Lv 30 · Safari Zone West, Grass, Lv 33 · Safari Zone Center, Grass, Lv 31  
 
 #### Base stats
 
@@ -1576,7 +1576,7 @@
 
 **Type:** Poison / Ground  
 **Catch rate:** 45 · **Base EXP:** 194 · **Growth:** Medium Slow  
-**Evolves from:** [Nidorina](#35-nidorina) — Moon Stone  
+**Evolves from:** [Nidorina](#35-nidorina) by Moon Stone  
 
 #### Base stats
 
@@ -1622,8 +1622,8 @@
 
 **Type:** Poison  
 **Catch rate:** 235 · **Base EXP:** 60 · **Growth:** Medium Slow  
-**Evolves into:** [Nidorino](#38-nidorino) — level 16  
-**Wild:** Route 22 — Grass, Lv 2–4 · Safari Zone East — Grass, Lv 24 · Safari Zone North — Grass, Lv 22 · Safari Zone West — Grass, Lv 25 · Safari Zone Center — Grass, Lv 22  
+**Evolves into:** [Nidorino](#38-nidorino) by level 16  
+**Wild:** Route 22, Grass, Lv 2–4 · Safari Zone East, Grass, Lv 24 · Safari Zone North, Grass, Lv 22 · Safari Zone West, Grass, Lv 25 · Safari Zone Center, Grass, Lv 22  
 
 #### Base stats
 
@@ -1665,9 +1665,9 @@
 
 **Type:** Poison  
 **Catch rate:** 120 · **Base EXP:** 118 · **Growth:** Medium Slow  
-**Evolves from:** [Nidoran♂](#37-nidoran) — level 16  
-**Evolves into:** [Nidoking](#39-nidoking) — Moon Stone  
-**Wild:** Safari Zone East — Grass, Lv 33 · Safari Zone Center — Grass, Lv 31  
+**Evolves from:** [Nidoran♂](#37-nidoran) by level 16  
+**Evolves into:** [Nidoking](#39-nidoking) by Moon Stone  
+**Wild:** Safari Zone East, Grass, Lv 33 · Safari Zone Center, Grass, Lv 31  
 
 #### Base stats
 
@@ -1711,7 +1711,7 @@
 
 **Type:** Poison / Ground  
 **Catch rate:** 45 · **Base EXP:** 195 · **Growth:** Medium Slow  
-**Evolves from:** [Nidorino](#38-nidorino) — Moon Stone  
+**Evolves from:** [Nidorino](#38-nidorino) by Moon Stone  
 
 #### Base stats
 
@@ -1757,8 +1757,8 @@
 
 **Type:** Fairy  
 **Catch rate:** 150 · **Base EXP:** 37 · **Growth:** Fast  
-**Evolves into:** [Clefairy](#41-clefairy) — level 15  
-**Wild:** Mt. Moon 1F — Grass, Lv 8 · Mt. Moon B2F — Grass, Lv 9–11  
+**Evolves into:** [Clefairy](#41-clefairy) by level 15  
+**Wild:** Mt. Moon 1F, Grass, Lv 8 · Mt. Moon B2F, Grass, Lv 9–11  
 
 #### Base stats
 
@@ -1807,9 +1807,9 @@
 
 **Type:** Fairy  
 **Catch rate:** 150 · **Base EXP:** 68 · **Growth:** Fast  
-**Evolves from:** [Cleffa](#40-cleffa) — level 15  
-**Evolves into:** [Clefable](#42-clefable) — Moon Stone  
-**Wild:** Mt. Moon B1F — Grass, Lv 9 · Mt. Moon B2F — Grass, Lv 10  
+**Evolves from:** [Cleffa](#40-cleffa) by level 15  
+**Evolves into:** [Clefable](#42-clefable) by Moon Stone  
+**Wild:** Mt. Moon B1F, Grass, Lv 9 · Mt. Moon B2F, Grass, Lv 10  
 
 #### Base stats
 
@@ -1858,7 +1858,7 @@
 
 **Type:** Fairy  
 **Catch rate:** 25 · **Base EXP:** 129 · **Growth:** Fast  
-**Evolves from:** [Clefairy](#41-clefairy) — Moon Stone  
+**Evolves from:** [Clefairy](#41-clefairy) by Moon Stone  
 
 #### Base stats
 
@@ -1902,8 +1902,8 @@
 
 **Type:** Fire  
 **Catch rate:** 190 · **Base EXP:** 63 · **Growth:** Medium Fast  
-**Evolves into:** [Ninetales](#44-ninetales) — Fire Stone  
-**Wild:** Route 7 — Grass, Lv 18 · Route 8 — Grass, Lv 18 · Pokémon Mansion 1F — Grass, Lv 34 · Pokémon Mansion 2F — Grass, Lv 32 · Pokémon Mansion 3F — Grass, Lv 33 · Pokémon Mansion B1F — Grass, Lv 35  
+**Evolves into:** [Ninetales](#44-ninetales) by Fire Stone  
+**Wild:** Route 7, Grass, Lv 18 · Route 8, Grass, Lv 18 · Pokémon Mansion 1F, Grass, Lv 34 · Pokémon Mansion 2F, Grass, Lv 32 · Pokémon Mansion 3F, Grass, Lv 33 · Pokémon Mansion B1F, Grass, Lv 35  
 
 #### Base stats
 
@@ -1943,7 +1943,7 @@
 
 **Type:** Fire  
 **Catch rate:** 75 · **Base EXP:** 178 · **Growth:** Medium Fast  
-**Evolves from:** [Vulpix](#43-vulpix) — Fire Stone  
+**Evolves from:** [Vulpix](#43-vulpix) by Fire Stone  
 
 #### Base stats
 
@@ -1981,8 +1981,8 @@
 
 **Type:** Poison / Flying  
 **Catch rate:** 255 · **Base EXP:** 54 · **Growth:** Medium Fast  
-**Evolves into:** [Golbat](#46-golbat) — level 22  
-**Wild:** Route 3 — Grass, Lv 3 · Mt. Moon 1F — Grass, Lv 6–11 · Mt. Moon B1F — Grass, Lv 7–11 · Mt. Moon B2F — Grass, Lv 9–10 · Rock Tunnel 1F — Grass, Lv 16–17 · Victory Road 1F — Grass, Lv 22 · Seafoam Islands 1F — Grass, Lv 21 · Victory Road 2F — Grass, Lv 26 · Victory Road 3F — Grass, Lv 22 · Rock Tunnel B1F — Grass, Lv 16–17  
+**Evolves into:** [Golbat](#46-golbat) by level 22  
+**Wild:** Route 3, Grass, Lv 3 · Mt. Moon 1F, Grass, Lv 6–11 · Mt. Moon B1F, Grass, Lv 7–11 · Mt. Moon B2F, Grass, Lv 9–10 · Rock Tunnel 1F, Grass, Lv 16–17 · Victory Road 1F, Grass, Lv 22 · Seafoam Islands 1F, Grass, Lv 21 · Victory Road 2F, Grass, Lv 26 · Victory Road 3F, Grass, Lv 22 · Rock Tunnel B1F, Grass, Lv 16–17  
 
 #### Base stats
 
@@ -2022,9 +2022,9 @@
 
 **Type:** Poison / Flying  
 **Catch rate:** 90 · **Base EXP:** 171 · **Growth:** Medium Fast  
-**Evolves from:** [Zubat](#45-zubat) — level 22  
-**Evolves into:** [Crobat](#47-crobat) — level 40  
-**Wild:** Victory Road 1F — Grass, Lv 41 · Seafoam Islands B2F — Grass, Lv 30 · Seafoam Islands 1F — Grass, Lv 29 · Victory Road 2F — Grass, Lv 40 · Victory Road 3F — Grass, Lv 41 · Cerulean Cave 1F — Grass, Lv 46  
+**Evolves from:** [Zubat](#45-zubat) by level 22  
+**Evolves into:** [Crobat](#47-crobat) by level 40  
+**Wild:** Victory Road 1F, Grass, Lv 41 · Seafoam Islands B2F, Grass, Lv 30 · Seafoam Islands 1F, Grass, Lv 29 · Victory Road 2F, Grass, Lv 40 · Victory Road 3F, Grass, Lv 41 · Cerulean Cave 1F, Grass, Lv 46  
 
 #### Base stats
 
@@ -2066,7 +2066,7 @@
 
 **Type:** Poison / Flying  
 **Catch rate:** 90 · **Base EXP:** 204 · **Growth:** Medium Fast  
-**Evolves from:** [Golbat](#46-golbat) — level 40  
+**Evolves from:** [Golbat](#46-golbat) by level 40  
 
 #### Base stats
 
@@ -2104,8 +2104,8 @@
 
 **Type:** Grass / Poison  
 **Catch rate:** 255 · **Base EXP:** 78 · **Growth:** Medium Slow  
-**Evolves into:** [Gloom](#49-gloom) — level 21  
-**Wild:** Route 5 — Grass, Lv 13 · Route 6 — Grass, Lv 13 · Route 7 — Grass, Lv 19–22 · Route 8 — Grass, Lv 19–22 · Route 12 — Grass, Lv 22–26 · Route 13 — Grass, Lv 22–24 · Route 14 — Grass, Lv 24 · Route 15 — Grass, Lv 24 · Route 24 — Grass, Lv 12 · Route 25 — Grass, Lv 12  
+**Evolves into:** [Gloom](#49-gloom) by level 21  
+**Wild:** Route 5, Grass, Lv 13 · Route 6, Grass, Lv 13 · Route 7, Grass, Lv 19–22 · Route 8, Grass, Lv 19–22 · Route 12, Grass, Lv 22–26 · Route 13, Grass, Lv 22–24 · Route 14, Grass, Lv 24 · Route 15, Grass, Lv 24 · Route 24, Grass, Lv 12 · Route 25, Grass, Lv 12  
 
 #### Base stats
 
@@ -2122,7 +2122,7 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | **[Absorb](MOVES.md#absorb)** | Grass | 20 | 100% | 20 |
+| 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
 | 12 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
 | 15 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 17 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
@@ -2147,9 +2147,9 @@
 
 **Type:** Grass / Poison  
 **Catch rate:** 120 · **Base EXP:** 132 · **Growth:** Medium Slow  
-**Evolves from:** [Oddish](#48-oddish) — level 21  
-**Evolves into:** [Vileplume](#50-vileplume) — Leaf Stone · [Bellossom](#51-bellossom) — Sun Stone  
-**Wild:** Route 12 — Grass, Lv 28 · Route 13 — Grass, Lv 30 · Route 14 — Grass, Lv 30 · Route 15 — Grass, Lv 30  
+**Evolves from:** [Oddish](#48-oddish) by level 21  
+**Evolves into:** [Vileplume](#50-vileplume) by Leaf Stone · [Bellossom](#51-bellossom) by Sun Stone  
+**Wild:** Route 12, Grass, Lv 28 · Route 13, Grass, Lv 30 · Route 14, Grass, Lv 30 · Route 15, Grass, Lv 30  
 
 #### Base stats
 
@@ -2190,7 +2190,7 @@
 
 **Type:** Grass / Poison  
 **Catch rate:** 45 · **Base EXP:** 184 · **Growth:** Medium Slow  
-**Evolves from:** [Gloom](#49-gloom) — Leaf Stone  
+**Evolves from:** [Gloom](#49-gloom) by Leaf Stone  
 
 #### Base stats
 
@@ -2231,7 +2231,7 @@
 
 **Type:** Grass  
 **Catch rate:** 45 · **Base EXP:** 184 · **Growth:** Medium Slow  
-**Evolves from:** [Gloom](#49-gloom) — Sun Stone  
+**Evolves from:** [Gloom](#49-gloom) by Sun Stone  
 
 #### Base stats
 
@@ -2271,8 +2271,8 @@
 
 **Type:** Bug / Grass  
 **Catch rate:** 190 · **Base EXP:** 70 · **Growth:** Medium Fast  
-**Evolves into:** [Parasect](#53-parasect) — level 24  
-**Wild:** Mt. Moon 1F — Grass, Lv 8 · Mt. Moon B1F — Grass, Lv 10 · Mt. Moon B2F — Grass, Lv 10 · Safari Zone East — Grass, Lv 22 · Safari Zone North — Grass, Lv 23  
+**Evolves into:** [Parasect](#53-parasect) by level 24  
+**Wild:** Mt. Moon 1F, Grass, Lv 8 · Mt. Moon B1F, Grass, Lv 10 · Mt. Moon B2F, Grass, Lv 10 · Safari Zone East, Grass, Lv 22 · Safari Zone North, Grass, Lv 23  
 
 #### Base stats
 
@@ -2312,8 +2312,8 @@
 
 **Type:** Bug / Grass  
 **Catch rate:** 75 · **Base EXP:** 128 · **Growth:** Medium Fast  
-**Evolves from:** [Paras](#52-paras) — level 24  
-**Wild:** Safari Zone East — Grass, Lv 25 · Safari Zone Center — Grass, Lv 30 · Cerulean Cave B1F — Grass, Lv 64 · Cerulean Cave 1F — Grass, Lv 52  
+**Evolves from:** [Paras](#52-paras) by level 24  
+**Wild:** Safari Zone East, Grass, Lv 25 · Safari Zone Center, Grass, Lv 30 · Cerulean Cave B1F, Grass, Lv 64 · Cerulean Cave 1F, Grass, Lv 52  
 
 #### Base stats
 
@@ -2355,8 +2355,8 @@
 
 **Type:** Bug / Poison  
 **Catch rate:** 190 · **Base EXP:** 75 · **Growth:** Medium Fast  
-**Evolves into:** [Venomoth](#55-venomoth) — level 31  
-**Wild:** Route 12 — Grass, Lv 24–26 · Route 13 — Grass, Lv 24–26 · Route 14 — Grass, Lv 22–26 · Route 15 — Grass, Lv 22–26 · Safari Zone West — Grass, Lv 23 · Safari Zone Center — Grass, Lv 22  
+**Evolves into:** [Venomoth](#55-venomoth) by level 31  
+**Wild:** Route 12, Grass, Lv 24–26 · Route 13, Grass, Lv 24–26 · Route 14, Grass, Lv 22–26 · Route 15, Grass, Lv 22–26 · Safari Zone West, Grass, Lv 23 · Safari Zone Center, Grass, Lv 22  
 
 #### Base stats
 
@@ -2397,8 +2397,8 @@
 
 **Type:** Bug / Poison  
 **Catch rate:** 75 · **Base EXP:** 138 · **Growth:** Medium Fast  
-**Evolves from:** [Venonat](#54-venonat) — level 31  
-**Wild:** Victory Road 3F — Grass, Lv 40 · Safari Zone North — Grass, Lv 32 · Safari Zone West — Grass, Lv 31 · Cerulean Cave 2F — Grass, Lv 51 · Cerulean Cave 1F — Grass, Lv 49  
+**Evolves from:** [Venonat](#54-venonat) by level 31  
+**Wild:** Victory Road 3F, Grass, Lv 40 · Safari Zone North, Grass, Lv 32 · Safari Zone West, Grass, Lv 31 · Cerulean Cave 2F, Grass, Lv 51 · Cerulean Cave 1F, Grass, Lv 49  
 
 #### Base stats
 
@@ -2442,8 +2442,8 @@
 
 **Type:** Ground / Steel  
 **Catch rate:** 255 · **Base EXP:** 81 · **Growth:** Medium Fast  
-**Evolves into:** [Dugtrio](#57-dugtrio) — level 26  
-**Wild:** Diglett's Cave — Grass, Lv 15–22  
+**Evolves into:** [Dugtrio](#57-dugtrio) by level 26  
+**Wild:** Diglett's Cave, Grass, Lv 15–22  
 
 #### Base stats
 
@@ -2482,8 +2482,8 @@
 
 **Type:** Ground / Steel  
 **Catch rate:** 50 · **Base EXP:** 153 · **Growth:** Medium Fast  
-**Evolves from:** [Diglett](#56-diglett) — level 26  
-**Wild:** Diglett's Cave — Grass, Lv 29–31  
+**Evolves from:** [Diglett](#56-diglett) by level 26  
+**Wild:** Diglett's Cave, Grass, Lv 29–31  
 
 #### Base stats
 
@@ -2526,8 +2526,8 @@
 
 **Type:** Normal  
 **Catch rate:** 255 · **Base EXP:** 69 · **Growth:** Medium Fast  
-**Evolves into:** [Persian](#59-persian) — level 28  
-**Wild:** Route 5 — Grass, Lv 10–14 · Route 6 — Grass, Lv 10–14 · Route 7 — Grass, Lv 19–20 · Route 8 — Grass, Lv 19–20  
+**Evolves into:** [Persian](#59-persian) by level 28  
+**Wild:** Route 5, Grass, Lv 10–14 · Route 6, Grass, Lv 10–14 · Route 7, Grass, Lv 19–20 · Route 8, Grass, Lv 19–20  
 
 #### Base stats
 
@@ -2568,7 +2568,7 @@
 
 **Type:** Normal  
 **Catch rate:** 90 · **Base EXP:** 148 · **Growth:** Medium Fast  
-**Evolves from:** [Meowth](#58-meowth) — level 28  
+**Evolves from:** [Meowth](#58-meowth) by level 28  
 
 #### Base stats
 
@@ -2612,9 +2612,9 @@
 
 **Type:** Water  
 **Catch rate:** 190 · **Base EXP:** 80 · **Growth:** Medium Fast  
-**Evolves into:** [Golduck](#61-golduck) — level 33  
-**Wild:** Seafoam Islands B1F — Grass, Lv 28–30 · Seafoam Islands B3F — Grass, Lv 31–33 · Seafoam Islands B4F — Grass, Lv 31 · Seafoam Islands 1F — Grass, Lv 28  
-**Fishing:** Cerulean City — Super Rod, Lv 15 · Route 4 — Super Rod, Lv 15 · Route 24 — Super Rod, Lv 15 · Route 25 — Super Rod, Lv 15 · Cerulean Gym — Super Rod, Lv 15 · Safari Zone East — Super Rod, Lv 15 · Safari Zone North — Super Rod, Lv 15 · Safari Zone West — Super Rod, Lv 15 · Safari Zone Center — Super Rod, Lv 15  
+**Evolves into:** [Golduck](#61-golduck) by level 33  
+**Wild:** Seafoam Islands B1F, Grass, Lv 28–30 · Seafoam Islands B3F, Grass, Lv 31–33 · Seafoam Islands B4F, Grass, Lv 31 · Seafoam Islands 1F, Grass, Lv 28  
+**Fishing:** Cerulean City, Super Rod, Lv 15 · Route 4, Super Rod, Lv 15 · Route 24, Super Rod, Lv 15 · Route 25, Super Rod, Lv 15 · Cerulean Gym, Super Rod, Lv 15 · Safari Zone East, Super Rod, Lv 15 · Safari Zone North, Super Rod, Lv 15 · Safari Zone West, Super Rod, Lv 15 · Safari Zone Center, Super Rod, Lv 15  
 
 #### Base stats
 
@@ -2658,8 +2658,8 @@
 
 **Type:** Water  
 **Catch rate:** 75 · **Base EXP:** 174 · **Growth:** Medium Fast  
-**Evolves from:** [Psyduck](#60-psyduck) — level 33  
-**Wild:** Seafoam Islands B4F — Grass, Lv 39 · Seafoam Islands 1F — Grass, Lv 38  
+**Evolves from:** [Psyduck](#60-psyduck) by level 33  
+**Wild:** Seafoam Islands B4F, Grass, Lv 39 · Seafoam Islands 1F, Grass, Lv 38  
 
 #### Base stats
 
@@ -2706,8 +2706,8 @@
 
 **Type:** Fighting  
 **Catch rate:** 190 · **Base EXP:** 74 · **Growth:** Medium Fast  
-**Evolves into:** [Primeape](#63-primeape) — level 28  
-**Wild:** Route 3 — Grass, Lv 7 · Route 5 — Grass, Lv 10–14 · Route 6 — Grass, Lv 14 · Route 7 — Grass, Lv 18 · Route 8 — Grass, Lv 18 · Route 22 — Grass, Lv 3–5  
+**Evolves into:** [Primeape](#63-primeape) by level 28  
+**Wild:** Route 3, Grass, Lv 7 · Route 5, Grass, Lv 10–14 · Route 6, Grass, Lv 14 · Route 7, Grass, Lv 18 · Route 8, Grass, Lv 18 · Route 22, Grass, Lv 3–5  
 
 #### Base stats
 
@@ -2727,7 +2727,7 @@
 | 1 | [Scratch](MOVES.md#scratch) | Normal | 40 | 100% | 35 |
 | 1 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 9 | **[Low Kick](MOVES.md#low-kick)** | Fighting | 50 | 90% | 20 |
-| 15 | [Karate Chop](MOVES.md#karate-chop) | Normal | 50 | 100% | 25 |
+| 15 | **[Karate Chop](MOVES.md#karate-chop)** | Fighting | 50 | 100% | 25 |
 | 21 | [Fury Swipes](MOVES.md#fury-swipes) | Normal | 18 | 80% | 15 |
 | 27 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
 | 33 | [Seismic Toss](MOVES.md#seismic-toss) | Fighting | — | 100% | 20 |
@@ -2751,8 +2751,8 @@
 
 **Type:** Fighting  
 **Catch rate:** 75 · **Base EXP:** 149 · **Growth:** Medium Fast  
-**Evolves from:** [Mankey](#62-mankey) — level 28  
-**Evolves into:** [Annihilape](#64-annihilape) — level 36  
+**Evolves from:** [Mankey](#62-mankey) by level 28  
+**Evolves into:** [Annihilape](#64-annihilape) by level 36  
 
 #### Base stats
 
@@ -2772,9 +2772,9 @@
 | 1 | [Scratch](MOVES.md#scratch) | Normal | 40 | 100% | 35 |
 | 1 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 1 | **[Low Kick](MOVES.md#low-kick)** | Fighting | 50 | 90% | 20 |
-| 1 | [Karate Chop](MOVES.md#karate-chop) | Normal | 50 | 100% | 25 |
+| 1 | **[Karate Chop](MOVES.md#karate-chop)** | Fighting | 50 | 100% | 25 |
 | 9 | **[Low Kick](MOVES.md#low-kick)** | Fighting | 50 | 90% | 20 |
-| 15 | [Karate Chop](MOVES.md#karate-chop) | Normal | 50 | 100% | 25 |
+| 15 | **[Karate Chop](MOVES.md#karate-chop)** | Fighting | 50 | 100% | 25 |
 | 21 | [Fury Swipes](MOVES.md#fury-swipes) | Normal | 18 | 80% | 15 |
 | 27 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
 | 35 | [Rage](MOVES.md#rage) | Normal | 20 | 100% | 20 |
@@ -2801,7 +2801,7 @@
 
 **Type:** Fighting / Ghost  
 **Catch rate:** 45 · **Base EXP:** 255 · **Growth:** Medium Fast  
-**Evolves from:** [Primeape](#63-primeape) — level 36  
+**Evolves from:** [Primeape](#63-primeape) by level 36  
 
 #### Base stats
 
@@ -2818,7 +2818,7 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | [Karate Chop](MOVES.md#karate-chop) | Normal | 50 | 100% | 25 |
+| 1 | **[Karate Chop](MOVES.md#karate-chop)** | Fighting | 50 | 100% | 25 |
 | 1 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
 | 1 | [Fury Swipes](MOVES.md#fury-swipes) | Normal | 18 | 80% | 15 |
 | 1 | [Rage](MOVES.md#rage) | Normal | 20 | 100% | 20 |
@@ -2844,8 +2844,8 @@
 
 **Type:** Fire  
 **Catch rate:** 190 · **Base EXP:** 91 · **Growth:** Slow  
-**Evolves into:** [Arcanine](#66-arcanine) — Fire Stone  
-**Wild:** Route 7 — Grass, Lv 18 · Route 8 — Grass, Lv 18 · Pokémon Mansion 1F — Grass, Lv 34 · Pokémon Mansion 2F — Grass, Lv 32  
+**Evolves into:** [Arcanine](#66-arcanine) by Fire Stone  
+**Wild:** Route 7, Grass, Lv 18 · Route 8, Grass, Lv 18 · Pokémon Mansion 1F, Grass, Lv 34 · Pokémon Mansion 2F, Grass, Lv 32  
 
 #### Base stats
 
@@ -2886,7 +2886,7 @@
 
 **Type:** Fire  
 **Catch rate:** 75 · **Base EXP:** 213 · **Growth:** Slow  
-**Evolves from:** [Growlithe](#65-growlithe) — Fire Stone  
+**Evolves from:** [Growlithe](#65-growlithe) by Fire Stone  
 
 #### Base stats
 
@@ -2925,8 +2925,8 @@
 
 **Type:** Water  
 **Catch rate:** 255 · **Base EXP:** 77 · **Growth:** Medium Slow  
-**Evolves into:** [Poliwhirl](#68-poliwhirl) — level 25  
-**Fishing:** Any water — Good Rod, Lv 10 · Pallet Town — Super Rod, Lv 15 · Viridian City — Super Rod, Lv 15 · Route 22 — Super Rod, Lv 15  
+**Evolves into:** [Poliwhirl](#68-poliwhirl) by level 25  
+**Fishing:** Any water, Good Rod, Lv 10 · Pallet Town, Super Rod, Lv 15 · Viridian City, Super Rod, Lv 15 · Route 22, Super Rod, Lv 15  
 
 #### Base stats
 
@@ -2967,9 +2967,9 @@
 
 **Type:** Water  
 **Catch rate:** 120 · **Base EXP:** 131 · **Growth:** Medium Slow  
-**Evolves from:** [Poliwag](#67-poliwag) — level 25  
-**Evolves into:** [Poliwrath](#69-poliwrath) — Water Stone · [Politoed](#70-politoed) — King's Rock  
-**Fishing:** Celadon City — Super Rod, Lv 23 · Route 10 — Super Rod, Lv 23  
+**Evolves from:** [Poliwag](#67-poliwag) by level 25  
+**Evolves into:** [Poliwrath](#69-poliwrath) by Water Stone · [Politoed](#70-politoed) by King's Rock  
+**Fishing:** Celadon City, Super Rod, Lv 23 · Route 10, Super Rod, Lv 23  
 
 #### Base stats
 
@@ -3015,7 +3015,7 @@
 
 **Type:** Water / Fighting  
 **Catch rate:** 45 · **Base EXP:** 185 · **Growth:** Medium Slow  
-**Evolves from:** [Poliwhirl](#68-poliwhirl) — Water Stone  
+**Evolves from:** [Poliwhirl](#68-poliwhirl) by Water Stone  
 
 #### Base stats
 
@@ -3058,7 +3058,7 @@
 
 **Type:** Water  
 **Catch rate:** 45 · **Base EXP:** 185 · **Growth:** Medium Slow  
-**Evolves from:** [Poliwhirl](#68-poliwhirl) — King's Rock  
+**Evolves from:** [Poliwhirl](#68-poliwhirl) by King's Rock  
 
 #### Base stats
 
@@ -3102,8 +3102,8 @@
 
 **Type:** Water / Ground  
 **Catch rate:** 255 · **Base EXP:** 52 · **Growth:** Medium Fast  
-**Evolves into:** [Quagsire](#72-quagsire) — level 20  
-**Fishing:** Any water — Good Rod, Lv 10  
+**Evolves into:** [Quagsire](#72-quagsire) by level 20  
+**Fishing:** Any water, Good Rod, Lv 10  
 
 #### Base stats
 
@@ -3145,7 +3145,7 @@
 
 **Type:** Water / Ground  
 **Catch rate:** 90 · **Base EXP:** 137 · **Growth:** Medium Fast  
-**Evolves from:** [Wooper](#71-wooper) — level 20  
+**Evolves from:** [Wooper](#71-wooper) by level 20  
 
 #### Base stats
 
@@ -3188,7 +3188,7 @@
 
 **Type:** Poison / Ground  
 **Catch rate:** 255 · **Base EXP:** 52 · **Growth:** Medium Fast  
-**Evolves into:** [Clodsire](#74-clodsire) — level 20  
+**Evolves into:** [Clodsire](#74-clodsire) by level 20  
 
 #### Base stats
 
@@ -3231,7 +3231,7 @@
 
 **Type:** Poison / Ground  
 **Catch rate:** 90 · **Base EXP:** 151 · **Growth:** Medium Fast  
-**Evolves from:** [Paldean Wooper](#73-paldean-wooper) — level 20  
+**Evolves from:** [Paldean Wooper](#73-paldean-wooper) by level 20  
 
 #### Base stats
 
@@ -3275,8 +3275,8 @@
 
 **Type:** Psychic  
 **Catch rate:** 200 · **Base EXP:** 73 · **Growth:** Medium Slow  
-**Evolves into:** [Kadabra](#76-kadabra) — level 16  
-**Wild:** Route 24 — Grass, Lv 8–12 · Route 25 — Grass, Lv 10–12  
+**Evolves into:** [Kadabra](#76-kadabra) by level 16  
+**Wild:** Route 24, Grass, Lv 8–12 · Route 25, Grass, Lv 10–12  
 
 #### Base stats
 
@@ -3313,9 +3313,9 @@
 
 **Type:** Psychic  
 **Catch rate:** 100 · **Base EXP:** 145 · **Growth:** Medium Slow  
-**Evolves from:** [Abra](#75-abra) — level 16  
-**Evolves into:** [Alakazam](#77-alakazam) — level 36  
-**Wild:** Cerulean Cave 2F — Grass, Lv 51 · Cerulean Cave 1F — Grass, Lv 49  
+**Evolves from:** [Abra](#75-abra) by level 16  
+**Evolves into:** [Alakazam](#77-alakazam) by level 36  
+**Wild:** Cerulean Cave 2F, Grass, Lv 51 · Cerulean Cave 1F, Grass, Lv 49  
 
 #### Base stats
 
@@ -3361,7 +3361,7 @@
 
 **Type:** Psychic  
 **Catch rate:** 50 · **Base EXP:** 186 · **Growth:** Medium Slow  
-**Evolves from:** [Kadabra](#76-kadabra) — level 36  
+**Evolves from:** [Kadabra](#76-kadabra) by level 36  
 
 #### Base stats
 
@@ -3407,8 +3407,8 @@
 
 **Type:** Fighting  
 **Catch rate:** 180 · **Base EXP:** 88 · **Growth:** Medium Slow  
-**Evolves into:** [Machoke](#79-machoke) — level 28  
-**Wild:** Rock Tunnel 1F — Grass, Lv 15 · Victory Road 1F — Grass, Lv 24 · Victory Road 2F — Grass, Lv 22 · Victory Road 3F — Grass, Lv 24 · Rock Tunnel B1F — Grass, Lv 15  
+**Evolves into:** [Machoke](#79-machoke) by level 28  
+**Wild:** Rock Tunnel 1F, Grass, Lv 15 · Victory Road 1F, Grass, Lv 24 · Victory Road 2F, Grass, Lv 22 · Victory Road 3F, Grass, Lv 24 · Rock Tunnel B1F, Grass, Lv 15  
 
 #### Base stats
 
@@ -3425,7 +3425,7 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | [Karate Chop](MOVES.md#karate-chop) | Normal | 50 | 100% | 25 |
+| 1 | **[Karate Chop](MOVES.md#karate-chop)** | Fighting | 50 | 100% | 25 |
 | 20 | **[Low Kick](MOVES.md#low-kick)** | Fighting | 50 | 90% | 20 |
 | 25 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 30 | **[Cross Chop](MOVES.md#cross-chop)** | Fighting | 90 | 100% | 10 |
@@ -3451,9 +3451,9 @@
 
 **Type:** Fighting  
 **Catch rate:** 90 · **Base EXP:** 146 · **Growth:** Medium Slow  
-**Evolves from:** [Machop](#78-machop) — level 28  
-**Evolves into:** [Machamp](#80-machamp) — level 36  
-**Wild:** Victory Road 1F — Grass, Lv 42 · Victory Road 2F — Grass, Lv 41 · Victory Road 3F — Grass, Lv 42–45  
+**Evolves from:** [Machop](#78-machop) by level 28  
+**Evolves into:** [Machamp](#80-machamp) by level 36  
+**Wild:** Victory Road 1F, Grass, Lv 42 · Victory Road 2F, Grass, Lv 41 · Victory Road 3F, Grass, Lv 42–45  
 
 #### Base stats
 
@@ -3470,7 +3470,7 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | [Karate Chop](MOVES.md#karate-chop) | Normal | 50 | 100% | 25 |
+| 1 | **[Karate Chop](MOVES.md#karate-chop)** | Fighting | 50 | 100% | 25 |
 | 1 | **[Low Kick](MOVES.md#low-kick)** | Fighting | 50 | 90% | 20 |
 | 1 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 20 | **[Low Kick](MOVES.md#low-kick)** | Fighting | 50 | 90% | 20 |
@@ -3498,7 +3498,7 @@
 
 **Type:** Fighting  
 **Catch rate:** 45 · **Base EXP:** 193 · **Growth:** Medium Slow  
-**Evolves from:** [Machoke](#79-machoke) — level 36  
+**Evolves from:** [Machoke](#79-machoke) by level 36  
 
 #### Base stats
 
@@ -3515,7 +3515,7 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | [Karate Chop](MOVES.md#karate-chop) | Normal | 50 | 100% | 25 |
+| 1 | **[Karate Chop](MOVES.md#karate-chop)** | Fighting | 50 | 100% | 25 |
 | 1 | **[Low Kick](MOVES.md#low-kick)** | Fighting | 50 | 90% | 20 |
 | 1 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 20 | **[Low Kick](MOVES.md#low-kick)** | Fighting | 50 | 90% | 20 |
@@ -3543,8 +3543,8 @@
 
 **Type:** Grass / Poison  
 **Catch rate:** 255 · **Base EXP:** 84 · **Growth:** Medium Slow  
-**Evolves into:** [Weepinbell](#82-weepinbell) — level 21  
-**Wild:** Route 5 — Grass, Lv 13 · Route 6 — Grass, Lv 13 · Route 7 — Grass, Lv 19 · Route 8 — Grass, Lv 19 · Route 12 — Grass, Lv 24–26 · Route 13 — Grass, Lv 24–26 · Route 14 — Grass, Lv 24 · Route 15 — Grass, Lv 24 · Route 24 — Grass, Lv 13 · Route 25 — Grass, Lv 13  
+**Evolves into:** [Weepinbell](#82-weepinbell) by level 21  
+**Wild:** Route 5, Grass, Lv 13 · Route 6, Grass, Lv 13 · Route 7, Grass, Lv 19 · Route 8, Grass, Lv 19 · Route 12, Grass, Lv 24–26 · Route 13, Grass, Lv 24–26 · Route 14, Grass, Lv 24 · Route 15, Grass, Lv 24 · Route 24, Grass, Lv 13 · Route 25, Grass, Lv 13  
 
 #### Base stats
 
@@ -3586,9 +3586,9 @@
 
 **Type:** Grass / Poison  
 **Catch rate:** 120 · **Base EXP:** 151 · **Growth:** Medium Slow  
-**Evolves from:** [Bellsprout](#81-bellsprout) — level 21  
-**Evolves into:** [Victreebel](#83-victreebel) — Leaf Stone  
-**Wild:** Route 12 — Grass, Lv 30 · Route 13 — Grass, Lv 28 · Route 14 — Grass, Lv 30 · Route 15 — Grass, Lv 30  
+**Evolves from:** [Bellsprout](#81-bellsprout) by level 21  
+**Evolves into:** [Victreebel](#83-victreebel) by Leaf Stone  
+**Wild:** Route 12, Grass, Lv 30 · Route 13, Grass, Lv 28 · Route 14, Grass, Lv 30 · Route 15, Grass, Lv 30  
 
 #### Base stats
 
@@ -3631,7 +3631,7 @@
 
 **Type:** Grass / Poison  
 **Catch rate:** 45 · **Base EXP:** 191 · **Growth:** Medium Slow  
-**Evolves from:** [Weepinbell](#82-weepinbell) — Leaf Stone  
+**Evolves from:** [Weepinbell](#82-weepinbell) by Leaf Stone  
 
 #### Base stats
 
@@ -3672,9 +3672,9 @@
 
 **Type:** Water / Poison  
 **Catch rate:** 190 · **Base EXP:** 105 · **Growth:** Slow  
-**Evolves into:** [Tentacruel](#85-tentacruel) — level 30  
-**Wild:** Sea Route 19 — Surf, Lv 5–40 · Sea Route 20 — Surf, Lv 5–40 · Sea Route 21 — Surf, Lv 5–40  
-**Fishing:** Pallet Town — Super Rod, Lv 15 · Viridian City — Super Rod, Lv 15 · Route 12 — Super Rod, Lv 5 · Route 13 — Super Rod, Lv 5 · Route 17 — Super Rod, Lv 5 · Route 18 — Super Rod, Lv 5  
+**Evolves into:** [Tentacruel](#85-tentacruel) by level 30  
+**Wild:** Sea Route 19, Surf, Lv 5–40 · Sea Route 20, Surf, Lv 5–40 · Sea Route 21, Surf, Lv 5–40  
+**Fishing:** Pallet Town, Super Rod, Lv 15 · Viridian City, Super Rod, Lv 15 · Route 12, Super Rod, Lv 5 · Route 13, Super Rod, Lv 5 · Route 17, Super Rod, Lv 5 · Route 18, Super Rod, Lv 5  
 
 #### Base stats
 
@@ -3718,7 +3718,7 @@
 
 **Type:** Water / Poison  
 **Catch rate:** 60 · **Base EXP:** 205 · **Growth:** Slow  
-**Evolves from:** [Tentacool](#84-tentacool) — level 30  
+**Evolves from:** [Tentacool](#84-tentacool) by level 30  
 
 #### Base stats
 
@@ -3764,8 +3764,8 @@
 
 **Type:** Rock / Ground  
 **Catch rate:** 255 · **Base EXP:** 86 · **Growth:** Medium Slow  
-**Evolves into:** [Graveler](#87-graveler) — level 25  
-**Wild:** Mt. Moon 1F — Grass, Lv 8–10 · Mt. Moon B1F — Grass, Lv 7–9 · Mt. Moon B2F — Grass, Lv 9–10 · Rock Tunnel 1F — Grass, Lv 16–17 · Victory Road 1F — Grass, Lv 26 · Victory Road 2F — Grass, Lv 24 · Victory Road 3F — Grass, Lv 26 · Rock Tunnel B1F — Grass, Lv 17–18  
+**Evolves into:** [Graveler](#87-graveler) by level 25  
+**Wild:** Mt. Moon 1F, Grass, Lv 8–10 · Mt. Moon B1F, Grass, Lv 7–9 · Mt. Moon B2F, Grass, Lv 9–10 · Rock Tunnel 1F, Grass, Lv 16–17 · Victory Road 1F, Grass, Lv 26 · Victory Road 2F, Grass, Lv 24 · Victory Road 3F, Grass, Lv 26 · Rock Tunnel B1F, Grass, Lv 17–18  
 
 #### Base stats
 
@@ -3809,9 +3809,9 @@
 
 **Type:** Rock / Ground  
 **Catch rate:** 120 · **Base EXP:** 134 · **Growth:** Medium Slow  
-**Evolves from:** [Geodude](#86-geodude) — level 25  
-**Evolves into:** [Golem](#88-golem) — level 36  
-**Wild:** Victory Road 1F — Grass, Lv 41 · Victory Road 2F — Grass, Lv 43 · Victory Road 3F — Grass, Lv 43  
+**Evolves from:** [Geodude](#86-geodude) by level 25  
+**Evolves into:** [Golem](#88-golem) by level 36  
+**Wild:** Victory Road 1F, Grass, Lv 41 · Victory Road 2F, Grass, Lv 43 · Victory Road 3F, Grass, Lv 43  
 
 #### Base stats
 
@@ -3854,7 +3854,7 @@
 
 **Type:** Rock / Ground  
 **Catch rate:** 45 · **Base EXP:** 177 · **Growth:** Medium Slow  
-**Evolves from:** [Graveler](#87-graveler) — level 36  
+**Evolves from:** [Graveler](#87-graveler) by level 36  
 
 #### Base stats
 
@@ -3901,8 +3901,8 @@
 
 **Type:** Fire  
 **Catch rate:** 190 · **Base EXP:** 152 · **Growth:** Medium Fast  
-**Evolves into:** [Rapidash](#90-rapidash) — level 40  
-**Wild:** Pokémon Mansion 1F — Grass, Lv 28–34 · Pokémon Mansion 2F — Grass, Lv 28–30 · Pokémon Mansion 3F — Grass, Lv 32–36 · Pokémon Mansion B1F — Grass, Lv 32–34  
+**Evolves into:** [Rapidash](#90-rapidash) by level 40  
+**Wild:** Pokémon Mansion 1F, Grass, Lv 28–34 · Pokémon Mansion 2F, Grass, Lv 28–30 · Pokémon Mansion 3F, Grass, Lv 32–36 · Pokémon Mansion B1F, Grass, Lv 32–34  
 
 #### Base stats
 
@@ -3920,6 +3920,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Ember](MOVES.md#ember)** | Fire | 40 | 100% | 25 |
+| 1 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
 | 30 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
 | 32 | [Stomp](MOVES.md#stomp) | Normal | 65 | 100% | 20 |
 | 35 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
@@ -3942,7 +3943,7 @@
 
 **Type:** Fire / Fairy  
 **Catch rate:** 60 · **Base EXP:** 192 · **Growth:** Medium Fast  
-**Evolves from:** [Ponyta](#89-ponyta) — level 40  
+**Evolves from:** [Ponyta](#89-ponyta) by level 40  
 
 #### Base stats
 
@@ -3962,8 +3963,7 @@
 | 1 | **[Ember](MOVES.md#ember)** | Fire | 40 | 100% | 25 |
 | 1 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
 | 1 | [Stomp](MOVES.md#stomp) | Normal | 65 | 100% | 20 |
-| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 30 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
+| 1 | **[Fairy Wind](MOVES.md#fairy-wind)** | Fairy | 40 | 100% | 30 |
 | 32 | [Stomp](MOVES.md#stomp) | Normal | 65 | 100% | 20 |
 | 35 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 39 | **[Fire Spin](MOVES.md#fire-spin)** | Fire | 15 | 70% | 15 |
@@ -3988,9 +3988,9 @@
 
 **Type:** Water / Psychic  
 **Catch rate:** 190 · **Base EXP:** 99 · **Growth:** Medium Fast  
-**Evolves into:** [Slowbro](#92-slowbro) — level 37 · [Slowking](#93-slowking) — King's Rock  
-**Wild:** Seafoam Islands B2F — Grass, Lv 30 · Seafoam Islands B4F — Grass, Lv 29 · Seafoam Islands 1F — Grass, Lv 30  
-**Fishing:** Celadon City — Super Rod, Lv 15 · Route 10 — Super Rod, Lv 15 · Safari Zone East — Super Rod, Lv 15 · Safari Zone North — Super Rod, Lv 15 · Safari Zone West — Super Rod, Lv 15 · Safari Zone Center — Super Rod, Lv 15  
+**Evolves into:** [Slowbro](#92-slowbro) by level 37 · [Slowking](#93-slowking) by King's Rock  
+**Wild:** Seafoam Islands B2F, Grass, Lv 30 · Seafoam Islands B4F, Grass, Lv 29 · Seafoam Islands 1F, Grass, Lv 30  
+**Fishing:** Celadon City, Super Rod, Lv 15 · Route 10, Super Rod, Lv 15 · Safari Zone East, Super Rod, Lv 15 · Safari Zone North, Super Rod, Lv 15 · Safari Zone West, Super Rod, Lv 15 · Safari Zone Center, Super Rod, Lv 15  
 
 #### Base stats
 
@@ -4035,9 +4035,9 @@
 
 **Type:** Water / Psychic  
 **Catch rate:** 75 · **Base EXP:** 164 · **Growth:** Medium Fast  
-**Evolves from:** [Slowpoke](#91-slowpoke) — level 37  
-**Wild:** Seafoam Islands B2F — Grass, Lv 37 · Seafoam Islands B4F — Grass, Lv 39  
-**Fishing:** Route 23 — Super Rod, Lv 23 · Cerulean Cave 2F — Super Rod, Lv 23 · Cerulean Cave B1F — Super Rod, Lv 23 · Cerulean Cave 1F — Super Rod, Lv 23  
+**Evolves from:** [Slowpoke](#91-slowpoke) by level 37  
+**Wild:** Seafoam Islands B2F, Grass, Lv 37 · Seafoam Islands B4F, Grass, Lv 39  
+**Fishing:** Route 23, Super Rod, Lv 23 · Cerulean Cave 2F, Super Rod, Lv 23 · Cerulean Cave B1F, Super Rod, Lv 23 · Cerulean Cave 1F, Super Rod, Lv 23  
 
 #### Base stats
 
@@ -4087,7 +4087,7 @@
 
 **Type:** Water / Psychic  
 **Catch rate:** 70 · **Base EXP:** 164 · **Growth:** Medium Fast  
-**Evolves from:** [Slowpoke](#91-slowpoke) — King's Rock  
+**Evolves from:** [Slowpoke](#91-slowpoke) by King's Rock  
 
 #### Base stats
 
@@ -4178,8 +4178,8 @@
 
 **Type:** Normal / Flying  
 **Catch rate:** 190 · **Base EXP:** 96 · **Growth:** Medium Fast  
-**Evolves into:** [Dodrio](#96-dodrio) — level 31  
-**Wild:** Route 16 — Grass, Lv 18–22 · Route 17 — Grass, Lv 24–28 · Route 18 — Grass, Lv 24–28 · Safari Zone East — Grass, Lv 26 · Safari Zone West — Grass, Lv 26  
+**Evolves into:** [Dodrio](#96-dodrio) by level 31  
+**Wild:** Route 16, Grass, Lv 18–22 · Route 17, Grass, Lv 24–28 · Route 18, Grass, Lv 24–28 · Safari Zone East, Grass, Lv 26 · Safari Zone West, Grass, Lv 26  
 
 #### Base stats
 
@@ -4220,8 +4220,8 @@
 
 **Type:** Normal / Flying  
 **Catch rate:** 45 · **Base EXP:** 158 · **Growth:** Medium Fast  
-**Evolves from:** [Doduo](#95-doduo) — level 31  
-**Wild:** Cerulean Cave 2F — Grass, Lv 51 · Cerulean Cave 1F — Grass, Lv 49  
+**Evolves from:** [Doduo](#95-doduo) by level 31  
+**Wild:** Cerulean Cave 2F, Grass, Lv 51 · Cerulean Cave 1F, Grass, Lv 49  
 
 #### Base stats
 
@@ -4262,10 +4262,10 @@
 
 ### #97 Seel
 
-**Type:** Water  
+**Type:** Ice  
 **Catch rate:** 190 · **Base EXP:** 100 · **Growth:** Medium Fast  
-**Evolves into:** [Dewgong](#98-dewgong) — level 34  
-**Wild:** Seafoam Islands B1F — Grass, Lv 28–30 · Seafoam Islands B2F — Grass, Lv 30–32 · Seafoam Islands B3F — Grass, Lv 31–33 · Seafoam Islands B4F — Grass, Lv 29 · Seafoam Islands 1F — Grass, Lv 30  
+**Evolves into:** [Dewgong](#98-dewgong) by level 34  
+**Wild:** Seafoam Islands B1F, Grass, Lv 28–30 · Seafoam Islands B2F, Grass, Lv 30–32 · Seafoam Islands B3F, Grass, Lv 31–33 · Seafoam Islands B4F, Grass, Lv 29 · Seafoam Islands 1F, Grass, Lv 30  
 
 #### Base stats
 
@@ -4284,30 +4284,30 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Headbutt](MOVES.md#headbutt) | Normal | 70 | 100% | 15 |
 | 30 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 35 | [Aurora Beam](MOVES.md#aurora-beam) | Ice | 65 | 100% | 20 |
+| 35 | **[Aurora Beam](MOVES.md#aurora-beam)** | Ice | 65 | 100% | 20 |
 | 40 | [Rest](MOVES.md#rest) | Psychic | — | 100% | 10 |
 | 45 | [Take Down](MOVES.md#take-down) | Normal | 90 | 85% | 20 |
-| 50 | [Ice Beam](MOVES.md#ice-beam) | Ice | 95 | 100% | 10 |
+| 50 | **[Ice Beam](MOVES.md#ice-beam)** | Ice | 95 | 100% | 10 |
 
 **TM/HM moves**
 
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** |
-| TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | [Ice Beam](MOVES.md#ice-beam) | TM14 | [Blizzard](MOVES.md#blizzard) |
+| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
+| TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | **[Ice Beam](MOVES.md#ice-beam)** | TM14 | **[Blizzard](MOVES.md#blizzard)** |
 | TM16 | [Pay Day](MOVES.md#pay-day) | TM20 | [Rage](MOVES.md#rage) | TM31 | [Mimic](MOVES.md#mimic) |
 | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) | TM40 | [Skull Bash](MOVES.md#skull-bash) |
-| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | **[Surf](MOVES.md#surf)** |
+| TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) | HM03 | [Surf](MOVES.md#surf) |
 | HM04 | [Strength](MOVES.md#strength) |  |  |  |  |
 ---
 
 ### #98 Dewgong
 
-**Type:** Water / Ice  
+**Type:** Ice  
 **Catch rate:** 75 · **Base EXP:** 176 · **Growth:** Medium Fast  
-**Evolves from:** [Seel](#97-seel) — level 34  
-**Wild:** Seafoam Islands B1F — Grass, Lv 38 · Seafoam Islands B3F — Grass, Lv 37  
+**Evolves from:** [Seel](#97-seel) by level 34  
+**Wild:** Seafoam Islands B1F, Grass, Lv 38 · Seafoam Islands B3F, Grass, Lv 37  
 
 #### Base stats
 
@@ -4316,9 +4316,9 @@
 | HP | 90 | `███████▏░░░░░░░░░░░░` |
 | Attack | 70 | `█████▌░░░░░░░░░░░░░░` |
 | Defense | 80 | `██████▍░░░░░░░░░░░░░` |
-| Speed | 70 | `█████▌░░░░░░░░░░░░░░` |
+| Speed | 90 | `███████▏░░░░░░░░░░░░` |
 | Special | 95 | `███████▌░░░░░░░░░░░░` |
-| **Total** | **405** | |
+| **Total** | **425** | |
 
 #### Moves
 
@@ -4338,20 +4338,20 @@
 | TM/HM | Move | TM/HM | Move | TM/HM | Move |
 |---:|:--|---:|:--|---:|:--|
 | TM06 | [Toxic](MOVES.md#toxic) | TM07 | [Horn Drill](MOVES.md#horn-drill) | TM08 | [Body Slam](MOVES.md#body-slam) |
-| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | **[Bubblebeam](MOVES.md#bubblebeam)** |
-| TM12 | **[Water Gun](MOVES.md#water-gun)** | TM13 | **[Ice Beam](MOVES.md#ice-beam)** | TM14 | **[Blizzard](MOVES.md#blizzard)** |
+| TM09 | [Take Down](MOVES.md#take-down) | TM10 | [Double-Edge](MOVES.md#double-edge) | TM11 | [Bubblebeam](MOVES.md#bubblebeam) |
+| TM12 | [Water Gun](MOVES.md#water-gun) | TM13 | **[Ice Beam](MOVES.md#ice-beam)** | TM14 | **[Blizzard](MOVES.md#blizzard)** |
 | TM15 | [Hyper Beam](MOVES.md#hyper-beam) | TM16 | [Pay Day](MOVES.md#pay-day) | TM20 | [Rage](MOVES.md#rage) |
 | TM31 | [Mimic](MOVES.md#mimic) | TM32 | [Double Team](MOVES.md#double-team) | TM34 | [Bide](MOVES.md#bide) |
 | TM40 | [Skull Bash](MOVES.md#skull-bash) | TM44 | [Rest](MOVES.md#rest) | TM50 | [Substitute](MOVES.md#substitute) |
-| HM03 | **[Surf](MOVES.md#surf)** | HM04 | [Strength](MOVES.md#strength) |  |  |
+| HM03 | [Surf](MOVES.md#surf) | HM04 | [Strength](MOVES.md#strength) |  |  |
 ---
 
 ### #99 Grimer
 
 **Type:** Poison  
 **Catch rate:** 190 · **Base EXP:** 90 · **Growth:** Medium Fast  
-**Evolves into:** [Muk](#100-muk) — level 38  
-**Wild:** Pokémon Mansion 1F — Grass, Lv 30 · Pokémon Mansion 2F — Grass, Lv 30 · Pokémon Mansion 3F — Grass, Lv 31–35 · Pokémon Mansion B1F — Grass, Lv 31–33  
+**Evolves into:** [Muk](#100-muk) by level 38  
+**Wild:** Pokémon Mansion 1F, Grass, Lv 30 · Pokémon Mansion 2F, Grass, Lv 30 · Pokémon Mansion 3F, Grass, Lv 31–35 · Pokémon Mansion B1F, Grass, Lv 31–33  
 
 #### Base stats
 
@@ -4392,8 +4392,8 @@
 
 **Type:** Poison / Dark  
 **Catch rate:** 75 · **Base EXP:** 157 · **Growth:** Medium Fast  
-**Evolves from:** [Grimer](#99-grimer) — level 38  
-**Wild:** Pokémon Mansion 1F — Grass, Lv 39 · Pokémon Mansion 2F — Grass, Lv 37 · Pokémon Mansion 3F — Grass, Lv 38–40 · Pokémon Mansion B1F — Grass, Lv 40  
+**Evolves from:** [Grimer](#99-grimer) by level 38  
+**Wild:** Pokémon Mansion 1F, Grass, Lv 39 · Pokémon Mansion 2F, Grass, Lv 37 · Pokémon Mansion 3F, Grass, Lv 38–40 · Pokémon Mansion B1F, Grass, Lv 40  
 
 #### Base stats
 
@@ -4437,8 +4437,8 @@
 
 **Type:** Dark / Fire  
 **Catch rate:** 120 · **Base EXP:** 66 · **Growth:** Slow  
-**Evolves into:** [Houndoom](#102-houndoom) — level 24  
-**Wild:** Route 7 — Grass, Lv 18  
+**Evolves into:** [Houndoom](#102-houndoom) by level 24  
+**Wild:** Route 7, Grass, Lv 18  
 
 #### Base stats
 
@@ -4480,7 +4480,7 @@
 
 **Type:** Dark / Fire  
 **Catch rate:** 45 · **Base EXP:** 175 · **Growth:** Slow  
-**Evolves from:** [Houndour](#101-houndour) — level 24  
+**Evolves from:** [Houndour](#101-houndour) by level 24  
 
 #### Base stats
 
@@ -4523,9 +4523,9 @@
 
 **Type:** Water  
 **Catch rate:** 190 · **Base EXP:** 97 · **Growth:** Slow  
-**Evolves into:** [Cloyster](#104-cloyster) — Water Stone  
-**Wild:** Seafoam Islands B1F — Grass, Lv 30 · Seafoam Islands B2F — Grass, Lv 28 · Seafoam Islands B4F — Grass, Lv 31–33 · Seafoam Islands 1F — Grass, Lv 28–30  
-**Fishing:** Vermilion City — Super Rod, Lv 15 · Cinnabar Island — Super Rod, Lv 15 · Route 6 — Super Rod, Lv 15 · Route 11 — Super Rod, Lv 15 · Sea Route 19 — Super Rod, Lv 15 · Sea Route 20 — Super Rod, Lv 15 · Sea Route 21 — Super Rod, Lv 15 · Vermilion Dock — Super Rod, Lv 15 · Seafoam Islands B3F — Super Rod, Lv 15 · Seafoam Islands B4F — Super Rod, Lv 15  
+**Evolves into:** [Cloyster](#104-cloyster) by Water Stone  
+**Wild:** Seafoam Islands B1F, Grass, Lv 30 · Seafoam Islands B2F, Grass, Lv 28 · Seafoam Islands B4F, Grass, Lv 31–33 · Seafoam Islands 1F, Grass, Lv 28–30  
+**Fishing:** Vermilion City, Super Rod, Lv 15 · Cinnabar Island, Super Rod, Lv 15 · Route 6, Super Rod, Lv 15 · Route 11, Super Rod, Lv 15 · Sea Route 19, Super Rod, Lv 15 · Sea Route 20, Super Rod, Lv 15 · Sea Route 21, Super Rod, Lv 15 · Vermilion Dock, Super Rod, Lv 15 · Seafoam Islands B3F, Super Rod, Lv 15 · Seafoam Islands B4F, Super Rod, Lv 15  
 
 #### Base stats
 
@@ -4567,7 +4567,7 @@
 
 **Type:** Water / Ice  
 **Catch rate:** 60 · **Base EXP:** 203 · **Growth:** Slow  
-**Evolves from:** [Shellder](#103-shellder) — Water Stone  
+**Evolves from:** [Shellder](#103-shellder) by Water Stone  
 
 #### Base stats
 
@@ -4607,8 +4607,8 @@
 
 **Type:** Ghost / Poison  
 **Catch rate:** 190 · **Base EXP:** 95 · **Growth:** Medium Slow  
-**Evolves into:** [Haunter](#106-haunter) — level 25  
-**Wild:** Pokémon Tower 3F — Grass, Lv 20–23 · Pokémon Tower 4F — Grass, Lv 20–24 · Pokémon Tower 5F — Grass, Lv 20–24 · Pokémon Tower 6F — Grass, Lv 21–23 · Pokémon Tower 7F — Grass, Lv 20–24  
+**Evolves into:** [Haunter](#106-haunter) by level 25  
+**Wild:** Pokémon Tower 3F, Grass, Lv 20–23 · Pokémon Tower 4F, Grass, Lv 20–24 · Pokémon Tower 5F, Grass, Lv 20–24 · Pokémon Tower 6F, Grass, Lv 21–23 · Pokémon Tower 7F, Grass, Lv 20–24  
 
 #### Base stats
 
@@ -4647,9 +4647,9 @@
 
 **Type:** Ghost / Poison  
 **Catch rate:** 90 · **Base EXP:** 126 · **Growth:** Medium Slow  
-**Evolves from:** [Gastly](#105-gastly) — level 25  
-**Evolves into:** [Gengar](#107-gengar) — level 36  
-**Wild:** Pokémon Tower 3F — Grass, Lv 25 · Pokémon Tower 4F — Grass, Lv 25 · Pokémon Tower 5F — Grass, Lv 25 · Pokémon Tower 6F — Grass, Lv 26–28 · Pokémon Tower 7F — Grass, Lv 28–30  
+**Evolves from:** [Gastly](#105-gastly) by level 25  
+**Evolves into:** [Gengar](#107-gengar) by level 36  
+**Wild:** Pokémon Tower 3F, Grass, Lv 25 · Pokémon Tower 4F, Grass, Lv 25 · Pokémon Tower 5F, Grass, Lv 25 · Pokémon Tower 6F, Grass, Lv 26–28 · Pokémon Tower 7F, Grass, Lv 28–30  
 
 #### Base stats
 
@@ -4688,7 +4688,7 @@
 
 **Type:** Ghost / Poison  
 **Catch rate:** 45 · **Base EXP:** 190 · **Growth:** Medium Slow  
-**Evolves from:** [Haunter](#106-haunter) — level 36  
+**Evolves from:** [Haunter](#106-haunter) by level 36  
 
 #### Base stats
 
@@ -4731,8 +4731,8 @@
 
 **Type:** Ghost / Fairy  
 **Catch rate:** 45 · **Base EXP:** 147 · **Growth:** Fast  
-**Evolves into:** [Mismagius](#109-mismagius) — Moon Stone  
-**Wild:** Pokémon Tower 3F — Grass, Lv 14–16 · Pokémon Tower 4F — Grass, Lv 14–16 · Pokémon Tower 5F — Grass, Lv 14–16 · Pokémon Tower 6F — Grass, Lv 15–17 · Pokémon Tower 7F — Grass, Lv 16–18  
+**Evolves into:** [Mismagius](#109-mismagius) by Moon Stone  
+**Wild:** Pokémon Tower 3F, Grass, Lv 14–16 · Pokémon Tower 4F, Grass, Lv 14–16 · Pokémon Tower 5F, Grass, Lv 14–16 · Pokémon Tower 6F, Grass, Lv 15–17 · Pokémon Tower 7F, Grass, Lv 16–18  
 
 #### Base stats
 
@@ -4773,7 +4773,7 @@
 
 **Type:** Ghost / Fairy  
 **Catch rate:** 45 · **Base EXP:** 173 · **Growth:** Fast  
-**Evolves from:** [Misdreavus](#108-misdreavus) — Moon Stone  
+**Evolves from:** [Misdreavus](#108-misdreavus) by Moon Stone  
 
 #### Base stats
 
@@ -4815,8 +4815,8 @@
 
 **Type:** Rock  
 **Catch rate:** 45 · **Base EXP:** 108 · **Growth:** Medium Fast  
-**Evolves into:** [Steelix](#111-steelix) — Metal Coat  
-**Wild:** Rock Tunnel 1F — Grass, Lv 13–15 · Victory Road 1F — Grass, Lv 36–42 · Victory Road 2F — Grass, Lv 36–42 · Victory Road 3F — Grass, Lv 42 · Rock Tunnel B1F — Grass, Lv 13–17  
+**Evolves into:** [Steelix](#111-steelix) by Metal Coat  
+**Wild:** Rock Tunnel 1F, Grass, Lv 13–15 · Victory Road 1F, Grass, Lv 36–42 · Victory Road 2F, Grass, Lv 36–42 · Victory Road 3F, Grass, Lv 42 · Rock Tunnel B1F, Grass, Lv 13–17  
 
 #### Base stats
 
@@ -4858,7 +4858,7 @@
 
 **Type:** Ground / Steel  
 **Catch rate:** 45 · **Base EXP:** 108 · **Growth:** Medium Fast  
-**Evolves from:** [Onix](#110-onix) — Metal Coat  
+**Evolves from:** [Onix](#110-onix) by Metal Coat  
 
 #### Base stats
 
@@ -4902,8 +4902,8 @@
 
 **Type:** Psychic  
 **Catch rate:** 190 · **Base EXP:** 102 · **Growth:** Medium Fast  
-**Evolves into:** [Hypno](#113-hypno) — level 26  
-**Wild:** Route 11 — Grass, Lv 9–15  
+**Evolves into:** [Hypno](#113-hypno) by level 26  
+**Wild:** Route 11, Grass, Lv 9–15  
 
 #### Base stats
 
@@ -4948,8 +4948,8 @@
 
 **Type:** Psychic / Dark  
 **Catch rate:** 75 · **Base EXP:** 165 · **Growth:** Medium Fast  
-**Evolves from:** [Drowzee](#112-drowzee) — level 26  
-**Wild:** Cerulean Cave 1F — Grass, Lv 46  
+**Evolves from:** [Drowzee](#112-drowzee) by level 26  
+**Wild:** Cerulean Cave 1F, Grass, Lv 46  
 
 #### Base stats
 
@@ -4996,9 +4996,9 @@
 
 **Type:** Water  
 **Catch rate:** 225 · **Base EXP:** 115 · **Growth:** Medium Fast  
-**Evolves into:** [Kingler](#115-kingler) — level 28  
-**Wild:** Seafoam Islands B1F — Grass, Lv 30–32 · Seafoam Islands B3F — Grass, Lv 29 · Seafoam Islands B4F — Grass, Lv 33  
-**Fishing:** Cerulean City — Super Rod, Lv 15 · Vermilion City — Super Rod, Lv 15 · Fuchsia City — Super Rod, Lv 15 · Route 4 — Super Rod, Lv 15 · Route 6 — Super Rod, Lv 15 · Route 11 — Super Rod, Lv 15 · Route 12 — Super Rod, Lv 15 · Route 13 — Super Rod, Lv 15 · Route 17 — Super Rod, Lv 15 · Route 18 — Super Rod, Lv 15 · Route 24 — Super Rod, Lv 15 · Route 25 — Super Rod, Lv 15 · Cerulean Gym — Super Rod, Lv 15 · Vermilion Dock — Super Rod, Lv 15 · Safari Zone East — Super Rod, Lv 15 · Safari Zone North — Super Rod, Lv 15 · Safari Zone West — Super Rod, Lv 15 · Safari Zone Center — Super Rod, Lv 15  
+**Evolves into:** [Kingler](#115-kingler) by level 28  
+**Wild:** Seafoam Islands B1F, Grass, Lv 30–32 · Seafoam Islands B3F, Grass, Lv 29 · Seafoam Islands B4F, Grass, Lv 33  
+**Fishing:** Cerulean City, Super Rod, Lv 15 · Vermilion City, Super Rod, Lv 15 · Fuchsia City, Super Rod, Lv 15 · Route 4, Super Rod, Lv 15 · Route 6, Super Rod, Lv 15 · Route 11, Super Rod, Lv 15 · Route 12, Super Rod, Lv 15 · Route 13, Super Rod, Lv 15 · Route 17, Super Rod, Lv 15 · Route 18, Super Rod, Lv 15 · Route 24, Super Rod, Lv 15 · Route 25, Super Rod, Lv 15 · Cerulean Gym, Super Rod, Lv 15 · Vermilion Dock, Super Rod, Lv 15 · Safari Zone East, Super Rod, Lv 15 · Safari Zone North, Super Rod, Lv 15 · Safari Zone West, Super Rod, Lv 15 · Safari Zone Center, Super Rod, Lv 15  
 
 #### Base stats
 
@@ -5039,9 +5039,9 @@
 
 **Type:** Water / Dark  
 **Catch rate:** 60 · **Base EXP:** 206 · **Growth:** Medium Fast  
-**Evolves from:** [Krabby](#114-krabby) — level 28  
-**Wild:** Seafoam Islands B1F — Grass, Lv 37 · Seafoam Islands B3F — Grass, Lv 39  
-**Fishing:** Route 23 — Super Rod, Lv 23 · Cerulean Cave 2F — Super Rod, Lv 23 · Cerulean Cave B1F — Super Rod, Lv 23 · Cerulean Cave 1F — Super Rod, Lv 23  
+**Evolves from:** [Krabby](#114-krabby) by level 28  
+**Wild:** Seafoam Islands B1F, Grass, Lv 37 · Seafoam Islands B3F, Grass, Lv 39  
+**Fishing:** Route 23, Super Rod, Lv 23 · Cerulean Cave 2F, Super Rod, Lv 23 · Cerulean Cave B1F, Super Rod, Lv 23 · Cerulean Cave 1F, Super Rod, Lv 23  
 
 #### Base stats
 
@@ -5085,8 +5085,8 @@
 
 **Type:** Electric  
 **Catch rate:** 190 · **Base EXP:** 103 · **Growth:** Medium Fast  
-**Evolves into:** [Electrode](#117-electrode) — level 30  
-**Wild:** Route 10 — Grass, Lv 14–17 · Power Plant — Grass, Lv 21–23  
+**Evolves into:** [Electrode](#117-electrode) by level 30  
+**Wild:** Route 10, Grass, Lv 14–17 · Power Plant, Grass, Lv 21–23  
 
 #### Base stats
 
@@ -5127,8 +5127,8 @@
 
 **Type:** Electric  
 **Catch rate:** 60 · **Base EXP:** 150 · **Growth:** Medium Fast  
-**Evolves from:** [Voltorb](#116-voltorb) — level 30  
-**Wild:** Cerulean Cave 2F — Grass, Lv 52 · Cerulean Cave B1F — Grass, Lv 55  
+**Evolves from:** [Voltorb](#116-voltorb) by level 30  
+**Wild:** Cerulean Cave 2F, Grass, Lv 52 · Cerulean Cave B1F, Grass, Lv 55  
 
 #### Base stats
 
@@ -5171,8 +5171,8 @@
 
 **Type:** Grass / Psychic  
 **Catch rate:** 90 · **Base EXP:** 98 · **Growth:** Slow  
-**Evolves into:** [Exeggutor](#119-exeggutor) — Leaf Stone  
-**Wild:** Safari Zone East — Grass, Lv 23–25 · Safari Zone North — Grass, Lv 25–27 · Safari Zone West — Grass, Lv 24–26 · Safari Zone Center — Grass, Lv 24  
+**Evolves into:** [Exeggutor](#119-exeggutor) by Leaf Stone  
+**Wild:** Safari Zone East, Grass, Lv 23–25 · Safari Zone North, Grass, Lv 25–27 · Safari Zone West, Grass, Lv 24–26 · Safari Zone Center, Grass, Lv 24  
 
 #### Base stats
 
@@ -5213,7 +5213,7 @@
 
 **Type:** Grass / Psychic  
 **Catch rate:** 45 · **Base EXP:** 212 · **Growth:** Slow  
-**Evolves from:** [Exeggcute](#118-exeggcute) — Leaf Stone  
+**Evolves from:** [Exeggcute](#118-exeggcute) by Leaf Stone  
 
 #### Base stats
 
@@ -5251,8 +5251,8 @@
 
 **Type:** Ground  
 **Catch rate:** 190 · **Base EXP:** 87 · **Growth:** Medium Fast  
-**Evolves into:** [Marowak](#121-marowak) — level 28  
-**Wild:** Pokémon Tower 3F — Grass, Lv 20–22 · Pokémon Tower 4F — Grass, Lv 20–22 · Pokémon Tower 5F — Grass, Lv 20–22 · Pokémon Tower 6F — Grass, Lv 22–24 · Pokémon Tower 7F — Grass, Lv 22–24  
+**Evolves into:** [Marowak](#121-marowak) by level 28  
+**Wild:** Pokémon Tower 3F, Grass, Lv 20–22 · Pokémon Tower 4F, Grass, Lv 20–22 · Pokémon Tower 5F, Grass, Lv 20–22 · Pokémon Tower 6F, Grass, Lv 22–24 · Pokémon Tower 7F, Grass, Lv 22–24  
 
 #### Base stats
 
@@ -5296,8 +5296,8 @@
 
 **Type:** Ground / Ghost  
 **Catch rate:** 75 · **Base EXP:** 124 · **Growth:** Medium Fast  
-**Evolves from:** [Cubone](#120-cubone) — level 28  
-**Wild:** Victory Road 1F — Grass, Lv 43 · Victory Road 2F — Grass, Lv 40 · Cerulean Cave 2F — Grass, Lv 52 · Cerulean Cave B1F — Grass, Lv 55  
+**Evolves from:** [Cubone](#120-cubone) by level 28  
+**Wild:** Victory Road 1F, Grass, Lv 43 · Victory Road 2F, Grass, Lv 40 · Cerulean Cave 2F, Grass, Lv 52 · Cerulean Cave B1F, Grass, Lv 55  
 
 #### Base stats
 
@@ -5344,8 +5344,8 @@
 
 **Type:** Fighting  
 **Catch rate:** 75 · **Base EXP:** 91 · **Growth:** Medium Fast  
-**Evolves into:** [Hitmonlee](#123-hitmonlee) — level 20, Attack > Defense · [Hitmonchan](#124-hitmonchan) — level 20, Attack < Defense · [Hitmontop](#125-hitmontop) — level 20, Attack = Defense  
-**Wild:** Route 24 — Grass, Lv 10–11 · Route 25 — Grass, Lv 11  
+**Evolves into:** [Hitmonlee](#123-hitmonlee) by level 20, Attack > Defense · [Hitmonchan](#124-hitmonchan) by level 20, Attack < Defense · [Hitmontop](#125-hitmontop) by level 20, Attack = Defense  
+**Wild:** Route 24, Grass, Lv 10–11 · Route 25, Grass, Lv 11  
 
 #### Base stats
 
@@ -5363,7 +5363,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
-| 13 | [Karate Chop](MOVES.md#karate-chop) | Normal | 50 | 100% | 25 |
+| 13 | **[Karate Chop](MOVES.md#karate-chop)** | Fighting | 50 | 100% | 25 |
 | 17 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
 
 **TM/HM moves**
@@ -5383,7 +5383,7 @@
 
 **Type:** Fighting  
 **Catch rate:** 45 · **Base EXP:** 139 · **Growth:** Medium Fast  
-**Evolves from:** [Tyrogue](#122-tyrogue) — level 20, Attack > Defense  
+**Evolves from:** [Tyrogue](#122-tyrogue) by level 20, Attack > Defense  
 
 #### Base stats
 
@@ -5425,7 +5425,7 @@
 
 **Type:** Fighting  
 **Catch rate:** 45 · **Base EXP:** 140 · **Growth:** Medium Fast  
-**Evolves from:** [Tyrogue](#122-tyrogue) — level 20, Attack < Defense  
+**Evolves from:** [Tyrogue](#122-tyrogue) by level 20, Attack < Defense  
 
 #### Base stats
 
@@ -5448,7 +5448,7 @@
 | 38 | [Ice Punch](MOVES.md#ice-punch) | Ice | 75 | 100% | 15 |
 | 43 | [Thunderpunch](MOVES.md#thunderpunch) | Electric | 75 | 100% | 15 |
 | 48 | [Mega Punch](MOVES.md#mega-punch) | Normal | 80 | 85% | 20 |
-| 53 | **[Counter](MOVES.md#counter)** | Fighting | 1 | 100% | 20 |
+| 56 | **[Counter](MOVES.md#counter)** | Fighting | 1 | 100% | 20 |
 
 **TM/HM moves**
 
@@ -5467,7 +5467,7 @@
 
 **Type:** Fighting  
 **Catch rate:** 45 · **Base EXP:** 138 · **Growth:** Medium Fast  
-**Evolves from:** [Tyrogue](#122-tyrogue) — level 20, Attack = Defense  
+**Evolves from:** [Tyrogue](#122-tyrogue) by level 20, Attack = Defense  
 
 #### Base stats
 
@@ -5554,8 +5554,8 @@
 
 **Type:** Poison  
 **Catch rate:** 190 · **Base EXP:** 114 · **Growth:** Medium Fast  
-**Evolves into:** [Weezing](#128-weezing) — level 35  
-**Wild:** Pokémon Mansion 1F — Grass, Lv 32 · Pokémon Mansion 2F — Grass, Lv 30–34 · Pokémon Mansion 3F — Grass, Lv 34 · Pokémon Mansion B1F — Grass, Lv 35  
+**Evolves into:** [Weezing](#128-weezing) by level 35  
+**Wild:** Pokémon Mansion 1F, Grass, Lv 32 · Pokémon Mansion 2F, Grass, Lv 30–34 · Pokémon Mansion 3F, Grass, Lv 34 · Pokémon Mansion B1F, Grass, Lv 35  
 
 #### Base stats
 
@@ -5595,8 +5595,8 @@
 
 **Type:** Poison / Fairy  
 **Catch rate:** 60 · **Base EXP:** 173 · **Growth:** Medium Fast  
-**Evolves from:** [Koffing](#127-koffing) — level 35  
-**Wild:** Pokémon Mansion 1F — Grass, Lv 37 · Pokémon Mansion 2F — Grass, Lv 39 · Pokémon Mansion 3F — Grass, Lv 42 · Pokémon Mansion B1F — Grass, Lv 42  
+**Evolves from:** [Koffing](#127-koffing) by level 35  
+**Wild:** Pokémon Mansion 1F, Grass, Lv 37 · Pokémon Mansion 2F, Grass, Lv 39 · Pokémon Mansion 3F, Grass, Lv 42 · Pokémon Mansion B1F, Grass, Lv 42  
 
 #### Base stats
 
@@ -5638,8 +5638,8 @@
 
 **Type:** Ground / Rock  
 **Catch rate:** 120 · **Base EXP:** 135 · **Growth:** Slow  
-**Evolves into:** [Rhydon](#130-rhydon) — level 42  
-**Wild:** Safari Zone North — Grass, Lv 26 · Safari Zone Center — Grass, Lv 25  
+**Evolves into:** [Rhydon](#130-rhydon) by level 42  
+**Wild:** Safari Zone North, Grass, Lv 26 · Safari Zone Center, Grass, Lv 25  
 
 #### Base stats
 
@@ -5681,8 +5681,8 @@
 
 **Type:** Ground / Fighting  
 **Catch rate:** 60 · **Base EXP:** 204 · **Growth:** Slow  
-**Evolves from:** [Rhyhorn](#129-rhyhorn) — level 42  
-**Wild:** Cerulean Cave 2F — Grass, Lv 52 · Cerulean Cave B1F — Grass, Lv 55  
+**Evolves from:** [Rhyhorn](#129-rhyhorn) by level 42  
+**Wild:** Cerulean Cave 2F, Grass, Lv 52 · Cerulean Cave B1F, Grass, Lv 55  
 
 #### Base stats
 
@@ -5729,8 +5729,8 @@
 
 **Type:** Normal  
 **Catch rate:** 130 · **Base EXP:** 110 · **Growth:** Fast  
-**Evolves into:** [Chansey](#132-chansey) — level 20  
-**Wild:** Route 5 — Grass, Lv 10  
+**Evolves into:** [Chansey](#132-chansey) by level 20  
+**Wild:** Route 5, Grass, Lv 10  
 
 #### Base stats
 
@@ -5775,9 +5775,9 @@
 
 **Type:** Normal  
 **Catch rate:** 30 · **Base EXP:** 255 · **Growth:** Fast  
-**Evolves from:** [Happiny](#131-happiny) — level 20  
-**Evolves into:** [Blissey](#133-blissey) — level 40  
-**Wild:** Safari Zone North — Grass, Lv 26 · Safari Zone Center — Grass, Lv 23 · Cerulean Cave 2F — Grass, Lv 56 · Cerulean Cave B1F — Grass, Lv 64  
+**Evolves from:** [Happiny](#131-happiny) by level 20  
+**Evolves into:** [Blissey](#133-blissey) by level 40  
+**Wild:** Safari Zone North, Grass, Lv 26 · Safari Zone Center, Grass, Lv 23 · Cerulean Cave 2F, Grass, Lv 56 · Cerulean Cave B1F, Grass, Lv 64  
 
 #### Base stats
 
@@ -5827,7 +5827,7 @@
 
 **Type:** Normal  
 **Catch rate:** 30 · **Base EXP:** 255 · **Growth:** Fast  
-**Evolves from:** [Chansey](#132-chansey) — level 40  
+**Evolves from:** [Chansey](#132-chansey) by level 40  
 
 #### Base stats
 
@@ -5875,7 +5875,7 @@
 
 **Type:** Grass  
 **Catch rate:** 45 · **Base EXP:** 166 · **Growth:** Medium Fast  
-**Wild:** Sea Route 21 — Grass, Lv 28–32  
+**Wild:** Sea Route 21, Grass, Lv 28–32  
 
 #### Base stats
 
@@ -5918,7 +5918,7 @@
 
 **Type:** Normal  
 **Catch rate:** 45 · **Base EXP:** 175 · **Growth:** Medium Fast  
-**Wild:** Safari Zone East — Grass, Lv 25 · Safari Zone West — Grass, Lv 28  
+**Wild:** Safari Zone East, Grass, Lv 25 · Safari Zone West, Grass, Lv 28  
 
 #### Base stats
 
@@ -5963,9 +5963,9 @@
 
 **Type:** Water  
 **Catch rate:** 225 · **Base EXP:** 83 · **Growth:** Medium Fast  
-**Evolves into:** [Seadra](#137-seadra) — level 32  
-**Wild:** Seafoam Islands B2F — Grass, Lv 28–30 · Seafoam Islands B4F — Grass, Lv 31 · Seafoam Islands 1F — Grass, Lv 28–30  
-**Fishing:** Cinnabar Island — Super Rod, Lv 15 · Sea Route 19 — Super Rod, Lv 15 · Sea Route 20 — Super Rod, Lv 15 · Sea Route 21 — Super Rod, Lv 15 · Seafoam Islands B3F — Super Rod, Lv 15 · Seafoam Islands B4F — Super Rod, Lv 15  
+**Evolves into:** [Seadra](#137-seadra) by level 32  
+**Wild:** Seafoam Islands B2F, Grass, Lv 28–30 · Seafoam Islands B4F, Grass, Lv 31 · Seafoam Islands 1F, Grass, Lv 28–30  
+**Fishing:** Cinnabar Island, Super Rod, Lv 15 · Sea Route 19, Super Rod, Lv 15 · Sea Route 20, Super Rod, Lv 15 · Sea Route 21, Super Rod, Lv 15 · Seafoam Islands B3F, Super Rod, Lv 15 · Seafoam Islands B4F, Super Rod, Lv 15  
 
 #### Base stats
 
@@ -6005,9 +6005,9 @@
 
 **Type:** Water  
 **Catch rate:** 75 · **Base EXP:** 155 · **Growth:** Medium Fast  
-**Evolves from:** [Horsea](#136-horsea) — level 32  
-**Evolves into:** [Kingdra](#138-kingdra) — King's Rock  
-**Fishing:** Route 23 — Super Rod, Lv 23 · Cerulean Cave 2F — Super Rod, Lv 23 · Cerulean Cave B1F — Super Rod, Lv 23 · Cerulean Cave 1F — Super Rod, Lv 23  
+**Evolves from:** [Horsea](#136-horsea) by level 32  
+**Evolves into:** [Kingdra](#138-kingdra) by King's Rock  
+**Fishing:** Route 23, Super Rod, Lv 23 · Cerulean Cave 2F, Super Rod, Lv 23 · Cerulean Cave B1F, Super Rod, Lv 23 · Cerulean Cave 1F, Super Rod, Lv 23  
 
 #### Base stats
 
@@ -6050,7 +6050,7 @@
 
 **Type:** Water / Dragon  
 **Catch rate:** 45 · **Base EXP:** 207 · **Growth:** Medium Fast  
-**Evolves from:** [Seadra](#137-seadra) — King's Rock  
+**Evolves from:** [Seadra](#137-seadra) by King's Rock  
 
 #### Base stats
 
@@ -6095,8 +6095,8 @@
 
 **Type:** Water / Fairy  
 **Catch rate:** 225 · **Base EXP:** 111 · **Growth:** Medium Fast  
-**Evolves into:** [Seaking](#140-seaking) — level 33  
-**Fishing:** Cerulean City — Super Rod, Lv 15 · Fuchsia City — Super Rod, Lv 15 · Cinnabar Island — Super Rod, Lv 15 · Route 4 — Super Rod, Lv 15 · Route 12 — Super Rod, Lv 15 · Route 13 — Super Rod, Lv 15 · Route 17 — Super Rod, Lv 15 · Route 18 — Super Rod, Lv 15 · Sea Route 19 — Super Rod, Lv 15 · Sea Route 20 — Super Rod, Lv 15 · Sea Route 21 — Super Rod, Lv 15 · Route 22 — Super Rod, Lv 15 · Route 24 — Super Rod, Lv 15 · Route 25 — Super Rod, Lv 15 · Cerulean Gym — Super Rod, Lv 15 · Seafoam Islands B3F — Super Rod, Lv 15 · Seafoam Islands B4F — Super Rod, Lv 15  
+**Evolves into:** [Seaking](#140-seaking) by level 33  
+**Fishing:** Cerulean City, Super Rod, Lv 15 · Fuchsia City, Super Rod, Lv 15 · Cinnabar Island, Super Rod, Lv 15 · Route 4, Super Rod, Lv 15 · Route 12, Super Rod, Lv 15 · Route 13, Super Rod, Lv 15 · Route 17, Super Rod, Lv 15 · Route 18, Super Rod, Lv 15 · Sea Route 19, Super Rod, Lv 15 · Sea Route 20, Super Rod, Lv 15 · Sea Route 21, Super Rod, Lv 15 · Route 22, Super Rod, Lv 15 · Route 24, Super Rod, Lv 15 · Route 25, Super Rod, Lv 15 · Cerulean Gym, Super Rod, Lv 15 · Seafoam Islands B3F, Super Rod, Lv 15 · Seafoam Islands B4F, Super Rod, Lv 15  
 
 #### Base stats
 
@@ -6139,8 +6139,8 @@
 
 **Type:** Water / Fairy  
 **Catch rate:** 60 · **Base EXP:** 170 · **Growth:** Medium Fast  
-**Evolves from:** [Goldeen](#139-goldeen) — level 33  
-**Fishing:** Fuchsia City — Super Rod, Lv 23 · Route 23 — Super Rod, Lv 23 · Cerulean Cave 2F — Super Rod, Lv 23 · Cerulean Cave B1F — Super Rod, Lv 23 · Cerulean Cave 1F — Super Rod, Lv 23  
+**Evolves from:** [Goldeen](#139-goldeen) by level 33  
+**Fishing:** Fuchsia City, Super Rod, Lv 23 · Route 23, Super Rod, Lv 23 · Cerulean Cave 2F, Super Rod, Lv 23 · Cerulean Cave B1F, Super Rod, Lv 23 · Cerulean Cave 1F, Super Rod, Lv 23  
 
 #### Base stats
 
@@ -6184,9 +6184,9 @@
 
 **Type:** Water  
 **Catch rate:** 225 · **Base EXP:** 106 · **Growth:** Slow  
-**Evolves into:** [Starmie](#142-starmie) — Water Stone  
-**Wild:** Seafoam Islands B1F — Grass, Lv 32 · Seafoam Islands B2F — Grass, Lv 30 · Seafoam Islands B3F — Grass, Lv 29–31  
-**Fishing:** Cinnabar Island — Super Rod, Lv 15 · Sea Route 19 — Super Rod, Lv 15 · Sea Route 20 — Super Rod, Lv 15 · Sea Route 21 — Super Rod, Lv 15 · Seafoam Islands B3F — Super Rod, Lv 15 · Seafoam Islands B4F — Super Rod, Lv 15  
+**Evolves into:** [Starmie](#142-starmie) by Water Stone  
+**Wild:** Seafoam Islands B1F, Grass, Lv 32 · Seafoam Islands B2F, Grass, Lv 30 · Seafoam Islands B3F, Grass, Lv 29–31  
+**Fishing:** Cinnabar Island, Super Rod, Lv 15 · Sea Route 19, Super Rod, Lv 15 · Sea Route 20, Super Rod, Lv 15 · Sea Route 21, Super Rod, Lv 15 · Seafoam Islands B3F, Super Rod, Lv 15 · Seafoam Islands B4F, Super Rod, Lv 15  
 
 #### Base stats
 
@@ -6230,7 +6230,7 @@
 
 **Type:** Water / Psychic  
 **Catch rate:** 60 · **Base EXP:** 207 · **Growth:** Slow  
-**Evolves from:** [Staryu](#141-staryu) — Water Stone  
+**Evolves from:** [Staryu](#141-staryu) by Water Stone  
 
 #### Base stats
 
@@ -6270,7 +6270,7 @@
 
 **Type:** Normal  
 **Catch rate:** 190 · **Base EXP:** 75 · **Growth:** Medium Fast  
-**Wild:** Rock Tunnel 1F — Grass, Lv 15–18 · Rock Tunnel B1F — Grass, Lv 16–18  
+**Wild:** Rock Tunnel 1F, Grass, Lv 15–18 · Rock Tunnel B1F, Grass, Lv 16–18  
 
 #### Base stats
 
@@ -6316,7 +6316,7 @@
 
 **Type:** Psychic / Fairy  
 **Catch rate:** 145 · **Base EXP:** 62 · **Growth:** Medium Fast  
-**Evolves into:** [Mr. Mime](#145-mr-mime) — level 20  
+**Evolves into:** [Mr. Mime](#145-mr-mime) by level 20  
 
 #### Base stats
 
@@ -6364,7 +6364,7 @@
 
 **Type:** Psychic / Fairy  
 **Catch rate:** 45 · **Base EXP:** 136 · **Growth:** Medium Fast  
-**Evolves from:** [Mime Jr.](#144-mime-jr) — level 20  
+**Evolves from:** [Mime Jr.](#144-mime-jr) by level 20  
 
 #### Base stats
 
@@ -6410,8 +6410,8 @@
 
 **Type:** Bug / Normal  
 **Catch rate:** 45 · **Base EXP:** 187 · **Growth:** Medium Fast  
-**Evolves into:** [Scizor](#147-scizor) — Metal Coat  
-**Wild:** Safari Zone East — Grass, Lv 28 · Safari Zone Center — Grass, Lv 23  
+**Evolves into:** [Scizor](#147-scizor) by Metal Coat  
+**Wild:** Safari Zone East, Grass, Lv 28 · Safari Zone Center, Grass, Lv 23  
 
 #### Base stats
 
@@ -6453,7 +6453,7 @@
 
 **Type:** Bug / Steel  
 **Catch rate:** 25 · **Base EXP:** 200 · **Growth:** Medium Fast  
-**Evolves from:** [Scyther](#146-scyther) — Metal Coat  
+**Evolves from:** [Scyther](#146-scyther) by Metal Coat  
 
 #### Base stats
 
@@ -6498,8 +6498,8 @@
 
 **Type:** Dark / Ice  
 **Catch rate:** 60 · **Base EXP:** 86 · **Growth:** Medium Slow  
-**Evolves into:** [Weavile](#149-weavile) — level 40  
-**Wild:** Seafoam Islands B2F — Grass, Lv 30 · Seafoam Islands B3F — Grass, Lv 30 · Seafoam Islands B4F — Grass, Lv 30  
+**Evolves into:** [Weavile](#149-weavile) by level 40  
+**Wild:** Seafoam Islands B2F, Grass, Lv 30 · Seafoam Islands B3F, Grass, Lv 30 · Seafoam Islands B4F, Grass, Lv 30  
 
 #### Base stats
 
@@ -6543,7 +6543,7 @@
 
 **Type:** Dark / Ice  
 **Catch rate:** 45 · **Base EXP:** 179 · **Growth:** Medium Slow  
-**Evolves from:** [Sneasel](#148-sneasel) — level 40  
+**Evolves from:** [Sneasel](#148-sneasel) by level 40  
 
 #### Base stats
 
@@ -6585,7 +6585,7 @@
 
 **Type:** Ice / Psychic  
 **Catch rate:** 45 · **Base EXP:** 87 · **Growth:** Medium Fast  
-**Evolves into:** [Jynx](#151-jynx) — level 30  
+**Evolves into:** [Jynx](#151-jynx) by level 30  
 
 #### Base stats
 
@@ -6631,7 +6631,7 @@
 
 **Type:** Ice / Psychic  
 **Catch rate:** 45 · **Base EXP:** 137 · **Growth:** Medium Fast  
-**Evolves from:** [Smoochum](#150-smoochum) — level 30  
+**Evolves from:** [Smoochum](#150-smoochum) by level 30  
 
 #### Base stats
 
@@ -6676,8 +6676,8 @@
 
 **Type:** Electric  
 **Catch rate:** 45 · **Base EXP:** 106 · **Growth:** Medium Fast  
-**Evolves into:** [Electabuzz](#153-electabuzz) — level 30  
-**Wild:** Power Plant — Grass, Lv 24  
+**Evolves into:** [Electabuzz](#153-electabuzz) by level 30  
+**Wild:** Route 4, Grass, Lv 8–9 · Power Plant, Grass, Lv 24  
 
 #### Base stats
 
@@ -6722,8 +6722,8 @@
 
 **Type:** Electric  
 **Catch rate:** 45 · **Base EXP:** 156 · **Growth:** Medium Fast  
-**Evolves from:** [Elekid](#152-elekid) — level 30  
-**Wild:** Power Plant — Grass, Lv 32  
+**Evolves from:** [Elekid](#152-elekid) by level 30  
+**Wild:** Power Plant, Grass, Lv 32  
 
 #### Base stats
 
@@ -6766,8 +6766,8 @@
 
 **Type:** Fire  
 **Catch rate:** 45 · **Base EXP:** 117 · **Growth:** Medium Fast  
-**Evolves into:** [Magmar](#155-magmar) — level 30  
-**Wild:** Route 6 — Grass, Lv 10 · Pokémon Mansion 1F — Grass, Lv 28 · Pokémon Mansion 2F — Grass, Lv 29  
+**Evolves into:** [Magmar](#155-magmar) by level 30  
+**Wild:** Route 6, Grass, Lv 10–11 · Pokémon Mansion 1F, Grass, Lv 28 · Pokémon Mansion 2F, Grass, Lv 29  
 
 #### Base stats
 
@@ -6811,8 +6811,8 @@
 
 **Type:** Fire  
 **Catch rate:** 45 · **Base EXP:** 167 · **Growth:** Medium Fast  
-**Evolves from:** [Magby](#154-magby) — level 30  
-**Wild:** Pokémon Mansion 3F — Grass, Lv 34 · Pokémon Mansion B1F — Grass, Lv 38  
+**Evolves from:** [Magby](#154-magby) by level 30  
+**Wild:** Pokémon Mansion 3F, Grass, Lv 34 · Pokémon Mansion B1F, Grass, Lv 38  
 
 #### Base stats
 
@@ -6855,7 +6855,7 @@
 
 **Type:** Bug  
 **Catch rate:** 45 · **Base EXP:** 200 · **Growth:** Slow  
-**Wild:** Safari Zone Center — Grass, Lv 23  
+**Wild:** Safari Zone Center, Grass, Lv 23  
 
 #### Base stats
 
@@ -6900,7 +6900,7 @@
 
 **Type:** Steel / Flying  
 **Catch rate:** 25 · **Base EXP:** 163 · **Growth:** Slow  
-**Wild:** Victory Road 2F — Grass, Lv 39 · Victory Road 3F — Grass, Lv 45  
+**Wild:** Victory Road 2F, Grass, Lv 39 · Victory Road 3F, Grass, Lv 45  
 
 #### Base stats
 
@@ -6945,7 +6945,7 @@
 
 **Type:** Normal  
 **Catch rate:** 45 · **Base EXP:** 211 · **Growth:** Slow  
-**Wild:** Safari Zone North — Grass, Lv 28 · Safari Zone West — Grass, Lv 26  
+**Wild:** Safari Zone North, Grass, Lv 28 · Safari Zone West, Grass, Lv 26  
 
 #### Base stats
 
@@ -6987,7 +6987,7 @@
 
 **Type:** Normal  
 **Catch rate:** 45 · **Base EXP:** 200 · **Growth:** Slow  
-**Wild:** Route 11 — Grass, Lv 10  
+**Wild:** Route 11, Grass, Lv 10–11  
 
 #### Base stats
 
@@ -7033,8 +7033,8 @@
 
 **Type:** Water  
 **Catch rate:** 255 · **Base EXP:** 20 · **Growth:** Slow  
-**Evolves into:** [Gyarados](#161-gyarados) — level 30  
-**Fishing:** Any water — Old Rod, Lv 5 · Fuchsia City — Super Rod, Lv 15 · Route 12 — Super Rod, Lv 15 · Route 13 — Super Rod, Lv 15 · Route 17 — Super Rod, Lv 15 · Route 18 — Super Rod, Lv 15  
+**Evolves into:** [Gyarados](#161-gyarados) by level 30  
+**Fishing:** Any water, Old Rod, Lv 5 · Fuchsia City, Super Rod, Lv 15 · Route 12, Super Rod, Lv 15 · Route 13, Super Rod, Lv 15 · Route 17, Super Rod, Lv 15 · Route 18, Super Rod, Lv 15  
 
 #### Base stats
 
@@ -7062,7 +7062,7 @@
 
 **Type:** Water / Dragon  
 **Catch rate:** 45 · **Base EXP:** 214 · **Growth:** Slow  
-**Evolves from:** [Magikarp](#160-magikarp) — level 30  
+**Evolves from:** [Magikarp](#160-magikarp) by level 30  
 
 #### Base stats
 
@@ -7152,7 +7152,7 @@
 
 **Type:** Normal  
 **Catch rate:** 35 · **Base EXP:** 61 · **Growth:** Medium Fast  
-**Wild:** Route 13 — Grass, Lv 25 · Route 14 — Grass, Lv 23 · Route 15 — Grass, Lv 23 · Route 23 — Grass, Lv 33–43 · Cerulean Cave B1F — Grass, Lv 65  
+**Wild:** Route 13, Grass, Lv 25 · Route 14, Grass, Lv 23 · Route 15, Grass, Lv 23 · Route 23, Grass, Lv 33–43 · Cerulean Cave B1F, Grass, Lv 65  
 
 #### Base stats
 
@@ -7178,7 +7178,7 @@
 
 **Type:** Normal  
 **Catch rate:** 45 · **Base EXP:** 92 · **Growth:** Medium Fast  
-**Evolves into:** [Flareon](#167-flareon) — Fire Stone · [Jolteon](#166-jolteon) — Thunder Stone · [Vaporeon](#165-vaporeon) — Water Stone · [Espeon](#168-espeon) — Sun Stone · [Umbreon](#169-umbreon) — Moon Stone · [Leafeon](#170-leafeon) — Leaf Stone · [Glaceon](#171-glaceon) — Ice Stone · [Sylveon](#172-sylveon) — level 41  
+**Evolves into:** [Flareon](#167-flareon) by Fire Stone · [Jolteon](#166-jolteon) by Thunder Stone · [Vaporeon](#165-vaporeon) by Water Stone · [Espeon](#168-espeon) by Sun Stone · [Umbreon](#169-umbreon) by Moon Stone · [Leafeon](#170-leafeon) by Leaf Stone · [Glaceon](#171-glaceon) by Ice Stone · [Sylveon](#172-sylveon) by level 41  
 
 #### Base stats
 
@@ -7218,7 +7218,7 @@
 
 **Type:** Water  
 **Catch rate:** 45 · **Base EXP:** 196 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) — Water Stone  
+**Evolves from:** [Eevee](#164-eevee) by Water Stone  
 
 #### Base stats
 
@@ -7265,7 +7265,7 @@
 
 **Type:** Electric  
 **Catch rate:** 45 · **Base EXP:** 197 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) — Thunder Stone  
+**Evolves from:** [Eevee](#164-eevee) by Thunder Stone  
 
 #### Base stats
 
@@ -7312,7 +7312,7 @@
 
 **Type:** Fire  
 **Catch rate:** 45 · **Base EXP:** 198 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) — Fire Stone  
+**Evolves from:** [Eevee](#164-eevee) by Fire Stone  
 
 #### Base stats
 
@@ -7358,7 +7358,7 @@
 
 **Type:** Psychic  
 **Catch rate:** 45 · **Base EXP:** 196 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) — Sun Stone  
+**Evolves from:** [Eevee](#164-eevee) by Sun Stone  
 
 #### Base stats
 
@@ -7402,7 +7402,7 @@
 
 **Type:** Dark  
 **Catch rate:** 45 · **Base EXP:** 196 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) — Moon Stone  
+**Evolves from:** [Eevee](#164-eevee) by Moon Stone  
 
 #### Base stats
 
@@ -7446,7 +7446,7 @@
 
 **Type:** Grass  
 **Catch rate:** 45 · **Base EXP:** 184 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) — Leaf Stone  
+**Evolves from:** [Eevee](#164-eevee) by Leaf Stone  
 
 #### Base stats
 
@@ -7491,7 +7491,7 @@
 
 **Type:** Ice  
 **Catch rate:** 45 · **Base EXP:** 184 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) — Ice Stone  
+**Evolves from:** [Eevee](#164-eevee) by Ice Stone  
 
 #### Base stats
 
@@ -7536,7 +7536,7 @@
 
 **Type:** Fairy  
 **Catch rate:** 45 · **Base EXP:** 196 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) — level 41  
+**Evolves from:** [Eevee](#164-eevee) by level 41  
 
 #### Base stats
 
@@ -7578,7 +7578,7 @@
 
 **Type:** Normal  
 **Catch rate:** 45 · **Base EXP:** 130 · **Growth:** Medium Fast  
-**Evolves into:** [Porygon2](#174-porygon2) — level 36  
+**Evolves into:** [Porygon2](#174-porygon2) by level 36  
 
 #### Base stats
 
@@ -7621,7 +7621,7 @@
 
 **Type:** Normal  
 **Catch rate:** 45 · **Base EXP:** 180 · **Growth:** Medium Fast  
-**Evolves from:** [Porygon](#173-porygon) — level 36  
+**Evolves from:** [Porygon](#173-porygon) by level 36  
 
 #### Base stats
 
@@ -7665,7 +7665,7 @@
 
 **Type:** Rock / Water  
 **Catch rate:** 45 · **Base EXP:** 120 · **Growth:** Medium Fast  
-**Evolves into:** [Omastar](#176-omastar) — level 40  
+**Evolves into:** [Omastar](#176-omastar) by level 40  
 
 #### Base stats
 
@@ -7705,7 +7705,7 @@
 
 **Type:** Rock / Water  
 **Catch rate:** 45 · **Base EXP:** 199 · **Growth:** Medium Fast  
-**Evolves from:** [Omanyte](#175-omanyte) — level 40  
+**Evolves from:** [Omanyte](#175-omanyte) by level 40  
 
 #### Base stats
 
@@ -7747,7 +7747,7 @@
 
 **Type:** Rock / Water  
 **Catch rate:** 45 · **Base EXP:** 119 · **Growth:** Medium Fast  
-**Evolves into:** [Kabutops](#178-kabutops) — level 40  
+**Evolves into:** [Kabutops](#178-kabutops) by level 40  
 
 #### Base stats
 
@@ -7786,7 +7786,7 @@
 
 **Type:** Rock / Water  
 **Catch rate:** 45 · **Base EXP:** 201 · **Growth:** Medium Fast  
-**Evolves from:** [Kabuto](#177-kabuto) — level 40  
+**Evolves from:** [Kabuto](#177-kabuto) by level 40  
 
 #### Base stats
 
@@ -7870,7 +7870,8 @@
 
 **Type:** Normal  
 **Catch rate:** 50 · **Base EXP:** 78 · **Growth:** Slow  
-**Evolves into:** [Snorlax](#181-snorlax) — level 30  
+**Evolves into:** [Snorlax](#181-snorlax) by level 30  
+**Wild:** Route 3, Grass, Lv 7 · Route 10, Grass, Lv 13  
 
 #### Base stats
 
@@ -7920,7 +7921,7 @@
 
 **Type:** Normal  
 **Catch rate:** 25 · **Base EXP:** 154 · **Growth:** Slow  
-**Evolves from:** [Munchlax](#180-munchlax) — level 30  
+**Evolves from:** [Munchlax](#180-munchlax) by level 30  
 
 #### Base stats
 
@@ -7967,8 +7968,8 @@
 
 **Type:** Ground  
 **Catch rate:** 255 · **Base EXP:** 58 · **Growth:** Medium Slow  
-**Evolves into:** [Vibrava](#183-vibrava) — level 35  
-**Wild:** Rock Tunnel 1F — Grass, Lv 13 · Rock Tunnel B1F — Grass, Lv 13  
+**Evolves into:** [Vibrava](#183-vibrava) by level 35  
+**Wild:** Rock Tunnel 1F, Grass, Lv 13 · Rock Tunnel B1F, Grass, Lv 13  
 
 #### Base stats
 
@@ -8009,8 +8010,8 @@
 
 **Type:** Ground / Dragon  
 **Catch rate:** 120 · **Base EXP:** 119 · **Growth:** Medium Slow  
-**Evolves from:** [Trapinch](#182-trapinch) — level 35  
-**Evolves into:** [Flygon](#184-flygon) — level 45  
+**Evolves from:** [Trapinch](#182-trapinch) by level 35  
+**Evolves into:** [Flygon](#184-flygon) by level 45  
 
 #### Base stats
 
@@ -8053,7 +8054,7 @@
 
 **Type:** Ground / Dragon  
 **Catch rate:** 45 · **Base EXP:** 234 · **Growth:** Medium Slow  
-**Evolves from:** [Vibrava](#183-vibrava) — level 45  
+**Evolves from:** [Vibrava](#183-vibrava) by level 45  
 
 #### Base stats
 
@@ -8094,7 +8095,7 @@
 
 **Type:** Electric  
 **Catch rate:** 235 · **Base EXP:** 59 · **Growth:** Medium Slow  
-**Evolves into:** [Flaaffy](#186-flaaffy) — level 35  
+**Evolves into:** [Flaaffy](#186-flaaffy) by level 35  
 
 #### Base stats
 
@@ -8135,8 +8136,8 @@
 
 **Type:** Electric  
 **Catch rate:** 120 · **Base EXP:** 117 · **Growth:** Medium Slow  
-**Evolves from:** [Mareep](#185-mareep) — level 35  
-**Evolves into:** [Ampharos](#187-ampharos) — level 40  
+**Evolves from:** [Mareep](#185-mareep) by level 35  
+**Evolves into:** [Ampharos](#187-ampharos) by level 40  
 
 #### Base stats
 
@@ -8178,7 +8179,7 @@
 
 **Type:** Electric / Dragon  
 **Catch rate:** 45 · **Base EXP:** 194 · **Growth:** Medium Slow  
-**Evolves from:** [Flaaffy](#186-flaaffy) — level 40  
+**Evolves from:** [Flaaffy](#186-flaaffy) by level 40  
 
 #### Base stats
 
@@ -8347,8 +8348,8 @@
 
 **Type:** Grass  
 **Catch rate:** 45 · **Base EXP:** 64 · **Growth:** Medium Slow  
-**Evolves into:** [Ivysaur](#192-ivysaur) — level 30  
-**Wild:** Cerulean Cave 1F — Grass, Lv 5  
+**Evolves into:** [Ivysaur](#192-ivysaur) by level 30  
+**Wild:** Cerulean Cave 1F, Grass, Lv 5  
 
 #### Base stats
 
@@ -8390,8 +8391,8 @@
 
 **Type:** Grass  
 **Catch rate:** 45 · **Base EXP:** 141 · **Growth:** Medium Slow  
-**Evolves from:** [Bulbasaur](#191-bulbasaur) — level 30  
-**Evolves into:** [Venusaur](#193-venusaur) — level 55  
+**Evolves from:** [Bulbasaur](#191-bulbasaur) by level 30  
+**Evolves into:** [Venusaur](#193-venusaur) by level 55  
 
 #### Base stats
 
@@ -8434,7 +8435,7 @@
 
 **Type:** Grass / Fairy  
 **Catch rate:** 45 · **Base EXP:** 208 · **Growth:** Medium Slow  
-**Evolves from:** [Ivysaur](#192-ivysaur) — level 55  
+**Evolves from:** [Ivysaur](#192-ivysaur) by level 55  
 
 #### Base stats
 
@@ -8480,8 +8481,8 @@
 
 **Type:** Fire  
 **Catch rate:** 45 · **Base EXP:** 65 · **Growth:** Medium Slow  
-**Evolves into:** [Charmeleon](#195-charmeleon) — level 30  
-**Wild:** Cerulean Cave B1F — Grass, Lv 5  
+**Evolves into:** [Charmeleon](#195-charmeleon) by level 30  
+**Wild:** Cerulean Cave B1F, Grass, Lv 5  
 
 #### Base stats
 
@@ -8525,8 +8526,8 @@
 
 **Type:** Fire  
 **Catch rate:** 45 · **Base EXP:** 142 · **Growth:** Medium Slow  
-**Evolves from:** [Charmander](#194-charmander) — level 30  
-**Evolves into:** [Charizard](#196-charizard) — level 55  
+**Evolves from:** [Charmander](#194-charmander) by level 30  
+**Evolves into:** [Charizard](#196-charizard) by level 55  
 
 #### Base stats
 
@@ -8571,7 +8572,7 @@
 
 **Type:** Fire / Dragon  
 **Catch rate:** 45 · **Base EXP:** 209 · **Growth:** Medium Slow  
-**Evolves from:** [Charmeleon](#195-charmeleon) — level 55  
+**Evolves from:** [Charmeleon](#195-charmeleon) by level 55  
 
 #### Base stats
 
@@ -8619,8 +8620,8 @@
 
 **Type:** Water  
 **Catch rate:** 45 · **Base EXP:** 66 · **Growth:** Medium Slow  
-**Evolves into:** [Wartortle](#198-wartortle) — level 30  
-**Wild:** Cerulean Cave 2F — Grass, Lv 5  
+**Evolves into:** [Wartortle](#198-wartortle) by level 30  
+**Wild:** Cerulean Cave 2F, Grass, Lv 5  
 
 #### Base stats
 
@@ -8665,8 +8666,8 @@
 
 **Type:** Water  
 **Catch rate:** 45 · **Base EXP:** 143 · **Growth:** Medium Slow  
-**Evolves from:** [Squirtle](#197-squirtle) — level 30  
-**Evolves into:** [Blastoise](#199-blastoise) — level 55  
+**Evolves from:** [Squirtle](#197-squirtle) by level 30  
+**Evolves into:** [Blastoise](#199-blastoise) by level 55  
 
 #### Base stats
 
@@ -8712,7 +8713,7 @@
 
 **Type:** Water / Steel  
 **Catch rate:** 45 · **Base EXP:** 210 · **Growth:** Medium Slow  
-**Evolves from:** [Wartortle](#198-wartortle) — level 55  
+**Evolves from:** [Wartortle](#198-wartortle) by level 55  
 
 #### Base stats
 
