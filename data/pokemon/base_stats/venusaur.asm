@@ -11,7 +11,7 @@
 
 	dw VenusaurPicFront, VenusaurPicBack
 
-	db TACKLE, GROWL, LEECH_SEED, VINE_WHIP ; level 1 learnset
+	db RAZOR_LEAF, GROWTH, SLEEP_POWDER, MOONBLAST ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

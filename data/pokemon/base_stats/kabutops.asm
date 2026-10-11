@@ -11,7 +11,7 @@
 
 	dw KabutopsPicFront, KabutopsPicBack
 
-	db SCRATCH, HARDEN, ABSORB, NO_MOVE ; level 1 learnset
+	db SCRATCH, HARDEN, LEECH_LIFE, SLASH ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

@@ -34,8 +34,7 @@ SpecialTrainerMoves:
 	db 1, 1, THUNDERBOLT
 	db 1, 3, THUNDER_WAVE
 	db 4, 1, THUNDERBOLT
-	db 5, 3, THUNDER
-	db 5, 4, SUBMISSION
+	db 5, 1, SUBMISSION
 	db 0
 
 	db ERIKA, 1
@@ -45,7 +44,6 @@ SpecialTrainerMoves:
 	; Rematch
 	db ERIKA, 2
 	db 4, 4, RAZOR_LEAF
-	db 5, 3, PSYCHIC_M
 	db 0
 
 	db KOGA, 1

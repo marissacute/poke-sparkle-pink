@@ -361,7 +361,9 @@
 | Pokémon | Lv |
 |:--|---:|
 | [Hitmonchan](POKEDEX.md#124-hitmonchan) | 43 |
+| [Electabuzz](POKEDEX.md#153-electabuzz) | 1 |
 | [Electabuzz](POKEDEX.md#153-electabuzz) | Evo |
+| [Ampharos](POKEDEX.md#187-ampharos) | 1 |
 | [Ampharos](POKEDEX.md#187-ampharos) | Evo |
 
 ---
@@ -399,7 +401,6 @@
 | [Kabutops](POKEDEX.md#178-kabutops) | 1 |
 | [Charmander](POKEDEX.md#194-charmander) | 1 |
 | [Charmeleon](POKEDEX.md#195-charmeleon) | 1 |
-| [Charizard](POKEDEX.md#196-charizard) | 1 |
 
 ---
 
@@ -583,6 +584,7 @@
 | [Flygon](POKEDEX.md#184-flygon) | 1 |
 | [Flygon](POKEDEX.md#184-flygon) | 52 |
 | [Ampharos](POKEDEX.md#187-ampharos) | 45 |
+| [Charizard](POKEDEX.md#196-charizard) | 1 |
 | [Charizard](POKEDEX.md#196-charizard) | Evo |
 
 ---
@@ -602,7 +604,6 @@
 | [Tangela](POKEDEX.md#134-tangela) | 23 |
 | [Bulbasaur](POKEDEX.md#191-bulbasaur) | 13 |
 | [Ivysaur](POKEDEX.md#192-ivysaur) | 13 |
-| [Venusaur](POKEDEX.md#193-venusaur) | 1 |
 | [Venusaur](POKEDEX.md#193-venusaur) | 13 |
 
 ---
@@ -897,13 +898,10 @@
 | [Munchlax](POKEDEX.md#180-munchlax) | 1 |
 | [Mareep](POKEDEX.md#185-mareep) | 1 |
 | [Flaaffy](POKEDEX.md#186-flaaffy) | 1 |
-| [Ampharos](POKEDEX.md#187-ampharos) | 1 |
 | [Bulbasaur](POKEDEX.md#191-bulbasaur) | 1 |
 | [Ivysaur](POKEDEX.md#192-ivysaur) | 1 |
-| [Venusaur](POKEDEX.md#193-venusaur) | 1 |
 | [Squirtle](POKEDEX.md#197-squirtle) | 1 |
 | [Wartortle](POKEDEX.md#198-wartortle) | 1 |
-| [Blastoise](POKEDEX.md#199-blastoise) | 1 |
 
 ---
 
@@ -1087,7 +1085,6 @@
 | [Umbreon](POKEDEX.md#169-umbreon) | 37 |
 | [Squirtle](POKEDEX.md#197-squirtle) | 1 |
 | [Wartortle](POKEDEX.md#198-wartortle) | 1 |
-| [Blastoise](POKEDEX.md#199-blastoise) | 1 |
 
 ---
 
@@ -1128,6 +1125,7 @@
 
 | Pokémon | Lv |
 |:--|---:|
+| [Beedrill](POKEDEX.md#15-beedrill) | 1 |
 | [Beedrill](POKEDEX.md#15-beedrill) | 12 |
 | [Beedrill](POKEDEX.md#15-beedrill) | Evo |
 
@@ -1197,7 +1195,6 @@
 | [Sneasel](POKEDEX.md#148-sneasel) | 1 |
 | [Weavile](POKEDEX.md#149-weavile) | 1 |
 | [Elekid](POKEDEX.md#152-elekid) | 1 |
-| [Electabuzz](POKEDEX.md#153-electabuzz) | 1 |
 | [Magby](POKEDEX.md#154-magby) | 7 |
 | [Magmar](POKEDEX.md#155-magmar) | 1 |
 | [Pinsir](POKEDEX.md#156-pinsir) | 1 |
@@ -1208,7 +1205,6 @@
 | [Flareon](POKEDEX.md#167-flareon) | 42 |
 | [Charmander](POKEDEX.md#194-charmander) | 15 |
 | [Charmeleon](POKEDEX.md#195-charmeleon) | 15 |
-| [Charizard](POKEDEX.md#196-charizard) | 1 |
 | [Charizard](POKEDEX.md#196-charizard) | 15 |
 
 ---
@@ -1303,13 +1299,10 @@
 | [Glaceon](POKEDEX.md#171-glaceon) | 1 |
 | [Mareep](POKEDEX.md#185-mareep) | 1 |
 | [Flaaffy](POKEDEX.md#186-flaaffy) | 1 |
-| [Ampharos](POKEDEX.md#187-ampharos) | 1 |
 | [Bulbasaur](POKEDEX.md#191-bulbasaur) | 1 |
 | [Ivysaur](POKEDEX.md#192-ivysaur) | 1 |
-| [Venusaur](POKEDEX.md#193-venusaur) | 1 |
 | [Charmander](POKEDEX.md#194-charmander) | 1 |
 | [Charmeleon](POKEDEX.md#195-charmeleon) | 1 |
-| [Charizard](POKEDEX.md#196-charizard) | 1 |
 
 ---
 
@@ -1486,7 +1479,6 @@
 | [Charmander](POKEDEX.md#194-charmander) | 9 |
 | [Charmeleon](POKEDEX.md#195-charmeleon) | 1 |
 | [Charmeleon](POKEDEX.md#195-charmeleon) | 9 |
-| [Charizard](POKEDEX.md#196-charizard) | 1 |
 | [Charizard](POKEDEX.md#196-charizard) | 9 |
 
 ---
@@ -1512,6 +1504,7 @@
 | [Flareon](POKEDEX.md#167-flareon) | 54 |
 | [Charmander](POKEDEX.md#194-charmander) | 38 |
 | [Charmeleon](POKEDEX.md#195-charmeleon) | 42 |
+| [Charizard](POKEDEX.md#196-charizard) | 1 |
 | [Charizard](POKEDEX.md#196-charizard) | 46 |
 
 ---
@@ -1574,7 +1567,6 @@
 | [Omastar](POKEDEX.md#176-omastar) | 1 |
 | [Squirtle](POKEDEX.md#197-squirtle) | 15 |
 | [Wartortle](POKEDEX.md#198-wartortle) | 15 |
-| [Blastoise](POKEDEX.md#199-blastoise) | 1 |
 | [Blastoise](POKEDEX.md#199-blastoise) | 15 |
 
 **TM12:** [Igglybuff](POKEDEX.md#1-igglybuff), [Jigglypuff](POKEDEX.md#2-jigglypuff), [Wigglytuff](POKEDEX.md#3-wigglytuff), [Dratini](POKEDEX.md#7-dratini), [Dragonair](POKEDEX.md#8-dragonair), [Dragonite](POKEDEX.md#9-dragonite), [Rattata](POKEDEX.md#23-rattata), [Raticate](POKEDEX.md#24-raticate), [Nidorina](POKEDEX.md#35-nidorina), [Nidoqueen](POKEDEX.md#36-nidoqueen), [Nidorino](POKEDEX.md#38-nidorino), [Nidoking](POKEDEX.md#39-nidoking), [Cleffa](POKEDEX.md#40-cleffa), [Clefairy](POKEDEX.md#41-clefairy), [Clefable](POKEDEX.md#42-clefable), [Meowth](POKEDEX.md#58-meowth), [Persian](POKEDEX.md#59-persian), [Psyduck](POKEDEX.md#60-psyduck), [Golduck](POKEDEX.md#61-golduck), [Poliwag](POKEDEX.md#67-poliwag), [Poliwhirl](POKEDEX.md#68-poliwhirl), [Poliwrath](POKEDEX.md#69-poliwrath), [Politoed](POKEDEX.md#70-politoed), [Wooper](POKEDEX.md#71-wooper), [Quagsire](POKEDEX.md#72-quagsire), [Paldean Wooper](POKEDEX.md#73-paldean-wooper), [Clodsire](POKEDEX.md#74-clodsire), [Tentacool](POKEDEX.md#84-tentacool), [Tentacruel](POKEDEX.md#85-tentacruel), [Slowpoke](POKEDEX.md#91-slowpoke), [Slowbro](POKEDEX.md#92-slowbro), [Slowking](POKEDEX.md#93-slowking), [Seel](POKEDEX.md#97-seel), [Dewgong](POKEDEX.md#98-dewgong), [Shellder](POKEDEX.md#103-shellder), [Cloyster](POKEDEX.md#104-cloyster), [Krabby](POKEDEX.md#114-krabby), [Kingler](POKEDEX.md#115-kingler), [Cubone](POKEDEX.md#120-cubone), [Marowak](POKEDEX.md#121-marowak), [Lickitung](POKEDEX.md#126-lickitung), [Chansey](POKEDEX.md#132-chansey), [Blissey](POKEDEX.md#133-blissey), [Kangaskhan](POKEDEX.md#135-kangaskhan), [Horsea](POKEDEX.md#136-horsea), [Seadra](POKEDEX.md#137-seadra), [Kingdra](POKEDEX.md#138-kingdra), [Goldeen](POKEDEX.md#139-goldeen), [Seaking](POKEDEX.md#140-seaking), [Staryu](POKEDEX.md#141-staryu), [Starmie](POKEDEX.md#142-starmie), [Dunsparce](POKEDEX.md#143-dunsparce), [Smoochum](POKEDEX.md#150-smoochum), [Jynx](POKEDEX.md#151-jynx), [Gyarados](POKEDEX.md#161-gyarados), [Lapras](POKEDEX.md#162-lapras), [Vaporeon](POKEDEX.md#165-vaporeon), [Omanyte](POKEDEX.md#175-omanyte), [Omastar](POKEDEX.md#176-omastar), [Kabuto](POKEDEX.md#177-kabuto), [Kabutops](POKEDEX.md#178-kabutops), [Munchlax](POKEDEX.md#180-munchlax), [Snorlax](POKEDEX.md#181-snorlax), [Squirtle](POKEDEX.md#197-squirtle), [Wartortle](POKEDEX.md#198-wartortle), [Blastoise](POKEDEX.md#199-blastoise), [Mewtwo](POKEDEX.md#200-mewtwo), [Mew](POKEDEX.md#201-mew)
@@ -1611,6 +1603,7 @@
 | [Kabutops](POKEDEX.md#178-kabutops) | 53 |
 | [Squirtle](POKEDEX.md#197-squirtle) | 42 |
 | [Wartortle](POKEDEX.md#198-wartortle) | 47 |
+| [Blastoise](POKEDEX.md#199-blastoise) | 1 |
 | [Blastoise](POKEDEX.md#199-blastoise) | 52 |
 
 ---
@@ -1674,6 +1667,7 @@
 | Pokémon | Lv |
 |:--|---:|
 | [Butterfree](POKEDEX.md#12-butterfree) | 32 |
+| [Raichu](POKEDEX.md#31-raichu) | Evo |
 | [Venonat](POKEDEX.md#54-venonat) | 35 |
 | [Venomoth](POKEDEX.md#55-venomoth) | 38 |
 | [Kadabra](POKEDEX.md#76-kadabra) | 27 |
@@ -1894,7 +1888,6 @@
 | Pokémon | Lv |
 |:--|---:|
 | [Tangela](POKEDEX.md#134-tangela) | 29 |
-| [Kabutops](POKEDEX.md#178-kabutops) | 1 |
 
 ---
 
@@ -1934,7 +1927,6 @@
 | [Bulbasaur](POKEDEX.md#191-bulbasaur) | 7 |
 | [Ivysaur](POKEDEX.md#192-ivysaur) | 1 |
 | [Ivysaur](POKEDEX.md#192-ivysaur) | 7 |
-| [Venusaur](POKEDEX.md#193-venusaur) | 1 |
 | [Venusaur](POKEDEX.md#193-venusaur) | 7 |
 
 ---
@@ -1956,6 +1948,7 @@
 | [Tangela](POKEDEX.md#134-tangela) | 49 |
 | [Bulbasaur](POKEDEX.md#191-bulbasaur) | 34 |
 | [Ivysaur](POKEDEX.md#192-ivysaur) | 38 |
+| [Venusaur](POKEDEX.md#193-venusaur) | 1 |
 | [Venusaur](POKEDEX.md#193-venusaur) | 43 |
 
 ---
@@ -1976,6 +1969,7 @@
 | [Leafeon](POKEDEX.md#170-leafeon) | 15 |
 | [Bulbasaur](POKEDEX.md#191-bulbasaur) | 27 |
 | [Ivysaur](POKEDEX.md#192-ivysaur) | 30 |
+| [Venusaur](POKEDEX.md#193-venusaur) | 1 |
 | [Venusaur](POKEDEX.md#193-venusaur) | 30 |
 
 ---
@@ -2085,6 +2079,7 @@
 | [Tangela](POKEDEX.md#134-tangela) | 39 |
 | [Bulbasaur](POKEDEX.md#191-bulbasaur) | 41 |
 | [Ivysaur](POKEDEX.md#192-ivysaur) | 46 |
+| [Venusaur](POKEDEX.md#193-venusaur) | 1 |
 | [Venusaur](POKEDEX.md#193-venusaur) | 52 |
 
 ---
@@ -2142,6 +2137,7 @@
 | [Gyarados](POKEDEX.md#161-gyarados) | Evo |
 | [Mareep](POKEDEX.md#185-mareep) | 31 |
 | [Flaaffy](POKEDEX.md#186-flaaffy) | 36 |
+| [Ampharos](POKEDEX.md#187-ampharos) | 1 |
 | [Ampharos](POKEDEX.md#187-ampharos) | 39 |
 
 **TM23:** [Dratini](POKEDEX.md#7-dratini), [Dragonair](POKEDEX.md#8-dragonair), [Dragonite](POKEDEX.md#9-dragonite), [Growlithe](POKEDEX.md#65-growlithe), [Arcanine](POKEDEX.md#66-arcanine), [Gyarados](POKEDEX.md#161-gyarados), [Lapras](POKEDEX.md#162-lapras), [Aerodactyl](POKEDEX.md#179-aerodactyl), [Vibrava](POKEDEX.md#183-vibrava), [Flygon](POKEDEX.md#184-flygon), [Charmander](POKEDEX.md#194-charmander), [Charmeleon](POKEDEX.md#195-charmeleon), [Charizard](POKEDEX.md#196-charizard), [Mew](POKEDEX.md#201-mew)
@@ -2182,12 +2178,12 @@
 | [Pikachu](POKEDEX.md#30-pikachu) | 1 |
 | [Raichu](POKEDEX.md#31-raichu) | 1 |
 | [Elekid](POKEDEX.md#152-elekid) | 9 |
+| [Electabuzz](POKEDEX.md#153-electabuzz) | 1 |
 | [Jolteon](POKEDEX.md#166-jolteon) | 1 |
 | [Jolteon](POKEDEX.md#166-jolteon) | 31 |
 | [Mareep](POKEDEX.md#185-mareep) | 9 |
 | [Flaaffy](POKEDEX.md#186-flaaffy) | 1 |
 | [Flaaffy](POKEDEX.md#186-flaaffy) | 9 |
-| [Ampharos](POKEDEX.md#187-ampharos) | 1 |
 | [Ampharos](POKEDEX.md#187-ampharos) | 9 |
 
 ---
@@ -2202,6 +2198,8 @@
 
 | Pokémon | Lv |
 |:--|---:|
+| [Pikachu](POKEDEX.md#30-pikachu) | 36 |
+| [Raichu](POKEDEX.md#31-raichu) | 36 |
 | [Elekid](POKEDEX.md#152-elekid) | 41 |
 | [Electabuzz](POKEDEX.md#153-electabuzz) | 47 |
 
@@ -2403,6 +2401,7 @@
 
 | Pokémon | Lv |
 |:--|---:|
+| [Raichu](POKEDEX.md#31-raichu) | 40 |
 | [Venonat](POKEDEX.md#54-venonat) | 43 |
 | [Venomoth](POKEDEX.md#55-venomoth) | 50 |
 | [Kadabra](POKEDEX.md#76-kadabra) | 38 |
@@ -2552,7 +2551,6 @@
 | [Sneasel](POKEDEX.md#148-sneasel) | 9 |
 | [Weavile](POKEDEX.md#149-weavile) | 1 |
 | [Elekid](POKEDEX.md#152-elekid) | 1 |
-| [Electabuzz](POKEDEX.md#153-electabuzz) | 1 |
 | [Eevee](POKEDEX.md#164-eevee) | 27 |
 | [Vaporeon](POKEDEX.md#165-vaporeon) | 1 |
 | [Vaporeon](POKEDEX.md#165-vaporeon) | 27 |
@@ -2923,9 +2921,11 @@
 | [Mime Jr.](POKEDEX.md#144-mime-jr) | 36 |
 | [Mr. Mime](POKEDEX.md#145-mr-mime) | 23 |
 | [Elekid](POKEDEX.md#152-elekid) | 17 |
+| [Electabuzz](POKEDEX.md#153-electabuzz) | 1 |
 | [Sylveon](POKEDEX.md#172-sylveon) | 50 |
 | [Mareep](POKEDEX.md#185-mareep) | 22 |
 | [Flaaffy](POKEDEX.md#186-flaaffy) | 24 |
+| [Ampharos](POKEDEX.md#187-ampharos) | 1 |
 | [Ampharos](POKEDEX.md#187-ampharos) | 35 |
 | [Zapdos](POKEDEX.md#189-zapdos) | 60 |
 | [Hoopa](POKEDEX.md#202-hoopa) | 15 |
@@ -3188,7 +3188,8 @@
 | [Magby](POKEDEX.md#154-magby) | 49 |
 | [Magmar](POKEDEX.md#155-magmar) | 55 |
 | [Charmander](POKEDEX.md#194-charmander) | 46 |
-| [Charmeleon](POKEDEX.md#195-charmeleon) | 56 |
+| [Charmeleon](POKEDEX.md#195-charmeleon) | 54 |
+| [Charizard](POKEDEX.md#196-charizard) | 1 |
 | [Charizard](POKEDEX.md#196-charizard) | 55 |
 
 **TM38:** [Igglybuff](POKEDEX.md#1-igglybuff), [Jigglypuff](POKEDEX.md#2-jigglypuff), [Wigglytuff](POKEDEX.md#3-wigglytuff), [Dratini](POKEDEX.md#7-dratini), [Dragonair](POKEDEX.md#8-dragonair), [Dragonite](POKEDEX.md#9-dragonite), [Nidoqueen](POKEDEX.md#36-nidoqueen), [Nidoking](POKEDEX.md#39-nidoking), [Cleffa](POKEDEX.md#40-cleffa), [Clefairy](POKEDEX.md#41-clefairy), [Clefable](POKEDEX.md#42-clefable), [Vulpix](POKEDEX.md#43-vulpix), [Ninetales](POKEDEX.md#44-ninetales), [Annihilape](POKEDEX.md#64-annihilape), [Growlithe](POKEDEX.md#65-growlithe), [Arcanine](POKEDEX.md#66-arcanine), [Paldean Wooper](POKEDEX.md#73-paldean-wooper), [Clodsire](POKEDEX.md#74-clodsire), [Machop](POKEDEX.md#78-machop), [Machoke](POKEDEX.md#79-machoke), [Machamp](POKEDEX.md#80-machamp), [Geodude](POKEDEX.md#86-geodude), [Graveler](POKEDEX.md#87-graveler), [Golem](POKEDEX.md#88-golem), [Ponyta](POKEDEX.md#89-ponyta), [Rapidash](POKEDEX.md#90-rapidash), [Slowpoke](POKEDEX.md#91-slowpoke), [Slowbro](POKEDEX.md#92-slowbro), [Slowking](POKEDEX.md#93-slowking), [Grimer](POKEDEX.md#99-grimer), [Muk](POKEDEX.md#100-muk), [Houndour](POKEDEX.md#101-houndour), [Houndoom](POKEDEX.md#102-houndoom), [Cubone](POKEDEX.md#120-cubone), [Marowak](POKEDEX.md#121-marowak), [Lickitung](POKEDEX.md#126-lickitung), [Koffing](POKEDEX.md#127-koffing), [Weezing](POKEDEX.md#128-weezing), [Rhyhorn](POKEDEX.md#129-rhyhorn), [Rhydon](POKEDEX.md#130-rhydon), [Chansey](POKEDEX.md#132-chansey), [Blissey](POKEDEX.md#133-blissey), [Kangaskhan](POKEDEX.md#135-kangaskhan), [Dunsparce](POKEDEX.md#143-dunsparce), [Magby](POKEDEX.md#154-magby), [Magmar](POKEDEX.md#155-magmar), [Tauros](POKEDEX.md#158-tauros), [Gyarados](POKEDEX.md#161-gyarados), [Flareon](POKEDEX.md#167-flareon), [Aerodactyl](POKEDEX.md#179-aerodactyl), [Munchlax](POKEDEX.md#180-munchlax), [Snorlax](POKEDEX.md#181-snorlax), [Flygon](POKEDEX.md#184-flygon), [Charmander](POKEDEX.md#194-charmander), [Charmeleon](POKEDEX.md#195-charmeleon), [Charizard](POKEDEX.md#196-charizard), [Mewtwo](POKEDEX.md#200-mewtwo), [Mew](POKEDEX.md#201-mew)
@@ -3247,6 +3248,7 @@
 | [Electrode](POKEDEX.md#117-electrode) | 40 |
 | [Staryu](POKEDEX.md#141-staryu) | 32 |
 | [Elekid](POKEDEX.md#152-elekid) | 25 |
+| [Electabuzz](POKEDEX.md#153-electabuzz) | 1 |
 | [Skarmory](POKEDEX.md#157-skarmory) | 19 |
 | [Espeon](POKEDEX.md#168-espeon) | 40 |
 | [Leafeon](POKEDEX.md#170-leafeon) | 1 |
@@ -3270,6 +3272,7 @@
 |:--|---:|
 | [Squirtle](POKEDEX.md#197-squirtle) | 38 |
 | [Wartortle](POKEDEX.md#198-wartortle) | 41 |
+| [Blastoise](POKEDEX.md#199-blastoise) | 1 |
 | [Blastoise](POKEDEX.md#199-blastoise) | 44 |
 
 **TM40:** [Igglybuff](POKEDEX.md#1-igglybuff), [Jigglypuff](POKEDEX.md#2-jigglypuff), [Wigglytuff](POKEDEX.md#3-wigglytuff), [Dratini](POKEDEX.md#7-dratini), [Dragonair](POKEDEX.md#8-dragonair), [Dragonite](POKEDEX.md#9-dragonite), [Beedrill](POKEDEX.md#15-beedrill), [Rattata](POKEDEX.md#23-rattata), [Raticate](POKEDEX.md#24-raticate), [Ekans](POKEDEX.md#27-ekans), [Arbok](POKEDEX.md#28-arbok), [Pichu](POKEDEX.md#29-pichu), [Pikachu](POKEDEX.md#30-pikachu), [Raichu](POKEDEX.md#31-raichu), [Sandshrew](POKEDEX.md#32-sandshrew), [Sandslash](POKEDEX.md#33-sandslash), [Nidoran♀](POKEDEX.md#34-nidoran), [Nidorina](POKEDEX.md#35-nidorina), [Nidoqueen](POKEDEX.md#36-nidoqueen), [Nidoran♂](POKEDEX.md#37-nidoran), [Nidorino](POKEDEX.md#38-nidorino), [Nidoking](POKEDEX.md#39-nidoking), [Cleffa](POKEDEX.md#40-cleffa), [Clefairy](POKEDEX.md#41-clefairy), [Clefable](POKEDEX.md#42-clefable), [Vulpix](POKEDEX.md#43-vulpix), [Ninetales](POKEDEX.md#44-ninetales), [Paras](POKEDEX.md#52-paras), [Parasect](POKEDEX.md#53-parasect), [Meowth](POKEDEX.md#58-meowth), [Persian](POKEDEX.md#59-persian), [Psyduck](POKEDEX.md#60-psyduck), [Golduck](POKEDEX.md#61-golduck), [Mankey](POKEDEX.md#62-mankey), [Primeape](POKEDEX.md#63-primeape), [Annihilape](POKEDEX.md#64-annihilape), [Growlithe](POKEDEX.md#65-growlithe), [Arcanine](POKEDEX.md#66-arcanine), [Poliwag](POKEDEX.md#67-poliwag), [Poliwhirl](POKEDEX.md#68-poliwhirl), [Poliwrath](POKEDEX.md#69-poliwrath), [Politoed](POKEDEX.md#70-politoed), [Wooper](POKEDEX.md#71-wooper), [Quagsire](POKEDEX.md#72-quagsire), [Paldean Wooper](POKEDEX.md#73-paldean-wooper), [Clodsire](POKEDEX.md#74-clodsire), [Abra](POKEDEX.md#75-abra), [Kadabra](POKEDEX.md#76-kadabra), [Alakazam](POKEDEX.md#77-alakazam), [Machop](POKEDEX.md#78-machop), [Machoke](POKEDEX.md#79-machoke), [Machamp](POKEDEX.md#80-machamp), [Tentacool](POKEDEX.md#84-tentacool), [Tentacruel](POKEDEX.md#85-tentacruel), [Ponyta](POKEDEX.md#89-ponyta), [Rapidash](POKEDEX.md#90-rapidash), [Slowpoke](POKEDEX.md#91-slowpoke), [Slowbro](POKEDEX.md#92-slowbro), [Slowking](POKEDEX.md#93-slowking), [Farfetch'd](POKEDEX.md#94-farfetchd), [Doduo](POKEDEX.md#95-doduo), [Dodrio](POKEDEX.md#96-dodrio), [Seel](POKEDEX.md#97-seel), [Dewgong](POKEDEX.md#98-dewgong), [Houndour](POKEDEX.md#101-houndour), [Houndoom](POKEDEX.md#102-houndoom), [Gengar](POKEDEX.md#107-gengar), [Onix](POKEDEX.md#110-onix), [Steelix](POKEDEX.md#111-steelix), [Drowzee](POKEDEX.md#112-drowzee), [Hypno](POKEDEX.md#113-hypno), [Electrode](POKEDEX.md#117-electrode), [Cubone](POKEDEX.md#120-cubone), [Marowak](POKEDEX.md#121-marowak), [Tyrogue](POKEDEX.md#122-tyrogue), [Hitmonlee](POKEDEX.md#123-hitmonlee), [Hitmonchan](POKEDEX.md#124-hitmonchan), [Hitmontop](POKEDEX.md#125-hitmontop), [Lickitung](POKEDEX.md#126-lickitung), [Rhyhorn](POKEDEX.md#129-rhyhorn), [Rhydon](POKEDEX.md#130-rhydon), [Chansey](POKEDEX.md#132-chansey), [Blissey](POKEDEX.md#133-blissey), [Tangela](POKEDEX.md#134-tangela), [Kangaskhan](POKEDEX.md#135-kangaskhan), [Horsea](POKEDEX.md#136-horsea), [Seadra](POKEDEX.md#137-seadra), [Kingdra](POKEDEX.md#138-kingdra), [Goldeen](POKEDEX.md#139-goldeen), [Seaking](POKEDEX.md#140-seaking), [Staryu](POKEDEX.md#141-staryu), [Starmie](POKEDEX.md#142-starmie), [Dunsparce](POKEDEX.md#143-dunsparce), [Mr. Mime](POKEDEX.md#145-mr-mime), [Scyther](POKEDEX.md#146-scyther), [Scizor](POKEDEX.md#147-scizor), [Smoochum](POKEDEX.md#150-smoochum), [Jynx](POKEDEX.md#151-jynx), [Elekid](POKEDEX.md#152-elekid), [Electabuzz](POKEDEX.md#153-electabuzz), [Magby](POKEDEX.md#154-magby), [Magmar](POKEDEX.md#155-magmar), [Tauros](POKEDEX.md#158-tauros), [Gyarados](POKEDEX.md#161-gyarados), [Lapras](POKEDEX.md#162-lapras), [Eevee](POKEDEX.md#164-eevee), [Vaporeon](POKEDEX.md#165-vaporeon), [Jolteon](POKEDEX.md#166-jolteon), [Flareon](POKEDEX.md#167-flareon), [Espeon](POKEDEX.md#168-espeon), [Umbreon](POKEDEX.md#169-umbreon), [Leafeon](POKEDEX.md#170-leafeon), [Glaceon](POKEDEX.md#171-glaceon), [Sylveon](POKEDEX.md#172-sylveon), [Porygon](POKEDEX.md#173-porygon), [Porygon2](POKEDEX.md#174-porygon2), [Omastar](POKEDEX.md#176-omastar), [Kabutops](POKEDEX.md#178-kabutops), [Munchlax](POKEDEX.md#180-munchlax), [Snorlax](POKEDEX.md#181-snorlax), [Mareep](POKEDEX.md#185-mareep), [Flaaffy](POKEDEX.md#186-flaaffy), [Ampharos](POKEDEX.md#187-ampharos), [Charmander](POKEDEX.md#194-charmander), [Charmeleon](POKEDEX.md#195-charmeleon), [Charizard](POKEDEX.md#196-charizard), [Squirtle](POKEDEX.md#197-squirtle), [Wartortle](POKEDEX.md#198-wartortle), [Blastoise](POKEDEX.md#199-blastoise), [Mewtwo](POKEDEX.md#200-mewtwo), [Mew](POKEDEX.md#201-mew)
@@ -3454,6 +3457,7 @@
 | [Venomoth](POKEDEX.md#55-venomoth) | 1 |
 | [Venomoth](POKEDEX.md#55-venomoth) | 27 |
 | [Kabuto](POKEDEX.md#177-kabuto) | 34 |
+| [Kabutops](POKEDEX.md#178-kabutops) | 1 |
 | [Kabutops](POKEDEX.md#178-kabutops) | 34 |
 
 ---
@@ -3525,7 +3529,6 @@
 | [Squirtle](POKEDEX.md#197-squirtle) | 8 |
 | [Wartortle](POKEDEX.md#198-wartortle) | 1 |
 | [Wartortle](POKEDEX.md#198-wartortle) | 8 |
-| [Blastoise](POKEDEX.md#199-blastoise) | 1 |
 | [Blastoise](POKEDEX.md#199-blastoise) | 8 |
 
 ---
@@ -3673,7 +3676,6 @@
 | [Golduck](POKEDEX.md#61-golduck) | 48 |
 | [Mankey](POKEDEX.md#62-mankey) | 21 |
 | [Primeape](POKEDEX.md#63-primeape) | 21 |
-| [Annihilape](POKEDEX.md#64-annihilape) | 1 |
 
 ---
 
@@ -3836,9 +3838,11 @@
 | [Scyther](POKEDEX.md#146-scyther) | 29 |
 | [Scizor](POKEDEX.md#147-scizor) | 29 |
 | [Pinsir](POKEDEX.md#156-pinsir) | 49 |
+| [Kabutops](POKEDEX.md#178-kabutops) | 1 |
 | [Kabutops](POKEDEX.md#178-kabutops) | Evo |
 | [Charmander](POKEDEX.md#194-charmander) | 30 |
 | [Charmeleon](POKEDEX.md#195-charmeleon) | 33 |
+| [Charizard](POKEDEX.md#196-charizard) | 1 |
 | [Charizard](POKEDEX.md#196-charizard) | 36 |
 
 ---
@@ -3872,6 +3876,7 @@
 | [Dugtrio](POKEDEX.md#57-dugtrio) | 28 |
 | [Scizor](POKEDEX.md#147-scizor) | 39 |
 | [Skarmory](POKEDEX.md#157-skarmory) | 42 |
+| [Blastoise](POKEDEX.md#199-blastoise) | 1 |
 | [Blastoise](POKEDEX.md#199-blastoise) | Evo |
 
 ---
@@ -3914,6 +3919,7 @@
 | [Skarmory](POKEDEX.md#157-skarmory) | 46 |
 | [Squirtle](POKEDEX.md#197-squirtle) | 32 |
 | [Wartortle](POKEDEX.md#198-wartortle) | 36 |
+| [Blastoise](POKEDEX.md#199-blastoise) | 1 |
 | [Blastoise](POKEDEX.md#199-blastoise) | 38 |
 
 ---
@@ -4025,6 +4031,7 @@
 | [Seaking](POKEDEX.md#140-seaking) | 48 |
 | [Mr. Mime](POKEDEX.md#145-mr-mime) | 43 |
 | [Sylveon](POKEDEX.md#172-sylveon) | 47 |
+| [Venusaur](POKEDEX.md#193-venusaur) | 1 |
 | [Venusaur](POKEDEX.md#193-venusaur) | Evo |
 
 ---
@@ -4141,6 +4148,7 @@
 
 | Pokémon | Lv |
 |:--|---:|
+| [Annihilape](POKEDEX.md#64-annihilape) | 1 |
 | [Annihilape](POKEDEX.md#64-annihilape) | Evo |
 | [Gastly](POKEDEX.md#105-gastly) | 36 |
 | [Haunter](POKEDEX.md#106-haunter) | 38 |

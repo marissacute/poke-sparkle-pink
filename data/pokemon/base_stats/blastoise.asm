@@ -11,7 +11,7 @@
 
 	dw BlastoisePicFront, BlastoisePicBack
 
-	db TACKLE, TAIL_WHIP, BUBBLE, WATER_GUN ; level 1 learnset
+	db IRON_DEFENSE, SKULL_BASH, HYDRO_PUMP, METAL_CLAW ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

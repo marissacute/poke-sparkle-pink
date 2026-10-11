@@ -11,7 +11,7 @@
 
 	dw ElectabuzzPicFront, ElectabuzzPicBack
 
-	db QUICK_ATTACK, LEER, NO_MOVE, NO_MOVE ; level 1 learnset
+	db THUNDERSHOCK, LIGHT_SCREEN, SWIFT, THUNDERPUNCH ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

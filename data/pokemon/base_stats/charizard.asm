@@ -11,7 +11,7 @@
 
 	dw CharizardPicFront, CharizardPicBack
 
-	db SCRATCH, GROWL, EMBER, LEER ; level 1 learnset
+	db SLASH, FLAMETHROWER, FIRE_BLAST, DRAGON_SLAM ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

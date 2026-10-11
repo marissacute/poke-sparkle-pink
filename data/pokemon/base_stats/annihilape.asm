@@ -11,7 +11,7 @@
 
 	dw AnnihilapePicFront, AnnihilapePicBack
 
-	db KARATE_CHOP, FOCUS_ENERGY, FURY_SWIPES, RAGE ; level 1 learnset
+	db KARATE_CHOP, FOCUS_ENERGY, SHADOW_BALL, RAGE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

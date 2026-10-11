@@ -1983,7 +1983,7 @@
 |---:|:--|:--|
 | 43 | [Machoke](POKEDEX.md#79-machoke) | [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) |
 | 43 | [Rhydon](POKEDEX.md#130-rhydon) | [Tail Whip](MOVES.md#tail-whip) · [Fury Attack](MOVES.md#fury-attack) · [Horn Drill](MOVES.md#horn-drill) · [Cross Chop](MOVES.md#cross-chop) |
-| 43 | [Annihilape](POKEDEX.md#64-annihilape) | [Focus Energy](MOVES.md#focus-energy) · [Fury Swipes](MOVES.md#fury-swipes) · [Rage](MOVES.md#rage) · [Screech](MOVES.md#screech) |
+| 43 | [Annihilape](POKEDEX.md#64-annihilape) | [Focus Energy](MOVES.md#focus-energy) · [Shadow Ball](MOVES.md#shadow-ball) · [Rage](MOVES.md#rage) · [Screech](MOVES.md#screech) |
 
 **10** · Fighting Dojo
 
@@ -2196,14 +2196,14 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 33 | [Elekid](POKEDEX.md#152-elekid) | [Thundershock](MOVES.md#thundershock) · [Light Screen](MOVES.md#light-screen) · [Swift](MOVES.md#swift) · [Screech](MOVES.md#screech) |
-| 33 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Quick Attack](MOVES.md#quick-attack) · [Leer](MOVES.md#leer) |
+| 33 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Thundershock](MOVES.md#thundershock) · [Light Screen](MOVES.md#light-screen) · [Swift](MOVES.md#swift) · [Thunderpunch](MOVES.md#thunderpunch) |
 | 33 | [Voltorb](POKEDEX.md#116-voltorb) | [Screech](MOVES.md#screech) · [Sonicboom](MOVES.md#sonicboom) · [Selfdestruct](MOVES.md#selfdestruct) · [Light Screen](MOVES.md#light-screen) |
 
 **13** · Pokémon Mansion B1F
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 34 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Quick Attack](MOVES.md#quick-attack) · [Leer](MOVES.md#leer) |
+| 34 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Thundershock](MOVES.md#thundershock) · [Light Screen](MOVES.md#light-screen) · [Swift](MOVES.md#swift) · [Thunderpunch](MOVES.md#thunderpunch) |
 | 34 | [Electrode](POKEDEX.md#117-electrode) | [Screech](MOVES.md#screech) · [Sonicboom](MOVES.md#sonicboom) · [Selfdestruct](MOVES.md#selfdestruct) · [Light Screen](MOVES.md#light-screen) |
 
 ---
@@ -2683,7 +2683,7 @@
 |---:|:--|:--|
 | 43 | [Persian](POKEDEX.md#59-persian) | [Bite](MOVES.md#bite) · [Screech](MOVES.md#screech) · [Pay Day](MOVES.md#pay-day) · [Fury Swipes](MOVES.md#fury-swipes) |
 | 43 | [Ninetales](POKEDEX.md#44-ninetales) | [Ember](MOVES.md#ember) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Roar](MOVES.md#roar) |
-| 43 | [Raichu](POKEDEX.md#31-raichu) | [Thundershock](MOVES.md#thundershock) · [Growl](MOVES.md#growl) · [Thunder Wave](MOVES.md#thunder-wave) |
+| 43 | [Raichu](POKEDEX.md#31-raichu) | [Growl](MOVES.md#growl) · [Thunder Wave](MOVES.md#thunder-wave) · [Thunderbolt](MOVES.md#thunderbolt) · [Psychic](MOVES.md#psychic) |
 
 ---
 
@@ -2716,7 +2716,7 @@
 |---:|:--|:--|
 | 62 | [Omastar](POKEDEX.md#176-omastar) | [Horn Attack](MOVES.md#horn-attack) · [Rock Slide](MOVES.md#rock-slide) · [Spike Cannon](MOVES.md#spike-cannon) · [Hydro Pump](MOVES.md#hydro-pump) |
 | 63 | [Onix](POKEDEX.md#110-onix) | [Rock Slide](MOVES.md#rock-slide) · [Iron Defense](MOVES.md#iron-defense) · [Earthquake](MOVES.md#earthquake) · [Double-Edge](MOVES.md#double-edge) |
-| 63 | [Kabutops](POKEDEX.md#178-kabutops) | [Leech Life](MOVES.md#leech-life) · [Rock Slide](MOVES.md#rock-slide) · [Night Slash](MOVES.md#night-slash) · [Hydro Pump](MOVES.md#hydro-pump) |
+| 63 | [Kabutops](POKEDEX.md#178-kabutops) | [Slash](MOVES.md#slash) · [Rock Slide](MOVES.md#rock-slide) · [Night Slash](MOVES.md#night-slash) · [Hydro Pump](MOVES.md#hydro-pump) |
 | 62 | [Golem](POKEDEX.md#88-golem) | [Rock Throw](MOVES.md#rock-throw) · [Iron Defense](MOVES.md#iron-defense) · [Earthquake](MOVES.md#earthquake) · [Explosion](MOVES.md#explosion) |
 | 64 | [Dugtrio](POKEDEX.md#57-dugtrio) | [Metal Claw](MOVES.md#metal-claw) · [Slash](MOVES.md#slash) · [Earthquake](MOVES.md#earthquake) · [Flash Cannon](MOVES.md#flash-cannon) |
 | 64 | [Aerodactyl](POKEDEX.md#179-aerodactyl) | [Bite](MOVES.md#bite) · [Rock Slide](MOVES.md#rock-slide) · [Take Down](MOVES.md#take-down) · [Hyper Beam](MOVES.md#hyper-beam) |
@@ -2759,10 +2759,10 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 66 | [Electrode](POKEDEX.md#117-electrode) | [Thunderbolt](MOVES.md#thunderbolt) · [Light Screen](MOVES.md#light-screen) · [Thunder Wave](MOVES.md#thunder-wave) · [Explosion](MOVES.md#explosion) |
-| 67 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Leer](MOVES.md#leer) · [Screech](MOVES.md#screech) · [Thunderbolt](MOVES.md#thunderbolt) · [Thunder](MOVES.md#thunder) |
+| 67 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Thunderpunch](MOVES.md#thunderpunch) · [Screech](MOVES.md#screech) · [Thunderbolt](MOVES.md#thunderbolt) · [Thunder](MOVES.md#thunder) |
 | 67 | [Jolteon](POKEDEX.md#166-jolteon) | [Double Kick](MOVES.md#double-kick) · [Agility](MOVES.md#agility) · [Pin Missile](MOVES.md#pin-missile) · [Thunder](MOVES.md#thunder) |
 | 67 | [Magnezone](POKEDEX.md#6-magnezone) | [Thunderbolt](MOVES.md#thunderbolt) · [Flash Cannon](MOVES.md#flash-cannon) · [Light Screen](MOVES.md#light-screen) · [Screech](MOVES.md#screech) |
-| 68 | [Raichu](POKEDEX.md#31-raichu) | [Thundershock](MOVES.md#thundershock) · [Growl](MOVES.md#growl) · [Thunder](MOVES.md#thunder) · [Submission](MOVES.md#submission) |
+| 68 | [Raichu](POKEDEX.md#31-raichu) | [Submission](MOVES.md#submission) · [Thunder Wave](MOVES.md#thunder-wave) · [Thunderbolt](MOVES.md#thunderbolt) · [Psychic](MOVES.md#psychic) |
 
 ---
 
@@ -2784,7 +2784,7 @@
 | 69 | [Vileplume](POKEDEX.md#50-vileplume) | [Acid](MOVES.md#acid) · [Petal Dance](MOVES.md#petal-dance) · [Toxic](MOVES.md#toxic) · [Solarbeam](MOVES.md#solarbeam) |
 | 69 | [Tangela](POKEDEX.md#134-tangela) | [Stun Spore](MOVES.md#stun-spore) · [Sleep Powder](MOVES.md#sleep-powder) · [Mega Drain](MOVES.md#mega-drain) · [Growth](MOVES.md#growth) |
 | 69 | [Leafeon](POKEDEX.md#170-leafeon) | [Leech Seed](MOVES.md#leech-seed) · [Mega Drain](MOVES.md#mega-drain) · [Swords Dance](MOVES.md#swords-dance) · [Razor Leaf](MOVES.md#razor-leaf) |
-| 70 | [Bellossom](POKEDEX.md#51-bellossom) | [Sleep Powder](MOVES.md#sleep-powder) · [Petal Dance](MOVES.md#petal-dance) · [Psychic](MOVES.md#psychic) · [Solarbeam](MOVES.md#solarbeam) |
+| 70 | [Bellossom](POKEDEX.md#51-bellossom) | [Sleep Powder](MOVES.md#sleep-powder) · [Petal Dance](MOVES.md#petal-dance) · [Moonblast](MOVES.md#moonblast) · [Solarbeam](MOVES.md#solarbeam) |
 
 ---
 
@@ -3280,7 +3280,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 35 | [Kabutops](POKEDEX.md#178-kabutops) | [Scratch](MOVES.md#scratch) · [Harden](MOVES.md#harden) · [Absorb](MOVES.md#absorb) · [Leech Life](MOVES.md#leech-life) |
+| 35 | [Kabutops](POKEDEX.md#178-kabutops) | [Scratch](MOVES.md#scratch) · [Harden](MOVES.md#harden) · [Leech Life](MOVES.md#leech-life) · [Slash](MOVES.md#slash) |
 | 35 | [Haunter](POKEDEX.md#106-haunter) | [Confuse Ray](MOVES.md#confuse-ray) · [Night Shade](MOVES.md#night-shade) · [Hypnosis](MOVES.md#hypnosis) · [Dream Eater](MOVES.md#dream-eater) |
 | 38 | [Umbreon](POKEDEX.md#169-umbreon) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Feint Attack](MOVES.md#feint-attack) · [Tail Whip](MOVES.md#tail-whip) |
 
@@ -3353,7 +3353,7 @@
 | 77 | [Venusaur](POKEDEX.md#193-venusaur) | [Razor Leaf](MOVES.md#razor-leaf) · [Growth](MOVES.md#growth) · [Sleep Powder](MOVES.md#sleep-powder) · [Solarbeam](MOVES.md#solarbeam) |
 | 77 | [Charizard](POKEDEX.md#196-charizard) | [Rage](MOVES.md#rage) · [Slash](MOVES.md#slash) · [Flamethrower](MOVES.md#flamethrower) · [Fire Blast](MOVES.md#fire-blast) |
 | 77 | [Blastoise](POKEDEX.md#199-blastoise) | [Withdraw](MOVES.md#withdraw) · [Iron Defense](MOVES.md#iron-defense) · [Skull Bash](MOVES.md#skull-bash) · [Hydro Pump](MOVES.md#hydro-pump) |
-| 81 | [Pikachu](POKEDEX.md#30-pikachu) | [Quick Attack](MOVES.md#quick-attack) · [Swift](MOVES.md#swift) · [Agility](MOVES.md#agility) · [Thunder](MOVES.md#thunder) |
+| 81 | [Pikachu](POKEDEX.md#30-pikachu) | [Swift](MOVES.md#swift) · [Agility](MOVES.md#agility) · [Thunderbolt](MOVES.md#thunderbolt) · [Thunder](MOVES.md#thunder) |
 
 ---
 

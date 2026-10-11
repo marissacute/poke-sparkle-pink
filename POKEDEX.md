@@ -682,6 +682,7 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Fury Attack](MOVES.md#fury-attack) | Normal | 15 | 85% | 20 |
+| 1 | **[Twineedle](MOVES.md#twineedle)** | Bug | 25 | 100% | 20 |
 | 12 | **[Twineedle](MOVES.md#twineedle)** | Bug | 25 | 100% | 20 |
 | 16 | [Fury Attack](MOVES.md#fury-attack) | Normal | 15 | 85% | 20 |
 | 20 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
@@ -1339,6 +1340,7 @@
 | 16 | [Quick Attack](MOVES.md#quick-attack) | Normal | 40 | 100% | 30 |
 | 26 | [Swift](MOVES.md#swift) | Normal | 60 | 100% | 20 |
 | 33 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
+| 36 | **[Thunderbolt](MOVES.md#thunderbolt)** | Electric | 95 | 100% | 15 |
 | 43 | **[Thunder](MOVES.md#thunder)** | Electric | 120 | 70% | 10 |
 
 **TM/HM moves**
@@ -1380,6 +1382,9 @@
 | 1 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
 | 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
 | 1 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
+| 36 | **[Thunderbolt](MOVES.md#thunderbolt)** | Electric | 95 | 100% | 15 |
+| 40 | **[Psychic](MOVES.md#psychic)** | Psychic | 90 | 100% | 10 |
+| Evo | **[Psybeam](MOVES.md#psybeam)** | Psychic | 65 | 100% | 20 |
 
 **TM/HM moves**
 
@@ -2820,7 +2825,7 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Karate Chop](MOVES.md#karate-chop)** | Fighting | 50 | 100% | 25 |
 | 1 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
-| 1 | [Fury Swipes](MOVES.md#fury-swipes) | Normal | 18 | 80% | 15 |
+| 1 | **[Shadow Ball](MOVES.md#shadow-ball)** | Ghost | 80 | 100% | 15 |
 | 1 | [Rage](MOVES.md#rage) | Normal | 20 | 100% | 20 |
 | 40 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
 | 44 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
@@ -6740,8 +6745,10 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | [Quick Attack](MOVES.md#quick-attack) | Normal | 40 | 100% | 30 |
-| 1 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
+| 1 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
+| 1 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
+| 1 | [Swift](MOVES.md#swift) | Normal | 60 | 100% | 20 |
+| 1 | **[Thunderpunch](MOVES.md#thunderpunch)** | Electric | 75 | 100% | 15 |
 | 36 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
 | 47 | **[Thunderbolt](MOVES.md#thunderbolt)** | Electric | 95 | 100% | 15 |
 | 58 | **[Thunder](MOVES.md#thunder)** | Electric | 120 | 70% | 10 |
@@ -7805,7 +7812,8 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Scratch](MOVES.md#scratch) | Normal | 40 | 100% | 35 |
 | 1 | [Harden](MOVES.md#harden) | Normal | — | 100% | 30 |
-| 1 | [Absorb](MOVES.md#absorb) | Grass | 20 | 100% | 20 |
+| 1 | [Leech Life](MOVES.md#leech-life) | Bug | 60 | 100% | 15 |
+| 1 | [Slash](MOVES.md#slash) | Normal | 70 | 100% | 20 |
 | 34 | [Leech Life](MOVES.md#leech-life) | Bug | 60 | 100% | 15 |
 | 42 | **[Rock Slide](MOVES.md#rock-slide)** | Rock | 75 | 90% | 10 |
 | 46 | [Night Slash](MOVES.md#night-slash) | Dark | 70 | 100% | 15 |
@@ -8196,10 +8204,10 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
-| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 1 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
 | 1 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
+| 1 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
+| 1 | **[Dragon Rage](MOVES.md#dragon-rage)** | Dragon | 40 | 100% | 10 |
+| 1 | **[Thunderpunch](MOVES.md#thunderpunch)** | Electric | 75 | 100% | 15 |
 | 9 | **[Thundershock](MOVES.md#thundershock)** | Electric | 40 | 100% | 30 |
 | 18 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 35 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
@@ -8452,10 +8460,10 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
-| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 1 | [Leech Seed](MOVES.md#leech-seed) | Grass | — | 90% | 10 |
-| 1 | **[Vine Whip](MOVES.md#vine-whip)** | Grass | 55 | 100% | 10 |
+| 1 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
+| 1 | [Growth](MOVES.md#growth) | Normal | — | 100% | 40 |
+| 1 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
+| 1 | **[Moonblast](MOVES.md#moonblast)** | Fairy | 95 | 100% | 15 |
 | 7 | [Leech Seed](MOVES.md#leech-seed) | Grass | — | 90% | 10 |
 | 13 | **[Vine Whip](MOVES.md#vine-whip)** | Grass | 55 | 100% | 10 |
 | 22 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
@@ -8552,7 +8560,7 @@
 | 24 | [Rage](MOVES.md#rage) | Normal | 20 | 100% | 20 |
 | 33 | [Slash](MOVES.md#slash) | Normal | 70 | 100% | 20 |
 | 42 | **[Flamethrower](MOVES.md#flamethrower)** | Fire | 95 | 100% | 15 |
-| 56 | **[Fire Blast](MOVES.md#fire-blast)** | Fire | 120 | 85% | 5 |
+| 54 | **[Fire Blast](MOVES.md#fire-blast)** | Fire | 120 | 85% | 5 |
 
 **TM/HM moves**
 
@@ -8589,10 +8597,10 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | [Scratch](MOVES.md#scratch) | Normal | 40 | 100% | 35 |
-| 1 | [Growl](MOVES.md#growl) | Normal | — | 100% | 40 |
-| 1 | **[Ember](MOVES.md#ember)** | Fire | 40 | 100% | 25 |
-| 1 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
+| 1 | [Slash](MOVES.md#slash) | Normal | 70 | 100% | 20 |
+| 1 | **[Flamethrower](MOVES.md#flamethrower)** | Fire | 95 | 100% | 15 |
+| 1 | **[Fire Blast](MOVES.md#fire-blast)** | Fire | 120 | 85% | 5 |
+| 1 | **[Dragon Slam](MOVES.md#dragon-slam)** | Dragon | 80 | 100% | 15 |
 | 9 | **[Ember](MOVES.md#ember)** | Fire | 40 | 100% | 25 |
 | 15 | [Leer](MOVES.md#leer) | Normal | — | 100% | 30 |
 | 24 | [Rage](MOVES.md#rage) | Normal | 20 | 100% | 20 |
@@ -8730,10 +8738,10 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
-| 1 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
-| 1 | **[Bubble](MOVES.md#bubble)** | Water | 20 | 100% | 30 |
-| 1 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
+| 1 | [Iron Defense](MOVES.md#iron-defense) | Steel | — | 100% | 15 |
+| 1 | [Skull Bash](MOVES.md#skull-bash) | Normal | 100 | 100% | 15 |
+| 1 | **[Hydro Pump](MOVES.md#hydro-pump)** | Water | 120 | 80% | 5 |
+| 1 | **[Metal Claw](MOVES.md#metal-claw)** | Steel | 50 | 95% | 35 |
 | 8 | **[Bubble](MOVES.md#bubble)** | Water | 20 | 100% | 30 |
 | 15 | **[Water Gun](MOVES.md#water-gun)** | Water | 40 | 100% | 25 |
 | 24 | [Bite](MOVES.md#bite) | Dark | 60 | 100% | 25 |

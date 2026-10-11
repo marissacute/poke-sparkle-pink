@@ -1265,6 +1265,7 @@ PikachuEvosMoves:
 	db 16, QUICK_ATTACK
 	db 26, SWIFT
 	db 33, AGILITY
+	db 36, THUNDERBOLT
 	db 43, THUNDER
 	db 0
 
@@ -1272,6 +1273,9 @@ RaichuEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 36, THUNDERBOLT
+	db 40, PSYCHIC_M
+	db EVOLUTION_MOVE, PSYBEAM
 	db 0
 
 SkarmoryEvosMoves:
@@ -2412,7 +2416,7 @@ CharmeleonEvosMoves:
 	db 24, RAGE
 	db 33, SLASH
 	db 42, FLAMETHROWER
-	db 56, FIRE_BLAST
+	db 54, FIRE_BLAST
 	db 0
 
 WartortleEvosMoves:

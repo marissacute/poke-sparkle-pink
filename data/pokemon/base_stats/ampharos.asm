@@ -11,7 +11,7 @@
 
 	dw AmpharosPicFront, AmpharosPicBack
 
-	db TACKLE, GROWL, THUNDERSHOCK, THUNDER_WAVE ; level 1 learnset
+	db THUNDER_WAVE, LIGHT_SCREEN, DRAGON_RAGE, THUNDERPUNCH ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
