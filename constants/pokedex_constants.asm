@@ -208,3 +208,5 @@
 	const DEX_HOOPA          ; 202
 
 DEF NUM_POKEMON EQU const_value - 1
+; Mew and Hoopa are deliberately unobtainable (see tools/audit_dex.py).
+DEF NUM_OBTAINABLE_POKEMON EQU NUM_POKEMON - 2

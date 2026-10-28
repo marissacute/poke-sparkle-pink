@@ -110,8 +110,39 @@ _DexRatingText_Own140To149::
 	cont "authority now!"
 	done
 
-_DexRatingText_Own150To151::
+_DexRatingText_Own150To159::
+	text "Great work!"
+	line "You have 150 or"
+	cont "more species!"
+	done
+
+_DexRatingText_Own160To169::
+	text "Amazing!"
+	line "You have 160 or"
+	cont "more species!"
+	done
+
+_DexRatingText_Own170To179::
+	text "Incredible!"
+	line "You have 170 or"
+	cont "more species!"
+	done
+
+_DexRatingText_Own180To189::
+	text "Outstanding!"
+	line "You have 180 or"
+	cont "more species!"
+	done
+
+_DexRatingText_Own190To199::
+	text "Incredible work!"
+	line "You have 190 or"
+	cont "more species!"
+	done
+
+_DexRatingText_Own200Plus::
 	text "Your #DEX is"
-	line "entirely complete!"
+	line "entirely"
+	cont "complete!"
 	cont "Congratulations!"
 	done

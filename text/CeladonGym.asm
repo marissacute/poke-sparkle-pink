@@ -254,7 +254,7 @@ _CeladonGymRematchRefusedText::
 _CeladonGymRematchDefeatedText::
 	text "You"
 	line "might be stronger"
-	line "but my #MON"
+	cont "but my #MON"
 	cont "are much cuter."
 	prompt
 

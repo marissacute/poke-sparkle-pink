@@ -71,8 +71,10 @@ FightingDojoKarateMasterPostBattleScript:
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 
-	CheckEvent EVENT_PLAYER_IS_CHAMPION
-	jr z, .receivePokemon		
+	; If we are here and we already beat the
+	; Karate Master, it must be a rematch
+	CheckEvent EVENT_BEAT_KARATE_MASTER
+	jr z, .receivePokemon
 	ld a, TEXT_FIGHTINGDOJO_REMATCH_POST_BATTLE
 	ldh [hTextID], a
 	call DisplayTextID

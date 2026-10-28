@@ -1366,8 +1366,8 @@ wPartyMenuTypeOrMessageID::
 ; temporary storage for the number of tiles in a tileset
 wTempTilesetNumTiles:: db
 
-; used by the pokemart code to save the existing value of wListScrollOffset
-; so that it can be restored when the player is done with the pokemart NPC
+; used by the pokemart and TM machine code to save the existing value of
+; wListScrollOffset so that it can be restored when the player is done
 wSavedListScrollOffset:: db
 
 	ds 2

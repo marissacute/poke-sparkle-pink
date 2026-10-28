@@ -251,19 +251,29 @@ CinnabarGymBlaineText:
 	ld hl, .PreBattleRematchAcceptedText
 	call PrintText
 	call Delay3
+	ld hl, wStatusFlags3
+	set BIT_TALKED_TO_TRAINER, [hl]
+	set BIT_PRINT_END_BATTLE_TEXT, [hl]
+	ld hl, CinnabarGymRematchDefeatedText
+	ld de, CinnabarGymRematchDefeatedText
+	call SaveEndBattleTextPointers
+	ldh a, [hSpriteIndex]
+	ld [wSpriteIndex], a
 	ld a, OPP_BLAINE
 	ld [wCurOpponent], a
 	ld a, 2
 	ld [wTrainerNo], a
 	ld a, 1
 	ld [wIsTrainerBattle], a
-	ld a, SCRIPT_CINNABARGYM_BLAINE_POST_BATTLE
-	ld [wCinnabarGymCurScript], a
-	jr .done
+	jr .endBattle
 .refused
 	ld hl, .PreBattleRematchRefusedText
 	call PrintText
 	jr .done
+.endBattle
+	ld a, SCRIPT_CINNABARGYM_BLAINE_POST_BATTLE
+	ld [wCinnabarGymCurScript], a
+	ld [wCurMapScript], a
 .done
 	jp TextScriptEnd
 

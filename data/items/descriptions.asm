@@ -79,6 +79,7 @@ _CancelMenuText::
 	done
 
 ItemDescriptions:
+	table_width 4
 	text_far _MasterBallDescription
 	text_far _UltraBallDescription
 	text_far _GreatBallDescription
@@ -164,6 +165,22 @@ ItemDescriptions:
 	text_far _MaxElixerDescription
 	text_far _KingsRockDescription
 	text_far _IceStoneDescription
+; elevator floors also use item IDs (see constants/item_constants.asm)
+	text_far _FloorB2FDescription
+	text_far _FloorB1FDescription
+	text_far _Floor1FDescription
+	text_far _Floor2FDescription
+	text_far _Floor3FDescription
+	text_far _Floor4FDescription
+	text_far _Floor5FDescription
+	text_far _Floor6FDescription
+	text_far _Floor7FDescription
+	text_far _Floor8FDescription
+	text_far _Floor9FDescription
+	text_far _Floor10FDescription
+	text_far _Floor11FDescription
+	text_far _FloorB4FDescription
+	assert_table_length NUM_ITEMS + NUM_FLOORS
 
 _MasterBallDescription::
 	text "Will catch #MON"
@@ -588,4 +605,74 @@ _KingsRockDescription::
 _IceStoneDescription::
 	text "Evolves certain"
 	line "#MON."
+	done
+
+_FloorB2FDescription::
+	text "Goes to B2F."
+	line ""
+	done
+
+_FloorB1FDescription::
+	text "Goes to B1F."
+	line ""
+	done
+
+_Floor1FDescription::
+	text "Goes to 1F."
+	line ""
+	done
+
+_Floor2FDescription::
+	text "Goes to 2F."
+	line ""
+	done
+
+_Floor3FDescription::
+	text "Goes to 3F."
+	line ""
+	done
+
+_Floor4FDescription::
+	text "Goes to 4F."
+	line ""
+	done
+
+_Floor5FDescription::
+	text "Goes to 5F."
+	line ""
+	done
+
+_Floor6FDescription::
+	text "Goes to 6F."
+	line ""
+	done
+
+_Floor7FDescription::
+	text "Goes to 7F."
+	line ""
+	done
+
+_Floor8FDescription::
+	text "Goes to 8F."
+	line ""
+	done
+
+_Floor9FDescription::
+	text "Goes to 9F."
+	line ""
+	done
+
+_Floor10FDescription::
+	text "Goes to 10F."
+	line ""
+	done
+
+_Floor11FDescription::
+	text "Goes to 11F."
+	line ""
+	done
+
+_FloorB4FDescription::
+	text "Goes to B4F."
+	line ""
 	done

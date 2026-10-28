@@ -71,7 +71,12 @@ DexRatingsTable:
 	dbw 130, DexRatingText_Own120To129
 	dbw 140, DexRatingText_Own130To139
 	dbw 150, DexRatingText_Own140To149
-	dbw NUM_POKEMON + 1, DexRatingText_Own150To151
+	dbw 160, DexRatingText_Own150To159
+	dbw 170, DexRatingText_Own160To169
+	dbw 180, DexRatingText_Own170To179
+	dbw 190, DexRatingText_Own180To189
+	dbw NUM_OBTAINABLE_POKEMON, DexRatingText_Own190To199
+	dbw NUM_POKEMON + 1, DexRatingText_Own200Plus
 
 DexRatingText_Own0To9:
 	text_far _DexRatingText_Own0To9
@@ -133,6 +138,26 @@ DexRatingText_Own140To149:
 	text_far _DexRatingText_Own140To149
 	text_end
 
-DexRatingText_Own150To151:
-	text_far _DexRatingText_Own150To151
+DexRatingText_Own150To159:
+	text_far _DexRatingText_Own150To159
+	text_end
+
+DexRatingText_Own160To169:
+	text_far _DexRatingText_Own160To169
+	text_end
+
+DexRatingText_Own170To179:
+	text_far _DexRatingText_Own170To179
+	text_end
+
+DexRatingText_Own180To189:
+	text_far _DexRatingText_Own180To189
+	text_end
+
+DexRatingText_Own190To199:
+	text_far _DexRatingText_Own190To199
+	text_end
+
+DexRatingText_Own200Plus:
+	text_far _DexRatingText_Own200Plus
 	text_end

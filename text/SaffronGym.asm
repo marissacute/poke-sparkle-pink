@@ -65,10 +65,11 @@ _TM46ExplanationText::
 
 	para "TM46 is SHADOW"
 	line "BALL!"
-	cont "It is a ghost type"
-	cont "attack that many"
-	cont "PSYCHIC #MON"
-	cont "can learn."
+	cont "It is a ghost"
+	cont "type attack that"
+	cont "many PSYCHIC"
+	cont "#MON can"
+	cont "learn."
 	done
 
 _SaffronGymSabrinaTM46NoRoomText::

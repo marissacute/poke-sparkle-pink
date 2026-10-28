@@ -80,7 +80,8 @@ _VermilionGymRematchAcceptedText::
 	done
 
 _VermilionGymRematchRefusedText::
-	text "Are you scared, kid?"
+	text "Are you scared,"
+	line "kid?"
 	done
 
 _VermilionGymRematchDefeatedText::

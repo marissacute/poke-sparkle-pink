@@ -74,8 +74,8 @@ _MrFujisHouseMrFujiPokeShearsNoRoomText::
 	done
 
 _MrFujisHouseMrFujiHasMyShearsHelpedYouText::
-	text "MR.FUJI: Has my"
-	line "FLUTE helped you?"
+	text "MR.FUJI: Did my"
+	line "SHEARS help you?"
 	done
 
 _MrFujisHouseMrFujiPokedexText::

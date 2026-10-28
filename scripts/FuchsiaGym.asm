@@ -45,8 +45,10 @@ FuchsiaGymKogaPostBattleScript:
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 
-	CheckEvent EVENT_PLAYER_IS_CHAMPION
-	jr z, FuchsiaGymReceiveTM06	
+	; If we are here and we already beat
+	; Koga, it must be a rematch
+	CheckEvent EVENT_BEAT_KOGA
+	jr z, FuchsiaGymReceiveTM06
 	ld a, TEXT_FUCHSIAGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
 	call DisplayTextID
@@ -121,7 +123,7 @@ FuchsiaGymKogaText:
 	call DisableWaitingAfterTextDisplay
 	jp .done
 .afterBeat
-	CheckEvent EVENT_BEAT_KOGA
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
 	jp nz, .KogaRematch
 	ld hl, .PostBattleAdviceText
 	call PrintText

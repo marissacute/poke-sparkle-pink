@@ -92,11 +92,8 @@ _ThrewRockText::
 	done
 
 _UsedShearsNoEffectText::
-	text "Played the #"
-	line "FLUTE."
-
-	para "Now, that's a"
-	line "catchy tune!"
+	text "The shears had"
+	line "no effect."
 	prompt
 
 _UsedShearsHadEffectText::

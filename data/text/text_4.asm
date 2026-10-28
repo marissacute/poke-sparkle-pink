@@ -255,7 +255,8 @@ _TMMachineBoughtItemText::
 
 _TMMachineNotEnoughMoneyText::
 	text "SALE DECLINED:"
-	line "INSUFFICENT FUNDS."
+	line "INSUFFICIENT"
+	cont "FUNDS."
 	prompt
 
 _TMMachineItemBagFullText::

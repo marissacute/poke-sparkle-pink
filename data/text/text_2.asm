@@ -1059,7 +1059,7 @@ _ClampedByText::
 
 _HurtByWrapText::
 	text "<USER>'s"
-	line "hurt by @"
+	line "hit by @"
 	text_ram wNameBuffer
 	text "!"
 	prompt

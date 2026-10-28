@@ -1,8 +1,8 @@
 _CeladonPokecenterGentlemanText::
-	text "# FLUTE awakens"
-	line "#MON with a"
-	cont "sound that only"
-	cont "they can hear!"
+	text "POKé SHEARS can"
+	line "cut the wool of"
+	cont "#MON. They"
+	cont "seem to enjoy it!"
 	done
 
 _CeladonPokecenterBeautyText::

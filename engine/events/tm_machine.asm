@@ -1,4 +1,8 @@
 DisplayTMMachine_::
+	ld a, [wListScrollOffset]
+	ld [wSavedListScrollOffset], a
+	xor a
+	ld [wListScrollOffset], a
 	ld hl, TMMachineGreetingText
 	call PrintText
 	call SaveScreenTilesToBuffer1
