@@ -1497,6 +1497,7 @@ WigglytuffEvosMoves:
 
 EeveeEvosMoves:
 ; Evolutions
+EeveeEvosMovesEvolutions:
 	db EVOLVE_ITEM, FIRE_STONE, 1, FLAREON
 	db EVOLVE_ITEM, THUNDER_STONE, 1, JOLTEON
 	db EVOLVE_ITEM, WATER_STONE, 1, VAPOREON
@@ -1506,6 +1507,11 @@ EeveeEvosMoves:
 	db EVOLVE_ITEM, ICE_STONE, 1, GLACEON
 	db EVOLVE_LEVEL, 41, SYLVEON
 	db 0
+EeveeEvosMovesEvolutionsEnd:
+; Eevee has the longest evolution block; the party menu copies a whole block
+; into wEvoDataBuffer before scanning it, so it must fit (terminator included).
+ASSERT EeveeEvosMovesEvolutionsEnd - EeveeEvosMovesEvolutions <= wEvoDataBufferEnd - wEvoDataBuffer, \
+	"Eevee's evolutions no longer fit in wEvoDataBuffer"
 ; Learnset
 	db 27, QUICK_ATTACK
 	db 31, BITE

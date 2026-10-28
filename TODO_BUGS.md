@@ -55,7 +55,7 @@ Quick links: [P0](#p0--major) · [P1](#p1--medium) · [P2](#p2--minor--cosmetic)
 ## P1 — Medium
 
 ### BUG-04 — Eevee evolution-preview buffer is 8 bytes too small
-- [ ] **Enlarge or bound `wEvoDataBuffer`**
+- [x] **Enlarge or bound `wEvoDataBuffer`**
   - Where: [ram/wram.asm:913-916](ram/wram.asm#L913-L916), [data/pokemon/evos_moves.asm:1498-1508](data/pokemon/evos_moves.asm#L1498-L1508), [engine/menus/party_menu.asm:120-160](engine/menus/party_menu.asm#L120-L160)
   - Trigger: open the party menu with an evolution stone and select Eevee. The buffer is `5*4 + 3 + 1` = 24 bytes; Eevee now has seven stone evolutions + one level evolution + terminator = 32 bytes. The copy takes 24 bytes, the terminator is absent, and the scan walks into following WRAM.
   - Effect: the 7th entry (Ice Stone → Glaceon) is not found, so the preview likely says “NOT ABLE” for the stone that actually evolves it; a garbage match can also show ABLE for the wrong stone. The evolution itself still works (`TryEvolvingMon` reads the ROM table directly).

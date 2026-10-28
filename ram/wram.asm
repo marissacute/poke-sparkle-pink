@@ -895,7 +895,7 @@ wDownscaledMonSize::
 ; FormatMovesString stores the number of moves minus one here
 wNumMovesMinusOne:: db
 
-; This union spans 20 bytes.
+; This union spans 32 bytes.
 UNION
 ; storage buffer for various name strings
 wNameBuffer:: ds NAME_BUFFER_LENGTH
@@ -911,8 +911,8 @@ wPayDayMoney:: ds 3
 
 NEXTU
 ; evolution data for one mon
-; max is Eevee: 5 * 4 byte stone evolutions, 1 * 3 byte level evolution, 0 terminator
-wEvoDataBuffer:: ds 5 * 4 + 3 + 1
+; max is Eevee: 7 * 4 byte stone evolutions, 1 * 3 byte level evolution, 0 terminator
+wEvoDataBuffer:: ds 7 * 4 + 3 + 1
 wEvoDataBufferEnd::
 
 NEXTU
