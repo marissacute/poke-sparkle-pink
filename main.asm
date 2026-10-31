@@ -406,3 +406,5 @@ SECTION "Descriptions", ROMX
 INCLUDE "data/items/descriptions.asm"
 INCLUDE "data/moves/descriptions.asm"
 
+INCLUDE "engine/overworld/flyover.asm"
+

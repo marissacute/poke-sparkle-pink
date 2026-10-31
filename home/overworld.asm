@@ -9,6 +9,12 @@ EnterMap::
 	ld [wJoyIgnore], a
 	call LoadMapData
 	farcall ClearVariablesOnEnterMap
+	ld hl, wStatusFlags7
+	bit BIT_FLYOVER_DONE, [hl]
+	jr z, .notFlyoverArrival
+	res BIT_FLYOVER_DONE, [hl]
+	call GBFadeInFromWhite
+.notFlyoverArrival
 	ld hl, wStatusFlags2
 	bit BIT_WILD_ENCOUNTER_COOLDOWN, [hl]
 	jr z, .skipGivingThreeStepsOfNoRandomBattles
@@ -813,6 +819,12 @@ HandleFlyWarpOrDungeonWarp::
 	jp SpecialEnterMap
 
 LeaveMapAnim::
+	ld a, [wStatusFlags7]
+	bit BIT_USED_FLY, a
+	jr z, .normalLeave
+	farcall FlyoverCutscene
+	ret
+.normalLeave
 	farjp _LeaveMapAnim
 
 LoadPlayerSpriteGraphics::
@@ -1361,6 +1373,13 @@ INCLUDE "data/tilesets/pair_collision_tile_ids.asm"
 
 ; this builds a tile map from the tile block map based on the current X/Y coordinates of the player's character
 LoadCurrentMapView::
+	ld a, [wStatusFlags7]
+	and (1 << BIT_FLYOVER_ACTIVE) | (1 << BIT_USED_FLY)
+	cp (1 << BIT_FLYOVER_ACTIVE) | (1 << BIT_USED_FLY)
+	jr nz, .normalView
+	farcall FlyoverBuildView
+	ret
+.normalView
 	ldh a, [hLoadedROMBank]
 	push af
 	ld a, [wTilesetBank]

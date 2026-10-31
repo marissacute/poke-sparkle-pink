@@ -200,6 +200,12 @@ ROMX $2B
 ROMX $2C
 	"bank2C"
 	"Move Names"
+ROMX $2D
+	"Flyover Map 1"
+ROMX $2E
+	"Flyover Map 2"
+ROMX $2F
+	"Flyover Code"
 ROMX $31
 	"bank31"
 ROMX $32
@@ -234,6 +240,7 @@ WRAM0
 	"Party Data"
 	"Main Data"
 	"Current Box Data"
+	"Flyover WRAM"
 	org $df00
 	"Stack"
 VRAM

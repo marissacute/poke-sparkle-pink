@@ -60,6 +60,8 @@ RGBGFXFLAGS  ?= -Weverything
 	clean \
 	tidy \
 	compare \
+	flyover-stitch \
+	flyover-build \
 	tools
 
 all: $(roms)
@@ -68,6 +70,24 @@ blue:       pokeblue.gbc
 blue_debug: pokeblue_debug.gbc
 red_vc:     pokered.patch
 blue_vc:    pokeblue.patch
+
+# Re-stitch the flyover layers from the real map headers/connections/.blk
+# data.  This OVERWRITES the editable maps/Flyover*.blk files; only run it
+# after changing the real maps.
+flyover-stitch:
+	python3 tools/gen_flyover_map.py stitch
+
+# Rebuild the ROM banks from the editable .blk layers.
+flyover-build:
+	python3 tools/gen_flyover_map.py build
+
+# The editable .blk layers are the source of the ROM data.  Rebuild the
+# two map banks automatically when they (or the generator) change.
+gfx/flyover/kanto_blocks_1.bin gfx/flyover/kanto_blocks_2.bin: \
+		maps/Flyover.174x180.overworld.blk \
+		maps/FlyoverPlateau.17x84.plateau.blk \
+		tools/gen_flyover_map.py
+	python3 tools/gen_flyover_map.py build
 
 clean: tidy
 	find gfx \
