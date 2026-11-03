@@ -165,6 +165,7 @@ WildDataPointers:
 	dw SeafoamIslandsB4FWildMons
 	dw NothingWildMons
 	dw NothingWildMons
+	dw NothingWildMons
 	dw PokemonMansion1FWildMons
 	dw NothingWildMons
 	dw NothingWildMons

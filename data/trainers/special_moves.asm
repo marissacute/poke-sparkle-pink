@@ -70,7 +70,7 @@ SpecialTrainerMoves:
 	; Rematch
 	db BLAINE, 2
 	db 1, 1, FLAMETHROWER
-	db 1, 1, CONFUSE_RAY
+	db 1, 4, CONFUSE_RAY
 	db 4, 1, FIRE_BLAST
 	db 5, 1, FIRE_BLAST
 	db 0
@@ -159,7 +159,7 @@ SpecialTrainerMoves:
 	db 3, 3, SUBMISSION
 	; Ninetales
 	db 4, 1, FLAMETHROWER
-	db 4, 1, CONFUSE_RAY
+	db 4, 4, CONFUSE_RAY
 	; Magnezone
 	db 6, 1, THUNDERBOLT
 	db 6, 4, THUNDER_WAVE
@@ -173,7 +173,7 @@ SpecialTrainerMoves:
 	db 3, 3, SUBMISSION
 	; Ninetales
 	db 4, 1, FLAMETHROWER
-	db 4, 1, CONFUSE_RAY
+	db 4, 4, CONFUSE_RAY
 	db 0
 
 	db RIVAL3, 3
@@ -184,7 +184,7 @@ SpecialTrainerMoves:
 	db 3, 3, SUBMISSION
 	; Ninetales
 	db 4, 1, FLAMETHROWER
-	db 4, 1, CONFUSE_RAY
+	db 4, 4, CONFUSE_RAY
 	db 0
 
 	db -1 ; end

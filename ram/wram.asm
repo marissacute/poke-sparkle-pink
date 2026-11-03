@@ -997,7 +997,8 @@ wBoughtOrSoldItemInMart:: db
 
 ; $00 - win
 ; $01 - lose
-; $02 - draw
+; $02 - draw (link battle) or caught a mon
+; $03 - fled from battle (ran, Teleport, Roar, Whirlwind, or a Poké Doll)
 wBattleResult:: db
 
 ; bit 0: if set, prevents DisplayTextID from automatically drawing a text box

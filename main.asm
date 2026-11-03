@@ -213,6 +213,7 @@ INCLUDE "data/moves/moves.asm"
 INCLUDE "data/pokemon/base_stats.asm"
 INCLUDE "engine/battle/trainer_ai.asm"
 INCLUDE "engine/pokemon/evos_moves.asm"
+INCLUDE "engine/pokemon/move_relearner.asm"
 
 
 SECTION "Battle Core", ROMX

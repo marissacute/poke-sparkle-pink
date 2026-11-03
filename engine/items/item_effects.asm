@@ -1734,6 +1734,11 @@ RodResponse:
 	ld [wCurEnemyLevel], a
 	ld a, c ; species
 	ld [wCurOpponent], a
+; a rod always starts a wild battle, so don't let a stale trainer flag
+; from an earlier battle (e.g. a link battle) send InitBattleCommon
+; down the trainer path with a species ID as the trainer class
+	xor a
+	ld [wIsTrainerBattle], a
 
 .next
 	ld hl, wWalkBikeSurfState

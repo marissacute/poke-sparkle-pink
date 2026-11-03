@@ -262,139 +262,140 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	end_indoor_group VERMILION_CITY_2
 
 	map_const FUCHSIA_GOOD_ROD_HOUSE,         4,  4 ; $A4
+	map_const FUCHSIA_MOVE_HOUSE,              4,  4 ; $A5
 	end_indoor_group FUCHSIA_CITY_3
 
-	map_const POKEMON_MANSION_1F,            15, 14 ; $A5
+	map_const POKEMON_MANSION_1F,            15, 14 ; $A6
 	end_indoor_group POKEMON_MANSION
 
-	map_const CINNABAR_GYM,                  10,  9 ; $A6
-	map_const CINNABAR_LAB,                   9,  4 ; $A7
-	map_const CINNABAR_LAB_TRADE_ROOM,        4,  4 ; $A8
-	map_const CINNABAR_LAB_METRONOME_ROOM,    4,  4 ; $A9
-	map_const CINNABAR_LAB_FOSSIL_ROOM,       4,  4 ; $AA
-	map_const CINNABAR_POKECENTER,            7,  4 ; $AB
-	map_const CINNABAR_MART,                  4,  4 ; $AC
-	map_const CINNABAR_MART_COPY,             4,  4 ; $AD
+	map_const CINNABAR_GYM,                  10,  9 ; $A7
+	map_const CINNABAR_LAB,                   9,  4 ; $A8
+	map_const CINNABAR_LAB_TRADE_ROOM,        4,  4 ; $A9
+	map_const CINNABAR_LAB_METRONOME_ROOM,    4,  4 ; $AA
+	map_const CINNABAR_LAB_FOSSIL_ROOM,       4,  4 ; $AB
+	map_const CINNABAR_POKECENTER,            7,  4 ; $AC
+	map_const CINNABAR_MART,                  4,  4 ; $AD
+	map_const CINNABAR_MART_COPY,             4,  4 ; $AE
 	end_indoor_group CINNABAR_ISLAND
 
-	map_const INDIGO_PLATEAU_LOBBY,           8,  6 ; $AE
+	map_const INDIGO_PLATEAU_LOBBY,           8,  6 ; $AF
 	end_indoor_group INDIGO_PLATEAU
 
-	map_const COPYCATS_HOUSE_1F,              4,  4 ; $AF
-	map_const COPYCATS_HOUSE_2F,              4,  4 ; $B0
-	map_const FIGHTING_DOJO,                  5,  6 ; $B1
-	map_const SAFFRON_GYM,                   10,  9 ; $B2
-	map_const SAFFRON_PIDGEY_HOUSE,           4,  4 ; $B3
-	map_const SAFFRON_MART,                   4,  4 ; $B4
-	map_const SILPH_CO_1F,                   15,  9 ; $B5
-	map_const SAFFRON_POKECENTER,             7,  4 ; $B6
-	map_const MR_PSYCHICS_HOUSE,              4,  4 ; $B7
+	map_const COPYCATS_HOUSE_1F,              4,  4 ; $B0
+	map_const COPYCATS_HOUSE_2F,              4,  4 ; $B1
+	map_const FIGHTING_DOJO,                  5,  6 ; $B2
+	map_const SAFFRON_GYM,                   10,  9 ; $B3
+	map_const SAFFRON_PIDGEY_HOUSE,           4,  4 ; $B4
+	map_const SAFFRON_MART,                   4,  4 ; $B5
+	map_const SILPH_CO_1F,                   15,  9 ; $B6
+	map_const SAFFRON_POKECENTER,             7,  4 ; $B7
+	map_const MR_PSYCHICS_HOUSE,              4,  4 ; $B8
 	end_indoor_group SAFFRON_CITY
 
-	map_const ROUTE_15_GATE_1F,               4,  5 ; $B8
-	map_const ROUTE_15_GATE_2F,               4,  4 ; $B9
+	map_const ROUTE_15_GATE_1F,               4,  5 ; $B9
+	map_const ROUTE_15_GATE_2F,               4,  4 ; $BA
 	end_indoor_group ROUTE_15
 
-	map_const ROUTE_16_GATE_1F,               4,  7 ; $BA
-	map_const ROUTE_16_GATE_2F,               4,  4 ; $BB
-	map_const ROUTE_16_FLY_HOUSE,             4,  4 ; $BC
+	map_const ROUTE_16_GATE_1F,               4,  7 ; $BB
+	map_const ROUTE_16_GATE_2F,               4,  4 ; $BC
+	map_const ROUTE_16_FLY_HOUSE,             4,  4 ; $BD
 	end_indoor_group ROUTE_16
 
-	map_const ROUTE_12_SUPER_ROD_HOUSE,       4,  4 ; $BD
+	map_const ROUTE_12_SUPER_ROD_HOUSE,       4,  4 ; $BE
 	end_indoor_group ROUTE_12_2
 
-	map_const ROUTE_18_GATE_1F,               4,  5 ; $BE
-	map_const ROUTE_18_GATE_2F,               4,  4 ; $BF
+	map_const ROUTE_18_GATE_1F,               4,  5 ; $BF
+	map_const ROUTE_18_GATE_2F,               4,  4 ; $C0
 	end_indoor_group ROUTE_18
 
-	map_const SEAFOAM_ISLANDS_1F,            15,  9 ; $C0
+	map_const SEAFOAM_ISLANDS_1F,            15,  9 ; $C1
 	end_indoor_group SEAFOAM_ISLANDS_2
 
-	map_const ROUTE_22_GATE,                  5,  4 ; $C1
+	map_const ROUTE_22_GATE,                  5,  4 ; $C2
 	end_indoor_group ROUTE_22
 
-	map_const VICTORY_ROAD_2F,               15,  9 ; $C2
+	map_const VICTORY_ROAD_2F,               15,  9 ; $C3
 	end_indoor_group VICTORY_ROAD_2
 
-	map_const ROUTE_12_GATE_2F,               4,  4 ; $C3
+	map_const ROUTE_12_GATE_2F,               4,  4 ; $C4
 	end_indoor_group ROUTE_12_3
 
-	map_const VERMILION_TRADE_HOUSE,          4,  4 ; $C4
+	map_const VERMILION_TRADE_HOUSE,          4,  4 ; $C5
 	end_indoor_group VERMILION_CITY_3
 
-	map_const DIGLETTS_CAVE,                 20, 18 ; $C5
+	map_const DIGLETTS_CAVE,                 20, 18 ; $C6
 	end_indoor_group DIGLETTS_CAVE
 
-	map_const VICTORY_ROAD_3F,               15,  9 ; $C6
+	map_const VICTORY_ROAD_3F,               15,  9 ; $C7
 	end_indoor_group VICTORY_ROAD_3
 
-	map_const ROCKET_HIDEOUT_B1F,            15, 14 ; $C7
-	map_const ROCKET_HIDEOUT_B2F,            15, 14 ; $C8
-	map_const ROCKET_HIDEOUT_B3F,            15, 14 ; $C9
-	map_const ROCKET_HIDEOUT_B4F,            15, 12 ; $CA
-	map_const ROCKET_HIDEOUT_ELEVATOR,        3,  4 ; $CB
-	map_const UNUSED_MAP_CC,                  0,  0 ; $CC
-	map_const UNUSED_MAP_CD,                  0,  0 ; $CD
-	map_const UNUSED_MAP_CE,                  0,  0 ; $CE
+	map_const ROCKET_HIDEOUT_B1F,            15, 14 ; $C8
+	map_const ROCKET_HIDEOUT_B2F,            15, 14 ; $C9
+	map_const ROCKET_HIDEOUT_B3F,            15, 14 ; $CA
+	map_const ROCKET_HIDEOUT_B4F,            15, 12 ; $CB
+	map_const ROCKET_HIDEOUT_ELEVATOR,        3,  4 ; $CC
+	map_const UNUSED_MAP_CC,                  0,  0 ; $CD
+	map_const UNUSED_MAP_CD,                  0,  0 ; $CE
+	map_const UNUSED_MAP_CE,                  0,  0 ; $CF
 	end_indoor_group ROCKET_HQ
 
-	map_const SILPH_CO_2F,                   15,  9 ; $CF
-	map_const SILPH_CO_3F,                   15,  9 ; $D0
-	map_const SILPH_CO_4F,                   15,  9 ; $D1
-	map_const SILPH_CO_5F,                   15,  9 ; $D2
-	map_const SILPH_CO_6F,                   13,  9 ; $D3
-	map_const SILPH_CO_7F,                   13,  9 ; $D4
-	map_const SILPH_CO_8F,                   13,  9 ; $D5
+	map_const SILPH_CO_2F,                   15,  9 ; $D0
+	map_const SILPH_CO_3F,                   15,  9 ; $D1
+	map_const SILPH_CO_4F,                   15,  9 ; $D2
+	map_const SILPH_CO_5F,                   15,  9 ; $D3
+	map_const SILPH_CO_6F,                   13,  9 ; $D4
+	map_const SILPH_CO_7F,                   13,  9 ; $D5
+	map_const SILPH_CO_8F,                   13,  9 ; $D6
 	end_indoor_group SILPH_CO
 
-	map_const POKEMON_MANSION_2F,            15, 14 ; $D6
-	map_const POKEMON_MANSION_3F,            15,  9 ; $D7
-	map_const POKEMON_MANSION_B1F,           15, 14 ; $D8
+	map_const POKEMON_MANSION_2F,            15, 14 ; $D7
+	map_const POKEMON_MANSION_3F,            15,  9 ; $D8
+	map_const POKEMON_MANSION_B1F,           15, 14 ; $D9
 	end_indoor_group POKEMON_MANSION_2
 
-	map_const SAFARI_ZONE_EAST,              15, 13 ; $D9
-	map_const SAFARI_ZONE_NORTH,             20, 18 ; $DA
-	map_const SAFARI_ZONE_WEST,              15, 13 ; $DB
-	map_const SAFARI_ZONE_CENTER,            15, 13 ; $DC
-	map_const SAFARI_ZONE_CENTER_REST_HOUSE,  4,  4 ; $DD
-	map_const SAFARI_ZONE_SECRET_HOUSE,       4,  4 ; $DE
-	map_const SAFARI_ZONE_WEST_REST_HOUSE,    4,  4 ; $DF
-	map_const SAFARI_ZONE_EAST_REST_HOUSE,    4,  4 ; $E0
-	map_const SAFARI_ZONE_NORTH_REST_HOUSE,   4,  4 ; $E1
+	map_const SAFARI_ZONE_EAST,              15, 13 ; $DA
+	map_const SAFARI_ZONE_NORTH,             20, 18 ; $DB
+	map_const SAFARI_ZONE_WEST,              15, 13 ; $DC
+	map_const SAFARI_ZONE_CENTER,            15, 13 ; $DD
+	map_const SAFARI_ZONE_CENTER_REST_HOUSE,  4,  4 ; $DE
+	map_const SAFARI_ZONE_SECRET_HOUSE,       4,  4 ; $DF
+	map_const SAFARI_ZONE_WEST_REST_HOUSE,    4,  4 ; $E0
+	map_const SAFARI_ZONE_EAST_REST_HOUSE,    4,  4 ; $E1
+	map_const SAFARI_ZONE_NORTH_REST_HOUSE,   4,  4 ; $E2
 	end_indoor_group SAFARI_ZONE_2
 
-	map_const CERULEAN_CAVE_2F,              15,  9 ; $E2
-	map_const CERULEAN_CAVE_B1F,             15,  9 ; $E3
-	map_const CERULEAN_CAVE_1F,              15,  9 ; $E4
+	map_const CERULEAN_CAVE_2F,              15,  9 ; $E3
+	map_const CERULEAN_CAVE_B1F,             15,  9 ; $E4
+	map_const CERULEAN_CAVE_1F,              15,  9 ; $E5
 	end_indoor_group CERULEAN_CAVE
 
-	map_const NAME_RATERS_HOUSE,              4,  4 ; $E5
+	map_const NAME_RATERS_HOUSE,              4,  4 ; $E6
 	end_indoor_group LAVENDER_TOWN_3
 
-	map_const CERULEAN_BADGE_HOUSE,           4,  4 ; $E6
+	map_const CERULEAN_BADGE_HOUSE,           4,  4 ; $E7
 	end_indoor_group CERULEAN_CITY_3
 
-	map_const UNUSED_MAP_E7,                  0,  0 ; $E7
-	map_const ROCK_TUNNEL_B1F,               20, 18 ; $E8
+	map_const UNUSED_MAP_E7,                  0,  0 ; $E8
+	map_const ROCK_TUNNEL_B1F,               20, 18 ; $E9
 	end_indoor_group ROCK_TUNNEL_2
 
-	map_const SILPH_CO_9F,                   13,  9 ; $E9
-	map_const SILPH_CO_10F,                   8,  9 ; $EA
-	map_const SILPH_CO_11F,                   9,  9 ; $EB
-	map_const SILPH_CO_ELEVATOR,              2,  2 ; $EC
+	map_const SILPH_CO_9F,                   13,  9 ; $EA
+	map_const SILPH_CO_10F,                   8,  9 ; $EB
+	map_const SILPH_CO_11F,                   9,  9 ; $EC
+	map_const SILPH_CO_ELEVATOR,              2,  2 ; $ED
 	end_indoor_group SILPH_CO_2
 
-	map_const UNUSED_MAP_ED,                  0,  0 ; $ED
-	map_const UNUSED_MAP_EE,                  0,  0 ; $EE
-	map_const TRADE_CENTER,                   5,  4 ; $EF
-	map_const COLOSSEUM,                      5,  4 ; $F0
-	map_const WORLD_CHAMPIONSHIP,             6,  6 ; $F1
-	map_const UNUSED_MAP_F2,                  0,  0 ; $F2
-	map_const UNUSED_MAP_F3,                  0,  0 ; $F3
-	map_const UNUSED_MAP_F4,                  0,  0 ; $F4
-	map_const LORELEIS_ROOM,                  5,  6 ; $F5
-	map_const BRUNOS_ROOM,                    5,  6 ; $F6
-	map_const AGATHAS_ROOM,                   5,  6 ; $F7
+	map_const UNUSED_MAP_ED,                  0,  0 ; $EE
+	map_const UNUSED_MAP_EE,                  0,  0 ; $EF
+	map_const TRADE_CENTER,                   5,  4 ; $F0
+	map_const COLOSSEUM,                      5,  4 ; $F1
+	map_const WORLD_CHAMPIONSHIP,             6,  6 ; $F2
+	map_const UNUSED_MAP_F2,                  0,  0 ; $F3
+	map_const UNUSED_MAP_F3,                  0,  0 ; $F4
+	map_const UNUSED_MAP_F4,                  0,  0 ; $F5
+	map_const LORELEIS_ROOM,                  5,  6 ; $F6
+	map_const BRUNOS_ROOM,                    5,  6 ; $F7
+	map_const AGATHAS_ROOM,                   5,  6 ; $F8
 	end_indoor_group POKEMON_LEAGUE_3
 DEF NUM_MAPS EQU const_value
 

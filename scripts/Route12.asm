@@ -33,9 +33,6 @@ Route12DefaultScript:
 	ld [wCurEnemyLevel], a
 	xor a
 	ld [wIsTrainerBattle], a
-	ld a, TOGGLE_ROUTE_12_MAREEP
-	ld [wToggleableObjectIndex], a
-	predef HideObject
 	ld a, SCRIPT_ROUTE12_MAREEP_POST_BATTLE
 	ld [wRoute12CurScript], a
 	ld [wCurMapScript], a
@@ -47,13 +44,22 @@ Route12MareepPostBattleScript:
 	jr z, Route12ResetScripts
 	call UpdateSprites
 	ld a, [wBattleResult]
+	and a
+	jr z, .defeated
 	cp $2
-	jr z, .caught_mareep
+	jr z, .hide
+; fled from battle; leave the Mareep on the map so it can be sheared again
+	jp Route12ResetScripts
+.defeated
 	ld a, TEXT_ROUTE12_MAREEP_SHEARED
 	ldh [hTextID], a
 	call DisplayTextID
-.caught_mareep
+.hide
+; only hide the Mareep after it has been beaten or caught
 	SetEvent EVENT_BEAT_ROUTE12_MAREEP
+	ld a, TOGGLE_ROUTE_12_MAREEP
+	ld [wToggleableObjectIndex], a
+	predef HideObject
 	call Delay3
 	ld a, SCRIPT_ROUTE12_DEFAULT
 	ld [wRoute12CurScript], a

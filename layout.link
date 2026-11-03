@@ -206,6 +206,8 @@ ROMX $2E
 	"Flyover Map 2"
 ROMX $2F
 	"Flyover Code"
+ROMX $30
+	"Maps 22"
 ROMX $31
 	"bank31"
 ROMX $32

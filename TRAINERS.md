@@ -2826,7 +2826,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 74 | [Ninetales](POKEDEX.md#44-ninetales) | [Confuse Ray](MOVES.md#confuse-ray) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Roar](MOVES.md#roar) |
+| 74 | [Ninetales](POKEDEX.md#44-ninetales) | [Flamethrower](MOVES.md#flamethrower) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Confuse Ray](MOVES.md#confuse-ray) |
 | 75 | [Magmar](POKEDEX.md#155-magmar) | [Smokescreen](MOVES.md#smokescreen) · [Flamethrower](MOVES.md#flamethrower) · [Confuse Ray](MOVES.md#confuse-ray) · [Fire Blast](MOVES.md#fire-blast) |
 | 75 | [Flareon](POKEDEX.md#167-flareon) | [Leer](MOVES.md#leer) · [Fire Spin](MOVES.md#fire-spin) · [Rage](MOVES.md#rage) · [Flamethrower](MOVES.md#flamethrower) |
 | 75 | [Arcanine](POKEDEX.md#66-arcanine) | [Fire Blast](MOVES.md#fire-blast) · [Leer](MOVES.md#leer) · [Take Down](MOVES.md#take-down) · [Extremespeed](MOVES.md#extremespeed) |
@@ -3027,7 +3027,7 @@
 | 61 | [Fearow](POKEDEX.md#26-fearow) | [Fury Attack](MOVES.md#fury-attack) · [Feint Attack](MOVES.md#feint-attack) · [Drill Peck](MOVES.md#drill-peck) · [Agility](MOVES.md#agility) |
 | 59 | [Golem](POKEDEX.md#88-golem) | [Rock Throw](MOVES.md#rock-throw) · [Iron Defense](MOVES.md#iron-defense) · [Earthquake](MOVES.md#earthquake) · [Explosion](MOVES.md#explosion) |
 | 61 | [Poliwrath](POKEDEX.md#69-poliwrath) | [Hypnosis](MOVES.md#hypnosis) · [Hydro Pump](MOVES.md#hydro-pump) · [Submission](MOVES.md#submission) · [Body Slam](MOVES.md#body-slam) |
-| 61 | [Ninetales](POKEDEX.md#44-ninetales) | [Confuse Ray](MOVES.md#confuse-ray) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Roar](MOVES.md#roar) |
+| 61 | [Ninetales](POKEDEX.md#44-ninetales) | [Flamethrower](MOVES.md#flamethrower) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Confuse Ray](MOVES.md#confuse-ray) |
 | 63 | [Victreebel](POKEDEX.md#83-victreebel) | [Razor Leaf](MOVES.md#razor-leaf) · [Wrap](MOVES.md#wrap) · [Poisonpowder](MOVES.md#poisonpowder) · [Sleep Powder](MOVES.md#sleep-powder) |
 | 65 | [Magnezone](POKEDEX.md#6-magnezone) | [Thunderbolt](MOVES.md#thunderbolt) · [Flash Cannon](MOVES.md#flash-cannon) · [Light Screen](MOVES.md#light-screen) · [Thunder Wave](MOVES.md#thunder-wave) |
 
@@ -3038,7 +3038,7 @@
 | 61 | [Fearow](POKEDEX.md#26-fearow) | [Fury Attack](MOVES.md#fury-attack) · [Feint Attack](MOVES.md#feint-attack) · [Drill Peck](MOVES.md#drill-peck) · [Agility](MOVES.md#agility) |
 | 59 | [Golem](POKEDEX.md#88-golem) | [Rock Throw](MOVES.md#rock-throw) · [Iron Defense](MOVES.md#iron-defense) · [Earthquake](MOVES.md#earthquake) · [Explosion](MOVES.md#explosion) |
 | 61 | [Poliwrath](POKEDEX.md#69-poliwrath) | [Hypnosis](MOVES.md#hypnosis) · [Hydro Pump](MOVES.md#hydro-pump) · [Submission](MOVES.md#submission) · [Body Slam](MOVES.md#body-slam) |
-| 61 | [Ninetales](POKEDEX.md#44-ninetales) | [Confuse Ray](MOVES.md#confuse-ray) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Roar](MOVES.md#roar) |
+| 61 | [Ninetales](POKEDEX.md#44-ninetales) | [Flamethrower](MOVES.md#flamethrower) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Confuse Ray](MOVES.md#confuse-ray) |
 | 63 | [Victreebel](POKEDEX.md#83-victreebel) | [Razor Leaf](MOVES.md#razor-leaf) · [Wrap](MOVES.md#wrap) · [Poisonpowder](MOVES.md#poisonpowder) · [Sleep Powder](MOVES.md#sleep-powder) |
 | 65 | [Dragonite](POKEDEX.md#9-dragonite) | [Agility](MOVES.md#agility) · [Dragon Slam](MOVES.md#dragon-slam) · [Extremespeed](MOVES.md#extremespeed) · [Hyper Beam](MOVES.md#hyper-beam) |
 
@@ -3049,7 +3049,7 @@
 | 61 | [Fearow](POKEDEX.md#26-fearow) | [Fury Attack](MOVES.md#fury-attack) · [Feint Attack](MOVES.md#feint-attack) · [Drill Peck](MOVES.md#drill-peck) · [Agility](MOVES.md#agility) |
 | 59 | [Golem](POKEDEX.md#88-golem) | [Rock Throw](MOVES.md#rock-throw) · [Iron Defense](MOVES.md#iron-defense) · [Earthquake](MOVES.md#earthquake) · [Explosion](MOVES.md#explosion) |
 | 61 | [Poliwrath](POKEDEX.md#69-poliwrath) | [Hypnosis](MOVES.md#hypnosis) · [Hydro Pump](MOVES.md#hydro-pump) · [Submission](MOVES.md#submission) · [Body Slam](MOVES.md#body-slam) |
-| 61 | [Ninetales](POKEDEX.md#44-ninetales) | [Confuse Ray](MOVES.md#confuse-ray) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Roar](MOVES.md#roar) |
+| 61 | [Ninetales](POKEDEX.md#44-ninetales) | [Flamethrower](MOVES.md#flamethrower) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Confuse Ray](MOVES.md#confuse-ray) |
 | 63 | [Victreebel](POKEDEX.md#83-victreebel) | [Razor Leaf](MOVES.md#razor-leaf) · [Wrap](MOVES.md#wrap) · [Poisonpowder](MOVES.md#poisonpowder) · [Sleep Powder](MOVES.md#sleep-powder) |
 | 65 | [Wigglytuff](POKEDEX.md#3-wigglytuff) | [Drainingkiss](MOVES.md#drainingkiss) · [Body Slam](MOVES.md#body-slam) · [Double-Edge](MOVES.md#double-edge) · [Moonblast](MOVES.md#moonblast) |
 

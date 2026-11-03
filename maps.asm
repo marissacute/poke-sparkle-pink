@@ -1224,3 +1224,10 @@ INCLUDE "data/maps/headers/WorldChampionship.asm"
 INCLUDE "scripts/WorldChampionship.asm"
 INCLUDE "data/maps/objects/WorldChampionship.asm"
 WorldChampionship_Blocks: INCBIN "maps/WorldChampionship.blk"
+
+SECTION "Maps 22", ROMX
+
+INCLUDE "data/maps/headers/FuchsiaMoveHouse.asm"
+INCLUDE "scripts/FuchsiaMoveHouse.asm"
+INCLUDE "data/maps/objects/FuchsiaMoveHouse.asm"
+FuchsiaMoveHouse_Blocks: INCBIN "maps/FuchsiaMoveHouse.blk"

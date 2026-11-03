@@ -270,6 +270,7 @@ SECTION "Text 11", ROMX
 INCLUDE "data/text/text_7.asm"
 
 INCLUDE "text/Red.asm"
+INCLUDE "text/FuchsiaMoveHouse.asm"
 
 
 SECTION "Pokédex Text", ROMX

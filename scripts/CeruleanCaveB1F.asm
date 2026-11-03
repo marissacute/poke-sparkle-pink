@@ -49,9 +49,6 @@ CeruleanCaveB1FDefaultScript:
 	ld [wCurEnemyLevel], a
 	xor a
 	ld [wIsTrainerBattle], a
-	ld a, TOGGLE_MEWTWO
-	ld [wToggleableObjectIndex], a
-	predef HideObject
 	ld a, SCRIPT_CERULEANCAVEB1F_MEWTWO_POST_BATTLE
 	ld [wCeruleanCaveB1FCurScript], a
 	ld [wCurMapScript], a
@@ -66,6 +63,11 @@ CeruleanCaveB1FMewtwoPostBattleScript:
 	ldh [hTextID], a
 	call DisplayTextID
 	SetEvent EVENT_BEAT_MEWTWO
+; Hide Mewtwo only after a decisive battle. If the player blacks out, the
+; object must stay on the map so it can be fought again.
+	ld a, TOGGLE_MEWTWO
+	ld [wToggleableObjectIndex], a
+	predef HideObject
 	call Delay3
 	ld a, SCRIPT_CERULEANCAVEB1F_DEFAULT
 	ld [wCeruleanCaveB1FCurScript], a

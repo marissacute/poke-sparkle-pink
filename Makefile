@@ -82,12 +82,17 @@ flyover-build:
 	python3 tools/gen_flyover_map.py build
 
 # The editable .blk layers are the source of the ROM data.  Rebuild the
-# two map banks automatically when they (or the generator) change.
-gfx/flyover/kanto_blocks_1.bin gfx/flyover/kanto_blocks_2.bin: \
+# two map banks automatically when they (or the generator) change.  The
+# generator writes both files in one run, so chain part 2 through part 1
+# instead of making each an independent target that -j can run twice.
+gfx/flyover/kanto_blocks_1.bin: \
 		maps/Flyover.174x180.overworld.blk \
 		maps/FlyoverPlateau.17x84.plateau.blk \
 		tools/gen_flyover_map.py
 	python3 tools/gen_flyover_map.py build
+
+gfx/flyover/kanto_blocks_2.bin: gfx/flyover/kanto_blocks_1.bin
+	@test -f $@ || python3 tools/gen_flyover_map.py build
 
 clean: tidy
 	find gfx \

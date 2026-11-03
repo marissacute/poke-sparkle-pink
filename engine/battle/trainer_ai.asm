@@ -424,6 +424,7 @@ BrunoAI:
 	ret nc
 	ld a, 3
 	call AICheckIfHPBelowFraction
+	ret nc
 	jp AIUseHyperPotion
 
 AgathaAI:

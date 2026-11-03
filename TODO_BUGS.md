@@ -15,7 +15,7 @@ Quick links: [P0](#p0--major) · [P1](#p1--medium) · [P2](#p2--minor--cosmetic)
 ## P0 — Major
 
 ### BUG-01 — Mewtwo is permanently lost if the player blacks out
-- [ ] **Fix Mewtwo persistence on blackout**
+- [x] **Fix Mewtwo persistence on blackout**
   - Where: [scripts/CeruleanCaveB1F.asm:41-60](scripts/CeruleanCaveB1F.asm#L41-L60), [engine/overworld/toggleable_objects.asm:137-143](engine/overworld/toggleable_objects.asm#L137-L143), [engine/movie/oak_speech/init_player_data.asm:44](engine/movie/oak_speech/init_player_data.asm#L44)
   - Trigger: talk to Mewtwo, lose the battle. The map script hides the object before the fight; the `wIsInBattle == $ff` branch resets the script without setting `EVENT_BEAT_MEWTWO` and without showing the object again.
   - Cause: `HideObject` sets a persistent bit in `wToggleableObjectFlags` (only cleared at new-game init and saved in the main save data). `EVENT_FIGHT_MEWTWO` is reset before the battle, so the only way to set it again is to talk to the now-hidden sprite. Saving after the blackout makes the loss permanent.
@@ -30,7 +30,7 @@ Quick links: [P0](#p0--major) · [P1](#p1--medium) · [P2](#p2--minor--cosmetic)
   - Confidence: high.
 
 ### BUG-02 — Link battle can leak `wIsTrainerBattle = 1` into the next fishing battle
-- [ ] **Clear the trainer flag at battle end and at the rod**
+- [x] **Clear the trainer flag at battle end and at the rod**
   - Where: [engine/link/cable_club.asm:279-284](engine/link/cable_club.asm#L279-L284), [engine/battle/core.asm:1082-1100](engine/battle/core.asm#L1082-L1100), [engine/battle/end_of_battle.asm:48-62](engine/battle/end_of_battle.asm#L48-L62), [engine/battle/init_battle_variables.asm:3-6](engine/battle/init_battle_variables.asm#L3-L6), [engine/items/item_effects.asm:1726-1736](engine/items/item_effects.asm#L1726-L1736), [engine/battle/core.asm:6811-6815](engine/battle/core.asm#L6811-L6815), [home/trainers2.asm:6-13](home/trainers2.asm#L6-L13), [engine/battle/read_trainer_party.asm:17-27](engine/battle/read_trainer_party.asm#L17-L27)
   - Trigger: win a link battle (or the opponent runs), leave the Cable Club, then use Old/Good/Super Rod before a normal walking encounter resets the flag. `RodResponse` stores the fish species in `wCurOpponent`, but `InitBattleCommon` still sees `wIsTrainerBattle = 1` and treats that species as a trainer class. `TrainerDataPointers`/`TrainerPicAndMoneyPointers` only have 58 entries; species IDs up to 205 read far out of bounds → garbage party/pic, glitch mon, or hang.
   - Cause: `TrainerBattleVictory` returns early for `LINK_STATE_BATTLING` before its new `wIsTrainerBattle = 0` clear; `EndOfBattle.resetVariables` and `InitBattleVariables` don't clear it either. The old `wCurOpponent >= OPP_ID_OFFSET` test was self-validating and got removed in the class-ID refactor.
@@ -40,6 +40,7 @@ Quick links: [P0](#p0--major) · [P1](#p1--medium) · [P2](#p2--minor--cosmetic)
     3. Consider clearing it in the debug-menu battle path too ([engine/debug/debug_menu.asm:110-116](engine/debug/debug_menu.asm#L110-L116)).
   - Test: link battle win → exit → fish with each rod; battle must be a normal wild fish. Also test after a link loss and after the opponent runs. Verify map scripts that read `wIsTrainerBattle` after a normal trainer battle still work (`wWasTrainerBattle` is the sprite-removal flag).
   - Confidence: high code path; exact crash depends on the garbage tables.
+  - Fix applied: `wIsTrainerBattle` is cleared in `EndOfBattle.resetVariables` ([engine/battle/end_of_battle.asm:62](engine/battle/end_of_battle.asm#L62)) for every battle end, and `RodResponse` clears it when it stores a bite ([engine/items/item_effects.asm:1741](engine/items/item_effects.asm#L1741)). Verified in PyBoy: with the flag pre-set to 1, using the Old Rod produced a wild MAGIKARP battle (`wIsInBattle = 1`, `wTrainerClass = 0`); a flag set after that battle started was 0 after winning. Link loss and draw both reach the same `resetVariables` path.
 
 ### BUG-03 — Pokedex completion and diploma are unreachable
 - [x] **Fix the completion threshold (and the rating table)**
@@ -112,28 +113,31 @@ Quick links: [P0](#p0--major) · [P1](#p1--medium) · [P2](#p2--minor--cosmetic)
   - Confidence: high for the wrong lookup; severity is cosmetic-ish but the read can land on text commands.
 
 ### BUG-09 — `BrunoAI` uses a Hyper Potion at full HP
-- [ ] **Check the HP-fraction result before using the potion**
-  - Where: [engine/battle/trainer_ai.asm:422-427](engine/battle/trainer_ai.asm#L422-L427)
+- [x] **Check the HP-fraction result before using the potion**
+  - Where: [engine/battle/trainer_ai.asm:422-428](engine/battle/trainer_ai.asm#L422-L428)
   - Trigger: any Bruno battle; the 50% roll passes. `AICheckIfHPBelowFraction` returns carry if below the fraction, but the code falls through to `jp AIUseHyperPotion` regardless (missing `ret nc`).
   - Fix sketch: add `ret nc` (or `jp nc, .noPotion`) after `call AICheckIfHPBelowFraction`; optionally restore an X Defend fallback if that was the upstream intent.
   - Test: Bruno at full HP after the 50% roll does not waste a potion.
   - Confidence: confirmed.
+  - Fix applied: added the missing `ret nc` at [engine/battle/trainer_ai.asm:427](engine/battle/trainer_ai.asm#L427), matching the check in every other leader's AI. No X Defend fallback was restored — the surrounding leaders don't have one either. Build verified; not runtime-reproduced (the debug TestBattle harness has no Bruno battle).
 
 ### BUG-10 — Wrap countdown freezes while the trapped mon has a Substitute
-- [ ] **Decide and fix the Substitute/wrap interaction**
-  - Where: [engine/battle/core.asm:569-590](engine/battle/core.asm#L569-L590)
+- [x] **Apply the trap to the mon, not to its Substitute**
+  - Where: [engine/battle/core.asm:565-590](engine/battle/core.asm#L565-L590)
   - Trigger: a Pokémon trapped by BIND/WRAP/FIRE_SPIN/CLAMP uses Substitute (allowed while trapped). `HandleWrapDamage` returns at `HAS_SUBSTITUTE_UP` before decrementing the counter, and models no damage to the Substitute. The target stays unable to switch/run until the Substitute breaks.
   - Fix sketch: decrement the count before the Substitute test (and release when it hits 0), or model the 1/16 damage against the Substitute’s HP. Pick the intended Gen 2 behaviour first; the current code does neither.
   - Test: enemy wraps the player, player uses Substitute, count still ticks down and releases; Substitute takes residual damage if that is intended.
   - Confidence: confirmed mechanics; design choice needed.
+  - Fix applied: the `HAS_SUBSTITUTE_UP` early return is gone, so the trap stays on the mon as decided: a Substitute raised after the trap was set neither pauses the countdown nor soaks the residual 1/16. `TrappingEffect` still refuses to trap through a Substitute that is already up. Verified in PyBoy by arming the state at `HandleWrapDamage` entry: count 2→1 with 4 HP (of 64) lost and the Substitute still up, then 1→0 released with no further damage.
 
 ### BUG-11 — Priority lookup reads past the table for move `$ff`
-- [ ] **Handle `CANNOT_MOVE`/`$ff` before the priority scan**
-  - Where: [engine/battle/core.asm:446-480](engine/battle/core.asm#L446-L480), [data/battle/priority_moves.asm:10](data/battle/priority_moves.asm#L10)
+- [x] **Handle `CANNOT_MOVE`/`$ff` before the priority scan**
+  - Where: [engine/battle/core.asm:439-485](engine/battle/core.asm#L439-L485), [data/battle/priority_moves.asm:10](data/battle/priority_moves.asm#L10)
   - Trigger: link battle where the opponent sent `LINKBATTLE_NO_ACTION`, or any case where Haze set the target's selected move to `$ff`. The scan's `cp b` matches the `db -1` terminator and reads the next ROM byte (the `$21` opcode of `HandlePoisonBurnLeechSeed`) as priority 33. Deterministic, but wrong turn order.
   - Fix sketch: if the selected move is `$ff`, use the default priority 7 and skip the table (or check `cp $ff` before the terminator match).
   - Test: link no-action ordering; Haze then next-turn priority.
   - Confidence: confirmed.
+  - Fix applied: both scans now set the default priority 7 first and `cp CANNOT_MOVE` before entering the list, so `$ff` can no longer match the `db -1` end marker. Verified in PyBoy via the debug TestBattle: forcing both selected moves to `$ff` at `HandleMovePriority` yields `c = e = 7` at the call's return site (the unfixed scan returned `$21`).
 
 ### BUG-12 — TM machine list scroll state is not managed
 - [x] **Save/reset/restore `wListScrollOffset` like the mart**
@@ -144,15 +148,16 @@ Quick links: [P0](#p0--major) · [P1](#p1--medium) · [P2](#p2--minor--cosmetic)
   - Confidence: high.
 
 ### BUG-13 — Duplicate `(party mon, move slot)` rows in the special-moves table
-- [ ] **Fix the overwritten special moves**
+- [x] **Fix the overwritten special moves**
   - Where: [data/trainers/special_moves.asm:71-73](data/trainers/special_moves.asm#L71-L73) (Blaine 2), [161-162](data/trainers/special_moves.asm#L161-L162), [175-176](data/trainers/special_moves.asm#L175-L176), [186-187](data/trainers/special_moves.asm#L186-L187) (Rival3 1/2/3)
   - Trigger: Blaine rematch, or the Champion battle with any starter. The writer in [engine/battle/read_trainer_party.asm:87-118](engine/battle/read_trainer_party.asm#L87-L118) applies entries in order, so the second write to the same slot overwrites the first. Ninetales ends up with Confuse Ray instead of Flamethrower.
   - Fix sketch: change the second entry’s move slot from 1 to 2 (verify the intended Ninetales/Blaine-rematch movesets first), or reorder/remove the duplicate. Then re-run a duplicate-slot check on the table.
   - Test: inspect Blaine’s rematch Ninetales and the Champion Ninetales moves in battle; all intended moves present.
   - Confidence: confirmed (script that found all duplicates and party sizes is in the scan notes).
+  - Fix applied: the four duplicate `CONFUSE_RAY` rows now write move slot 4 — Blaine 2 at [special_moves.asm:73](data/trainers/special_moves.asm#L73), Rival3 1/2/3 at [162](data/trainers/special_moves.asm#L162), [176](data/trainers/special_moves.asm#L176), [187](data/trainers/special_moves.asm#L187). This mirrors the first Blaine battle's Ninetales rows (slot 1 `FLAMETHROWER`, slot 4 `CONFUSE_RAY`), giving Flamethrower · Tail Whip · Quick Attack · Confuse Ray instead of losing Flamethrower. Re-ran a duplicate scan over all 23 blocks: zero duplicate `(party mon, slot)` rows, all slots 1–4 and moves valid; `tools/gen_wiki.py --check-only` passes and the regenerated `TRAINERS.md` shows the intended movesets.
 
 ### BUG-14 — Mareep hides on blackout but the shears still trigger an empty-tile battle
-- [ ] **Restore the Mareep sprites on blackout (or keep them visible until an outcome)**
+- [x] **Restore the Mareep sprites on blackout (or keep them visible until an outcome)**
   - Where: [scripts/Route12.asm:24-43](scripts/Route12.asm#L24-L43), [scripts/Route16.asm:24-43](scripts/Route16.asm#L24-L43), [engine/items/item_effects.asm:1623-1652](engine/items/item_effects.asm#L1623-L1652)
   - Trigger: shear the Mareep, lose/blackout, return. The object stays hidden (`HideObject` before the battle, `$ff` branch resets without restoring); `EVENT_FIGHT_*` was reset, `EVENT_BEAT_*` is clear. Using the shears at the coordinates sets `EVENT_FIGHT_*` again and starts a wild battle from an empty tile.
   - Fix sketch: in the `wIsInBattle == $ff` branch, `ShowObject` the corresponding `TOGGLE_ROUTE_12_MAREEP` / `TOGGLE_ROUTE_16_MAREEP`, or move the `HideObject` call into the non-blackout outcome. The encounter is not lost today, only the sprite presentation.
@@ -168,12 +173,10 @@ Quick links: [P0](#p0--major) · [P1](#p1--medium) · [P2](#p2--minor--cosmetic)
   - Confidence: high.
 
 ### BUG-16 — Route 15 starter menu draws Squirtle outside its box
-- [ ] **Fix the box height or the row spacing**
+- [x] **Not a bug — false positive**
   - Where: [scripts/Route15Gate2F.asm:49-63](scripts/Route15Gate2F.asm#L49-L63), [scripts/Route15Gate2F.asm:110-127](scripts/Route15Gate2F.asm#L110-L127)
-  - Trigger: talk to the Route 15 gate aide with 50+ owned species. The box is drawn with height 6 (rows 0–5); the three options are printed at rows 2/4/6, so Squirtle and the third cursor row are outside the border.
-  - Fix sketch: draw the box with height 7 (rows 0–6), or move the third option to row 5 and adjust `wTopMenuItemY`/spacing so the cursor still lands on each row.
-  - Test: open the menu, move the cursor through all three options; everything inside the border.
-  - Confidence: high.
+  - The report misread `TextBoxBorder`'s `b` argument in [home/text.asm:1-38](home/text.asm#L1-L38): `b` is the number of *interior* rows, and the routine always adds a top and bottom border row. `b = 6` therefore draws rows 0–7, not 0–5. The options at rows 2/4/6 and the double-spaced cursor all sit inside the border, with Squirtle on row 6 directly above the bottom border (row 7).
+  - Verified in-game with the captured menu: box, all three names, and the cursor render correctly. Do not re-file.
 
 ### BUG-17 — New text that overflows or overwrites itself
 - [x] **Fix the overlong/two-`line` texts**
@@ -383,7 +386,7 @@ Area-by-area checks that found no defects (useful so you do not re-audit):
 These are static conclusions; reproduce them first if you plan to fix:
 
 1. Link battle win/run → exit Cable Club → use each rod. Expect a glitch party/hang today.
-2. Mewtwo: lose the fight, black out, return. Expect the sprite to be gone.
+2. Mewtwo: lose the fight, black out, return. Sprite stays visible and fightable (fixed in BUG-01).
 3. Ice Stone on Eevee in the party menu. Expect “NOT ABLE” today.
 4. Open each elevator; watch the description box. Expect text fragments.
 5. Naming screen after party menu / different tilesets; compare colors.

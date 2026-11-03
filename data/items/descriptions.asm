@@ -16,6 +16,10 @@ PrintItemDescription::
 	cp HM01 ; is this a TM/HM?
 	jr nc, .machine
 
+	ld a, [wListMenuID]
+	cp MOVESLISTMENU
+	jr z, .moveListItem
+
 	ld hl, ItemDescriptions
 ; Add stuff until we are at the right pointer
 	ld de, 4 ; size of the data to copy
@@ -34,6 +38,11 @@ PrintItemDescription::
 	ld [wTempTMHM], a
 	predef TMToMove ; get move ID from TM/HM ID
 	ld a, [wTempTMHM]
+	ld [wMoveNum], a
+	jp PrintMoveDescription
+
+.moveListItem
+	ld a, [wCurListMenuItem]
 	ld [wMoveNum], a
 	jp PrintMoveDescription
 

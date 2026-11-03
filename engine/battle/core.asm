@@ -443,10 +443,12 @@ HandleMovePriority:
 ; These values will be compared after the 'ret' instruction is called
 ; From https://github.com/pret/pokered/wiki/Implement-move-priority-system
 
+        ld c, 7           ; no priority is 7
         ld a, [wPlayerSelectedMove]
+        cp CANNOT_MOVE    ; $ff has no entry and would match the list's -1 end marker
+        jr z, .noPlayerPriorityMove
         ld b, a
         ld hl, PriorityMovesList
-        ld c, 7           ; no priority is 7
 .playerPriorityMoveLoop
         ld a, [hli]       ; load the move ID from priority list and 
                           ; increment address to the priority value address
@@ -461,10 +463,12 @@ HandleMovePriority:
 .noPlayerPriorityMove
 
 ; Now check enemy priority 
+        ld e, 7           ; no priority is 7
         ld a, [wEnemySelectedMove]
+        cp CANNOT_MOVE    ; $ff has no entry and would match the list's -1 end marker
+        jr z, .noEnemyPriorityMove
         ld d, a
         ld hl, PriorityMovesList
-        ld e, 7           ; no priority is 7
 .enemyPriorityMoveLoop
         ld a, [hli]       ; load the move ID from priority list and 
                           ; increment address to the priority value address
@@ -564,19 +568,18 @@ HandleWrapDamage:
 ; runs out (see TrappingEffect, which sets it). hl: the mon's HP pointer,
 ; hWhoseTurn: that mon. Does nothing if the mon isn't trapped or is already
 ; fainted (poison or Leech Seed may have KO'd it earlier in the same routine).
+; The trap belongs to the mon, not to its Substitute: TrappingEffect won't trap
+; through one, but a Substitute raised after the trap was set neither pauses
+; the countdown nor soaks the residual damage.
 	push hl ; the mon's current HP pointer, handed back at the end
-	ld hl, wPlayerBattleStatus2
 	ld de, wPlayerWrapCount
 	ld bc, wPlayerTrappingMove
 	ldh a, [hWhoseTurn]
 	and a
 	jr z, .gotState
-	ld hl, wEnemyBattleStatus2
 	ld de, wEnemyWrapCount
 	ld bc, wEnemyTrappingMove
 .gotState
-	bit HAS_SUBSTITUTE_UP, [hl]
-	jp nz, .done ; a substitute takes the hit instead (no damage is modeled)
 	ld a, [de]
 	and a
 	jp z, .done ; not trapped
@@ -1711,7 +1714,7 @@ TryRunningFromBattle:
 .canEscape
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
-	ld a, $2
+	ld a, $3 ; fled from a wild battle
 	jr nz, .playSound
 ; link battle
 	call SaveScreenTilesToBuffer1

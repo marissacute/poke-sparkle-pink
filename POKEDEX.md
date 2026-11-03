@@ -7185,7 +7185,6 @@
 
 **Type:** Normal  
 **Catch rate:** 45 · **Base EXP:** 92 · **Growth:** Medium Fast  
-**Evolves into:** [Flareon](#167-flareon) by Fire Stone · [Jolteon](#166-jolteon) by Thunder Stone · [Vaporeon](#165-vaporeon) by Water Stone · [Espeon](#168-espeon) by Sun Stone · [Umbreon](#169-umbreon) by Moon Stone · [Leafeon](#170-leafeon) by Leaf Stone · [Glaceon](#171-glaceon) by Ice Stone · [Sylveon](#172-sylveon) by level 41  
 
 #### Base stats
 
@@ -7204,11 +7203,6 @@
 |---:|:--|:--|---:|---:|---:|
 | 1 | **[Tackle](MOVES.md#tackle)** | Normal | 35 | 95% | 35 |
 | 1 | [Sand-Attack](MOVES.md#sand-attack) | Normal | — | 100% | 15 |
-| 27 | **[Quick Attack](MOVES.md#quick-attack)** | Normal | 40 | 100% | 30 |
-| 31 | [Bite](MOVES.md#bite) | Dark | 60 | 100% | 25 |
-| 35 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
-| 40 | [Fairy Wind](MOVES.md#fairy-wind) | Fairy | 40 | 100% | 30 |
-| 45 | **[Take Down](MOVES.md#take-down)** | Normal | 90 | 85% | 20 |
 
 **TM/HM moves**
 
@@ -7225,7 +7219,6 @@
 
 **Type:** Water  
 **Catch rate:** 45 · **Base EXP:** 196 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) by Water Stone  
 
 #### Base stats
 
@@ -7272,7 +7265,6 @@
 
 **Type:** Electric  
 **Catch rate:** 45 · **Base EXP:** 197 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) by Thunder Stone  
 
 #### Base stats
 
@@ -7319,7 +7311,6 @@
 
 **Type:** Fire  
 **Catch rate:** 45 · **Base EXP:** 198 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) by Fire Stone  
 
 #### Base stats
 
@@ -7365,7 +7356,6 @@
 
 **Type:** Psychic  
 **Catch rate:** 45 · **Base EXP:** 196 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) by Sun Stone  
 
 #### Base stats
 
@@ -7409,7 +7399,6 @@
 
 **Type:** Dark  
 **Catch rate:** 45 · **Base EXP:** 196 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) by Moon Stone  
 
 #### Base stats
 
@@ -7453,7 +7442,6 @@
 
 **Type:** Grass  
 **Catch rate:** 45 · **Base EXP:** 184 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) by Leaf Stone  
 
 #### Base stats
 
@@ -7498,7 +7486,6 @@
 
 **Type:** Ice  
 **Catch rate:** 45 · **Base EXP:** 184 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) by Ice Stone  
 
 #### Base stats
 
@@ -7543,7 +7530,6 @@
 
 **Type:** Fairy  
 **Catch rate:** 45 · **Base EXP:** 196 · **Growth:** Medium Fast  
-**Evolves from:** [Eevee](#164-eevee) by level 41  
 
 #### Base stats
 

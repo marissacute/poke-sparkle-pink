@@ -33,10 +33,6 @@ Route16DefaultScript:
 	ld [wCurEnemyLevel], a
 	xor a
 	ld [wIsTrainerBattle], a
-	ld a, TOGGLE_ROUTE_16_MAREEP
-	ld [wToggleableObjectIndex], a
-	predef HideObject
-	call UpdateSprites
 	ld a, SCRIPT_ROUTE16_MAREEP_POST_BATTLE
 	ld [wRoute16CurScript], a
 	ld [wCurMapScript], a
@@ -48,13 +44,22 @@ Route16MareepPostBattleScript:
 	jp z, Route16ResetScripts
 	call UpdateSprites
 	ld a, [wBattleResult]
+	and a
+	jr z, .defeated
 	cp $2
-	jr z, .caught
+	jr z, .hide
+; fled from battle; leave the Mareep on the map so it can be sheared again
+	jp Route16ResetScripts
+.defeated
 	ld a, TEXT_ROUTE16_MAREEP_SHEARED
 	ldh [hTextID], a
 	call DisplayTextID
-.caught
+.hide
+; only hide the Mareep after it has been beaten or caught
 	SetEvent EVENT_BEAT_ROUTE16_MAREEP
+	ld a, TOGGLE_ROUTE_16_MAREEP
+	ld [wToggleableObjectIndex], a
+	predef HideObject
 	call Delay3
 	ld a, SCRIPT_ROUTE16_DEFAULT
 	ld [wRoute16CurScript], a

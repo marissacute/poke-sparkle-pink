@@ -45,6 +45,13 @@ DisplayListMenuID::
 	ld [wTopMenuItemX], a
 	ld a, PAD_A | PAD_B | PAD_SELECT | PAD_DOWN | PAD_UP
 	ld [wMenuWatchedKeys], a
+	ld a, [wListMenuID]
+	cp MOVESLISTMENU
+	jr nz, .noMoveList
+	ld a, [wMenuWatchedKeys]
+	res B_PAD_SELECT, a ; SELECT swaps item slots, which doesn't apply to moves
+	ld [wMenuWatchedKeys], a
+.noMoveList
 	ld c, 10
 	call DelayFrames
 
@@ -109,6 +116,8 @@ DisplayListMenuIDLoop::
 	ld a, [wListMenuID]
 	and a ; PCPOKEMONLISTMENU?
 	jr z, .pokemonList
+	cp MOVESLISTMENU
+	jr z, .movesList
 ; if it's an item menu
 	ASSERT wCurListMenuItem == wCurItem
 	push hl
@@ -126,6 +135,12 @@ DisplayListMenuIDLoop::
 	ld a, BANK(ItemNames)
 	ld [wPredefBank], a
 	call GetName
+	jr .storeChosenEntry
+.movesList
+	ASSERT wCurListMenuItem == wCurItem
+	ld a, [wCurItem]
+	ld [wNamedObjectIndex], a
+	call GetMoveName
 	jr .storeChosenEntry
 .pokemonList
 	ASSERT wCurListMenuItem == wCurPartySpecies
@@ -254,7 +269,19 @@ DisplayChooseQuantityMenu::
 	jr nz, .incrementQuantity
 	bit B_PAD_DOWN, a
 	jr nz, .decrementQuantity
+	bit B_PAD_RIGHT, a
+	jr nz, .increaseQuantityBy10
+	bit B_PAD_LEFT, a
+	jr nz, .decreaseQuantityBy10
 	jr .waitForKeyPressLoop
+.increaseQuantityBy10
+	ld b, 10
+	jr .adjustQuantityBy10
+.decreaseQuantityBy10
+	ld b, -10
+.adjustQuantityBy10
+	call AdjustItemQuantity
+	jr .handleNewQuantity
 .incrementQuantity
 	ld a, [wMaxItemQuantity]
 	inc a
@@ -550,3 +577,32 @@ PrintListMenuEntries::
 
 ListMenuCancelText::
 	db "CANCEL@"
+
+; adds the signed 8-bit delta in b to wItemQuantity,
+; clamped to the range 1..wMaxItemQuantity
+AdjustItemQuantity:
+	ld hl, wItemQuantity
+	bit 7, b
+	jr nz, .decrease
+	ld a, [hl]
+	add b
+	ld c, a
+	ld a, [wMaxItemQuantity]
+	cp c
+	jr nc, .store
+	ld c, a
+.store
+	ld [hl], c
+	ret
+.decrease
+	ld a, [hl]
+	add b
+	jr nc, .minimum
+	and a
+	jr z, .minimum
+	ld [hl], a
+	ret
+.minimum
+	ld a, 1
+	ld [hl], a
+	ret

@@ -25,6 +25,14 @@ EndOfBattle:
 	call DelayFrames
 	jr .evolution
 .notLinkBattle
+; Escaping a wild battle by Teleport, Roar, Whirlwind, or a Poké Doll leaves
+; no battle result of its own, so record it as a flee instead of a win.
+	ld a, [wEscapedFromBattle]
+	and a
+	jr z, .notEscaped
+	ld a, $3
+	ld [wBattleResult], a
+.notEscaped
 	ld a, [wBattleResult]
 	and a
 	jr nz, .resetVariables
@@ -51,6 +59,7 @@ EndOfBattle:
 	ld [wBattleType], a
 	ld [wMoveMissed], a
 	ld [wCurOpponent], a
+	ld [wIsTrainerBattle], a ; every later battle decides this for itself
 	ld [wForcePlayerToChooseMon], a
 	ld [wNumRunAttempts], a
 	ld [wEscapedFromBattle], a
