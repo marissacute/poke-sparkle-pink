@@ -521,6 +521,8 @@ ItemUseBall:
 ; Add the caught Pokémon to the Pokédex.
 	predef IndexToPokedex
 	ld a, [wPokedexNum]
+	and a
+	jr z, .skipShowingPokedexData ; MissingNo. has no dex entry to add or show
 	dec a
 	ld c, a
 	ld b, FLAG_TEST

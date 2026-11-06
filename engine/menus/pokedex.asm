@@ -380,12 +380,17 @@ PokedexMenuItemsText:
 ; hl = address of bit field
 IsPokemonBitSet:
 	ld a, [wPokedexNum]
+	and a
+	jr z, .notSet ; dex 0 has no flag; don't read before the array
 	dec a
 	ld c, a
 	ld b, FLAG_TEST
 	predef FlagActionPredef
 	ld a, c
 	and a
+	ret
+.notSet
+	xor a
 	ret
 
 ; function to display pokedex data from outside the pokedex
@@ -651,12 +656,25 @@ IndexToPokedex:
 	push bc
 	push hl
 	ld a, [wPokedexNum]
+	; 0 and anything past the end of the table have no entry. The old man
+	; glitch can put such a value in the encounter table, so return dex 0
+	; instead of reading whatever follows PokedexOrder.
+	and a
+	jr z, .invalid
+	cp NUM_POKEMON_INDEXES + 1
+	jr nc, .invalid
 	dec a
 	ld hl, PokedexOrder
 	ld b, 0
 	ld c, a
 	add hl, bc
 	ld a, [hl]
+	ld [wPokedexNum], a
+	pop hl
+	pop bc
+	ret
+.invalid
+	xor a
 	ld [wPokedexNum], a
 	pop hl
 	pop bc

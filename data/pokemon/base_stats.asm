@@ -204,3 +204,8 @@ INCLUDE "data/pokemon/base_stats/mew.asm"
 INCLUDE "data/pokemon/base_stats/hoopa.asm"
 
 	assert_table_length NUM_POKEMON ;
+
+; MissingNo. has dex number 0, so it has no row in BaseStats. GetMonHeader
+; copies this record directly when it is asked for MISSINGNO.
+MissingNoBaseStats::
+	INCLUDE "data/pokemon/base_stats/missingno.asm"

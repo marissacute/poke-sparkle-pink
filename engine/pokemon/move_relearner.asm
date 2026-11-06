@@ -20,10 +20,16 @@ BuildRelearnMoveList::
 	ld [wPokedexNum], a
 	predef IndexToPokedex
 	ld a, [wPokedexNum]
+	and a
+	jr z, .missingNoBaseStats
 	dec a
 	ld hl, BaseStats
 	ld bc, BASE_DATA_SIZE
 	call AddNTimes
+	jr .gotBaseStats
+.missingNoBaseStats
+	ld hl, MissingNoBaseStats
+.gotBaseStats
 	ld de, BASE_MOVES
 	add hl, de
 	ld d, h

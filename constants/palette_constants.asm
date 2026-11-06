@@ -36,7 +36,7 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_GLACEON   ; $08 (was PAL_FUCHSIA; location palettes are unused)
 	const PAL_CINNABAR  ; $09
 	const PAL_INDIGO    ; $0A
-	const PAL_SAFFRON   ; $0B
+	const PAL_MISSINGNO ; $0B (was PAL_SAFFRON; location palettes are unused)
 	const PAL_TOWNMAP   ; $0C
 	const PAL_LOGO1     ; $0D
 	const PAL_LOGO2     ; $0E

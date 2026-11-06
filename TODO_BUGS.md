@@ -227,16 +227,16 @@ Quick links: [P0](#p0--major) · [P1](#p1--medium) · [P2](#p2--minor--cosmetic)
   - Fix sketch: `push hl`/`pop de` around the second read (or restore the old `DE` return for offset `$a`). Low priority.
 
 ### BUG-23 — `GetMonIconID` reads one byte before `MonPartyData` for dex 0
-- [ ] **Bounds-check the icon conversion**
-  - Where: [engine/gfx/mon_icons.asm:130-141](engine/gfx/mon_icons.asm#L130-L141)
+- [x] **Bounds-check the icon conversion**
+  - Where: [engine/gfx/mon_icons.asm:132-148](engine/gfx/mon_icons.asm#L132-L148)
   - Fossil/ghost species have dex number 0; `dec a` becomes `$FF` and reads before the table. It happens to return the ghost icon (`ICON_GHOST`), not a crash, and no normal party/naming/trade path uses those species.
-  - Fix sketch: if `IndexToPokedex` returns 0, return a defined fallback icon (e.g. `ICON_GHOST`) before the `dec a`.
+  - Fixed 2026-11-06: `GetMonIconID` now returns `ICON_GHOST` directly when the dex number is 0, as part of the MissingNo. support work.
 
 ### BUG-24 — Malformed MissingNo dex entry
-- [ ] **Give the internal slots a valid dex-entry structure**
-  - Where: [data/pokemon/dex_entries.asm:1557-1561](data/pokemon/dex_entries.asm#L1557-L1561)
+- [x] **Give the internal slots a valid dex-entry structure**
+  - Where: [data/pokemon/dex_entries.asm:1557-1560](data/pokemon/dex_entries.asm#L1557-L1560)
   - `MissingNoDexEntry` has `db "???@"`, height/weight, then a raw Japanese string with no `text_far`/`text_end`. `PokedexEntryPointers` points the three internal species here; if the page were ever shown, `TextCommandProcessor` would interpret raw bytes. Unreachable through the dex menu (dex 1–202 only).
-  - Fix sketch: use a proper `text_far _... / text_end` description, or point the internal slots at a safe existing entry.
+  - Fixed 2026-11-06: the description is now `text_far _MissingNoDexEntry / text_end`, backed by a real `"???"` text entry in `data/pokemon/dex_text_2.asm`.
 
 ### BUG-25 — Route 16 shears coordinates may not cover north/south
 - [ ] **Verify the map geometry**
@@ -276,8 +276,8 @@ From the archived pokered wiki, verified against this tree. Fix sketches are the
 
 ### Overworld / scripts
 
-- [ ] **Cinnabar left-shore half-blocks load grass encounters** — [engine/battle/wild_encounters.asm:28](engine/battle/wild_encounters.asm#L28), comment [71-72](engine/battle/wild_encounters.asm#L71-L72). The MissingNo. route; the code explicitly acknowledges the left-shore case.
-- [ ] **Viridian Forest star grass cannot trigger encounters** — [engine/battle/wild_encounters.asm:28-33](engine/battle/wild_encounters.asm#L28-L33). Only `wGrassTile` is accepted; the star-grass tile is not.
+- [x] **WONTFIX: Cinnabar left-shore half-blocks load grass encounters** — [engine/battle/wild_encounters.asm:28](engine/battle/wild_encounters.asm#L28), comment [71-72](engine/battle/wild_encounters.asm#L71-L72). The MissingNo. route; the code explicitly acknowledges the left-shore case. Keeping this route is intentional — MissingNo. is a feature here, not a bug to remove.
+- [x] **WONTFIX: Viridian Forest star grass cannot trigger encounters** — [engine/battle/wild_encounters.asm:28-33](engine/battle/wild_encounters.asm#L28-L33). Only `wGrassTile` is accepted; the star-grass tile is not. Intentional — accepting the star-grass tile would create too many encounters in the forest.
 - [ ] **Bicycle clerk leaves instant text on the B exit** — [scripts/BikeShop.asm:52-76](scripts/BikeShop.asm#L52-L76). `BIT_NO_TEXT_DELAY` is cleared only on the non-B path.
 - [ ] **Route 16 sign not readable from directly in front (medium confidence)** — [data/maps/objects/Route16.asm:26](data/maps/objects/Route16.asm#L26).
 - [ ] **Route 14 cut tree can return and block the player** — [engine/overworld/player_state.asm:257-296](engine/overworld/player_state.asm#L257-L296). The front-tile read can use stale VRAM/map data at the screen edge.
@@ -296,7 +296,7 @@ From the archived pokered wiki, verified against this tree. Fix sketches are the
 - [ ] **Dungeon battle-transition map list is incomplete** — [data/maps/dungeon_maps.asm:1-27](data/maps/dungeon_maps.asm#L1-L27).
 - [ ] **Tile-pair collision does not advance past the first matched tile** — [home/overworld.asm:1327-1336](home/overworld.asm#L1327-L1336). `.currentTileMatchesFirstInPair` uses `ld a,[hl]` and loops without advancing.
 - [ ] **Trainer-Fly: stale `wCurOpponent`/`wIsTrainerBattle` on map load** — [engine/overworld/clear_variables.asm:1-20](engine/overworld/clear_variables.asm#L1-L20). Clear both; note the link-battle leak above is a different path.
-- [ ] **Gym/Dojo statues count as shore/water** — [engine/items/item_effects.asm:2689-2705](engine/items/item_effects.asm#L2689-L2705), [data/tilesets/water_tilesets.asm:5-6](data/tilesets/water_tilesets.asm#L5-L6).
+- [x] **WONTFIX: Gym/Dojo statues count as shore/water** — [engine/items/item_effects.asm:2689-2705](engine/items/item_effects.asm#L2689-L2705), [data/tilesets/water_tilesets.asm:5-6](data/tilesets/water_tilesets.asm#L5-L6). Intentional — a harmless fun easter egg that doesn't break anything.
 - [ ] **Following Oak into the lab can stick the player in a wall** — [scripts/PalletTown.asm:123-131](scripts/PalletTown.asm#L123-L131).
 - [ ] **Route 8 gate guard faces left instead of up** — [scripts/Route8Gate.asm:31](scripts/Route8Gate.asm#L31).
 - [ ] **Lift Key can be grabbed immediately** — [scripts/RocketHideoutB4F.asm:189-198](scripts/RocketHideoutB4F.asm#L189-L198).
@@ -311,7 +311,7 @@ From the archived pokered wiki, verified against this tree. Fix sketches are the
 - [ ] **Slot-machine early-stop logic** — [engine/slots/slot_machine.asm:301-339](engine/slots/slot_machine.asm#L301-L339); the `jr c` never triggers and the middle/bottom stop-early logic is wrong.
 - [x] **Oak’s five Poké Ball speech overwrites a line** — [text/OaksLab.asm:140-142](text/OaksLab.asm#L140-L142). Change the second `line` to `cont`.
 - [x] **Raichu trade says the Raichu evolved** — [data/events/trades.asm:25](data/events/trades.asm#L25), [data/text/text_7.asm:140-146](data/text/text_7.asm#L140-L146). Use a non-evolution dialogue set.
-- [ ] **Route 8 “chem?” truncation** — [text/Route8.asm:4](text/Route8.asm#L4). Subjective text fix.
+- [x] **WONTFIX: Route 8 “chem?” truncation** — [text/Route8.asm:4](text/Route8.asm#L4). Subjective text fix — some people genuinely call it "chem", so this is left as-is.
 - [ ] **18th character eaten by ▼** — by design of the text box; the new offenders are in BUG-17.
 
 ### Graphics / audio / menus

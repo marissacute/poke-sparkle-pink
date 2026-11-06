@@ -19,6 +19,8 @@ LoadMonData_::
 
 .GetMonHeader
 	ld a, [wCurPartySpecies]
+	call NormalizeSpecies
+	ld [wCurPartySpecies], a
 	ld [wCurSpecies], a
 	call GetMonHeader
 

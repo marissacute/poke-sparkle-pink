@@ -134,12 +134,17 @@ GetMonIconID:
 	ld [wPokedexNum], a
 	predef IndexToPokedex
 	ld a, [wPokedexNum]
+	and a
+	jr z, .missingNoIcon ; dex 0 (MissingNo.) has no MonPartyData entry
 	dec a
 	ld hl, MonPartyData
 	ld e, a
 	ld d, 0
 	add hl, de
 	ld a, [hl]
+	ret
+.missingNoIcon
+	ld a, ICON_GHOST
 	ret
 
 LoadTradeBubbleGfx:

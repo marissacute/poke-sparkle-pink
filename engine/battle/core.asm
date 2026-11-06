@@ -6123,6 +6123,8 @@ LoadEnemyMonData:
 	cp LINK_STATE_BATTLING
 	jp z, LoadEnemyMonFromParty
 	ld a, [wEnemyMonSpecies2]
+	call NormalizeSpecies ; trainer parties and static encounters too
+	ld [wEnemyMonSpecies2], a
 	ld [wEnemyMonSpecies], a
 	ld [wCurSpecies], a
 	call GetMonHeader
@@ -6259,11 +6261,14 @@ LoadEnemyMonData:
 	ld [wPokedexNum], a
 	predef IndexToPokedex
 	ld a, [wPokedexNum]
+	and a
+	jr z, .skipPokedexSeen ; MissingNo. has no dex number; don't write past the flags
 	dec a
 	ld c, a
 	ld b, FLAG_SET
 	ld hl, wPokedexSeen
 	predef FlagActionPredef ; mark this mon as seen in the pokedex
+.skipPokedexSeen
 	ld hl, wEnemyMonLevel
 	ld de, wEnemyMonUnmodifiedLevel
 	ld bc, 1 + NUM_STATS * 2
@@ -6785,6 +6790,15 @@ InitBattle::
 	jr z, DetermineWildOpponent
 
 InitOpponent:
+	; wCurOpponent holds a species for static/rod encounters, but a trainer
+	; class in trainer battles. Only validate the species case.
+	ld a, [wIsTrainerBattle]
+	and a
+	jr nz, .notWildSpecies
+	ld a, [wCurOpponent]
+	call NormalizeSpecies
+	ld [wCurOpponent], a
+.notWildSpecies
 	ld a, [wCurOpponent]
 	ld [wCurPartySpecies], a
 	ld [wEnemyMonSpecies2], a
@@ -6837,6 +6851,11 @@ InitWildBattle:
 	ld a, $1
 	ld [wIsInBattle], a
 	call LoadEnemyMonData
+	ld a, [wEnemyMonSpecies2]
+	cp MISSINGNO
+	jr nz, .notMissingNo
+	call MissingNoItemGlitch
+.notMissingNo
 	call DoBattleTransitionAndInitBattleVariables
 	ld a, [wCurOpponent]
 	cp RESTLESS_SOUL

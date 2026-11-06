@@ -307,3 +307,7 @@ _FlygonDexEntry::
 	next "creates and"
 	next "seldom shows"
 	dex
+
+_MissingNoDexEntry::
+	text "???"
+	dex

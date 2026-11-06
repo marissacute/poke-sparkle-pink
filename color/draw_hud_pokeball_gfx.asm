@@ -44,6 +44,8 @@ EnemyHUDHAX:
 	ld [wPokedexNum], a
 	callfar IndexToPokedex
 	ld a, [wPokedexNum]
+	and a
+	jr z, .notOwned ; MissingNo. has no dex entry, so no pokeball
 	dec a
 	ld c, a
 	ld b, $2

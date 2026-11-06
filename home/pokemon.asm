@@ -99,6 +99,11 @@ LoadFlippedFrontSpriteByMonIndex::
 
 LoadFrontSpriteByMonIndex::
 	push hl
+	ld a, [wCurPartySpecies]
+	call NormalizeSpecies
+	ld [wCurPartySpecies], a
+	cp MISSINGNO
+	jr z, .missingNo ; dex 0: load its own pic instead of the Rhydon trap
 	ld a, [wPokedexNum]
 	push af
 	ld a, [wCurPartySpecies]
@@ -140,6 +145,10 @@ LoadFrontSpriteByMonIndex::
 	ldh [hLoadedROMBank], a
 	ld [rROMB], a
 	ret
+
+.missingNo
+	pop hl
+	jr .validDexNumber
 
 
 PlayCry::
@@ -384,14 +393,24 @@ GetMonHeader::
 	ld a, [wPokedexNum]
 	push af
 	ld a, [wCurSpecies]
+	; A species of 0 or one past the end of the index table cannot be looked
+	; up. Treat it as MissingNo. instead of reading past the dex/base-stat
+	; tables. ($B6-$B8 are in range and keep their special handling.)
+	and a
+	jr z, .invalidSpecies
+	cp NUM_POKEMON_INDEXES + 1
+	jr c, .validSpecies
+.invalidSpecies
+	ld a, MISSINGNO
+	ld [wCurSpecies], a
+.validSpecies
 	ld [wPokedexNum], a
 	ld de, FossilKabutopsPic
 	ld b, $66 ; size of Kabutops fossil and Ghost sprites
 	cp FOSSIL_KABUTOPS ; Kabutops fossil
 	jr z, .specialID
-	ld de, GhostPic
-	cp MON_GHOST ; Ghost
-	jr z, .specialID
+	cp MISSINGNO ; internal MissingNo. slot
+	jr z, .missingNo
 	ld de, FossilAerodactylPic
 	ld b, $77 ; size of Aerodactyl fossil sprite
 	cp FOSSIL_AERODACTYL ; Aerodactyl fossil
@@ -402,6 +421,12 @@ GetMonHeader::
 	ld bc, BASE_DATA_SIZE
 	ld hl, BaseStats
 	call AddNTimes
+	ld de, wMonHeader
+	ld bc, BASE_DATA_SIZE
+	call CopyData
+	jr .done
+.missingNo
+	ld hl, MissingNoBaseStats
 	ld de, wMonHeader
 	ld bc, BASE_DATA_SIZE
 	call CopyData
@@ -424,6 +449,44 @@ GetMonHeader::
 	pop af
 	ldh [hLoadedROMBank], a
 	ld [rROMB], a
+	ret
+
+; Replaces species IDs that cannot be looked up with MISSINGNO.
+; The old man tutorial can leave garbage in the wild encounter table (see
+; TryDoWildEncounter); a zero or out-of-range species used to read past
+; PokedexOrder/BaseStats and corrupt WRAM. The three internal slots have no
+; base stats, so they are loaded as MissingNo. too.
+; INPUT: a = species ID
+; OUTPUT: a = a valid species ID, or MISSINGNO
+NormalizeSpecies::
+	and a
+	jr z, .missingNo
+	cp NUM_POKEMON_INDEXES + 1
+	jr c, .inRange
+.missingNo
+	ld a, MISSINGNO
+	ret
+.inRange
+	cp FOSSIL_KABUTOPS ; $B6-$B8 are the internal MissingNo. slots
+	ret c
+	cp ODDISH ; $B9 is the first real species after them
+	ret nc
+	ld a, MISSINGNO
+	ret
+
+; The original MissingNo. glitch writes one bit past wPokedexSeen, which lands
+; on the sixth bag slot and adds 128 to its quantity when it is below 128.
+; Reproduce that effect deliberately, without the out-of-bounds write.
+MissingNoItemGlitch::
+	ld a, [wNumBagItems]
+	cp 6
+	ret c ; the player has no sixth item slot
+	ld hl, wBagItems + 11 ; sixth slot's quantity byte
+	ld a, [hl]
+	cp 128
+	ret nc
+	add 128
+	ld [hl], a
 	ret
 
 ; copy party pokemon's name to wNameBuffer

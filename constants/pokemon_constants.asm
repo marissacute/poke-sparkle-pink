@@ -215,6 +215,12 @@
 
 DEF NUM_POKEMON_INDEXES EQU const_value - 1
 
+; The three internal slots at $B6-$B8 have no Pokédex number and no base stats.
+; They are the MissingNo. placeholders: any species outside the valid range
+; (including these slots) is loaded as MissingNo., using the MON_GHOST slot's
+; name, cry and dex entry. GetMonHeader gives it a dedicated base-stat record.
+DEF MISSINGNO EQU MON_GHOST
+
 ; starters
 DEF STARTER1 EQU IGGLYBUFF
 DEF STARTER2 EQU MAGNEMITE

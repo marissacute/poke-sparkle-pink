@@ -69,6 +69,7 @@ IsItemInBag::
 	ret
 
 DisplayPokedex::
+	call NormalizeSpecies
 	ld [wPokedexNum], a
 	farjp _DisplayPokedex
 

@@ -57,11 +57,14 @@ SetPokedexOwnedFlag:
 	ld [wPokedexNum], a
 	predef IndexToPokedex
 	ld a, [wPokedexNum]
+	and a
+	jr z, .skipOwnedFlag ; MissingNo. has no dex entry
 	dec a
 	ld c, a
 	ld hl, wPokedexOwned
 	ld b, FLAG_SET
 	predef FlagActionPredef
+.skipOwnedFlag
 	pop af
 	ld [wNamedObjectIndex], a
 	call GetMonName

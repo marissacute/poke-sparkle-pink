@@ -9,11 +9,14 @@ _DisplayPokedex::
 	call DelayFrames
 	predef IndexToPokedex
 	ld a, [wPokedexNum]
+	and a
+	jr z, .skipSeenFlag ; MissingNo. has no dex entry
 	dec a
 	ld c, a
 	ld b, FLAG_SET
 	ld hl, wPokedexSeen
 	predef FlagActionPredef
+.skipSeenFlag
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	ret

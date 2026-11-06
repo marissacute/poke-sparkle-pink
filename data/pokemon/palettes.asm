@@ -1,7 +1,7 @@
 MonsterPalettes:
 	table_width 1
 
-	db PAL_MEWMON
+	db PAL_MISSINGNO ; dex 0: MissingNo. and the internal slots
 	db PAL_JIGGLYPUFF
 	db PAL_JIGGLYPUFF
 	db PAL_JIGGLYPUFF

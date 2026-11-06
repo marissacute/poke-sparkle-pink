@@ -86,6 +86,8 @@ _AddPartyMon::
 	predef IndexToPokedex
 	pop de
 	ld a, [wPokedexNum]
+	and a
+	jr z, .skipPokedexUpdate ; MissingNo. has no dex entry
 	dec a
 	ld c, a
 	ld b, FLAG_TEST
@@ -102,7 +104,11 @@ _AddPartyMon::
 	pop bc
 	ld hl, wPokedexSeen
 	call FlagAction
-
+	jr .pokedexUpdated
+.skipPokedexUpdate
+	xor a
+	ld [wUnusedAlreadyOwnedFlag], a
+.pokedexUpdated
 	pop hl
 	push hl
 
@@ -326,6 +332,8 @@ _AddEnemyMonToPlayerParty::
 	ld [wPokedexNum], a
 	predef IndexToPokedex
 	ld a, [wPokedexNum]
+	and a
+	jr z, .skipPokedexFlags ; MissingNo. has no dex entry
 	dec a
 	ld c, a
 	ld b, FLAG_SET
@@ -337,6 +345,9 @@ _AddEnemyMonToPlayerParty::
 	call FlagAction ; add to seen pokemon
 	and a
 	ret                  ; return success
+.skipPokedexFlags
+	xor a
+	ret
 
 _MoveMon::
 	ld a, [wMoveMonType]

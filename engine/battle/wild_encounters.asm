@@ -76,6 +76,7 @@ TryDoWildEncounter:
 	ld a, [hli]
 	ld [wCurEnemyLevel], a
 	ld a, [hl]
+	call NormalizeSpecies ; 0 / out-of-range bytes become MISSINGNO
 	ld [wCurPartySpecies], a
 	ld [wEnemyMonSpecies2], a
 	ld a, [wRepelRemainingSteps]
