@@ -508,7 +508,23 @@ wLowHealthAlarmDisabled:: db
 
 wPlayerMonMinimized:: db
 
-	ds 13
+; Turns left of Light Screen and Reflect on each side of the field (0 = not
+; active). These are side conditions, not per-Pokemon statuses: they survive
+; switching and fainting, and each turn they tick down once. InitBattleVariables
+; clears the whole wMiscBattleData block at the start of every battle.
+; Light Screen comes first on each side so the move effect can index the
+; Reflect counter with `inc de`.
+wPlayerLightScreenTurns:: db
+wPlayerReflectTurns:: db
+wEnemyLightScreenTurns:: db
+wEnemyReflectTurns:: db
+
+; Nonzero while a move (Roar, Whirlwind, Teleport) is forcing the enemy to
+; switch. EnemySendOutFirstMon then starts its search at wWhichPokemon instead
+; of party slot 0, so the randomly chosen replacement is the one sent out.
+wForcedEnemySwitch:: db
+
+	ds 8
 
 UNION
 ; the amount of damage accumulated by the enemy while biding

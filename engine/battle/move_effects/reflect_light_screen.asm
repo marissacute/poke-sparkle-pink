@@ -1,26 +1,27 @@
 ReflectLightScreenEffect_:
-	ld hl, wPlayerBattleStatus3
-	ld de, wPlayerMoveEffect
+; Light Screen and Reflect are side conditions (see wPlayerLightScreenTurns).
+; They last five turns, counting the turn they are used, and fail if the same
+; screen is already up on the user's side.
 	ldh a, [hWhoseTurn]
 	and a
-	jr z, .reflectLightScreenEffect
-	ld hl, wEnemyBattleStatus3
-	ld de, wEnemyMoveEffect
-.reflectLightScreenEffect
-	ld a, [de]
+	ld de, wPlayerLightScreenTurns
+	ld hl, wPlayerMoveEffect
+	jr z, .gotSide
+	ld de, wEnemyLightScreenTurns
+	ld hl, wEnemyMoveEffect
+.gotSide
+	ld a, [hl]
 	cp LIGHT_SCREEN_EFFECT
-	jr nz, .reflect
-	bit HAS_LIGHT_SCREEN_UP, [hl] ; is mon already protected by light screen?
-	jr nz, .moveFailed
-	set HAS_LIGHT_SCREEN_UP, [hl] ; mon is now protected by light screen
 	ld hl, LightScreenProtectedText
-	jr .playAnim
-.reflect
-	bit HAS_REFLECT_UP, [hl] ; is mon already protected by reflect?
-	jr nz, .moveFailed
-	set HAS_REFLECT_UP, [hl] ; mon is now protected by reflect
+	jr z, .lightScreen
+	inc de ; point at the Reflect counter
 	ld hl, ReflectGainedArmorText
-.playAnim
+.lightScreen
+	ld a, [de]
+	and a ; is this screen already up?
+	jr nz, .moveFailed
+	ld a, 5
+	ld [de], a
 	push hl
 	ld hl, PlayCurrentMoveAnimation
 	call EffectCallBattleCore

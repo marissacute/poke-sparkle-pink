@@ -409,3 +409,7 @@ INCLUDE "data/moves/descriptions.asm"
 
 INCLUDE "engine/overworld/flyover.asm"
 
+SECTION "Battle Switch Helpers", ROMX
+
+INCLUDE "engine/battle/switch_helpers.asm"
+

@@ -85,17 +85,34 @@ PoisonEffect:
 	ld de, wEnemyMoveEffect
 .poisonEffect
 	call CheckTargetSubstitute
-	jr nz, .noEffect ; can't poison a substitute target
+	jp nz, .noEffect ; can't poison a substitute target
 	ld a, [hli]
 	ld b, a
 	and a
-	jr nz, .noEffect ; miss if target is already statused
+	jp nz, .noEffect ; miss if target is already statused
 	ld a, [hli]
 	cp POISON ; can't poison a poison-type target
-	jr z, .noEffect
+	jp z, .noEffect
 	ld a, [hld]
 	cp POISON ; can't poison a poison-type target
+	jp z, .noEffect
+; Toxic can't poison Steel-type targets (Generation II)
+	ldh a, [hWhoseTurn]
+	and a
+	ld a, [wPlayerMoveNum]
+	jr z, .gotPoisonMove
+	ld a, [wEnemyMoveNum]
+.gotPoisonMove
+	cp TOXIC
+	jr nz, .notToxic
+	ld a, [hli] ; type 1
+	cp STEEL
 	jr z, .noEffect
+	ld a, [hl]  ; type 2
+	cp STEEL
+	jr z, .noEffect
+	dec hl      ; back to type 1
+.notToxic
 	ld a, [de]
 	cp POISON_SIDE_EFFECT1
 	ld b, 20 percent + 1 ; chance of poisoning
@@ -134,6 +151,16 @@ PoisonEffect:
 .ok
 	cp TOXIC
 	jr nz, .normalPoison ; done if move is not Toxic
+; mark the status byte as bad poison so it survives switching
+	push hl
+	ldh a, [hWhoseTurn]
+	and a
+	ld hl, wEnemyMonStatus
+	jr z, .markBadlyPoisoned
+	ld hl, wBattleMonStatus
+.markBadlyPoisoned
+	set BADLY_POISONED_STATUS, [hl]
+	pop hl
 	set BADLY_POISONED, [hl] ; else set Toxic battstatus
 	xor a
 	ld [de], a
@@ -823,10 +850,10 @@ ThrashPetalDanceEffect:
 SwitchAndTeleportEffect:
 	ldh a, [hWhoseTurn]
 	and a
-	jr nz, .handleEnemy
+	jp nz, .handleEnemy
 	ld a, [wIsInBattle]
 	dec a
-	jr nz, .notWildBattle1
+	jp nz, .playerTrainerBattle
 	ld a, [wCurEnemyLevel]
 	ld b, a
 	ld a, [wBattleMonLevel]
@@ -856,19 +883,60 @@ SwitchAndTeleportEffect:
 	inc a
 	ld [wEscapedFromBattle], a
 	ld a, [wPlayerMoveNum]
-	jr .playAnimAndPrintText
-.notWildBattle1
-	ld c, 50
-	call DelayFrames
-	ld hl, IsUnaffectedText
+	jp .playAnimAndPrintText
+.playerTrainerBattle
+; In a trainer battle, Teleport switches the user out and Roar/Whirlwind
+; force the opposing Pokémon out. The replacement is chosen at random.
 	ld a, [wPlayerMoveNum]
 	cp TELEPORT
-	jp nz, PrintText
+	jr z, .playerTeleport
+	callfar ChooseRandomEnemyMon
+	jr nc, .playerForceEnemySwitch
+	ld c, 50
+	call DelayFrames
 	jp PrintButItFailedText_
+.playerForceEnemySwitch
+	xor a
+	ld [wAnimationType], a
+	ld a, [wPlayerMoveNum]
+	call PlayBattleAnimation
+	ld c, 20
+	call DelayFrames
+	ld hl, WasBlownAwayText
+	call PrintText
+; the enemy that left the field loses its pending move
+	ld a, CANNOT_MOVE
+	ld [wEnemySelectedMove], a
+	ldh a, [hWhoseTurn]
+	push af
+	callfar ForceEnemySwitch
+	pop af
+	ldh [hWhoseTurn], a
+	ret
+.playerTeleport
+	callfar ChooseRandomPlayerMon
+	jr nc, .playerDoTeleport
+	ld c, 50
+	call DelayFrames
+	jp PrintButItFailedText_
+.playerDoTeleport
+	xor a
+	ld [wAnimationType], a
+	ld a, [wPlayerMoveNum]
+	call PlayBattleAnimation
+	ld c, 20
+	call DelayFrames
+	call ReadPlayerMonCurHPAndStatus
+	ldh a, [hWhoseTurn]
+	push af
+	call SwitchPlayerMon
+	pop af
+	ldh [hWhoseTurn], a
+	ret
 .handleEnemy
 	ld a, [wIsInBattle]
 	dec a
-	jr nz, .notWildBattle2
+	jp nz, .enemyTrainerBattle
 	ld a, [wBattleMonLevel]
 	ld b, a
 	ld a, [wCurEnemyLevel]
@@ -898,15 +966,60 @@ SwitchAndTeleportEffect:
 	inc a
 	ld [wEscapedFromBattle], a
 	ld a, [wEnemyMoveNum]
-	jr .playAnimAndPrintText
-.notWildBattle2
-	ld c, 50
-	call DelayFrames
-	ld hl, IsUnaffectedText
+	jp .playAnimAndPrintText
+.enemyTrainerBattle
+; In a trainer battle, Teleport switches the user out and Roar/Whirlwind
+; force the opposing Pokémon out. The replacement is chosen at random.
 	ld a, [wEnemyMoveNum]
 	cp TELEPORT
-	jp nz, PrintText
-	jp ConditionalPrintButItFailed
+	jr z, .enemyTeleport
+	callfar ChooseRandomPlayerMon
+	jr nc, .enemyForcePlayerSwitch
+	ld c, 50
+	call DelayFrames
+	jp PrintButItFailedText_
+.enemyForcePlayerSwitch
+	xor a
+	ld [wAnimationType], a
+	ld a, [wEnemyMoveNum]
+	call PlayBattleAnimation
+	ld c, 20
+	call DelayFrames
+	ld hl, WasBlownAwayText
+	call PrintText
+; the player mon that left the field loses its pending move
+	ld a, CANNOT_MOVE
+	ld [wPlayerSelectedMove], a
+	call ReadPlayerMonCurHPAndStatus
+	ldh a, [hWhoseTurn]
+	push af
+	call SwitchPlayerMon
+	pop af
+	ldh [hWhoseTurn], a
+	ret
+.enemyTeleport
+	callfar ChooseRandomEnemyMon
+	jr nc, .enemyDoTeleport
+	ld c, 50
+	call DelayFrames
+	jp PrintButItFailedText_
+.enemyDoTeleport
+	xor a
+	ld [wAnimationType], a
+	ld a, [wEnemyMoveNum]
+	call PlayBattleAnimation
+	ld c, 20
+	call DelayFrames
+; SwitchEnemyMon prints the trainer's withdrawal message and sends out the
+; randomly chosen replacement.
+	ld a, 1
+	ld [wForcedEnemySwitch], a
+	ldh a, [hWhoseTurn]
+	push af
+	callfar SwitchEnemyMon
+	pop af
+	ldh [hWhoseTurn], a
+	ret
 .playAnimAndPrintText
 	push af
 	call PlayBattleAnimation

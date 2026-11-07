@@ -66,6 +66,11 @@ DEF SLP_MASK EQU %111 ; 0-7 turns
 	const FRZ ; 5
 	const PAR ; 6
 
+; Bit 7 of the non-volatile status byte marks the PSN as bad poison. It lets
+; bad poison survive switching (the BADLY_POISONED bit in battle status 3 is
+; cleared whenever a mon leaves the field). The visible condition is still PSN.
+DEF BADLY_POISONED_STATUS EQU 7
+
 DEF MAX_STAT_VALUE EQU 999
 
 ; trainer dvs
@@ -101,6 +106,6 @@ DEF EFFECTIVENESS_MASK EQU %01111111
 ; wPlayerBattleStatus3 or wEnemyBattleStatus3 bit flags
 	const_def
 	const BADLY_POISONED      ; 0 ; Toxic
-	const HAS_LIGHT_SCREEN_UP ; 1
-	const HAS_REFLECT_UP      ; 2
+	const_skip                ; 1 ; was HAS_LIGHT_SCREEN_UP (now a side-effect counter)
+	const_skip                ; 2 ; was HAS_REFLECT_UP (now a side-effect counter)
 	const TRANSFORMED         ; 3

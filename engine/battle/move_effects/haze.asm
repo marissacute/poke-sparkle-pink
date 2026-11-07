@@ -24,6 +24,23 @@ HazeEffect_:
 .cureStatuses
 	ld a, [hl]
 	ld [hl], $0
+	push af
+	push de
+; Haze cured the target's status, so also clear Toxic's battle bit and counter.
+; (A badly poisoned mon that is not the target keeps its bad poison intact.)
+	ldh a, [hWhoseTurn]
+	and a
+	ld hl, wEnemyBattleStatus3
+	ld de, wEnemyToxicCounter
+	jr z, .clearTargetToxic
+	ld hl, wPlayerBattleStatus3
+	ld de, wPlayerToxicCounter
+.clearTargetToxic
+	res BADLY_POISONED, [hl]
+	xor a
+	ld [de], a
+	pop de
+	pop af
 	and (1 << FRZ) | SLP_MASK
 	jr z, .cureVolatileStatuses
 ; prevent the Pokemon from executing a move if it was asleep or frozen
@@ -50,11 +67,10 @@ CureVolatileStatuses:
 	res CONFUSED, [hl]
 	inc hl ; BATTSTATUS2
 	ld a, [hl]
-	; clear USING_X_ACCURACY, PROTECTED_BY_MIST, GETTING_PUMPED, and SEEDED statuses
-	and ~((1 << USING_X_ACCURACY) | (1 << PROTECTED_BY_MIST) | (1 << GETTING_PUMPED) | (1 << SEEDED))
-	ld [hli], a ; BATTSTATUS3
-	ld a, [hl]
-	and %11110000 | (1 << TRANSFORMED) ; clear Bad Poison, Reflect and Light Screen statuses
+	; clear USING_X_ACCURACY, PROTECTED_BY_MIST, and GETTING_PUMPED.
+	; Haze no longer clears Leech Seed or bad poison (Generation II); a badly
+	; poisoned target is handled separately in .cureStatuses.
+	and ~((1 << USING_X_ACCURACY) | (1 << PROTECTED_BY_MIST) | (1 << GETTING_PUMPED))
 	ld [hl], a
 	ret
 

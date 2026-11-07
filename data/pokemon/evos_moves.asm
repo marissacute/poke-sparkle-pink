@@ -296,18 +296,6 @@ SpearowEvosMoves:
 	db 36, AGILITY
 	db 0
 
-VoltorbEvosMoves:
-; Evolutions
-	db EVOLVE_LEVEL, 30, ELECTRODE
-	db 0
-; Learnset
-	db 17, SONICBOOM
-	db 22, SELFDESTRUCT
-	db 29, LIGHT_SCREEN
-	db 36, SWIFT
-	db 43, EXPLOSION
-	db 0
-
 NidokingEvosMoves:
 ; Evolutions
 	db 0
@@ -1191,7 +1179,8 @@ MeowthEvosMoves:
 	db 17, PAY_DAY
 	db 24, SCREECH
 	db 33, FURY_SWIPES
-	db 44, SLASH
+	db 37, SLASH
+	db 44, NIGHT_SLASH
 	db 0
 
 KrabbyEvosMoves:
@@ -1257,6 +1246,7 @@ NinetalesEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 40, SHADOW_BALL
 	db 0
 
 PikachuEvosMoves:
@@ -1982,7 +1972,21 @@ CloysterEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 50, SPIKE_CANNON
+	db EVOLUTION_MOVE, SPIKE_CANNON
+	db 0
+
+VoltorbEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, ELECTRODE
+	db 0
+; Learnset
+	db 17, SONICBOOM
+	db 22, SELFDESTRUCT
+	db 25, THUNDER_WAVE
+	db 29, LIGHT_SCREEN
+	db 33, REFLECT
+	db 36, THUNDERBOLT
+	db 41, EXPLOSION
 	db 0
 
 ElectrodeEvosMoves:
@@ -1991,9 +1995,11 @@ ElectrodeEvosMoves:
 ; Learnset
 	db 17, SONICBOOM
 	db 22, SELFDESTRUCT
+	db 25, THUNDER_WAVE
 	db 29, LIGHT_SCREEN
-	db 40, SWIFT
-	db 50, EXPLOSION
+	db 36, REFLECT
+	db 40, THUNDERBOLT
+	db 45, EXPLOSION
 	db 0
 
 ClefableEvosMoves:
@@ -2022,7 +2028,8 @@ PersianEvosMoves:
 	db 17, PAY_DAY
 	db 24, SCREECH
 	db 37, FURY_SWIPES
-	db 51, SLASH
+	db 40, SLASH
+	db 51, NIGHT_SLASH
 	db 0
 
 MarowakEvosMoves:
@@ -2483,11 +2490,12 @@ OddishEvosMoves:
 	db EVOLVE_LEVEL, 21, GLOOM
 	db 0
 ; Learnset
-	db 12, MEGA_DRAIN
+	db 12, ABSORB
 	db 15, POISONPOWDER
 	db 17, STUN_SPORE
 	db 19, SLEEP_POWDER
 	db 24, ACID
+	db 29, MEGA_DRAIN
 	db 33, PETAL_DANCE
 	db 38, TOXIC
 	db 46, SOLARBEAM
@@ -2500,8 +2508,9 @@ GloomEvosMoves:
 	db 0
 ; Learnset
 	db 26, ACID
+	db 31, MEGA_DRAIN
 	db 36, PETAL_DANCE
-	db 42, TOXIC
+	db 42, SLUDGE
 	db 50, SOLARBEAM
 	db 0
 
@@ -2519,7 +2528,7 @@ VileplumeEvosMoves:
 	db 0
 ; Learnset
 	db 40, PETAL_DANCE
-	db 44, TOXIC
+	db 44, SLUDGE
 	db 52, SOLARBEAM
 	db 0
 

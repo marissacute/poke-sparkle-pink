@@ -39,6 +39,20 @@ HealEffect_:
 	jr z, .printRestText
 	ld hl, FellAsleepBecameHealthyText ; if mon had an status
 .printRestText
+	push hl
+; Rest also clears Toxic's battle status and resets its damage counter.
+	ld hl, wPlayerBattleStatus3
+	ld de, wPlayerToxicCounter
+	ldh a, [hWhoseTurn]
+	and a
+	jr z, .clearToxic
+	ld hl, wEnemyBattleStatus3
+	ld de, wEnemyToxicCounter
+.clearToxic
+	res BADLY_POISONED, [hl]
+	xor a
+	ld [de], a
+	pop hl
 	call PrintText
 	pop af
 	pop de

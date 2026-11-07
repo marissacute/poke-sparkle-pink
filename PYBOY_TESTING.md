@@ -300,3 +300,134 @@ charmap defines **two-character ligatures** (`"'s"`→$bd, `"'t"`→$be, `"'v"`�
 rgbasm matches before the single `"'"`, so a naive char-by-char encode of `"BROCK's"`
 produces the wrong bytes. Encode ligatures first, or dump the bytes around a known
 line.
+
+## PyBoy 2.7 battle-testing notes
+
+Observed 2026-11-07 while testing screens, Toxic, and the forced-switch moves.
+
+### Apparent hangs: inspect state before blaming the emulator
+
+`pb.tick()` can appear to hang (the call never returns). PyBoy releases the GIL
+inside the emulation loop, so a second thread can read `pb.memory[...]` and
+`pb.register_file` while `tick()` is blocked. Use that before guessing. We found
+two different causes:
+
+- CONTINUE/save load from the main menu froze with the LCD still on; we never
+  diagnosed it. For automated battle tests, skip the save: build `blue_debug`
+  and boot TestBattle (below).
+- A battle crash was executing data in ROM bank `$39` (`hLoadedROMBank=$39`,
+  PC frozen, LCD on). That was a far-call bug, not an emulator/LCD issue.
+
+Use `button_press` + one-frame ticks + `button_release`; `pb.button(...)` ticks
+several frames in one C call and is harder to synchronize with a screen.
+
+```python
+def tick_n(pb, n):
+    for _ in range(n):
+        pb.tick(1, False)
+
+def press(pb, btn, hold=6, wait=0):
+    pb.button_press(btn)
+    tick_n(pb, hold)
+    pb.button_release(btn)
+    if wait:
+        tick_n(pb, wait)
+```
+
+`pb.set_emulation_speed(0)`.
+
+### Far calls from a banked helper
+
+If code is moved out of Battle Core into another ROM bank, a direct `call` to a
+Battle Core routine (e.g. `BattleRandom`) executes the same address in the *new*
+bank. That is usually data and crashes the game. Use `callfar` for anything
+outside the home bank (`$0000-$3fff`). The helpers in
+`engine/battle/switch_helpers.asm` are in bank 1 and must `callfar BattleRandom`
+and `callfar EnemySendOut`.
+
+### The RNG is timing-sensitive
+
+`Random_` mixes `rDIV` into `hRandomAdd`/`hRandomSub`, so a few extra cycles
+change every later random roll. Naive damage A/B tests lie: a nonzero screen
+counter makes `DecrementScreenTurns` execute a `dec [hl]`, shifting `rDIV` and
+changing critical hits between the control and test runs. To compare damage:
+
+- keep the number of executed `dec [hl]` equal (for a physical control, set
+  `wEnemyLightScreenTurns=5`; for the test, set `wEnemyReflectTurns=5`), or
+- add `tick_n(pb, extra)` *before* pressing A and scan `extra` until both runs
+  are non-critical.
+
+### Boot straight into TestBattle (blue_debug)
+
+```bash
+make -j"$(nproc)" blue_debug
+mkdir -p /tmp/pspd
+cp pokeblue_debug.gbc /tmp/pspd/pspd.gbc
+cp pokeblue_debug.sym /tmp/pspd/pspd.gbc.sym
+```
+
+```python
+pb = PyBoy("/tmp/pspd/pspd.gbc", window="null", sound_emulated=False,
+           log_level="CRITICAL", symbols="/tmp/pspd/pspd.gbc.sym")
+pb.set_emulation_speed(0)
+pb.button_press("select")
+tick_n(pb, 1200)                  # title screen, SELECT held
+press(pb, "start", hold=6, wait=400)
+pb.button_release("select")
+tick_n(pb, 60)
+press(pb, "a", hold=6, wait=120)  # FIGHT
+press(pb, "a", hold=6, wait=60)   # the nickname prompt has a second page (▼)
+press(pb, "down", hold=6, wait=20)
+press(pb, "a", hold=6, wait=60)   # NO, don't nickname
+# Advance the battle intro with A only, then save a state at the move menu.
+```
+
+TestBattle gives a level 25 Sneasel vs a level 5 Pikachu and restarts after every
+battle. `wIsInBattle` reads 1 during this (wild-style) battle.
+
+### State and layout notes
+
+- **`$D000-$DFFF` is switchable WRAM.** The `.sym` labels that section bank 0,
+  but the game keeps WRAM bank 1 mapped there during battle. Read and write those
+  addresses as `pb.memory[1, addr]`; bank 0 silently returns garbage (e.g.
+  `wIsInBattle` reads 6 or 9). `$C000-$CFFF` is fixed and safe.
+- Battle/menu text is in the tilemap at **`$9C00`**, not `$9800`.
+- TestBattle's enemy is a wild encounter, so the enemy party roster
+  (`wEnemyPartyCount`, `wEnemyMon1`...) is empty. To test an enemy switch, build
+  two able party slots by hand: species from `wEnemyMonSpecies`, nonzero HP,
+  `wEnemyMon1Level`/`BoxLevel`, moves copied from `wEnemyMonMoves`, and set
+  `wEnemyPartySpecies`/`wEnemyPartyCount`. Otherwise the chooser correctly
+  reports "no other able mon".
+- Force the player's move with `wTestBattlePlayerSelectedMove` (TestBattle already
+  sets `wStatusFlags7` bit `BIT_TEST_BATTLE`). Parse move IDs from
+  `constants/move_constants.asm` — new moves shifted the Gen 1 numbering.
+  TACKLE=33, WATER_GUN=55, SEISMIC_TOSS=69, TOXIC=92, HAZE=114, LIGHT_SCREEN=113,
+  REFLECT=115, TELEPORT=100, ROAR=46, REST=155.
+- **Recreate any save state after a code change**: states hold the PC and stack;
+  shifted code addresses make an old state jump into the wrong place.
+- `save_state`/`load_state` work within one PyBoy version/ROM. The repo's `.sgm`
+  files were written by a newer PyBoy and are rejected ("Cannot load state from a
+  newer version of PyBoy"); don't rely on them.
+
+### Verified 2026-11-07
+
+- Reflect sets `wPlayerReflectTurns` to 5 and ticks to 4 at the next turn.
+- Damage halving, player attacking: Tackle 59 -> 29 (non-crit); Water Gun
+  43 -> 21. Enemy attacking the player: Tackle 11 -> 5/12 -> 6 with
+  `wPlayerReflectTurns`; Thunderbolt 48 -> 24/40 -> 20 with
+  `wPlayerLightScreenTurns`.
+- A critical hit does 110 both with and without Reflect (screens are ignored on
+  crits); Seismic Toss does 25 both with and without Reflect; confusion
+  self-damage is 18 both with and without Reflect.
+- Toxic sets `wEnemyMonStatus` bit 3 (PSN) and bit 7 (bad-poison marker), plus
+  `BADLY_POISONED` (bit 0 of battle status 3); a Steel-type target stays
+  unpoisoned.
+- Leech Seed damage with the Toxic counter at 4 is 1/16 max HP, not 4/16.
+- Rest sets the status byte to 2, clears `BADLY_POISONED`, and zeroes the Toxic
+  counter. Haze does not downgrade the user's bad poison; when it cures its
+  target, it clears that target's bad-poison bit and counter.
+- Switching a badly poisoned mon saves status `$88` (PSN + bit 7) in its party
+  slot; the incoming healthy mon has no bad-poison bit and counter 0.
+- Player Teleport in a trainer battle switches to a random able mon and fails
+  with one mon. Player Roar/Whirlwind forces the enemy out (verified
+  `wEnemyMonPartyPos` 0 -> 1). Enemy Roar forces the player out.

@@ -337,6 +337,7 @@ MainInBattleLoop:
 	pop af
 	jr nz, MainInBattleLoop ; if the player didn't select a move, jump
 .selectEnemyMove
+	call DecrementScreenTurns ; once per turn, before either side moves
 	call SelectEnemyMove
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
@@ -486,6 +487,26 @@ HandleMovePriority:
 
 INCLUDE "data/battle/priority_moves.asm"
 
+; Ticks the five-turn Reflect and Light Screen counters down once at the start
+; of each turn. A screen set during this turn is not decremented until the next
+; turn, so it lasts five turns counting the turn it was used.
+DecrementScreenTurns:
+	ld hl, wPlayerLightScreenTurns
+	call .decrement
+	ld hl, wPlayerReflectTurns
+	call .decrement
+	ld hl, wEnemyLightScreenTurns
+	call .decrement
+	ld hl, wEnemyReflectTurns
+	call .decrement
+	ret
+.decrement
+	ld a, [hl]
+	and a
+	ret z
+	dec [hl]
+	ret
+
 HandlePoisonBurnLeechSeed:
 	ld hl, wBattleMonHP
 	ld de, wBattleMonStatus
@@ -511,6 +532,7 @@ HandlePoisonBurnLeechSeed:
 	ld a, BURN_PSN_ANIM
 	call PlayMoveAnimation   ; play burn/poison animation
 	pop hl
+	xor a ; apply the Toxic counter to poison/burn damage
 	call HandlePoisonBurnLeechSeed_DecreaseOwnHP
 .notBurnedOrPoisoned
 	ld de, wPlayerBattleStatus2
@@ -534,6 +556,7 @@ HandlePoisonBurnLeechSeed:
 	pop af
 	ldh [hWhoseTurn], a
 	pop hl
+	ld a, 1 ; Leech Seed damage ignores the Toxic counter (Generation II)
 	call HandlePoisonBurnLeechSeed_DecreaseOwnHP
 	call HandlePoisonBurnLeechSeed_IncreaseEnemyHP
 	push hl
@@ -690,13 +713,16 @@ ClearWrapState:
 	ld [wEnemyTrappingMove], a
 	ret
 
-; decreases the mon's current HP by 1/16 of the Max HP (multiplied by number of toxic ticks if active)
-; note that the toxic ticks are considered even if the damage is not poison (hence the Leech Seed glitch)
+; decreases the mon's current HP by 1/16 of the Max HP
 ; hl: HP pointer
 ; bc (out): total damage
+; a = 0 for poison/burn damage (multiply by the Toxic counter),
+;     nonzero for Leech Seed damage (ignore the Toxic counter; the Gen I
+;     Leech Seed glitch where Toxic's ticks increased Leech Seed damage is gone)
 HandlePoisonBurnLeechSeed_DecreaseOwnHP:
 	push hl
 	push hl
+	push af
 	ld bc, $e      ; skip to max HP
 	add hl, bc
 	ld a, [hli]    ; load max HP
@@ -724,6 +750,9 @@ HandlePoisonBurnLeechSeed_DecreaseOwnHP:
 	ld hl, wEnemyBattleStatus3
 	ld de, wEnemyToxicCounter
 .playersTurn
+	pop af
+	and a
+	jr nz, .noToxic ; Leech Seed: don't scale the damage with Toxic
 	bit BADLY_POISONED, [hl]
 	jr z, .noToxic
 	ld a, [de]    ; increment toxic counter
@@ -896,6 +925,7 @@ FaintEnemyPokemon:
 	ld [wEnemyDisabledMove], a
 	ld [wEnemyDisabledMoveNumber], a
 	ld [wEnemyMonMinimized], a
+	ld [wEnemyToxicCounter], a ; switching resets the Toxic damage counter
 	ld hl, wPlayerUsedMove
 	ld [hli], a
 	ld [hl], a
@@ -1468,6 +1498,7 @@ EnemySendOutFirstMon:
 	ld [wEnemyDisabledMove], a
 	ld [wEnemyDisabledMoveNumber], a
 	ld [wEnemyMonMinimized], a
+	ld [wEnemyToxicCounter], a ; switching resets the Toxic damage counter
 	ld hl, wPlayerUsedMove
 	ld [hli], a
 	ld [hl], a
@@ -1487,9 +1518,27 @@ EnemySendOutFirstMon:
 	ld [wWhichPokemon], a
 	jr .next3
 .next
+	ld a, [wForcedEnemySwitch]
+	and a
+	jr z, .startFromFirstSlot
+; a move forced this switch: start at the randomly chosen party slot
+	xor a
+	ld [wForcedEnemySwitch], a
+	ld a, [wWhichPokemon]
+	dec a
+	ld b, a
+	jr .next2
+.startFromFirstSlot
 	ld b, $ff
 .next2
 	inc b
+; wrap around the party so a forced switch can find slots before the current one
+	ld a, [wEnemyPartyCount]
+	cp b
+	jr nz, .noWrap
+	xor a
+	ld b, a
+.noWrap
 	ld a, [wEnemyMonPartyPos]
 	cp b
 	jr z, .next2
@@ -1850,6 +1899,11 @@ LoadEnemyMonFromParty:
 	jr nz, .statModLoop
 	ld a, [wWhichPokemon]
 	ld [wEnemyMonPartyPos], a
+	ld a, [wEnemyMonStatus]
+	bit BADLY_POISONED_STATUS, a ; was it badly poisoned when it left the field?
+	ret z
+	ld hl, wEnemyBattleStatus3
+	set BADLY_POISONED, [hl]
 	ret
 
 SendOutMon:
@@ -1882,6 +1936,13 @@ SendOutMon:
 	ld [wPlayerDisabledMove], a
 	ld [wPlayerDisabledMoveNumber], a
 	ld [wPlayerMonMinimized], a
+	ld [wPlayerToxicCounter], a ; switching resets the Toxic damage counter
+	ld a, [wBattleMonStatus]
+	bit BADLY_POISONED_STATUS, a
+	jr z, .notBadlyPoisoned
+	ld hl, wPlayerBattleStatus3
+	set BADLY_POISONED, [hl]
+.notBadlyPoisoned
 	ld b, SET_PAL_BATTLE
 	call RunPaletteCommand
 	call ClearWrapState ; the mon leaving frees anything either side was wrapped in
@@ -3327,6 +3388,7 @@ PlayerCalcMoveDamage:
 	               ; for these moves, accuracy tests will only occur if they are called as part of the effect itself
 	call AdjustDamageForMoveType
 	call RandomizeDamage
+	call ApplyScreensToDamage
 .moveHitTest
 	call MoveHitTest
 HandleIfPlayerMoveMissed:
@@ -4195,12 +4257,6 @@ GetDamageVarsForPlayerAttack:
 	ld a, [hli]
 	ld b, a
 	ld c, [hl] ; bc = enemy defense
-	ld a, [wEnemyBattleStatus3]
-	bit HAS_REFLECT_UP, a ; check for Reflect
-	jr z, .physicalAttackCritCheck
-; if the enemy has used Reflect, double the enemy's defense
-	sla c
-	rl b
 .physicalAttackCritCheck
 	ld hl, wBattleMonAttack
 	ld a, [wCriticalHitOrOHKO]
@@ -4225,14 +4281,6 @@ GetDamageVarsForPlayerAttack:
 	ld a, [hli]
 	ld b, a
 	ld c, [hl] ; bc = enemy special
-	ld a, [wEnemyBattleStatus3]
-	bit HAS_LIGHT_SCREEN_UP, a ; check for Light Screen
-	jr z, .specialAttackCritCheck
-; if the enemy has used Light Screen, double the enemy's special
-	sla c
-	rl b
-; reflect and light screen boosts do not cap the stat at MAX_STAT_VALUE, so weird things will happen during stats scaling
-; if a Pokemon with 512 or more Defense has used Reflect, or if a Pokemon with 512 or more Special has used Light Screen
 .specialAttackCritCheck
 	ld hl, wBattleMonSpecial
 	ld a, [wCriticalHitOrOHKO]
@@ -4308,12 +4356,6 @@ GetDamageVarsForEnemyAttack:
 	ld a, [hli]
 	ld b, a
 	ld c, [hl] ; bc = player defense
-	ld a, [wPlayerBattleStatus3]
-	bit HAS_REFLECT_UP, a ; check for Reflect
-	jr z, .physicalAttackCritCheck
-; if the player has used Reflect, double the player's defense
-	sla c
-	rl b
 .physicalAttackCritCheck
 	ld hl, wEnemyMonAttack
 	ld a, [wCriticalHitOrOHKO]
@@ -4338,14 +4380,6 @@ GetDamageVarsForEnemyAttack:
 	ld a, [hli]
 	ld b, a
 	ld c, [hl]
-	ld a, [wPlayerBattleStatus3]
-	bit HAS_LIGHT_SCREEN_UP, a ; check for Light Screen
-	jr z, .specialAttackCritCheck
-; if the player has used Light Screen, double the player's special
-	sla c
-	rl b
-; reflect and light screen boosts do not cap the stat at MAX_STAT_VALUE, so weird things will happen during stats scaling
-; if a Pokemon with 512 or more Defense has used Reflect, or if a Pokemon with 512 or more Special has used Light Screen
 .specialAttackCritCheck
 	ld hl, wEnemyMonSpecial
 	ld a, [wCriticalHitOrOHKO]
@@ -5605,6 +5639,55 @@ RandomizeDamage:
 	ld [hl], a
 	ret
 
+; Halves the damage of a regular physical or special attack when the defending
+; side has Reflect or Light Screen up. This is Generation III behaviour: the
+; screens are a final damage modifier rather than a Defense/Special boost.
+; Critical hits and OHKO moves ignore screens. Confusion damage and fixed-damage
+; moves (Seismic Toss, Super Fang, ...) never reach this routine.
+ApplyScreensToDamage:
+	ld a, [wCriticalHitOrOHKO]
+	and a
+	ret nz ; critical hit (1) or OHKO (2): screens do not apply
+	ldh a, [hWhoseTurn]
+	and a
+	jr nz, .enemyAttacking
+; player attacking: check the enemy's side
+	ld a, [wPlayerMoveType]
+	cp SPECIAL
+	jr nc, .enemyLightScreen
+	ld a, [wEnemyReflectTurns]
+	jr .checkScreen
+.enemyLightScreen
+	ld a, [wEnemyLightScreenTurns]
+	jr .checkScreen
+.enemyAttacking
+; enemy attacking: check the player's side
+	ld a, [wEnemyMoveType]
+	cp SPECIAL
+	jr nc, .playerLightScreen
+	ld a, [wPlayerReflectTurns]
+	jr .checkScreen
+.playerLightScreen
+	ld a, [wPlayerLightScreenTurns]
+.checkScreen
+	and a
+	ret z ; no matching screen up
+	ld hl, wDamage
+	ld a, [hli]
+	or [hl] ; is the damage zero (e.g. a type immunity)?
+	ret z
+	dec hl
+	srl [hl] ; damage /= 2 (wDamage is big-endian)
+	inc hl
+	rr [hl]
+; a damaging hit is never reduced to zero
+	ld a, [hld]
+	or [hl]
+	ret nz
+	inc hl
+	inc [hl]
+	ret
+
 ; for more detailed commentary, see equivalent function for player side (ExecutePlayerMove)
 ExecuteEnemyMove:
 	ld a, [wEnemySelectedMove]
@@ -5690,6 +5773,7 @@ EnemyCalcMoveDamage:
 	jp z, EnemyCheckIfFlyOrChargeEffect
 	call AdjustDamageForMoveType
 	call RandomizeDamage
+	call ApplyScreensToDamage
 
 EnemyMoveHitTest:
 	call MoveHitTest
@@ -6190,6 +6274,10 @@ LoadEnemyMonData:
 	inc hl
 	ld a, [hl]
 	ld [wEnemyMonStatus], a
+	bit BADLY_POISONED_STATUS, a ; was it badly poisoned when it left the field?
+	jr z, .copyTypes
+	ld hl, wEnemyBattleStatus3
+	set BADLY_POISONED, [hl]
 	jr .copyTypes
 .copyTypes
 	ld hl, wMonHTypes
