@@ -152,3 +152,82 @@ TransformEffect_:
 TransformedText:
 	text_far _TransformedText
 	text_end
+
+; Imposter: auto-Transform when a Ditto is sent into battle.
+; Reuses TransformEffect_ (same bank). Callers must have both battle mons
+; loaded and the entering side's status bytes already cleared.
+TryImposterPlayer:
+	ld a, [wLinkState]
+	cp LINK_STATE_BATTLING
+	ret z ; link battles must stay in sync
+	ld a, [wBattleMonSpecies]
+	cp DITTO
+	ret nz
+	ld a, [wPlayerBattleStatus3]
+	bit TRANSFORMED, a
+	ret nz
+	ld a, [wEnemyMonSpecies]
+	and a
+	ret z ; no opposing mon loaded (initial trainer send-out)
+	ld hl, wEnemyMonHP
+	ld a, [hli]
+	or [hl]
+	ret z ; opposing mon has fainted
+	ld a, [wEnemyBattleStatus3]
+	bit TRANSFORMED, a
+	ret nz ; Imposter fails against a transformed target
+	ld a, [wEnemyBattleStatus2]
+	bit HAS_SUBSTITUTE_UP, a
+	ret nz ; Imposter fails against a target behind a substitute
+	ldh a, [hWhoseTurn]
+	push af
+	ld a, [wPlayerMoveNum]
+	push af
+	xor a ; player's turn
+	ldh [hWhoseTurn], a
+	ld a, TRANSFORM
+	ld [wPlayerMoveNum], a ; required for the sprite morph animation
+	call TransformEffect_
+	pop af
+	ld [wPlayerMoveNum], a
+	pop af
+	ldh [hWhoseTurn], a
+	ret
+
+TryImposterEnemy:
+	ld a, [wLinkState]
+	cp LINK_STATE_BATTLING
+	ret z
+	ld a, [wEnemyMonSpecies]
+	cp DITTO
+	ret nz
+	ld a, [wEnemyBattleStatus3]
+	bit TRANSFORMED, a
+	ret nz
+	ld a, [wBattleMonSpecies]
+	and a
+	ret z ; player mon not loaded yet
+	ld hl, wBattleMonHP
+	ld a, [hli]
+	or [hl]
+	ret z
+	ld a, [wPlayerBattleStatus3]
+	bit TRANSFORMED, a
+	ret nz
+	ld a, [wPlayerBattleStatus2]
+	bit HAS_SUBSTITUTE_UP, a
+	ret nz
+	ldh a, [hWhoseTurn]
+	push af
+	ld a, [wEnemyMoveNum]
+	push af
+	ld a, $1 ; enemy's turn
+	ldh [hWhoseTurn], a
+	ld a, TRANSFORM
+	ld [wEnemyMoveNum], a ; required for the sprite morph animation
+	call TransformEffect_
+	pop af
+	ld [wEnemyMoveNum], a
+	pop af
+	ldh [hWhoseTurn], a
+	ret

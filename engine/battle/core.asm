@@ -255,6 +255,7 @@ StartBattle:
 	call LoadBattleMonFromParty
 	call LoadScreenTilesFromBuffer1
 	call SendOutMon
+	callfar TryImposterEnemy
 	jr MainInBattleLoop
 
 ; wild mon or link battle enemy ran from battle
@@ -1554,6 +1555,7 @@ EnemySendOutFirstMon:
 	ld a, [wEnemyMonSpecies2]
 	call PlayCry
 	call DrawEnemyHUDAndHPBar
+	callfar TryImposterEnemy
 	ld a, [wCurrentMenuItem]
 	and a
 	ret nz
@@ -1891,6 +1893,7 @@ SendOutMon:
 	predef AnimateSendingOutMon
 	ld a, [wCurPartySpecies]
 	call PlayCry
+	callfar TryImposterPlayer
 	call PrintEmptyString
 	jp SaveScreenTilesToBuffer1
 
