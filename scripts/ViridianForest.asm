@@ -23,6 +23,7 @@ ViridianForest_TextPointers:
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POTION
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POKE_BALL
 	dw_const ViridianForestYoungster5Text,      TEXT_VIRIDIANFOREST_YOUNGSTER5
+	dw_const ViridianForestYoungster4Text,      TEXT_VIRIDIANFOREST_YOUNGSTER4
 	dw_const ViridianForestTrainerTips1Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS1
 	dw_const ViridianForestUseAntidoteSignText, TEXT_VIRIDIANFOREST_USE_ANTIDOTE_SIGN
 	dw_const ViridianForestTrainerTips2Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS2
@@ -38,6 +39,8 @@ ViridianForestTrainerHeader1:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1, 4, ViridianForestYoungster3BattleText, ViridianForestYoungster3EndBattleText, ViridianForestYoungster3AfterBattleText
 ViridianForestTrainerHeader2:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2, 1, ViridianForestGuzmaBattleText, ViridianForestGuzmaEndBattleText, ViridianForestGuzmaAfterBattleText
+ViridianForestTrainerHeader3:
+	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_3, 3, ViridianForestYoungster4BattleText, ViridianForestYoungster4EndBattleText, ViridianForestYoungster4AfterBattleText
 	db -1 ; end
 
 ViridianForestYoungster1Text:
@@ -96,6 +99,24 @@ ViridianForestGuzmaEndBattleText:
 
 ViridianForestGuzmaAfterBattleText:
 	text_far _ViridianForestGuzmaAfterBattleText
+	text_end
+
+ViridianForestYoungster4Text:
+	text_asm
+	ld hl, ViridianForestTrainerHeader3
+	call TalkToTrainer
+	jp TextScriptEnd
+
+ViridianForestYoungster4BattleText:
+	text_far _ViridianForestYoungster4BattleText
+	text_end
+
+ViridianForestYoungster4EndBattleText:
+	text_far _ViridianForestYoungster4EndBattleText
+	text_end
+
+ViridianForestYoungster4AfterBattleText:
+	text_far _ViridianForestYoungster4AfterBattleText
 	text_end
 
 ViridianForestYoungster5Text:

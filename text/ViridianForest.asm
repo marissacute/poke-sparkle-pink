@@ -62,6 +62,27 @@ _ViridianForestGuzmaAfterBattleText::
 	cont "I'm on holiday."
 	done
 
+_ViridianForestYoungster4BattleText::
+	text "Hey, wait up!"
+	line "What's the hurry?"
+	done
+
+_ViridianForestYoungster4EndBattleText::
+	text "I"
+	line "give! You're good"
+	cont "at this!"
+	prompt
+
+_ViridianForestYoungster4AfterBattleText::
+	text "Sometimes, you"
+	line "can find stuff on"
+	cont "the ground!"
+
+	para "I'm looking for"
+	line "the stuff I"
+	cont "dropped!"
+	done
+
 _ViridianForestYoungster5Text::
 	text "I ran out of #"
 	line "BALLs to catch"
