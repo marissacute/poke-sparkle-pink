@@ -86,21 +86,26 @@ _CeladonGymTM21NoRoomText::
 	done
 
 _CeladonGymBattleText2::
-	text "Hey!"
+	text "Finally!"
 
-	para "You are not"
-	line "allowed in here!"
+	para "Another girl"
+	line "challenges the"
+	cont "gym!"
 	done
 
 _CeladonGymEndBattleText2::
-	text "You're"
-	line "too rough!"
+	text "Not fair!"
+	line "You used a type"
+	cont "advantage!"
 	prompt
 
 _CeladonGymAfterBattleText2::
-	text "Bleaah!"
-	line "I hope ERIKA"
-	cont "wipes you out!"
+	text "There was another"
+	line "girl here before"
+	cont "who was also"
+	cont "super strong."
+
+	para "Do you know her?"
 	done
 
 _CeladonGymBattleText3::
@@ -124,19 +129,25 @@ _CeladonGymAfterBattleText3::
 	done
 
 _CeladonGymBattleText4::
-	text "There was a"
-	line "peeping Tom!"
+	text "Some boys"
+	line "underestimate"
+
+	para "this GYM because"
+	line "all the trainers"
+	cont "are girls."
 	done
 
 _CeladonGymEndBattleText4::
-	text "I'm"
-	line "in shock!"
+	text "Woah! You're"
+	line "impressive!"
 	prompt
 
 _CeladonGymAfterBattleText4::
-	text "Some men come"
-	line "here to look at"
-	cont "female trainers."
+	text "I lost, but I"
+	line "love how strong"
+	cont "you are with"
+	cont "cute #MON that"
+	cont "you like."
 	done
 
 _CeladonGymBattleText5::
@@ -203,7 +214,8 @@ _CeladonGymBattleText8::
 
 	para "You better not"
 	line "underestimate"
-	cont "girl power!"
+	cont "the power of"
+	cont "GRASS #MON!"
 	done
 
 _CeladonGymEndBattleText8::

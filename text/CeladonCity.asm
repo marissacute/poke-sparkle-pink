@@ -8,9 +8,17 @@ _CeladonCityLittleGirlText::
 	done
 
 _CeladonCityGramps1Text::
-	text "Heheh! This GYM"
-	line "is great! It's"
-	cont "full of women!"
+	text "We kept getting"
+	line "reports about a"
+	cont "man making the"
+	cont "trainers inside"
+	cont "this GYM"
+	cont "uncomfortable."
+
+	para "I told him to"
+	line "leave, creepily"
+	cont "gawking at girls"
+	cont "is not OK!"
 	done
 
 _CeladonCityGirlText::

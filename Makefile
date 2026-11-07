@@ -2,6 +2,8 @@ roms := \
 	pokered.gbc \
 	pokeblue.gbc \
 	pokeblue_debug.gbc
+# Release-named copy of pokered.gbc (spaces are escaped for make).
+sparkling_rom := Pokemon\ -\ Sparkling\ Pink\ Version.gbc
 patches := \
 	pokered.patch \
 	pokeblue.patch
@@ -55,6 +57,7 @@ RGBGFXFLAGS  ?= -Weverything
 	red \
 	blue \
 	blue_debug \
+	sparkling \
 	red_vc \
 	blue_vc \
 	clean \
@@ -64,10 +67,11 @@ RGBGFXFLAGS  ?= -Weverything
 	flyover-build \
 	tools
 
-all: $(roms)
+all: $(roms) $(sparkling_rom)
 red:        pokered.gbc
 blue:       pokeblue.gbc
 blue_debug: pokeblue_debug.gbc
+sparkling:  $(sparkling_rom)
 red_vc:     pokered.patch
 blue_vc:    pokeblue.patch
 
@@ -103,6 +107,7 @@ clean: tidy
 
 tidy:
 	$(RM) $(roms) \
+	      $(sparkling_rom) \
 	      $(roms:.gbc=.sym) \
 	      $(roms:.gbc=.map) \
 	      $(patches) \
@@ -185,6 +190,10 @@ pokeblue_vc.gbc:    RGBFIXFLAGS += -p 0x00 -t "POKEMON BLUE"
 %.gbc: $$(%_obj) layout.link
 	$(RGBLINK) $(RGBLINKFLAGS) -l layout.link -m $*.map -n $*.sym -o $@ $(filter %.o,$^)
 	$(RGBFIX) $(RGBFIXFLAGS) $@
+
+# Release-named copy of the Red build, produced by `make all`.
+$(sparkling_rom): pokered.gbc
+	cp pokered.gbc "$@"
 
 
 ### Misc file-specific graphics rules
