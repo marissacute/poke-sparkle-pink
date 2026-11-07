@@ -77,7 +77,7 @@
 	const SPEED_DOWN_SIDE_EFFECT     ; $46
 	const SPECIAL_DOWN_SIDE_EFFECT   ; $47
 	const SPEED_DOWN_SIDE_EFFECT_ALWAYS ; $48 always lowers SPEED by 1, no chance roll
-	const_skip                       ; $49
+	const ATTACK_UP_SIDE_EFFECT_ALWAYS ; $49 always raises the user's ATTACK by 1, no chance roll
 	const_skip                       ; $4A
 	const_skip                       ; $4B
 	const CONFUSION_SIDE_EFFECT_10   ; $4C

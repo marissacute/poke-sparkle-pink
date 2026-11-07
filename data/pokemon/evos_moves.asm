@@ -235,7 +235,7 @@ KangaskhanEvosMoves:
 	db 0
 ; Learnset
 	db 26, BITE
-	db 31, TAIL_WHIP
+	db 31, POWER_UP_PUNCH
 	db 36, MEGA_PUNCH
 	db 41, LEER
 	db 46, DIZZY_PUNCH
@@ -676,7 +676,8 @@ PidgeyEvosMoves:
 	db 5, SAND_ATTACK
 	db 12, QUICK_ATTACK
 	db 19, WHIRLWIND
-	db 28, WING_ATTACK
+	db 23, WING_ATTACK
+	db 30, AIR_SLASH
 	db 36, AGILITY
 	db 44, MIRROR_MOVE
 	db 0
@@ -763,7 +764,7 @@ MachokeEvosMoves:
 	db 0
 ; Learnset
 	db 20, LOW_KICK
-	db 25, LEER
+	db 25, POWER_UP_PUNCH
 	db 31, CROSS_CHOP
 	db 36, FOCUS_ENERGY
 	db 44, SEISMIC_TOSS
@@ -905,6 +906,7 @@ MagmarEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+    db 33, SLUDGE
 	db 36, FLAMETHROWER
 	db 43, CONFUSE_RAY
 	db 55, FIRE_BLAST
@@ -928,7 +930,8 @@ ElectabuzzEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 36, SCREECH
+	db 33, NIGHT_SLASH
+	db 40, SCREECH
 	db 47, THUNDERBOLT
 	db 58, THUNDER
 	db EVOLUTION_MOVE, THUNDERPUNCH
@@ -953,8 +956,8 @@ KoffingEvosMoves:
 	db EVOLVE_LEVEL, 35, WEEZING
 	db 0
 ; Learnset
-	db 32, SLUDGE
-	db 37, SMOKESCREEN
+	db 32, FAIRY_WIND
+	db 37, SLUDGE
 	db 40, SELFDESTRUCT
 	db 45, HAZE
 	db 48, EXPLOSION
@@ -1285,6 +1288,7 @@ SkarmoryEvosMoves:
 	db 13, SAND_ATTACK
 	db 19, SWIFT
 	db 25, AGILITY
+	db 32, AIR_SLASH
 	db 37, FURY_ATTACK
 	db 42, METAL_CLAW
 	db 46, IRON_DEFENSE
@@ -1603,7 +1607,7 @@ MachopEvosMoves:
 	db 0
 ; Learnset
 	db 20, LOW_KICK
-	db 25, LEER
+	db 25, POWER_UP_PUNCH
 	db 30, CROSS_CHOP
 	db 35, FOCUS_ENERGY
 	db 39, SEISMIC_TOSS
@@ -1620,7 +1624,8 @@ ZubatEvosMoves:
 	db 21, CONFUSE_RAY
 	db 28, WING_ATTACK
 	db 32, CRUNCH
-	db 36, HAZE
+	db 36, AIR_SLASH
+	db 40, HAZE
 	db 0
 
 EkansEvosMoves:
@@ -1701,7 +1706,8 @@ CrobatEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 45, HAZE
+	db 42, AIR_SLASH
+	db 49, HAZE
 	db 0
 
 DodrioEvosMoves:
@@ -1788,7 +1794,7 @@ LedybaEvosMoves:
 	db 22, LIGHT_SCREEN
 	db 22, REFLECT
 	db 29, DOUBLE_TEAM
-	db 36, SWIFT
+	db 35, AIR_SLASH
 	db 39, X_SCISSOR
 	db 43, AGILITY
 	db 50, SUBMISSION
@@ -1804,7 +1810,7 @@ LedianEvosMoves:
 	db 24, LIGHT_SCREEN
 	db 24, REFLECT
 	db 33, DOUBLE_TEAM
-	db 42, SWIFT
+	db 40, AIR_SLASH
 	db 45, X_SCISSOR
 	db 51, AGILITY
 	db 55, SUBMISSION
@@ -1844,7 +1850,7 @@ MachampEvosMoves:
 	db 0
 ; Learnset
 	db 20, LOW_KICK
-	db 25, LEER
+	db 25, POWER_UP_PUNCH
 	db 31, CROSS_CHOP
 	db 36, FOCUS_ENERGY
 	db 44, SEISMIC_TOSS
@@ -1898,7 +1904,8 @@ GolbatEvosMoves:
 	db 21, CONFUSE_RAY
 	db 32, WING_ATTACK
 	db 39, CRUNCH
-	db 43, HAZE
+	db 42, AIR_SLASH
+	db 49, HAZE
 	db 0
 
 MewtwoEvosMoves:
@@ -2000,7 +2007,7 @@ WeezingEvosMoves:
 	db 0
 ; Learnset
 	db 32, SLUDGE
-	db 38, FAIRY_WIND
+	db 38, MOONBLAST
 	db 41, SMOKESCREEN
 	db 43, SELFDESTRUCT
 	db 49, HAZE
@@ -2091,7 +2098,8 @@ PidgeottoEvosMoves:
 	db 5, SAND_ATTACK
 	db 12, QUICK_ATTACK
 	db 21, WHIRLWIND
-	db 31, WING_ATTACK
+	db 25, WING_ATTACK
+	db 32, AIR_SLASH
 	db 40, AGILITY
 	db 49, MIRROR_MOVE
 	db 0
@@ -2103,7 +2111,8 @@ PidgeotEvosMoves:
 	db 5, SAND_ATTACK
 	db 12, QUICK_ATTACK
 	db 21, WHIRLWIND
-	db 31, WING_ATTACK
+	db 25, WING_ATTACK
+	db 32, AIR_SLASH
 	db 44, AGILITY
 	db 54, MIRROR_MOVE
 	db 0
@@ -2225,7 +2234,7 @@ PonytaEvosMoves:
 ; Learnset
 	db 30, TAIL_WHIP
 	db 32, STOMP
-	db 35, GROWL
+	db 35, FAIRY_WIND
 	db 39, FIRE_SPIN
 	db 43, TAKE_DOWN
 	db 48, AGILITY
@@ -2241,7 +2250,6 @@ RapidashEvosMoves:
 	db 43, TAKE_DOWN
 	db 48, MOONBLAST
 	db 55, AGILITY
-	db EVOLUTION_MOVE, FAIRY_WIND
 	db 0
 
 RattataEvosMoves:

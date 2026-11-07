@@ -18,7 +18,8 @@
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
 	     HYPER_BEAM,   RAGE,         SUBMISSION,   EARTHQUAKE,   MIMIC,        \
 	     DOUBLE_TEAM,  REFLECT,      BIDE,         SWIFT,        SKY_ATTACK,   \
-	     REST,         SEISMIC_TOSS, SUBSTITUTE,   FLY,          STRENGTH
+	     REST,         SEISMIC_TOSS, SUBSTITUTE,   FLY,          STRENGTH,     \
+		 CUT
 	; end
 
 	db BANK(ZapdosPicFront)

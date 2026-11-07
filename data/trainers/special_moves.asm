@@ -127,10 +127,10 @@ SpecialTrainerMoves:
 	db 0
 
 	db LORELEI, 1
+	db 1, 1, SURF
+	db 1, 3, BLIZZARD
 	db 3, 1, ICE_PUNCH
 	db 4, 3, LOVELY_KISS
-	db 5, 1, SURF
-	db 5, 3, BLIZZARD
 	db 0
 
 	db BRUNO, 1

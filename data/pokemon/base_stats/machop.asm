@@ -11,7 +11,7 @@
 
 	dw MachopPicFront, MachopPicBack
 
-	db KARATE_CHOP, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db KARATE_CHOP, LEER, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

@@ -16,7 +16,7 @@
 
 	; tm/hm learnset
 	tmhm TOXIC,        HORN_DRILL,   BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     RAGE,         THUNDER,      EARTHQUAKE,   FISSURE,      \
+	     RAGE,         THUNDER,      EARTHQUAKE,   FISSURE,      CUT,          \
 	     DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         FIRE_BLAST,   \
 	     SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end

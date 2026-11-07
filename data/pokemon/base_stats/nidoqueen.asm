@@ -21,7 +21,7 @@
 	     SEISMIC_TOSS, RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
 	     FISSURE,      MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
 	     FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   \
-	     SURF,         STRENGTH,     SHADOW_BALL
+	     SURF,         STRENGTH,     SHADOW_BALL,  CUT
 	; end
 
 	db BANK(NidoqueenPicFront)

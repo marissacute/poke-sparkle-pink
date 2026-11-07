@@ -18,7 +18,7 @@
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
 	     HYPER_BEAM,   RAGE,         MIMIC,        DOUBLE_TEAM,  REFLECT,      \
 	     BIDE,         SHADOW_BALL,  SWIFT,        SKY_ATTACK,   REST,         \
-	     SUBSTITUTE,   FLY
+	     SUBSTITUTE,   FLY,          CUT
 	; end
 
 	db BANK(MoltresPicFront)

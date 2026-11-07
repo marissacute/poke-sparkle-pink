@@ -182,6 +182,8 @@ MoveSoundTable:
 	db SFX_BATTLE_1E,          $00, $80 ; BUG_BITE
 	db SFX_BATTLE_25,          $00, $10 ; EXTREME_SPEED (same as QUICK_ATTACK)
 	db SFX_BATTLE_29,          $0f, $e0 ; BULLDOZE (same as EARTHQUAKE)
+	db SFX_BATTLE_12,          $10, $a0 ; AIR_SLASH (same as WING_ATTACK)
+	db SFX_BATTLE_0D,          $10, $40 ; POWER_UP_PUNCH (same as MEGA_PUNCH)
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

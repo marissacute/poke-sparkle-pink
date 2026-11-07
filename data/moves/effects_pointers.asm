@@ -73,7 +73,7 @@ MoveEffectPointerTable:
 	dw StatModifierDownEffect    ; SPEED_DOWN_SIDE_EFFECT
 	dw StatModifierDownEffect    ; SPECIAL_DOWN_SIDE_EFFECT
 	dw StatModifierDownEffect    ; SPEED_DOWN_SIDE_EFFECT_ALWAYS
-	dw StatModifierDownEffect    ; unused effect
+	dw StatModifierUpEffect      ; ATTACK_UP_SIDE_EFFECT_ALWAYS
 	dw StatModifierDownEffect    ; unused effect
 	dw StatModifierDownEffect    ; unused effect
 	dw ConfusionSideEffect10     ; CONFUSION_SIDE_EFFECT_10

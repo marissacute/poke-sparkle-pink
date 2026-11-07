@@ -43,6 +43,10 @@ TYPE_NAMES = {
 # custom PALDEA glyphs that don't survive extraction.
 DISPLAY_OVERRIDES = {"PALDEAN_WOOPER": "PALDEAN WOOPER"}
 
+# In-game move names are capped at 12 characters, so some official names are
+# concatenated in the ROM.  Use the official spelling in the wiki.
+MOVE_DISPLAY_OVERRIDES = {"POWER_UP_PUNCH": "Power-up Punch"}
+
 # `power` is a placeholder byte, not a real base power, for these effects.
 PLACEHOLDER_POWER = {"OHKO_EFFECT", "SUPER_FANG_EFFECT", "SPECIAL_DAMAGE_EFFECT"}
 
@@ -188,11 +192,18 @@ class Repo:
         mons = []
         for slug_name in order:
             src = self.read(f"data/pokemon/base_stats/{slug_name}.asm")
+            dex = re.search(r"db (DEX_\w+)", src)
+            if dex is None:
+                # MissingNo. (#000) is included in base_stats.asm but has no
+                # Pokedex constant and no dex entry, so it is not wiki material.
+                print(f"warning: skipping {slug_name}.asm (no DEX_ constant)",
+                      file=sys.stderr)
+                continue
             stats = re.search(r"^\s*db\s+(\d+),\s*(\d+),\s*(\d+),\s*(\d+),\s*(\d+)",
                               src, re.M)
             mons.append({
                 "slug": slug_name,
-                "dex_const": re.search(r"db (DEX_\w+)", src).group(1)[4:],
+                "dex_const": dex.group(1)[4:],
                 # stored order is hp, atk, def, spd, spc
                 "stats": [int(x) for x in stats.groups()],
                 "types": [t.strip() for t in
@@ -291,7 +302,9 @@ class Repo:
         out = []
         for i, (const, effect, power, mtype, acc, pp) in enumerate(rows):
             out.append({
-                "const": const, "name": titlecase(names[i]), "effect": effect,
+                "const": const,
+                "name": MOVE_DISPLAY_OVERRIDES.get(const, titlecase(names[i])),
+                "effect": effect,
                 "power": int(power), "type": mtype, "acc": int(acc), "pp": int(pp),
                 "text": texts.get(descs[i], ""),
             })

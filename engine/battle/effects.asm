@@ -358,12 +358,18 @@ StatModifierUpEffect:
 	ld de, wEnemyMoveEffect
 .statModifierUpEffect
 	ld a, [de]
+	cp ATTACK_UP_SIDE_EFFECT_ALWAYS
+	jr z, .attackUpSideEffect
 	sub ATTACK_UP1_EFFECT
 	cp EVASION_UP1_EFFECT + $3 - ATTACK_UP1_EFFECT ; covers all +1 effects
 	jr c, .incrementStatMod
 	sub ATTACK_UP2_EFFECT - ATTACK_UP1_EFFECT ; map +2 effects to equivalent +1 effect
 .incrementStatMod
 	ld c, a
+	jr .gotStatMod
+.attackUpSideEffect ; this side effect is always +1 ATTACK
+	ld c, ATTACK_UP1_EFFECT - ATTACK_UP1_EFFECT
+.gotStatMod
 	ld b, $0
 	add hl, bc
 	ld b, [hl]
@@ -372,6 +378,8 @@ StatModifierUpEffect:
 	cp b ; can't raise stat past +6 ($d or 13)
 	jp c, PrintNothingHappenedText
 	ld a, [de]
+	cp ATTACK_UP_SIDE_EFFECT_ALWAYS
+	jr z, .ok ; this side effect is always +1
 	cp ATTACK_UP1_EFFECT + $8 ; is it a +2 effect?
 	jr c, .ok
 	inc b ; if so, increment stat mod again

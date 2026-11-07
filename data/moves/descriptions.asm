@@ -211,6 +211,8 @@ MoveDescriptions:
     text_far _BugBiteDescription
     text_far _ExtremeSpeedDescription
     text_far _BulldozeDescription
+    text_far _AirSlashDescription
+    text_far _PowerUpPunchDescription
     text_far _StruggleDescription
 
 _PoundDescription::
@@ -1120,6 +1122,19 @@ _BulldozeDescription::
     text "Stomps the ground"
     line "and lowers the"
     cont "foe's SPEED."
+    done
+
+_AirSlashDescription::
+    text "Attacks with a"
+    line "blade of air."
+    cont "May cause the"
+    cont "foe to flinch."
+    done
+
+_PowerUpPunchDescription::
+    text "A punch that"
+    line "raises the"
+    cont "user's ATTACK."
     done
 
 _StruggleDescription::

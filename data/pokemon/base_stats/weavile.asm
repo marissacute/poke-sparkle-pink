@@ -19,7 +19,7 @@
 	     BLIZZARD,     HYPER_BEAM,   COUNTER,      SEISMIC_TOSS, RAGE, \
 	     DIG,          MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE, \
 	     METRONOME,    REST,         SHADOW_BALL,  SUBSTITUTE,   SURF, \
-	     STRENGTH,     FLASH
+	     STRENGTH,     FLASH,        CUT,          EARTHQUAKE
 	; end
 
 	db BANK(WeavilePicFront)

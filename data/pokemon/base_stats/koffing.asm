@@ -3,7 +3,7 @@
 	db  40,  65,  95,  35,  60
 	;   hp  atk  def  spd  spc
 
-	db POISON, POISON ; type
+	db POISON, FAIRY ; type
 	db 190 ; catch rate
 	db 114 ; base exp
 
@@ -11,7 +11,7 @@
 
 	dw KoffingPicFront, KoffingPicBack
 
-	db TACKLE, SMOG, NO_MOVE, NO_MOVE ; level 1 learnset
+	db TACKLE, SMOG, SMOKESCREEN, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

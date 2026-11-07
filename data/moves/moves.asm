@@ -76,7 +76,7 @@ Moves:
 	move HYPER_BEAM,   HYPER_BEAM_EFFECT,          150, NORMAL,        90,  5
 	move PECK,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35
 	move DRILL_PECK,   NO_ADDITIONAL_EFFECT,        80, FLYING,       100, 20
-	move SUBMISSION,   RECOIL_EFFECT,               120, FIGHTING,     90, 25
+	move SUBMISSION,   RECOIL_EFFECT,               110, FIGHTING,     90, 25
 	move LOW_KICK,     FLINCH_SIDE_EFFECT2,         50, FIGHTING,      90, 20
 	move COUNTER,      NO_ADDITIONAL_EFFECT,         1, FIGHTING,     100, 20
 	move SEISMIC_TOSS, SPECIAL_DAMAGE_EFFECT,        1, FIGHTING,     100, 20
@@ -134,7 +134,7 @@ Moves:
 	move EGG_BOMB,     NO_ADDITIONAL_EFFECT,       100, NORMAL,        75, 10
 	move LICK,         PARALYZE_SIDE_EFFECT2,       40, GHOST,        100, 30
 	move SMOG,         POISON_SIDE_EFFECT2,         20, POISON,        70, 20
-	move SLUDGE,       POISON_SIDE_EFFECT2,         65, POISON,       100, 20
+	move SLUDGE,       POISON_SIDE_EFFECT2,         75, POISON,       100, 20
 	move BONE_CLUB,    FLINCH_SIDE_EFFECT1,         65, GROUND,        85, 20
 	move FIRE_BLAST,   BURN_SIDE_EFFECT2,          120, FIRE,          85,  5
 	move WATERFALL,    NO_ADDITIONAL_EFFECT,        80, WATER,        100, 15
@@ -192,5 +192,7 @@ Moves:
 	move BUG_BITE,     NO_ADDITIONAL_EFFECT,        60, BUG,          100, 20 ; originally this stole and ate the target's berry
 	move EXTREME_SPEED, NO_ADDITIONAL_EFFECT,       80, NORMAL,       100,  5 ; strikes first (priority +1)
 	move BULLDOZE,     SPEED_DOWN_SIDE_EFFECT_ALWAYS, 60, GROUND,     100, 20
+	move AIR_SLASH,    FLINCH_SIDE_EFFECT2,         75, FLYING,        95, 15
+	move POWER_UP_PUNCH, ATTACK_UP_SIDE_EFFECT_ALWAYS, 40, FIGHTING,   100, 20
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

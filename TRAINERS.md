@@ -375,14 +375,14 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 18 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) |
+| 18 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) |
 | 18 | [Shellder](POKEDEX.md#103-shellder) | [Tackle](MOVES.md#tackle) · [Withdraw](MOVES.md#withdraw) · [Supersonic](MOVES.md#supersonic) |
 
 **2** · S.S. Anne Bow
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 17 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) |
+| 17 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) |
 | 17 | [Tentacool](POKEDEX.md#84-tentacool) | [Acid](MOVES.md#acid) · [Supersonic](MOVES.md#supersonic) · [Wrap](MOVES.md#wrap) |
 
 **3** · S.S. Anne B1F Rooms
@@ -418,7 +418,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 20 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) |
+| 20 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) |
 
 **8** · Vermilion Gym
 
@@ -581,7 +581,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 24 | [Pidgey](POKEDEX.md#20-pidgey) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 24 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 | 24 | [Meowth](POKEDEX.md#58-meowth) | [Growl](MOVES.md#growl) · [Bite](MOVES.md#bite) · [Pay Day](MOVES.md#pay-day) · [Screech](MOVES.md#screech) |
 | 24 | [Rattata](POKEDEX.md#23-rattata) | [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Hyper Fang](MOVES.md#hyper-fang) · [Focus Energy](MOVES.md#focus-energy) |
 | 24 | [Pikachu](POKEDEX.md#30-pikachu) | [Thundershock](MOVES.md#thundershock) · [Growl](MOVES.md#growl) · [Thunder Wave](MOVES.md#thunder-wave) · [Quick Attack](MOVES.md#quick-attack) |
@@ -598,10 +598,10 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 27 | [Pidgey](POKEDEX.md#20-pidgey) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 27 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 | 27 | [Meowth](POKEDEX.md#58-meowth) | [Growl](MOVES.md#growl) · [Bite](MOVES.md#bite) · [Pay Day](MOVES.md#pay-day) · [Screech](MOVES.md#screech) |
-| 27 | [Pidgey](POKEDEX.md#20-pidgey) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
-| 27 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 27 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
+| 27 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 
 **15** · Route 13
 
@@ -750,14 +750,14 @@
 |---:|:--|:--|
 | 12 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
 | 12 | [Voltorb](POKEDEX.md#116-voltorb) | [Tackle](MOVES.md#tackle) · [Screech](MOVES.md#screech) |
-| 12 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 12 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **3** · Route 8
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 20 | [Voltorb](POKEDEX.md#116-voltorb) | [Tackle](MOVES.md#tackle) · [Screech](MOVES.md#screech) · [Sonicboom](MOVES.md#sonicboom) |
-| 20 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 20 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 20 | [Voltorb](POKEDEX.md#116-voltorb) | [Tackle](MOVES.md#tackle) · [Screech](MOVES.md#screech) · [Sonicboom](MOVES.md#sonicboom) |
 | 20 | [Mareep](POKEDEX.md#185-mareep) | [Tackle](MOVES.md#tackle) · [Growl](MOVES.md#growl) · [Thundershock](MOVES.md#thundershock) · [Thunder Wave](MOVES.md#thunder-wave) |
 
@@ -773,13 +773,13 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **6** · *not used*
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 22 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 22 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 22 | [Magnemite](POKEDEX.md#4-magnemite) | [Leer](MOVES.md#leer) · [Thundershock](MOVES.md#thundershock) · [Thunder Wave](MOVES.md#thunder-wave) · [Sonicboom](MOVES.md#sonicboom) |
 | 22 | [Weezing](POKEDEX.md#128-weezing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
 
@@ -789,7 +789,7 @@
 |---:|:--|:--|
 | 20 | [Magnemite](POKEDEX.md#4-magnemite) | [Tackle](MOVES.md#tackle) · [Leer](MOVES.md#leer) · [Thundershock](MOVES.md#thundershock) · [Thunder Wave](MOVES.md#thunder-wave) |
 | 20 | [Elekid](POKEDEX.md#152-elekid) | [Quick Attack](MOVES.md#quick-attack) · [Leer](MOVES.md#leer) · [Thundershock](MOVES.md#thundershock) · [Light Screen](MOVES.md#light-screen) |
-| 20 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 20 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 20 | [Mareep](POKEDEX.md#185-mareep) | [Tackle](MOVES.md#tackle) · [Growl](MOVES.md#growl) · [Thundershock](MOVES.md#thundershock) · [Thunder Wave](MOVES.md#thunder-wave) |
 
 **8** · *not used*
@@ -804,7 +804,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 36 | [Vulpix](POKEDEX.md#43-vulpix) | [Quick Attack](MOVES.md#quick-attack) · [Roar](MOVES.md#roar) · [Confuse Ray](MOVES.md#confuse-ray) · [Flamethrower](MOVES.md#flamethrower) |
-| 36 | [Magmar](POKEDEX.md#155-magmar) | [Leer](MOVES.md#leer) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) · [Flamethrower](MOVES.md#flamethrower) |
+| 36 | [Magmar](POKEDEX.md#155-magmar) | [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) · [Sludge](MOVES.md#sludge) · [Flamethrower](MOVES.md#flamethrower) |
 | 36 | [Ninetales](POKEDEX.md#44-ninetales) | [Ember](MOVES.md#ember) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Roar](MOVES.md#roar) |
 
 **10** · Cinnabar Gym
@@ -845,7 +845,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 15 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) |
+| 15 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) |
 | 15 | [Geodude](POKEDEX.md#86-geodude) | [Tackle](MOVES.md#tackle) · [Defense Curl](MOVES.md#defense-curl) · [Rock Throw](MOVES.md#rock-throw) |
 
 **3** · Route 25
@@ -854,7 +854,7 @@
 |---:|:--|:--|
 | 13 | [Geodude](POKEDEX.md#86-geodude) | [Tackle](MOVES.md#tackle) · [Defense Curl](MOVES.md#defense-curl) · [Rock Throw](MOVES.md#rock-throw) |
 | 13 | [Dunsparce](POKEDEX.md#143-dunsparce) | [Rage](MOVES.md#rage) · [Defense Curl](MOVES.md#defense-curl) · [Glare](MOVES.md#glare) |
-| 13 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) |
+| 13 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) |
 | 13 | [Geodude](POKEDEX.md#86-geodude) | [Tackle](MOVES.md#tackle) · [Defense Curl](MOVES.md#defense-curl) · [Rock Throw](MOVES.md#rock-throw) |
 
 **4** · Route 25
@@ -875,7 +875,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 20 | [Geodude](POKEDEX.md#86-geodude) | [Tackle](MOVES.md#tackle) · [Defense Curl](MOVES.md#defense-curl) · [Rock Throw](MOVES.md#rock-throw) · [Bulldoze](MOVES.md#bulldoze) |
-| 20 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) |
+| 20 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) |
 | 20 | [Geodude](POKEDEX.md#86-geodude) | [Tackle](MOVES.md#tackle) · [Defense Curl](MOVES.md#defense-curl) · [Rock Throw](MOVES.md#rock-throw) · [Bulldoze](MOVES.md#bulldoze) |
 
 **7** · Route 10
@@ -910,7 +910,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 20 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) |
+| 20 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) |
 | 20 | [Onix](POKEDEX.md#110-onix) | [Tackle](MOVES.md#tackle) · [Screech](MOVES.md#screech) · [Rock Throw](MOVES.md#rock-throw) · [Bulldoze](MOVES.md#bulldoze) |
 
 **12** · Rock Tunnel 1F
@@ -918,7 +918,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 19 | [Geodude](POKEDEX.md#86-geodude) | [Tackle](MOVES.md#tackle) · [Defense Curl](MOVES.md#defense-curl) · [Rock Throw](MOVES.md#rock-throw) · [Bulldoze](MOVES.md#bulldoze) |
-| 19 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) |
+| 19 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) |
 | 19 | [Dunsparce](POKEDEX.md#143-dunsparce) | [Rage](MOVES.md#rage) · [Defense Curl](MOVES.md#defense-curl) · [Glare](MOVES.md#glare) · [Dig](MOVES.md#dig) |
 | 19 | [Geodude](POKEDEX.md#86-geodude) | [Tackle](MOVES.md#tackle) · [Defense Curl](MOVES.md#defense-curl) · [Rock Throw](MOVES.md#rock-throw) · [Bulldoze](MOVES.md#bulldoze) |
 
@@ -945,32 +945,32 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 28 | [Paldean Wooper](POKEDEX.md#73-paldean-wooper) | [Poison Sting](MOVES.md#poison-sting) · [Tail Whip](MOVES.md#tail-whip) · [Body Slam](MOVES.md#body-slam) |
-| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **2** · Route 14
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 29 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 29 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 29 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
 
 **3** · Route 15
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 25 | [Paldean Wooper](POKEDEX.md#73-paldean-wooper) | [Poison Sting](MOVES.md#poison-sting) · [Tail Whip](MOVES.md#tail-whip) |
 | 25 | [Weezing](POKEDEX.md#128-weezing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
-| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 25 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
 
 **4** · Route 15
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 28 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
 | 28 | [Weezing](POKEDEX.md#128-weezing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
 
@@ -979,7 +979,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 29 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
-| 29 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 29 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **6** · Route 16
 
@@ -1001,7 +1001,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 28 | [Weezing](POKEDEX.md#128-weezing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
-| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 28 | [Weezing](POKEDEX.md#128-weezing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
 
 **9** · Route 17
@@ -1028,20 +1028,20 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 25 | [Weezing](POKEDEX.md#128-weezing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
-| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
-| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
+| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 25 | [Weezing](POKEDEX.md#128-weezing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
 
 **13** · Route 14
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
-| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
+| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 26 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
-| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **14** · Route 14
 
@@ -1049,13 +1049,13 @@
 |---:|:--|:--|
 | 28 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
 | 28 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
-| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **15** · Route 14
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 29 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 29 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 29 | [Clodsire](POKEDEX.md#74-clodsire) | [Poison Sting](MOVES.md#poison-sting) · [Tail Whip](MOVES.md#tail-whip) · [Body Slam](MOVES.md#body-slam) |
 
 ---
@@ -1095,7 +1095,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 41 | [Ponyta](POKEDEX.md#89-ponyta) | [Tail Whip](MOVES.md#tail-whip) · [Stomp](MOVES.md#stomp) · [Growl](MOVES.md#growl) · [Fire Spin](MOVES.md#fire-spin) |
+| 41 | [Ponyta](POKEDEX.md#89-ponyta) | [Tail Whip](MOVES.md#tail-whip) · [Stomp](MOVES.md#stomp) · [Fairy Wind](MOVES.md#fairy-wind) · [Fire Spin](MOVES.md#fire-spin) |
 
 **6** · Cinnabar Gym
 
@@ -1157,7 +1157,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 45 | [Pidgeot](POKEDEX.md#22-pidgeot) | [Sand-Attack](MOVES.md#sand-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) · [Quick Attack](MOVES.md#quick-attack) |
+| 45 | [Pidgeot](POKEDEX.md#22-pidgeot) | [Sand-Attack](MOVES.md#sand-attack) · [Wing Attack](MOVES.md#wing-attack) · [Air Slash](MOVES.md#air-slash) · [Quick Attack](MOVES.md#quick-attack) |
 | 42 | [Gyarados](POKEDEX.md#161-gyarados) | [Bite](MOVES.md#bite) · [Dragon Rage](MOVES.md#dragon-rage) · [Leer](MOVES.md#leer) · [Dragon Slam](MOVES.md#dragon-slam) |
 | 43 | [Exeggutor](POKEDEX.md#119-exeggutor) | [Razor Leaf](MOVES.md#razor-leaf) · [Hypnosis](MOVES.md#hypnosis) · [Stomp](MOVES.md#stomp) · [Psychic](MOVES.md#psychic) |
 | 44 | [Arcanine](POKEDEX.md#66-arcanine) | [Flamethrower](MOVES.md#flamethrower) · [Ember](MOVES.md#ember) · [Leer](MOVES.md#leer) · [Take Down](MOVES.md#take-down) |
@@ -1390,22 +1390,22 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 28 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) |
+| 28 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Power-up Punch](MOVES.md#power-up-punch) |
 | 28 | [Mankey](POKEDEX.md#62-mankey) | [Low Kick](MOVES.md#low-kick) · [Karate Chop](MOVES.md#karate-chop) · [Fury Swipes](MOVES.md#fury-swipes) · [Focus Energy](MOVES.md#focus-energy) |
-| 28 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) |
+| 28 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Power-up Punch](MOVES.md#power-up-punch) |
 
 **2** · Route 16
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 29 | [Mankey](POKEDEX.md#62-mankey) | [Low Kick](MOVES.md#low-kick) · [Karate Chop](MOVES.md#karate-chop) · [Fury Swipes](MOVES.md#fury-swipes) · [Focus Energy](MOVES.md#focus-energy) |
-| 29 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) |
+| 29 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Power-up Punch](MOVES.md#power-up-punch) |
 
 **3** · Route 16
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 33 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) |
+| 33 | [Machop](POKEDEX.md#78-machop) | [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Power-up Punch](MOVES.md#power-up-punch) · [Cross Chop](MOVES.md#cross-chop) |
 
 **4** · Route 17
 
@@ -1418,14 +1418,14 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 29 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) |
-| 29 | [Machoke](POKEDEX.md#79-machoke) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) |
+| 29 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Power-up Punch](MOVES.md#power-up-punch) |
+| 29 | [Machoke](POKEDEX.md#79-machoke) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Power-up Punch](MOVES.md#power-up-punch) |
 
 **6** · Route 17
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 33 | [Machoke](POKEDEX.md#79-machoke) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) |
+| 33 | [Machoke](POKEDEX.md#79-machoke) | [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Power-up Punch](MOVES.md#power-up-punch) · [Cross Chop](MOVES.md#cross-chop) |
 
 **7** · Route 17
 
@@ -1433,15 +1433,15 @@
 |---:|:--|:--|
 | 26 | [Mankey](POKEDEX.md#62-mankey) | [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Karate Chop](MOVES.md#karate-chop) · [Fury Swipes](MOVES.md#fury-swipes) |
 | 26 | [Mankey](POKEDEX.md#62-mankey) | [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Karate Chop](MOVES.md#karate-chop) · [Fury Swipes](MOVES.md#fury-swipes) |
-| 26 | [Machoke](POKEDEX.md#79-machoke) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) |
-| 26 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) |
+| 26 | [Machoke](POKEDEX.md#79-machoke) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Power-up Punch](MOVES.md#power-up-punch) |
+| 26 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Power-up Punch](MOVES.md#power-up-punch) |
 
 **8** · Route 17
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 29 | [Primeape](POKEDEX.md#63-primeape) | [Low Kick](MOVES.md#low-kick) · [Karate Chop](MOVES.md#karate-chop) · [Fury Swipes](MOVES.md#fury-swipes) · [Focus Energy](MOVES.md#focus-energy) |
-| 29 | [Machoke](POKEDEX.md#79-machoke) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) |
+| 29 | [Machoke](POKEDEX.md#79-machoke) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Power-up Punch](MOVES.md#power-up-punch) |
 
 **9** · Sea Route 21
 
@@ -1572,7 +1572,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 29 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 29 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 | 29 | [Wigglytuff](POKEDEX.md#3-wigglytuff) | [Doubleslap](MOVES.md#doubleslap) · [Sing](MOVES.md#sing) · [Fairy Wind](MOVES.md#fairy-wind) · [Drainingkiss](MOVES.md#drainingkiss) |
 
 **10** · Route 15
@@ -1786,15 +1786,15 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 29 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
-| 29 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 29 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 
 **2** · Route 13
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 25 | [Spearow](POKEDEX.md#25-spearow) | [Growl](MOVES.md#growl) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Mirror Move](MOVES.md#mirror-move) |
-| 25 | [Pidgey](POKEDEX.md#20-pidgey) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
-| 25 | [Pidgey](POKEDEX.md#20-pidgey) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 25 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
+| 25 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 | 25 | [Spearow](POKEDEX.md#25-spearow) | [Growl](MOVES.md#growl) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Mirror Move](MOVES.md#mirror-move) |
 | 25 | [Spearow](POKEDEX.md#25-spearow) | [Growl](MOVES.md#growl) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Mirror Move](MOVES.md#mirror-move) |
 
@@ -1802,8 +1802,8 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 26 | [Pidgey](POKEDEX.md#20-pidgey) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
-| 26 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 26 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
+| 26 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 | 26 | [Spearow](POKEDEX.md#25-spearow) | [Growl](MOVES.md#growl) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Mirror Move](MOVES.md#mirror-move) |
 | 26 | [Fearow](POKEDEX.md#26-fearow) | [Growl](MOVES.md#growl) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Feint Attack](MOVES.md#feint-attack) |
 
@@ -1824,10 +1824,10 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 26 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 26 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 | 26 | [Farfetch'd](POKEDEX.md#94-farfetchd) | [Sand-Attack](MOVES.md#sand-attack) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Swords Dance](MOVES.md#swords-dance) |
 | 26 | [Doduo](POKEDEX.md#95-doduo) | [Peck](MOVES.md#peck) · [Growl](MOVES.md#growl) · [Fury Attack](MOVES.md#fury-attack) |
-| 26 | [Pidgey](POKEDEX.md#20-pidgey) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 26 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 
 **7** · Route 15
 
@@ -1865,16 +1865,16 @@
 |---:|:--|:--|
 | 30 | [Fearow](POKEDEX.md#26-fearow) | [Growl](MOVES.md#growl) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Feint Attack](MOVES.md#feint-attack) |
 | 30 | [Fearow](POKEDEX.md#26-fearow) | [Growl](MOVES.md#growl) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Feint Attack](MOVES.md#feint-attack) |
-| 30 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 30 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 
 **12** · *not used*
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 39 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
-| 39 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
-| 39 | [Pidgey](POKEDEX.md#20-pidgey) | [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) · [Agility](MOVES.md#agility) |
-| 39 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
+| 39 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) · [Air Slash](MOVES.md#air-slash) |
+| 39 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) · [Air Slash](MOVES.md#air-slash) |
+| 39 | [Pidgey](POKEDEX.md#20-pidgey) | [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) · [Air Slash](MOVES.md#air-slash) · [Agility](MOVES.md#agility) |
+| 39 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) · [Air Slash](MOVES.md#air-slash) |
 
 **13** · *not used*
 
@@ -1889,22 +1889,22 @@
 |---:|:--|:--|
 | 28 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 | 28 | [Doduo](POKEDEX.md#95-doduo) | [Peck](MOVES.md#peck) · [Growl](MOVES.md#growl) · [Fury Attack](MOVES.md#fury-attack) |
-| 28 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 28 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 
 **15** · Route 14
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 26 | [Pidgey](POKEDEX.md#20-pidgey) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 26 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 | 26 | [Spearow](POKEDEX.md#25-spearow) | [Growl](MOVES.md#growl) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Mirror Move](MOVES.md#mirror-move) |
-| 26 | [Pidgey](POKEDEX.md#20-pidgey) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 26 | [Pidgey](POKEDEX.md#20-pidgey) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 | 26 | [Fearow](POKEDEX.md#26-fearow) | [Growl](MOVES.md#growl) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Feint Attack](MOVES.md#feint-attack) |
 
 **16** · Route 14
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 29 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Gust](MOVES.md#gust) · [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) |
+| 29 | [Pidgeotto](POKEDEX.md#21-pidgeotto) | [Sand-Attack](MOVES.md#sand-attack) · [Quick Attack](MOVES.md#quick-attack) · [Whirlwind](MOVES.md#whirlwind) · [Wing Attack](MOVES.md#wing-attack) |
 | 29 | [Fearow](POKEDEX.md#26-fearow) | [Growl](MOVES.md#growl) · [Leer](MOVES.md#leer) · [Fury Attack](MOVES.md#fury-attack) · [Feint Attack](MOVES.md#feint-attack) |
 
 **17** · Route 14
@@ -1939,8 +1939,8 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 32 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) |
-| 32 | [Machoke](POKEDEX.md#79-machoke) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) |
+| 32 | [Machop](POKEDEX.md#78-machop) | [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Power-up Punch](MOVES.md#power-up-punch) · [Cross Chop](MOVES.md#cross-chop) |
+| 32 | [Machoke](POKEDEX.md#79-machoke) | [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Power-up Punch](MOVES.md#power-up-punch) · [Cross Chop](MOVES.md#cross-chop) |
 
 **4** · Fighting Dojo
 
@@ -1952,7 +1952,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 31 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) |
+| 31 | [Machop](POKEDEX.md#78-machop) | [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Power-up Punch](MOVES.md#power-up-punch) · [Cross Chop](MOVES.md#cross-chop) |
 | 31 | [Mankey](POKEDEX.md#62-mankey) | [Low Kick](MOVES.md#low-kick) · [Karate Chop](MOVES.md#karate-chop) · [Fury Swipes](MOVES.md#fury-swipes) · [Focus Energy](MOVES.md#focus-energy) |
 | 31 | [Primeape](POKEDEX.md#63-primeape) | [Low Kick](MOVES.md#low-kick) · [Karate Chop](MOVES.md#karate-chop) · [Fury Swipes](MOVES.md#fury-swipes) · [Focus Energy](MOVES.md#focus-energy) |
 
@@ -1960,28 +1960,28 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 40 | [Machop](POKEDEX.md#78-machop) | [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) · [Seismic Toss](MOVES.md#seismic-toss) |
-| 40 | [Machoke](POKEDEX.md#79-machoke) | [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) |
+| 40 | [Machop](POKEDEX.md#78-machop) | [Power-up Punch](MOVES.md#power-up-punch) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) · [Seismic Toss](MOVES.md#seismic-toss) |
+| 40 | [Machoke](POKEDEX.md#79-machoke) | [Leer](MOVES.md#leer) · [Power-up Punch](MOVES.md#power-up-punch) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) |
 
 **7** · Viridian Gym
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 43 | [Ledian](POKEDEX.md#17-ledian) | [Light Screen](MOVES.md#light-screen) · [Reflect](MOVES.md#reflect) · [Double Team](MOVES.md#double-team) · [Swift](MOVES.md#swift) |
+| 43 | [Ledian](POKEDEX.md#17-ledian) | [Light Screen](MOVES.md#light-screen) · [Reflect](MOVES.md#reflect) · [Double Team](MOVES.md#double-team) · [Air Slash](MOVES.md#air-slash) |
 
 **8** · Viridian Gym
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 38 | [Machop](POKEDEX.md#78-machop) | [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) |
+| 38 | [Machop](POKEDEX.md#78-machop) | [Low Kick](MOVES.md#low-kick) · [Power-up Punch](MOVES.md#power-up-punch) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) |
 | 38 | [Tyrogue](POKEDEX.md#122-tyrogue) | [Tackle](MOVES.md#tackle) · [Karate Chop](MOVES.md#karate-chop) · [Focus Energy](MOVES.md#focus-energy) |
-| 38 | [Machamp](POKEDEX.md#80-machamp) | [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) |
+| 38 | [Machamp](POKEDEX.md#80-machamp) | [Leer](MOVES.md#leer) · [Power-up Punch](MOVES.md#power-up-punch) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) |
 
 **9** · Victory Road 2F
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 43 | [Machoke](POKEDEX.md#79-machoke) | [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) |
+| 43 | [Machoke](POKEDEX.md#79-machoke) | [Leer](MOVES.md#leer) · [Power-up Punch](MOVES.md#power-up-punch) · [Cross Chop](MOVES.md#cross-chop) · [Focus Energy](MOVES.md#focus-energy) |
 | 43 | [Rhydon](POKEDEX.md#130-rhydon) | [Tail Whip](MOVES.md#tail-whip) · [Fury Attack](MOVES.md#fury-attack) · [Horn Drill](MOVES.md#horn-drill) · [Cross Chop](MOVES.md#cross-chop) |
 | 43 | [Annihilape](POKEDEX.md#64-annihilape) | [Focus Energy](MOVES.md#focus-energy) · [Shadow Ball](MOVES.md#shadow-ball) · [Rage](MOVES.md#rage) · [Screech](MOVES.md#screech) |
 
@@ -2110,7 +2110,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 34 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
+| 34 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) · [Fairy Wind](MOVES.md#fairy-wind) |
 | 34 | [Voltorb](POKEDEX.md#116-voltorb) | [Screech](MOVES.md#screech) · [Sonicboom](MOVES.md#sonicboom) · [Selfdestruct](MOVES.md#selfdestruct) · [Light Screen](MOVES.md#light-screen) |
 
 **2** · Silph Co 2F
@@ -2119,7 +2119,7 @@
 |---:|:--|:--|
 | 26 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
 | 26 | [Weezing](POKEDEX.md#128-weezing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
-| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 26 | [Weezing](POKEDEX.md#128-weezing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
 
 **3** · Silph Co 2F
@@ -2148,7 +2148,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 26 | [Magneton](POKEDEX.md#5-magneton) | [Tackle](MOVES.md#tackle) · [Thundershock](MOVES.md#thundershock) · [Sonicboom](MOVES.md#sonicboom) |
-| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 26 | [Weezing](POKEDEX.md#128-weezing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) |
 | 26 | [Magnemite](POKEDEX.md#4-magnemite) | [Thundershock](MOVES.md#thundershock) · [Thunder Wave](MOVES.md#thunder-wave) · [Sonicboom](MOVES.md#sonicboom) · [Magnet Bomb](MOVES.md#magnet-bomb) |
 
@@ -2157,10 +2157,10 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 25 | [Voltorb](POKEDEX.md#116-voltorb) | [Tackle](MOVES.md#tackle) · [Screech](MOVES.md#screech) · [Sonicboom](MOVES.md#sonicboom) · [Selfdestruct](MOVES.md#selfdestruct) |
-| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 25 | [Magneton](POKEDEX.md#5-magneton) | [Tackle](MOVES.md#tackle) · [Thundershock](MOVES.md#thundershock) · [Sonicboom](MOVES.md#sonicboom) |
 | 25 | [Elekid](POKEDEX.md#152-elekid) | [Leer](MOVES.md#leer) · [Thundershock](MOVES.md#thundershock) · [Light Screen](MOVES.md#light-screen) · [Swift](MOVES.md#swift) |
-| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 25 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **8** · Silph Co 7F
 
@@ -2181,7 +2181,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 28 | [Voltorb](POKEDEX.md#116-voltorb) | [Tackle](MOVES.md#tackle) · [Screech](MOVES.md#screech) · [Sonicboom](MOVES.md#sonicboom) · [Selfdestruct](MOVES.md#selfdestruct) |
-| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 28 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 28 | [Magneton](POKEDEX.md#5-magneton) | [Tackle](MOVES.md#tackle) · [Thundershock](MOVES.md#thundershock) · [Sonicboom](MOVES.md#sonicboom) · [Magnet Bomb](MOVES.md#magnet-bomb) |
 
 **11** · Silph Co 10F
@@ -2189,21 +2189,21 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 29 | [Magnemite](POKEDEX.md#4-magnemite) | [Thunder Wave](MOVES.md#thunder-wave) · [Sonicboom](MOVES.md#sonicboom) · [Magnet Bomb](MOVES.md#magnet-bomb) · [Swift](MOVES.md#swift) |
-| 29 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 29 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **12** · Pokémon Mansion 3F
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 33 | [Elekid](POKEDEX.md#152-elekid) | [Thundershock](MOVES.md#thundershock) · [Light Screen](MOVES.md#light-screen) · [Swift](MOVES.md#swift) · [Screech](MOVES.md#screech) |
-| 33 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Thundershock](MOVES.md#thundershock) · [Light Screen](MOVES.md#light-screen) · [Swift](MOVES.md#swift) · [Thunderpunch](MOVES.md#thunderpunch) |
+| 33 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Light Screen](MOVES.md#light-screen) · [Swift](MOVES.md#swift) · [Thunderpunch](MOVES.md#thunderpunch) · [Night Slash](MOVES.md#night-slash) |
 | 33 | [Voltorb](POKEDEX.md#116-voltorb) | [Screech](MOVES.md#screech) · [Sonicboom](MOVES.md#sonicboom) · [Selfdestruct](MOVES.md#selfdestruct) · [Light Screen](MOVES.md#light-screen) |
 
 **13** · Pokémon Mansion B1F
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 34 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Thundershock](MOVES.md#thundershock) · [Light Screen](MOVES.md#light-screen) · [Swift](MOVES.md#swift) · [Thunderpunch](MOVES.md#thunderpunch) |
+| 34 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Light Screen](MOVES.md#light-screen) · [Swift](MOVES.md#swift) · [Thunderpunch](MOVES.md#thunderpunch) · [Night Slash](MOVES.md#night-slash) |
 | 34 | [Electrode](POKEDEX.md#117-electrode) | [Screech](MOVES.md#screech) · [Sonicboom](MOVES.md#sonicboom) · [Selfdestruct](MOVES.md#selfdestruct) · [Light Screen](MOVES.md#light-screen) |
 
 ---
@@ -2223,7 +2223,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 37 | [Nidorino](POKEDEX.md#38-nidorino) | [Double Kick](MOVES.md#double-kick) · [Poison Sting](MOVES.md#poison-sting) · [Focus Energy](MOVES.md#focus-energy) · [Fury Attack](MOVES.md#fury-attack) |
-| 35 | [Kangaskhan](POKEDEX.md#135-kangaskhan) | [Tackle](MOVES.md#tackle) · [Rage](MOVES.md#rage) · [Bite](MOVES.md#bite) · [Tail Whip](MOVES.md#tail-whip) |
+| 35 | [Kangaskhan](POKEDEX.md#135-kangaskhan) | [Tackle](MOVES.md#tackle) · [Rage](MOVES.md#rage) · [Bite](MOVES.md#bite) · [Power-up Punch](MOVES.md#power-up-punch) |
 | 37 | [Rhyhorn](POKEDEX.md#129-rhyhorn) | [Horn Attack](MOVES.md#horn-attack) · [Stomp](MOVES.md#stomp) · [Horn Drill](MOVES.md#horn-drill) |
 | 41 | [Steelix](POKEDEX.md#111-steelix) | [Bulldoze](MOVES.md#bulldoze) · [Rock Slide](MOVES.md#rock-slide) · [Iron Defense](MOVES.md#iron-defense) · [Earthquake](MOVES.md#earthquake) |
 
@@ -2263,7 +2263,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 17 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) |
+| 17 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) |
 | 17 | [Drowzee](POKEDEX.md#112-drowzee) | [Pound](MOVES.md#pound) · [Hypnosis](MOVES.md#hypnosis) · [Disable](MOVES.md#disable) · [Confusion](MOVES.md#confusion) |
 
 **6** · Route 24
@@ -2285,7 +2285,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 21 | [Drowzee](POKEDEX.md#112-drowzee) | [Pound](MOVES.md#pound) · [Hypnosis](MOVES.md#hypnosis) · [Disable](MOVES.md#disable) · [Confusion](MOVES.md#confusion) |
-| 21 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) |
+| 21 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) |
 
 **9** · Rocket Hideout B1F
 
@@ -2299,8 +2299,8 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 20 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
-| 20 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
-| 20 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 20 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
+| 20 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **11** · Rocket Hideout B1F
 
@@ -2316,14 +2316,14 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 22 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
-| 22 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 22 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **13** · Rocket Hideout B2F
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 17 | [Zubat](POKEDEX.md#45-zubat) | [Leech Life](MOVES.md#leech-life) · [Supersonic](MOVES.md#supersonic) · [Bite](MOVES.md#bite) |
-| 17 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 17 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 17 | [Grimer](POKEDEX.md#99-grimer) | [Pound](MOVES.md#pound) · [Disable](MOVES.md#disable) |
 | 17 | [Zubat](POKEDEX.md#45-zubat) | [Leech Life](MOVES.md#leech-life) · [Supersonic](MOVES.md#supersonic) · [Bite](MOVES.md#bite) |
 | 17 | [Raticate](POKEDEX.md#24-raticate) | [Tackle](MOVES.md#tackle) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Hyper Fang](MOVES.md#hyper-fang) |
@@ -2341,7 +2341,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 21 | [Tyrogue](POKEDEX.md#122-tyrogue) | [Tackle](MOVES.md#tackle) · [Karate Chop](MOVES.md#karate-chop) · [Focus Energy](MOVES.md#focus-energy) |
-| 21 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) |
+| 21 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) |
 
 **16** · Rocket Hideout B4F
 
@@ -2363,7 +2363,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 21 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 21 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 21 | [Zubat](POKEDEX.md#45-zubat) | [Leech Life](MOVES.md#leech-life) · [Supersonic](MOVES.md#supersonic) · [Bite](MOVES.md#bite) · [Confuse Ray](MOVES.md#confuse-ray) |
 
 **19** · Pokémon Tower 7F
@@ -2378,7 +2378,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 26 | [Drowzee](POKEDEX.md#112-drowzee) | [Hypnosis](MOVES.md#hypnosis) · [Disable](MOVES.md#disable) · [Confusion](MOVES.md#confusion) · [Headbutt](MOVES.md#headbutt) |
 
 **21** · Pokémon Tower 7F
@@ -2395,7 +2395,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 26 | [Drowzee](POKEDEX.md#112-drowzee) | [Hypnosis](MOVES.md#hypnosis) · [Disable](MOVES.md#disable) · [Confusion](MOVES.md#confusion) · [Headbutt](MOVES.md#headbutt) |
-| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 
 **23** · Silph Co 2F
 
@@ -2453,8 +2453,8 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 29 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) |
-| 29 | [Machoke](POKEDEX.md#79-machoke) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) |
+| 29 | [Machop](POKEDEX.md#78-machop) | [Karate Chop](MOVES.md#karate-chop) · [Leer](MOVES.md#leer) · [Low Kick](MOVES.md#low-kick) · [Power-up Punch](MOVES.md#power-up-punch) |
+| 29 | [Machoke](POKEDEX.md#79-machoke) | [Karate Chop](MOVES.md#karate-chop) · [Low Kick](MOVES.md#low-kick) · [Leer](MOVES.md#leer) · [Power-up Punch](MOVES.md#power-up-punch) |
 
 **31** · Silph Co 6F
 
@@ -2470,7 +2470,7 @@
 |---:|:--|:--|
 | 26 | [Houndoom](POKEDEX.md#102-houndoom) | [Ember](MOVES.md#ember) · [Roar](MOVES.md#roar) · [Smog](MOVES.md#smog) · [Bite](MOVES.md#bite) |
 | 26 | [Arbok](POKEDEX.md#28-arbok) | [Wrap](MOVES.md#wrap) · [Leer](MOVES.md#leer) · [Poison Sting](MOVES.md#poison-sting) · [Bite](MOVES.md#bite) |
-| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 26 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |
 | 26 | [Golbat](POKEDEX.md#46-golbat) | [Screech](MOVES.md#screech) · [Bite](MOVES.md#bite) · [Supersonic](MOVES.md#supersonic) · [Confuse Ray](MOVES.md#confuse-ray) |
 
 **33** · Silph Co 7F
@@ -2759,7 +2759,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 66 | [Electrode](POKEDEX.md#117-electrode) | [Thunderbolt](MOVES.md#thunderbolt) · [Light Screen](MOVES.md#light-screen) · [Thunder Wave](MOVES.md#thunder-wave) · [Explosion](MOVES.md#explosion) |
-| 67 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Thunderpunch](MOVES.md#thunderpunch) · [Screech](MOVES.md#screech) · [Thunderbolt](MOVES.md#thunderbolt) · [Thunder](MOVES.md#thunder) |
+| 67 | [Electabuzz](POKEDEX.md#153-electabuzz) | [Night Slash](MOVES.md#night-slash) · [Screech](MOVES.md#screech) · [Thunderbolt](MOVES.md#thunderbolt) · [Thunder](MOVES.md#thunder) |
 | 67 | [Jolteon](POKEDEX.md#166-jolteon) | [Double Kick](MOVES.md#double-kick) · [Agility](MOVES.md#agility) · [Pin Missile](MOVES.md#pin-missile) · [Thunder](MOVES.md#thunder) |
 | 67 | [Magnezone](POKEDEX.md#6-magnezone) | [Thunderbolt](MOVES.md#thunderbolt) · [Flash Cannon](MOVES.md#flash-cannon) · [Light Screen](MOVES.md#light-screen) · [Screech](MOVES.md#screech) |
 | 68 | [Raichu](POKEDEX.md#31-raichu) | [Submission](MOVES.md#submission) · [Thunder Wave](MOVES.md#thunder-wave) · [Thunderbolt](MOVES.md#thunderbolt) · [Psychic](MOVES.md#psychic) |
@@ -2794,10 +2794,10 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 37 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Sludge](MOVES.md#sludge) · [Smokescreen](MOVES.md#smokescreen) |
+| 37 | [Koffing](POKEDEX.md#127-koffing) | [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) · [Fairy Wind](MOVES.md#fairy-wind) · [Sludge](MOVES.md#sludge) |
 | 40 | [Muk](POKEDEX.md#100-muk) | [Poison Gas](MOVES.md#poison-gas) · [Minimize](MOVES.md#minimize) · [Sludge](MOVES.md#sludge) · [Feint Attack](MOVES.md#feint-attack) |
 | 37 | [Venomoth](POKEDEX.md#55-venomoth) | [Disable](MOVES.md#disable) · [Poisonpowder](MOVES.md#poisonpowder) · [Leech Life](MOVES.md#leech-life) · [Stun Spore](MOVES.md#stun-spore) |
-| 43 | [Weezing](POKEDEX.md#128-weezing) | [Sludge](MOVES.md#sludge) · [Fairy Wind](MOVES.md#fairy-wind) · [Toxic](MOVES.md#toxic) · [Selfdestruct](MOVES.md#selfdestruct) |
+| 43 | [Weezing](POKEDEX.md#128-weezing) | [Sludge](MOVES.md#sludge) · [Moonblast](MOVES.md#moonblast) · [Toxic](MOVES.md#toxic) · [Selfdestruct](MOVES.md#selfdestruct) |
 
 **2** · Fuchsia Gym · Rematch
 
@@ -2807,7 +2807,7 @@
 | 71 | [Weezing](POKEDEX.md#128-weezing) | [Smokescreen](MOVES.md#smokescreen) · [Toxic](MOVES.md#toxic) · [Fairy Wind](MOVES.md#fairy-wind) · [Explosion](MOVES.md#explosion) |
 | 71 | [Arbok](POKEDEX.md#28-arbok) | [Bite](MOVES.md#bite) · [Glare](MOVES.md#glare) · [Screech](MOVES.md#screech) · [Acid](MOVES.md#acid) |
 | 71 | [Venomoth](POKEDEX.md#55-venomoth) | [Stun Spore](MOVES.md#stun-spore) · [Toxic](MOVES.md#toxic) · [Sleep Powder](MOVES.md#sleep-powder) · [Psychic](MOVES.md#psychic) |
-| 72 | [Crobat](POKEDEX.md#47-crobat) | [Wing Attack](MOVES.md#wing-attack) · [Confuse Ray](MOVES.md#confuse-ray) · [Crunch](MOVES.md#crunch) · [Haze](MOVES.md#haze) |
+| 72 | [Crobat](POKEDEX.md#47-crobat) | [Wing Attack](MOVES.md#wing-attack) · [Crunch](MOVES.md#crunch) · [Air Slash](MOVES.md#air-slash) · [Haze](MOVES.md#haze) |
 
 ---
 
@@ -2817,7 +2817,7 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 42 | [Magmar](POKEDEX.md#155-magmar) | [Leer](MOVES.md#leer) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) · [Flamethrower](MOVES.md#flamethrower) |
+| 42 | [Magmar](POKEDEX.md#155-magmar) | [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) · [Sludge](MOVES.md#sludge) · [Flamethrower](MOVES.md#flamethrower) |
 | 42 | [Rapidash](POKEDEX.md#90-rapidash) | [Stomp](MOVES.md#stomp) · [Fairy Wind](MOVES.md#fairy-wind) · [Flamethrower](MOVES.md#flamethrower) · [Fire Spin](MOVES.md#fire-spin) |
 | 45 | [Ninetales](POKEDEX.md#44-ninetales) | [Flamethrower](MOVES.md#flamethrower) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Confuse Ray](MOVES.md#confuse-ray) |
 | 47 | [Arcanine](POKEDEX.md#66-arcanine) | [Agility](MOVES.md#agility) · [Ember](MOVES.md#ember) · [Fire Blast](MOVES.md#fire-blast) · [Take Down](MOVES.md#take-down) |
@@ -2827,7 +2827,7 @@
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
 | 74 | [Ninetales](POKEDEX.md#44-ninetales) | [Flamethrower](MOVES.md#flamethrower) · [Tail Whip](MOVES.md#tail-whip) · [Quick Attack](MOVES.md#quick-attack) · [Confuse Ray](MOVES.md#confuse-ray) |
-| 75 | [Magmar](POKEDEX.md#155-magmar) | [Smokescreen](MOVES.md#smokescreen) · [Flamethrower](MOVES.md#flamethrower) · [Confuse Ray](MOVES.md#confuse-ray) · [Fire Blast](MOVES.md#fire-blast) |
+| 75 | [Magmar](POKEDEX.md#155-magmar) | [Sludge](MOVES.md#sludge) · [Flamethrower](MOVES.md#flamethrower) · [Confuse Ray](MOVES.md#confuse-ray) · [Fire Blast](MOVES.md#fire-blast) |
 | 75 | [Flareon](POKEDEX.md#167-flareon) | [Leer](MOVES.md#leer) · [Fire Spin](MOVES.md#fire-spin) · [Rage](MOVES.md#rage) · [Flamethrower](MOVES.md#flamethrower) |
 | 75 | [Arcanine](POKEDEX.md#66-arcanine) | [Fire Blast](MOVES.md#fire-blast) · [Leer](MOVES.md#leer) · [Take Down](MOVES.md#take-down) · [Extremespeed](MOVES.md#extremespeed) |
 | 76 | [Rapidash](POKEDEX.md#90-rapidash) | [Fire Blast](MOVES.md#fire-blast) · [Take Down](MOVES.md#take-down) · [Moonblast](MOVES.md#moonblast) · [Agility](MOVES.md#agility) |
@@ -3061,11 +3061,11 @@
 
 | Lv | Pokémon | Moves |
 |---:|:--|:--|
-| 54 | [Lapras](POKEDEX.md#162-lapras) | [Body Slam](MOVES.md#body-slam) · [Confuse Ray](MOVES.md#confuse-ray) · [Ice Beam](MOVES.md#ice-beam) · [Hydro Pump](MOVES.md#hydro-pump) |
+| 54 | [Dewgong](POKEDEX.md#98-dewgong) | [Surf](MOVES.md#surf) · [Aurora Beam](MOVES.md#aurora-beam) · [Blizzard](MOVES.md#blizzard) · [Take Down](MOVES.md#take-down) |
 | 53 | [Cloyster](POKEDEX.md#104-cloyster) | [Supersonic](MOVES.md#supersonic) · [Clamp](MOVES.md#clamp) · [Aurora Beam](MOVES.md#aurora-beam) · [Spike Cannon](MOVES.md#spike-cannon) |
 | 54 | [Weavile](POKEDEX.md#149-weavile) | [Ice Punch](MOVES.md#ice-punch) · [Feint Attack](MOVES.md#feint-attack) · [Agility](MOVES.md#agility) · [Night Slash](MOVES.md#night-slash) |
 | 56 | [Jynx](POKEDEX.md#151-jynx) | [Doubleslap](MOVES.md#doubleslap) · [Ice Punch](MOVES.md#ice-punch) · [Lovely Kiss](MOVES.md#lovely-kiss) · [Thrash](MOVES.md#thrash) |
-| 56 | [Dewgong](POKEDEX.md#98-dewgong) | [Surf](MOVES.md#surf) · [Rest](MOVES.md#rest) · [Blizzard](MOVES.md#blizzard) · [Ice Beam](MOVES.md#ice-beam) |
+| 56 | [Lapras](POKEDEX.md#162-lapras) | [Body Slam](MOVES.md#body-slam) · [Confuse Ray](MOVES.md#confuse-ray) · [Ice Beam](MOVES.md#ice-beam) · [Hydro Pump](MOVES.md#hydro-pump) |
 
 ---
 
@@ -3377,4 +3377,4 @@
 |---:|:--|:--|
 | 14 | [Ekans](POKEDEX.md#27-ekans) | [Wrap](MOVES.md#wrap) · [Leer](MOVES.md#leer) · [Poison Sting](MOVES.md#poison-sting) |
 | 14 | [Meowth](POKEDEX.md#58-meowth) | [Scratch](MOVES.md#scratch) · [Growl](MOVES.md#growl) · [Bite](MOVES.md#bite) |
-| 14 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) |
+| 14 | [Koffing](POKEDEX.md#127-koffing) | [Tackle](MOVES.md#tackle) · [Smog](MOVES.md#smog) · [Smokescreen](MOVES.md#smokescreen) |

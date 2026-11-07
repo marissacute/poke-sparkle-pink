@@ -182,5 +182,7 @@ MoveNames::
 	li "BUG BITE"
 	li "EXTREMESPEED"
 	li "BULLDOZE"
+	li "AIR SLASH"
+	li "POWERUPPUNCH"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

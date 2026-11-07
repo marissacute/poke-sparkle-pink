@@ -20,7 +20,7 @@
 	     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
 	     SEISMIC_TOSS, RAGE,         THUNDER,      EARTHQUAKE,   \
 	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
-	     FIRE_BLAST,   SKULL_BASH,   REST,        
+	     FIRE_BLAST,   SKULL_BASH,   REST,         CUT
 	; end
 
 	db BANK(RhydonPicFront)

@@ -181,6 +181,8 @@ AttackAnimationPointers:
 	dw BugBiteAnim
 	dw ExtremeSpeedAnim
 	dw BulldozeAnim
+	dw AirSlashAnim
+	dw PowerUpPunchAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -266,6 +268,10 @@ DoubleSlapAnim:
 
 MegaPunchAnim:
 	battle_anim MEGA_PUNCH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	db -1 ; end
+
+PowerUpPunchAnim:
+	battle_anim POWER_UP_PUNCH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 
 PayDayAnim:
@@ -1158,6 +1164,10 @@ SuperFangAnim:
 	battle_anim LEECH_SEED, SE_DARK_SCREEN_PALETTE
 	battle_anim SUPER_FANG, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+AirSlashAnim:
+	battle_anim AIR_SLASH, SUBANIM_0_SCRATCHES, 0, 6
 	db -1 ; end
 
 XScissorAnim:

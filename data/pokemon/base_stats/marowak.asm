@@ -20,7 +20,7 @@
 	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  \
 	     BIDE,         FIRE_BLAST,   SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     STRENGTH,     SHADOW_BALL
+	     STRENGTH,     SHADOW_BALL,  CUT
 	; end
 
 	db BANK(MarowakPicFront)

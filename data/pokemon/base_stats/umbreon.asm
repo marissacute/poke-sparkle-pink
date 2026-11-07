@@ -17,7 +17,8 @@
 	; tm/hm learnset
 	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         \
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   COUNTER,      SHADOW_BALL
+	     SKULL_BASH,   REST,         SUBSTITUTE,   COUNTER,      SHADOW_BALL,   \
+		 CUT
 	; end
 
 	db BANK(UmbreonPicFront)

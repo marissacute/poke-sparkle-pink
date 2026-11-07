@@ -19,7 +19,7 @@
 	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         \
 	     DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         FIRE_BLAST,   SWIFT,        SKULL_BASH,   \
-	     REST,         THUNDER_WAVE, SUBSTITUTE,   SURF
+	     REST,         THUNDER_WAVE, SUBSTITUTE,   SURF,         CUT
 	; end
 
 	db BANK(DragonairPicFront)

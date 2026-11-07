@@ -11,14 +11,15 @@
 
 	dw ArticunoPicFront, ArticunoPicBack
 
-	db PECK, PSYBEAM, NO_MOVE, NO_MOVE ; level 1 learnset
+	db AIR_SLASH, PSYBEAM, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
 	     METRONOME,    TELEPORT,     PSYCHIC_M,    SHADOW_BALL,  HYPER_BEAM,   \
 	     RAGE,         MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     SWIFT,        SKY_ATTACK,   REST,         SUBSTITUTE,   FLY
+	     SWIFT,        SKY_ATTACK,   REST,         SUBSTITUTE,   FLY,          \
+		 CUT
 	; end
 
 	db BANK(ArticunoPicFront)
