@@ -738,7 +738,7 @@
 | 35 | [Air Slash](MOVES.md#air-slash) | Flying | 75 | 95% | 15 |
 | 39 | **[X-Scissor](MOVES.md#x-scissor)** | Bug | 80 | 100% | 15 |
 | 43 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
-| 50 | [Submission](MOVES.md#submission) | Fighting | 120 | 90% | 25 |
+| 50 | [Submission](MOVES.md#submission) | Fighting | 110 | 90% | 25 |
 
 **TM/HM moves**
 
@@ -784,7 +784,7 @@
 | 40 | [Air Slash](MOVES.md#air-slash) | Flying | 75 | 95% | 15 |
 | 45 | **[X-Scissor](MOVES.md#x-scissor)** | Bug | 80 | 100% | 15 |
 | 51 | [Agility](MOVES.md#agility) | Psychic | — | 100% | 30 |
-| 55 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
+| 55 | **[Submission](MOVES.md#submission)** | Fighting | 110 | 90% | 25 |
 
 **TM/HM moves**
 
@@ -1978,6 +1978,7 @@
 | 1 | [Tail Whip](MOVES.md#tail-whip) | Normal | — | 100% | 30 |
 | 1 | [Quick Attack](MOVES.md#quick-attack) | Normal | 40 | 100% | 30 |
 | 1 | [Roar](MOVES.md#roar) | Normal | — | 100% | 20 |
+| 40 | **[Shadow Ball](MOVES.md#shadow-ball)** | Ghost | 80 | 100% | 15 |
 
 **TM/HM moves**
 
@@ -2140,11 +2141,12 @@
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
 | 1 | [Tackle](MOVES.md#tackle) | Normal | 35 | 95% | 35 |
-| 12 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
+| 12 | **[Absorb](MOVES.md#absorb)** | Grass | 40 | 100% | 20 |
 | 15 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 17 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 19 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 | 24 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
+| 29 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 60 | 100% | 10 |
 | 33 | **[Petal Dance](MOVES.md#petal-dance)** | Grass | 70 | 100% | 20 |
 | 38 | [Toxic](MOVES.md#toxic) | Poison | — | 85% | 10 |
 | 46 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
@@ -2183,13 +2185,14 @@
 
 | Lv | Move | Type | Power | Acc | PP |
 |---:|:--|:--|---:|---:|---:|
-| 1 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
+| 1 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 60 | 100% | 10 |
 | 1 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 1 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 1 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
 | 26 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
+| 31 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 60 | 100% | 10 |
 | 36 | **[Petal Dance](MOVES.md#petal-dance)** | Grass | 70 | 100% | 20 |
-| 42 | [Toxic](MOVES.md#toxic) | Poison | — | 85% | 10 |
+| 42 | **[Sludge](MOVES.md#sludge)** | Poison | 75 | 100% | 20 |
 | 50 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
 
 **TM/HM moves**
@@ -2229,7 +2232,7 @@
 | 1 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
 | 1 | **[Petal Dance](MOVES.md#petal-dance)** | Grass | 70 | 100% | 20 |
 | 40 | **[Petal Dance](MOVES.md#petal-dance)** | Grass | 70 | 100% | 20 |
-| 44 | [Toxic](MOVES.md#toxic) | Poison | — | 85% | 10 |
+| 44 | **[Sludge](MOVES.md#sludge)** | Poison | 75 | 100% | 20 |
 | 52 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
 
 **TM/HM moves**
@@ -2568,7 +2571,8 @@
 | 17 | **[Pay Day](MOVES.md#pay-day)** | Normal | 40 | 100% | 20 |
 | 24 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
 | 33 | **[Fury Swipes](MOVES.md#fury-swipes)** | Normal | 18 | 80% | 15 |
-| 44 | **[Slash](MOVES.md#slash)** | Normal | 70 | 100% | 20 |
+| 37 | **[Slash](MOVES.md#slash)** | Normal | 70 | 100% | 20 |
+| 44 | [Night Slash](MOVES.md#night-slash) | Dark | 70 | 100% | 15 |
 
 **TM/HM moves**
 
@@ -2612,7 +2616,8 @@
 | 17 | **[Pay Day](MOVES.md#pay-day)** | Normal | 40 | 100% | 20 |
 | 24 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
 | 37 | **[Fury Swipes](MOVES.md#fury-swipes)** | Normal | 18 | 80% | 15 |
-| 51 | **[Slash](MOVES.md#slash)** | Normal | 70 | 100% | 20 |
+| 40 | **[Slash](MOVES.md#slash)** | Normal | 70 | 100% | 20 |
+| 51 | [Night Slash](MOVES.md#night-slash) | Dark | 70 | 100% | 15 |
 
 **TM/HM moves**
 
@@ -2798,7 +2803,7 @@
 | 27 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
 | 35 | [Rage](MOVES.md#rage) | Normal | 20 | 100% | 20 |
 | 38 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
-| 42 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
+| 42 | **[Submission](MOVES.md#submission)** | Fighting | 110 | 90% | 25 |
 | 48 | [Thrash](MOVES.md#thrash) | Normal | 90 | 100% | 20 |
 
 **TM/HM moves**
@@ -2842,7 +2847,7 @@
 | 1 | **[Shadow Ball](MOVES.md#shadow-ball)** | Ghost | 80 | 100% | 15 |
 | 1 | [Rage](MOVES.md#rage) | Normal | 20 | 100% | 20 |
 | 40 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
-| 44 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
+| 44 | **[Submission](MOVES.md#submission)** | Fighting | 110 | 90% | 25 |
 | 50 | [Thrash](MOVES.md#thrash) | Normal | 90 | 100% | 20 |
 | Evo | **[Shadow Ball](MOVES.md#shadow-ball)** | Ghost | 80 | 100% | 15 |
 
@@ -3451,7 +3456,7 @@
 | 30 | **[Cross Chop](MOVES.md#cross-chop)** | Fighting | 90 | 100% | 10 |
 | 35 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
 | 39 | [Seismic Toss](MOVES.md#seismic-toss) | Fighting | — | 100% | 20 |
-| 46 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
+| 46 | **[Submission](MOVES.md#submission)** | Fighting | 110 | 90% | 25 |
 
 **TM/HM moves**
 
@@ -3498,7 +3503,7 @@
 | 31 | **[Cross Chop](MOVES.md#cross-chop)** | Fighting | 90 | 100% | 10 |
 | 36 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
 | 44 | [Seismic Toss](MOVES.md#seismic-toss) | Fighting | — | 100% | 20 |
-| 52 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
+| 52 | **[Submission](MOVES.md#submission)** | Fighting | 110 | 90% | 25 |
 
 **TM/HM moves**
 
@@ -3543,7 +3548,7 @@
 | 31 | **[Cross Chop](MOVES.md#cross-chop)** | Fighting | 90 | 100% | 10 |
 | 36 | [Focus Energy](MOVES.md#focus-energy) | Normal | — | 100% | 30 |
 | 44 | [Seismic Toss](MOVES.md#seismic-toss) | Fighting | — | 100% | 20 |
-| 52 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
+| 52 | **[Submission](MOVES.md#submission)** | Fighting | 110 | 90% | 25 |
 
 **TM/HM moves**
 
@@ -3589,7 +3594,7 @@
 | 21 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 26 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
 | 33 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
-| 42 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
+| 42 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 60 | 100% | 10 |
 
 **TM/HM moves**
 
@@ -3634,7 +3639,7 @@
 | 23 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 29 | **[Acid](MOVES.md#acid)** | Poison | 65 | 100% | 30 |
 | 38 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
-| 49 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
+| 49 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 60 | 100% | 10 |
 
 **TM/HM moves**
 
@@ -4335,9 +4340,9 @@
 | HP | 90 | `███████▏░░░░░░░░░░░░` |
 | Attack | 70 | `█████▌░░░░░░░░░░░░░░` |
 | Defense | 80 | `██████▍░░░░░░░░░░░░░` |
-| Speed | 90 | `███████▏░░░░░░░░░░░░` |
+| Speed | 100 | `███████▉░░░░░░░░░░░░` |
 | Special | 95 | `███████▌░░░░░░░░░░░░` |
-| **Total** | **425** | |
+| **Total** | **435** | |
 
 #### Moves
 
@@ -4607,7 +4612,7 @@
 | 1 | [Supersonic](MOVES.md#supersonic) | Normal | — | 55% | 20 |
 | 1 | **[Clamp](MOVES.md#clamp)** | Water | 35 | 75% | 10 |
 | 1 | **[Aurora Beam](MOVES.md#aurora-beam)** | Ice | 65 | 100% | 20 |
-| 50 | [Spike Cannon](MOVES.md#spike-cannon) | Normal | 20 | 100% | 15 |
+| Evo | **[Spike Cannon](MOVES.md#spike-cannon)** | Ice | 20 | 100% | 15 |
 
 **TM/HM moves**
 
@@ -5127,9 +5132,11 @@
 | 1 | [Screech](MOVES.md#screech) | Normal | — | 85% | 40 |
 | 17 | [Sonicboom](MOVES.md#sonicboom) | Normal | — | 90% | 20 |
 | 22 | [Selfdestruct](MOVES.md#selfdestruct) | Normal | 130 | 100% | 5 |
+| 25 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 29 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
-| 36 | [Swift](MOVES.md#swift) | Normal | 60 | 100% | 20 |
-| 43 | [Explosion](MOVES.md#explosion) | Normal | 170 | 100% | 5 |
+| 33 | [Reflect](MOVES.md#reflect) | Psychic | — | 100% | 20 |
+| 36 | **[Thunderbolt](MOVES.md#thunderbolt)** | Electric | 95 | 100% | 15 |
+| 41 | [Explosion](MOVES.md#explosion) | Normal | 170 | 100% | 5 |
 
 **TM/HM moves**
 
@@ -5170,9 +5177,11 @@
 | 1 | [Sonicboom](MOVES.md#sonicboom) | Normal | — | 90% | 20 |
 | 17 | [Sonicboom](MOVES.md#sonicboom) | Normal | — | 90% | 20 |
 | 22 | [Selfdestruct](MOVES.md#selfdestruct) | Normal | 130 | 100% | 5 |
+| 25 | [Thunder Wave](MOVES.md#thunder-wave) | Electric | — | 100% | 20 |
 | 29 | [Light Screen](MOVES.md#light-screen) | Psychic | — | 100% | 30 |
-| 40 | [Swift](MOVES.md#swift) | Normal | 60 | 100% | 20 |
-| 50 | [Explosion](MOVES.md#explosion) | Normal | 170 | 100% | 5 |
+| 36 | [Reflect](MOVES.md#reflect) | Psychic | — | 100% | 20 |
+| 40 | **[Thunderbolt](MOVES.md#thunderbolt)** | Electric | 95 | 100% | 15 |
+| 45 | [Explosion](MOVES.md#explosion) | Normal | 170 | 100% | 5 |
 
 **TM/HM moves**
 
@@ -5684,7 +5693,7 @@
 | 40 | [Cross Chop](MOVES.md#cross-chop) | Fighting | 90 | 100% | 10 |
 | 48 | **[Earthquake](MOVES.md#earthquake)** | Ground | 100 | 100% | 10 |
 | 55 | [Take Down](MOVES.md#take-down) | Normal | 90 | 85% | 20 |
-| 64 | [Submission](MOVES.md#submission) | Fighting | 120 | 90% | 25 |
+| 64 | [Submission](MOVES.md#submission) | Fighting | 110 | 90% | 25 |
 
 **TM/HM moves**
 
@@ -5730,7 +5739,7 @@
 | 40 | **[Cross Chop](MOVES.md#cross-chop)** | Fighting | 90 | 100% | 10 |
 | 48 | **[Earthquake](MOVES.md#earthquake)** | Ground | 100 | 100% | 10 |
 | 55 | [Take Down](MOVES.md#take-down) | Normal | 90 | 85% | 20 |
-| 64 | **[Submission](MOVES.md#submission)** | Fighting | 120 | 90% | 25 |
+| 64 | **[Submission](MOVES.md#submission)** | Fighting | 110 | 90% | 25 |
 
 **TM/HM moves**
 
@@ -5917,11 +5926,11 @@
 | 1 | [Constrict](MOVES.md#constrict) | Normal | 10 | 100% | 35 |
 | 1 | [Bind](MOVES.md#bind) | Normal | 15 | 75% | 20 |
 | 23 | **[Vine Whip](MOVES.md#vine-whip)** | Grass | 55 | 100% | 10 |
-| 29 | **[Absorb](MOVES.md#absorb)** | Grass | 20 | 100% | 20 |
+| 29 | **[Absorb](MOVES.md#absorb)** | Grass | 40 | 100% | 20 |
 | 32 | [Poisonpowder](MOVES.md#poisonpowder) | Poison | — | 75% | 35 |
 | 36 | [Stun Spore](MOVES.md#stun-spore) | Grass | — | 75% | 30 |
 | 39 | [Sleep Powder](MOVES.md#sleep-powder) | Grass | — | 75% | 15 |
-| 45 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
+| 45 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 60 | 100% | 10 |
 | 49 | [Growth](MOVES.md#growth) | Normal | — | 100% | 40 |
 
 **TM/HM moves**
@@ -7487,7 +7496,7 @@
 | 10 | [Quick Attack](MOVES.md#quick-attack) | Normal | 40 | 100% | 30 |
 | 15 | **[Razor Leaf](MOVES.md#razor-leaf)** | Grass | 55 | 95% | 25 |
 | 20 | [Leech Seed](MOVES.md#leech-seed) | Grass | — | 90% | 10 |
-| 25 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 40 | 100% | 10 |
+| 25 | **[Mega Drain](MOVES.md#mega-drain)** | Grass | 60 | 100% | 10 |
 | 45 | [Swords Dance](MOVES.md#swords-dance) | Normal | — | 100% | 30 |
 | 50 | **[Solarbeam](MOVES.md#solarbeam)** | Grass | 120 | 100% | 10 |
 
@@ -7700,7 +7709,7 @@
 | 1 | [Withdraw](MOVES.md#withdraw) | Water | — | 100% | 40 |
 | 34 | [Horn Attack](MOVES.md#horn-attack) | Normal | 65 | 100% | 25 |
 | 39 | **[Rock Slide](MOVES.md#rock-slide)** | Rock | 75 | 90% | 10 |
-| 46 | [Spike Cannon](MOVES.md#spike-cannon) | Normal | 20 | 100% | 15 |
+| 46 | [Spike Cannon](MOVES.md#spike-cannon) | Ice | 20 | 100% | 15 |
 | 53 | **[Hydro Pump](MOVES.md#hydro-pump)** | Water | 120 | 80% | 5 |
 
 **TM/HM moves**
@@ -7741,7 +7750,7 @@
 | 1 | [Horn Attack](MOVES.md#horn-attack) | Normal | 65 | 100% | 25 |
 | 34 | [Horn Attack](MOVES.md#horn-attack) | Normal | 65 | 100% | 25 |
 | 39 | **[Rock Slide](MOVES.md#rock-slide)** | Rock | 75 | 90% | 10 |
-| 44 | [Spike Cannon](MOVES.md#spike-cannon) | Normal | 20 | 100% | 15 |
+| 44 | [Spike Cannon](MOVES.md#spike-cannon) | Ice | 20 | 100% | 15 |
 | 49 | **[Hydro Pump](MOVES.md#hydro-pump)** | Water | 120 | 80% | 5 |
 
 **TM/HM moves**
