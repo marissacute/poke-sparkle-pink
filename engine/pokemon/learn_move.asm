@@ -116,15 +116,30 @@ TryingToLearn:
 	call CopyData
 	callfar FormatMovesString
 	pop hl
+	ld a, [wMoveNum]
+	ld [wSavedMoveNum], a
+; save the sprites so they can be put back when leaving this menu
+	push hl ; save the pointer to the mon's moves
+	ld hl, wShadowOAM
+	ld de, wMonPartySpritesSavedOAM
+	ld bc, OBJ_SIZE * 4 * PARTY_LENGTH
+	call CopyData
+; start from a blank screen with no sprites
+	ld a, [wUpdateSpritesEnabled]
+	ld [wSavedUpdateSprites], a
+	xor a
+	ld [wUpdateSpritesEnabled], a
+	call ClearSprites
+	call ClearScreen
+	pop hl
 .loop
 	push hl
-	ld hl, WhichMoveToForgetText
-	call PrintText
-	hlcoord 4, 7
-	ld b, 4
-	ld c, 14
+; draw the move list, with the new move at the bottom
+	hlcoord 0, 0
+	ld b, 5
+	ld c, 18
 	call TextBoxBorder
-	hlcoord 6, 8
+	hlcoord 2, 1
 	ld de, wMovesString
 	ldh a, [hUILayoutFlags]
 	set BIT_SINGLE_SPACED_LINES, a
@@ -133,32 +148,52 @@ TryingToLearn:
 	ldh a, [hUILayoutFlags]
 	res BIT_SINGLE_SPACED_LINES, a
 	ldh [hUILayoutFlags], a
+	call PrintNewMoveListEntry
+; draw the box that shows the highlighted move's stats
+	hlcoord 0, 7
+	ld b, 3
+	ld c, 9
+	call TextBoxBorder
+; draw the box that shows the highlighted move's description
+	ld a, MESSAGE_BOX
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
 	ld hl, wTopMenuItemY
-	ld a, 8
+	ld a, 1
 	ld [hli], a ; wTopMenuItemY
-	ld a, 5
+	ld a, 1
 	ld [hli], a ; wTopMenuItemX
 	xor a
 	ld [hli], a ; wCurrentMenuItem
 	inc hl
-	ld a, [wNumMovesMinusOne]
+	ld a, NUM_MOVES ; the new move is the last menu item
 	ld [hli], a ; wMaxMenuItem
-	ld a, PAD_A | PAD_B
+	ld a, PAD_A | PAD_B | PAD_DOWN | PAD_UP
 	ld [hli], a ; wMenuWatchedKeys
 	ld [hl], 0 ; wLastMenuItem
 	ld hl, hUILayoutFlags
 	set BIT_DOUBLE_SPACED_MENU, [hl]
+.menuLoop
+	call PrintLearnMoveInfoNoDelay
 	call HandleMenuInput
+	push af
+	call PlaceMenuCursor
+	pop af
+	bit B_PAD_A, a
+	jr nz, .choseMove
+	bit B_PAD_B, a
+	jr nz, .choseMove
+	jp .menuLoop ; the cursor moved, so show the new move's info
+.choseMove
 	ld hl, hUILayoutFlags
 	res BIT_DOUBLE_SPACED_MENU, [hl]
-	push af
-	call LoadScreenTilesFromBuffer1
-	pop af
 	pop hl
 	bit B_PAD_B, a
 	jr nz, .cancel
-	push hl
 	ld a, [wCurrentMenuItem]
+	cp NUM_MOVES
+	jr z, .cancel ; choosing the new move means not forgetting a move
+	push hl
 	ld c, a
 	ld b, 0
 	add hl, bc
@@ -172,16 +207,187 @@ TryingToLearn:
 	jr c, .hm
 	pop hl
 	add hl, bc
+	push hl
+	push af
+	call .leaveMenu
+	pop af
+	pop hl
 	and a
 	ret
 .hm
 	ld hl, HMCantDeleteText
 	call PrintText
 	pop hl
-	jr .loop
+	jp .loop
 .cancel
+	call .leaveMenu
 	scf
 	ret
+.leaveMenu
+	push af
+	call LoadScreenTilesFromBuffer1
+; put back the sprites that were on screen before the menu
+	ld hl, wMonPartySpritesSavedOAM
+	ld de, wShadowOAM
+	ld bc, OBJ_SIZE * 4 * PARTY_LENGTH
+	call CopyData
+	ld a, [wSavedUpdateSprites]
+	ld [wUpdateSpritesEnabled], a
+	pop af
+	ret
+
+; loads the data of move a into wPlayerMoveNum through wPlayerMoveMaxPP
+LoadMoveForLearnMenu:
+	dec a
+	ld hl, Moves
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld de, wPlayerMoveNum
+	ld bc, MOVE_LENGTH
+	ld a, BANK(Moves)
+	call FarCopyData
+	ret
+
+; draws the list entry for the move being learned, tagged as new
+PrintNewMoveListEntry:
+	ld a, [wSavedMoveNum]
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	hlcoord 2, 5
+	call PlaceString
+; bc is the tile just after the name
+	ld a, c
+	sub LOW(wTileMap + 5 * SCREEN_WIDTH)
+	cp 14 ; does the name leave room for a space before "(new)"?
+	ld de, .NoSpaceText
+	jr nc, .placeSuffix
+	ld de, .WithSpaceText
+.placeSuffix
+	ld h, b
+	ld l, c
+	jp PlaceString
+.WithSpaceText:
+	db " (new)@"
+.NoSpaceText:
+	db "(new)@"
+
+; prints the highlighted move's info box and description without letter delays
+PrintLearnMoveInfoNoDelay:
+	ld hl, wStatusFlags5
+	set BIT_NO_TEXT_DELAY, [hl]
+	call PrintLearnMoveInfo
+	ld hl, wStatusFlags5
+	res BIT_NO_TEXT_DELAY, [hl]
+	ret
+
+PrintLearnMoveInfo:
+	hlcoord 1, 8
+	ld b, 3
+	ld c, 9
+	call ClearScreenArea
+	ld a, [wCurrentMenuItem]
+	cp NUM_MOVES
+	jr z, .newMove
+; an existing move
+	ld hl, wMoves
+	ld c, a
+	ld b, 0
+	add hl, bc
+	ld a, [hl]
+	call LoadMoveForLearnMenu
+; current PP
+	ld hl, wPartyMon1Moves
+	ld bc, PARTYMON_STRUCT_LENGTH
+	ld a, [wWhichPokemon]
+	call AddNTimes
+	ld a, [wCurrentMenuItem]
+	ld c, a
+	ld b, 0
+	add hl, bc
+	ld bc, MON_PP - MON_MOVES
+	add hl, bc
+	ld a, [hl]
+	and PP_MASK
+	ld [wTempNumber], a
+; max PP
+	xor a
+	ld [wMonDataLocation], a ; PLAYER_PARTY_DATA
+	callfar GetMaxPP
+	jr .drawInfo
+.newMove
+	ld a, [wSavedMoveNum]
+	call LoadMoveForLearnMenu
+	ld a, [wPlayerMoveMaxPP]
+	ld [wTempNumber], a ; the new move has full PP
+	ld [wMaxPP], a
+.drawInfo
+; type
+	hlcoord 1, 8
+	predef PrintMoveType
+; power
+	hlcoord 1, 9
+	ld de, wPlayerMovePower
+	lb bc, 1, 3
+	call PrintNumber
+; slash between power and accuracy
+	hlcoord 4, 9
+	ld [hl], '/'
+; PP:
+	hlcoord 1, 10
+	ld de, .PPText
+	call PlaceString
+; current PP
+	hlcoord 5, 10
+	ld de, wTempNumber
+	lb bc, 1, 2
+	call PrintNumber
+; slash between current and max PP
+	hlcoord 7, 10
+	ld [hl], '/'
+; max PP
+	hlcoord 8, 10
+	ld de, wMaxPP
+	lb bc, 1, 2
+	call PrintNumber
+; accuracy
+	xor a
+	ldh [hMultiplicand], a
+	ldh [hMultiplicand + 1], a
+	ld a, [wPlayerMoveAccuracy]
+	ldh [hMultiplicand + 2], a
+	ld a, 100
+	ldh [hMultiplier], a
+	call Multiply
+	ldh a, [hProduct + 2]
+	inc a ; accuracies are slightly off in gen 1
+	ld [wTempNumber], a
+	hlcoord 6, 9
+	ld de, wTempNumber
+	lb bc, 1, 3
+	call PrintNumber
+; percent sign
+	hlcoord 9, 9
+	ld [hl], 223
+; description
+	ld a, [wCurrentMenuItem]
+	cp NUM_MOVES
+	jr z, .newMoveDescription
+	ld hl, wMoves
+	ld c, a
+	ld b, 0
+	add hl, bc
+	ld a, [hl]
+	jr .gotDescription
+.newMoveDescription
+	ld a, [wSavedMoveNum]
+.gotDescription
+	ld [wMoveNum], a
+	farcall PrintMoveDescription
+	ld a, [wSavedMoveNum]
+	ld [wMoveNum], a
+	ret
+.PPText:
+	db "PP:@"
 
 LearnedMove1Text:
 	text_far _LearnedMove1Text

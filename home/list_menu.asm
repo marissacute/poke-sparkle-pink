@@ -26,7 +26,11 @@ DisplayListMenuID::
 	ld h, a ; hl = address of the list
 	ld a, [hl] ; the first byte is the number of entries in the list
 	ld [wListCount], a
+	call IsTallListMenu
 	ld a, LIST_MENU_BOX
+	jr nc, .gotListMenuBox
+	ld a, LIST_MENU_BOX_TALL
+.gotListMenuBox
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; draw the menu text box
 	call UpdateSprites ; disable sprites behind the text box
@@ -35,11 +39,24 @@ DisplayListMenuID::
 	ld [wMenuWatchMovingOutOfBounds], a
 	ld a, [wListCount]
 	cp 2 ; does the list have less than 2 entries?
+	ld a, 1
 	jr c, .setMenuVariables
 	ld a, 2 ; max menu item ID is 2 if the list has at least 2 entries
+	call IsTallListMenu
+	jr nc, .setMenuVariables
+; tall item lists show one more entry, so the cursor can go down one more row
+	ld a, [wListCount]
+	cp 3
+	ld a, 2 ; max menu item ID is 2 if the list has only 2 entries
+	jr c, .setMenuVariables
+	ld a, 3
 .setMenuVariables
 	ld [wMaxMenuItem], a
+	call IsTallListMenu
 	ld a, 4
+	jr nc, .setTopMenuItemY
+	ld a, 2
+.setTopMenuItemY
 	ld [wTopMenuItemY], a
 	ld a, 1
 	ld [wTopMenuItemX], a
@@ -73,13 +90,22 @@ DisplayListMenuIDLoop::
 	and a ; is it the Old Man battle?
 	jr z, .notOldManBattle
 ; Old Man battle
+	call IsTallListMenu
+	hlcoord 1, 4
+	jr nc, .oldManPlaceCursor
+	hlcoord 1, 2
+.oldManPlaceCursor
 	ld a, '▶'
-	ldcoord_a 1, 4 ; place menu cursor in front of first menu entry
+	ld [hl], a ; place menu cursor in front of first menu entry
 	ld c, 80
 	call DelayFrames
 	xor a
 	ld [wCurrentMenuItem], a
+	call IsTallListMenu
 	hlcoord 1, 4
+	jr nc, .oldManCursorLocation
+	hlcoord 1, 2
+.oldManCursorLocation
 	ld a, l
 	ld [wMenuCursorLocation], a
 	ld a, h
@@ -162,6 +188,7 @@ DisplayListMenuIDLoop::
 	ld [wChosenMenuItem], a
 	xor a
 	ldh [hJoy7], a ; joypad state update flag
+	ld [wTallListMenu], a
 	ld hl, wStatusFlags5
 	res BIT_NO_TEXT_DELAY, [hl]
 	jp BankswitchBack
@@ -176,7 +203,15 @@ DisplayListMenuIDLoop::
 	jr z, .upPressed
 ; Down pressed
 	ld a, [hl]
+	ld b, a
+	call IsTallListMenu
+	ld a, b
+	jr c, .tallScrollDown
 	add 3
+	jr .gotScrollDownThreshold
+.tallScrollDown
+	add 4
+.gotScrollDownThreshold
 	ld b, a
 	ld a, [wListCount]
 	cp b ; will going down scroll past the Cancel button?
@@ -378,6 +413,7 @@ ExitListMenu::
 	ld [wMenuWatchMovingOutOfBounds], a
 	xor a
 	ldh [hJoy7], a
+	ld [wTallListMenu], a
 	ld hl, wStatusFlags5
 	res BIT_NO_TEXT_DELAY, [hl]
 	call BankswitchBack
@@ -387,8 +423,15 @@ ExitListMenu::
 	ret
 
 PrintListMenuEntries::
+	call IsTallListMenu
+	jr c, .tallListArea
 	hlcoord 1, 3
 	ld b, 9
+	jr .clearListArea
+.tallListArea
+	hlcoord 1, 1
+	ld b, 11
+.clearListArea
 	ld c, 18
 	call ClearScreenArea
 	ld a, [wListPointer]
@@ -412,8 +455,14 @@ PrintListMenuEntries::
 	jr nc, .noCarry
 	inc d
 .noCarry
+	call IsTallListMenu
+	jr c, .tallListNames
 	hlcoord 2, 4 ; coordinates of first list entry name
 	ld b, 4 ; print 4 names
+	jr .loop
+.tallListNames
+	hlcoord 2, 2 ; coordinates of first list entry name
+	ld b, 5 ; print 5 names
 .loop
 	ld a, b
 	ld [wWhichPokemon], a
@@ -445,7 +494,11 @@ PrintListMenuEntries::
 .getPokemonName
 	ld a, [wWhichPokemon]
 	ld b, a
+	call IsTallListMenu
 	ld a, 4
+	jr nc, .gotPokemonNameRow
+	ld a, 5
+.gotPokemonNameRow
 	sub b
 	ld b, a
 	ld a, [wListScrollOffset]
@@ -492,7 +545,11 @@ PrintListMenuEntries::
 	ld hl, wWhichPokemon
 	ld a, [hl]
 	ld b, a
-	ld a, $04
+	call IsTallListMenu
+	ld a, 4
+	jr nc, .gotPokemonLevelRow
+	ld a, 5
+.gotPokemonLevelRow
 	sub b
 	ld b, a
 	ld a, [wListScrollOffset]
@@ -577,6 +634,14 @@ PrintListMenuEntries::
 
 ListMenuCancelText::
 	db "CANCEL@"
+
+; sets carry if the current list menu uses the taller five-entry layout
+IsTallListMenu:
+	ld a, [wTallListMenu]
+	and a
+	ret z
+	scf
+	ret
 
 ; adds the signed 8-bit delta in b to wItemQuantity,
 ; clamped to the range 1..wMaxItemQuantity

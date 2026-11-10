@@ -105,6 +105,8 @@ PlayerPCDeposit:
 	ld [wPrintItemPrices], a
 	ld a, ITEMLISTMENU
 	ld [wListMenuID], a
+	ld a, 1
+	ld [wTallListMenu], a
 	call DisplayListMenuID
 	jp c, PlayerPCMenu
 	call IsKeyItem
@@ -159,6 +161,8 @@ PlayerPCWithdraw:
 	ld [wPrintItemPrices], a
 	ld a, ITEMLISTMENU
 	ld [wListMenuID], a
+	ld a, 1
+	ld [wTallListMenu], a
 	call DisplayListMenuID
 	jp c, PlayerPCMenu
 	call IsKeyItem
@@ -213,6 +217,8 @@ PlayerPCToss:
 	ld [wPrintItemPrices], a
 	ld a, ITEMLISTMENU
 	ld [wListMenuID], a
+	ld a, 1
+	ld [wTallListMenu], a
 	push hl
 	call DisplayListMenuID
 	pop hl

@@ -118,9 +118,9 @@ HandleItemListSwapping::
 	dec [hl] ; decrease the number of items
 	ld a, [hl]
 	ld [wListCount], a ; update number of items variable
-	cp 1
-	jr nz, .skipSettingMaxMenuItemID
-	ld [wMaxMenuItem], a ; if the number of items is only one now, update the max menu item ID
+	cp 3
+	jr nc, .skipSettingMaxMenuItemID
+	ld [wMaxMenuItem], a ; if the list got shorter, update the max menu item ID
 .skipSettingMaxMenuItemID
 	dec de
 	ld h, d

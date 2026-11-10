@@ -322,7 +322,8 @@ wMenuWrappingEnabled:: db
 ; whether to check for 180-degree turn (0 = don't, 1 = do)
 wCheckFor180DegreeTurn:: db
 
-	ds 1
+; whether the list menu should use the taller five-entry layout
+wTallListMenu:: db
 
 wToggleableObjectIndex:: db
 
@@ -1237,7 +1238,10 @@ NEXTU
 wLearnMoveMonName:: ds NAME_LENGTH
 ENDU
 
-	ds 2
+; the value of wUpdateSpritesEnabled when the learn-move menu was opened
+wSavedUpdateSprites:: db
+
+	ds 1
 
 ; money received after battle = base money × level of last enemy mon
 wTrainerBaseMoney:: dw ; BCD
@@ -1584,7 +1588,8 @@ wDamage:: dw
 ; used when the effect wears off to ask if the player wants to use another
 wRepelType:: db
 
-	ds 1
+; the move being taught, saved while another move's data is displayed
+wSavedMoveNum:: db
 
 wRepelRemainingSteps:: db
 

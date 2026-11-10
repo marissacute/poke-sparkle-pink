@@ -316,6 +316,8 @@ StartMenu_Item::
 	ld [wPrintItemPrices], a
 	ld a, ITEMLISTMENU
 	ld [wListMenuID], a
+	ld a, 1
+	ld [wTallListMenu], a
 	ld a, [wBagSavedMenuItem]
 	ld [wCurrentMenuItem], a
 	call DisplayListMenuID
@@ -330,6 +332,7 @@ StartMenu_Item::
 .choseItem
 ; erase menu cursor (blank each tile in front of an item name)
 	ld a, ' '
+	ldcoord_a 1, 2
 	ldcoord_a 1, 4
 	ldcoord_a 1, 6
 	ldcoord_a 1, 8

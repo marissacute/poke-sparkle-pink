@@ -331,6 +331,8 @@ DisplayMonListMenu:
 	ld [wListMenuID], a
 	inc a                ; MONSTER_NAME
 	ld [wNameListType], a
+	ld a, 1
+	ld [wTallListMenu], a
 	ld a, [wPartyAndBillsPCSavedMenuItem]
 	ld [wCurrentMenuItem], a
 	call DisplayListMenuID

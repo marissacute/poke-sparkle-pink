@@ -2429,6 +2429,8 @@ DisplayBagMenu:
 	ld [wPrintItemPrices], a
 	ld a, ITEMLISTMENU
 	ld [wListMenuID], a
+	ld a, 1
+	ld [wTallListMenu], a
 	ld a, [wBagSavedMenuItem]
 	ld [wCurrentMenuItem], a
 	call DisplayListMenuID

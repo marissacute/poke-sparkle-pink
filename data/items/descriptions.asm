@@ -12,13 +12,13 @@ PrintItemDescription::
 	cp c
 	jr z, .cancel
 
-	ld a, [wCurListMenuItem]
-	cp HM01 ; is this a TM/HM?
-	jr nc, .machine
-
 	ld a, [wListMenuID]
 	cp MOVESLISTMENU
 	jr z, .moveListItem
+
+	ld a, [wCurListMenuItem]
+	cp HM01 ; is this a TM/HM?
+	jr nc, .machine
 
 	ld hl, ItemDescriptions
 ; Add stuff until we are at the right pointer
