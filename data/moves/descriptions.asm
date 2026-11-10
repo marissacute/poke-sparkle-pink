@@ -1037,7 +1037,7 @@ _MetalClawDescription::
 
 _MagnetBombDescription::
     text "Hits the foe"
-    line "with magnets"
+    line "with magnets."
     done
 
 _IronDefenseDescription::
@@ -1107,34 +1107,27 @@ _WaterPulseDescription::
 
 _BugBiteDescription::
     text "Bites the foe"
-    line "with sharp"
-    cont "mandibles."
+    line "with sharp jaws."
     done
 
 _ExtremeSpeedDescription::
     text "An extremely"
-    line "fast attack that"
-    cont "always strikes"
-    cont "first."
+    line "fast first hit."
     done
 
 _BulldozeDescription::
     text "Stomps the ground"
-    line "and lowers the"
-    cont "foe's SPEED."
+    line "and lowers SPEED."
     done
 
 _AirSlashDescription::
-    text "Attacks with a"
-    line "blade of air."
-    cont "May cause the"
-    cont "foe to flinch."
+    text "A blade of air"
+    line "that may flinch."
     done
 
 _PowerUpPunchDescription::
     text "A punch that"
-    line "raises the"
-    cont "user's ATTACK."
+    line "raises ATTACK."
     done
 
 _StruggleDescription::

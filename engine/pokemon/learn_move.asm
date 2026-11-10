@@ -139,6 +139,9 @@ TryingToLearn:
 	ld b, 5
 	ld c, 18
 	call TextBoxBorder
+; draw the move names without letter delays
+	ld hl, wStatusFlags5
+	set BIT_NO_TEXT_DELAY, [hl]
 	hlcoord 2, 1
 	ld de, wMovesString
 	ldh a, [hUILayoutFlags]
@@ -149,6 +152,8 @@ TryingToLearn:
 	res BIT_SINGLE_SPACED_LINES, a
 	ldh [hUILayoutFlags], a
 	call PrintNewMoveListEntry
+	ld hl, wStatusFlags5
+	res BIT_NO_TEXT_DELAY, [hl]
 ; draw the box that shows the highlighted move's stats
 	hlcoord 0, 7
 	ld b, 3

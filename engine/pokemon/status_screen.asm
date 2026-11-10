@@ -116,11 +116,14 @@ ENDC
 	ld [hl], '<DOT>'
 	dec hl
 	ld [hl], '№'
-	hlcoord 19, 9
-	lb bc, 8, 6
-	call DrawLineBox ; Draws the box around types, ID No. and OT
 	hlcoord 10, 9
-	ld de, TypesIDNoOTText
+	ld de, SpeciesText
+	call PlaceString
+	hlcoord 10, 12
+	ld de, Type1Text
+	call PlaceString
+	hlcoord 10, 14
+	ld de, Type2Text
 	call PlaceString
 	hlcoord 11, 3
 	predef DrawHP
@@ -149,24 +152,35 @@ ENDC
 	ld de, wPokedexNum
 	lb bc, LEADING_ZEROES | 1, 3
 	call PrintNumber ; Pokémon no.
-	hlcoord 11, 10
+	hlcoord 11, 13
 	predef PrintMonType
+	ld a, [wMonHIndex]
+	ld [wNamedObjectIndex], a
+	call GetMonName
+; print the species name, shifted left if it is too long to fit
+	ld hl, wNameBuffer
+	ld b, 0
+.countSpeciesName
+	ld a, [hli]
+	cp '@'
+	jr z, .gotSpeciesNameLength
+	inc b
+	jr .countSpeciesName
+.gotSpeciesNameLength
+	ld a, b
+	cp 10
+	hlcoord 11, 10
+	jr c, .placeSpeciesName
+	hlcoord 10, 10
+.placeSpeciesName
+	ld de, wNameBuffer
+	call PlaceString
 	ld hl, NamePointers2
 	call .GetStringPointer
 	ld d, h
 	ld e, l
 	hlcoord 9, 1
 	call PlaceString ; Pokémon name
-	ld hl, OTPointers
-	call .GetStringPointer
-	ld d, h
-	ld e, l
-	hlcoord 12, 16
-	call PlaceString ; OT
-	hlcoord 12, 14
-	ld de, wLoadedMonOTID
-	lb bc, LEADING_ZEROES | 2, 5
-	call PrintNumber ; ID Number
 	ld d, STATUS_SCREEN_STATS_BOX
 	call PrintStatsBox
 	call Delay3
@@ -207,12 +221,15 @@ NamePointers2:
 	dw wBoxMonNicks
 	dw wDayCareMonName
 
-TypesIDNoOTText:
-	db   "TYPE1/"
-	next "TYPE2/"
-	next "<ID>№/"
-	next "OT/"
-	next "@"
+SpeciesText:
+	db "SPECIES/@"
+
+Type1Text:
+	db "TYPE1/@"
+
+Type2Text:
+	db "TYPE2/@"
+
 
 StatusText:
 	db "STATUS/@"
@@ -297,14 +314,6 @@ StatusScreen2:
 	xor a
 	ldh [hTileAnimations], a
 	ldh [hAutoBGTransferEnabled], a
-	ld bc, NUM_MOVES + 1
-	ld hl, wMoves
-	call FillMemory
-	ld hl, wLoadedMonMoves
-	ld de, wMoves
-	ld bc, NUM_MOVES
-	call CopyData
-	callfar FormatMovesString
 	hlcoord 9, 2
 	lb bc, 5, 10
 	call ClearScreenArea ; Clear under name
@@ -316,81 +325,64 @@ ELSE
 	hlcoord 19, 3
 	ld [hl], $78
 ENDC
+	hlcoord 12, 8
+	lb bc, 10, 8
+	call ClearScreenArea ; clear the old screen 1 text from the right column
 	hlcoord 0, 8
 	ld b, 8
-	ld c, 18
-	call TextBoxBorder ; Draw move container
-	hlcoord 2, 9
-	ld de, wMovesString
-	call PlaceString ; Print moves
-	ld a, [wNumMovesMinusOne]
-	inc a
-	ld c, a ; number of known moves
-	ld a, NUM_MOVES
-	sub c
-	ld b, a ; number of blank moves
-	hlcoord 11, 10
-	ld de, SCREEN_WIDTH * 2
-	ld a, '<BOLD_P>'
-	call StatusScreen_PrintPP ; Print "PP"
-	ld a, b
-	and a
-	jr z, .InitPP
-	ld c, a
-	ld a, '-'
-	call StatusScreen_PrintPP ; Fill the rest with --
-.InitPP
-	ld hl, wLoadedMonMoves
-	decoord 14, 10
-	ld b, 0
-.PrintPP
-	ld a, [hli]
-	and a
-	jr z, .PPDone
-	push bc
-	push hl
-	push de
-	ld hl, wCurrentMenuItem
-	ld a, [hl]
-	push af
-	ld a, b
-	ld [hl], a
-	push hl
-	callfar GetMaxPP
-	pop hl
-	pop af
-	ld [hl], a
-	pop de
-	pop hl
-	push hl
-	ld bc, MON_PP - MON_MOVES - 1
-	add hl, bc
-	ld a, [hl]
-	and PP_MASK
-	ld [wStatusScreenCurrentPP], a
-	ld h, d
-	ld l, e
-	push hl
-	ld de, wStatusScreenCurrentPP
+	ld c, 10
+	call TextBoxBorder ; Draw IV container
+	hlcoord 1, 9
+	ld de, IVText
+	call PlaceString
+; print the four IVs, right-aligned inside the box
+	hlcoord 9, 10
+	ld a, [wLoadedMonDVs]
+	swap a
+	and $f
+	ld [wTempNumber], a
+	ld de, wTempNumber
 	lb bc, 1, 2
 	call PrintNumber
-	ld a, '/'
-	ld [hli], a
-	ld de, wMaxPP
+	hlcoord 9, 12
+	ld a, [wLoadedMonDVs]
+	and $f
+	ld [wTempNumber], a
+	ld de, wTempNumber
 	lb bc, 1, 2
 	call PrintNumber
-	pop hl
-	ld de, SCREEN_WIDTH * 2
-	add hl, de
+	hlcoord 9, 14
+	ld a, [wLoadedMonDVs + 1]
+	swap a
+	and $f
+	ld [wTempNumber], a
+	ld de, wTempNumber
+	lb bc, 1, 2
+	call PrintNumber
+	hlcoord 9, 16
+	ld a, [wLoadedMonDVs + 1]
+	and $f
+	ld [wTempNumber], a
+	ld de, wTempNumber
+	lb bc, 1, 2
+	call PrintNumber
+; ID No. and OT
+	hlcoord 12, 9
+	ld de, IDText
+	call PlaceString
+	hlcoord 13, 10
+	ld de, wLoadedMonOTID
+	lb bc, LEADING_ZEROES | 2, 5
+	call PrintNumber
+	hlcoord 12, 11
+	ld de, OTText
+	call PlaceString
+	ld hl, OTPointers
+	call StatusScreen_GetNamePointer
 	ld d, h
 	ld e, l
-	pop hl
-	pop bc
-	inc b
-	ld a, b
-	cp NUM_MOVES
-	jr nz, .PrintPP
-.PPDone
+	hlcoord 13, 12
+	call PlaceString
 	hlcoord 9, 3
 	ld de, StatusScreenExpText
 	call PlaceString
@@ -435,12 +427,37 @@ ENDC
 	call WaitForTextScrollButtonPress
 	pop af
 	ldh [hTileAnimations], a
-	ld hl, wStatusFlags2
-	res BIT_NO_AUDIO_FADE_OUT, [hl]
-	ld a, $77
-	ldh [rAUDVOL], a
 	call GBPalWhiteOut
 	jp ClearScreen
+
+; hl = pointer table for the current mon's data source
+; returns the pointer to the current mon's entry in hl
+StatusScreen_GetNamePointer:
+	ld a, [wMonDataLocation]
+	add a
+	ld c, a
+	ld b, 0
+	add hl, bc
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	ld a, [wMonDataLocation]
+	cp DAYCARE_DATA
+	ret z
+	ld a, [wWhichPokemon]
+	jp SkipFixedLengthTextEntries
+
+IVText:
+	db   "ATTACK DV"
+	next "DEFENSE DV"
+	next "SPEED DV"
+	next "SPECIAL DV@"
+
+IDText:
+	db "<ID>№/@"
+
+OTText:
+	db "OT/@"
 
 CalcExpToLevelUp:
 	ld a, [wLoadedMonLevel]
@@ -484,4 +501,210 @@ StatusScreen_PrintPP:
 	add hl, de
 	dec c
 	jr nz, StatusScreen_PrintPP
+	ret
+
+StatusScreen3:
+	ldh a, [hTileAnimations]
+	push af
+	xor a
+	ldh [hTileAnimations], a
+; build the move name list
+	ld bc, NUM_MOVES + 1
+	ld hl, wMoves
+	call FillMemory
+	ld hl, wLoadedMonMoves
+	ld de, wMoves
+	ld bc, NUM_MOVES
+	call CopyData
+	callfar FormatMovesString
+; draw the move list
+	hlcoord 0, 0
+	ld b, 8
+	ld c, 18
+	call TextBoxBorder
+	hlcoord 2, 1
+	ld de, wMovesString
+	call PlaceString
+	call StatusScreen3_PrintPPs
+; draw the description container, then the move info box over its top-left corner
+	hlcoord 0, 13
+	ld b, 3
+	ld c, 18
+	call TextBoxBorder
+	hlcoord 0, 10
+	ld b, 2
+	ld c, 10
+	call TextBoxBorder
+	ld hl, wTopMenuItemY
+	ld a, 1
+	ld [hli], a ; wTopMenuItemY
+	ld a, 1
+	ld [hli], a ; wTopMenuItemX
+	xor a
+	ld [hli], a ; wCurrentMenuItem
+	inc hl
+	ld a, [wNumMovesMinusOne]
+	ld [hli], a ; wMaxMenuItem
+	ld a, PAD_A | PAD_B | PAD_DOWN | PAD_UP
+	ld [hli], a ; wMenuWatchedKeys
+	ld [hl], 0 ; wLastMenuItem
+	ld hl, hUILayoutFlags
+	res BIT_DOUBLE_SPACED_MENU, [hl]
+	call GBPalNormal
+.menuLoop
+	call StatusScreen3_PrintMoveInfo
+	call HandleMenuInput
+	push af
+	call PlaceMenuCursor
+	pop af
+	bit B_PAD_A, a
+	jr nz, .done
+	bit B_PAD_B, a
+	jr nz, .done
+	jr .menuLoop
+.done
+	pop af
+	ldh [hTileAnimations], a
+	ld hl, wStatusFlags2
+	res BIT_NO_AUDIO_FADE_OUT, [hl]
+	ld a, $77
+	ldh [rAUDVOL], a
+	call GBPalWhiteOut
+	jp ClearScreen
+
+; prints the PP of every known move in the move list
+StatusScreen3_PrintPPs:
+	ld hl, wLoadedMonMoves
+	decoord 14, 2
+	ld b, 0
+.PrintPP
+	ld a, [hli]
+	and a
+	ret z
+	push bc
+	push hl
+	push de
+; print "PP" to the left of the numbers
+	ld h, d
+	ld l, e
+	ld bc, -3
+	add hl, bc
+	ld de, .PPText
+	call PlaceString
+	pop de
+	pop hl
+	pop bc
+	push bc
+	push hl
+	push de
+	ld hl, wCurrentMenuItem
+	ld a, [hl]
+	push af
+	ld a, b
+	ld [hl], a
+	push hl
+	callfar GetMaxPP
+	pop hl
+	pop af
+	ld [hl], a
+	pop de
+	pop hl
+	push hl
+	ld bc, MON_PP - MON_MOVES - 1
+	add hl, bc
+	ld a, [hl]
+	and PP_MASK
+	ld [wStatusScreenCurrentPP], a
+	ld h, d
+	ld l, e
+	push hl
+	ld de, wStatusScreenCurrentPP
+	lb bc, 1, 2
+	call PrintNumber
+	ld a, '/'
+	ld [hli], a
+	ld de, wMaxPP
+	lb bc, 1, 2
+	call PrintNumber
+	pop hl
+	ld de, SCREEN_WIDTH * 2
+	add hl, de
+	ld d, h
+	ld e, l
+	pop hl
+	pop bc
+	inc b
+	ld a, b
+	cp NUM_MOVES
+	jr nz, .PrintPP
+	ret
+.PPText:
+	db "<BOLD_P><BOLD_P> @"
+
+; prints the highlighted move's type, power, accuracy and description
+StatusScreen3_PrintMoveInfo:
+	hlcoord 1, 11
+	ld b, 2
+	ld c, 10
+	call ClearScreenArea
+	ld hl, wLoadedMonMoves
+	ld a, [wCurrentMenuItem]
+	ld c, a
+	ld b, 0
+	add hl, bc
+	ld a, [hl]
+	ld [wMoveNum], a
+	dec a
+	ld hl, Moves
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld de, wPlayerMoveNum
+	ld bc, MOVE_LENGTH
+	ld a, BANK(Moves)
+	call FarCopyData
+	hlcoord 2, 11
+	predef PrintMoveType
+	hlcoord 2, 12
+	ld de, wPlayerMovePower
+	lb bc, 1, 3
+	call PrintNumber
+	hlcoord 5, 12
+	ld [hl], '/'
+	xor a
+	ldh [hMultiplicand], a
+	ldh [hMultiplicand + 1], a
+	ld a, [wPlayerMoveAccuracy]
+	ldh [hMultiplicand + 2], a
+	ld a, 100
+	ldh [hMultiplier], a
+	call Multiply
+	ldh a, [hProduct + 2]
+	inc a ; accuracies are slightly off in gen 1
+	ld [wTempNumber], a
+	hlcoord 7, 12
+	ld de, wTempNumber
+	lb bc, 1, 3
+	call PrintNumber
+	hlcoord 10, 12
+	ld [hl], 223 ; percent sign
+	ld hl, wStatusFlags5
+	set BIT_NO_TEXT_DELAY, [hl]
+	farcall PrintMoveDescription
+	ld hl, wStatusFlags5
+	res BIT_NO_TEXT_DELAY, [hl]
+; redraw the borders that PrintMoveDescription erases
+	hlcoord 1, 13
+	ld a, '─'
+	ld b, 10
+.restoreMoveInfoBorder
+	ld [hli], a
+	dec b
+	jr nz, .restoreMoveInfoBorder
+	ld [hl], '┘' ; right edge of the move info box
+	inc hl
+	ld b, 7
+.restoreDescriptionBorder
+	ld [hli], a
+	dec b
+	jr nz, .restoreDescriptionBorder
 	ret

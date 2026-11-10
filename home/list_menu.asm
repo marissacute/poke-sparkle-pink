@@ -41,9 +41,11 @@ DisplayListMenuID::
 	cp 2 ; does the list have less than 2 entries?
 	ld a, 1
 	jr c, .setMenuVariables
-	ld a, 2 ; max menu item ID is 2 if the list has at least 2 entries
 	call IsTallListMenu
-	jr nc, .setMenuVariables
+	jr c, .tallMenuMax
+	ld a, 2 ; max menu item ID is 2 if the list has at least 2 entries
+	jr .setMenuVariables
+.tallMenuMax
 ; tall item lists show one more entry, so the cursor can go down one more row
 	ld a, [wListCount]
 	cp 3

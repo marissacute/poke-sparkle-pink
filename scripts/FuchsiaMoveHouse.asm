@@ -103,6 +103,8 @@ FuchsiaMoveHouseMoveDeleterText:
 	ld [wMenuItemToSwap], a
 	ld a, MOVESLISTMENU
 	ld [wListMenuID], a
+	ld a, 1
+	ld [wTallListMenu], a
 ; hide the overworld sprites so they don't draw over the list
 	xor a
 	ld [wUpdateSpritesEnabled], a
@@ -320,6 +322,8 @@ FuchsiaMoveHouseMoveRelearnerText:
 	ld [wMenuItemToSwap], a
 	ld a, MOVESLISTMENU
 	ld [wListMenuID], a
+	ld a, 1
+	ld [wTallListMenu], a
 ; hide the overworld sprites so they don't draw over the list
 	xor a
 	ld [wUpdateSpritesEnabled], a
@@ -338,10 +342,10 @@ FuchsiaMoveHouseMoveRelearnerText:
 	call LoadGBPal
 	ld a, 1
 	ldh [rWBK], a
-; hide the overworld sprites so they don't draw over LearnMove's menus
-	xor a
+; bring the overworld sprites back for LearnMove's prompts
+	ld a, 1
 	ld [wUpdateSpritesEnabled], a
-	call ClearSprites
+	call UpdateSprites
 	predef LearnMove
 	ld a, 1
 	ld [wUpdateSpritesEnabled], a
